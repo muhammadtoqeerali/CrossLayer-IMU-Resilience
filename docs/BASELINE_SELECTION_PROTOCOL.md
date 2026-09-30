@@ -70,3 +70,69 @@ When selected record:
 - FP32 metrics
 - INT8 metrics
 - export checksum
+
+---
+
+## Phase-1 evidence update
+
+The inherited source audit identified an additional and more task-specific
+candidate:
+
+### DATE2025_CNN_400MS_RECONSTRUCTED
+
+This candidate reconstructs the earlier pre-impact fall-detection workload
+rather than a generic HAR benchmark.
+
+It is therefore the current **primary candidate pending provenance
+verification**.
+
+It is not yet frozen.
+
+The generic:
+
+- compact 1D CNN
+- DS-CNN
+- compact TCN
+
+remain important comparison and later generalization candidates.
+
+The DATE reconstruction may become the primary protected workload only if
+Phase 1 confirms:
+
+- source provenance
+- architecture consistency
+- preprocessing semantics
+- checkpoint availability/integrity or defensible reconstruction procedure
+- task decision semantics
+- dataset/split lineage
+- suitability for later quantization and compute-fault injection
+
+If those requirements fail, the project returns to clean-baseline selection
+among the generic compact candidates.
+
+---
+
+## Phase-1 outcome
+
+Phase 1 established a validated task-specific primary candidate:
+
+`DATE2025_CNN_400MS_RECONSTRUCTED`
+
+Verified Phase-1 facts:
+
+- historical checkpoint exists at its pinned external location
+- checkpoint SHA-256 matches the historical frozen value
+- migrated model accepts the trusted state with strict loading
+- parameter count is 63,173
+- logits are exactly identical to the trusted implementation on 68
+  deterministic parity vectors
+- 256-dimensional penultimate features are exactly identical
+- historical streaming decisions are identical
+- the clean migrated baseline contains no inherited OOD or reliability logic
+
+This is a migration/provenance result.
+
+It does not itself constitute Phase-2 baseline freezing.
+
+Phase 2 must freeze the executable baseline identity, decision semantics,
+reference environment, export/quantization path and clean reference evidence.

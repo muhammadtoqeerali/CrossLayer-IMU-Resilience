@@ -1,0 +1,74 @@
+{
+  "checkpoint_status": "VERIFIED",
+  "decisions": [
+    {
+      "decision": "ADAPT",
+      "source": "src/imu_reliability/baseline/date2025_cnn400.py",
+      "target_role": "primary_protected_baseline_candidate"
+    },
+    {
+      "decision": "ADAPT",
+      "source": "src/imu_reliability/baseline/historical_decision.py",
+      "target_role": "explicit_historical_decision_semantics"
+    },
+    {
+      "decision": "REUSE",
+      "source": "historical_DATE_checkpoint",
+      "target_role": "candidate_baseline_weights"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "docs/protected_baseline_v1.md",
+      "target_role": "provenance_evidence"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "experiments/00_baseline",
+      "target_role": "baseline_reconstruction_evidence"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "models/architectures/baseline_cnn.py",
+      "target_role": "generalization_comparator"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "models/architectures/ds_cnn.py",
+      "target_role": "efficient_generalization_comparator"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "models/architectures/tcn.py",
+      "target_role": "temporal_generalization_comparator"
+    },
+    {
+      "decision": "ADAPT",
+      "source": "existing_onnx_export_pipeline",
+      "target_role": "task_only_export_and_parity"
+    },
+    {
+      "decision": "ADAPT",
+      "source": "existing_portable_c_runtime",
+      "target_role": "embedded_engineering_scaffold_only"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "existing_reliability_runtime",
+      "target_role": "old_method_comparator"
+    },
+    {
+      "decision": "REJECT",
+      "source": "existing_ood_logic",
+      "target_role": "none_in_clean_baseline"
+    },
+    {
+      "decision": "REJECT",
+      "source": "existing_sensor_reliability_fusion",
+      "target_role": "none_in_clean_baseline"
+    }
+  ],
+  "generated_utc": "2026-09-30T08:24:37+00:00",
+  "primary_baseline_candidate": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "primary_baseline_status": "NOT_FROZEN",
+  "schema": "crosslayer_phase1_migration_decisions_v1"
+}

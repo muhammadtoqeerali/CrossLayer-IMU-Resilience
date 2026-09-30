@@ -82,26 +82,51 @@ IMU-based pre-impact fall detection.
 
 ## Current phase
 
-Phase 0.
+Phase 2 — protected-baseline reproduction, selection, quantization and freeze.
 
-## Next phase
+## Phase-1 validated primary candidate
 
-Audit RC-RGD-IMU before copying scientific implementation.
+`DATE2025_CNN_400MS_RECONSTRUCTED`
 
-Classify inherited components as:
+Phase-1 evidence established:
 
-- REUSE
-- ADAPT
-- REFERENCE_ONLY
-- REJECT
+- exact historical external checkpoint located
+- historical checkpoint SHA-256 verified
+- task architecture migrated into the CrossLayer namespace
+- 63,173 trainable parameters verified
+- 68 deterministic parity vectors executed
+- exact task-logit parity obtained
+- exact penultimate-feature parity obtained
+- historical streaming-decision parity obtained
+- normalized state-dict reload parity obtained
+- no inherited OOD/integrity/reliability protection exists in the clean baseline
 
-## Initial protected-baseline candidates
+The candidate is still **not Phase-2 frozen**.
 
-- compact 1D CNN
-- DS-CNN
-- compact TCN
+## Current task
 
-Reliability-aware models are not initially accepted as the protected baseline.
+Phase 2 must determine and freeze the executable protected baseline without
+using final held-out CrossLayer fault results.
+
+Phase 2 must address:
+
+- final protected-baseline identity
+- reference execution environment
+- checkpoint/state identity
+- task decision semantics
+- clean task reference behavior
+- model export
+- quantization
+- FP32 versus quantized parity/acceptability
+- model size and compute/resource evidence
+- deployment feasibility
+
+The generic compact 1D CNN, DS-CNN and TCN remain comparison or later
+generalization candidates. They must not replace the primary candidate merely
+because they yield more favorable fault-robustness results.
+
+The formal dataset/event/split/timing protocol remains a subsequent protocol
+freeze and must be completed before final fault characterization.
 
 ## Publication sequence
 

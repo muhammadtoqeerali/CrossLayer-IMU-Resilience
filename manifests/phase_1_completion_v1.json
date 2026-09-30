@@ -1,0 +1,123 @@
+{
+  "baseline_freeze_status": "NOT_FROZEN",
+  "generated_utc": "2026-09-30T08:44:49+00:00",
+  "historical_checkpoint": {
+    "bytes": 782797,
+    "sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+    "status": "VERIFIED",
+    "tracked_in_git": false
+  },
+  "important_file_sha256": {
+    "configs/baseline/date2025_cnn400_candidate_v1.json": "e750e3d19356c0ae24a2ed1d0176b2670889c9ccafdf37715fc003e0e4727ff5",
+    "docs/PHASE_1_FINAL_REPORT.md": "48c88d3809610f007e31c4fd909fd8b983ed1d72b4c5cdf589c2fd9da45a80d0",
+    "experiments/phase_01/verify_date2025_migration.py": "31cc59559cd14ae25f54e4ac1940510542b951a407869906de3840b807e3ae25",
+    "src/crosslayer_resilience/baseline/date2025_cnn400.py": "b13a644fbe9943e36296dfc79726a85ff61a6116b7d6a9e42b0945b8973d535e",
+    "src/crosslayer_resilience/baseline/decision.py": "0eabe2a4bf22008999833dd35ec27f953a6c1954c7e9e78d4d40a3b72a639288",
+    "src/crosslayer_resilience/baseline/state.py": "7ba39e33c8f99e34a837770ef48b4188cd27e797b4abe7e49012a134383459b8",
+    "tests/test_date2025_candidate.py": "09261065fa49443d7c6f922f564ff1e88cf16e20158d0695071795c64bd1a601"
+  },
+  "migration_decisions": [
+    {
+      "decision": "ADAPT",
+      "source": "src/imu_reliability/baseline/date2025_cnn400.py",
+      "target_role": "primary_protected_baseline_candidate"
+    },
+    {
+      "decision": "ADAPT",
+      "source": "src/imu_reliability/baseline/historical_decision.py",
+      "target_role": "explicit_historical_decision_semantics"
+    },
+    {
+      "decision": "REUSE",
+      "source": "historical_DATE_checkpoint",
+      "target_role": "candidate_baseline_weights"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "docs/protected_baseline_v1.md",
+      "target_role": "provenance_evidence"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "experiments/00_baseline",
+      "target_role": "baseline_reconstruction_evidence"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "models/architectures/baseline_cnn.py",
+      "target_role": "generalization_comparator"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "models/architectures/ds_cnn.py",
+      "target_role": "efficient_generalization_comparator"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "models/architectures/tcn.py",
+      "target_role": "temporal_generalization_comparator"
+    },
+    {
+      "decision": "ADAPT",
+      "source": "existing_onnx_export_pipeline",
+      "target_role": "task_only_export_and_parity"
+    },
+    {
+      "decision": "ADAPT",
+      "source": "existing_portable_c_runtime",
+      "target_role": "embedded_engineering_scaffold_only"
+    },
+    {
+      "decision": "REFERENCE_ONLY",
+      "source": "existing_reliability_runtime",
+      "target_role": "old_method_comparator"
+    },
+    {
+      "decision": "REJECT",
+      "source": "existing_ood_logic",
+      "target_role": "none_in_clean_baseline"
+    },
+    {
+      "decision": "REJECT",
+      "source": "existing_sensor_reliability_fusion",
+      "target_role": "none_in_clean_baseline"
+    }
+  ],
+  "next_phase": "phase_2_baseline_reproduction_selection_quantization_and_freeze",
+  "parity": {
+    "argmax_predictions_equal": true,
+    "historical_decision_equal": true,
+    "max_abs_feature_difference": 0.0,
+    "max_abs_logit_difference": 0.0,
+    "reloaded_max_abs_feature_difference": 0.0,
+    "reloaded_max_abs_logit_difference": 0.0,
+    "vector_count": 68
+  },
+  "phase": 1,
+  "phase_name": "inherited_code_audit_and_protected_baseline_reconstruction",
+  "primary_candidate": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "repository_parent_commit": "f0184431773a61964bf00071cba68f4d7f7b5027",
+  "schema": "crosslayer_phase1_completion_v1",
+  "scientific_boundary": {
+    "contains_compute_integrity": false,
+    "contains_ood": false,
+    "contains_recovery": false,
+    "contains_runtime_supervisor": false,
+    "contains_sensor_integrity": false
+  },
+  "status": "COMPLETE",
+  "validated_model": {
+    "canonical_tensor_state_sha256": "c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124",
+    "input_shape": [
+      1,
+      40,
+      9
+    ],
+    "output_shape": [
+      1,
+      2
+    ],
+    "parameter_count": 63173,
+    "penultimate_feature_dim": 256
+  }
+}

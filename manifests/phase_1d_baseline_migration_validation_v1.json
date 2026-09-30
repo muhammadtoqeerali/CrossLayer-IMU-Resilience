@@ -1,0 +1,58 @@
+{
+  "baseline_freeze_status": "NOT_FROZEN",
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "environment": {
+    "numpy": "2.2.4",
+    "python": "3.12.3",
+    "torch": "2.5.1+cu124"
+  },
+  "generated_utc": "2026-09-30T08:35:46+00:00",
+  "historical_checkpoint": {
+    "bytes": 782797,
+    "path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+    "sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1"
+  },
+  "model": {
+    "canonical_state_sha256": "c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124",
+    "input_shape": [
+      1,
+      40,
+      9
+    ],
+    "output_shape": [
+      1,
+      2
+    ],
+    "parameter_count": 63173,
+    "penultimate_feature_dim": 256
+  },
+  "normalized_state_artifact": {
+    "canonical_state_sha256": "c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124",
+    "file_sha256": "b43395f29879d7a6f19f8237392a860fd1e87683b193253a26566876dfbe3d4f",
+    "git_tracked": false,
+    "path": "artifacts/baseline/date2025_cnn400_state_dict_v1.pt"
+  },
+  "parity": {
+    "argmax_predictions_equal": true,
+    "historical_decision_equal": true,
+    "max_abs_feature_difference": 0.0,
+    "max_abs_logit_difference": 0.0,
+    "reloaded_max_abs_feature_difference": 0.0,
+    "reloaded_max_abs_logit_difference": 0.0,
+    "vector_count": 68
+  },
+  "schema": "crosslayer_phase1d_baseline_migration_validation_v1",
+  "scientific_boundary": {
+    "contains_compute_integrity": false,
+    "contains_ood": false,
+    "contains_recovery": false,
+    "contains_runtime_supervisor": false,
+    "contains_sensor_integrity": false
+  },
+  "source": {
+    "clean_commit": "e1db7880e17a5632bc4ce238125923f986e85519",
+    "reference_loader": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/RC-RGD-IMU_publish/experiments/03_ood/evaluate_ood_calibration_v1b.py",
+    "repository": "muhammadtoqeerali/RC-RGD-IMU"
+  },
+  "status": "PASS"
+}

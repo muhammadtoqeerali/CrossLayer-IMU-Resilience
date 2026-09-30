@@ -87,16 +87,31 @@ Every reused component must be audited first.
 
 ## Current state
 
-Current phase:
+Phase 1 is complete.
 
-    Phase 0 — scientific and repository foundation
+The repository now contains a clean CrossLayer-native migration of the
+historical DATE-2025 400-ms pre-impact fall-detection workload.
 
-No primary task model is frozen yet.
+Validated Phase-1 evidence includes:
 
-No sensor-fault taxonomy is frozen yet.
+- exact historical checkpoint located and SHA-256 verified
+- protected task model migrated without prior reliability mechanisms
+- 63,173 parameters verified
+- exact logit parity on 68 deterministic vectors
+- exact penultimate-feature parity
+- historical decision-semantic parity
+- task-state reload parity
+- inherited OOD/reliability/integrity logic excluded from the clean baseline
 
-No compute-fault taxonomy is frozen yet.
+Primary candidate:
 
-No final MCU target is frozen yet.
+    DATE2025_CNN_400MS_RECONSTRUCTED
 
-No publication-facing experimental result exists yet.
+The primary candidate is not yet frozen.
+
+Next:
+
+    Phase 2 — baseline reproduction, selection, quantization and freeze
+
+Sensor-fault, compute-fault and runtime-protection protocols remain unfrozen.
+No publication-facing CrossLayer fault result exists yet.

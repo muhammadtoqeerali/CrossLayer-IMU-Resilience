@@ -1,0 +1,3521 @@
+{
+  "candidate_artifacts": [
+    {
+      "is_pinned_path": true,
+      "matches_expected": true,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+      "sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+      "size_bytes": 782797
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_12_09_35/best-checkpoint-fold_1.ckpt",
+      "sha256": "2b823b9f425c8e5ff9b923b7252870baf636c7627c5127432c6c15670a4fac7e",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_12_09_35/best-checkpoint-fold_2.ckpt",
+      "sha256": "c84e3a653acc9d287641efaed0c075459dcbe1fdc9790ec53321662240d3bbd4",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_12_09_35/best-checkpoint-fold_3.ckpt",
+      "sha256": "b9e95a60bdb45f23fd726d5c6156c05d45448a26708fb36e772d9d03a11231d5",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_12_09_35/best-checkpoint-fold_4.ckpt",
+      "sha256": "1a62ee58999dbaca858c981d6d39add98a64d32574278f217721f9b38e3c63ea",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_12_09_35/best-checkpoint-fold_5.ckpt",
+      "sha256": "f5217413ad969f15e900fbb6ef7a053b68e3fbbb65a0528a76b35d93dc4c7660",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_13_51_06/best-checkpoint-fold_1.ckpt",
+      "sha256": "b78a7609a85f819170bc97e4369c1fde1b1548183260c5029a2d628e3d439468",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_13_51_06/best-checkpoint-fold_2.ckpt",
+      "sha256": "ce5daf4c2e38d990163889ffa1769b8add62003e1e9bcdd891691f9d028f8f23",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_14_03_27/best-checkpoint-fold_1.ckpt",
+      "sha256": "793aff08d36111bd81f0803bf5495c1ef5cfe7c7d4f6218964abd5956348ba4a",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_14_18_00/best-checkpoint-fold_1.ckpt",
+      "sha256": "565a2849e3e6b65fdd42665d42b16ba62e2939c97ef589031d81f9f65ac3f39c",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_14_18_00/best-checkpoint-fold_2.ckpt",
+      "sha256": "576f1f9c723726a9f47ce45446f95166a19718525a4060b75687d5fecc37e2b6",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_16_27_55/best-checkpoint-fold_1.ckpt",
+      "sha256": "0b2137583b6277f0f27befe1e50bd158a4baa5c397ff79547df8a8dfb0c50ec6",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/Assembled/300ms/2025-01-20_16_27_55/best-checkpoint-fold_2.ckpt",
+      "sha256": "30cf8b4cc1dade53fb0fd99fa847238891408921305feedc7ec98d56e73cf081",
+      "size_bytes": 2025482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_01_45_56/best-checkpoint.ckpt",
+      "sha256": "496522ef941c74f6e17c0adf5df9598f19cd3fc3b12eb5338efff62dd8f021b3",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_08_43_49/best-checkpoint.ckpt",
+      "sha256": "ad66f952095a9593c10716d09ff2498a69f848d5d5e74d4dafe4e294a380043f",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_09_34_34/best-checkpoint.ckpt",
+      "sha256": "edc71c1e230c00f1087b32ea717be585a4b09a97b5805949feb87e595b220aaf",
+      "size_bytes": 995293
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_09_39_42/best-checkpoint.ckpt",
+      "sha256": "a33e530e814026f4788321d4ec696c9047b218ce638a02db996437a348813943",
+      "size_bytes": 995293
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_11_58_08/best-checkpoint.ckpt",
+      "sha256": "5e9434ea045d8309925dd78b98f121c85889ad65c1a03708939e79ce18e7ad22",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_12_58_19/best-checkpoint.ckpt",
+      "sha256": "8cceb73fc2d308500633811a6e5dd751346f788bcc0db1893ae03e6b1a28f95d",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_13_06_31/best-checkpoint.ckpt",
+      "sha256": "5aa5c3149464a6e653272a7e6a8293b786e0eb0b0a08634e56a2bad22c340057",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_13_47_42/best-checkpoint.ckpt",
+      "sha256": "5d3c42501d24e9a6a3413a5f2d3a0da95a8966105f900ef7763a15c5f5a0629b",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_13_52_31/best-checkpoint.ckpt",
+      "sha256": "46643912199bbbd70255638aa3ce57791a3baeaabe65453c2cd89e184a9a08b7",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_14_04_27/best-checkpoint.ckpt",
+      "sha256": "0369c0b65a0b8aab4b773aaa5e3eb12dc94e06b6808d9962d46b66032ecb3b5b",
+      "size_bytes": 996765
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_15_10_32/best-checkpoint.ckpt",
+      "sha256": "85e4338a46c035485d095c7bb0583417ea746e431c38c787a73d4acd43ce22bf",
+      "size_bytes": 998301
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_18_35_27/best-checkpoint.ckpt",
+      "sha256": "ec1ce8e072b208c98427ccfdf7906ce713eb161a091145d674a60ac1a7a77339",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_19_09_57/best-checkpoint.ckpt",
+      "sha256": "11f666ddba79e4058e2c2e4ca11dd3ec319d279794936a00be2ada4ef4dfddd3",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_20_38_57/best-checkpoint-fold_1.ckpt",
+      "sha256": "84a423a9caf34dc61b7426c13b3923fbd0d7dd9b405949ec56c42ae8b70db6e4",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_20_38_57/best-checkpoint-fold_2.ckpt",
+      "sha256": "ed5fde7139afcb1626d5fb050fefaede68ce9d6ede473be8dd7ec8aaf2a88611",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_20_51_11/best-checkpoint-fold_1.ckpt",
+      "sha256": "f6c58e501a8b6d684c16910071b62e9caffbdddfd74a962d75e845f0ff93fe9a",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_20_51_11/best-checkpoint-fold_2.ckpt",
+      "sha256": "ae5af379a02b7285a3f3b7ebc06d78be75e5f607cf7d6637dfc1fa9aeda94cfb",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_21_12_45/best-checkpoint-fold_1.ckpt",
+      "sha256": "c1676fb0f219201b3b184a7b8ed4b40ee8b216e8859df7200cac65e5b637428d",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_22_37_28/best-checkpoint-fold_1.ckpt",
+      "sha256": "eae337d44dc8805f17f8e5fcb33664a7e252aee072fda0c8cb912b17358f5457",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_22_37_28/best-checkpoint-fold_2.ckpt",
+      "sha256": "11094cdc5986acd91015b8fd8b07632a743ab331567576fae3a6cb825f9259d5",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_22_37_28/best-checkpoint-fold_3.ckpt",
+      "sha256": "e103bcf4356491f49d696867acc4e99ac390526025de2258bc8a4a31f95be92d",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-19_06_54_28/best-checkpoint-fold_1.ckpt",
+      "sha256": "f8ae4d4da0a81b4fc8c4ee7770d5355acb2d69eb5b5c8931649d5b66557c3c7c",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-19_06_54_28/best-checkpoint-fold_2.ckpt",
+      "sha256": "84f0850f0e4d6e0735564e1d69554653a861762b6fb34d61e139b9d6175fd6b8",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-19_06_54_28/best-checkpoint-fold_3.ckpt",
+      "sha256": "9a1baf6eeed8db424e61cef1f32d2a4788a85d75b5000d6ddcbe7ab1dd45cfc5",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-19_09_01_36/best-checkpoint-fold_1.ckpt",
+      "sha256": "927938197776751289c29fb7fb8f7dee461aa6db857928e242e0f47684ae4298",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-19_09_01_36/best-checkpoint-fold_2.ckpt",
+      "sha256": "6cfe2d1702f1897ffefc5ab2de22356ac0ac9728823ab85727ba76d8a4f87c9e",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-19_09_01_36/best-checkpoint-fold_3.ckpt",
+      "sha256": "81b4052e5e437cc0585d5edee91ab0e61188257513d02ebd80ea6851b0ede7c0",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-19_09_01_36/best-checkpoint-fold_4.ckpt",
+      "sha256": "92e9d4bbfba4c45fce44dcb510e8a901166dcb66440d1cf02d225671b4b2ab2b",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-19_09_01_36/best-checkpoint-fold_5.ckpt",
+      "sha256": "83b16555b5052cd2b15c95dd202faa7a67c7fa1ef0bd4ac5ad8558e14cdb745b",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_12_25_27/best-checkpoint-fold_1.ckpt",
+      "sha256": "dc8236c7a54369de9b4285ef1dd4825ba393c6670b8fa887da3cde476ab37ffe",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_12_27_15/best-checkpoint-fold_1.ckpt",
+      "sha256": "96be3a819d4fa0b4d7652685b1b9275b599be31c728d309152b4b1bcb607a81d",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_12_27_23/best-checkpoint-fold_1.ckpt",
+      "sha256": "533e0a99802e430f26ccdb7fcc8c3c0e64deb3a9c9f31d6952247c49291f842a",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_26_06/best-checkpoint.ckpt",
+      "sha256": "a006b7f72d4d618004e630a36d46cbafd1cb786115c4616d115760b48cb7ae80",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_30_25/best-checkpoint.ckpt",
+      "sha256": "30695e3e28af4d7ec4e26932374f19de5103ef420d736d8f43cb884b113eaac5",
+      "size_bytes": 998301
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_39_54/best-checkpoint.ckpt",
+      "sha256": "0ef26ee4dbec9266430ad3abe0f33296025a39e8adb55791834d8b07d99c2140",
+      "size_bytes": 995229
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_47_15/best-checkpoint-fold_1.ckpt",
+      "sha256": "4a0f35db50bf97ffbd9a88f2c2a7289a8f79c0fd952a6b1dc208367b9cea6787",
+      "size_bytes": 1026458
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_47_15/best-checkpoint-fold_2.ckpt",
+      "sha256": "f7e98a5435c575922743a1a99e8e6894d81b75ce4342c67e69c526fae323494c",
+      "size_bytes": 1026458
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_47_15/best-checkpoint-fold_3.ckpt",
+      "sha256": "1469a242038cdda5d59783be7a5ccdde8c36bfbca2c06b8f92d18f3efe9fadc1",
+      "size_bytes": 1026522
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_47_15/best-checkpoint-fold_4.ckpt",
+      "sha256": "0ec4b9d044d1a2b9c145f52a56edd6e2939072069623af8342e41cc1778ef230",
+      "size_bytes": 1026522
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_47_15/best-checkpoint-fold_5.ckpt",
+      "sha256": "0b03b60dd48a1ab33e33818616ec6f41e53ae18e475fe2e70f969b53881adf79",
+      "size_bytes": 1026458
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_48_03/best-checkpoint-fold_1.ckpt",
+      "sha256": "992b4b4a33ce9aa9a451bde946a4dcf78e8a8305e63965c27213737ca6c9d360",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_48_03/best-checkpoint-fold_2.ckpt",
+      "sha256": "2c9ac03d1bb8ecee1afe2046b29853102a12746269e68ee498d1c04307bd7a31",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_48_03/best-checkpoint-fold_3.ckpt",
+      "sha256": "4e9dd6c9f93b8a1755bb1cf89c02c4bdbce93de9342d65f7071c9726f366d7bf",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_48_03/best-checkpoint-fold_4.ckpt",
+      "sha256": "ec7e7887475c5ea3f6bee4b1e6433ae28b7f25d3ffec00d04d0c85c160a1707e",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_15_48_03/best-checkpoint-fold_5.ckpt",
+      "sha256": "213b978cc6388906091dc1cdc509c6b34af9fd7809375e59b384ff6ad0cc1d0b",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_16_25_59/best-checkpoint.ckpt",
+      "sha256": "4874ace2d9f62107590387456a7080d6ac736973772a7da5dc4f27cbf460ffbb",
+      "size_bytes": 998301
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_16_57_19/best-checkpoint-fold_1.ckpt",
+      "sha256": "6c01a77a26a60e6e5cf3f5882d98b8a3ffab42623be4b62d8a2ae5f764c0f7b1",
+      "size_bytes": 998618
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_16_57_19/best-checkpoint-fold_2.ckpt",
+      "sha256": "b2109dbe582f57c26cafb037da3011a9d6d2a03e507b47ac7ee07ca099e82ea9",
+      "size_bytes": 998618
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_16_57_19/best-checkpoint-fold_3.ckpt",
+      "sha256": "c5350dfc637e83b91426e8cc5d40d753b026b85b259dddd4c00cb54d450a57b6",
+      "size_bytes": 998618
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_16_57_19/best-checkpoint-fold_4.ckpt",
+      "sha256": "2c3305e88d0074d5d19ce84d38ff2c482b3e453fe60261ba99cc7dc7700aea5d",
+      "size_bytes": 998618
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_16_57_19/best-checkpoint-fold_5.ckpt",
+      "sha256": "c7ff6c50aedbc5bf0c49c36a229bc0a314e4e249fda6e19bea8a1260d2edf98a",
+      "size_bytes": 998618
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_17_39_14/best-checkpoint-fold_1.ckpt",
+      "sha256": "3de15176d878467b1dc34dd84f8f122f374cf7623286f4392650bb6cd9f7e51e",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_17_39_14/best-checkpoint-fold_2.ckpt",
+      "sha256": "f5af6d63627e22eb10319ebe7057027458922f6bbb684a802aa5317e3426aba5",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_17_39_14/best-checkpoint-fold_3.ckpt",
+      "sha256": "a71166907d021ba290dee3f38d374b8dcf39e6dbb7f77be1e250fa13e562103d",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_17_39_14/best-checkpoint-fold_4.ckpt",
+      "sha256": "460628d713b5c14a9b386e7b9ac04d71adf7cf3fd16c73e730005832518d144d",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-07_17_39_14/best-checkpoint-fold_5.ckpt",
+      "sha256": "1452dcde20ab3abb8733dc0dbc1d49efce35d1831ca2e43db4e2543ac9fb4880",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-08_17_24_34/best-checkpoint-fold_1.ckpt",
+      "sha256": "82f712ff349c5f2c1256f4971071f2b6c24fd5696c9e5989d6712d9b30e98856",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-08_17_24_34/best-checkpoint-fold_2.ckpt",
+      "sha256": "a7fc529c0daa0a6ef0891c00feaf9ae70b2a1c6371a284453a61cde17d17f45e",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-08_17_24_34/best-checkpoint-fold_3.ckpt",
+      "sha256": "53135ac6759afdce0fa04b9b1fb20c82e4be884c4def33d1daed3c96632a3bf4",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-08_17_24_34/best-checkpoint-fold_4.ckpt",
+      "sha256": "24e1c2dd7bea825d48d3aafe60cfef128c9359f8a785f9243766e708bba3e938",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-08_17_24_34/best-checkpoint-fold_5.ckpt",
+      "sha256": "6318dfe12b88e1e6d1a2b818dc6c3263f0cfc0cfdecc21b11c0f3357b65f1405",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_10_00_44/best-checkpoint-fold_1.ckpt",
+      "sha256": "40caa1391aac989a4b00efd042d29e2fe50908d5505b9f9b7deccb1de99b6baa",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_10_00_44/best-checkpoint-fold_2.ckpt",
+      "sha256": "df946cb1eec9d7edf5963302842c2e5513be7578800a68da72527dd4027d777d",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_10_00_44/best-checkpoint-fold_3.ckpt",
+      "sha256": "dde41a6faa4b77aa9193ba7b031dac4d0f4e6752f14d15cdcf84ceb200457a70",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_10_00_44/best-checkpoint-fold_4.ckpt",
+      "sha256": "9d925699013c62fd1b4fdb37ea4fe62f5a7849845c36808b1da587cbb56ea974",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_10_00_44/best-checkpoint-fold_5.ckpt",
+      "sha256": "8e5ef5da7bb9cdbf24a97ca27170826d1e002852a0acb0ea74961d914579fac3",
+      "size_bytes": 995610
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_18_47/best-checkpoint-fold_1.ckpt",
+      "sha256": "a5d6d57cfafaea80cb048ed2f97f516cddccfcef6dbc277b2e1dab8226bbacfa",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_46_17/best-checkpoint-fold_1.ckpt",
+      "sha256": "ad15346cc69c53852da47172d5c2a2e5eb8194707abd58610e302f254c42ff96",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_46_17/best-checkpoint-fold_2.ckpt",
+      "sha256": "cd7b14230409a1e965cf59077ed6f977446ad4753969c7418053a12b997c15c9",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_46_17/best-checkpoint-fold_3.ckpt",
+      "sha256": "51387c69cb8aa5660e359312cd0a90a3e6d446a64a5fcf7465561e63d2493fa8",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_46_17/best-checkpoint-fold_4.ckpt",
+      "sha256": "9c9d10c000a103202626d7350b257b40c68e436e318a4b589e149fcc3503ac89",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_46_17/best-checkpoint-fold_5.ckpt",
+      "sha256": "e78ae085f409b1fc5c58c524314ee229584964cc36957723b30c8a4bd72c75a9",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_48_00/best-checkpoint-fold_1.ckpt",
+      "sha256": "c843aed6829ff8541c0cf809bd661827e66445b93dc60a65f27fbc8dd6a3b0d2",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_48_00/best-checkpoint-fold_2.ckpt",
+      "sha256": "57992f53f20c78a042242765ecb1bfd1837d724c000d0fc2757421e4b9863487",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_48_00/best-checkpoint-fold_3.ckpt",
+      "sha256": "e0ad9781fb179329e6cc510dbf6572022a5895ec289048042f49068399ead00f",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_48_00/best-checkpoint-fold_4.ckpt",
+      "sha256": "1f4a4018e9ca52847c9a5d75750e14a482ea47fab1203cffcfe4b51582236834",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_12_48_00/best-checkpoint-fold_5.ckpt",
+      "sha256": "ecc173df6b1424697d4e2163a52ba841c2da003197ba64e4e08af32c7f734637",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_14_20_19/best-checkpoint-fold_1.ckpt",
+      "sha256": "29f9fb5411f4a7d069b4cced9393501c12ed36b67b67acf37bb2f5fefbb6ad25",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_14_20_19/best-checkpoint-fold_2.ckpt",
+      "sha256": "384c2727647ca6b088d1cbaacd4f8e01ee380abec97f7bb2468ed73bd68330ae",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_14_20_19/best-checkpoint-fold_3.ckpt",
+      "sha256": "5ff54d19d6c69737b70e45c5333f289a8694325ea9f4008acfccbecf1d73c6ca",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_14_20_19/best-checkpoint-fold_4.ckpt",
+      "sha256": "78b34e2342908cf16373aaffdd4099d4f0dd9e659ea4cc96aae4866e7b04fad6",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_14_20_19/best-checkpoint-fold_5.ckpt",
+      "sha256": "c0e484c85729e64cfcd3a1936f41247b9cce12407434c6b0acc0313447e95e31",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_11_39_48/best-checkpoint-fold_1.ckpt",
+      "sha256": "204bf64499b70f80a7ef85cff0368557f5a61e7b2f66283f7fc87bc87afb18ff",
+      "size_bytes": 859774
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_11_39_48/best-checkpoint-fold_2.ckpt",
+      "sha256": "d88a73b8ae171061dc902d2bd6ace9f92b6df53d0d5d14a73a56d2e2fa771ead",
+      "size_bytes": 859774
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_11_39_48/best-checkpoint-fold_3.ckpt",
+      "sha256": "f1ee74b26621cb1a544c0794120c44bbad623587b715c42f142182a970da97d4",
+      "size_bytes": 859774
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_11_39_48/best-checkpoint-fold_4.ckpt",
+      "sha256": "d73becbf66d15cff8fc3d5b9e02c9cc551f6d36f9df2952c64f01f0ac7684c36",
+      "size_bytes": 859774
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_11_39_48/best-checkpoint-fold_5.ckpt",
+      "sha256": "02890ca938d7c56152b8004df3389ace88557e6a684c56c80a88a8c4135a80bc",
+      "size_bytes": 859774
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_14_37_20/best-checkpoint-fold_1.ckpt",
+      "sha256": "892c315a2246ce60f15702920d16efe7ff5c29cf7c1f04c4d65e7d004bc8a455",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_14_37_20/best-checkpoint-fold_2.ckpt",
+      "sha256": "2d6f2da9aa2754824c42c2d8057953776f6209a8e53563c02ce888884ef7349f",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_14_37_20/best-checkpoint-fold_3.ckpt",
+      "sha256": "ba6483053528ac35b94dd305147e2f59585c8649d3fcaf49c33769b32783559d",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_15_39_24/best-checkpoint-fold_1.ckpt",
+      "sha256": "4761d492b497790da7c00574c3ceba1192124e420aef54f168bae61446a43fc7",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_15_39_24/best-checkpoint-fold_2.ckpt",
+      "sha256": "adb4c1e1942e781560599460f281e3bbaa320f7c84a5690d8cf99b6da8759542",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_15_39_24/best-checkpoint-fold_3.ckpt",
+      "sha256": "26845ebabe246b1ce5c34628a5cccdbbcf65c73ed138d8c96028d49d8e5157b2",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_15_39_24/best-checkpoint-fold_4.ckpt",
+      "sha256": "b619599c2ff34b2f8d2c13f564747e9a6019731bdbabb426407aa68b412d1e83",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-10_15_39_24/best-checkpoint-fold_5.ckpt",
+      "sha256": "f491d16338d764171dfa8b58f317f855b0c95f77937541b4f9d1ebf54bd40e60",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-11_13_20_35/best-checkpoint-fold_1.ckpt",
+      "sha256": "536e07e4851f435c5b26b9aa8a481e2a002e3b83f9b01e791474bc3e13aaf7f6",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-11_13_20_35/best-checkpoint-fold_2.ckpt",
+      "sha256": "f025a3055d67ae6fdfb594fef519384fd74cf2772f865a0ec56b1258f08722fd",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-11_13_20_35/best-checkpoint-fold_3.ckpt",
+      "sha256": "4efe0524fdbada0fcdcaab6a181fef34d12032d5febccc3d237bdad2cb6ee177",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-11_13_20_35/best-checkpoint-fold_4.ckpt",
+      "sha256": "ca406b47fab37519c424b808f04266179d822a6024539b1871c23c7e9a89512d",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-11_13_20_35/best-checkpoint-fold_5.ckpt",
+      "sha256": "6142535cb1fef2e3ac6321d4a4951ff39ff9d13124fbadd9750a8162da092882",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_12_13_08/best-checkpoint-fold_1.ckpt",
+      "sha256": "862d055bdef654ed64f6ea06d7756f9d8ff3daa934ec2d544cbe4ec926a58ea3",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_12_13_08/best-checkpoint-fold_2.ckpt",
+      "sha256": "6a6068bf964b9b99a7b8cfba6b145792015da8043cbe052848638761a8812f6d",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_12_13_08/best-checkpoint-fold_3.ckpt",
+      "sha256": "592b262bf350623b185ddf2c9d5e974e3bf7daebdedf85e7dbd9de639c7fd4ae",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_12_13_08/best-checkpoint-fold_4.ckpt",
+      "sha256": "d3f4c2baa52f38bc84acd18605583003f797dd61ec5f5aa47eabc100e2659bfb",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_12_13_08/best-checkpoint-fold_5.ckpt",
+      "sha256": "1fa6939b2d2726894abbbfea69db240d82d41f3d46ef95da3aa1c0bb0d42925a",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_15_27_49/best-checkpoint-fold_1.ckpt",
+      "sha256": "5617a59353ac277af3226c45ec3b3c8c5236176a3dd4a90b1736902115bbe43d",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_15_27_49/best-checkpoint-fold_2.ckpt",
+      "sha256": "810e3f4b5ffeff4e1d9b4c1a3bd0d6f10b805d89c5d94128180f951433fd84c6",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_15_27_49/best-checkpoint-fold_3.ckpt",
+      "sha256": "d2f4003a25c93c9e7be6f1f858a4608801934c0e4c919a76c2ac9f43d56dd7ae",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_15_27_49/best-checkpoint-fold_4.ckpt",
+      "sha256": "d27bd1f8a2b22e0b9fcf3ee89fa7a9b96d9caf5f9785a930075ab99bf784daf9",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-14_15_27_49/best-checkpoint-fold_5.ckpt",
+      "sha256": "a81e6d1211a54bc6cf48055dfe69ff34dffb8225eb5dbdad7b87086916107454",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-15_19_38_44/best-checkpoint-fold_1.ckpt",
+      "sha256": "4aaed1d9e615675c66440c28624bcaf2a3e362738b01fa82bb8a0e57df18ac29",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-15_19_38_44/best-checkpoint-fold_2.ckpt",
+      "sha256": "8f11b343da7a6feb9e4e33709ba0ff0c00d61adf3753f5e9efa62a41dd12d254",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-15_19_38_44/best-checkpoint-fold_3.ckpt",
+      "sha256": "7cd23ae0974e8cb41d06a24dc6f6b9963dc5ddc6e255286e758784b4b1d37757",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-15_19_38_44/best-checkpoint-fold_4.ckpt",
+      "sha256": "9afd31fba44180c8effb8f475421ed70c588e155d0924cf08399cba3f8c557dc",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-15_19_38_44/best-checkpoint-fold_5.ckpt",
+      "sha256": "2adddf57afa30133002302994667bf9ba2a9937644ccc95875e8e2f1f4b5e521",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-16_15_09_39/best-checkpoint-fold_1.ckpt",
+      "sha256": "89187d30ba4e11e4ecb94fe29a9a3d212982ee8c60b7a3368e63f825989d559b",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-16_15_09_39/best-checkpoint-fold_2.ckpt",
+      "sha256": "f82e2612e1698213f165deda11572d7309e611c5ce65116eeff20cec2457f366",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-16_15_09_39/best-checkpoint-fold_3.ckpt",
+      "sha256": "7dbf174fc7b725d26bbdf06e335fbda42581c6e93c1da34e58d8838d88110688",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-16_15_09_39/best-checkpoint-fold_4.ckpt",
+      "sha256": "dcb4b60c20e7126823a341d65a2fb5f33487eed844de1a45f31539d21ce7422b",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-16_15_09_39/best-checkpoint-fold_5.ckpt",
+      "sha256": "831dec4388288eedb3958cc07d5937ce617fad57a327d40d01516f318d1c8ada",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_16_33_45/best-checkpoint-fold_1.ckpt",
+      "sha256": "bd29793b1a90aff07b1d643dd3b7c57c965797181fee0b522d691e0b2b8d2ea2",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_16_33_45/best-checkpoint-fold_2.ckpt",
+      "sha256": "a859860dc57918e1ce433f6f7e44ceced5cd536c9f8abee2a9718c870143334c",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_09_52/best-checkpoint-fold_1.ckpt",
+      "sha256": "cdce185b1131f30adfb3d7192340df4d68d4597e5323963c686f89e6b74a448d",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_09_52/best-checkpoint-fold_2.ckpt",
+      "sha256": "f0ed1bc50022740f4bbf5feb94909cfed686dbfc602b259fa6d8b9d0ae56ac9f",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_09_52/best-checkpoint-fold_3.ckpt",
+      "sha256": "e7f8e2c6fd52fff21e77363bfeeb74525dd388346601ebc812ebe912d667f8cb",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_09_52/best-checkpoint-fold_4.ckpt",
+      "sha256": "f20037d498b997a6c034a9939c3210696d3aadd6b92822abe53c6e00b9f334fe",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_09_52/best-checkpoint-fold_5.ckpt",
+      "sha256": "f5ea2f71f009573a0e17462e8e4dd54e8c0e8f03f86eb3c0e0cd1d2e7163e9a7",
+      "size_bytes": 798298
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_18_22/best-checkpoint-fold_1.ckpt",
+      "sha256": "413750408341f2dad97ef45a922e6430c38eede3f3da4087e51509545c06daff",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_18_22/best-checkpoint-fold_2.ckpt",
+      "sha256": "63283e9157a011f1f03616ee092cbe4d7ea056854ca16224289f463a2d381cf1",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_18_22/best-checkpoint-fold_3.ckpt",
+      "sha256": "d6c4d17595d41bef2203032e96cb092838bb7302f4058bc3e18ec2b54265fa7b",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_18_22/best-checkpoint-fold_4.ckpt",
+      "sha256": "bed30cfce2c5ba70a384ffd8d00a4fc570a92ed60db168acb83ed2a085405647",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_17_18_22/best-checkpoint-fold_5.ckpt",
+      "sha256": "81733160373086a3c72dd17ab657e32f0f60af7348463db09613acb0edfcde1a",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_23_46_39/best-checkpoint-fold_1.ckpt",
+      "sha256": "d942b3f0fc0f6f603ec18aa3de9c0d8f1b33ee2ca9a6e50cbe81015e09f2ebb5",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_23_46_39/best-checkpoint-fold_2.ckpt",
+      "sha256": "2283b2dd8bc53257d702b5602db151c690aa28b87606ca2630876939dc6abb0c",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_23_46_39/best-checkpoint-fold_3.ckpt",
+      "sha256": "181343067eb16aff402fb1459873228fcc507c8a67cce94ea303800ef4e80394",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_23_46_39/best-checkpoint-fold_4.ckpt",
+      "sha256": "b60fe66a709b400d2ff306a6cc6c241052fd557c6795e9e098def7e521a3cd14",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-20_23_46_39/best-checkpoint-fold_5.ckpt",
+      "sha256": "5a27443156db54b7d97037a4e174545d4f5f017e3d0ecdf336462c87ee7fec74",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-21_18_22_48/best-checkpoint-fold_1.ckpt",
+      "sha256": "f2ac31b98b04f0cac294363a4b7972ec01455f6fe62d0482a4fc95504b3a7d02",
+      "size_bytes": 797786
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-23_13_14_42/best-checkpoint-fold_1.ckpt",
+      "sha256": "c9a0fa16364449ea415f4f958282d187ef7d5f3eff5623bb5d518022f4170d03",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-23_13_14_42/best-checkpoint-fold_2.ckpt",
+      "sha256": "277fed40a2f03694b1bb755434d631efcf2f97c6623c6842e13ca2e861978390",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-23_13_14_42/best-checkpoint-fold_3.ckpt",
+      "sha256": "fdfc9471cb7f12907c1ca2b916ad10892a013c183101fedf1924686ddd19438c",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-23_13_14_42/best-checkpoint-fold_4.ckpt",
+      "sha256": "ce8a1313874cc16c268c6e2ddd7cf27f283262c867f41dbef15448275b571019",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-23_13_14_42/best-checkpoint-fold_5.ckpt",
+      "sha256": "273b8de03708c29506882ad397c904c3b7136404606125aab47241794c1017f0",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-27_11_41_06/best-checkpoint-fold_1.ckpt",
+      "sha256": "c00bb9911ee7ee163cdc1b44546adc3052fa6b5a41120c73f296b2c08bfd334f",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-27_11_41_06/best-checkpoint-fold_2.ckpt",
+      "sha256": "c6a61d17f0f30e7f76980e65c328ab956540bb320c0062a90a9276f46a529227",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-27_11_41_06/best-checkpoint-fold_3.ckpt",
+      "sha256": "a902cdda821907badebb91af2deb8ee3a74b6632d4c171d8da50ce6eab8f57f5",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-27_11_41_06/best-checkpoint-fold_4.ckpt",
+      "sha256": "48c20320239675b4aaadb5f3f03530ed30a8c9ad4bef70bcdc8bbb982543be38",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-27_11_41_06/best-checkpoint-fold_5.ckpt",
+      "sha256": "cf5c1bdc95ab0255a969fbcc51ad9ce9fc29a128de4cc7485e36160af9e829fb",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-28_00_09_57/best-checkpoint-fold_1-v1.ckpt",
+      "sha256": "b44eef34a9097500ba9dc7f7406a44705140426fdaf2e0e3c7abc0fa3cf424be",
+      "size_bytes": 340938
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-28_00_09_57/best-checkpoint-fold_1.ckpt",
+      "sha256": "ed65cd7ef5826bde2e54fba0861ccf39fa6d99e3d3947db6ea55684ed9c6f1db",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-28_00_09_57/best-checkpoint-fold_2.ckpt",
+      "sha256": "e00c89ce4fe2220b5d2a832a21b0fbbd91f39ae94b756104ee102e6e15a00e71",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-28_00_09_57/best-checkpoint-fold_3.ckpt",
+      "sha256": "89eb904e6b885810525a9792335386456c81b6bb5d1b92bf1f0c11a5a6bc7b94",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-28_00_09_57/best-checkpoint-fold_4.ckpt",
+      "sha256": "ff64464d7454d49257d38876a4bf6a31c296888a8e5e58cc04c2801e8a516053",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-28_00_09_57/best-checkpoint-fold_5.ckpt",
+      "sha256": "1e5d4eb450a6136c3d98a5e50d2bd2ebceacd7b8f2da1a96595aad5707ef1dee",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-03_10_46_58/best-checkpoint-fold_1.ckpt",
+      "sha256": "64c71ba842e328cd862d6bde229ae508288a7f7a56815ab64150af6d50f1717d",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-03_10_46_58/best-checkpoint-fold_2.ckpt",
+      "sha256": "be0f1f1413eb5d014ec20a49712b3e0639763e214b8d0307edf7cd977c08b1d4",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-03_10_46_58/best-checkpoint-fold_3.ckpt",
+      "sha256": "f45a9fedd3cd6285269bbbb9f44d846baea6771f3adc57ce829c623573031721",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-03_10_46_58/best-checkpoint-fold_4.ckpt",
+      "sha256": "37ae0949a41f5e28630e97fce75c977a8270f1f9c7adc86cb49ea59f8de40ad7",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-03_10_46_58/best-checkpoint-fold_5.ckpt",
+      "sha256": "66f1ab72e896470f1633f19a409e420f6de58b2612ff6c9f2a4955560d7b393f",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-03_12_00_35/best-checkpoint-fold_1.ckpt",
+      "sha256": "544d73cfd98fffdeec295e8b78bbc44e64f295c780f45446804997c91d3ace49",
+      "size_bytes": 340810
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-03_12_06_58/best-checkpoint-fold_1.ckpt",
+      "sha256": "bdc7af400d24ad08c5d7231ab8ac408993f8086f72f98867af0268997c7ce714",
+      "size_bytes": 340810
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_10_09_54/best-checkpoint-fold_1.ckpt",
+      "sha256": "79efde74a77b6f0286b81bed6909402a01b7377e9f4c5b3bd60dc45b0674b8ad",
+      "size_bytes": 380762
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_10_09_54/best-checkpoint-fold_2.ckpt",
+      "sha256": "4cc10711366502ac66a61a560a3aa99f2879f3b6c2cc9d2c1d198ac615eb99ad",
+      "size_bytes": 380762
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_10_09_54/best-checkpoint-fold_3.ckpt",
+      "sha256": "4bd30078e4beeabcfa6989254d0e81341758e2393d336dca83936b8e46eb3dcf",
+      "size_bytes": 380762
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_10_09_54/best-checkpoint-fold_4.ckpt",
+      "sha256": "976183135aba395755f9435733cd6af9b28bc27c3dd0faf53f438d63e7d53fdd",
+      "size_bytes": 380762
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_10_09_54/best-checkpoint-fold_5.ckpt",
+      "sha256": "63ea27dd81f0c89688d61c098332ab91a82514791645ded2e7addf8b9acc4968",
+      "size_bytes": 380762
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/best-checkpoint-fold_1.ckpt",
+      "sha256": "75377e941ba5c66272b52c3a5f9a4c732f9c90e67c640b198850b9bab9b43874",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/best-checkpoint-fold_2.ckpt",
+      "sha256": "fbf77ad437201dd5445e5024e5b4e52126ad28fbf98b5ef3e1e6d78c72c1286a",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/best-checkpoint-fold_3.ckpt",
+      "sha256": "fa3cea0e9324717bf324c8bd43abfd6ed1361eceba504b9cc16d7a6c03e62e06",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/best-checkpoint-fold_4.ckpt",
+      "sha256": "2d16aa6d137b2b94faac7862d45568eeb7f2c456950b21b1a85c273feef861f7",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/best-checkpoint-fold_5.ckpt",
+      "sha256": "726f7cee3d9357f2e41213d37bca149922bd9f2400a771af7941f15a87fc4b23",
+      "size_bytes": 340874
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/quantized-fold_1.ckpt",
+      "sha256": "a423b8a9b973adb32b9f91bef5cdf953af5f6a796034449d3ab5b252de655898",
+      "size_bytes": 34098
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/quantized-fold_2.ckpt",
+      "sha256": "c6560ac4a3a1c2feb5a2aeefaa4034c53c6d7e570f1c9083e498e17996089131",
+      "size_bytes": 34098
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/quantized-fold_3.ckpt",
+      "sha256": "f4e3a779818dce94085f35b0e7cbcb3b960da1ebae6ac33b71168d07aa66167b",
+      "size_bytes": 34098
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/quantized-fold_4.ckpt",
+      "sha256": "8abb44600ae9aa8411ef4b3da93d4ba2415d9497018a31bfa854962dbd408212",
+      "size_bytes": 34098
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-05_11_34_18/quantized-fold_5.ckpt",
+      "sha256": "fc35abc9b3aec48868e4c502100d538f86f5cc339b19fd68e6231592c3cef80e",
+      "size_bytes": 34098
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-13_11_33_25/best-checkpoint.ckpt",
+      "sha256": "d9b60a27ddbde40ac2a8fe80f1ffe039285d7a0eb044e8d55d7b3f72b2f51d2a",
+      "size_bytes": 590861
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-13_12_37_39/best-checkpoint.ckpt",
+      "sha256": "c91b7540434d2bc7717093cc27d8146349377ab257c102b867527935f62e5934",
+      "size_bytes": 590797
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_15_55_19/best-checkpoint.ckpt",
+      "sha256": "8a805208d9c8af9049c722020ad3c08b6ecff8f6b1c60ed76b3c972593195a2b",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_16_26_33/best-checkpoint.ckpt",
+      "sha256": "9845f4d0868de7c2691dc673d913238d0f02d08964fa31f27bbafbb7740107a2",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_22_43_44/best-checkpoint.ckpt",
+      "sha256": "a942134790caa5e62613939a7b677ba44e917251e2de5d71099a48b02134569d",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_22_56_41/best-checkpoint.ckpt",
+      "sha256": "c286a5bb4aab5a8c25f725963c5d08ae71be8836984636ab2d0bea1fa7414126",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_22_59_36/best-checkpoint.ckpt",
+      "sha256": "fa28d9efddbd0aeebd435b12cae52e8607e460af8be09d9d95dfc5e2e18cd2c6",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2024-12-18_21_19_49/best-checkpoint-fold_1.ckpt",
+      "sha256": "2d4cd80f7685f1e2eecfb4b58d99b6506fb83155474191bbc0b013c7c9274e60",
+      "size_bytes": 995546
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_10_08_41/best-checkpoint-fold_1.ckpt",
+      "sha256": "42451dad6e68dcbc82fe721840c85d7f84b507bcabdc425cae7d3aed1e869561",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_10_08_41/best-checkpoint-fold_2.ckpt",
+      "sha256": "713d9429e35352fbe31802cc387f90ba73eb075133133042d3c30387b630df08",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-09_10_08_41/best-checkpoint-fold_3.ckpt",
+      "sha256": "a12935900dd30e8b0587d2ddaaaae7ca3b811b6178c6197e91dde54e726bd700",
+      "size_bytes": 996186
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-21_09_22_45/best-checkpoint-fold_1.ckpt",
+      "sha256": "997b2cc5ae7ce9340c33ef853afe7be42c046c2c4b78a8e66bb4cbdd6856e979",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-21_09_22_45/best-checkpoint-fold_2.ckpt",
+      "sha256": "af4aaefa0fa8b142e7e02ed6777785cbbe1e670074f1de75aff45144a7a7ed2f",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-21_09_22_45/best-checkpoint-fold_3.ckpt",
+      "sha256": "bc21fd7071508ae16c3ee7832eef9b18e855d56c8263a189471337388e062fa7",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-21_09_22_45/best-checkpoint-fold_4.ckpt",
+      "sha256": "a43ec47dc3bbbf6e52828c021ddd1107b1b4a55fd2df620d316932e732d0e84c",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-01-21_09_22_45/best-checkpoint-fold_5.ckpt",
+      "sha256": "1d25ebd110ee6fd9648ebe4aabd867fd13ffbeda7433131f6316b0fa7546680a",
+      "size_bytes": 798362
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_04_01/best-checkpoint-fold_1.ckpt",
+      "sha256": "eec91177bbd49fe392b86a09ce2b453d940086bfec15f8362f2bea13cf555a27",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_04_01/best-checkpoint-fold_2.ckpt",
+      "sha256": "7c15f6451fc5d5227639d369d0bde89df6300ecbf3d2716d42e999774b0d4509",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_04_01/best-checkpoint-fold_3.ckpt",
+      "sha256": "f3dd763560f94e97c4fc6c28defec70aa2576dd5ce1a66e9ce39228c71b56202",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_04_01/best-checkpoint-fold_4.ckpt",
+      "sha256": "b58694d6a7f63d2ddbc7f83975847cf9299c82d2febf37c980862b70e868b5dc",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_04_01/best-checkpoint-fold_5.ckpt",
+      "sha256": "8716cd3414cf98bc5778f71bfdf31bd1abc70d64aa7810d5b230a2d84b28ad02",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_15_56_26/best-checkpoint-fold_1.ckpt",
+      "sha256": "0bef35eb802997b64ee2e2401d743885f187685dd6dbd63ad75ac7389049dae5",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_15_56_26/best-checkpoint-fold_2.ckpt",
+      "sha256": "70580e417fe6ce84f7ab68063d4ca75337da3998635cea35650ce88f27deb145",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_15_56_26/best-checkpoint-fold_3.ckpt",
+      "sha256": "39ae7d8d4e8adf55d1d0780739da6340a23aa6104e0712a7108291697e1abd09",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_15_56_26/best-checkpoint-fold_4.ckpt",
+      "sha256": "60eaf57b58460647c21a9ae6f74be33c43545b5bda452730dfb85de7ef4bd4ee",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_15_56_26/best-checkpoint-fold_5.ckpt",
+      "sha256": "799f9c2ffcffce9b135c4b6effd832147a053903b634cb785479ec4151d14306",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_20_53_39/best-checkpoint.ckpt",
+      "sha256": "d17d3a7748cdc4f381a3ac312bf215b4591286f58067c6f3f29f29806746ea56",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_14_26_11/best-checkpoint.ckpt",
+      "sha256": "865dbfc938c1b131ac5da84662388a7ed9d5c1bf8deff14a025cc6c9853dd0de",
+      "size_bytes": 337470
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_05_23/best-checkpoint-fold_1.ckpt",
+      "sha256": "30d70a87640caab86278941d08b286f973673bcef2edc30b00bc08747aacaa85",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_05_23/best-checkpoint-fold_2.ckpt",
+      "sha256": "db496c496cf47f9ee89bf6bb81a49c53cda41672a6491678ed5b4d5eee585602",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_05_23/best-checkpoint-fold_3.ckpt",
+      "sha256": "e36668257c799875abd195b08061e954a9ff59736c14a5dbc49304a9a8697d21",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_05_23/best-checkpoint-fold_4.ckpt",
+      "sha256": "14f4fa48625799feded75e4589e941ba01fb62b979757d01c58855b97f0e4f45",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_05_23/best-checkpoint-fold_5.ckpt",
+      "sha256": "cbea837832bc42830429b6cbc145ad749699268defae99bf361e45cda0a104da",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_07_23/best-checkpoint-fold_1.ckpt",
+      "sha256": "a1e4baf75c157de17e2395133e1c19b2033543161ccfa7cebe69277d7e55068c",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_07_23/best-checkpoint-fold_2.ckpt",
+      "sha256": "e4a5297402af7b6e0e7fabd48d7efcbd0c591177b9ec3e198b7331adf5c62db0",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_07_23/best-checkpoint-fold_3.ckpt",
+      "sha256": "81c4db64333a79aeb88b5335e939d39d28effb024c3ec3cd71d8ec3af5aeb18d",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_07_23/best-checkpoint-fold_4.ckpt",
+      "sha256": "b289f0a49bac35124b315e5107ea9204080fdb8c37e76eaaacc1d4c0fc20fe04",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-24_23_07_23/best-checkpoint-fold_5.ckpt",
+      "sha256": "9002c0e8ef1630ea2dbcfe7cba49afaeb7fe498ea0d18d161166c0e01f52cdf2",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_00_55_29/best-checkpoint.ckpt",
+      "sha256": "f3b800a204365fdbcb80507f0b64554813468bcb10f8d5f41afaf42a9ca477f5",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_10_00_00/best-checkpoint.ckpt",
+      "sha256": "c4455f0a97cccb7ec75102b7e37a6f67c25a1081300599cd58e3b2bfb5c5120d",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_10_16_06/best-checkpoint.ckpt",
+      "sha256": "483dce3db5905c1d8f42936e0b823fac47e4635f02daa8f12260b9fb8af1d8b9",
+      "size_bytes": 586442
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_12_02_19/best-checkpoint.ckpt",
+      "sha256": "288b3228a0fc9078081f3b7288f48fc724a68555aafea2b30fb5ee3f01a29eeb",
+      "size_bytes": 335821
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_17_53_40/best-checkpoint.ckpt",
+      "sha256": "d5c46ced2e70a724b09181203a0f4f02ec7bda2828e314086b68aa631abc4dec",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_17_57_09/best-checkpoint.ckpt",
+      "sha256": "7c68f4f367f453bc1f3b75cb83ffc1f9f980cdc5afd27bb625287adcf95c9adc",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_18_04_54/best-checkpoint.ckpt",
+      "sha256": "02ada0ab3c9b1e527752ac53219915755708998a69eadc2d9e906593492d6cff",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_18_31_04/best-checkpoint.ckpt",
+      "sha256": "f5f1fb8226dc73ac2d77c67305af6a179311ba487f0d58f9cec82b1ad8f1da2e",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-25_20_31_01/best-checkpoint.ckpt",
+      "sha256": "155e06cbdf50c3fd97e9bd4f8460a34470651721fe6f62e3f997b6d3a90d4439",
+      "size_bytes": 586189
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-26_10_50_49/best-checkpoint.ckpt",
+      "sha256": "f997b923214a326815a212adaf656a04f715ed89fed05a9a98eb7c312d8cbeba",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-26_10_56_42/best-checkpoint.ckpt",
+      "sha256": "6567beb4afd139d7348c7b88e15d25fcea980b2d6733d2ceaeaa911c0bc07608",
+      "size_bytes": 592346
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-26_14_52_30/best-checkpoint.ckpt",
+      "sha256": "69ae31882871c0e7ff8227739b512b357ed6a6af9700485a8765a1efe957998a",
+      "size_bytes": 3021962
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_20_17/best-checkpoint-fold_1.ckpt",
+      "sha256": "fc5ec68100c2e804d746405a89e49fc7730bf49b0fe965eddfd5cf86d7a43d14",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_20_17/best-checkpoint-fold_2.ckpt",
+      "sha256": "ece9045389bcb593e0abe2acbfeaa9be8e48e605d2b290db18556789b5d4aa2e",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_20_17/best-checkpoint-fold_3.ckpt",
+      "sha256": "e842dceeec8ed583a9d8fcb4077fd338ea3304149885a94a0e42a7f8ba5edca5",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_20_17/best-checkpoint-fold_4.ckpt",
+      "sha256": "2abe89b8c914bdc3b6ea25a6f1e5a6f31340f8b4a914ef66dee744ceff6a7a55",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_20_17/best-checkpoint-fold_5.ckpt",
+      "sha256": "882ae4919d9a34c4dde3665da8e5893322e069eea86e6b97a24735897edbb36f",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_26_10/best-checkpoint-fold_1.ckpt",
+      "sha256": "c64f44ccacceeaccc14195f74602c3ea884df92c84b8bf8a768f0e44f1ac1356",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_26_10/best-checkpoint-fold_2.ckpt",
+      "sha256": "69ffc62559bb0e44d8f7416b4eaea568da0083f113507d5515e1882c5bdfbe7f",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_26_10/best-checkpoint-fold_3.ckpt",
+      "sha256": "a3ed22543fb5081eec8d24dc67ccfd828ffd3dc614bc24df57c7e560a77a15a6",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_26_10/best-checkpoint-fold_4.ckpt",
+      "sha256": "32aa73a0bb033c5efb347f7cf656bda59fa12991cfb56890c477b380e6c6a74a",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_12_26_10/best-checkpoint-fold_5.ckpt",
+      "sha256": "127ef7ffe8469d6ba0788d913c4627cdfaeab368202884acd2c6f24207e90f73",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_16_25_45/best-checkpoint-fold_1.ckpt",
+      "sha256": "ee9108a79fe846973ba8c37b59b7eafd89a04726ad82988138ab6c20d541566a",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_16_27_34/best-checkpoint-fold_1.ckpt",
+      "sha256": "c01190495bfb56e78b04b06dfe41ef7cbbf54fd1e6f2b848d3708cc32999f029",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-27_16_29_31/best-checkpoint-fold_1.ckpt",
+      "sha256": "e626e2b8f346d8c73c949afbd51b8401cf7b39a4e9c9b10216274665a1a60c15",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-02-28_19_18_45/best-checkpoint-fold_1.ckpt",
+      "sha256": "1c6db77b274979b43f48ddfc017300bb0323cd31652c1b98bddb4a5f60dd8c8d",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_17_28_20/best-checkpoint-fold_1.ckpt",
+      "sha256": "6b4a1bcbcd0ee9e2843ea6c347e77e1b819d66d39439d243a71fc996aa04f102",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_17_31_15/best-checkpoint-fold_1.ckpt",
+      "sha256": "32edfd0340e1e09824d9ba8d60f2c3c9dd32121c85fc3b52252dcda5877209d1",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_17_31_15/best-checkpoint-fold_2.ckpt",
+      "sha256": "2ed0c4aee9219d8c49a33a3775424a31ac1157cfddb14c41b943a5808193dcc1",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_17_31_15/best-checkpoint-fold_3.ckpt",
+      "sha256": "398e6cf0498325f0965a41c97500a67dc34db559823b0965104a439f9c02865f",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_17_31_15/best-checkpoint-fold_4.ckpt",
+      "sha256": "aab3d709e57a059ed52f9bb5295949ecc47f963e0ffabcfc4adfe53328b9c314",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_17_31_15/best-checkpoint-fold_5.ckpt",
+      "sha256": "6f22ce4a83cab1489d44f8d32d750b21037fd1a934d1ba6221d6acfc4a9b02c6",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_21_21_07/best-checkpoint-fold_1.ckpt",
+      "sha256": "b97aca5c7e56032afea7d36e443baa1c67fa0becdd60d1348946298a3a8128db",
+      "size_bytes": 586570
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_21_21_07/best-checkpoint-fold_2.ckpt",
+      "sha256": "2028ee5f0beb24b7b07260b866d63fbecf1e43c02cff970c2e811c558eb50bb5",
+      "size_bytes": 586570
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_21_21_07/best-checkpoint-fold_3.ckpt",
+      "sha256": "ccb0b1e8d63d2a449d3ed73f369e58bd09b113a0f53b54ebd607f4ce8a9e8ac2",
+      "size_bytes": 586570
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_21_21_07/best-checkpoint-fold_4.ckpt",
+      "sha256": "95d8fa9f0fcf3b073ed052c9bdd2a2a902f09f2d1991906631becf54a6d904a0",
+      "size_bytes": 586570
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-02_21_21_07/best-checkpoint-fold_5.ckpt",
+      "sha256": "314431ed3f61380bbeaf9956ced3326b5618f49cbda148cbc9ca799896054a96",
+      "size_bytes": 586570
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_10_01_26/best-checkpoint.ckpt",
+      "sha256": "41957d66b4305e067753adfeaa59041b8c17ed302301080445719a1db5c3e531",
+      "size_bytes": 586570
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_10_01_51/best-checkpoint.ckpt",
+      "sha256": "bc36f06cc429fad1f4c1a247e224fccdf7072249c1fd243fd8a51e62f10c1c3b",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_10_35_03/best-checkpoint.ckpt",
+      "sha256": "fc0acd7548863d4a807c2136a7921104e59c12306c68402554560712be9f92d5",
+      "size_bytes": 586570
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_14_31_35/best-checkpoint.ckpt",
+      "sha256": "54ec4298806940b362963c5059a2c34ed2f2a1629b33eaf35bddd390ff95070a",
+      "size_bytes": 586570
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_14_32_19/best-checkpoint.ckpt",
+      "sha256": "5c183a0a1bbe9af653f585a1b4d8089df17ab270d9d44c2162af015428df96ac",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_14_40_38/best-checkpoint.ckpt",
+      "sha256": "00d00a479d52a01035e556ec211e779b4f70ba2f100e3dc6d3f742426765160d",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_14_52_44/best-checkpoint.ckpt",
+      "sha256": "cd33903ef801b8e23dd8591c04d4710ab473760b99a092d48d8ac476e6797582",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_16_06_42/best-checkpoint.ckpt",
+      "sha256": "ac66ac0fb6abb0f959959fca2b16f32a24cee34e43602eab7e7ba2ea1b2d189d",
+      "size_bytes": 336266
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_20_51_59/best-checkpoint.ckpt",
+      "sha256": "d16b075499187d643a49464a5ff268dcb8e504b108bd787d7f1a741c8fa96379",
+      "size_bytes": 336202
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_20_55_52/best-checkpoint.ckpt",
+      "sha256": "fb3314ee36734c8643528c9f5942cee0228113900e7e678d1bb3c55dd854a97c",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_20_58_25/best-checkpoint.ckpt",
+      "sha256": "adf2cdcfcad6380807a86dd28ea49c7f95dde29d8bb1e0adce6746e534496bef",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_21_51_36/best-checkpoint-fold_1.ckpt",
+      "sha256": "067f62214a0cea31c1b312a6796258e14460989c43e18c5301d491a5e9840c6c",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_21_51_36/best-checkpoint-fold_2.ckpt",
+      "sha256": "fb637e9de1d900075cb2ddf5b2554ba52ba4a51560ba3c488b820755c5061c48",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_21_51_36/best-checkpoint-fold_3.ckpt",
+      "sha256": "f63ce28c96f346bd4c62418ea4efa0f8d65be633737164436557f28d52d0006e",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_21_51_36/best-checkpoint-fold_4.ckpt",
+      "sha256": "e3146c48100d3f4be18dd52aacfd29e0f63c3007e04c84bd1049829de379fe8c",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-03_21_51_36/best-checkpoint-fold_5.ckpt",
+      "sha256": "55234f37b730433b8e04c572999029a7153b3ec6f29f1fc44ada1a2c9e090a2c",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_08_20_04/best-checkpoint.ckpt",
+      "sha256": "4cc978af9f26dfb33f01207009e4a9286cc7c13bd6707d90568e9d2424b52975",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_15_35_27/best-checkpoint-fold_1.ckpt",
+      "sha256": "15f58107f78b64efa8187b93e4374d6fa93f81fb9653027e8865157383addc7a",
+      "size_bytes": 741450
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_15_35_45/best-checkpoint.ckpt",
+      "sha256": "c748b3172d226344d18d354a05b98db7df489fcafdb8ec92d16aa3713510e042",
+      "size_bytes": 741450
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_16_05_26/best-checkpoint.ckpt",
+      "sha256": "4c65b7d822e32c9d28543c7e00f11c9cf486e4c4601759693abbe9dce2f347a7",
+      "size_bytes": 741514
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_16_05_53/best-checkpoint-fold_1.ckpt",
+      "sha256": "fcbbcef3a01b7138ce396037c45b6396393424bb923c52653543709ded0bc0b6",
+      "size_bytes": 741514
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_16_05_53/best-checkpoint-fold_2.ckpt",
+      "sha256": "c51763f26d53f1797c0b92f2de797ea499b876c54e5d2d547a9941f9d0a9e8a3",
+      "size_bytes": 741514
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_16_05_53/best-checkpoint-fold_3.ckpt",
+      "sha256": "4d2878c797235b5e16dd87943ce984779807f59d22e840e5522ad8b1e3cb10bc",
+      "size_bytes": 741514
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_16_05_53/best-checkpoint-fold_4.ckpt",
+      "sha256": "4c8e22892a6b2bcbcdb33fbeeee4cd08d0e44319eaf25e877d28f9971f78c662",
+      "size_bytes": 741514
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-04_16_05_53/best-checkpoint-fold_5.ckpt",
+      "sha256": "d053feae112fe412fe38d2b032a52a6a20bac107731591e144dfdcb58c905a25",
+      "size_bytes": 741514
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-25_09_40_18/best-checkpoint-fold_1.ckpt",
+      "sha256": "52a67bda549aaa5db17eed9a8ab1d99b055536855d1f4db127e1a4b682c29fc3",
+      "size_bytes": 336266
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-25_09_40_18/best-checkpoint-fold_2.ckpt",
+      "sha256": "a2988274e8ff09a769e8543d5c1a464719d7a5d28276c71f5a60cc0d17f88d59",
+      "size_bytes": 336266
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-25_09_40_18/best-checkpoint-fold_3.ckpt",
+      "sha256": "2c488f55783cf7a203488772682134d18ee7e6a0320aab39209903837e4960e0",
+      "size_bytes": 336266
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-25_09_40_18/best-checkpoint-fold_4.ckpt",
+      "sha256": "b1d5cdd2ee2d906fcf5da146c7d69d362b71304a9e8305d6436d6d93752ed14b",
+      "size_bytes": 336266
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-03-25_09_40_18/best-checkpoint-fold_5.ckpt",
+      "sha256": "a2f9be82e988a94319e641cb7fdc7b69c962121142caec6a2984135a73ed2130",
+      "size_bytes": 336266
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-06_15_33_38/best-checkpoint.ckpt",
+      "sha256": "10b3109294c389ee008347df15c528c096ab39c43cf7f9d17e03bdbe69b23e5c",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-06_15_58_53/best-checkpoint.ckpt",
+      "sha256": "9c3608153ed8ed4674d47f008be6005aa17123db325e7c3de6a3ec0c74c3bfb7",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-06_16_23_26/best-checkpoint.ckpt",
+      "sha256": "2333d7482d419be03a44167dbdd6691174e5bceacdb715683c0620d47acd34e4",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-06_17_29_03/best-checkpoint.ckpt",
+      "sha256": "5bb04bc56f340137b7d5f47c1b78c3c82878ab069337f9f8d77e2b7298757aca",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-07_00_40_20/best-checkpoint.ckpt",
+      "sha256": "4120d61faabe58fa3833e578d00e6d1483c66df7cbf4c337b4cd36a4f6199d55",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-07_08_53_02/best-checkpoint.ckpt",
+      "sha256": "539a8f9f4edfd14eebde1c013311de8a0e3dc6c864c440e8ea3ad663fe91e089",
+      "size_bytes": 586823
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_13_51_05/best-checkpoint.ckpt",
+      "sha256": "74ff1301b96a6a1ccf1df7eb219efab6b7bebb5573849c34b14aa5b1757c25ed",
+      "size_bytes": 337659
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_15_17_38/best-checkpoint.ckpt",
+      "sha256": "f68dbce3aeca38dd53363a3934f84804636cb00768ec11dae7266cee8ab90633",
+      "size_bytes": 337406
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_16_19_36/best-checkpoint.ckpt",
+      "sha256": "320f558d0111720ebabca05f933cb9b6e49e0f971cc080f9c986bb859755ef20",
+      "size_bytes": 337406
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_16_26_37/best-checkpoint.ckpt",
+      "sha256": "a83275d0909e0902f6c829ace6a4d6c00e6a23c7d10d582a7cfee99d8f8463ba",
+      "size_bytes": 337406
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_16_40_07/best-checkpoint.ckpt",
+      "sha256": "a5f0e28fcaa7172c9ff78838373d36f71707b80ec368a003bee621175f02d2d1",
+      "size_bytes": 337406
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_17_19_59/best-checkpoint.ckpt",
+      "sha256": "1abc1467931a4fb5e20eb4aacd52d603dc18b7eeba2fe9898ee2d870eeb57b34",
+      "size_bytes": 337470
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_17_30_11/best-checkpoint.ckpt",
+      "sha256": "d0ca15c79aba78863570bdf5185975b210fa937d78de8edfb18e836cb43e4ba0",
+      "size_bytes": 345934
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-09_17_41_33/best-checkpoint.ckpt",
+      "sha256": "023ed696956c2d3adc545f92b8862b52736652e40918a4bdf11c36dfff418ea7",
+      "size_bytes": 345934
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-10_09_30_10/best-checkpoint.ckpt",
+      "sha256": "b6e3611ac60804c8aec300ef29389d95dc060ad6adeeaad45ddaa360015c9347",
+      "size_bytes": 345934
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-10_17_30_24/best-checkpoint.ckpt",
+      "sha256": "53149705a134c9e8d34104008c1dfe149ea9c9acdd70855fcdb7536ee6fd13b0",
+      "size_bytes": 351842
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-10_18_06_38/best-checkpoint.ckpt",
+      "sha256": "47fa48028911a517ebfeb23a0a4bd66ffef4cea8b9283a155ed5974b1a231c19",
+      "size_bytes": 404498
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-10_18_13_19/best-checkpoint-fold_1.ckpt",
+      "sha256": "d8854a0bd57321656d04c583ca8181bdb86e927308c2d945a305e8b180719919",
+      "size_bytes": 404434
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-10_18_13_19/best-checkpoint-fold_2.ckpt",
+      "sha256": "6b4e4310625af5ebff8d951ac501b6d26701fcc0fec42b04610862933f8092ea",
+      "size_bytes": 404434
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-10_18_13_19/best-checkpoint-fold_3.ckpt",
+      "sha256": "db08ddafad20be88e6b0266978bf268f928489d7bbdd18e3266fcec5a404ca56",
+      "size_bytes": 404434
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-10_18_13_19/best-checkpoint-fold_4.ckpt",
+      "sha256": "96a13eba8bb664c8dec1b248e00e757953d58c5ef235ede24fa41d098391545b",
+      "size_bytes": 404434
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-06-10_18_13_19/best-checkpoint-fold_5.ckpt",
+      "sha256": "73a313402f5e1d55a49616f341cdee5ffec9b9e8733a71fae3603413846283c2",
+      "size_bytes": 404434
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-07-11_11_29_25/best-checkpoint.ckpt",
+      "sha256": "6525ca9cca7d4126ca063d75a70bee1e7bf49fce77e2b18e28371f23ece42efb",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-07-11_11_41_57/best-checkpoint.ckpt",
+      "sha256": "a1989b1bc5ced8c784085b327539704acb36c080fe4cf77ba02957f1dee2aa19",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-07-11_11_52_48/best-checkpoint.ckpt",
+      "sha256": "e96ca281025317a1f9e19d2986770ea33415b02acab8968ca6257d908f6ad18c",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-11-26_03_39_47/best-checkpoint.ckpt",
+      "sha256": "76033dbc0ff5f0710437b96e236f0cc9eaa4c3c31330f99984e2b34e19887024",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/2025-11-26_03_41_21/best-checkpoint.ckpt",
+      "sha256": "72f58d2344e4d7af5768dcfa1aca293f5506eec2f09335a6409bf8f6a5d2cc3d",
+      "size_bytes": 586634
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_1-v1.ckpt",
+      "sha256": "e75a8bba9eac67cb172e511be9dece6bf0f8f390413ab5143ca601510fe30f4b",
+      "size_bytes": 340938
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_1-v2.ckpt",
+      "sha256": "0a256547dbca3e020bcadea759ece2f827a6a2e2425196cc0aa8d5513b5fa00d",
+      "size_bytes": 340938
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_1-v3.ckpt",
+      "sha256": "36ed6a9dcd062d017948569584cdb35404f54a7bb7d385a00778093553a976ad",
+      "size_bytes": 341002
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_1-v4.ckpt",
+      "sha256": "e6c29f992ce39239a6e999ce390a60224553a324eccc005a92174abbeeeae843",
+      "size_bytes": 340938
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_1-v5.ckpt",
+      "sha256": "3bf79f0b3006d6ef434bcb234d6634e7ba9d5911bbb0c5fd125a2b1b6ed1ac74",
+      "size_bytes": 341002
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_1-v6.ckpt",
+      "sha256": "1df6984c2b0628adb42ae493be1cc0ed2eee2fd8c331d7f70f70dbf37e42803e",
+      "size_bytes": 341002
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_1.ckpt",
+      "sha256": "be35437ead815b7cf7dff564f843dfe455fb2134753e4259070123d3da71784f",
+      "size_bytes": 340938
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_2-v1.ckpt",
+      "sha256": "0176f6cd1fca1fe47d1f43967077152daa6bf9c39881ffeda2f88c4ffaa5dd5b",
+      "size_bytes": 341002
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_2.ckpt",
+      "sha256": "714c76950c6a85411d348d7fb0cd645d178ea23544ff50123832e812db59b9e0",
+      "size_bytes": 340938
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/300ms/RL_2025-01-28_00_09_57/best-checkpoint-fold_3.ckpt",
+      "sha256": "21e5053c6fa30b803cd119d6937c847e3469be69ae6abc6a42d3912e1573b4fc",
+      "size_bytes": 340938
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNAttention/300ms/2025-07-02_11_53_20/best-checkpoint.ckpt",
+      "sha256": "52689cbd71781b0f64ed535ca6ac1ebf9c70ced76bbde1077461a7f7de20bc14",
+      "size_bytes": 6194422
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNAttention/300ms/2025-11-25_03_22_37/best-checkpoint.ckpt",
+      "sha256": "4f6d68e932ffd08227f2c46ae8817d0e6bbc7900f1126730a4868b3698b50882",
+      "size_bytes": 6194422
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNAttention/300ms/2025-11-25_03_24_22/best-checkpoint.ckpt",
+      "sha256": "ba45124a04037181bd62d249258100249cfc44aed82079153d9d199ded74ad7d",
+      "size_bytes": 6194422
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2024-12-18_18_50_56/best-checkpoint.ckpt",
+      "sha256": "7d04fd2c7258ab0a74509447cb101f1909e661ffa94e7d5b7001a8df1e0a13c6",
+      "size_bytes": 979101
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2024-12-18_18_57_16/best-checkpoint.ckpt",
+      "sha256": "ab422292e0fde577fbbe3a01b091384f13118d0bca08ef6125d6fc84589f1eaf",
+      "size_bytes": 979101
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-01-08_17_27_47/best-checkpoint-fold_1.ckpt",
+      "sha256": "f035c48cee3f12d29d1418ad64d32881e08f2bf88b6107aabd10334037c3f071",
+      "size_bytes": 979482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-01-08_17_27_47/best-checkpoint-fold_2.ckpt",
+      "sha256": "8289a4e018e806079665095ae158f8c7bf1523dcce7a2ca9e33033c673a2e56b",
+      "size_bytes": 979482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-01-08_17_27_47/best-checkpoint-fold_3.ckpt",
+      "sha256": "566fe8ac9ca264d6f01706d53e920889682cef215f6c4886a15f324fe903f5bd",
+      "size_bytes": 979482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-01-08_17_27_47/best-checkpoint-fold_4.ckpt",
+      "sha256": "769310f691461cd602199cec6317480eb74122189ce9e6bd9d2f9d3f1a5ff9f7",
+      "size_bytes": 979482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-01-08_17_27_47/best-checkpoint-fold_5.ckpt",
+      "sha256": "1e6751cfdefc3526ab6473247ae49366a354d5a3e3b89eef9f04ae22bef38208",
+      "size_bytes": 979482
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-02-19_17_50_18/best-checkpoint.ckpt",
+      "sha256": "c88ca8c2f6883214446a8b0bd833b5129a2748d48d2fe4f27f9ab451444a1200",
+      "size_bytes": 844481
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-02-19_18_11_48/best-checkpoint.ckpt",
+      "sha256": "a6b555dfc16f448e4f24883f8d8ff9b93234a6f71df3ebac33bb2fa1e12429fe",
+      "size_bytes": 844670
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-02-19_18_14_46/best-checkpoint.ckpt",
+      "sha256": "2012538b4bccb89c4657070f7eac9ae8bf1e2ea529e5ab8c3f25b9d99b43656b",
+      "size_bytes": 844670
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-02-20_09_45_27/best-checkpoint.ckpt",
+      "sha256": "3360e91cfc3269b9547ba764b84cb5a3ed52890ab34707743eff92fb5dba506b",
+      "size_bytes": 844670
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-02-20_09_49_21/best-checkpoint.ckpt",
+      "sha256": "554ba025063a00243b37b1cf1e68d58e52e4aad1f0d634d7824bfbf8e9ab52c6",
+      "size_bytes": 844481
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-02-20_16_20_54/best-checkpoint.ckpt",
+      "sha256": "07d5ec23f35e7a272fdd21c3553b35ff1f654834259824c45a13a090a57ebd9e",
+      "size_bytes": 846785
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-02-20_16_30_52/best-checkpoint.ckpt",
+      "sha256": "9f547d0eb217d64569ce078b1dc408dbb82707a9b5d1a783a87a67a6c9dc8cd4",
+      "size_bytes": 846785
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNIndependent/300ms/2025-02-20_16_37_24/best-checkpoint.ckpt",
+      "sha256": "8d3281087a0056f04081fbb20f4d43e9e2221cdf923fde5b4921761c0658290a",
+      "size_bytes": 778829
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/200ms/2025-03-25_21_49_13/best-checkpoint-fold_1.ckpt",
+      "sha256": "586edd5cb934e28b3061aac5225220b1b6592b2e5e49d708d1d48465665e8eb7",
+      "size_bytes": 424334
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/200ms/2025-03-25_21_49_13/best-checkpoint-fold_2.ckpt",
+      "sha256": "f298475d8a8ec8cd48ee1f84e8c67d1438f926cbe54919b6518b82e6f31328b4",
+      "size_bytes": 424334
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/200ms/2025-03-25_21_49_13/best-checkpoint-fold_3.ckpt",
+      "sha256": "4cbe0828182d23f84ac3d6910d1ebb1f6c641d44ef623ea9480e02f2a630e980",
+      "size_bytes": 424334
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/200ms/2025-03-25_21_49_13/best-checkpoint-fold_4.ckpt",
+      "sha256": "dc797c747be208dec59a5aef7ef093fd43f500bfa161edf46f265a9d3b09d8eb",
+      "size_bytes": 424334
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/200ms/2025-03-25_21_49_13/best-checkpoint-fold_5.ckpt",
+      "sha256": "7cb2f5d88f04f89f5a3d2ed409b99b97f6e70382a64882da756fea8a14779672",
+      "size_bytes": 424334
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_10_35_07/best-checkpoint-fold_1.ckpt",
+      "sha256": "f4fc7f694524c6e72d67e38e8527ecdd3068b0dbcb9b8a8ba905c0a2496112f5",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_10_35_07/best-checkpoint-fold_2.ckpt",
+      "sha256": "fd142fcb239b659d03dce2f80c7ff76d6af4e7ad52357bc46e8c340ee1be1a17",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_10_35_07/best-checkpoint-fold_3.ckpt",
+      "sha256": "b098780ca30ed98f407d38b030794153173d628625a5783841391d0946adb12e",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_10_35_07/best-checkpoint-fold_4.ckpt",
+      "sha256": "0f5c190f13633fe7197d6423034ba8557d50c26864b22ce7425a2bce1ab96f06",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_10_35_07/best-checkpoint-fold_5.ckpt",
+      "sha256": "8f64b3adf2eaac1fb08ac42cdf47ea964b7c1c7cca103c81835c0ffc4fea263f",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_15_16_26/best-checkpoint-fold_1.ckpt",
+      "sha256": "b8438d199b0ae48f7eaa97093d5c8bfd545d1bd354bd08efb6d0fdcb64f82dcf",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_15_16_26/best-checkpoint-fold_2.ckpt",
+      "sha256": "67ac92c7fa35930290a54e59ef9eeb25f81f75d8fccee5641dd97b90e2f7e852",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_15_16_26/best-checkpoint-fold_3.ckpt",
+      "sha256": "5ae035dcd9471a7ed493c30df33a210f65b3407edf3efa43da68492ad85647a8",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_15_16_26/best-checkpoint-fold_4.ckpt",
+      "sha256": "a6b2f7a246ee6fef30afbeb1c359dc810d615912f3dfbd5812bda79f769db9ad",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-05_15_16_26/best-checkpoint-fold_5.ckpt",
+      "sha256": "5f9f9d10db0114431f0e1c447c732348d732d9a042f8ed8e4d52a8dcc0de2f55",
+      "size_bytes": 1071218
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-13_12_39_43/best-checkpoint.ckpt",
+      "sha256": "f43d1c3dcd23540d3054cc1a25fb1463f7c37e10ed6f921fdd337e87c5372d0a",
+      "size_bytes": 626036
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-25_01_09_24/best-checkpoint.ckpt",
+      "sha256": "5ecfa22c68668a9969b44b59dfc611b73f5a7d8a35eec7a58ca82b2a7223c77c",
+      "size_bytes": 421648
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-25_15_15_36/best-checkpoint.ckpt",
+      "sha256": "ac473844108be7f21424006f1b71d306fa463a383fe4ee06448ca353c9037211",
+      "size_bytes": 421648
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-25_21_45_37/best-checkpoint.ckpt",
+      "sha256": "5e5295f96289b5f713c3f0e6788f217238cb7c0a8b4eea5d6c5a05597b12cdcf",
+      "size_bytes": 718864
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-02-26_10_47_02/best-checkpoint.ckpt",
+      "sha256": "725b6d32c0856c2e8aeb62588b8b268233a2773be472f83dbdf473ac60a2eb15",
+      "size_bytes": 718864
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-02_17_35_21/best-checkpoint-fold_1.ckpt",
+      "sha256": "3a5929cdd6a8bc2d5cdd5a71cec20dcc67caaafaa22a6915f33b61464b359d6f",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-02_17_35_21/best-checkpoint-fold_2.ckpt",
+      "sha256": "bb6abc5d01bfb95b7d24e18fc3f3ca1d7ad2bb93bc938e7c6fdddc1586ebf276",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-02_17_35_21/best-checkpoint-fold_3.ckpt",
+      "sha256": "175eaee04196875922351e013e4613faad0ac16d101193c8b7c52bd9f3ccebed",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-02_17_35_21/best-checkpoint-fold_4.ckpt",
+      "sha256": "8e958a4241bc71df421cab6f9c34baf0ca1d4cea1bc5d3380f829bb3dea5b9a9",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-02_17_35_21/best-checkpoint-fold_5.ckpt",
+      "sha256": "bf9aa96f990daf1168e604c3db38d15c37aeafcb851ee9a695447e2278392c90",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-20_11_57_23/best-checkpoint.ckpt",
+      "sha256": "2166323c57f77485db0f341c6c63d8f126d7754eaabc0542fc536a178a5ec832",
+      "size_bytes": 719310
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-25_09_37_52/best-checkpoint-fold_1.ckpt",
+      "sha256": "cac98deb04765454c6c2fbd4de81baf06a393ff23180948b5df8ca183bada81e",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-25_09_37_52/best-checkpoint-fold_2.ckpt",
+      "sha256": "e4ff2ab6ee5b7a8202207920073d139edb75b76adfb450492e6729a5c8c1b916",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-25_09_37_52/best-checkpoint-fold_3.ckpt",
+      "sha256": "58f6a7db14fff252ce001d1bf8213b09c4d4a391a357b0cacf8dace8dea6a1e1",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-25_09_37_52/best-checkpoint-fold_4.ckpt",
+      "sha256": "80d56d572bd9fb2f4fd28d936cbbee7d50fbb5a8b7b97da28e7f3fa53d9752e5",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/300ms/2025-03-25_09_37_52/best-checkpoint-fold_5.ckpt",
+      "sha256": "50b302bbe7461ce78f5c236f62dda04601925a7a1b72bd512289474f63446df0",
+      "size_bytes": 719246
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/400ms/2025-03-25_17_14_55/best-checkpoint-fold_1.ckpt",
+      "sha256": "8ca31d6aa827767aec4e3a8f38685006b54c020de629ec7c0eee189d1c42d829",
+      "size_bytes": 915918
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/400ms/2025-03-25_17_14_55/best-checkpoint-fold_2.ckpt",
+      "sha256": "8a6f68e4f19a031a9c179d828ce99365e81ebfcbd6e9f31c973cd82c19bbf70d",
+      "size_bytes": 915918
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/400ms/2025-03-25_17_14_55/best-checkpoint-fold_3.ckpt",
+      "sha256": "71f3f210a24268738d21c30c5af3e092f2ec6c0f4d84ff21890f4bf5598b6370",
+      "size_bytes": 915918
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/400ms/2025-03-25_17_14_55/best-checkpoint-fold_4.ckpt",
+      "sha256": "af4ed9f9718f31fa0383c1447bea28e012a59cb9ac3c65f5831e83a9f5d3a08c",
+      "size_bytes": 915918
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNNSplit/400ms/2025-03-25_17_14_55/best-checkpoint-fold_5.ckpt",
+      "sha256": "6ceb3e746feccd0b8788b40cb30a6d420ba7b9ad8aa1be1bddd5880e38ab17b4",
+      "size_bytes": 915918
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/ConvLSTM/300ms/2024-12-18_12_26_37/best-checkpoint.ckpt",
+      "sha256": "9412da38a4c2f81226970843f77196015669d4bcf658bd1bd4e8db299efdd47d",
+      "size_bytes": 27932458
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_11_20_10/best-checkpoint-fold_1.ckpt",
+      "sha256": "caf325d9ea84faf4c850a7bc95e1f59ae8ed75636430008baa30c1f34c5bf214",
+      "size_bytes": 1197486
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_11_20_10/best-checkpoint-fold_2.ckpt",
+      "sha256": "55ae71a576dcc9ea889cb4dfb8778bf19ad279adbe2efd6bc0376369a13455c5",
+      "size_bytes": 1197486
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_12_07_07/best-checkpoint-fold_1.ckpt",
+      "sha256": "ea96618b2d10f46c14b6b2008e7eac95f108ecc955a2644905549cd1d46cdce6",
+      "size_bytes": 1197486
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_16_35_56/best-checkpoint-fold_1.ckpt",
+      "sha256": "6205bfbcea0d76feb14b0a59f7c6151388ef9d4f4f28f431e6ffec1733c1c7ba",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_16_35_56/best-checkpoint-fold_2.ckpt",
+      "sha256": "ffadd541183774ee480d1d2abd36eaa813baae1939ead87a7ca7244b85db53bc",
+      "size_bytes": 13600860
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_16_58_17/best-checkpoint-fold_1.ckpt",
+      "sha256": "f79621acf64c8cb11930ab54f61ddc44278e0bb56a1f9159dec527d6c62c2221",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_16_58_17/best-checkpoint-fold_2.ckpt",
+      "sha256": "75a97af8dcae79c93592cf1516483b280cf2a84e9ed85526327ae12601db9954",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_16_58_17/best-checkpoint-fold_3.ckpt",
+      "sha256": "04de7ef25e0f98c1ec18c4642b94aa629c44583152df69e6f31eec28d7ad545d",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_16_58_17/best-checkpoint-fold_4.ckpt",
+      "sha256": "f9b6b7674fd547baea1d251e136423660d249a911937ff4d861f2f0dd559402b",
+      "size_bytes": 13600860
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-09_16_58_17/best-checkpoint-fold_5.ckpt",
+      "sha256": "987b5892c25f297e59503904755eca32a9c25cc362113c8c9bb8f972fcfb99bf",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-11_13_22_19/best-checkpoint-fold_1.ckpt",
+      "sha256": "ecbcb7b5717d82b8daa815892bc7076c823476e564c1ab648da7f3febbe52f6a",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-11_13_22_19/best-checkpoint-fold_2.ckpt",
+      "sha256": "c03f6be349f693f329822680e2fe311f7278de7ed6b7ea05588ef1df7c5f44ae",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-11_13_22_19/best-checkpoint-fold_3.ckpt",
+      "sha256": "44e3263e973887fd3455ab66aead61e68c4c611bd493700690e474012492b802",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-11_13_22_19/best-checkpoint-fold_4.ckpt",
+      "sha256": "22d34d9db5acf514e1b7eab48b638dd3ad97f8ca9b8b1f3f09178070a983d05a",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-11_13_22_19/best-checkpoint-fold_5.ckpt",
+      "sha256": "3db97a460cdf86d8f533cf46ca18d477fdded825a4e6de7f0268b159fe3cac21",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-14_15_17_16/best-checkpoint-fold_1.ckpt",
+      "sha256": "ace2854874db4fff4a54452becaf9e2a641c32c1aa62d576875749404a40a0fd",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-14_15_17_16/best-checkpoint-fold_2.ckpt",
+      "sha256": "f8d5e52204a012cd9fe6198ab6169d18303abc36376caf101625e1761d257a62",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-14_15_17_16/best-checkpoint-fold_3.ckpt",
+      "sha256": "5cb428808dc9a7d6cd332ed74b648d42b017f72051d80f14ac5c4ff2ea404a3d",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-14_15_17_16/best-checkpoint-fold_4.ckpt",
+      "sha256": "76253bc1c8c98bbb0979b20cafddde4646ac27788fdc73301027d992818da64d",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-14_15_17_16/best-checkpoint-fold_5.ckpt",
+      "sha256": "16068fc674aef989f6ddfff4622f82fa5ec9a2796cb654c379d4b36c59bbbe74",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_09_25_16/best-checkpoint-fold_1.ckpt",
+      "sha256": "1b3477f3eaffd02f8bbc932eac919ee2c10c640b165ec7353fd6769ae367fd0c",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_09_25_16/best-checkpoint-fold_2.ckpt",
+      "sha256": "dd3482aa35c1f34008abd02fa85742700d57c38646fb5d560555598ffe1014c6",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_09_25_16/best-checkpoint-fold_3.ckpt",
+      "sha256": "36f829386b9fd50b49cc7063cc88d2cc6c297e1a93ff908cb0c467b90eaecab1",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_09_25_16/best-checkpoint-fold_4.ckpt",
+      "sha256": "24c21a794f874efc3f766589baefa8a50096090a18009285e039ca7c1b262320",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_09_25_16/best-checkpoint-fold_5.ckpt",
+      "sha256": "282c8425e1c6b3780f2f0228f0327fa34ebd47709aee5190133b2ddab3044a47",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_19_38_32/best-checkpoint-fold_1.ckpt",
+      "sha256": "b239808ee3313c701fa8300cbf0a7866a91edd34ca36abddb560b4e0da3d6bfb",
+      "size_bytes": 13600860
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_19_38_32/best-checkpoint-fold_2.ckpt",
+      "sha256": "e6e22346bbbb9df82d7d1aace67acea36cdf05fdc4c66ec21ead731d5ad80498",
+      "size_bytes": 13600860
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_19_38_32/best-checkpoint-fold_3.ckpt",
+      "sha256": "6b2a4c01b7b106055d0fb1f2f119a3cfa3f9391b4a25ae0c03a5772fed3a05c4",
+      "size_bytes": 13600860
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_19_38_32/best-checkpoint-fold_4.ckpt",
+      "sha256": "7aa1e35a67d4ab7fd376f4ba3813db770240c3a51e01a8afe61e3ee9080d0609",
+      "size_bytes": 13600860
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-15_19_38_32/best-checkpoint-fold_5.ckpt",
+      "sha256": "b0a73acba39223cba733b8590f056abc43bf4ea611257865fb23ccbcc49ca001",
+      "size_bytes": 13600860
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-16_15_09_29/best-checkpoint-fold_1.ckpt",
+      "sha256": "e5501e3c8d3fbca5c8d6ed40f0e81d27985dd2212a00a28cc9c36c16247f12eb",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-16_15_09_29/best-checkpoint-fold_2.ckpt",
+      "sha256": "d58fd0dc2d8f173d1eb4e95b43db8753f660b1cb24bc089ec01ee278f8e2f5d8",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-16_15_09_29/best-checkpoint-fold_3.ckpt",
+      "sha256": "c8b8991bc6532cd9c505657193bc8639750be34ca7757a7df9efe8d5cc88e3ee",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-16_15_09_29/best-checkpoint-fold_4.ckpt",
+      "sha256": "a74c595d8102d9a49c81b1b54675877d77f485ad062d82a8fa37f570b91458f1",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-16_15_09_29/best-checkpoint-fold_5.ckpt",
+      "sha256": "014f54d8d631b65330f9dd6d95129007262ed8c817ef106a3233838c85a2dfc4",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_17_39_57/best-checkpoint-fold_1.ckpt",
+      "sha256": "9be3074cff89044c8f50136269ede84759d81eafd93e0557b7b3c7a7e38ce1b8",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_17_39_57/best-checkpoint-fold_2.ckpt",
+      "sha256": "9b5556f80ede641b9e2473519544367438a57fda8934048ec92e554d5417747f",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_17_39_57/best-checkpoint-fold_3.ckpt",
+      "sha256": "8bb84db791ad1556d05dc97dd83d113ed101d34ce1faeba46489b3d69e332645",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_17_39_57/best-checkpoint-fold_4.ckpt",
+      "sha256": "e022868b06c0e51ee83a9a769e90e7321e4f2b0b2742fa62ddc2661dee0143d3",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_17_39_57/best-checkpoint-fold_5.ckpt",
+      "sha256": "8290435bdccef435b92f8af3fabc08eb7c06afe7957032ecf44463c3e5f00d71",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_23_46_56/best-checkpoint-fold_1.ckpt",
+      "sha256": "cbf8b5128a96f958cf506e8ae7d754ecb296ddf66d229f042c806f18718a1c53",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_23_46_56/best-checkpoint-fold_2.ckpt",
+      "sha256": "91dca25191fb3d8eecc2e0b91eee08f529aea8e9a564d3e9f68f268e2f6af676",
+      "size_bytes": 13600860
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_23_46_56/best-checkpoint-fold_3.ckpt",
+      "sha256": "7bcfefbcc6c67f08d07f786532833944a961f25556bf83127858a7016f687a54",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_23_46_56/best-checkpoint-fold_4.ckpt",
+      "sha256": "34a57a50dfd4233eeca3e5ba0de36d270310bece23b544b084eb452d4ebb8d44",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-20_23_46_56/best-checkpoint-fold_5.ckpt",
+      "sha256": "6b3ed977a280b1c5cf922245c3d27d8b3da753fbc1282a7f5508921ec41b65d7",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-21_09_22_52/best-checkpoint-fold_1.ckpt",
+      "sha256": "a8157554e83d7a592548d21e5bb3ab7cf1ee2d4880eff3f8bf8a523ded55abcb",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-21_09_22_52/best-checkpoint-fold_2.ckpt",
+      "sha256": "dfb4100df0c279d5b0c31906ec418b07d107705e921107efa50e68429edea1ac",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-21_09_22_52/best-checkpoint-fold_3.ckpt",
+      "sha256": "1f0ac0c6b9fef85bf25d0ef13594f8be683ce128d9db24a82af87f1fd7e76855",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-21_09_22_52/best-checkpoint-fold_4.ckpt",
+      "sha256": "1f0b7f8b21857c6082b341ff4d1854b61a9dc581e9e0ae7a21b844c37a95095b",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-21_09_22_52/best-checkpoint-fold_5.ckpt",
+      "sha256": "abf07d9e7cef283ec00017390a63837d5ab4144822ef5b5f18182c0309abff7c",
+      "size_bytes": 13600924
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-27_17_40_40/best-checkpoint-fold_1.ckpt",
+      "sha256": "37baf6a584b741d7562e8bf7a56fd3c7becd079005cef05aa799bcb7c71249e3",
+      "size_bytes": 13601884
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-27_17_42_07/best-checkpoint-fold_1.ckpt",
+      "sha256": "46400f3354b4154ae09d69a246a585f9c9c0653116cec8a9dc97326289f259c3",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-27_17_42_07/best-checkpoint-fold_2.ckpt",
+      "sha256": "34dfd96bd147457abbd8eb621322cee9f24246c4f4bc532dcc209cad33257b06",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-27_17_42_07/best-checkpoint-fold_3.ckpt",
+      "sha256": "8a313342f368f3353be9c14cd9d2b4234b2743a3569e12eb39df8880b7018dfa",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-27_17_42_07/best-checkpoint-fold_4.ckpt",
+      "sha256": "3a1f388f787ec17df36d6183711ae287a145a6d4fcb5775b8761dea9d421d6fc",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-27_17_42_07/best-checkpoint-fold_5.ckpt",
+      "sha256": "9f620a740957c1d6d5f080fdbbc217e5201e010af2af5e2238bf273145576880",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-28_00_09_08/best-checkpoint-fold_1.ckpt",
+      "sha256": "de4dbb94dbdc49f39d78f8628568be8215b6162e2a206f241a58cd5763412aa8",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-28_00_09_08/best-checkpoint-fold_2.ckpt",
+      "sha256": "b443b152ddcd215ad5c6c109b9f51009aedc3aefe6de3ad2b9e646d615b0f953",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-28_00_09_08/best-checkpoint-fold_3.ckpt",
+      "sha256": "d2f998fbaee8f7f1271ba0f8a13703cd821c99438c89045b156d3ec1f099808f",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-28_00_09_08/best-checkpoint-fold_4.ckpt",
+      "sha256": "1be79a196bed5211f7cab534b76677e8ddc2192afeb8e697264e54c2db76cce9",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/InceptionTime/300ms/2025-01-28_00_09_08/best-checkpoint-fold_5.ckpt",
+      "sha256": "fa72930ca08316fecf2ed4c074d7fe67fe4af82b69ed17095f8d7dc5886d5a01",
+      "size_bytes": 13601948
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/200ms/2025-03-25_17_19_34/best-checkpoint-fold_1.ckpt",
+      "sha256": "d8d9d0c20c43d586b30532cc3a1ad3f43c61fd864f687c466e7dee5ace14988f",
+      "size_bytes": 1547277
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/200ms/2025-03-25_17_19_34/best-checkpoint-fold_2.ckpt",
+      "sha256": "c4c9e69e72382e77762878d4d8edf3b8dc0ec3ae99c6e868f38ac3e8b0dd8d64",
+      "size_bytes": 1547277
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/200ms/2025-03-25_17_19_34/best-checkpoint-fold_3.ckpt",
+      "sha256": "cf4edb5da3e4d122dba18504057b4a8062d54a703e2aba803c24761cc6c53acc",
+      "size_bytes": 1547277
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/200ms/2025-03-25_17_19_34/best-checkpoint-fold_4.ckpt",
+      "sha256": "4ad8e8be95241b7f2423b7a078b3aa35c7f1865399aaa5f4d38afa6dcba706bc",
+      "size_bytes": 1547277
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/200ms/2025-03-25_17_19_34/best-checkpoint-fold_5.ckpt",
+      "sha256": "36d36547b7c9b57e77f9ebe217591c92655a46e07d35a03f8fb9a48c5afea4d9",
+      "size_bytes": 1547277
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-19_09_02_09/best-checkpoint-fold_1.ckpt",
+      "sha256": "7851dbf28ea93ffa2535b779299b78c1d70f118365e07e9a2b68953bdb03f3ea",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-19_09_02_09/best-checkpoint-fold_2.ckpt",
+      "sha256": "c80a7f6fcf928f042741266396572fe2754192c944b3cb5f989fe7b51f6a5978",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-19_09_02_09/best-checkpoint-fold_3.ckpt",
+      "sha256": "e8f87d7dcaff904681f30cd5b106540e44fc46f158b55069b8edb169220b525d",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-19_09_02_09/best-checkpoint-fold_4.ckpt",
+      "sha256": "7e8b9f9be1868571627ab1eb271fa82ca806fd31cc0b02d258e05581aa1a6f72",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-19_09_02_09/best-checkpoint-fold_5.ckpt",
+      "sha256": "e7c9b72dbc1eab631d2d2952e502ed25c2d2580cc3ae4397973af9b47898a035",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_01_46_32/best-checkpoint.ckpt",
+      "sha256": "57557ea8010b663c838e509eca19aa4a59971f609a78a2a3910724b42c0e7eab",
+      "size_bytes": 22649808
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_08_43_26/best-checkpoint.ckpt",
+      "sha256": "13a6710dc315d37881452a2ccf1a91e456e97cdc668381d7800cf17b76fefd52",
+      "size_bytes": 22649808
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_10_54_00/best-checkpoint.ckpt",
+      "sha256": "fabffc15c00d13bd99411a6f21332a098cec6c6955ed8a2617fae1a07d19654b",
+      "size_bytes": 22649744
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_10_56_22/best-checkpoint.ckpt",
+      "sha256": "b454526dbb1e3e28caf03df393d07f920dc4843c96c991f69369b75e73d4af02",
+      "size_bytes": 22649744
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_14_05_32/best-checkpoint.ckpt",
+      "sha256": "ba5693813f7a8de3df0b0c538aab906a6c602a8501b8fe5051c8f3241c4fc69d",
+      "size_bytes": 22651280
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_14_58_38/best-checkpoint.ckpt",
+      "sha256": "0365a101add78e48b3974701b3c77f7b18e5a201dd70afdb8e27974879ac4bd1",
+      "size_bytes": 22714640
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_15_11_28/best-checkpoint.ckpt",
+      "sha256": "25313e3c5b73c9f8d60ff8a472a6308357944849c4c4f932b81732d7668f60c4",
+      "size_bytes": 22652816
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_17_59_53/best-checkpoint.ckpt",
+      "sha256": "513a5498c4f39e82bdb17cf04edd3537f4f9f5ea531f06ee506e98bd6f964229",
+      "size_bytes": 22649808
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_18_13_13/best-checkpoint.ckpt",
+      "sha256": "4f4929abc5eb1985f5af70adeccbed124edc115ff217d0e5c82867cde8a34fc6",
+      "size_bytes": 22649744
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_19_10_19/best-checkpoint.ckpt",
+      "sha256": "2e24e2ec37cc315bb49525c0580f7d3c9335e0f15b5dffcbf2720b3b915efcb2",
+      "size_bytes": 22649744
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_20_32_43/best-checkpoint-fold_1.ckpt",
+      "sha256": "8854a2bb61fae8c5824fafde32b1df549e56d3a9e5546c85b6c052f5b205b490",
+      "size_bytes": 22649744
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_20_37_43/best-checkpoint-fold_1.ckpt",
+      "sha256": "ec607733e3572dcdd1cbf8e79927282f7d6fa520aea2b6ce97af906fdc18ae6d",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_20_51_25/best-checkpoint-fold_1.ckpt",
+      "sha256": "7daf6d5e945cc43e992b2c5c153f757598493a28b814733d812de096a275937c",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_20_51_25/best-checkpoint-fold_2.ckpt",
+      "sha256": "5fe6e9200742e013d12897d89a5ad328cb3284d16ca4274bee3730751b842bee",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_21_12_27/best-checkpoint-fold_1.ckpt",
+      "sha256": "a48eb32a6fbf09007cff5bba034dfc36fb37b6c97ce31a9a1de32e8ec602e5f7",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_22_38_04/best-checkpoint-fold_1.ckpt",
+      "sha256": "d48826f5850f076ed7434f4987032e7a62e6a0ffa9355e4f7f0270b72bdb7599",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_22_38_04/best-checkpoint-fold_2.ckpt",
+      "sha256": "3908c37cc2e7f9898f9d9446ac624f099068e927ee959ebf2cec538c53891077",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-18_22_38_04/best-checkpoint-fold_3.ckpt",
+      "sha256": "822c0ea6253e1a1e61049e98e9c92080eb382b776434a1e05ef84a0cc2a51bd5",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-19_06_54_01/best-checkpoint-fold_1.ckpt",
+      "sha256": "992b5498590586c21468c6c6ac7e801c54a9290ea8fb9184e5c0f83bf45676ae",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-19_06_54_01/best-checkpoint-fold_2.ckpt",
+      "sha256": "236b452b8864cbe1b7826c545993ebfd37a12194899f7986b8ccbbb045e55c25",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2024-12-19_06_54_01/best-checkpoint-fold_3.ckpt",
+      "sha256": "87b2959fbdc93f7858008286faa0d027c7927ac8d941dc38eab54b647327d7c3",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_16_27_39/best-checkpoint-fold_1.ckpt",
+      "sha256": "561b9948eb1396978bec9342d260d3de7adafaa74125a4cb18b6a59992ed1182",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_16_27_39/best-checkpoint-fold_2.ckpt",
+      "sha256": "fd3c76f9066ed47308eabb6b927f0f49b009a0d8ce9d1e551e9027c6bbfd54c0",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_16_27_39/best-checkpoint-fold_3.ckpt",
+      "sha256": "ef57d38fdccbc47dcffdbb2b4db27a646491f7541c243f8de4640e50b8dba526",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_16_27_39/best-checkpoint-fold_4.ckpt",
+      "sha256": "f056bf8815a5c22c094586d80a200a6b048fdfdcacb7c66d0f6ae9b2c2be155c",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_16_27_39/best-checkpoint-fold_5.ckpt",
+      "sha256": "b561a01f18eeb7ed89a1bafcd3ed8fa90e09afc12d4cbcb33aa8f8ec7345a473",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_17_37_39/best-checkpoint-fold_1.ckpt",
+      "sha256": "9d0c975b86863aae09a7009dbc4fad747af04827aa40d2dd7ad53ced27aa4268",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_17_37_39/best-checkpoint-fold_2.ckpt",
+      "sha256": "cbf7c0d3614fa85dc5704e5f7dfb331c973965a123dd9da6fa3eb2ce5168dcf6",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_17_37_39/best-checkpoint-fold_3.ckpt",
+      "sha256": "6be85bff5df9504bf5fbcb1dba7b8cdade0b4034180cf4d1a05c30be95eb4a3d",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_17_37_39/best-checkpoint-fold_4.ckpt",
+      "sha256": "a1195354c60ccc01d4246cf5f8276c2102071abbdc86f25f3bef9f82eca310a1",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-07_17_37_39/best-checkpoint-fold_5.ckpt",
+      "sha256": "ef21f61c56a8162750f1e025aefa0e0fcab89278824e8f275bc954efa6b96f25",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-08_17_25_23/best-checkpoint-fold_1.ckpt",
+      "sha256": "3fb652e9b770ed0b90ef5a58f94afa801ccd8205599f1bb731f957f14aebff4e",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-08_17_25_23/best-checkpoint-fold_2.ckpt",
+      "sha256": "8fe2e00b44f7717e5871e3d31bd1a0f7d59696dedd67a24fe1888c64aab873e1",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-08_17_25_23/best-checkpoint-fold_3.ckpt",
+      "sha256": "40b6b4ddce5ed0b3878e9a5ea18565314287f0e162c8ec731c2b3aadd0a13faf",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-08_17_25_23/best-checkpoint-fold_4.ckpt",
+      "sha256": "0bbe74162e0c8f29982264554c9c5f5c2041f30cbfa6497488fc5ade4a563ffe",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-08_17_25_23/best-checkpoint-fold_5.ckpt",
+      "sha256": "1f1d65a6923ee2fcf6f575a3815187941823a558b056504c9733c2981ee1afe2",
+      "size_bytes": 22650317
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-09_17_26_29/best-checkpoint-fold_1.ckpt",
+      "sha256": "0fe6706408196a79cf08c6a8b566ce2fad3b3750c4228cf5054fdbcdf86f5ca8",
+      "size_bytes": 22650893
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-09_17_26_29/best-checkpoint-fold_2.ckpt",
+      "sha256": "c3ca9b497b61ec969d714e5aed33330bc98c1a208aceb22f9181aa33a468694c",
+      "size_bytes": 22650893
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-09_17_26_29/best-checkpoint-fold_3.ckpt",
+      "sha256": "9d2b2af6db994456c08ee46d692d27ebce1894c0e5aee6de12c4cb2e99021f18",
+      "size_bytes": 22650893
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-09_17_26_29/best-checkpoint-fold_4.ckpt",
+      "sha256": "6d607d5385e151faf3deda5970c77bea884d7751b5d9f13053d347375779e846",
+      "size_bytes": 22650893
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-09_17_26_29/best-checkpoint-fold_5.ckpt",
+      "sha256": "0aa7b4a61ab9ac2582bc12768af6cd75a240d20ea6c489a1599c92a49b258994",
+      "size_bytes": 22650893
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-11_13_20_52/best-checkpoint-fold_1.ckpt",
+      "sha256": "3a7526ace9447e96544667c1d9384eb01272189ba8c38ecff2d45254afac2077",
+      "size_bytes": 22650893
+    },
+    {
+      "is_pinned_path": false,
+      "matches_expected": false,
+      "path": "/mnt/hdd16T/protechto/checkpoints/LSTM/300ms/2025-01-11_13_20_52/best-checkpoint-fold_2.ckpt",
+      "sha256": "40a1485120c2a0aeeae238eedf1791b5c33630ef8f13ea7d6f38a9cd2a4e0152",
+      "size_bytes": 22650893
+    }
+  ],
+  "candidate_count": 500,
+  "checkpoint_status": "VERIFIED",
+  "exact_match_count": 1,
+  "exact_matches": [
+    {
+      "is_pinned_path": true,
+      "matches_expected": true,
+      "path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+      "sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+      "size_bytes": 782797
+    }
+  ],
+  "expected_sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+  "generated_utc": "2026-09-30T08:24:37+00:00",
+  "historical_pinned_path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+  "pinned_path_exists": true,
+  "schema": "crosslayer_phase1c_checkpoint_anchor_v1"
+}

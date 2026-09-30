@@ -1,8 +1,8 @@
 project:
   name: CrossLayer-IMU-Resilience
   mode: research_development
-  current_phase: phase_0_complete
-  status: phase_0_complete
+  current_phase: phase_2_baseline_freeze_ready
+  status: phase_1_complete
   primary_task: preimpact_fall_detection
 
 data:
@@ -13,6 +13,9 @@ data:
 
 baseline:
   status: not_selected
+  primary_candidate: DATE2025_CNN_400MS_RECONSTRUCTED
+  candidate_migration_status: validated_phase1
+  historical_checkpoint_verified: true
   candidate_families:
     - compact_1d_cnn
     - ds_cnn

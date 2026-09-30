@@ -1,0 +1,72 @@
+{
+  "architecture": {
+    "conv_channels": 32,
+    "expected_parameter_count": 63173,
+    "flatten_dim": 224,
+    "hidden_dim": 256,
+    "kernel_size": 4,
+    "num_classes": 2,
+    "pool_size": 2
+  },
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "classes": {
+    "0": "Activity",
+    "1": "Falling"
+  },
+  "decision_semantics": {
+    "historical_streaming": {
+      "comparison": "strict_greater_than",
+      "rule": "Falling iff P(Falling) > 0.9; otherwise Activity",
+      "threshold": 0.9
+    },
+    "primary_phase2_rule": "NOT_YET_FROZEN",
+    "standard_classifier": {
+      "rule": "argmax(logits)"
+    }
+  },
+  "historical_checkpoint": {
+    "external_path": "/mnt/hdd16T/protechto/checkpoints/CNN/400ms/2025-02-25_12_24_47/best-checkpoint.ckpt",
+    "sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+    "tracked_in_git": false,
+    "verification_status": "VERIFIED_2026_09_30"
+  },
+  "historical_source": {
+    "clean_local_tree": "RC-RGD-IMU_publish",
+    "commit": "e1db7880e17a5632bc4ce238125923f986e85519",
+    "decision_path": "src/imu_reliability/baseline/historical_decision.py",
+    "decision_raw_sha256": "4badaf73460402447ac5c4253017db15de07964d7182f098a4d335f1670ed9ab",
+    "model_path": "src/imu_reliability/baseline/date2025_cnn400.py",
+    "model_raw_sha256": "def71b3cebc0649c0d909e4ffd5dc04f177fcb795ff6ebfd13f90e214c67581d",
+    "repository": "muhammadtoqeerali/RC-RGD-IMU"
+  },
+  "phase1_validation": {
+    "canonical_tensor_state_sha256": "c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124",
+    "historical_checkpoint_sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+    "historical_checkpoint_verified": true,
+    "historical_decision_equal": true,
+    "max_abs_feature_difference": 0.0,
+    "max_abs_logit_difference": 0.0,
+    "normalized_state_artifact_file_sha256": "b43395f29879d7a6f19f8237392a860fd1e87683b193253a26566876dfbe3d4f",
+    "normalized_state_artifact_git_tracked": false,
+    "parameter_count": 63173,
+    "parity_vector_count": 68,
+    "status": "PASS"
+  },
+  "protection": {
+    "compute_integrity": false,
+    "ood": false,
+    "recovery": false,
+    "runtime_supervisor": false,
+    "sensor_integrity": false
+  },
+  "schema": "crosslayer_baseline_candidate_v1",
+  "status": "PHASE1_MIGRATION_VALIDATED_NOT_FROZEN",
+  "task": "preimpact_fall_detection",
+  "window": {
+    "duration_ms": 400,
+    "effective_channels": 6,
+    "samples": 40,
+    "sampling_hz": 100,
+    "stored_channels": 9
+  }
+}

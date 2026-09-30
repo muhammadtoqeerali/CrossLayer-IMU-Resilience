@@ -588,23 +588,55 @@ Date:
 
 2026-09-30
 
-Current state:
+Phase 1 is complete.
 
-- workstation repository initialized
-- GitHub remote configured
-- Phase 0 scientific foundation being created
-- no inherited model copied
-- baseline not frozen
-- dataset protocol not frozen
-- sensor fault protocol not frozen
-- compute fault protocol not frozen
-- MCU target not frozen
-- no publication-facing result exists
+Completed evidence:
 
-Next task after Phase 0:
+- Phase-0 scientific and repository foundation
+- inherited workstation source audit
+- clean-versus-development provenance audit
+- exact historical DATE checkpoint recovery
+- historical checkpoint SHA-256 verification
+- component migration decision matrix
+- CrossLayer-native protected-task migration
+- 63,173-parameter architecture validation
+- 68-vector exact task-logit parity
+- 68-vector exact penultimate-feature parity
+- historical streaming-decision parity
+- normalized state-artifact reload parity
+- clean-baseline contamination check
 
-Audit RC-RGD-IMU implementation and identify the exact reusable baseline,
-data, training, quantization, embedded and testing infrastructure.
+Primary protected-baseline candidate:
+
+`DATE2025_CNN_400MS_RECONSTRUCTED`
+
+Validated checkpoint SHA-256:
+
+`ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1`
+
+Validated canonical tensor-state SHA-256:
+
+`c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124`
+
+The candidate is not yet Phase-2 frozen.
+
+Still unfrozen:
+
+- final protected-baseline decision semantics
+- quantization protocol
+- exported deployment artifact
+- clean reference metrics
+- formal dataset/event/split/timing protocol
+- sensor fault protocol
+- compute fault protocol
+- runtime supervisor
+- recovery policy
+- MCU target
+
+Next task:
+
+Phase 2 — reproduce, select, quantify, export, quantize and freeze the
+protected baseline before fault-study implementation.
 
 ---
 
