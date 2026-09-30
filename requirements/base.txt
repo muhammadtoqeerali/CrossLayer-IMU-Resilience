@@ -1,0 +1,2 @@
+# Phase 0 deliberately has no scientific third-party dependencies.
+# Dependencies will be audited and frozen when implementation is migrated.

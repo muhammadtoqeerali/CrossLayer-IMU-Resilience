@@ -1,0 +1,57 @@
+project:
+  name: CrossLayer-IMU-Resilience
+  mode: research_development
+  current_phase: phase_0_complete
+  status: phase_0_complete
+  primary_task: preimpact_fall_detection
+
+data:
+  primary_dataset_candidate: UNIVRFall
+  split_policy_candidate: subject_disjoint
+  split_before_fault_injection: true
+  test_data_for_tuning: false
+
+baseline:
+  status: not_selected
+  candidate_families:
+    - compact_1d_cnn
+    - ds_cnn
+    - compact_tcn
+  reliability_aware_model_as_primary_baseline: false
+
+fault_domains:
+  mandatory:
+    - clean
+    - sensor
+    - compute
+    - combined
+
+sensor_faults:
+  status: candidate_taxonomy_not_frozen
+
+compute_faults:
+  status: candidate_taxonomy_not_frozen
+
+runtime:
+  status: not_implemented
+  policy_preference: deterministic_explainable
+  always_on_protection_required_as_comparator: true
+
+embedded:
+  target_status: candidate_not_frozen
+  inherited_candidate_mcu: STM32F722
+  require_real_hardware_before_hardware_claim: true
+
+evaluation:
+  final_test_protocol_frozen_before_execution: true
+  same_backbone_causal_ablation: true
+
+provenance:
+  P0: offline_synthetic_or_software_injected
+  P1: firmware_injected
+  P2: hardware_in_loop_or_interface
+  P3: physical_or_trusted_status
+
+publication:
+  first_milestone: cross_layer_fault_characterization
+  full_milestone: adaptive_cross_layer_resilience

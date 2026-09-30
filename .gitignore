@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local paths
+configs/datasets/local_paths.yaml
+configs/datasets/*_local.yaml
+
+# Datasets
+data/
+datasets/
+
+# Generated outputs
+results/
+outputs/
+runs/
+logs/
+reports/generated/
+
+# Models / generated binaries
+checkpoints/
+artifacts/
+exports/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.h5
+
+# Embedded builds
+embedded/**/build/
+embedded/**/Debug/
+embedded/**/Release/
+*.elf
+*.hex
+*.bin
+*.map
+
+# Temporary
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z

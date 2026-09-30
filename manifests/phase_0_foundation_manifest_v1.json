@@ -1,0 +1,129 @@
+{
+  "environment": {
+    "git": "git version 2.34.1",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.13.12"
+  },
+  "files": {
+    ".gitignore": {
+      "bytes": 711,
+      "sha256": "ecc0761877d32eed542e5efa9c2ef8ef014737667b2619d6827a548a8190ce55"
+    },
+    "AGENTS.md": {
+      "bytes": 2684,
+      "sha256": "c0a528c47697b6c2d209625f67c55f69ecc7653d151a693ca5f9718e5d66fdfd"
+    },
+    "MASTER_PROJECT_CONTEXT.md": {
+      "bytes": 12316,
+      "sha256": "b532e77716ec454b6a95274d10a36df5f36896ee81caaa04c1193ffb6964ffb3"
+    },
+    "README.md": {
+      "bytes": 2387,
+      "sha256": "b51b17107fa7b81b5f5c401c1e60bedd574d1587af6bdbb98db7a75d27d338b4"
+    },
+    "configs/datasets/local_paths.example.yaml": {
+      "bytes": 224,
+      "sha256": "a246b963c001f29db9837758bda038a1d3fb2c6f0645bc79cbb5c76514bd7263"
+    },
+    "configs/project.yaml": {
+      "bytes": 1332,
+      "sha256": "bca087d029c26744cfd515a10b40a9e5f6bf8c77e4a113a98566e61c2accfd64"
+    },
+    "docs/BASELINE_SELECTION_PROTOCOL.md": {
+      "bytes": 1467,
+      "sha256": "3e70e53b131d372ec12f0f568a5c88c7023c01a57755db4a87ab73846a2c7c44"
+    },
+    "docs/CLAIM_LEDGER.md": {
+      "bytes": 1310,
+      "sha256": "667e304e1c7c679897ae534c4f5def8a15f24423b7fadf5cc52e13bf6ee47bc3"
+    },
+    "docs/EXPERIMENT_CONTRACT.md": {
+      "bytes": 1917,
+      "sha256": "927ed1a61fd5c1c4558f520b63caba4163814f287268fce3efa26dd501214a28"
+    },
+    "docs/FAULT_TAXONOMY_CANDIDATE.md": {
+      "bytes": 925,
+      "sha256": "36b88d9ee57d9c9f488c6211285e8d62c80cd0610fbcece5f6fc6e302ea5a149"
+    },
+    "docs/NOVELTY_BOUNDARY.md": {
+      "bytes": 830,
+      "sha256": "c1009132f38a4c86f383cd6e7235be74c90996af7d17174cd8ffd04f22ae9aca"
+    },
+    "docs/PHASE_LOG.md": {
+      "bytes": 3019,
+      "sha256": "738ab414028126577d909dac7f9b906acb4d8a693ed29c267a899ff03a0ca72f"
+    },
+    "docs/RESEARCH_PLAN.md": {
+      "bytes": 4493,
+      "sha256": "406b407d3fc7d69d3f73ccdde1d724c9a616fb9f441c2f5898eae8ad84d0baf9"
+    },
+    "embedded/README.md": {
+      "bytes": 212,
+      "sha256": "5874bda1d1e82c98bd765ebfc4e72e0f09cc8323188682259f1da4f2e13f4c9b"
+    },
+    "experiments/README.md": {
+      "bytes": 225,
+      "sha256": "b6734c0b1f7e24f48301c95e85a0ad90f2e655fd68a76a987097bb020d2b4d92"
+    },
+    "manifests/README.md": {
+      "bytes": 243,
+      "sha256": "ac949f108adbeda121c0f18b446568609530bb95ca1ae628c9e75c33384c1f74"
+    },
+    "models/README.md": {
+      "bytes": 241,
+      "sha256": "5b2e0be5a1d5e93f7e2ef80dcbe8c5eefad02cf147a96da576e4ab192e63a796"
+    },
+    "pyproject.toml": {
+      "bytes": 305,
+      "sha256": "a586bf4c40955969edeaa0e0c700809a48568d4d621d6e127fd9db49a2671543"
+    },
+    "requirements/base.txt": {
+      "bytes": 142,
+      "sha256": "82e5e340c1af733f38bc7a5e0c138a00ad8e2cd134fdb951609c1fbfdb465c48"
+    },
+    "requirements/dev.txt": {
+      "bytes": 54,
+      "sha256": "475341ae5502ac143df1e6131567f1c83385160e47dd62101ab15b0bca157db5"
+    },
+    "scripts/project_doctor.py": {
+      "bytes": 4033,
+      "sha256": "94961f464d6058094a11a498350d7c50ae98baa6053bb824ae07c87b3252b1cd"
+    },
+    "src/crosslayer_resilience/__init__.py": {
+      "bytes": 135,
+      "sha256": "021430e6ea37f7f0a90551015e6cd038fa353cfeeedcbd9d0f0c8f3e57f7e6b9"
+    },
+    "src/crosslayer_resilience/contracts.py": {
+      "bytes": 420,
+      "sha256": "6cd275b00e156966fa101b17347d3e9a3b4f2296cc29d0b1203bf97f5914cd63"
+    },
+    "tests/test_repository_contract.py": {
+      "bytes": 2436,
+      "sha256": "fc1516a530f1263a8afb35bd53026d7f0a4eb8ba26dbaa89cb7552ee39dec5e1"
+    }
+  },
+  "generated_utc": "2026-09-30T08:04:44+00:00",
+  "phase": 0,
+  "phase_name": "scientific_and_repository_foundation",
+  "project": "CrossLayer-IMU-Resilience",
+  "repository": {
+    "branch": "main",
+    "origin": "https://github.com/muhammadtoqeerali/CrossLayer-IMU-Resilience.git"
+  },
+  "schema": "crosslayer_phase_manifest_v1",
+  "scientific_state": {
+    "baseline_frozen": false,
+    "compute_fault_protocol_frozen": false,
+    "dataset_protocol_frozen": false,
+    "mcu_target_frozen": false,
+    "publication_results_exist": false,
+    "runtime_policy_frozen": false,
+    "sensor_fault_protocol_frozen": false
+  },
+  "status": "complete",
+  "validation": {
+    "git_diff_check_expected": "PASS",
+    "project_doctor_expected": "PASS",
+    "unit_tests_expected": 8
+  }
+}
