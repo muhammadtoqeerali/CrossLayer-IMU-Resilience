@@ -1,0 +1,55 @@
+{
+  "leakage_policy": {
+    "onfield_retained_subjects_allowed_for_fault_parameter_selection": false,
+    "onfield_retained_subjects_allowed_for_threshold_tuning": false,
+    "onfield_retained_subjects_allowed_in_int8_calibration": false,
+    "onfield_retained_subjects_allowed_in_training": false,
+    "onfield_retained_subjects_allowed_in_validation": false,
+    "rejected_999_1000_allowed_anywhere": false
+  },
+  "onfield": {
+    "contains_falling": false,
+    "evaluation_scope": [
+      "false_alarm",
+      "domain_shift",
+      "fault_induced_false_alarm",
+      "protection_false_trigger"
+    ],
+    "labels": [
+      "Activity"
+    ],
+    "overlap_percent": 50,
+    "retained_storage_ids": [
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "retained_subject_count": 10,
+    "retained_trial_count": 16,
+    "retained_window_count": 1023337,
+    "role": "INDEPENDENT_ACTIVITY_ONLY_FIELD_EVALUATION",
+    "window_ms": 300
+  },
+  "primary_fivefold": {
+    "include_onfield": false,
+    "population": "UNIVR_PLUS_KFALL_61_SUBJECTS"
+  },
+  "rejected_historical_cases": {
+    "reason": "known_data_quality_issues",
+    "storage_ids": [
+      "999",
+      "1000"
+    ],
+    "use_as_augmentation": false,
+    "use_in_new_project": false
+  },
+  "schema": "crosslayer_onfield_role_candidate_v1",
+  "status": "VERIFIED_CANDIDATE"
+}

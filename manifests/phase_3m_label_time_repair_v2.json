@@ -1,0 +1,1287 @@
+{
+  "audit_mode": "NO_MODEL_EXECUTION",
+  "canonical_binding": {
+    "annotated_event_count": 2919,
+    "core_binding_pass": true,
+    "dataset_counts": {
+      "KFALL": 2346,
+      "UNIVR": 573
+    },
+    "processed_trial_missing_count": 0
+  },
+  "generated_utc": "2026-09-30T11:32:47+00:00",
+  "historical_label_semantics": {
+    "annotated_events_with_falling_window": 2918,
+    "annotated_events_with_no_falling_window": [
+      "KFALL_106_T27_R05"
+    ],
+    "candidate_start_label_replay": {
+      "exact_trial_count": 0,
+      "nonexact_examples": [
+        {
+          "actual_falling_indices": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T20_R01",
+          "impact": 207,
+          "mismatch_indices": [
+            7,
+            8
+          ],
+          "onset": 129,
+          "replayed_falling_indices": [
+            9,
+            10
+          ],
+          "subject": 106,
+          "task": 20,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            11,
+            12,
+            13,
+            14
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T20_R02",
+          "impact": 271,
+          "mismatch_indices": [
+            11,
+            12
+          ],
+          "onset": 183,
+          "replayed_falling_indices": [
+            13,
+            14
+          ],
+          "subject": 106,
+          "task": 20,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            11,
+            12,
+            13,
+            14
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T20_R03",
+          "impact": 259,
+          "mismatch_indices": [
+            11,
+            12
+          ],
+          "onset": 183,
+          "replayed_falling_indices": [
+            13,
+            14
+          ],
+          "subject": 106,
+          "task": 20,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T20_R04",
+          "impact": 230,
+          "mismatch_indices": [
+            9
+          ],
+          "onset": 150,
+          "replayed_falling_indices": [
+            10,
+            11,
+            12
+          ],
+          "subject": 106,
+          "task": 20,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T20_R05",
+          "impact": 222,
+          "mismatch_indices": [
+            7,
+            8
+          ],
+          "onset": 127,
+          "replayed_falling_indices": [
+            9,
+            10,
+            11
+          ],
+          "subject": 106,
+          "task": 20,
+          "trial": 5
+        },
+        {
+          "actual_falling_indices": [
+            7
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T21_R01",
+          "impact": 160,
+          "mismatch_indices": [
+            7
+          ],
+          "onset": 121,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 21,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            7
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T21_R02",
+          "impact": 166,
+          "mismatch_indices": [
+            7
+          ],
+          "onset": 127,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 21,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            8
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T21_R03",
+          "impact": 186,
+          "mismatch_indices": [
+            8
+          ],
+          "onset": 146,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 21,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            7
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T21_R04",
+          "impact": 166,
+          "mismatch_indices": [
+            7
+          ],
+          "onset": 129,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 21,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            7,
+            8,
+            9
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T22_R01",
+          "impact": 193,
+          "mismatch_indices": [
+            7,
+            8
+          ],
+          "onset": 127,
+          "replayed_falling_indices": [
+            9
+          ],
+          "subject": 106,
+          "task": 22,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            10,
+            11,
+            12
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T22_R02",
+          "impact": 239,
+          "mismatch_indices": [
+            10,
+            11
+          ],
+          "onset": 174,
+          "replayed_falling_indices": [
+            12
+          ],
+          "subject": 106,
+          "task": 22,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            8,
+            9,
+            10
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T22_R03",
+          "impact": 215,
+          "mismatch_indices": [
+            8,
+            9
+          ],
+          "onset": 141,
+          "replayed_falling_indices": [
+            10
+          ],
+          "subject": 106,
+          "task": 22,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            8,
+            9,
+            10
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T22_R04",
+          "impact": 207,
+          "mismatch_indices": [
+            8,
+            9
+          ],
+          "onset": 142,
+          "replayed_falling_indices": [
+            10
+          ],
+          "subject": 106,
+          "task": 22,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            17,
+            18,
+            19
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T22_R05",
+          "impact": 344,
+          "mismatch_indices": [
+            17,
+            18
+          ],
+          "onset": 275,
+          "replayed_falling_indices": [
+            19
+          ],
+          "subject": 106,
+          "task": 22,
+          "trial": 5
+        },
+        {
+          "actual_falling_indices": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T23_R01",
+          "impact": 222,
+          "mismatch_indices": [
+            8,
+            9
+          ],
+          "onset": 136,
+          "replayed_falling_indices": [
+            10,
+            11
+          ],
+          "subject": 106,
+          "task": 23,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            10,
+            11,
+            12,
+            13
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T23_R02",
+          "impact": 252,
+          "mismatch_indices": [
+            10,
+            11
+          ],
+          "onset": 172,
+          "replayed_falling_indices": [
+            12,
+            13
+          ],
+          "subject": 106,
+          "task": 23,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T23_R03",
+          "impact": 360,
+          "mismatch_indices": [
+            17
+          ],
+          "onset": 270,
+          "replayed_falling_indices": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "subject": 106,
+          "task": 23,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T23_R04",
+          "impact": 287,
+          "mismatch_indices": [
+            12,
+            13
+          ],
+          "onset": 205,
+          "replayed_falling_indices": [
+            14,
+            15
+          ],
+          "subject": 106,
+          "task": 23,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T23_R05",
+          "impact": 315,
+          "mismatch_indices": [
+            14,
+            15
+          ],
+          "onset": 233,
+          "replayed_falling_indices": [
+            16,
+            17
+          ],
+          "subject": 106,
+          "task": 23,
+          "trial": 5
+        },
+        {
+          "actual_falling_indices": [
+            13,
+            14,
+            15
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T24_R01",
+          "impact": 293,
+          "mismatch_indices": [
+            13,
+            14
+          ],
+          "onset": 222,
+          "replayed_falling_indices": [
+            15
+          ],
+          "subject": 106,
+          "task": 24,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            11,
+            12
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T24_R02",
+          "impact": 250,
+          "mismatch_indices": [
+            11,
+            12
+          ],
+          "onset": 192,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 24,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            11,
+            12,
+            13
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T24_R03",
+          "impact": 246,
+          "mismatch_indices": [
+            11,
+            12
+          ],
+          "onset": 185,
+          "replayed_falling_indices": [
+            13
+          ],
+          "subject": 106,
+          "task": 24,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            13,
+            14,
+            15
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T24_R04",
+          "impact": 287,
+          "mismatch_indices": [
+            13,
+            14
+          ],
+          "onset": 220,
+          "replayed_falling_indices": [
+            15
+          ],
+          "subject": 106,
+          "task": 24,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            13,
+            14,
+            15
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T24_R05",
+          "impact": 287,
+          "mismatch_indices": [
+            13,
+            14
+          ],
+          "onset": 221,
+          "replayed_falling_indices": [
+            15
+          ],
+          "subject": 106,
+          "task": 24,
+          "trial": 5
+        },
+        {
+          "actual_falling_indices": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T25_R02",
+          "impact": 219,
+          "mismatch_indices": [
+            6,
+            7
+          ],
+          "onset": 115,
+          "replayed_falling_indices": [
+            8,
+            9,
+            10
+          ],
+          "subject": 106,
+          "task": 25,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T25_R03",
+          "impact": 178,
+          "mismatch_indices": [
+            5,
+            6
+          ],
+          "onset": 92,
+          "replayed_falling_indices": [
+            7,
+            8
+          ],
+          "subject": 106,
+          "task": 25,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T25_R04",
+          "impact": 189,
+          "mismatch_indices": [
+            5,
+            6
+          ],
+          "onset": 102,
+          "replayed_falling_indices": [
+            7,
+            8
+          ],
+          "subject": 106,
+          "task": 25,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T25_R05",
+          "impact": 220,
+          "mismatch_indices": [
+            7
+          ],
+          "onset": 120,
+          "replayed_falling_indices": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "subject": 106,
+          "task": 25,
+          "trial": 5
+        },
+        {
+          "actual_falling_indices": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T26_R01",
+          "impact": 159,
+          "mismatch_indices": [
+            4,
+            5
+          ],
+          "onset": 83,
+          "replayed_falling_indices": [
+            6,
+            7
+          ],
+          "subject": 106,
+          "task": 26,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T26_R02",
+          "impact": 184,
+          "mismatch_indices": [
+            5
+          ],
+          "onset": 90,
+          "replayed_falling_indices": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "subject": 106,
+          "task": 26,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T26_R03",
+          "impact": 205,
+          "mismatch_indices": [
+            5
+          ],
+          "onset": 89,
+          "replayed_falling_indices": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "subject": 106,
+          "task": 26,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T26_R04",
+          "impact": 250,
+          "mismatch_indices": [
+            9
+          ],
+          "onset": 150,
+          "replayed_falling_indices": [
+            10,
+            11,
+            12,
+            13
+          ],
+          "subject": 106,
+          "task": 26,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T26_R05",
+          "impact": 241,
+          "mismatch_indices": [
+            8,
+            9
+          ],
+          "onset": 147,
+          "replayed_falling_indices": [
+            10,
+            11,
+            12
+          ],
+          "subject": 106,
+          "task": 26,
+          "trial": 5
+        },
+        {
+          "actual_falling_indices": [
+            1
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T27_R01",
+          "impact": 67,
+          "mismatch_indices": [
+            1
+          ],
+          "onset": 29,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 27,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            2
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T27_R02",
+          "impact": 86,
+          "mismatch_indices": [
+            2
+          ],
+          "onset": 50,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 27,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            1
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T27_R03",
+          "impact": 79,
+          "mismatch_indices": [
+            1
+          ],
+          "onset": 39,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 27,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            3,
+            4
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T27_R04",
+          "impact": 113,
+          "mismatch_indices": [
+            3,
+            4
+          ],
+          "onset": 67,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 27,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T27_R05",
+          "impact": 52,
+          "mismatch_indices": [
+            1,
+            2,
+            3
+          ],
+          "onset": 11,
+          "replayed_falling_indices": [
+            1,
+            2,
+            3
+          ],
+          "subject": 106,
+          "task": 27,
+          "trial": 5
+        },
+        {
+          "actual_falling_indices": [
+            21,
+            22
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T28_R01",
+          "impact": 393,
+          "mismatch_indices": [
+            21,
+            22
+          ],
+          "onset": 336,
+          "replayed_falling_indices": [],
+          "subject": 106,
+          "task": 28,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T28_R02",
+          "impact": 448,
+          "mismatch_indices": [
+            22,
+            23
+          ],
+          "onset": 356,
+          "replayed_falling_indices": [
+            24,
+            25,
+            26
+          ],
+          "subject": 106,
+          "task": 28,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T28_R03",
+          "impact": 445,
+          "mismatch_indices": [
+            22,
+            23
+          ],
+          "onset": 354,
+          "replayed_falling_indices": [
+            24,
+            25,
+            26
+          ],
+          "subject": 106,
+          "task": 28,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            19,
+            20,
+            21,
+            22
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T28_R04",
+          "impact": 394,
+          "mismatch_indices": [
+            19,
+            20
+          ],
+          "onset": 312,
+          "replayed_falling_indices": [
+            21,
+            22
+          ],
+          "subject": 106,
+          "task": 28,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            21,
+            22,
+            23,
+            24
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T28_R05",
+          "impact": 423,
+          "mismatch_indices": [
+            21,
+            22
+          ],
+          "onset": 342,
+          "replayed_falling_indices": [
+            23,
+            24
+          ],
+          "subject": 106,
+          "task": 28,
+          "trial": 5
+        },
+        {
+          "actual_falling_indices": [
+            28,
+            29,
+            30,
+            31
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T29_R01",
+          "impact": 527,
+          "mismatch_indices": [
+            28,
+            29
+          ],
+          "onset": 441,
+          "replayed_falling_indices": [
+            30,
+            31
+          ],
+          "subject": 106,
+          "task": 29,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            25,
+            26,
+            27
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T29_R02",
+          "impact": 473,
+          "mismatch_indices": [
+            25,
+            26
+          ],
+          "onset": 399,
+          "replayed_falling_indices": [
+            27
+          ],
+          "subject": 106,
+          "task": 29,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T29_R03",
+          "impact": 493,
+          "mismatch_indices": [
+            26,
+            27
+          ],
+          "onset": 412,
+          "replayed_falling_indices": [
+            28,
+            29
+          ],
+          "subject": 106,
+          "task": 29,
+          "trial": 3
+        },
+        {
+          "actual_falling_indices": [
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T29_R04",
+          "impact": 543,
+          "mismatch_indices": [
+            29,
+            30
+          ],
+          "onset": 452,
+          "replayed_falling_indices": [
+            31,
+            32,
+            33
+          ],
+          "subject": 106,
+          "task": 29,
+          "trial": 4
+        },
+        {
+          "actual_falling_indices": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T30_R01",
+          "impact": 295,
+          "mismatch_indices": [
+            13,
+            14
+          ],
+          "onset": 220,
+          "replayed_falling_indices": [
+            15,
+            16
+          ],
+          "subject": 106,
+          "task": 30,
+          "trial": 1
+        },
+        {
+          "actual_falling_indices": [
+            15,
+            16,
+            17,
+            18
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T30_R02",
+          "impact": 325,
+          "mismatch_indices": [
+            15,
+            16
+          ],
+          "onset": 247,
+          "replayed_falling_indices": [
+            17,
+            18
+          ],
+          "subject": 106,
+          "task": 30,
+          "trial": 2
+        },
+        {
+          "actual_falling_indices": [
+            17,
+            18,
+            19
+          ],
+          "dataset": "KFALL",
+          "event_id": "KFALL_106_T30_R03",
+          "impact": 347,
+          "mismatch_indices": [
+            17,
+            18
+          ],
+          "onset": 277,
+          "replayed_falling_indices": [
+            19
+          ],
+          "subject": 106,
+          "task": 30,
+          "trial": 3
+        }
+      ],
+      "nonexact_trial_count": 2919,
+      "total_window_count": 70640,
+      "window_mismatch_count": 5406
+    },
+    "deadline_used_to_generate_historical_labels": false
+  },
+  "protocol": {
+    "overlap_percent": 50,
+    "safety_deadline_ms_before_impact": 150,
+    "stride_ms": 150,
+    "stride_samples": 15,
+    "window_ms": 300,
+    "window_samples": 30
+  },
+  "safety_timing_geometry": {
+    "events_with_any_complete_grid_window_before_deadline": 2919,
+    "events_with_full_postonset_300ms_window_before_deadline": 2388,
+    "events_with_historical_falling_window_before_deadline": 2918,
+    "events_with_onset_overlapping_window_before_deadline": 2919,
+    "interpretation": "Timing geometry only. No model predictions were evaluated."
+  },
+  "schema": "crosslayer_phase3m_label_time_repair_v2",
+  "scientific_boundary": {
+    "faults_injected": false,
+    "fivefold_membership_changed": false,
+    "int8_calibration_performed": false,
+    "model_trained": false,
+    "onfield_outcomes_opened": false,
+    "outer_test_outcomes_opened": false,
+    "predictions_executed": false
+  },
+  "scientific_interpretation": {
+    "canonical_event_binding_retained": true,
+    "historical_training_labels_retained_unchanged": true,
+    "phase3m_strict_equivalence_rejected": true,
+    "physical_lead_time_fully_frozen": false,
+    "safety_deadline_is_separate_evaluation_layer": true
+  },
+  "status": "PASS",
+  "univr_legacy_time_audit": {
+    "event_count": 573,
+    "framecounter_offsets": [
+      {
+        "count": 573,
+        "impact_offset": 0,
+        "onset_offset": 0
+      }
+    ],
+    "legacy_backward_step_total": 1,
+    "legacy_duplicate_step_total": 120971,
+    "legacy_event_duration_abs_error_ms": {
+      "count": 573,
+      "max": 140.0,
+      "median": 70.0,
+      "min": 30.0
+    },
+    "legacy_header_lines": {
+      "1": 573
+    },
+    "legacy_timestamp_delta_ms": {
+      "count": 573,
+      "max": 10.0,
+      "median": 10.0,
+      "min": 10.0
+    },
+    "oriented_event_duration_abs_error_ms": {
+      "count": 566,
+      "max": 1218640.0,
+      "median": 599320.0,
+      "min": 259700.0
+    },
+    "oriented_missing_count": 0,
+    "original_missing_count": 0,
+    "original_parse_failure_count": 0,
+    "parse_failure_examples": [],
+    "position_out_of_range_count": 0,
+    "row_count_mismatch_count": 573,
+    "row_count_mismatch_examples": [
+      {
+        "event_id": "UNIVR_1009_T20_R01",
+        "oriented_rows": 591,
+        "original_rows": 1291
+      },
+      {
+        "event_id": "UNIVR_1009_T21_R01",
+        "oriented_rows": 603,
+        "original_rows": 1303
+      },
+      {
+        "event_id": "UNIVR_1009_T22_R01",
+        "oriented_rows": 612,
+        "original_rows": 1311
+      },
+      {
+        "event_id": "UNIVR_1009_T23_R01",
+        "oriented_rows": 659,
+        "original_rows": 1359
+      },
+      {
+        "event_id": "UNIVR_1009_T24_R01",
+        "oriented_rows": 679,
+        "original_rows": 1379
+      },
+      {
+        "event_id": "UNIVR_1009_T25_R01",
+        "oriented_rows": 535,
+        "original_rows": 1235
+      },
+      {
+        "event_id": "UNIVR_1009_T26_R01",
+        "oriented_rows": 963,
+        "original_rows": 1663
+      },
+      {
+        "event_id": "UNIVR_1009_T27_R01",
+        "oriented_rows": 632,
+        "original_rows": 1317
+      },
+      {
+        "event_id": "UNIVR_1009_T28_R01",
+        "oriented_rows": 693,
+        "original_rows": 1393
+      },
+      {
+        "event_id": "UNIVR_1009_T29_R01",
+        "oriented_rows": 779,
+        "original_rows": 1479
+      },
+      {
+        "event_id": "UNIVR_1009_T30_R01",
+        "oriented_rows": 728,
+        "original_rows": 1428
+      },
+      {
+        "event_id": "UNIVR_1009_T31_R01",
+        "oriented_rows": 588,
+        "original_rows": 1288
+      },
+      {
+        "event_id": "UNIVR_1009_T32_R01",
+        "oriented_rows": 731,
+        "original_rows": 1431
+      },
+      {
+        "event_id": "UNIVR_1009_T33_R01",
+        "oriented_rows": 599,
+        "original_rows": 1299
+      },
+      {
+        "event_id": "UNIVR_1009_T34_R01",
+        "oriented_rows": 639,
+        "original_rows": 1339
+      },
+      {
+        "event_id": "UNIVR_1009_T37_R01",
+        "oriented_rows": 531,
+        "original_rows": 1231
+      },
+      {
+        "event_id": "UNIVR_1009_T38_R01",
+        "oriented_rows": 641,
+        "original_rows": 1341
+      },
+      {
+        "event_id": "UNIVR_1009_T39_R01",
+        "oriented_rows": 659,
+        "original_rows": 1359
+      },
+      {
+        "event_id": "UNIVR_1009_T40_R01",
+        "oriented_rows": 802,
+        "original_rows": 1502
+      },
+      {
+        "event_id": "UNIVR_1009_T41_R01",
+        "oriented_rows": 647,
+        "original_rows": 1347
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 project:
   name: CrossLayer-IMU-Resilience
   mode: research_development
-  current_phase: phase_3_data_protocol_freeze
+  current_phase: phase_4_prospective_300ms_baseline_and_sensor_fault_engine
   status: phase_2_complete
   primary_task: preimpact_fall_detection
 

@@ -594,3 +594,1165 @@ and before any fault characterization.
 ### Next phase
 
 Phase 3 — dataset, event, split, timing and calibration-partition freeze.
+
+---
+
+## 2026-09-30 — Phase 3A initiated
+
+### Objective
+
+Perform a read-only provenance and structure audit of historical and candidate
+pre-impact fall datasets before defining any new subject/event split.
+
+### Scientific boundary
+
+Phase 3A does not:
+
+- create new dataset partitions
+- move or copy raw data
+- relabel samples
+- regenerate windows
+- choose calibration subjects
+- expose final-test data to model selection
+- perform quantization calibration
+- inject faults
+
+Historical split logic is recorded as provenance only.
+
+No historical split is automatically accepted as the new CrossLayer split.
+
+---
+
+## 2026-09-30 — Phase 3B initiated
+
+### Objective
+
+Recover and independently verify the subject partition that produced the
+historical protected DATE-2025 workload.
+
+### Rationale
+
+The protected model is already trained.
+
+Creating an arbitrary new subject split could place historical training
+subjects into a nominal new test set and create subject leakage.
+
+Therefore the historical subject partition must be recovered before any
+CrossLayer evaluation partition can be frozen.
+
+### Scientific boundary
+
+Phase 3B:
+
+- does not generate a new random split
+- does not change subject membership
+- does not inspect task predictions
+- does not perform INT8 calibration
+- does not inject faults
+- does not use final-test outcomes
+
+The historical split remains a candidate until its lineage and counts are
+independently verified.
+
+### Phase-3B result
+
+The historical DATE-2025 subject split was recovered and independently
+reconciled against the complete historical protected 400-ms combined tree.
+
+The reconstruction exactly matches the preserved trial and window totals.
+
+Candidate CrossLayer role mapping:
+
+- historical train -> development
+- historical validation -> calibration
+- historical test -> held-out confirmation
+- subjects 999 and 1000 -> augmentation-only
+
+There is no subject overlap among the three protected partitions.
+
+No trial in the historical protected tree is unassigned.
+
+The split remains a verified candidate until Phase-3 label/event/timing
+lineage is complete.
+
+---
+
+## 2026-09-30 — Phase 3C initiated
+
+### Objective
+
+Audit task labels, protected-trial structure, raw-file pairing and acquisition
+timing provenance before freezing event and timing semantics.
+
+### Scientific boundary
+
+Phase 3C is read-only.
+
+It does not:
+
+- change the recovered subject split
+- create new windows
+- relabel trials
+- evaluate model predictions
+- inspect fault-study outcomes
+- perform INT8 calibration
+- inject faults
+- define detector thresholds
+
+Processed window labels are not automatically interpreted as physical
+fall-onset or impact timestamps.
+
+Pre-impact timing claims remain blocked until the required event-time
+provenance is demonstrated.
+
+### Phase-3C first-attempt implementation correction
+
+The first Phase-3C audit stopped because a generic CSV-header detector reported
+that the legacy local `UniVrFallOriginalDataset` tree did not expose a
+recognized timestamp field.
+
+This is not interpreted as evidence that the UniVRFall dataset lacks temporal
+metadata.
+
+The official UniVRFall release documents:
+
+- 100-Hz laboratory IMU streams
+- `TimeStamp(s)`
+- `FrameCounter`
+- subject-specific Excel annotation files
+- fall-onset frames
+- fall-impact frames
+- video-synchronized frame-level ground truth
+- subject-independent 5-fold cross-validation
+
+Therefore the failed assertion was an audit-assumption defect.
+
+Phase-3C is repaired by distinguishing:
+
+1. the public/current dataset specification,
+2. legacy local historical representations,
+3. the actual raw/annotation files used by the protected historical pipeline.
+
+No dataset content or split was modified by the failed audit.
+
+### Phase-3C repaired result
+
+External dataset documentation clarified the temporal-label boundary.
+
+UniVRFall provides video-synchronized fall-onset and fall-impact frames and
+documents a subject-independent five-fold protocol.
+
+KFall likewise provides fall-onset and fall-impact frame annotations.
+
+Therefore physical pre-impact timing is potentially recoverable and must not
+be dismissed merely because the processed `segments.npy` arrays omit
+acquisition metadata.
+
+The protected historical checkpoint still retains its recovered historical
+train/validation/test split as checkpoint provenance.
+
+The five-fold protocol is treated separately as a fold-specific
+training/evaluation protocol.
+
+A single frozen checkpoint cannot be reused as five independently trained
+cross-validation models.
+
+The next step is to freeze the exact five-fold membership and map annotation
+event frames onto protected historical trials.
+
+---
+
+## 2026-09-30 — Phase 3D initiated
+
+### Objective
+
+Identify the authoritative subject-independent five-fold implementation used
+by the historical Protechto training workflow.
+
+The audit must establish:
+
+- exact KFold source code
+- source-code checksum
+- subject enumeration rule
+- number of folds
+- shuffle policy
+- random seed
+- train/test fold construction
+- validation-subject construction inside each training fold
+- exact 400-ms dataset root used by candidate five-fold runs
+- surviving fold-specific checkpoints and their run grouping
+
+### Important separation
+
+The recovered 47/6/14 split remains provenance for the already-trained frozen
+DATE-2025 checkpoint.
+
+Five-fold evaluation is a separate repeated-training protocol.
+
+A single checkpoint cannot be presented as five-fold cross-validation.
+
+### Timing issue retained
+
+The local historical UniVR annotation tree contains 574 rows with both onset
+and impact, while the public dataset summary reports 573 fall events.
+
+This discrepancy remains open and must be reconciled before event-time freeze.
+
+### Scientific boundary
+
+Phase 3D is read-only.
+
+It does not:
+
+- generate new folds
+- retrain models
+- modify subject membership
+- choose model hyperparameters
+- open held-out predictions
+- perform quantization calibration
+- inject faults
+
+### Phase-3D result
+
+The five-fold audit was narrowed from the broad repository search to the
+historical Protechto implementation and the 400-ms CNN checkpoint lineage.
+
+The authoritative KFold and validation-split calls are now recorded by source
+path, line, checksum and AST-extracted arguments.
+
+Candidate complete fold-specific 400-ms checkpoint runs are recorded
+separately from the frozen single-checkpoint baseline.
+
+No new folds were generated.
+
+The one-event UniVR annotation discrepancy remains open:
+
+- public dataset summary: 573 fall events
+- local historical onset+impact rows: 574
+
+This difference must be reconciled before event-time and physical lead-time
+freeze.
+
+---
+
+## 2026-09-30 — Phase 3E initiated
+
+### Objective
+
+Resolve the workstation lineage of:
+
+- historical 300-ms fold checkpoints
+- historical 400-ms fold checkpoints
+- their fold-specific grouping
+- their dataset/window roots
+- the recent Falling Simulator dataset implementation
+- the exact subject-enumeration semantics used by KFoldDataloader
+
+### Baseline policy
+
+The 400-ms DATE historical workload remains the primary CrossLayer reference.
+
+The 300-ms checkpoint family is retained as a temporal-resolution sensitivity
+and generalization comparator.
+
+The 300-ms family does not replace the frozen 400-ms reference.
+
+### Falling Simulator policy
+
+The recent Falling Simulator may become the preferred dataset-lineage and
+physical-fault-calibration source only after its UniVR and KFall trial identity
+is reconciled with the protected historical representation.
+
+### Scientific boundary
+
+Phase 3E is read-only.
+
+It does not:
+
+- create replacement folds
+- retrain checkpoints
+- alter subject membership
+- open held-out predictions
+- perform INT8 calibration
+- inject faults
+
+### Phase-3E result
+
+The workstation checkpoint estate was audited beyond the narrow checkpoint
+roots used in Phase 3D.
+
+Both 300-ms and 400-ms fold-specific checkpoint families are treated as
+historical evidence.
+
+The 400-ms workload remains the primary frozen CrossLayer baseline.
+
+The 300-ms family is reserved for temporal-resolution sensitivity and
+generalization analysis.
+
+The recent Falling Simulator is audited as a preferred dataset-lineage
+candidate because it is reported to use the correct UniVR and KFall source
+datasets.
+
+No simulator dataset is promoted to authoritative CrossLayer status until its
+trial identities are reconciled with the protected historical representation.
+
+Exact historical KFold reconstruction also depends on the recovered subject
+enumeration semantics.
+
+---
+
+## 2026-09-30 — Phase 3F initiated
+
+### Objective
+
+Reconstruct the exact candidate historical five-fold subject memberships and
+bind existing fold checkpoint families to their training lineage.
+
+Also locate the recent Falling Simulator / physics-based digital-twin source
+that uses the correct UniVRFall and KFall datasets.
+
+### Phase-3E correction
+
+`KFoldDataloader.py` does not use uncontrolled filesystem subject order.
+
+It uses:
+
+`sorted(os.listdir(root_directory))`
+
+after excluding augmentation-only subjects.
+
+Therefore the historical KFold population is deterministic for a known
+dataset root.
+
+Sorting is lexicographic because subject identifiers are strings.
+
+### Baseline policy
+
+The frozen 400-ms DATE checkpoint remains the primary CrossLayer workload.
+
+Existing 400-ms five-fold families currently identified are:
+
+- CNNSplit
+- LSTM
+- ResNet
+
+They are architecture comparators.
+
+They are not five-fold replicas of the frozen DATE CNN.
+
+The 300-ms checkpoint estate remains secondary temporal-resolution evidence.
+
+### Scientific boundary
+
+Phase 3F does not:
+
+- retrain models
+- create a novel fold policy
+- choose checkpoints from performance
+- inspect held-out predictions
+- perform INT8 calibration
+- inject faults
+
+### Phase-3F result
+
+Historical five-fold reconstruction now uses the exact loader semantics:
+
+- lexicographically sorted subject directory names
+- augmentation subjects excluded first
+- five-fold KFold
+- shuffle enabled
+- random state 42
+- validation subjects sampled from each training-fold index set
+- validation fraction 0.2
+- validation random state 42
+
+The three complete 400-ms five-fold checkpoint families remain architecture
+comparators rather than replicas of the frozen DATE CNN.
+
+The recent simulator/digital-twin source was searched under broader naming
+patterns so that dataset lineage does not depend on a repository literally
+being named `Falling_simulator`.
+
+---
+
+## 2026-09-30 — Phase 3G initiated
+
+### Objective
+
+Bind the frozen DATE-2025 400-ms baseline to its authoritative real-data
+subject population and distinguish its historical split from the prospective
+five-fold replication protocol.
+
+Also audit the curated subject-fold and fall-event assets recovered from the
+recent HR_LR_Fallings / risk-data workflow.
+
+### Current strongest lineage hypothesis
+
+The candidate root:
+
+`/mnt/hdd16T/protechto/data/back/UniVrFall_KFall/segments/400ms_50ov_npseg_filt_binary`
+
+contains 69 subject directories.
+
+After excluding augmentation-only subjects 999 and 1000, 67 subjects remain.
+
+Those 67 subjects equal the historical protected population.
+
+Its reconstructed five-fold fold-1 test set appears identical to the
+historical 14-subject frozen-checkpoint test partition.
+
+The inner train/validation partition differs and must remain explicitly
+separate.
+
+### Protocol separation
+
+Historical frozen baseline:
+
+- train = 47 subjects
+- validation = 6 subjects
+- test = 14 subjects
+- augmentation-only = 999 and 1000
+
+Prospective five-fold replication:
+
+- same real subject population if lineage is confirmed
+- fold-specific train/validation/test partitions
+- each subject appears in outer test exactly once
+- fold-specific training is required
+
+### Scientific boundary
+
+Phase 3G does not:
+
+- retrain any model
+- change the frozen DATE checkpoint
+- create a new split from performance
+- inspect held-out predictions
+- perform INT8 calibration
+- inject faults
+
+### Phase-3G result
+
+The frozen DATE-2025 400-ms baseline population is now compared directly
+against the 67-subject combined real-data root.
+
+The historical 14-subject held-out test partition is checked against every
+reconstructed five-fold outer test partition.
+
+The historical inner train-validation split remains distinct from the current
+five-fold inner split and is not rewritten.
+
+Curated subject-fold and fall-event assets from the recent risk/simulator
+workflow are inventoried for the subsequent timing-lineage freeze.
+
+---
+
+## 2026-09-30 — Phase-3 methodological pivot
+
+New information about the historical preprocessing/training workflow shows
+that a mature 300-ms subject-independent k-fold pipeline exists.
+
+The project therefore distinguishes two roles.
+
+### Historical reference
+
+`DATE2025_CNN_400MS_RECONSTRUCTED`
+
+This remains frozen as a historical 400-ms reference and reproducibility
+anchor.
+
+Nothing from Phase 2 is discarded.
+
+### Prospective primary experimental protocol
+
+Candidate primary window:
+
+300 ms
+
+Candidate primary population:
+
+UniVRFall + KFall real subjects only.
+
+OnField will not be mixed into the primary held-out subject folds unless later
+evidence provides a compelling reason.
+
+It is instead treated as augmentation / external robustness evidence.
+
+### Subject identity rule
+
+Manual numeric renaming is not accepted as the new scientific identifier.
+
+Canonical IDs will encode dataset identity explicitly, for example:
+
+`UNIVR_<subject>`
+
+`KFALL_<subject>`
+
+`ONFIELD_<subject>`
+
+### Remaining unknowns
+
+Before the 300-ms protocol can be frozen we must verify:
+
+- exact meaning of the preprocessing `-o` argument
+- exact historical window stride
+- exact 300-ms dataset roots
+- exact subject identities
+- exact five-fold memberships
+- exact CNN checkpoint lineage
+- whether existing 300-ms checkpoints were trained on UniVR, KFall,
+  combined data, or mixed OnField data
+- event-onset and impact mapping
+
+---
+
+## 2026-09-30 — Phase 3H initiated
+
+### Protocol clarification
+
+The intended historical and prospective segmentation uses 50 percent overlap.
+
+The later 95-percent-overlap experiments are excluded from the primary
+CrossLayer protocol.
+
+At 100 Hz:
+
+- 300 ms = 30 samples
+- 50 percent overlap = 15-sample stride = 150 ms
+- 400 ms = 40 samples
+- 50 percent overlap = 20-sample stride = 200 ms
+
+### Primary protocol candidate
+
+Window:
+
+300 ms
+
+Overlap:
+
+50 percent
+
+Sampling:
+
+100 Hz
+
+Primary subject population:
+
+UniVRFall + KFall only
+
+Expected subjects:
+
+- UniVRFall = 29
+- KFall = 32
+- total = 61
+
+OnField is excluded from the primary held-out fold population.
+
+OnField may later be used as training augmentation or external robustness
+evidence under an explicitly frozen policy.
+
+### 400-ms role
+
+400 ms with the same 50-percent overlap remains:
+
+- historical DATE baseline reference
+- later controlled window-duration sensitivity condition
+
+It is not the primary prospective CrossLayer dataset.
+
+### 95-percent overlap
+
+95-percent-overlap datasets and checkpoints are excluded from main protocol
+selection.
+
+They must not be mixed with the 50-percent-overlap evidence.
+
+### Objective
+
+Verify whether the existing 61-subject merged 300-ms root is an exact
+file-level copy of the individually generated UniVRFall and KFall 300-ms
+50-percent-overlap roots.
+
+No regeneration is required if the roots match exactly.
+
+### Phase-3H result
+
+The primary prospective CrossLayer dataset is now evaluated under the intended
+300-ms / 50-percent-overlap protocol.
+
+The clean 61-subject UniVRFall + KFall root is checked against the separately
+generated source-dataset segment roots at file level.
+
+OnField is excluded from the primary fold population.
+
+The later 95-percent-overlap experiments are explicitly excluded from primary
+protocol lineage.
+
+The 400-ms condition retains the same 50-percent-overlap rule and remains a
+historical reference / controlled temporal-window comparison.
+
+---
+
+## 2026-09-30 — Phase 3I initiated
+
+### Objective
+
+Determine the correct scientific role of the OnField recordings.
+
+The project does not discard OnField.
+
+The current candidate design is:
+
+- UniVRFall + KFall: 61-subject primary five-fold benchmark
+- OnField: independent field-domain / generalization evidence
+
+Historical augmentation recordings must be separated from independent
+field-validation subjects before this role is frozen.
+
+### Questions
+
+Phase 3I determines:
+
+- exact OnField processed subject IDs
+- exact value of `DATA_AUGMENTATION_SUBJECTS`
+- whether 999 and 1000 are augmentation-only storage identities
+- whether exactly ten additional OnField subjects remain
+- per-subject Activity/Falling label composition
+- number of trials and windows
+- whether the 300-ms and 400-ms OnField populations agree
+- raw OnField source-tree structure
+- whether the historical helper injects OnField data into training
+
+### Scientific policy candidate
+
+Independent OnField subjects must not be used for:
+
+- model architecture selection
+- hyperparameter selection
+- fault-severity selection
+- protection-threshold selection
+- supervisor tuning
+- INT8 calibration
+- recovery tuning
+
+They may be opened only after the corresponding protocol is frozen.
+
+This preserves OnField as genuine external-domain evidence.
+
+### Phase-3I result
+
+OnField is retained as a first-class part of the CrossLayer study.
+
+Its role is intentionally separated from the primary UniVRFall + KFall
+five-fold benchmark.
+
+The independent OnField subjects are reserved for field-domain /
+generalization evidence.
+
+Historical OnField augmentation storage identities are audited separately so
+that augmentation data cannot contaminate the independent field evaluation.
+
+### Phase-3I policy correction
+
+The OnField cohort has been clarified from acquisition history.
+
+Exactly ten OnField cases are retained:
+
+- storage IDs 1001 through 1010
+
+They contain Activity data only.
+
+Storage IDs 999 and 1000 had known data-quality issues and are permanently
+excluded from the prospective CrossLayer project.
+
+Although historical code once used 999 and 1000 as augmentation storage IDs,
+that historical behavior is not inherited by the new CrossLayer protocol.
+
+The rejected cases are kept in provenance documentation only.
+
+The ten retained OnField cases are reserved as an independent Activity-only
+field-domain evaluation cohort.
+
+They are not used for training, validation, INT8 calibration, model selection,
+fault parameter selection, protection tuning or recovery tuning.
+
+Primary fall-positive evaluation remains on the 61-subject UniVRFall + KFall
+population.
+
+---
+
+## 2026-09-30 — Phase 3J initiated
+
+### Objective
+
+Freeze the exact subject-independent five-fold membership for the prospective
+primary 300-ms CrossLayer experiment.
+
+### Frozen population candidate
+
+Primary data:
+
+- UniVRFall: 29 subjects
+- KFall: 32 subjects
+- total: 61 subjects
+
+Windowing:
+
+- 300 ms
+- 100 Hz
+- 30 samples/window
+- 50 percent overlap
+- 15-sample stride
+- 150-ms decision stride
+
+### Fold-generation algorithm
+
+The historical subject-level KFold policy is reused prospectively:
+
+- subjects ordered by lexicographically sorted storage directory name
+- KFold n_splits = 5
+- shuffle = True
+- random_state = 42
+- outer test subjects come directly from KFold
+- validation is selected only from the outer non-test indices
+- validation test_size = 0.2
+- validation random_state = 42
+
+The folds are generated from the 61-subject UniVRFall + KFall root only.
+
+OnField is not part of five-fold generation.
+
+### Partition roles
+
+Training partition:
+
+- model fitting
+- permitted source for a later deterministic INT8 calibration subset
+- permitted source for development-only fault calibration
+
+Validation partition:
+
+- architecture/hyperparameter checks after architecture policy is frozen
+- decision-threshold selection
+- monitor/protection calibration
+- recovery/supervisor calibration
+
+Outer-test partition:
+
+- locked evaluation only
+- never used for model selection
+- never used for fault severity selection
+- never used for INT8 calibration
+- never used for monitor/protection tuning
+
+OnField retained subjects 1001 through 1010:
+
+- external Activity-only evaluation
+- unavailable to all training/tuning/calibration decisions
+
+Rejected OnField IDs 999 and 1000:
+
+- unavailable everywhere
+- provenance only
+
+### Scientific boundary
+
+Phase 3J does not train models, evaluate predictions, calibrate INT8, inject
+faults, select thresholds or inspect outer-test outcomes.
+
+### Phase-3J result
+
+The prospective primary 300-ms subject-independent five-fold membership is
+now frozen.
+
+The primary population contains exactly 61 dataset-qualified subjects.
+
+Every subject appears in outer test exactly once.
+
+No train/validation/test subject overlap exists within any fold.
+
+OnField does not participate in primary fold generation.
+
+INT8 calibration is restricted to future deterministic samples drawn from the
+training partition of each fold.
+
+Outer-test and retained OnField data remain unavailable to all model,
+quantization, fault and protection tuning decisions.
+
+---
+
+## 2026-09-30 — Phase 3K initiated
+
+### Objective
+
+Recover and audit fall-event annotation lineage for the frozen 61-subject
+300-ms primary population.
+
+The audit maps:
+
+processed subject / task / trial
+
+to:
+
+official UniVRFall or KFall fall-onset and fall-impact annotation.
+
+### Frozen inputs
+
+Primary processed data:
+
+- UniVRFall: 29 subjects
+- KFall: 32 subjects
+- total: 61 subjects
+- trials: 6,309
+- window: 300 ms
+- overlap: 50 percent
+- stride: 150 ms
+
+Five-fold membership is already frozen and is not modified in Phase 3K.
+
+### Questions
+
+Phase 3K determines:
+
+- exact annotation workbook set used for UniVRFall
+- exact annotation workbook set used for KFall
+- annotation column semantics
+- number of onset/impact rows
+- processed trial mapping coverage
+- duplicate annotation trial keys
+- annotation rows without a processed trial
+- processed Falling trials without an annotation
+- onset >= impact anomalies
+- UniVR 574-versus-573 event discrepancy
+- availability of existing curated fall-event indexes
+- whether annotation values are already sensor-sample indices or still require
+  synchronization before physical lead-time computation
+
+### Scientific boundary
+
+Phase 3K does not:
+
+- change five-fold membership
+- train a model
+- run model predictions
+- inspect outer-test model outcomes
+- inspect OnField model outcomes
+- perform INT8 calibration
+- inject faults
+- select protection thresholds
+
+Physical lead-time semantics remain unfrozen until this audit is complete.
+
+### Phase-3K result
+
+The official/local UniVRFall and KFall annotation workbooks were audited
+against the exact 6,309 processed 300-ms primary trial identities.
+
+Complete onset/impact rows, duplicate trial keys, unmatched annotation rows,
+processed Falling trials without annotations and onset-impact ordering are
+recorded explicitly.
+
+Existing curated fall-event index assets are also inventoried.
+
+Annotation frame values are not yet automatically converted to 100-Hz sensor
+time.
+
+Physical lead-time reporting remains blocked until Phase 3L establishes the
+annotation-to-sensor synchronization semantics.
+
+---
+
+## 2026-09-30 — Phase 3L initiated
+
+### Motivation
+
+Phase 3K successfully audited the local annotation workbooks, but the direct
+workbook-row-to-processed-trial join is not authoritative.
+
+In particular:
+
+- KFall has far more fall trial instances than workbook rows.
+- workbook rows can encode multiple trial instances
+- reducing every workbook row to one integer trial ID loses event instances
+- therefore the direct Phase-3K workbook reconciliation must not be used as
+  the final event mapping
+
+Phase 3K remains useful as a provenance audit.
+
+### Phase-3L source candidate
+
+The existing curated event asset:
+
+`FALL_EVENT_INDEX_COMBINED_LABELED.csv`
+
+contains expanded event-level records with:
+
+- dataset identity
+- subject identity
+- task
+- trial
+- source sensor file
+- source annotation workbook
+- fall-start frame
+- impact frame
+- zero-based fall-start position
+- zero-based impact position
+- sampling rate
+
+Phase 3L independently verifies this event index against:
+
+1. the frozen 6,309-trial primary 300-ms processed root
+2. the processed Activity/Falling trial labels
+3. local oriented sensor CSV files
+4. local annotation workbooks
+5. frame/position arithmetic
+6. KFall FrameCounter evidence
+
+### Scientific boundary
+
+No model is executed.
+
+No prediction is opened.
+
+No fault is injected.
+
+No INT8 calibration is performed.
+
+No physical lead-time claim is frozen unless synchronization evidence is
+sufficient.
+
+### Phase-3L result
+
+The expanded curated fall-event index was audited independently against the
+frozen 300-ms primary processed population and the local oriented sensor
+files.
+
+The earlier Phase-3K scalar workbook-row join is explicitly non-authoritative.
+
+The curated event index is the event-lineage candidate for the prospective
+CrossLayer timing analysis.
+
+KFall FrameCounter correspondence is checked directly against raw/oriented
+sensor rows.
+
+UniVR physical timing remains separately guarded until original timestamp
+synchronization is qualified.
+
+No model outcomes were inspected.
+
+---
+
+## 2026-09-30 — Phase 3M initiated
+
+### Motivation
+
+Phase 3L established that the curated event index contains 2,919 unique
+annotated fall events.
+
+It also exposed two dataset-specific conventions which must be normalized
+before event-to-processed-trial reconciliation.
+
+1. UniVR event-index subjects use an event namespace such as `1009` for
+   source subject `SA09`, whereas the frozen primary processed root uses
+   storage subject `9`.
+
+2. KFall event-index subjects use the same protected-tree namespace as the
+   processed root, such as `106` for source subject `SA06`.
+
+Phase 3L also found that all 573 UniVR event records use a different
+frame-to-position convention from KFall. This must be audited against the
+original UniVR recordings rather than force-fitting the KFall convention.
+
+### Protocol eligibility
+
+A 300-ms model window at 100 Hz requires 30 samples.
+
+The frozen safety deadline is 150 ms before impact.
+
+An annotated fall event is capable of yielding a complete post-onset,
+pre-deadline 300-ms Falling window only when:
+
+`impact_position - onset_position - deadline_samples >= window_samples`
+
+The Phase-3L discrepancy `KFALL_106_T27_R05` has a 410-ms onset-to-impact
+duration. Therefore only 260 ms remains after enforcing the 150-ms
+pre-impact deadline. This is shorter than a 300-ms window.
+
+Phase 3M tests whether protocol eligibility exactly explains the
+2,919 annotated events versus 2,918 processed fall-positive trials.
+
+### Scientific boundary
+
+No model is trained.
+
+No model prediction is executed.
+
+No outer-test outcome is opened.
+
+No OnField outcome is opened.
+
+No INT8 calibration is performed.
+
+No fault is injected.
+
+The five-fold membership remains unchanged.
+
+### Phase-3M-R result
+
+The Phase-3M strict equivalence between historical Falling labels and a
+complete post-onset 300-ms window ending 150 ms before impact is rejected.
+
+The canonical mapping of 2,919 annotated events to processed trials remains
+valid.
+
+All 2,919 annotated events correspond to processed trial identities.
+
+Exactly one annotated fall event has no Falling-labelled processed window:
+
+`KFALL_106_T27_R05`
+
+This case remains explicit and is not silently removed.
+
+Historical binary-label semantics and later safety-deadline timing semantics
+are now represented as separate protocol layers.
+
+The legacy UniVR raw logger parser was repaired to recognize `time[ms]`.
+
+No model execution occurred.
+
+---
+
+## 2026-09-30 — Phase 3N initiated
+
+Phase 3N closes the prospective data protocol.
+
+It does not attempt to reconstruct historical labels from event annotations.
+
+Two independent evidence layers are retained.
+
+### Classification layer
+
+The inherited 300-ms `labels.npy` files are immutable classification
+ground truth.
+
+The event-onset/impact annotations are not used to rewrite these labels.
+
+### Safety-time layer
+
+The curated fall-event index and oriented sensor FrameCounter are used for
+event-time evaluation.
+
+The legacy UniVR `time[ms]` stream is retained as provenance but is not the
+authoritative event clock because Phase 3M-R found extensive duplicate
+timestamp steps and representation-length differences.
+
+### Causal decision timestamp
+
+For 300-ms windows at 100 Hz with 50 percent overlap:
+
+- window samples = 30
+- stride samples = 15
+- window `j` starts at sample `15*j`
+- its final observed sample is `15*j + 29`
+
+Offline sensor-only lead time is measured from that final observed sample to
+the impact frame.
+
+Measured runtime latency is subtracted later when MCU timing exists.
+
+### Quantization calibration
+
+Static PTQ calibration may use only the training subjects of the corresponding
+frozen fold.
+
+Validation, outer test and OnField are prohibited calibration sources.
+
+Phase 3N freezes a deterministic calibration-window identity set but does not
+perform quantization.
+
+---
+
+## 2026-09-30 — Phase 3N-R initiated
+
+The first Phase-3N close attempt correctly validated the event FrameCounter
+clock, the historical windowing source and deterministic training-only INT8
+calibration identities.
+
+Its whole-trial window-count check was rejected.
+
+The recovered historical preprocessing source demonstrates that annotated
+fall trials are segmented piecewise.
+
+For a fall trial:
+
+1. the pre-onset region is windowed independently as Activity
+2. the onset-to-impact region is windowed independently as Falling
+3. the fall-region window grid therefore restarts at fall onset
+
+Consequently a processed fall-trial window index cannot universally be mapped
+to raw sample position using `15 * window_index`.
+
+Phase 3N-R reconstructs the exact piecewise raw-sample position of every
+stored window and freezes that mapping.
+
+`KFALL_106_T27_R05` remains an explicit historical annotation/processed-label
+discordance. It is not deleted and its labels are not rewritten.
+
+---
+
+## 2026-09-30 — Phase 3N-R2 initiated
+
+Phase 3N-R recovered the correct piecewise preprocessing structure but used
+the curated zero-based event position as the historical Python slice index.
+
+That assumption was rejected.
+
+The historical source uses the annotation values `start_fall_frame` and
+`end_fall_frame` directly in Python slicing.
+
+This creates a dataset-specific consequence.
+
+For UniVR, the curated event position and annotation frame use the same
+index convention.
+
+For KFall, the curated position is annotation frame minus one. Therefore
+historical preprocessing used a split index one sample after the curated
+zero-based event position.
+
+Phase 3N-R2 reconstructs stored windows using the historical annotation frame
+values themselves.
+
+The fallback whole-trial preprocessing branch is also audited for the sole
+current annotation/processed-label discordance `KFALL_106_T27_R05`.
+
+### Phase-3N-R2 result
+
+Phase 3 is complete.
+
+The historical preprocessing coordinate system is now source-qualified.
+
+For UniVR, annotation frame and curated zero-based event position coincide.
+
+For KFall, annotation frame equals curated zero-based event position plus one.
+
+Historical preprocessing used annotation frame values directly as Python
+slice indices.
+
+Using that source-faithful convention reconstructs 2,918 annotated event
+trials exactly through the historical Activity-plus-Falling piecewise route.
+
+The sole remaining event `KFALL_106_T27_R05` exactly matches the historical
+whole-trial fallback geometry and retains its frozen Activity labels.
+
+No trial was deleted or relabeled.
+
+All 273,830 stored primary windows now have a qualified historical window
+route and raw-sample index mapping.
+
+The physical event clock remains the oriented FrameCounter.
+
+Five deterministic training-only INT8 calibration identity sets remain
+frozen.
+
+No prospective model training, quantization execution, fault injection or
+held-out model evaluation occurred in Phase 3.

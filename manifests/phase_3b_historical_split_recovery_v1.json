@@ -1,0 +1,525 @@
+{
+  "candidate_content_agreement": true,
+  "candidate_manifest_count": 1,
+  "candidate_manifests": [
+    {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/IMU_Reliability/data/manifests/date2025_cnn400_inferred_split_v1.json",
+      "sha256": "3ed3e1c8a70e581d7b37416f1fb19a08efa8787eae55f524152bb264e8db2305"
+    }
+  ],
+  "canonical_source_path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/IMU_Reliability/data/manifests/date2025_cnn400_inferred_split_v1.json",
+  "canonical_source_sha256": "3ed3e1c8a70e581d7b37416f1fb19a08efa8787eae55f524152bb264e8db2305",
+  "freeze_status": "NOT_YET_PHASE3_FROZEN",
+  "generated_utc": "2026-09-30T09:14:44+00:00",
+  "historical_combined_tree": {
+    "path": "/mnt/hdd16T/protechto/data/back/UniVrFall_KFall/segments/400ms_50ov_npseg_filt_binary",
+    "subject_count": 69,
+    "trial_count": 6193,
+    "window_count": 1187326
+  },
+  "leakage_audit": {
+    "augmentation_in_protected_split": [],
+    "train_test_overlap": [],
+    "train_validation_overlap": [],
+    "validation_test_overlap": []
+  },
+  "partition_verification": {
+    "partitions": {
+      "augmentation_only": {
+        "expected_trial_count": 2,
+        "expected_window_count": 220472,
+        "trial_count": 2,
+        "trial_count_match": true,
+        "window_count": 220472,
+        "window_count_match": true
+      },
+      "test": {
+        "expected_trial_count": 1116,
+        "expected_window_count": 366507,
+        "trial_count": 1116,
+        "trial_count_match": true,
+        "window_count": 366507,
+        "window_count_match": true
+      },
+      "total": {
+        "expected_trial_count": 6193,
+        "expected_window_count": 1187326,
+        "trial_count": 6193,
+        "trial_count_match": true,
+        "window_count": 1187326,
+        "window_count_match": true
+      },
+      "train": {
+        "expected_trial_count": 4628,
+        "expected_window_count": 510479,
+        "trial_count": 4628,
+        "trial_count_match": true,
+        "window_count": 510479,
+        "window_count_match": true
+      },
+      "unassigned": {
+        "examples": [],
+        "trial_count": 0,
+        "window_count": 0
+      },
+      "validation": {
+        "expected_trial_count": 447,
+        "expected_window_count": 89868,
+        "trial_count": 447,
+        "trial_count_match": true,
+        "window_count": 89868,
+        "window_count_match": true
+      }
+    },
+    "per_subject": {
+      "1000": {
+        "partition": "augmentation_only",
+        "trials": 1,
+        "windows": 206146
+      },
+      "1001": {
+        "partition": "test",
+        "trials": 2,
+        "windows": 81634
+      },
+      "1002": {
+        "partition": "train",
+        "trials": 2,
+        "windows": 81166
+      },
+      "1003": {
+        "partition": "train",
+        "trials": 2,
+        "windows": 88792
+      },
+      "1004": {
+        "partition": "train",
+        "trials": 1,
+        "windows": 37597
+      },
+      "1005": {
+        "partition": "test",
+        "trials": 3,
+        "windows": 118975
+      },
+      "1006": {
+        "partition": "test",
+        "trials": 2,
+        "windows": 101464
+      },
+      "1007": {
+        "partition": "validation",
+        "trials": 1,
+        "windows": 74332
+      },
+      "1008": {
+        "partition": "train",
+        "trials": 1,
+        "windows": 74738
+      },
+      "1009": {
+        "partition": "train",
+        "trials": 1,
+        "windows": 78960
+      },
+      "1010": {
+        "partition": "test",
+        "trials": 1,
+        "windows": 29834
+      },
+      "106": {
+        "partition": "train",
+        "trials": 156,
+        "windows": 4739
+      },
+      "107": {
+        "partition": "train",
+        "trials": 150,
+        "windows": 5102
+      },
+      "108": {
+        "partition": "test",
+        "trials": 163,
+        "windows": 5056
+      },
+      "109": {
+        "partition": "validation",
+        "trials": 153,
+        "windows": 4626
+      },
+      "110": {
+        "partition": "train",
+        "trials": 159,
+        "windows": 4877
+      },
+      "111": {
+        "partition": "train",
+        "trials": 163,
+        "windows": 5490
+      },
+      "112": {
+        "partition": "test",
+        "trials": 142,
+        "windows": 4052
+      },
+      "113": {
+        "partition": "train",
+        "trials": 160,
+        "windows": 5439
+      },
+      "114": {
+        "partition": "train",
+        "trials": 162,
+        "windows": 5014
+      },
+      "115": {
+        "partition": "train",
+        "trials": 162,
+        "windows": 4701
+      },
+      "116": {
+        "partition": "train",
+        "trials": 163,
+        "windows": 4984
+      },
+      "117": {
+        "partition": "train",
+        "trials": 161,
+        "windows": 5373
+      },
+      "118": {
+        "partition": "train",
+        "trials": 160,
+        "windows": 5122
+      },
+      "119": {
+        "partition": "train",
+        "trials": 158,
+        "windows": 5185
+      },
+      "120": {
+        "partition": "train",
+        "trials": 156,
+        "windows": 4435
+      },
+      "121": {
+        "partition": "test",
+        "trials": 163,
+        "windows": 4782
+      },
+      "122": {
+        "partition": "train",
+        "trials": 161,
+        "windows": 4530
+      },
+      "123": {
+        "partition": "train",
+        "trials": 163,
+        "windows": 4314
+      },
+      "124": {
+        "partition": "test",
+        "trials": 153,
+        "windows": 4619
+      },
+      "125": {
+        "partition": "train",
+        "trials": 163,
+        "windows": 4872
+      },
+      "126": {
+        "partition": "validation",
+        "trials": 161,
+        "windows": 4959
+      },
+      "127": {
+        "partition": "train",
+        "trials": 157,
+        "windows": 4764
+      },
+      "128": {
+        "partition": "train",
+        "trials": 156,
+        "windows": 4726
+      },
+      "129": {
+        "partition": "train",
+        "trials": 158,
+        "windows": 4949
+      },
+      "130": {
+        "partition": "train",
+        "trials": 161,
+        "windows": 4366
+      },
+      "131": {
+        "partition": "train",
+        "trials": 156,
+        "windows": 4444
+      },
+      "132": {
+        "partition": "test",
+        "trials": 163,
+        "windows": 4592
+      },
+      "133": {
+        "partition": "train",
+        "trials": 162,
+        "windows": 4464
+      },
+      "135": {
+        "partition": "train",
+        "trials": 160,
+        "windows": 4696
+      },
+      "136": {
+        "partition": "train",
+        "trials": 160,
+        "windows": 4212
+      },
+      "137": {
+        "partition": "test",
+        "trials": 148,
+        "windows": 3967
+      },
+      "138": {
+        "partition": "train",
+        "trials": 162,
+        "windows": 4725
+      },
+      "14": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1812
+      },
+      "15": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1914
+      },
+      "16": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1820
+      },
+      "17": {
+        "partition": "test",
+        "trials": 44,
+        "windows": 1948
+      },
+      "18": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 2029
+      },
+      "19": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1816
+      },
+      "20": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1631
+      },
+      "21": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1600
+      },
+      "22": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 2163
+      },
+      "23": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1954
+      },
+      "24": {
+        "partition": "validation",
+        "trials": 44,
+        "windows": 2079
+      },
+      "25": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 2107
+      },
+      "26": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1754
+      },
+      "27": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1791
+      },
+      "28": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1855
+      },
+      "29": {
+        "partition": "validation",
+        "trials": 44,
+        "windows": 1937
+      },
+      "30": {
+        "partition": "validation",
+        "trials": 44,
+        "windows": 1935
+      },
+      "31": {
+        "partition": "test",
+        "trials": 44,
+        "windows": 1900
+      },
+      "32": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1727
+      },
+      "33": {
+        "partition": "test",
+        "trials": 44,
+        "windows": 1760
+      },
+      "34": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1976
+      },
+      "35": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 2082
+      },
+      "36": {
+        "partition": "test",
+        "trials": 44,
+        "windows": 1924
+      },
+      "37": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1827
+      },
+      "9": {
+        "partition": "train",
+        "trials": 44,
+        "windows": 1845
+      },
+      "999": {
+        "partition": "augmentation_only",
+        "trials": 1,
+        "windows": 14326
+      }
+    }
+  },
+  "proposed_crosslayer_roles": {
+    "historical_999_1000": "augmentation_only_not_evaluation",
+    "historical_test": "held_out_confirmation",
+    "historical_train": "development",
+    "historical_validation": "calibration"
+  },
+  "reason_not_new_random_split": "The protected task model is already trained. A new subject split could place historically seen subjects into nominal held-out evaluation.",
+  "schema": "crosslayer_phase3b_historical_split_recovery_v1",
+  "scientific_boundary": {
+    "faults_injected": false,
+    "final_test_outcomes_used": false,
+    "new_random_split_generated": false,
+    "quantization_calibration_performed": false,
+    "subject_membership_changed": false,
+    "task_predictions_opened": false
+  },
+  "split_role": "VERIFIED_HISTORICAL_CANDIDATE",
+  "status": "PASS",
+  "subject_counts": {
+    "augmentation_only": 2,
+    "test": 14,
+    "train": 47,
+    "validation": 6
+  },
+  "subjects": {
+    "augmentation_only": [
+      "999",
+      "1000"
+    ],
+    "test": [
+      "17",
+      "31",
+      "33",
+      "36",
+      "108",
+      "112",
+      "121",
+      "124",
+      "132",
+      "137",
+      "1001",
+      "1005",
+      "1006",
+      "1010"
+    ],
+    "train": [
+      "9",
+      "14",
+      "15",
+      "16",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "25",
+      "26",
+      "27",
+      "28",
+      "32",
+      "34",
+      "35",
+      "37",
+      "106",
+      "107",
+      "110",
+      "111",
+      "113",
+      "114",
+      "115",
+      "116",
+      "117",
+      "118",
+      "119",
+      "120",
+      "122",
+      "123",
+      "125",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "133",
+      "135",
+      "136",
+      "138",
+      "1002",
+      "1003",
+      "1004",
+      "1008",
+      "1009"
+    ],
+    "validation": [
+      "24",
+      "29",
+      "30",
+      "109",
+      "126",
+      "1007"
+    ]
+  }
+}

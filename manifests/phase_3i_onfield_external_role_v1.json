@@ -1,0 +1,992 @@
+{
+  "audit_mode": "READ_ONLY",
+  "augmentation_constant_sources": [
+    {
+      "assignments": [
+        {
+          "line": 1,
+          "source": "DATA_AUGMENTATION_SUBJECTS = [\"1000\", \"999\"]",
+          "value": [
+            "1000",
+            "999"
+          ]
+        }
+      ],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/constants.py",
+      "sha256": "087525be609239d0f36f21e88fe05ac8cb8f6fcef0a1880b8879df6813536b77",
+      "usage": [
+        {
+          "line": 1,
+          "text": "DATA_AUGMENTATION_SUBJECTS = [\"1000\", \"999\"]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/dataloaders/helper.py",
+      "sha256": "2d01836088aea840aafab80ad08ab6f9cab84b91b0ff0eb81c9f657d7e117a1a",
+      "usage": [
+        {
+          "line": 74,
+          "text": "x_field_20241106, y_field_20241106 = load(const.DATA_AUGMENTATION_SUBJECTS, f\"{settings['data']}/OnField/segments/300ms_50ov_npseg_filt_binary\")"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/dataloaders/KFoldDataloader.py",
+      "sha256": "6f9d271856d3abe39a80617ed8f99506df004838abe8f22a2de740084b34bfc8",
+      "usage": [
+        {
+          "line": 22,
+          "text": "if s not in const.DATA_AUGMENTATION_SUBJECTS"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/dataloaders/TrainTestDataloader.py",
+      "sha256": "560b279fad1c83f519f9a351dc6e97b52bc16dacd25f9ec1241a594612a2f31d",
+      "usage": [
+        {
+          "line": 13,
+          "text": "self.subjects = [s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/simulation/SimulationDataloader.py",
+      "sha256": "9b1d7bcd701a29b559bd87dc1a6dfc1a2ce66804d1b00ba9211290cd2615c242",
+      "usage": [
+        {
+          "line": 16,
+          "text": "self.subjects = [s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/simulation/SimulationKFoldDataloader.py",
+      "sha256": "bccee12830a855a90d0cb04a6ba23ff518289c734e043bda15e873203b7beed8",
+      "usage": [
+        {
+          "line": 18,
+          "text": "self.subjects = np.array([s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS])"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/analyze_events.py",
+      "sha256": "f42ed405105203234d6da1cb184e58995e7a217c44fb15510f16196545ff87ef",
+      "usage": [
+        {
+          "line": 204,
+          "text": "and s not in getattr(const, \"DATA_AUGMENTATION_SUBJECTS\", [])"
+        }
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "line": 1,
+          "source": "DATA_AUGMENTATION_SUBJECTS = [\"1000\", \"999\"]",
+          "value": [
+            "1000",
+            "999"
+          ]
+        }
+      ],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/constants.py",
+      "sha256": "7be5001a9972d4346633b6c51e0ce0787fa48e55039325cbb36f22d2b02d43e7",
+      "usage": [
+        {
+          "line": 1,
+          "text": "DATA_AUGMENTATION_SUBJECTS = [\"1000\", \"999\"]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/evaluate_canonical_rf.py",
+      "sha256": "e13eda6481add8bb456b9f83be077ea52f5a76790e51e4ed27a6bfeba1a5c687",
+      "usage": [
+        {
+          "line": 80,
+          "text": "and s not in const.DATA_AUGMENTATION_SUBJECTS"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/make_dataset_report.py",
+      "sha256": "2d0353c30d85f69b94cc74e0050a26c041cf883c1c6538b6441d8dc06bc3861a",
+      "usage": [
+        {
+          "line": 46,
+          "text": "# constants may define DATA_AUGMENTATION_SUBJECTS; if missing, continue without it"
+        },
+        {
+          "line": 50,
+          "text": "if hasattr(const, \"DATA_AUGMENTATION_SUBJECTS\"):"
+        },
+        {
+          "line": 51,
+          "text": "AUG_SUBJECTS = set(const.DATA_AUGMENTATION_SUBJECTS)"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/dataloaders/CanonicalKFoldDataloader.py",
+      "sha256": "1120279830290418e39f4595610b07fb686fbc74596390fe4f099c46f8634ef8",
+      "usage": [
+        {
+          "line": 9,
+          "text": "excluding DATA_AUGMENTATION_SUBJECTS"
+        },
+        {
+          "line": 174,
+          "text": "const.DATA_AUGMENTATION_SUBJECTS"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/dataloaders/GANhelper.py",
+      "sha256": "75977f533d87b33d189092d4586234e81794b6bcd361e78b5f14db8d3c41edd4",
+      "usage": [
+        {
+          "line": 100,
+          "text": "const.DATA_AUGMENTATION_SUBJECTS,"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/dataloaders/helper.py",
+      "sha256": "bb30bd9cda1ea026091fbe3addb954dcd770f34088323fdce906f487c466bfba",
+      "usage": [
+        {
+          "line": 102,
+          "text": "const.DATA_AUGMENTATION_SUBJECTS,"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/dataloaders/KFoldDataloader.py",
+      "sha256": "a77989bb45207345554f0299c96bbb55f7d0d303f44045dfe7cb946aeeed3bfe",
+      "usage": [
+        {
+          "line": 22,
+          "text": "if s not in const.DATA_AUGMENTATION_SUBJECTS"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/dataloaders/TrainTestDataloader.py",
+      "sha256": "560b279fad1c83f519f9a351dc6e97b52bc16dacd25f9ec1241a594612a2f31d",
+      "usage": [
+        {
+          "line": 13,
+          "text": "self.subjects = [s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/dataloaders/VAEhelper.py",
+      "sha256": "65c6079172d930c0cef43d449d35c801b955d448a5723796f28dcc5414ca2d6c",
+      "usage": [
+        {
+          "line": 77,
+          "text": "const.DATA_AUGMENTATION_SUBJECTS,"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/simulation/SimulationDataloader.py",
+      "sha256": "9b1d7bcd701a29b559bd87dc1a6dfc1a2ce66804d1b00ba9211290cd2615c242",
+      "usage": [
+        {
+          "line": 16,
+          "text": "self.subjects = [s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/simulation/SimulationKFoldDataloader.py",
+      "sha256": "bccee12830a855a90d0cb04a6ba23ff518289c734e043bda15e873203b7beed8",
+      "usage": [
+        {
+          "line": 18,
+          "text": "self.subjects = np.array([s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS])"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/tools/build_learning_curve_manifests.py",
+      "sha256": "6f579c8baa98dc2b7d9ef2da4bfe535a7f760b2bc4ff024b19e054b852a5a527",
+      "usage": [
+        {
+          "line": 210,
+          "text": "if s not in const.DATA_AUGMENTATION_SUBJECTS"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/tools/build_learning_curve_manifests_v2.py",
+      "sha256": "8d577fa62624c8578104893ebe52bbd97e410f2fa940fc7b4b5ecc22ca80a5ea",
+      "usage": [
+        {
+          "line": 388,
+          "text": "const.DATA_AUGMENTATION_SUBJECTS"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto_master/tools/historical_paper_dual_timing_audit.py",
+      "sha256": "aae2c9f50dc1cf2b1c67ed5b8fd17b4aea35e4affbf40d7a5aec257051fb5913",
+      "usage": [
+        {
+          "line": 517,
+          "text": "s not in const.DATA_AUGMENTATION_SUBJECTS"
+        }
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "line": 1,
+          "source": "DATA_AUGMENTATION_SUBJECTS = [\"1000\", \"999\"]",
+          "value": [
+            "1000",
+            "999"
+          ]
+        }
+      ],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/constants.py",
+      "sha256": "f39df0e4d29d615fd151daaf60a1892b466e33a9a0bbc88bac16262c9950bab4",
+      "usage": [
+        {
+          "line": 1,
+          "text": "DATA_AUGMENTATION_SUBJECTS = [\"1000\", \"999\"]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/dataloaders/helper.py",
+      "sha256": "953481dd0128d97cf0f117b9a0641e691127e8d9c5622fcb328c020728a92407",
+      "usage": [
+        {
+          "line": 75,
+          "text": "x_field_20241106, y_field_20241106 = load(const.DATA_AUGMENTATION_SUBJECTS, f\"{settings['data']}/OnField/segments/{window_size}0ms_50ov_npseg_filt_binary\")"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/dataloaders/KFoldDataloader.py",
+      "sha256": "0d9594dfb1375927cc09204b2a0bf432c892a1d00eedc53c4d1cf0244f9b5148",
+      "usage": [
+        {
+          "line": 14,
+          "text": "self.subjects = np.array([s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS])"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/dataloaders/TrainTestDataloader.py",
+      "sha256": "f1496895467f3e2ccfef723606ccd765107bc2bf70bb70df62ee53d77bd70df2",
+      "usage": [
+        {
+          "line": 13,
+          "text": "self.subjects = [s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/simulation/SimulationDataloader.py",
+      "sha256": "9b1d7bcd701a29b559bd87dc1a6dfc1a2ce66804d1b00ba9211290cd2615c242",
+      "usage": [
+        {
+          "line": 16,
+          "text": "self.subjects = [s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/simulation/SimulationKFoldDataloader.py",
+      "sha256": "bccee12830a855a90d0cb04a6ba23ff518289c734e043bda15e873203b7beed8",
+      "usage": [
+        {
+          "line": 18,
+          "text": "self.subjects = np.array([s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS])"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_original/folds.py",
+      "sha256": "a6b40e9e723a3642558a4c847b011ccc90ea6e7550a5dce9805e97de41b81983",
+      "usage": [
+        {
+          "line": 44,
+          "text": "augmentation_only = {str(value) for value in const.DATA_AUGMENTATION_SUBJECTS}"
+        },
+        {
+          "line": 47,
+          "text": "#           if s not in DATA_AUGMENTATION_SUBJECTS])"
+        },
+        {
+          "line": 119,
+          "text": "\"augmentation_only_subjects\": list(map(str, const.DATA_AUGMENTATION_SUBJECTS)),"
+        }
+      ]
+    },
+    {
+      "assignments": [
+        {
+          "line": 1,
+          "source": "DATA_AUGMENTATION_SUBJECTS = [\"1000\", \"999\"]",
+          "value": [
+            "1000",
+            "999"
+          ]
+        }
+      ],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/HR_LR_Fallings/constants.py",
+      "sha256": "f39df0e4d29d615fd151daaf60a1892b466e33a9a0bbc88bac16262c9950bab4",
+      "usage": [
+        {
+          "line": 1,
+          "text": "DATA_AUGMENTATION_SUBJECTS = [\"1000\", \"999\"]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/HR_LR_Fallings/dataloaders/helper.py",
+      "sha256": "953481dd0128d97cf0f117b9a0641e691127e8d9c5622fcb328c020728a92407",
+      "usage": [
+        {
+          "line": 75,
+          "text": "x_field_20241106, y_field_20241106 = load(const.DATA_AUGMENTATION_SUBJECTS, f\"{settings['data']}/OnField/segments/{window_size}0ms_50ov_npseg_filt_binary\")"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/HR_LR_Fallings/dataloaders/KFoldDataloader.py",
+      "sha256": "0d9594dfb1375927cc09204b2a0bf432c892a1d00eedc53c4d1cf0244f9b5148",
+      "usage": [
+        {
+          "line": 14,
+          "text": "self.subjects = np.array([s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS])"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/HR_LR_Fallings/dataloaders/TrainTestDataloader.py",
+      "sha256": "f1496895467f3e2ccfef723606ccd765107bc2bf70bb70df62ee53d77bd70df2",
+      "usage": [
+        {
+          "line": 13,
+          "text": "self.subjects = [s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/HR_LR_Fallings/master_original/folds.py",
+      "sha256": "a6b40e9e723a3642558a4c847b011ccc90ea6e7550a5dce9805e97de41b81983",
+      "usage": [
+        {
+          "line": 44,
+          "text": "augmentation_only = {str(value) for value in const.DATA_AUGMENTATION_SUBJECTS}"
+        },
+        {
+          "line": 47,
+          "text": "#           if s not in DATA_AUGMENTATION_SUBJECTS])"
+        },
+        {
+          "line": 119,
+          "text": "\"augmentation_only_subjects\": list(map(str, const.DATA_AUGMENTATION_SUBJECTS)),"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/HR_LR_Fallings/simulation/SimulationDataloader.py",
+      "sha256": "9b1d7bcd701a29b559bd87dc1a6dfc1a2ce66804d1b00ba9211290cd2615c242",
+      "usage": [
+        {
+          "line": 16,
+          "text": "self.subjects = [s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS]"
+        }
+      ]
+    },
+    {
+      "assignments": [],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/HR_LR_Fallings/simulation/SimulationKFoldDataloader.py",
+      "sha256": "bccee12830a855a90d0cb04a6ba23ff518289c734e043bda15e873203b7beed8",
+      "usage": [
+        {
+          "line": 18,
+          "text": "self.subjects = np.array([s for s in sorted(os.listdir(root_directory)) if s not in const.DATA_AUGMENTATION_SUBJECTS])"
+        }
+      ]
+    }
+  ],
+  "augmentation_subject_resolution": {
+    "literal_values": [
+      [
+        "999",
+        "1000"
+      ]
+    ],
+    "resolved_subjects": [
+      "999",
+      "1000"
+    ],
+    "status": "SOURCE_CONFIRMED"
+  },
+  "generated_utc": "2026-09-30T10:09:21+00:00",
+  "onfield_300ms": {
+    "exists": true,
+    "label_counts": {
+      "Activity": 1317301
+    },
+    "path": "/mnt/hdd16T/protechto/data/OnField/segments/300ms_50ov_npseg_filt_binary",
+    "per_subject": {
+      "1000": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 274862
+        },
+        "trial_count": 1,
+        "window_count": 274862
+      },
+      "1001": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 108848
+        },
+        "trial_count": 2,
+        "window_count": 108848
+      },
+      "1002": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 108223
+        },
+        "trial_count": 2,
+        "window_count": 108223
+      },
+      "1003": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 118392
+        },
+        "trial_count": 2,
+        "window_count": 118392
+      },
+      "1004": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 50130
+        },
+        "trial_count": 1,
+        "window_count": 50130
+      },
+      "1005": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 158636
+        },
+        "trial_count": 3,
+        "window_count": 158636
+      },
+      "1006": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 135287
+        },
+        "trial_count": 2,
+        "window_count": 135287
+      },
+      "1007": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 99110
+        },
+        "trial_count": 1,
+        "window_count": 99110
+      },
+      "1008": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 99651
+        },
+        "trial_count": 1,
+        "window_count": 99651
+      },
+      "1009": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 105281
+        },
+        "trial_count": 1,
+        "window_count": 105281
+      },
+      "1010": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 39779
+        },
+        "trial_count": 1,
+        "window_count": 39779
+      },
+      "999": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 19102
+        },
+        "trial_count": 1,
+        "window_count": 19102
+      }
+    },
+    "subject_count": 12,
+    "subjects": [
+      "999",
+      "1000",
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "subjects_with_activity": [
+      "999",
+      "1000",
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "subjects_with_falling": [],
+    "trial_count": 18,
+    "window_count": 1317301
+  },
+  "onfield_400ms": {
+    "exists": true,
+    "label_counts": {
+      "Activity": 987964
+    },
+    "path": "/mnt/hdd16T/protechto/data/OnField/segments/400ms_50ov_npseg_filt_binary",
+    "per_subject": {
+      "1000": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 206146
+        },
+        "trial_count": 1,
+        "window_count": 206146
+      },
+      "1001": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 81634
+        },
+        "trial_count": 2,
+        "window_count": 81634
+      },
+      "1002": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 81166
+        },
+        "trial_count": 2,
+        "window_count": 81166
+      },
+      "1003": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 88792
+        },
+        "trial_count": 2,
+        "window_count": 88792
+      },
+      "1004": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 37597
+        },
+        "trial_count": 1,
+        "window_count": 37597
+      },
+      "1005": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 118975
+        },
+        "trial_count": 3,
+        "window_count": 118975
+      },
+      "1006": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 101464
+        },
+        "trial_count": 2,
+        "window_count": 101464
+      },
+      "1007": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 74332
+        },
+        "trial_count": 1,
+        "window_count": 74332
+      },
+      "1008": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 74738
+        },
+        "trial_count": 1,
+        "window_count": 74738
+      },
+      "1009": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 78960
+        },
+        "trial_count": 1,
+        "window_count": 78960
+      },
+      "1010": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 29834
+        },
+        "trial_count": 1,
+        "window_count": 29834
+      },
+      "999": {
+        "contains_activity": true,
+        "contains_falling": false,
+        "label_counts": {
+          "Activity": 14326
+        },
+        "trial_count": 1,
+        "window_count": 14326
+      }
+    },
+    "subject_count": 12,
+    "subjects": [
+      "999",
+      "1000",
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "subjects_with_activity": [
+      "999",
+      "1000",
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "subjects_with_falling": [],
+    "trial_count": 18,
+    "window_count": 987964
+  },
+  "prospective_onfield_policy": {
+    "cannot_measure": [
+      "fall_recall",
+      "fall_sensitivity",
+      "missed_fall_rate",
+      "fall_detection_lead_time",
+      "fall_recovery_success"
+    ],
+    "contains_falling": false,
+    "evaluation_capabilities": [
+      "clean_false_alarm_evaluation",
+      "field_domain_shift_evaluation",
+      "fault_induced_false_alarm_evaluation",
+      "protection_false_trigger_evaluation",
+      "activity_side_graceful_degradation_evaluation"
+    ],
+    "retained_300ms_trial_count": 16,
+    "retained_300ms_window_count": 1023337,
+    "retained_labels": {
+      "Activity": 1023337
+    },
+    "retained_storage_ids": [
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "retained_subject_count": 10,
+    "scientific_role": "EXTERNAL_ACTIVITY_ONLY_FIELD_EVALUATION",
+    "status": "RESOLVED"
+  },
+  "raw_onfield_sources": [
+    {
+      "csv_count": 18,
+      "npy_count": 0,
+      "path": "/mnt/hdd16T/protechto/ThirdPartyDatasets/OnFieldRecordings",
+      "top_level": [
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20241106"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20241223"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250108"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250109"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250110"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250115"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250117"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250124"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250129"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250218"
+        }
+      ]
+    },
+    {
+      "csv_count": 18,
+      "npy_count": 0,
+      "path": "/home/shared/data/protechto/OnFieldRecordings",
+      "top_level": [
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20241106"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20241223"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250108"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250109"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250110"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250115"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250117"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250124"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250129"
+        },
+        {
+          "is_dir": true,
+          "is_file": false,
+          "name": "20250218"
+        }
+      ]
+    }
+  ],
+  "rejected_onfield_cases": {
+    "allowed_for_any_future_experiment": false,
+    "allowed_for_augmentation": false,
+    "allowed_for_fault_parameter_selection": false,
+    "allowed_for_int8_calibration": false,
+    "allowed_for_testing": false,
+    "allowed_for_threshold_tuning": false,
+    "allowed_for_training": false,
+    "allowed_for_validation": false,
+    "count": 2,
+    "historical_provenance_only": true,
+    "reason": "User-confirmed data-quality issues in these two historical OnField cases.",
+    "status": "PERMANENTLY_EXCLUDED_FROM_PROSPECTIVE_CROSSLAYER_STUDY",
+    "storage_ids": [
+      "999",
+      "1000"
+    ]
+  },
+  "role_candidate": {
+    "allowed_uses": [
+      "external_activity_domain_generalization",
+      "external_false_alarm_evaluation",
+      "external_fault_induced_false_alarm_evaluation",
+      "external_protection_false_trigger_evaluation"
+    ],
+    "augmentation_storage_ids": [],
+    "external_generalization_population": true,
+    "external_label_capability": "ACTIVITY_FALSE_ALARM_DOMAIN_SHIFT_ONLY",
+    "external_subject_count": 10,
+    "external_subject_storage_ids": [
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "forbidden_before_protocol_freeze": [
+      "architecture_selection",
+      "hyperparameter_selection",
+      "fault_severity_selection",
+      "monitor_threshold_selection",
+      "supervisor_tuning",
+      "recovery_tuning",
+      "int8_calibration"
+    ],
+    "historical_augmentation_storage_ids_rejected": [
+      "999",
+      "1000"
+    ],
+    "primary_fivefold_population": false,
+    "status": "ROLE_RESOLVED"
+  },
+  "schema": "crosslayer_phase3i_onfield_external_role_v1",
+  "scientific_boundary": {
+    "faults_injected": false,
+    "int8_calibration_performed": false,
+    "model_retrained": false,
+    "onfield_predictions_opened": false,
+    "onfield_used_for_selection": false
+  },
+  "scientific_interpretation": {
+    "onfield_activity_only": true,
+    "onfield_recommended_for_final_project": true,
+    "onfield_required_for_primary_cv": false,
+    "reason": "Preserving independent field recordings provides stronger external-domain evidence than mixing them into the UniVR+KFall development folds.",
+    "rejected_999_1000_used_prospectively": false
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,56 @@
+{
+  "classification_ground_truth": {
+    "annotated_activity_only_historical_trial": "KFALL_106_T27_R05",
+    "annotated_current_fall_events": 2919,
+    "annotated_trials_with_falling_label": 2918,
+    "labels_rewritten": false,
+    "source": "frozen labels.npy"
+  },
+  "fivefold_config": "configs/datasets/primary_300ms_fivefold_v1.json",
+  "int8_calibration_config": "configs/datasets/int8_calibration_identity_v1.json",
+  "manifest": "manifests/phase_3n_final_protocol_freeze_v3.json",
+  "primary_protocol": {
+    "external_onfield_subjects": 10,
+    "overlap_percent": 50,
+    "rejected_onfield_ids": [
+      "999",
+      "1000"
+    ],
+    "sampling_hz": 100,
+    "stride_ms": 150,
+    "stride_samples": 15,
+    "subjects": 61,
+    "trials": 6309,
+    "window_ms": 300,
+    "window_samples": 30,
+    "windows": 273830
+  },
+  "schema": "crosslayer_phase3_final_protocol_v3",
+  "status": "FROZEN",
+  "timing_contract": {
+    "annotated_piecewise_trial": {
+      "activity_raw_start_index": "15 * activity_local_index",
+      "activity_window_count": "n_windows(fall_start_frame)",
+      "falling_raw_start_index": "fall_start_frame + 15 * falling_local_index",
+      "falling_window_count": "n_windows(fall_impact_frame - fall_start_frame)",
+      "raw_last_index": "raw_start_index + 29"
+    },
+    "authoritative_physical_event_clock": "oriented sensor FrameCounter",
+    "dataset_index_conventions": {
+      "KFALL": "annotation frame == curated zero-based event position + 1",
+      "UNIVR": "annotation frame == curated zero-based event position"
+    },
+    "deadline_margin_ms": "runtime_adjusted_lead_ms - 150",
+    "deadline_met": "deadline_margin_ms >= 0",
+    "historical_slice_index_rule": "Use annotation frame value directly as Python array index, exactly as in the recovered preprocessing source.",
+    "ordinary_or_fallback_full_trial_window": {
+      "raw_last_index": "15 * stored_window_index + 29",
+      "raw_start_index": "15 * stored_window_index"
+    },
+    "physical_event_positions": "Use curated zero-based positions / FrameCounter correspondence, not the historical preprocessing slice index.",
+    "runtime_adjusted_lead_ms": "sensor_only_lead_ms - measured_runtime_latency_ms",
+    "runtime_latency": "DEFERRED_TO_ACTUAL_MCU_MEASUREMENT",
+    "sampling_frequency_hz": 100,
+    "sensor_only_lead_ms": "(impact_FrameCounter - decision_window_end_FrameCounter) * 10"
+  }
+}

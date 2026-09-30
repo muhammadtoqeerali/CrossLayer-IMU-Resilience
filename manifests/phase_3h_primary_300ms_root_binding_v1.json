@@ -1,0 +1,1241 @@
+{
+  "array_audit": {
+    "empty_trial_count": 0,
+    "empty_trials": [],
+    "label_counts": {
+      "Activity": 264024,
+      "Falling": 9806
+    },
+    "subject_label_counts": {
+      "10": {
+        "Activity": 1806,
+        "Falling": 40
+      },
+      "106": {
+        "Activity": 6060,
+        "Falling": 231
+      },
+      "107": {
+        "Activity": 6527,
+        "Falling": 273
+      },
+      "108": {
+        "Activity": 6221,
+        "Falling": 220
+      },
+      "109": {
+        "Activity": 5822,
+        "Falling": 256
+      },
+      "11": {
+        "Activity": 2048,
+        "Falling": 38
+      },
+      "110": {
+        "Activity": 6289,
+        "Falling": 264
+      },
+      "111": {
+        "Activity": 6813,
+        "Falling": 237
+      },
+      "112": {
+        "Activity": 4965,
+        "Falling": 259
+      },
+      "113": {
+        "Activity": 6535,
+        "Falling": 191
+      },
+      "114": {
+        "Activity": 6337,
+        "Falling": 220
+      },
+      "115": {
+        "Activity": 6000,
+        "Falling": 251
+      },
+      "116": {
+        "Activity": 6354,
+        "Falling": 224
+      },
+      "117": {
+        "Activity": 6797,
+        "Falling": 251
+      },
+      "118": {
+        "Activity": 6420,
+        "Falling": 272
+      },
+      "119": {
+        "Activity": 6510,
+        "Falling": 239
+      },
+      "12": {
+        "Activity": 1900,
+        "Falling": 34
+      },
+      "120": {
+        "Activity": 5773,
+        "Falling": 248
+      },
+      "121": {
+        "Activity": 6086,
+        "Falling": 251
+      },
+      "122": {
+        "Activity": 5971,
+        "Falling": 258
+      },
+      "123": {
+        "Activity": 5644,
+        "Falling": 253
+      },
+      "124": {
+        "Activity": 5974,
+        "Falling": 216
+      },
+      "125": {
+        "Activity": 6384,
+        "Falling": 277
+      },
+      "126": {
+        "Activity": 6511,
+        "Falling": 284
+      },
+      "127": {
+        "Activity": 6238,
+        "Falling": 288
+      },
+      "128": {
+        "Activity": 6244,
+        "Falling": 253
+      },
+      "129": {
+        "Activity": 6501,
+        "Falling": 267
+      },
+      "13": {
+        "Activity": 2221,
+        "Falling": 50
+      },
+      "130": {
+        "Activity": 5740,
+        "Falling": 269
+      },
+      "131": {
+        "Activity": 5868,
+        "Falling": 239
+      },
+      "132": {
+        "Activity": 6033,
+        "Falling": 261
+      },
+      "133": {
+        "Activity": 5794,
+        "Falling": 230
+      },
+      "135": {
+        "Activity": 6180,
+        "Falling": 268
+      },
+      "136": {
+        "Activity": 5493,
+        "Falling": 265
+      },
+      "137": {
+        "Activity": 5169,
+        "Falling": 215
+      },
+      "138": {
+        "Activity": 6230,
+        "Falling": 255
+      },
+      "14": {
+        "Activity": 2314,
+        "Falling": 58
+      },
+      "15": {
+        "Activity": 2518,
+        "Falling": 73
+      },
+      "16": {
+        "Activity": 2377,
+        "Falling": 59
+      },
+      "17": {
+        "Activity": 2498,
+        "Falling": 59
+      },
+      "18": {
+        "Activity": 2589,
+        "Falling": 74
+      },
+      "19": {
+        "Activity": 2381,
+        "Falling": 79
+      },
+      "20": {
+        "Activity": 2113,
+        "Falling": 79
+      },
+      "21": {
+        "Activity": 2023,
+        "Falling": 65
+      },
+      "22": {
+        "Activity": 2718,
+        "Falling": 62
+      },
+      "23": {
+        "Activity": 2483,
+        "Falling": 64
+      },
+      "24": {
+        "Activity": 2670,
+        "Falling": 64
+      },
+      "25": {
+        "Activity": 2665,
+        "Falling": 57
+      },
+      "26": {
+        "Activity": 2271,
+        "Falling": 69
+      },
+      "27": {
+        "Activity": 2345,
+        "Falling": 64
+      },
+      "28": {
+        "Activity": 2444,
+        "Falling": 70
+      },
+      "29": {
+        "Activity": 2514,
+        "Falling": 71
+      },
+      "30": {
+        "Activity": 2499,
+        "Falling": 67
+      },
+      "31": {
+        "Activity": 2463,
+        "Falling": 69
+      },
+      "32": {
+        "Activity": 2206,
+        "Falling": 55
+      },
+      "33": {
+        "Activity": 2246,
+        "Falling": 64
+      },
+      "34": {
+        "Activity": 2590,
+        "Falling": 64
+      },
+      "35": {
+        "Activity": 2539,
+        "Falling": 60
+      },
+      "36": {
+        "Activity": 2417,
+        "Falling": 57
+      },
+      "37": {
+        "Activity": 2283,
+        "Falling": 75
+      },
+      "9": {
+        "Activity": 2400,
+        "Falling": 81
+      }
+    },
+    "subject_trial_counts": {
+      "10": 33,
+      "106": 156,
+      "107": 150,
+      "108": 163,
+      "109": 153,
+      "11": 34,
+      "110": 159,
+      "111": 163,
+      "112": 142,
+      "113": 160,
+      "114": 162,
+      "115": 162,
+      "116": 163,
+      "117": 161,
+      "118": 160,
+      "119": 158,
+      "12": 33,
+      "120": 156,
+      "121": 163,
+      "122": 161,
+      "123": 163,
+      "124": 153,
+      "125": 163,
+      "126": 161,
+      "127": 157,
+      "128": 156,
+      "129": 158,
+      "13": 34,
+      "130": 161,
+      "131": 156,
+      "132": 163,
+      "133": 162,
+      "135": 160,
+      "136": 160,
+      "137": 148,
+      "138": 162,
+      "14": 44,
+      "15": 44,
+      "16": 44,
+      "17": 44,
+      "18": 44,
+      "19": 44,
+      "20": 44,
+      "21": 44,
+      "22": 44,
+      "23": 44,
+      "24": 44,
+      "25": 44,
+      "26": 44,
+      "27": 44,
+      "28": 44,
+      "29": 44,
+      "30": 44,
+      "31": 44,
+      "32": 44,
+      "33": 44,
+      "34": 44,
+      "35": 44,
+      "36": 44,
+      "37": 44,
+      "9": 44
+    },
+    "subject_window_counts": {
+      "10": 1846,
+      "106": 6291,
+      "107": 6800,
+      "108": 6441,
+      "109": 6078,
+      "11": 2086,
+      "110": 6553,
+      "111": 7050,
+      "112": 5224,
+      "113": 6726,
+      "114": 6557,
+      "115": 6251,
+      "116": 6578,
+      "117": 7048,
+      "118": 6692,
+      "119": 6749,
+      "12": 1934,
+      "120": 6021,
+      "121": 6337,
+      "122": 6229,
+      "123": 5897,
+      "124": 6190,
+      "125": 6661,
+      "126": 6795,
+      "127": 6526,
+      "128": 6497,
+      "129": 6768,
+      "13": 2271,
+      "130": 6009,
+      "131": 6107,
+      "132": 6294,
+      "133": 6024,
+      "135": 6448,
+      "136": 5758,
+      "137": 5384,
+      "138": 6485,
+      "14": 2372,
+      "15": 2591,
+      "16": 2436,
+      "17": 2557,
+      "18": 2663,
+      "19": 2460,
+      "20": 2192,
+      "21": 2088,
+      "22": 2780,
+      "23": 2547,
+      "24": 2734,
+      "25": 2722,
+      "26": 2340,
+      "27": 2409,
+      "28": 2514,
+      "29": 2585,
+      "30": 2566,
+      "31": 2532,
+      "32": 2261,
+      "33": 2310,
+      "34": 2654,
+      "35": 2599,
+      "36": 2474,
+      "37": 2358,
+      "9": 2481
+    },
+    "trial_count": 6309,
+    "window_count": 273830
+  },
+  "audit_mode": "READ_ONLY",
+  "decision": {
+    "400ms_role": "HISTORICAL_REFERENCE_AND_CONTROLLED_WINDOW_DURATION_SENSITIVITY",
+    "95_percent_overlap_role": "EXCLUDED_FROM_PRIMARY_PROTOCOL",
+    "manual_71_or_73_subject_root_primary": false,
+    "merged_root_exactly_bound_to_sources": true,
+    "onfield_role": "AUGMENTATION_OR_EXTERNAL_ROBUSTNESS_ONLY",
+    "reason": "Existing 61-subject root is an exact file-level copy of the correctly generated 300-ms / 50-percent-overlap UniVR and KFall roots.",
+    "regenerate_300ms_now": false
+  },
+  "exact_subject_copy_count": 61,
+  "generated_utc": "2026-09-30T10:05:48+00:00",
+  "protocol": {
+    "onfield_in_primary_folds": false,
+    "overlap_95_primary_protocol": false,
+    "overlap_percent": 50,
+    "primary_datasets": [
+      "UniVRFall",
+      "KFall"
+    ],
+    "primary_subject_count": 61,
+    "primary_window_ms": 300,
+    "samples_per_window": 30,
+    "sampling_hz": 100,
+    "secondary_window_sensitivity": {
+      "overlap_percent": 50,
+      "samples_per_window": 40,
+      "stride_ms": 200,
+      "stride_samples": 20,
+      "window_ms": 400
+    },
+    "stored_channels": 9,
+    "stride_ms": 150,
+    "stride_samples": 15,
+    "task_classes": [
+      "Activity",
+      "Falling"
+    ]
+  },
+  "roots": {
+    "kfall_source_segments": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary",
+    "merged_primary": "/mnt/hdd16T/protechto/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary",
+    "univr_source_segments": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary"
+  },
+  "schema": "crosslayer_phase3h_primary_300ms_root_binding_v1",
+  "scientific_boundary": {
+    "checkpoint_selected_by_performance": false,
+    "data_regenerated": false,
+    "faults_injected": false,
+    "held_out_predictions_opened": false,
+    "int8_calibration_performed": false,
+    "model_retrained": false
+  },
+  "status": "PASS",
+  "subject_bindings": [
+    {
+      "canonical_subject_id": "UNIVR_09",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "09",
+      "processed_subject_id": "9",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/9"
+    },
+    {
+      "canonical_subject_id": "UNIVR_10",
+      "comparison": {
+        "data_file_count": 66,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "10",
+      "processed_subject_id": "10",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/10"
+    },
+    {
+      "canonical_subject_id": "UNIVR_11",
+      "comparison": {
+        "data_file_count": 68,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "11",
+      "processed_subject_id": "11",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/11"
+    },
+    {
+      "canonical_subject_id": "UNIVR_12",
+      "comparison": {
+        "data_file_count": 66,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "12",
+      "processed_subject_id": "12",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/12"
+    },
+    {
+      "canonical_subject_id": "UNIVR_13",
+      "comparison": {
+        "data_file_count": 68,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "13",
+      "processed_subject_id": "13",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/13"
+    },
+    {
+      "canonical_subject_id": "UNIVR_14",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "14",
+      "processed_subject_id": "14",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/14"
+    },
+    {
+      "canonical_subject_id": "UNIVR_15",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "15",
+      "processed_subject_id": "15",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/15"
+    },
+    {
+      "canonical_subject_id": "UNIVR_16",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "16",
+      "processed_subject_id": "16",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/16"
+    },
+    {
+      "canonical_subject_id": "UNIVR_17",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "17",
+      "processed_subject_id": "17",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/17"
+    },
+    {
+      "canonical_subject_id": "UNIVR_18",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "18",
+      "processed_subject_id": "18",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/18"
+    },
+    {
+      "canonical_subject_id": "UNIVR_19",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "19",
+      "processed_subject_id": "19",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/19"
+    },
+    {
+      "canonical_subject_id": "UNIVR_20",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "20",
+      "processed_subject_id": "20",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/20"
+    },
+    {
+      "canonical_subject_id": "UNIVR_21",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "21",
+      "processed_subject_id": "21",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/21"
+    },
+    {
+      "canonical_subject_id": "UNIVR_22",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "22",
+      "processed_subject_id": "22",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/22"
+    },
+    {
+      "canonical_subject_id": "UNIVR_23",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "23",
+      "processed_subject_id": "23",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/23"
+    },
+    {
+      "canonical_subject_id": "UNIVR_24",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "24",
+      "processed_subject_id": "24",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/24"
+    },
+    {
+      "canonical_subject_id": "UNIVR_25",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "25",
+      "processed_subject_id": "25",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/25"
+    },
+    {
+      "canonical_subject_id": "UNIVR_26",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "26",
+      "processed_subject_id": "26",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/26"
+    },
+    {
+      "canonical_subject_id": "UNIVR_27",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "27",
+      "processed_subject_id": "27",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/27"
+    },
+    {
+      "canonical_subject_id": "UNIVR_28",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "28",
+      "processed_subject_id": "28",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/28"
+    },
+    {
+      "canonical_subject_id": "UNIVR_29",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "29",
+      "processed_subject_id": "29",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/29"
+    },
+    {
+      "canonical_subject_id": "UNIVR_30",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "30",
+      "processed_subject_id": "30",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/30"
+    },
+    {
+      "canonical_subject_id": "UNIVR_31",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "31",
+      "processed_subject_id": "31",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/31"
+    },
+    {
+      "canonical_subject_id": "UNIVR_32",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "32",
+      "processed_subject_id": "32",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/32"
+    },
+    {
+      "canonical_subject_id": "UNIVR_33",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "33",
+      "processed_subject_id": "33",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/33"
+    },
+    {
+      "canonical_subject_id": "UNIVR_34",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "34",
+      "processed_subject_id": "34",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/34"
+    },
+    {
+      "canonical_subject_id": "UNIVR_35",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "35",
+      "processed_subject_id": "35",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/35"
+    },
+    {
+      "canonical_subject_id": "UNIVR_36",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "36",
+      "processed_subject_id": "36",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/36"
+    },
+    {
+      "canonical_subject_id": "UNIVR_37",
+      "comparison": {
+        "data_file_count": 88,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "UNIVR",
+      "original_subject_id": "37",
+      "processed_subject_id": "37",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/UniVrFall_oriented/segments/300ms_50ov_npseg_filt_binary/37"
+    },
+    {
+      "canonical_subject_id": "KFALL_06",
+      "comparison": {
+        "data_file_count": 312,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "06",
+      "processed_subject_id": "106",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/106"
+    },
+    {
+      "canonical_subject_id": "KFALL_07",
+      "comparison": {
+        "data_file_count": 300,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "07",
+      "processed_subject_id": "107",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/107"
+    },
+    {
+      "canonical_subject_id": "KFALL_08",
+      "comparison": {
+        "data_file_count": 326,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "08",
+      "processed_subject_id": "108",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/108"
+    },
+    {
+      "canonical_subject_id": "KFALL_09",
+      "comparison": {
+        "data_file_count": 306,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "09",
+      "processed_subject_id": "109",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/109"
+    },
+    {
+      "canonical_subject_id": "KFALL_10",
+      "comparison": {
+        "data_file_count": 318,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "10",
+      "processed_subject_id": "110",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/110"
+    },
+    {
+      "canonical_subject_id": "KFALL_11",
+      "comparison": {
+        "data_file_count": 326,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "11",
+      "processed_subject_id": "111",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/111"
+    },
+    {
+      "canonical_subject_id": "KFALL_12",
+      "comparison": {
+        "data_file_count": 284,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "12",
+      "processed_subject_id": "112",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/112"
+    },
+    {
+      "canonical_subject_id": "KFALL_13",
+      "comparison": {
+        "data_file_count": 320,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "13",
+      "processed_subject_id": "113",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/113"
+    },
+    {
+      "canonical_subject_id": "KFALL_14",
+      "comparison": {
+        "data_file_count": 324,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "14",
+      "processed_subject_id": "114",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/114"
+    },
+    {
+      "canonical_subject_id": "KFALL_15",
+      "comparison": {
+        "data_file_count": 324,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "15",
+      "processed_subject_id": "115",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/115"
+    },
+    {
+      "canonical_subject_id": "KFALL_16",
+      "comparison": {
+        "data_file_count": 326,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "16",
+      "processed_subject_id": "116",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/116"
+    },
+    {
+      "canonical_subject_id": "KFALL_17",
+      "comparison": {
+        "data_file_count": 322,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "17",
+      "processed_subject_id": "117",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/117"
+    },
+    {
+      "canonical_subject_id": "KFALL_18",
+      "comparison": {
+        "data_file_count": 320,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "18",
+      "processed_subject_id": "118",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/118"
+    },
+    {
+      "canonical_subject_id": "KFALL_19",
+      "comparison": {
+        "data_file_count": 316,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "19",
+      "processed_subject_id": "119",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/119"
+    },
+    {
+      "canonical_subject_id": "KFALL_20",
+      "comparison": {
+        "data_file_count": 312,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "20",
+      "processed_subject_id": "120",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/120"
+    },
+    {
+      "canonical_subject_id": "KFALL_21",
+      "comparison": {
+        "data_file_count": 326,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "21",
+      "processed_subject_id": "121",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/121"
+    },
+    {
+      "canonical_subject_id": "KFALL_22",
+      "comparison": {
+        "data_file_count": 322,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "22",
+      "processed_subject_id": "122",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/122"
+    },
+    {
+      "canonical_subject_id": "KFALL_23",
+      "comparison": {
+        "data_file_count": 326,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "23",
+      "processed_subject_id": "123",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/123"
+    },
+    {
+      "canonical_subject_id": "KFALL_24",
+      "comparison": {
+        "data_file_count": 306,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "24",
+      "processed_subject_id": "124",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/124"
+    },
+    {
+      "canonical_subject_id": "KFALL_25",
+      "comparison": {
+        "data_file_count": 326,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "25",
+      "processed_subject_id": "125",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/125"
+    },
+    {
+      "canonical_subject_id": "KFALL_26",
+      "comparison": {
+        "data_file_count": 322,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "26",
+      "processed_subject_id": "126",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/126"
+    },
+    {
+      "canonical_subject_id": "KFALL_27",
+      "comparison": {
+        "data_file_count": 314,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "27",
+      "processed_subject_id": "127",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/127"
+    },
+    {
+      "canonical_subject_id": "KFALL_28",
+      "comparison": {
+        "data_file_count": 312,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "28",
+      "processed_subject_id": "128",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/128"
+    },
+    {
+      "canonical_subject_id": "KFALL_29",
+      "comparison": {
+        "data_file_count": 316,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "29",
+      "processed_subject_id": "129",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/129"
+    },
+    {
+      "canonical_subject_id": "KFALL_30",
+      "comparison": {
+        "data_file_count": 322,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "30",
+      "processed_subject_id": "130",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/130"
+    },
+    {
+      "canonical_subject_id": "KFALL_31",
+      "comparison": {
+        "data_file_count": 312,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "31",
+      "processed_subject_id": "131",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/131"
+    },
+    {
+      "canonical_subject_id": "KFALL_32",
+      "comparison": {
+        "data_file_count": 326,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "32",
+      "processed_subject_id": "132",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/132"
+    },
+    {
+      "canonical_subject_id": "KFALL_33",
+      "comparison": {
+        "data_file_count": 324,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "33",
+      "processed_subject_id": "133",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/133"
+    },
+    {
+      "canonical_subject_id": "KFALL_35",
+      "comparison": {
+        "data_file_count": 320,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "35",
+      "processed_subject_id": "135",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/135"
+    },
+    {
+      "canonical_subject_id": "KFALL_36",
+      "comparison": {
+        "data_file_count": 320,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "36",
+      "processed_subject_id": "136",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/136"
+    },
+    {
+      "canonical_subject_id": "KFALL_37",
+      "comparison": {
+        "data_file_count": 296,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "37",
+      "processed_subject_id": "137",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/137"
+    },
+    {
+      "canonical_subject_id": "KFALL_38",
+      "comparison": {
+        "data_file_count": 324,
+        "mismatches": [],
+        "status": "EXACT"
+      },
+      "dataset": "KFALL",
+      "original_subject_id": "38",
+      "processed_subject_id": "138",
+      "source_processed_root": "/mnt/hdd16T/protechto/data/KFall_oriented/segments/300ms_50ov_npseg_filt_binary/138"
+    }
+  ],
+  "subject_population": {
+    "kfall_count": 32,
+    "no_processed_id_collision": true,
+    "processed_subject_ids": [
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113",
+      "114",
+      "115",
+      "116",
+      "117",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "123",
+      "124",
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132",
+      "133",
+      "135",
+      "136",
+      "137",
+      "138"
+    ],
+    "total_count": 61,
+    "univr_count": 29
+  }
+}
