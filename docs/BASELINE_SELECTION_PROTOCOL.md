@@ -136,3 +136,33 @@ It does not itself constitute Phase-2 baseline freezing.
 
 Phase 2 must freeze the executable baseline identity, decision semantics,
 reference environment, export/quantization path and clean reference evidence.
+
+---
+
+## Phase-2 FP32 reference freeze
+
+The protected reference workload is now frozen as:
+
+`DATE2025_CNN_400MS_RECONSTRUCTED`
+
+The authoritative contract is:
+
+`configs/baseline/frozen_fp32_reference_v1.json`
+
+Primary decision semantics are frozen to the recovered historical deployment
+rule:
+
+`Falling iff P(Falling) > 0.9`
+
+with a strict greater-than comparison.
+
+Argmax remains a secondary diagnostic decision and cannot replace the primary
+rule based on later fault-study outcomes.
+
+The validated FP32 ONNX representation is frozen by checksum.
+
+Final static INT8 realization is intentionally deferred until the formal clean
+calibration partition is frozen.
+
+This prevents calibration leakage and preserves the historical FP32 workload
+as the causal reference.

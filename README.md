@@ -87,31 +87,35 @@ Every reused component must be audited first.
 
 ## Current state
 
-Phase 1 is complete.
+Phase 2 is complete.
 
-The repository now contains a clean CrossLayer-native migration of the
-historical DATE-2025 400-ms pre-impact fall-detection workload.
-
-Validated Phase-1 evidence includes:
-
-- exact historical checkpoint located and SHA-256 verified
-- protected task model migrated without prior reliability mechanisms
-- 63,173 parameters verified
-- exact logit parity on 68 deterministic vectors
-- exact penultimate-feature parity
-- historical decision-semantic parity
-- task-state reload parity
-- inherited OOD/reliability/integrity logic excluded from the clean baseline
-
-Primary candidate:
+The primary unprotected FP32 reference workload is frozen as:
 
     DATE2025_CNN_400MS_RECONSTRUCTED
 
-The primary candidate is not yet frozen.
+Authoritative contract:
 
-Next:
+    configs/baseline/frozen_fp32_reference_v1.json
 
-    Phase 2 — baseline reproduction, selection, quantization and freeze
+Frozen evidence includes:
 
-Sensor-fault, compute-fault and runtime-protection protocols remain unfrozen.
-No publication-facing CrossLayer fault result exists yet.
+- exact historical checkpoint identity
+- canonical tensor-state identity
+- historical 0.9 strict deployment decision
+- 63,173 parameters
+- 147,712 Conv/Linear MACs per 400-ms window
+- validated fixed-batch FP32 ONNX graph
+- zero FP32 parity tolerance violations
+- zero decision differences
+- deterministic repeated ONNX export
+- static PTQ protocol
+
+Final calibrated INT8 deployment is intentionally deferred until the clean
+calibration partition is frozen.
+
+Current phase:
+
+    Phase 3 — dataset/event/split/timing/calibration protocol freeze
+
+No CrossLayer fault characterization result has been used to choose the
+baseline or quantization protocol.

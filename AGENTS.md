@@ -82,51 +82,59 @@ IMU-based pre-impact fall detection.
 
 ## Current phase
 
-Phase 2 — protected-baseline reproduction, selection, quantization and freeze.
+Phase 3 — dataset, event, split, timing and calibration-partition freeze.
 
-## Phase-1 validated primary candidate
+## Frozen protected reference
 
 `DATE2025_CNN_400MS_RECONSTRUCTED`
 
-Phase-1 evidence established:
+Authoritative contract:
 
-- exact historical external checkpoint located
-- historical checkpoint SHA-256 verified
-- task architecture migrated into the CrossLayer namespace
-- 63,173 trainable parameters verified
-- 68 deterministic parity vectors executed
-- exact task-logit parity obtained
-- exact penultimate-feature parity obtained
-- historical streaming-decision parity obtained
-- normalized state-dict reload parity obtained
-- no inherited OOD/integrity/reliability protection exists in the clean baseline
+`configs/baseline/frozen_fp32_reference_v1.json`
 
-The candidate is still **not Phase-2 frozen**.
+Frozen Phase-2 identity includes:
+
+- historical checkpoint SHA-256
+- canonical tensor-state SHA-256
+- 63,173-parameter task architecture
+- 40 x 9 stored input at 100 Hz
+- 400-ms temporal window
+- primary historical decision rule with strict P(Falling) > 0.9
+- validated fixed-batch FP32 ONNX representation
+- FP32 numerical-parity acceptance policy
+- static PTQ as the quantization protocol
+
+The baseline is clean and unprotected.
+
+No inherited OOD, integrity, reliability, recovery or CrossLayer supervisor
+logic is part of the reference workload.
+
+## Quantization dependency
+
+The final calibrated INT8 deployment variant does not yet exist.
+
+Its calibration is blocked until Phase 3 freezes the permitted clean
+development/calibration partition.
+
+After Phase 3 freezes that partition, execute static PTQ before any fault
+characterization.
+
+Never use final-test, external-test or fault-injected samples to select
+quantization parameters.
 
 ## Current task
 
-Phase 2 must determine and freeze the executable protected baseline without
-using final held-out CrossLayer fault results.
+Freeze:
 
-Phase 2 must address:
-
-- final protected-baseline identity
-- reference execution environment
-- checkpoint/state identity
-- task decision semantics
-- clean task reference behavior
-- model export
-- quantization
-- FP32 versus quantized parity/acceptability
-- model size and compute/resource evidence
-- deployment feasibility
-
-The generic compact 1D CNN, DS-CNN and TCN remain comparison or later
-generalization candidates. They must not replace the primary candidate merely
-because they yield more favorable fault-robustness results.
-
-The formal dataset/event/split/timing protocol remains a subsequent protocol
-freeze and must be completed before final fault characterization.
+- dataset identities and provenance
+- subject/event/sequence independence units
+- clean development/calibration partition
+- held-out confirmation partition
+- any external/generalization partition
+- window-generation rules
+- event labels and pre-impact timing semantics
+- calibration-window selection rules
+- all checksums/manifests required to prevent leakage
 
 ## Publication sequence
 

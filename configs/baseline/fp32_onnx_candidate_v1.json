@@ -1,0 +1,34 @@
+{
+  "artifact_bytes": 255191,
+  "artifact_path": "artifacts/baseline/date2025_cnn400_fp32_v1.onnx",
+  "artifact_sha256": "f3a55933bab5ed63225a1647a8b78aa909c4bb5a81405b06f235ba1b3bf6de1f",
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "canonical_state_sha256": "c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124",
+  "deployment_batch_contract": 1,
+  "format": "ONNX",
+  "git_tracked": false,
+  "input_name": "imu_window",
+  "input_shape": [
+    1,
+    40,
+    9
+  ],
+  "opset": 13,
+  "output_name": "logits",
+  "output_shape": [
+    1,
+    2
+  ],
+  "parity": {
+    "argmax_decisions_equal": true,
+    "atol": 1e-05,
+    "historical_decisions_equal": true,
+    "max_abs_difference": 6.103515625e-05,
+    "onnx_execution_mode": "fixed_batch_1_serial",
+    "rtol": 1e-05,
+    "vector_count": 324
+  },
+  "precision": "FP32",
+  "schema": "crosslayer_fp32_onnx_candidate_v1",
+  "status": "VALIDATED_CANDIDATE_NOT_FROZEN"
+}

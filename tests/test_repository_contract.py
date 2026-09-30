@@ -60,13 +60,28 @@ class TestScientificContracts(unittest.TestCase):
         for regime in ("C0", "CS", "CC", "CSC"):
             self.assertIn(regime, text)
 
-    def test_baseline_not_selected(self) -> None:
+    def test_fp32_reference_baseline_frozen(self) -> None:
         text = (
             ROOT / "configs/project.yaml"
         ).read_text(encoding="utf-8")
 
         self.assertIn(
-            "status: not_selected",
+            "status: fp32_reference_frozen",
+            text,
+        )
+
+        self.assertIn(
+            "primary_candidate: DATE2025_CNN_400MS_RECONSTRUCTED",
+            text,
+        )
+
+        self.assertIn(
+            "decision_primary: historical_streaming_0p9_strict",
+            text,
+        )
+
+        self.assertIn(
+            "final_int8_status: deferred_until_data_protocol_freeze",
             text,
         )
 

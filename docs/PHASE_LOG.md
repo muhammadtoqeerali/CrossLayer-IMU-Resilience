@@ -365,3 +365,232 @@ NOT FROZEN.
 ### Next phase
 
 Phase 2 — baseline reproduction, selection, export, quantization and freeze.
+
+---
+
+## 2026-09-30 — Phase 2A initiated
+
+### Objective
+
+Establish the executable protected-baseline environment and determine export
+and quantization feasibility before freezing Phase-2 baseline identity.
+
+### Methodological boundary
+
+Phase 2A does not use final CrossLayer fault-study data.
+
+Dataset-level accuracy, F1 and safety metrics are not frozen here because the
+formal dataset/event/split/timing protocol is still pending.
+
+Phase 2A focuses on:
+
+- task-state identity
+- executable environment
+- model structure
+- task decision interfaces
+- host-side deterministic reference behavior
+- export capability
+- quantization capability
+- model storage and operation structure
+
+### Baseline candidate
+
+`DATE2025_CNN_400MS_RECONSTRUCTED`
+
+Status:
+
+NOT FROZEN
+
+### Phase-2A validation implementation note
+
+The first Phase-2A execution-environment audit stopped before model inference
+because Python treated `torch` as a local variable inside `main()`.
+
+Cause:
+
+Function-local imports of `torch.ao.quantization` and
+`torch.ao.quantization.quantize_fx` created a local `torch` binding, making an
+earlier `torch.inference_mode()` reference invalid.
+
+Resolution:
+
+Quantization capability discovery now uses `importlib.import_module(...)`.
+
+This was an audit-script scope defect only.
+
+It did not alter or invalidate the protected model, checkpoint, migrated state
+or Phase-1 parity evidence.
+
+---
+
+## 2026-09-30 — Phase 2B initiated
+
+### Objective
+
+Create and validate a task-only FP32 ONNX representation of the protected
+baseline.
+
+### Baseline
+
+`DATE2025_CNN_400MS_RECONSTRUCTED`
+
+### Scope
+
+Phase 2B validates:
+
+- protected task-state identity
+- fixed input/output tensor contract
+- FP32 ONNX graph validity
+- PyTorch versus ONNX Runtime numerical parity
+- decision parity
+- deterministic artifact checksum
+- exported graph operator inventory
+
+### Scientific boundary
+
+The exported graph contains the task model only.
+
+It must contain no:
+
+- OOD logic
+- integrity logic
+- reliability fusion
+- recovery mechanism
+- CrossLayer supervisor
+
+### Quantization boundary
+
+Final INT8 calibration is intentionally not performed in Phase 2B.
+
+Representative calibration data must be selected only after the formal data
+split/calibration protocol is frozen.
+
+### Phase-2B validation implementation note
+
+The first FP32 ONNX parity attempt successfully produced the fixed-shape ONNX
+graph, then the parity harness incorrectly supplied all 324 numerical vectors
+as one batch.
+
+The deployment graph intentionally accepts `[1,40,9]`.
+
+Resolution:
+
+Parity vectors are now executed serially through the fixed batch-1 ONNX graph
+and concatenated only after inference.
+
+The export contract was not changed to dynamic batching.
+
+This preserves the intended single-window embedded deployment semantics.
+
+### Phase-2B FP32 parity hardening
+
+The FP32 ONNX parity criterion was made explicit after the initial validation
+showed a larger absolute error on seeded high-amplitude numerical stress
+vectors.
+
+Structured deterministic vectors use an absolute-error criterion.
+
+Seeded stress vectors use the explicit combined absolute-plus-relative
+criterion.
+
+All vectors must preserve both task decision interfaces.
+
+Repeat-export determinism is also recorded.
+
+These synthetic stress inputs remain numerical checks only and are not
+dataset-performance evidence.
+
+---
+
+## 2026-09-30 — Phase 2C initiated
+
+### Objective
+
+Audit the installed quantization toolchain and ONNX operator support before
+using representative calibration data.
+
+### Scientific boundary
+
+Phase 2C does not perform final static INT8 calibration.
+
+No project dataset sample is used.
+
+No validation, held-out test, external-test or fault-injected sample may be
+used to choose quantization parameters in this phase.
+
+### Primary quantization direction
+
+The deployment quantization candidate is static post-training quantization.
+
+This preserves the validated historical task weights while allowing activation
+ranges to be calibrated later from an explicitly frozen clean calibration
+partition.
+
+Dynamic quantization may be exercised only as an engineering toolchain smoke
+test.
+
+It is not the final deployment candidate and is not performance evidence.
+
+### Phase-2C result
+
+The installed quantization toolchain and graph-level operator support were
+audited without project dataset samples.
+
+Static post-training quantization is retained as the primary deployment
+quantization candidate.
+
+Final activation calibration remains deferred until the clean representative
+calibration partition is frozen.
+
+Dynamic quantization, when available, is engineering smoke evidence only and
+is not the deployment baseline.
+
+Quantizer selection may not use final-test or fault-robustness outcomes.
+
+---
+
+## 2026-09-30 — Phase 2 COMPLETE
+
+### Frozen reference
+
+`DATE2025_CNN_400MS_RECONSTRUCTED`
+
+### Freeze scope
+
+FP32 protected reference baseline.
+
+### Primary decision
+
+Historical strict `P(Falling) > 0.9`.
+
+### FP32 deployment representation
+
+Fixed batch-1 ONNX representation frozen by SHA-256.
+
+### Numerical validation
+
+- 68 structured vectors
+- 256 seeded numerical stress vectors
+- zero elementwise tolerance violations
+- zero argmax decision changes
+- zero historical decision changes
+- repeated export byte-identical
+- repeated runtime outputs bit-identical
+
+### Quantization
+
+Static PTQ protocol frozen.
+
+Final calibrated INT8 artifact deferred until Phase 3 freezes the permitted
+clean calibration partition.
+
+Dynamic quantization remains nonblocking engineering smoke evidence only.
+
+### Dependency amendment
+
+Static INT8 realization will occur after Phase-3 calibration-partition freeze
+and before any fault characterization.
+
+### Next phase
+
+Phase 3 — dataset, event, split, timing and calibration-partition freeze.

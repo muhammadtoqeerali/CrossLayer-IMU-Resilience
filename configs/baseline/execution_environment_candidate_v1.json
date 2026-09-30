@@ -1,0 +1,23 @@
+{
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "canonical_state_sha256": "c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124",
+  "host_latency_scope": "reference_only_not_embedded_evidence",
+  "numpy": "2.2.4",
+  "onnx_available": true,
+  "onnxruntime_available": true,
+  "onnxruntime_quantization_available": true,
+  "python": "3.12.3",
+  "python_executable": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/protechto_env/bin/python",
+  "quantized_engines": [
+    "qnnpack",
+    "none",
+    "onednn",
+    "x86",
+    "fbgemm"
+  ],
+  "schema": "crosslayer_phase2_execution_environment_candidate_v1",
+  "status": "CANDIDATE_NOT_FROZEN",
+  "torch": "2.5.1+cu124",
+  "torch_ao_quantization": true,
+  "torch_fx_quantization": true
+}

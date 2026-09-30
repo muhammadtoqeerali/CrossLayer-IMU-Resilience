@@ -1,0 +1,147 @@
+{
+  "baseline": {
+    "canonical_state_sha256": "c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124",
+    "freeze_status": "NOT_FROZEN",
+    "id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+    "parameter_count": 63173,
+    "state_artifact_file_sha256": "b43395f29879d7a6f19f8237392a860fd1e87683b193253a26566876dfbe3d4f"
+  },
+  "deterministic_reference": {
+    "argmax_prediction_sha256": "44ddd2f478477ebd1c1cd5b99400af48cd46033c59173195f48870e608cec810",
+    "argmax_vs_historical_difference_count": 0,
+    "features_sha256": "c28935883f910009c479ded7156ef6cd47c0ce52e59b17dfe287e5357b6a16a6",
+    "historical_prediction_sha256": "44ddd2f478477ebd1c1cd5b99400af48cd46033c59173195f48870e608cec810",
+    "logits_sha256": "b9e64d763b8087edef4d609b1da0895f8cf96e541b50e4391795ab123a98c9f9",
+    "vector_count": 68
+  },
+  "environment": {
+    "cpu_count": 32,
+    "cuda_available": true,
+    "cuda_version": "12.4",
+    "machine": "x86_64",
+    "numpy": "2.2.4",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "python": "3.12.3",
+    "python_executable": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/protechto_env/bin/python",
+    "torch": "2.5.1+cu124",
+    "uname": "Linux iot4care-workstation 6.8.0-138-generic #138~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:43:15 UTC  x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "generated_utc": "2026-09-30T08:49:26+00:00",
+  "host_reference_latency": {
+    "max_ms": 0.142906,
+    "mean_ms": 0.096152322,
+    "median_ms": 0.094656,
+    "min_ms": 0.092773,
+    "p95_ms": 0.10181,
+    "p99_ms": 0.111378,
+    "scope": "development_workstation_cpu_reference_only",
+    "timed_iterations": 1000,
+    "torch_threads": 1,
+    "warmup_iterations": 100
+  },
+  "module_inventory": {
+    "BatchNorm1d": 2,
+    "Conv1d": 2,
+    "Date2025CNN400": 1,
+    "Dropout": 3,
+    "Flatten": 1,
+    "HistoricalIMUNormalizer": 1,
+    "Linear": 2,
+    "MaxPool1d": 2,
+    "PReLU": 3,
+    "Sequential": 3
+  },
+  "packages": {
+    "onnx": {
+      "available": true,
+      "version": "1.18.0"
+    },
+    "onnxruntime": {
+      "available": true,
+      "version": "1.22.0"
+    },
+    "onnxruntime.quantization": {
+      "available": true,
+      "version": "1.22.0"
+    },
+    "torchvision": {
+      "available": true,
+      "version": null
+    }
+  },
+  "quantization_capabilities": {
+    "current_engine": "x86",
+    "supported_engines": [
+      "qnnpack",
+      "none",
+      "onednn",
+      "x86",
+      "fbgemm"
+    ],
+    "torch_ao_quantization": true,
+    "torch_fx_quantization": true
+  },
+  "schema": "crosslayer_phase2a_execution_environment_audit_v1",
+  "scientific_limits": {
+    "dataset_accuracy_frozen": false,
+    "decision_semantics_frozen": false,
+    "host_latency_is_embedded_evidence": false,
+    "quantized_model_frozen": false
+  },
+  "status": "PASS",
+  "storage": {
+    "buffer_bytes": 528,
+    "buffer_dtype_elements": {
+      "torch.float32": 128,
+      "torch.int64": 2
+    },
+    "buffer_elements": 130,
+    "parameter_bytes": 252692,
+    "parameter_dtype_elements": {
+      "torch.float32": 63173
+    },
+    "parameter_elements": 63173,
+    "parameter_mib": 0.24098587036132812
+  },
+  "structural_compute": {
+    "definition": "Conv1d and Linear multiply-accumulate pairs only",
+    "records": [
+      {
+        "macs": 28416,
+        "output_shape": [
+          1,
+          32,
+          37
+        ],
+        "type": "Conv1d"
+      },
+      {
+        "macs": 61440,
+        "output_shape": [
+          1,
+          32,
+          15
+        ],
+        "type": "Conv1d"
+      },
+      {
+        "macs": 57344,
+        "output_shape": [
+          1,
+          256
+        ],
+        "type": "Linear"
+      },
+      {
+        "macs": 512,
+        "output_shape": [
+          1,
+          2
+        ],
+        "type": "Linear"
+      }
+    ],
+    "total_macs": 147712
+  }
+}

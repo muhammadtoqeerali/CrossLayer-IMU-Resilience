@@ -1,8 +1,8 @@
 project:
   name: CrossLayer-IMU-Resilience
   mode: research_development
-  current_phase: phase_2_baseline_freeze_ready
-  status: phase_1_complete
+  current_phase: phase_3_data_protocol_freeze
+  status: phase_2_complete
   primary_task: preimpact_fall_detection
 
 data:
@@ -12,10 +12,17 @@ data:
   test_data_for_tuning: false
 
 baseline:
-  status: not_selected
+  status: fp32_reference_frozen
   primary_candidate: DATE2025_CNN_400MS_RECONSTRUCTED
-  candidate_migration_status: validated_phase1
+  candidate_migration_status: frozen_fp32_reference_phase2
   historical_checkpoint_verified: true
+  frozen_reference_contract: configs/baseline/frozen_fp32_reference_v1.json
+  decision_primary: historical_streaming_0p9_strict
+  decision_secondary: argmax_diagnostic_only
+  fp32_onnx_status: frozen_reference
+  quantization_method: static_post_training_quantization
+  quantization_protocol_status: frozen
+  final_int8_status: deferred_until_data_protocol_freeze
   candidate_families:
     - compact_1d_cnn
     - ds_cnn
@@ -58,3 +65,8 @@ provenance:
 publication:
   first_milestone: cross_layer_fault_characterization
   full_milestone: adaptive_cross_layer_resilience
+
+phase_dependencies:
+  static_int8_calibration_after_data_protocol_freeze: true
+  static_int8_before_fault_characterization: true
+  final_test_for_quantizer_selection: false

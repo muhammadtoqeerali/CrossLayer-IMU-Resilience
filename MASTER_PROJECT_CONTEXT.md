@@ -588,55 +588,63 @@ Date:
 
 2026-09-30
 
-Phase 1 is complete.
+Phase 2 is complete.
 
-Completed evidence:
-
-- Phase-0 scientific and repository foundation
-- inherited workstation source audit
-- clean-versus-development provenance audit
-- exact historical DATE checkpoint recovery
-- historical checkpoint SHA-256 verification
-- component migration decision matrix
-- CrossLayer-native protected-task migration
-- 63,173-parameter architecture validation
-- 68-vector exact task-logit parity
-- 68-vector exact penultimate-feature parity
-- historical streaming-decision parity
-- normalized state-artifact reload parity
-- clean-baseline contamination check
-
-Primary protected-baseline candidate:
+Frozen protected FP32 reference:
 
 `DATE2025_CNN_400MS_RECONSTRUCTED`
 
-Validated checkpoint SHA-256:
+Authoritative contract:
 
-`ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1`
+`configs/baseline/frozen_fp32_reference_v1.json`
 
-Validated canonical tensor-state SHA-256:
+Frozen Phase-2 evidence:
 
-`c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124`
+- exact historical checkpoint SHA-256
+- canonical tensor-state SHA-256
+- 63,173 parameters
+- 40 x 9 stored input
+- 6 effective accelerometer/gyroscope channels
+- 100-Hz sampling
+- 400-ms window
+- historical strict P(Falling) > 0.9 primary decision
+- argmax retained only as secondary diagnostic
+- 252,692 FP32 parameter bytes
+- 147,712 Conv/Linear MACs per window
+- fixed `[1,40,9] -> [1,2]` FP32 ONNX deployment contract
+- FP32 ONNX SHA-256 frozen
+- 324-vector parity audit
+- zero elementwise parity violations
+- zero decision differences
+- repeated ONNX export byte identity
+- static post-training quantization protocol frozen
 
-The candidate is not yet Phase-2 frozen.
+Dependency correction:
+
+Final static INT8 activation calibration requires a frozen clean calibration
+partition.
+
+Therefore final INT8 realization occurs immediately after Phase 3 freezes the
+data/calibration protocol and before fault characterization begins.
 
 Still unfrozen:
 
-- final protected-baseline decision semantics
-- quantization protocol
-- exported deployment artifact
-- clean reference metrics
-- formal dataset/event/split/timing protocol
+- dataset identities and provenance
+- subject/event/sequence split
+- calibration partition
+- held-out confirmation partition
+- clean dataset-level task metrics
+- final INT8 deployment artifact
 - sensor fault protocol
 - compute fault protocol
 - runtime supervisor
 - recovery policy
 - MCU target
 
-Next task:
+Current task:
 
-Phase 2 — reproduce, select, quantify, export, quantize and freeze the
-protected baseline before fault-study implementation.
+Phase 3 — freeze dataset, event, split, timing and calibration-partition
+semantics without using later fault-study outcomes.
 
 ---
 

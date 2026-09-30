@@ -1,0 +1,74 @@
+{
+  "acceptance_candidate": {
+    "all_vectors": [
+      "zero elementwise tolerance violations",
+      "zero argmax decision differences",
+      "zero historical decision differences"
+    ],
+    "numerical_stress_vectors": "elementwise abs(error) <= 1e-5 + 1e-5 * abs(reference)",
+    "purpose": "FP32 representation parity only; not dataset-performance evidence",
+    "structured_vectors": "max_abs_difference <= 1e-5"
+  },
+  "baseline_freeze_status": "NOT_FROZEN",
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "deployment_contract": {
+    "batch": 1,
+    "input_shape": [
+      1,
+      40,
+      9
+    ],
+    "output_shape": [
+      1,
+      2
+    ],
+    "parity_execution": "fixed_batch_1_serial"
+  },
+  "generated_utc": "2026-09-30T08:57:43+00:00",
+  "onnx_sha256": "f3a55933bab5ed63225a1647a8b78aa909c4bb5a81405b06f235ba1b3bf6de1f",
+  "parity": {
+    "argmax_decision_difference_count": 0,
+    "atol": 1e-05,
+    "elementwise_tolerance_violation_count": 0,
+    "historical_decision_difference_count": 0,
+    "max_abs_difference": 6.103515625e-05,
+    "max_relative_difference": 3.713452542797313e-06,
+    "minimum_argmax_margin_sample": 38,
+    "minimum_onnx_argmax_margin": 0.8277398347854614,
+    "minimum_onnx_distance_to_historical_threshold": 0.08572876453399658,
+    "minimum_torch_argmax_margin": 0.8277405500411987,
+    "minimum_torch_distance_to_historical_threshold": 0.08572858572006226,
+    "rtol": 1e-05,
+    "seeded_random_max_abs_difference": 6.103515625e-05,
+    "seeded_random_stress_count": 256,
+    "structured_count": 68,
+    "structured_max_abs_difference": 7.748603820800781e-07,
+    "total_count": 324,
+    "worst_case": {
+      "absolute_difference": 6.103515625e-05,
+      "allowed_tolerance": 0.0007427072850987315,
+      "class_index": 0,
+      "onnx_logit": 73.27066802978516,
+      "partition": "seeded_random_stress",
+      "relative_difference": 8.330086984642548e-07,
+      "sample_index": 122,
+      "torch_logit": 73.2707290649414
+    }
+  },
+  "repeat_export": {
+    "byte_identical": true,
+    "graph_and_initializer_identical": true,
+    "original_sha256": "f3a55933bab5ed63225a1647a8b78aa909c4bb5a81405b06f235ba1b3bf6de1f",
+    "repeat_1_sha256": "f3a55933bab5ed63225a1647a8b78aa909c4bb5a81405b06f235ba1b3bf6de1f",
+    "repeat_2_sha256": "f3a55933bab5ed63225a1647a8b78aa909c4bb5a81405b06f235ba1b3bf6de1f",
+    "runtime_outputs_bit_identical": true
+  },
+  "schema": "crosslayer_phase2b_fp32_onnx_hardening_v1",
+  "scientific_boundary": {
+    "dataset_samples_used": false,
+    "decision_semantics_frozen": false,
+    "quantization_calibration_used": false,
+    "task_metrics_frozen": false
+  },
+  "status": "PASS"
+}

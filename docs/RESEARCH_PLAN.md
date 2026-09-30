@@ -315,3 +315,29 @@ Main paper emphasis:
 - recovery/graceful degradation
 - embedded cost
 - safety/deadline evidence
+
+---
+
+## Dependency amendment after Phase 2
+
+The original phase sequence listed baseline quantization before the formal
+data-protocol freeze.
+
+Phase-2 implementation showed that final static INT8 calibration depends on a
+representative clean calibration partition.
+
+Therefore the executable dependency is now:
+
+1. freeze the FP32 protected reference baseline
+2. freeze the static-PTQ protocol
+3. freeze the dataset, event, subject, split and calibration partitions
+4. execute static INT8 calibration using only the permitted calibration split
+5. freeze the quantized deployment variant
+6. begin sensor, compute and combined fault characterization
+
+This is a methodological dependency correction.
+
+It does not change the research questions.
+
+No fault-study outcome may influence quantizer calibration or quantizer
+selection.

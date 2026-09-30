@@ -1,0 +1,29 @@
+{
+  "all_vectors": {
+    "argmax_decision_differences": 0,
+    "elementwise_tolerance_violations": 0,
+    "historical_decision_differences": 0
+  },
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "dataset_performance_evidence": false,
+  "deployment_batch": 1,
+  "numerical_stress_vectors": {
+    "count": 256,
+    "criterion": "abs(error) <= 1e-5 + 1e-5 * abs(reference)",
+    "observed_max_abs_difference": 6.103515625e-05,
+    "purpose": "numerical representation stress only"
+  },
+  "quantization_acceptance_rule": "NOT_DEFINED_HERE",
+  "repeat_export": {
+    "byte_identical": true,
+    "graph_and_initializer_identical": true,
+    "runtime_outputs_bit_identical": true
+  },
+  "schema": "crosslayer_fp32_parity_acceptance_candidate_v1",
+  "status": "VALIDATED_CANDIDATE_NOT_FROZEN",
+  "structured_vectors": {
+    "count": 68,
+    "criterion": "max_abs_difference <= 1e-5",
+    "observed_max_abs_difference": 7.748603820800781e-07
+  }
+}

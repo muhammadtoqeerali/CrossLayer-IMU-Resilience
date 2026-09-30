@@ -1,0 +1,83 @@
+{
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "calibration": {
+    "allowed_source": "clean representative windows from the frozen development/calibration partition only",
+    "forbidden_sources": [
+      "final held-out test",
+      "external test set",
+      "fault-injected evaluation samples",
+      "future physical-fault evidence",
+      "samples selected using fault robustness"
+    ],
+    "selection_rule": "Calibration configuration may be selected only with development/calibration evidence.",
+    "split_order": "split subjects/events/sequences before calibration-window selection",
+    "status": "DEFERRED_UNTIL_DATA_PROTOCOL_FREEZE"
+  },
+  "candidate_calibrators": [
+    "Distribution",
+    "Entropy",
+    "MinMax",
+    "Percentile"
+  ],
+  "candidate_formats": {
+    "QDQ": "SUPPORTED_CANDIDATE_TO_TEST_AFTER_CALIBRATION_FREEZE",
+    "QOperator": "SUPPORTED_CANDIDATE_TO_TEST_AFTER_CALIBRATION_FREEZE"
+  },
+  "candidate_integer_types": {
+    "activations": [
+      "QInt8",
+      "QUInt8"
+    ],
+    "final_choice": "UNFROZEN_BACKEND_DEPENDENT",
+    "weights": [
+      "QInt8"
+    ]
+  },
+  "candidate_weight_granularity": {
+    "fallback_per_tensor": true,
+    "final_choice": "UNFROZEN",
+    "per_channel": true
+  },
+  "dynamic_quantization": {
+    "deployment_candidate": false,
+    "role": "engineering_toolchain_smoke_only"
+  },
+  "fallback_policy": {
+    "if_static_ptq_is_unsuitable": "retain validated FP32 baseline or define a separate explicitly justified deployment variant",
+    "reason": "QAT changes recovered historical task weights and therefore changes baseline identity.",
+    "silent_qat_substitution": false
+  },
+  "fp32_source": {
+    "artifact_sha256": "f3a55933bab5ed63225a1647a8b78aa909c4bb5a81405b06f235ba1b3bf6de1f",
+    "deployment_input_shape": [
+      1,
+      40,
+      9
+    ],
+    "deployment_output_shape": [
+      1,
+      2
+    ],
+    "precision": "FP32"
+  },
+  "numerical_acceptance": "TO_BE_FROZEN_BEFORE_CALIBRATION_EVALUATION",
+  "primary_quantization_method": "static_post_training_quantization",
+  "quantizer_selection_prohibitions": [
+    "do not choose using final-test accuracy",
+    "do not choose using sensor-fault robustness",
+    "do not choose using compute-fault robustness",
+    "do not choose using combined-fault robustness",
+    "do not choose using publication-facing final confirmation"
+  ],
+  "reason": "Preserve the validated historical task weights while calibrating activation ranges from a frozen clean calibration split.",
+  "schema": "crosslayer_quantization_protocol_candidate_v1",
+  "status": "CANDIDATE_NOT_FROZEN",
+  "structural_acceptance_gates": [
+    "quantized graph loads successfully",
+    "fixed [1,40,9] -> [1,2] tensor contract preserved",
+    "no OOD or reliability mechanism introduced",
+    "artifact and protocol checksums recorded",
+    "quantized operator inventory recorded"
+  ],
+  "task_metric_acceptance": "TO_BE_FROZEN_AFTER_DATA_PROTOCOL_BUT_BEFORE_FINAL_TEST"
+}

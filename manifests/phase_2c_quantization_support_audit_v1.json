@@ -1,0 +1,447 @@
+{
+  "baseline_freeze_status": "NOT_FROZEN",
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "dynamic_quantization_smoke": {
+    "attempted": true,
+    "deployment_candidate": false,
+    "error": "NotImplemented(\"[ONNXRuntimeError] : 9 : NOT_IMPLEMENTED : Could not find an implementation for ConvInteger(10) node with name '/conv_1/conv_1.0/Conv_quant'\")",
+    "project_dataset_samples_used": false,
+    "scientific_role": "toolchain_smoke_only",
+    "status": "FAILED_NONBLOCKING"
+  },
+  "fp32_artifact": {
+    "bytes": 255191,
+    "graph": {
+      "node_count": 20,
+      "nodes": [
+        {
+          "index": 0,
+          "inputs": [],
+          "name": "/normalizer/Constant",
+          "op_type": "Constant",
+          "outputs": [
+            "/normalizer/Constant_output_0"
+          ]
+        },
+        {
+          "index": 1,
+          "inputs": [
+            "imu_window",
+            "/normalizer/Constant_output_0"
+          ],
+          "name": "/normalizer/Split",
+          "op_type": "Split",
+          "outputs": [
+            "/normalizer/Split_output_0",
+            "/normalizer/Split_output_1",
+            "/normalizer/Split_output_2"
+          ]
+        },
+        {
+          "index": 2,
+          "inputs": [],
+          "name": "/normalizer/Constant_1",
+          "op_type": "Constant",
+          "outputs": [
+            "/normalizer/Constant_1_output_0"
+          ]
+        },
+        {
+          "index": 3,
+          "inputs": [
+            "/normalizer/Split_output_1",
+            "/normalizer/Constant_1_output_0"
+          ],
+          "name": "/normalizer/Div",
+          "op_type": "Div",
+          "outputs": [
+            "/normalizer/Div_output_0"
+          ]
+        },
+        {
+          "index": 4,
+          "inputs": [],
+          "name": "/normalizer/Constant_2",
+          "op_type": "Constant",
+          "outputs": [
+            "/normalizer/Constant_2_output_0"
+          ]
+        },
+        {
+          "index": 5,
+          "inputs": [
+            "/normalizer/Split_output_0",
+            "/normalizer/Constant_2_output_0"
+          ],
+          "name": "/normalizer/Div_1",
+          "op_type": "Div",
+          "outputs": [
+            "/normalizer/Div_1_output_0"
+          ]
+        },
+        {
+          "index": 6,
+          "inputs": [],
+          "name": "/normalizer/Constant_3",
+          "op_type": "Constant",
+          "outputs": [
+            "/normalizer/Constant_3_output_0"
+          ]
+        },
+        {
+          "index": 7,
+          "inputs": [
+            "/normalizer/Div_output_0",
+            "/normalizer/Constant_3_output_0"
+          ],
+          "name": "/normalizer/Div_2",
+          "op_type": "Div",
+          "outputs": [
+            "/normalizer/Div_2_output_0"
+          ]
+        },
+        {
+          "index": 8,
+          "inputs": [
+            "/normalizer/Div_1_output_0",
+            "/normalizer/Div_2_output_0"
+          ],
+          "name": "/normalizer/Concat",
+          "op_type": "Concat",
+          "outputs": [
+            "/normalizer/Concat_output_0"
+          ]
+        },
+        {
+          "index": 9,
+          "inputs": [
+            "/normalizer/Concat_output_0"
+          ],
+          "name": "/Transpose",
+          "op_type": "Transpose",
+          "outputs": [
+            "/Transpose_output_0"
+          ]
+        },
+        {
+          "index": 10,
+          "inputs": [
+            "/Transpose_output_0",
+            "onnx::Conv_51",
+            "onnx::Conv_52"
+          ],
+          "name": "/conv_1/conv_1.0/Conv",
+          "op_type": "Conv",
+          "outputs": [
+            "/conv_1/conv_1.0/Conv_output_0"
+          ]
+        },
+        {
+          "index": 11,
+          "inputs": [
+            "/conv_1/conv_1.0/Conv_output_0",
+            "onnx::PRelu_56"
+          ],
+          "name": "/conv_1/conv_1.2/PRelu",
+          "op_type": "PRelu",
+          "outputs": [
+            "/conv_1/conv_1.2/PRelu_output_0"
+          ]
+        },
+        {
+          "index": 12,
+          "inputs": [
+            "/conv_1/conv_1.2/PRelu_output_0"
+          ],
+          "name": "/conv_1/conv_1.3/MaxPool",
+          "op_type": "MaxPool",
+          "outputs": [
+            "/conv_1/conv_1.3/MaxPool_output_0"
+          ]
+        },
+        {
+          "index": 13,
+          "inputs": [
+            "/conv_1/conv_1.3/MaxPool_output_0",
+            "onnx::Conv_54",
+            "onnx::Conv_55"
+          ],
+          "name": "/conv_2/conv_2.0/Conv",
+          "op_type": "Conv",
+          "outputs": [
+            "/conv_2/conv_2.0/Conv_output_0"
+          ]
+        },
+        {
+          "index": 14,
+          "inputs": [
+            "/conv_2/conv_2.0/Conv_output_0",
+            "onnx::PRelu_57"
+          ],
+          "name": "/conv_2/conv_2.2/PRelu",
+          "op_type": "PRelu",
+          "outputs": [
+            "/conv_2/conv_2.2/PRelu_output_0"
+          ]
+        },
+        {
+          "index": 15,
+          "inputs": [
+            "/conv_2/conv_2.2/PRelu_output_0"
+          ],
+          "name": "/conv_2/conv_2.3/MaxPool",
+          "op_type": "MaxPool",
+          "outputs": [
+            "/conv_2/conv_2.3/MaxPool_output_0"
+          ]
+        },
+        {
+          "index": 16,
+          "inputs": [
+            "/conv_2/conv_2.3/MaxPool_output_0"
+          ],
+          "name": "/fc/fc.0/Flatten",
+          "op_type": "Flatten",
+          "outputs": [
+            "/fc/fc.0/Flatten_output_0"
+          ]
+        },
+        {
+          "index": 17,
+          "inputs": [
+            "/fc/fc.0/Flatten_output_0",
+            "fc.1.weight",
+            "fc.1.bias"
+          ],
+          "name": "/fc/fc.1/Gemm",
+          "op_type": "Gemm",
+          "outputs": [
+            "/fc/fc.1/Gemm_output_0"
+          ]
+        },
+        {
+          "index": 18,
+          "inputs": [
+            "/fc/fc.1/Gemm_output_0",
+            "fc.2.weight"
+          ],
+          "name": "/fc/fc.2/PRelu",
+          "op_type": "PRelu",
+          "outputs": [
+            "/fc/fc.2/PRelu_output_0"
+          ]
+        },
+        {
+          "index": 19,
+          "inputs": [
+            "/fc/fc.2/PRelu_output_0",
+            "fc.4.weight",
+            "fc.4.bias"
+          ],
+          "name": "/fc/fc.4/Gemm",
+          "op_type": "Gemm",
+          "outputs": [
+            "logits"
+          ]
+        }
+      ],
+      "operator_counts": {
+        "Concat": 1,
+        "Constant": 4,
+        "Conv": 2,
+        "Div": 3,
+        "Flatten": 1,
+        "Gemm": 2,
+        "MaxPool": 2,
+        "PRelu": 3,
+        "Split": 1,
+        "Transpose": 1
+      }
+    },
+    "sha256": "f3a55933bab5ed63225a1647a8b78aa909c4bb5a81405b06f235ba1b3bf6de1f"
+  },
+  "generated_utc": "2026-09-30T09:00:46+00:00",
+  "graph_operator_support": {
+    "all_graph_operator_types": [
+      "Concat",
+      "Constant",
+      "Conv",
+      "Div",
+      "Flatten",
+      "Gemm",
+      "MaxPool",
+      "PRelu",
+      "Split",
+      "Transpose"
+    ],
+    "operators": {
+      "Concat": {
+        "integer_registry": false,
+        "node_count": 1,
+        "qdq_registry": false,
+        "qlinear_registry": true
+      },
+      "Constant": {
+        "integer_registry": false,
+        "node_count": 4,
+        "qdq_registry": false,
+        "qlinear_registry": false
+      },
+      "Conv": {
+        "integer_registry": true,
+        "node_count": 2,
+        "qdq_registry": true,
+        "qlinear_registry": true
+      },
+      "Div": {
+        "integer_registry": false,
+        "node_count": 3,
+        "qdq_registry": false,
+        "qlinear_registry": false
+      },
+      "Flatten": {
+        "integer_registry": false,
+        "node_count": 1,
+        "qdq_registry": false,
+        "qlinear_registry": false
+      },
+      "Gemm": {
+        "integer_registry": false,
+        "node_count": 2,
+        "qdq_registry": true,
+        "qlinear_registry": true
+      },
+      "MaxPool": {
+        "integer_registry": false,
+        "node_count": 2,
+        "qdq_registry": true,
+        "qlinear_registry": true
+      },
+      "PRelu": {
+        "integer_registry": false,
+        "node_count": 3,
+        "qdq_registry": false,
+        "qlinear_registry": false
+      },
+      "Split": {
+        "integer_registry": false,
+        "node_count": 1,
+        "qdq_registry": true,
+        "qlinear_registry": true
+      },
+      "Transpose": {
+        "integer_registry": true,
+        "node_count": 1,
+        "qdq_registry": true,
+        "qlinear_registry": true
+      }
+    }
+  },
+  "ort_quantization": {
+    "api_signatures": {
+      "quantize_dynamic": "(model_input: 'str | Path | onnx.ModelProto', model_output: 'str | Path', op_types_to_quantize=None, per_channel=False, reduce_range=False, weight_type=<QuantType.QInt8: 0>, nodes_to_quantize=None, nodes_to_exclude=None, use_external_data_format=False, extra_options=None)",
+      "quantize_static": "(model_input: 'str | Path | onnx.ModelProto', model_output: 'str | Path', calibration_data_reader: 'CalibrationDataReader', quant_format=<QuantFormat.QDQ: 1>, op_types_to_quantize=None, per_channel=False, reduce_range=False, activation_type=<QuantType.QInt8: 0>, weight_type=<QuantType.QInt8: 0>, nodes_to_quantize=None, nodes_to_exclude=None, use_external_data_format=False, calibrate_method=<CalibrationMethod.MinMax: 0>, calibration_providers=None, extra_options=None)"
+    },
+    "calibration_methods": [
+      "Distribution",
+      "Entropy",
+      "MinMax",
+      "Percentile"
+    ],
+    "import_available": true,
+    "integer_registry": [
+      "Attention",
+      "Conv",
+      "EmbedLayerNormalization",
+      "Gather",
+      "LSTM",
+      "MatMul",
+      "Transpose"
+    ],
+    "onnxruntime_version": "1.22.0",
+    "qdq_registry": [
+      "AveragePool",
+      "BatchNormalization",
+      "Clip",
+      "Conv",
+      "ConvTranspose",
+      "Gather",
+      "GatherElements",
+      "Gemm",
+      "InstanceNormalization",
+      "LayerNormalization",
+      "MatMul",
+      "MaxPool",
+      "Pad",
+      "Relu",
+      "Reshape",
+      "Resize",
+      "Slice",
+      "Split",
+      "Squeeze",
+      "Transpose",
+      "Unsqueeze",
+      "Where"
+    ],
+    "qlinear_registry": [
+      "Add",
+      "ArgMax",
+      "AveragePool",
+      "Clip",
+      "Concat",
+      "Conv",
+      "EmbedLayerNormalization",
+      "Gather",
+      "Gemm",
+      "GlobalAveragePool",
+      "LeakyRelu",
+      "MatMul",
+      "MaxPool",
+      "Mul",
+      "Pad",
+      "Relu",
+      "Reshape",
+      "Resize",
+      "Sigmoid",
+      "Softmax",
+      "Split",
+      "Squeeze",
+      "Transpose",
+      "Unsqueeze",
+      "Where"
+    ],
+    "quant_formats": [
+      "QDQ",
+      "QOperator"
+    ],
+    "quant_types": [
+      "QFLOAT8E4M3FN",
+      "QInt16",
+      "QInt4",
+      "QInt8",
+      "QUInt16",
+      "QUInt4",
+      "QUInt8"
+    ]
+  },
+  "protocol_direction": {
+    "dynamic_quantization_primary_candidate": false,
+    "dynamic_quantization_role": "toolchain_smoke_only",
+    "final_calibration_status": "DEFERRED",
+    "primary_candidate_method": "static_post_training_quantization",
+    "qat_primary_candidate": false,
+    "qat_reason": "QAT would modify the recovered historical task weights and therefore changes baseline identity",
+    "reason": "representative calibration data must come from a frozen non-test calibration partition",
+    "weight_identity_policy": "historical FP32 task weights remain source of the quantized deployment candidate"
+  },
+  "schema": "crosslayer_phase2c_quantization_support_audit_v1",
+  "scientific_boundary": {
+    "dataset_performance_metrics_used": false,
+    "fault_robustness_used_for_quantizer_selection": false,
+    "final_int8_model_created": false,
+    "final_static_calibration_performed": false,
+    "final_test_used": false,
+    "project_dataset_samples_used": false
+  },
+  "status": "PASS"
+}

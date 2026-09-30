@@ -1,0 +1,129 @@
+{
+  "architecture": {
+    "conv_linear_macs": 147712,
+    "effective_cnn_channels": 6,
+    "fp32_parameter_bytes": 252692,
+    "input_shape": [
+      1,
+      40,
+      9
+    ],
+    "output_shape": [
+      1,
+      2
+    ],
+    "parameter_count": 63173,
+    "penultimate_feature_dim": 256,
+    "sampling_hz": 100,
+    "window_ms": 400
+  },
+  "baseline_id": "DATE2025_CNN_400MS_RECONSTRUCTED",
+  "data_metrics": {
+    "clean_accuracy_frozen": false,
+    "clean_f1_frozen": false,
+    "fall_recall_frozen": false,
+    "reason": "formal data/event/split protocol is Phase 3"
+  },
+  "execution_environment": {
+    "host_latency_scope": "development_reference_only_not_mcu_evidence",
+    "numpy": "2.2.4",
+    "python": "3.12.3",
+    "python_executable": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/protechto_env/bin/python",
+    "torch": "2.5.1+cu124"
+  },
+  "fp32_onnx": {
+    "artifact_bytes": 255191,
+    "artifact_path": "artifacts/baseline/date2025_cnn400_fp32_v1.onnx",
+    "artifact_sha256": "f3a55933bab5ed63225a1647a8b78aa909c4bb5a81405b06f235ba1b3bf6de1f",
+    "deployment_batch": 1,
+    "format": "ONNX",
+    "input_shape": [
+      1,
+      40,
+      9
+    ],
+    "operator_counts": {
+      "Concat": 1,
+      "Constant": 4,
+      "Conv": 2,
+      "Div": 3,
+      "Flatten": 1,
+      "Gemm": 2,
+      "MaxPool": 2,
+      "PRelu": 3,
+      "Split": 1,
+      "Transpose": 1
+    },
+    "opset": 13,
+    "output_shape": [
+      1,
+      2
+    ],
+    "precision": "FP32",
+    "status": "FROZEN_REFERENCE_ARTIFACT",
+    "tracked_in_git": false
+  },
+  "fp32_parity": {
+    "argmax_decision_differences": 0,
+    "elementwise_tolerance_violations": 0,
+    "historical_decision_differences": 0,
+    "max_relative_difference": 3.713452542797313e-06,
+    "numerical_stress_vector_count": 256,
+    "repeat_export_byte_identical": true,
+    "repeat_runtime_outputs_bit_identical": true,
+    "stress_max_abs_difference": 6.103515625e-05,
+    "structured_max_abs_difference": 7.748603820800781e-07,
+    "structured_vector_count": 68
+  },
+  "freeze_scope": "FP32_REFERENCE_BASELINE",
+  "historical_weights": {
+    "canonical_tensor_state_sha256": "c98987476536320191f8875316cf8caeeb0b3f2edc51d65be7ac7d2eaea03124",
+    "checkpoint_sha256": "ee7c0079bfb8555bff45c3077cc24eaa4373c57729045d92a831a1d7a3ea9bb1",
+    "checkpoint_tracked_in_git": false
+  },
+  "phase_dependency": {
+    "fault_characterization_before_int8_freeze": false,
+    "next": "PHASE_3_DATA_EVENT_SPLIT_CALIBRATION_FREEZE",
+    "static_int8_execution_after": "PHASE_3_CALIBRATION_PARTITION_FREEZE"
+  },
+  "primary_decision_semantics": {
+    "comparison": "strict_greater_than",
+    "id": "historical_streaming_0p9_strict",
+    "rationale": "Frozen for historical deployment fidelity before CrossLayer fault outcomes are observed.",
+    "rule": "Falling iff P(Falling) > 0.9; Activity otherwise",
+    "threshold": 0.9
+  },
+  "protection_boundary": {
+    "compute_integrity": false,
+    "ood": false,
+    "recovery": false,
+    "reliability_fusion": false,
+    "runtime_supervisor": false,
+    "sensor_integrity": false
+  },
+  "quantization": {
+    "calibration_forbidden_sources": [
+      "final held-out test",
+      "external test",
+      "fault-injected evaluation data",
+      "samples selected using fault robustness",
+      "future physical fault evidence"
+    ],
+    "dynamic_quantization_deployment_candidate": false,
+    "dynamic_smoke_error": "NotImplemented(\"[ONNXRuntimeError] : 9 : NOT_IMPLEMENTED : Could not find an implementation for ConvInteger(10) node with name '/conv_1/conv_1.0/Conv_quant'\")",
+    "dynamic_smoke_status": "FAILED_NONBLOCKING",
+    "final_int8_status": "DEFERRED_UNTIL_DATA_PROTOCOL_FREEZE",
+    "primary_method": "static_post_training_quantization",
+    "protocol_status": "FROZEN",
+    "qat_allowed_as_silent_substitution": false,
+    "reason": "Representative activation calibration must use only the frozen clean development/calibration partition."
+  },
+  "schema": "crosslayer_frozen_fp32_reference_v1",
+  "scientific_role": "primary unprotected task workload for subsequent CrossLayer fault studies",
+  "secondary_diagnostic_decision": {
+    "id": "argmax_logits",
+    "may_replace_primary_based_on_fault_results": false,
+    "scientific_role": "diagnostic_and_sensitivity_analysis_only"
+  },
+  "status": "FROZEN"
+}
