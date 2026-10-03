@@ -1,0 +1,115 @@
+{
+  "acceptance": {
+    "all_gates_pass": true,
+    "gate_count": 17,
+    "gates": {
+      "all_61_subjects_still_13_blocks": true,
+      "all_other_subject_truth_inventories_identical": true,
+      "exact_793_v2_shards": true,
+      "exact_one_truth_mismatch": true,
+      "exception_forced_miss_under_frozen_labels": true,
+      "historical_truth_inventory_3390_2919": true,
+      "mismatch_is_known_phase3_exception": true,
+      "static_only_no_outer_execution": true,
+      "stored_label_inventory_3391_2918": true,
+      "subject106_truth_shift_only": true,
+      "v1_config_preserved": true,
+      "v1_plan_preserved": true,
+      "v1_qualification_preserved": true,
+      "v2_plan_bound_to_v2_config": true,
+      "v2_shard_ids_differ_from_v1": true,
+      "v2_shard_ids_unique": true,
+      "workload_unchanged": true
+    },
+    "passed_gate_count": 17
+  },
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_execution_v2_historical_truth.json",
+    "preserved_unchanged_after_preexec_freeze": true,
+    "sha256": "5167985edd3f4bf03fbbb4cc8d196407ac5b172a65477613813a7eaaed53243b"
+  },
+  "date": "2026-10-02",
+  "freeze": {
+    "path": "manifests/phase_4h_sensor_fi_outer_execution_v2_historical_truth_freeze_v1.json",
+    "sha256": "b3c530cda2e8843f4a9aa090f3d8320c863572aeab9abd14c4934bec1840254d"
+  },
+  "next_action": "Implement and freeze the outer shard executor against v2; perform metadata/interface dry-run qualification only.",
+  "phase": "4H",
+  "planner": {
+    "path": "experiments/phase_04/sensor_fi_outer_execution_plan_v2.py",
+    "preserved_unchanged_after_preexec_freeze": true,
+    "sha256": "92dc135cf2a8ff788981c086a0d6677129ec7e7aa8e21f6eea3ab70b03299cca"
+  },
+  "remaining_before_outer_execution": [
+    "implement and freeze shard executor against v2 truth contract and v2 shard plan",
+    "qualify executor metadata/interface dry-run without outer model forward or fault execution"
+  ],
+  "schema_version": "phase4h_sensor_fi_outer_execution_plan_v2_qualification_v1",
+  "scientific_boundary": {
+    "OnField_used": false,
+    "fault_injection_executed": false,
+    "metadata_labels_annotations_only": true,
+    "model_loaded": false,
+    "model_predictions_computed": false,
+    "outer_fault_outcomes_seen": false,
+    "outer_model_outcomes_seen": false,
+    "validation_used_for_new_selection": false
+  },
+  "shard_plan": {
+    "path": "manifests/phase_4h_sensor_fi_outer_execution_shards_v2_historical_truth.json",
+    "sha256": "a43df702c2694854e1ce79712af50a9bf91d0f24b40989241f604405f460024d",
+    "shard_count": 793
+  },
+  "single_scientific_clarification": "Historical evaluator trial truth is 3390 Activity / 2919 Falling. Stored-label 3391 / 2918 remains lineage inventory only.",
+  "status": "QUALIFIED_PRE_OUTER_EXECUTION_PLAN_V2_HISTORICAL_TRUTH",
+  "truth_contract": {
+    "historical_evaluator_trial_truth": {
+      "Activity": 3390,
+      "Falling": 2919
+    },
+    "historical_exception": "KFALL_106_T27_R05",
+    "historical_exception_classification_consequence": "FN",
+    "historical_exception_event_consequence": "missed",
+    "historical_exception_outer_fold": 4,
+    "historical_exception_retained_falling_window_count": 0,
+    "historical_exception_risk_record_present": true,
+    "historical_exception_sensor_lead_ms": null,
+    "historical_exception_valid_trigger_possible": false,
+    "mismatch_count": 1,
+    "relabeling": false,
+    "stored_label_trial_inventory": {
+      "Activity": 3391,
+      "Falling": 2918
+    }
+  },
+  "unchanged_execution_matrix": {
+    "checkpoint_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "fault_families": 12,
+    "model_variants": [
+      "prospective_fp32_300ms",
+      "qualified_static_ptq_v7"
+    ],
+    "model_window_evaluations": 479750160,
+    "operating_points": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "shards": 793,
+    "subject_condition_rows": 320616,
+    "subjects": 61,
+    "trials": 6309,
+    "unique_fault_instances": 42766632,
+    "windows": 273830
+  },
+  "v1_preservation": {
+    "config_sha256": "fa3c30387c012f9a2c15912b873df3256c55f22f49dc28b590dd23b1565c38ee",
+    "qualification_sha256": "ae8bd864084412fe84185aa30a4e9be83282d62d5b4926e42834cc6bc3a8a1d9",
+    "rewritten": false,
+    "shard_plan_sha256": "836bd94054702d462e1450ca3cb145f21b435942d5b4dce766a5dabd50095ba1"
+  }
+}

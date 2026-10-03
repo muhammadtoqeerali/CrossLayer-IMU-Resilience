@@ -1,0 +1,51 @@
+{
+  "authorization": {
+    "immutable_outer_statistical_aggregation": true,
+    "outer_result_based_retuning": false
+  },
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_aggregation_adapter_v1.json",
+    "sha256": "f5b3ec1ab30943711f8f9a7c6deba456445b4bff82307d7cea150d815b96ee39"
+  },
+  "freeze": {
+    "path": "manifests/phase_4h_sensor_fi_outer_aggregation_adapter_v1_freeze.json",
+    "sha256": "9b3d490cf7f2327a1f3f7fbd468c9b587c693702b6605f2b2954c01120615a8e",
+    "status": "FROZEN_POST_EXECUTION_PRE_OUTER_METRIC_ANALYSIS"
+  },
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_outer_aggregation_adapter_v1.py",
+    "sha256": "79a5560f644f4248ca912af6384885a37866d541406af5d79bed57def6a8e894"
+  },
+  "phase": "4H",
+  "qualification_date": "2026-10-03",
+  "qualified_properties": [
+    "sensor_lead_ms_bound_to_predeclared_subject_median",
+    "q25_q75_retained_as_descriptive_timing_summaries",
+    "overall_61_subject_dispatches_exact_qualified_stratified_bootstrap",
+    "UNIVR_dataset_interval_is_one_stratum_subject_bootstrap_specialization",
+    "KFALL_dataset_interval_is_one_stratum_subject_bootstrap_specialization",
+    "dataset_subject_counts_are_fixed_29_UNIVR_32_KFALL",
+    "same_frozen_bootstrap_namespace_and_seed_algorithm_preserved",
+    "undefined_metrics_are_not_zero_imputed",
+    "incomplete_stratum_coverage_does_not_receive_manufactured_CI",
+    "no_outer_result_file_access_in_adapter",
+    "no_analysis_CLI_or_result_selection_logic_in_adapter"
+  ],
+  "schema_version": "phase4h_sensor_fi_outer_aggregation_adapter_v1_qualification",
+  "scientific_boundary": {
+    "aggregation_parent_changed": false,
+    "onfield_used": false,
+    "outer_test_metric_values_read": false,
+    "outer_test_metric_values_used": false,
+    "qualification_data": "synthetic_only",
+    "reporting_parent_changed": false,
+    "scientific_rule_changed": false,
+    "statistical_rule_changed": false,
+    "validation_used": false
+  },
+  "status": "QUALIFIED_EXECUTABLE_ANALYSIS_ADAPTER_NO_SCIENTIFIC_CHANGE",
+  "tests": {
+    "path": "tests/test_phase4_sensor_fi_outer_aggregation_adapter_v1.py",
+    "sha256": "e690a0363d19db0aab3f07bf75a81445f545a3842632c3dfa9631c843ae70b89"
+  }
+}

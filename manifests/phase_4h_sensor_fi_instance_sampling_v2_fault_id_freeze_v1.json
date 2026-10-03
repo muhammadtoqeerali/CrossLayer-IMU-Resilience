@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-02",
+  "faults_executed": false,
+  "model_predictions_seen": false,
+  "onfield_outcomes_seen": false,
+  "outer_test_outcomes_seen": false,
+  "parent_v1": {
+    "failure_classification": "FAULT_ID_NAMESPACE_COLLISION_ONLY",
+    "implementation_path": "experiments/phase_04/sensor_fi_sampling.py",
+    "implementation_sha256": "dd10bd61c56b7f27f025489599828272a3cf6bb53c29118beb3cf53268112bf1",
+    "protocol_path": "configs/faults/phase4h_sensor_fi_instance_sampling_v1.json",
+    "protocol_sha256": "8174885d78a8864ce1f1c9f5fb1faaa1b3e1a7d1f34538c8e4120c87ecd452f0",
+    "sanity_result_path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_instance_sampling_v1_sanity/instance_sampling_sanity_result.json",
+    "sanity_result_sha256": "63239c25e9ace0fe7d6126a0f2d2a50be0f1ce253b10617a9f8ea2096e7f857d",
+    "sanity_status": "FAIL"
+  },
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "prospective_before_model_robustness": true,
+  "schema_version": "phase4h_sensor_fi_instance_sampling_v2_fault_id_freeze_v1",
+  "single_change": {
+    "duration_policy_changed": false,
+    "field": "fault_id",
+    "onset_policy_changed": false,
+    "partition_policy_changed": false,
+    "reason": "the same source-trial parent may legitimately appear in training-calibration identities for multiple outer folds; v1 replay_id was already unique because fold participates in the canonical instance, but the human-readable fault_id collided across folds",
+    "replay_canonicalization_changed": false,
+    "replicate_policy_changed": false,
+    "seed_derivation_changed": false,
+    "seed_namespace_changed": false,
+    "severity_changed": false,
+    "target_policy_changed": false,
+    "v1_behavior": "fault_id encoded family/severity/variant/replicate and parent hash but omitted partition/fold",
+    "v2_behavior": "fault_id additionally encodes partition and fold"
+  },
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "v2_implementation": {
+    "path": "experiments/phase_04/sensor_fi_sampling_v2.py",
+    "sha256": "51b75d7d51180ade0ff1cb1dc506d1797303564b23cd77ca62da1d311e7b0ae3"
+  },
+  "v2_protocol": {
+    "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v2_fault_id.json",
+    "sha256": "6004868ec664981f5feb8fc03d70f7263b41e94be597805fa7dba5f9831a3cdd"
+  },
+  "validation_outcomes_seen": false
+}

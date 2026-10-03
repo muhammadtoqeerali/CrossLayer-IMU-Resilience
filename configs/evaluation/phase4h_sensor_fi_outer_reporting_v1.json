@@ -1,0 +1,28 @@
+{
+  "schema_version": "phase4h_sensor_fi_outer_reporting_v1",
+  "phase": "4H",
+  "status": "FROZEN_PRE_CROSS_SUBJECT_OUTER_REPORTING",
+  "subject_aggregation_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_subject_aggregation_v1r1",
+  "output_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_reporting_v1",
+  "bootstrap_replicates": 10000,
+  "bootstrap_workers": 8,
+  "confidence_level": 0.95,
+  "required_strata": [
+    "overall_61_subject",
+    "UNIVR",
+    "KFALL"
+  ],
+  "mandatory_family_severity_inference": true,
+  "individual_fault_variant_detail": "descriptive_subject_macro_and_coverage",
+  "checkpoint_seed_detail": "descriptive_subject_macro_and_coverage",
+  "timing_descriptive_fields": [
+    "q25_sensor_lead_ms",
+    "median_sensor_lead_ms",
+    "q75_sensor_lead_ms"
+  ],
+  "degradation_definition": "C0-CS",
+  "direction_status_rules": "frozen_reporting_v2",
+  "binary_global_robustness_label_allowed": false,
+  "outer_result_based_retuning_allowed": false,
+  "outer_result_based_selection_allowed": false
+}

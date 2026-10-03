@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-03",
+  "diagnostic_evidence": {
+    "declared_but_nonnull_count": 0,
+    "null_counts": {
+      "median_sensor_lead_ms": 1106,
+      "precision": 1102,
+      "q25_sensor_lead_ms": 1106,
+      "q75_sensor_lead_ms": 1106
+    },
+    "null_not_declared_count": 0,
+    "qualified_helper_NaN_missingness_passed": true,
+    "qualified_helper_None_failure_reproduced": true,
+    "total_outer_rows_scanned": 320616
+  },
+  "parent_failed_v1": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_outer_subject_aggregation_v1.json",
+    "config_sha256": "9db89994cfc3b903bacbd0894bd4210470706d6b026ce1c47ce35024c7d7f531",
+    "failed_partial_interpretability_sha256": "2f766450476e99dbed63963f8041ada0c33a264f7527019e6a04961539653101",
+    "freeze_path": "manifests/phase_4h_sensor_fi_outer_subject_aggregation_v1_freeze.json",
+    "freeze_sha256": "9334ff69664880ce799a4a0df18c15271557eeaa49b9471e000d3a484e63ff24",
+    "implementation_path": "experiments/phase_04/sensor_fi_outer_subject_aggregation_v1.py",
+    "implementation_sha256": "55a54b17dfe7f6d6e1711e0af7444d910dfd6a7403dd6041b5b26e16ce309f25",
+    "qualification_path": "manifests/phase_4h_sensor_fi_outer_subject_aggregation_v1_qualification.json",
+    "qualification_sha256": "81b7a40f2ff36fc28e2d7cdd903214013da2d257e27525024e85c60cdde5c502"
+  },
+  "phase": "4H",
+  "schema_version": "phase4h_sensor_fi_outer_subject_aggregation_v1r1_freeze",
+  "scientific_boundary": {
+    "aggregation_math_changed": false,
+    "bootstrap_changed": false,
+    "fault_protocol_changed": false,
+    "missingness_policy_changed": false,
+    "model_or_threshold_changed": false,
+    "outer_metric_values_interpreted": false,
+    "outer_metric_values_printed": false,
+    "repair_chosen_from_metric_magnitude_or_direction": false,
+    "reporting_rules_changed": false,
+    "result_dependent_selection": false
+  },
+  "status": "FROZEN_TECHNICAL_REPAIR_POST_OUTER_READ_NO_RESULT_INTERPRETATION",
+  "technical_repair": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_outer_subject_aggregation_v1r1.json",
+    "config_sha256": "5688044c2b758449bf48131ad3ef713a888c24dec8c1f110020c0d6cf56d3b0e",
+    "documentation_path": "docs/PHASE_4H_SENSOR_FI_OUTER_SUBJECT_AGGREGATION_V1R1.md",
+    "documentation_sha256": "94154514aee7bfa7fcafcacd3d329af84ee0e9cb781d19c6c1a7c4c4cf635759",
+    "implementation_path": "experiments/phase_04/sensor_fi_outer_subject_aggregation_v1r1.py",
+    "implementation_sha256": "f2a9e7276cf86220886e8a1e9bdb26a12cabad764e8cbe932e5585fce3f74f91",
+    "only_semantic_operation_added": "explicitly_declared JSON null to floating NaN before unchanged qualified helper",
+    "test_path": "tests/test_phase4_sensor_fi_outer_subject_aggregation_v1r1.py",
+    "test_sha256": "614f9b7f50d6ae44b276f56faaa641d0b49417260f07cf2e7e4b5c99dae2af8a"
+  },
+  "unchanged_parents": {
+    "experiments/phase_04/sensor_fi_aggregation.py": "eaad98b0bca6809bfde3e61774b6a48e2debda109e950ebf15c41921b08064a1",
+    "experiments/phase_04/sensor_fi_outer_aggregation_adapter_v1.py": "79a5560f644f4248ca912af6384885a37866d541406af5d79bed57def6a8e894",
+    "experiments/phase_04/sensor_fi_reporting_v2.py": "ee3360206fb035a0d038cf31b10d0e12c2311a27ed1b8bf6e2f740a42cf2269e",
+    "manifests/phase_4h_sensor_fi_outer_aggregation_adapter_v1_qualification.json": "51c755353eb14f2a1b9ac02e8f5d4bb971063bb832549c7f60e2998ae7d4bbf8"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-03",
+  "parent_analysis": {
+    "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json": "ef95356b8e32d8f63bb41c967f35fcdfc24338e7d8ee59af40aa99c3424b0628",
+    "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v2_sampling_v3.json": "6ae6c53ed327ea74e23afcad8fb3766070f1d5d79d270e5e049b72a51090e7a4",
+    "experiments/phase_04/sensor_fi_aggregation.py": "eaad98b0bca6809bfde3e61774b6a48e2debda109e950ebf15c41921b08064a1",
+    "experiments/phase_04/sensor_fi_reporting_v2.py": "ee3360206fb035a0d038cf31b10d0e12c2311a27ed1b8bf6e2f740a42cf2269e",
+    "manifests/phase_4h_sensor_fi_evaluation_aggregation_sampling_v3_rebind_v1.json": "c0e4016fdcb7ca1bc44c4927fbf33b115b76dbb4067f459abd4a77408ecc0ee6",
+    "manifests/phase_4h_sensor_fi_outer_execution_completion_v1.json": "587d608f1f9ff1addbdcec312e3312591e008f05459253b60f754667f209b077"
+  },
+  "phase": "4H",
+  "qualified_adapter": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_outer_aggregation_adapter_v1.json",
+    "config_sha256": "f5b3ec1ab30943711f8f9a7c6deba456445b4bff82307d7cea150d815b96ee39",
+    "freeze_path": "manifests/phase_4h_sensor_fi_outer_aggregation_adapter_v1_freeze.json",
+    "freeze_sha256": "9b3d490cf7f2327a1f3f7fbd468c9b587c693702b6605f2b2954c01120615a8e",
+    "implementation_path": "experiments/phase_04/sensor_fi_outer_aggregation_adapter_v1.py",
+    "implementation_sha256": "79a5560f644f4248ca912af6384885a37866d541406af5d79bed57def6a8e894",
+    "qualification_path": "manifests/phase_4h_sensor_fi_outer_aggregation_adapter_v1_qualification.json",
+    "qualification_sha256": "51c755353eb14f2a1b9ac02e8f5d4bb971063bb832549c7f60e2998ae7d4bbf8"
+  },
+  "runner": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_outer_subject_aggregation_v1.json",
+    "config_sha256": "9db89994cfc3b903bacbd0894bd4210470706d6b026ce1c47ce35024c7d7f531",
+    "documentation_path": "docs/PHASE_4H_SENSOR_FI_OUTER_SUBJECT_AGGREGATION_V1.md",
+    "documentation_sha256": "db3f0a677db8664095f1d4f88c71c4307087561c5afcee09b2352a402ba09a71",
+    "implementation_path": "experiments/phase_04/sensor_fi_outer_subject_aggregation_v1.py",
+    "implementation_sha256": "55a54b17dfe7f6d6e1711e0af7444d910dfd6a7403dd6041b5b26e16ce309f25",
+    "test_path": "tests/test_phase4_sensor_fi_outer_subject_aggregation_v1.py",
+    "test_sha256": "7ed4ba05f0589bf09d926e6fb1c96cdd497eb4fbaa4fcee412f7e1ee60dd48cd"
+  },
+  "schema_version": "phase4h_sensor_fi_outer_subject_aggregation_v1_freeze",
+  "scientific_boundary": {
+    "OnField_used": false,
+    "cross_subject_bootstrap_in_this_stage": false,
+    "direction_status_in_this_stage": false,
+    "global_robustness_label_in_this_stage": false,
+    "outer_metric_values_read_before_freeze": false,
+    "outer_metric_values_used_to_define_runner": false,
+    "outer_result_based_retuning": false,
+    "outer_result_based_selection": false
+  },
+  "status": "FROZEN_PRE_OUTER_METRIC_READ"
+}

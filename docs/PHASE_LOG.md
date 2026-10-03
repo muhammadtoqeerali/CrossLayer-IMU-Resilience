@@ -1756,3 +1756,145 @@ frozen.
 
 No prospective model training, quantization execution, fault injection or
 held-out model evaluation occurred in Phase 3.
+
+---
+
+## 2026-09-30 — Phase 4A initiated
+
+Phase 3 is frozen and committed.
+
+Phase 4A determines whether an already-trained 300-ms CNN can serve as the
+prospective baseline under the frozen 61-subject protocol.
+
+Existing models are evaluated only for provenance compatibility.
+
+Model accuracy is not used for selection.
+
+Outer-test predictions are not executed.
+
+OnField predictions are not executed.
+
+A historical checkpoint is reusable only when its lineage is compatible with:
+
+- CNN model family
+- 300-ms window
+- 50-percent overlap
+- 61-subject UniVRFall + KFall primary population
+- no OnField subjects in the five-fold population
+- frozen five-fold subject membership
+- compatible preprocessing and feature representation
+- complete five-fold checkpoint family
+- checkpoint selection independent of outer-test outcomes
+
+If exact compatibility cannot be demonstrated, Phase 4 will train a new
+prospective five-fold CNN family using the frozen protocol.
+
+### Phase-4B prospective 300-ms CNN training protocol
+
+The prospective FP32 CNN baseline uses the frozen Phase-3 300-ms,
+50%-overlap primary dataset and frozen five-fold subject manifest.
+
+The primary population remains the 29 UniVR + 32 KFall subjects.
+
+Retained OnField subjects 1001-1010 remain external validation only.
+
+OnField subjects are excluded from primary training, validation, outer-test,
+checkpoint selection, threshold selection, and calibration.
+
+Storage IDs 999 and 1000 remain permanently excluded.
+
+Historical CNN checkpoints are not used to select the prospective baseline
+because Phase 4A found no provenance-confirmed reusable historical run.
+
+No model execution occurred during protocol freezing.
+
+INT8 calibration remains deferred until the FP32 baseline is frozen.
+
+Fault injection remains deferred until after the FP32 baseline is frozen.
+
+## Phase 4H — Sensor-FI held-out outer interpretation v1
+
+- Status: `FROZEN_INTERPRETATION_OF_HELD_OUT_OUTER_RESULTS`.
+- Reporting source: immutable Phase-4H outer reporting v1; execution remained `EXECUTION_INTERPRETABLE`.
+- Mandatory family×severity records: 4,536 with deterministic 10,000-replicate subject bootstrap for overall, UniVR, and KFall strata.
+- Direction inventory across all strata: 2,677 `DEGRADATION_SUPPORTED`, 268 `IMPROVEMENT_SUPPORTED`, 1,555 `NO_DIRECTIONAL_CONCLUSION`, 36 `UNRESOLVED`.
+- Overall 61-subject inventory: 928 degradation, 96 improvement, 476 no-direction, 12 unresolved.
+- L3 `axis_loss` is a severe repeated held-out failure mode; precision and median sensor-lead inference are unresolved there because valid detection coverage disappears.
+- Clean FP32 and qualified PTQ references remain descriptively close; no equivalence claim is made because no equivalence test was predeclared.
+- UniVR and KFall remain separately reported because direction statuses differ for a nontrivial subset of fault conditions, especially timing.
+- `NO_DIRECTIONAL_CONCLUSION` is not equivalence and no binary global robustness label is generated.
+- Governance boundary: these held-out results may be reported/interpreted but cannot modify model weights, thresholds, operating points, fault severities, calibration, or reporting/statistical rules.
+- Interpretation manifest SHA256: `a5daf46f342b669cc461d0f6d66d2d933349b2739f57e700c3e7d7073719025b`.
+
+## Phase 4I — OnField Activity-only external interpretation v1
+
+- Status: `FROZEN_ACTIVITY_ONLY_EXTERNAL_INTERPRETATION`.
+- Independent retained external cohort: 10 subjects, 16 trials, 1,023,337 Activity windows, zero Falling windows.
+- All 15 seed×fold checkpoints per model variant and all three frozen validation-selected operating points were retained.
+- Prospective FP32:
+  - balanced: Activity specificity 0.999010; 18.328044 false triggers/Activity hour.
+  - low_false_alarm: Activity specificity 0.999005; 4.044666 false triggers/Activity hour.
+  - timely_150ms: Activity specificity 0.995899; 70.148137 false triggers/Activity hour.
+- Qualified static PTQ v7:
+  - balanced: Activity specificity 0.998950; 19.446624 false triggers/Activity hour.
+  - low_false_alarm: Activity specificity 0.998947; 4.289012 false triggers/Activity hour.
+  - timely_150ms: Activity specificity 0.995657; 74.611724 false triggers/Activity hour.
+- Uncertainty is the predeclared deterministic 10,000-replicate subject bootstrap over the 10 retained external subjects.
+- The external false-alarm burden is descriptively operating-point dependent, but OnField cannot select an operating point; all three remain frozen and reportable.
+- FP32 and PTQ are descriptively close at corresponding operating points, but no model-difference or equivalence test was predeclared; no superiority/equivalence claim is made.
+- The Activity-only cohort cannot support fall recall, event recall, missed-fall rate, lead time, recovery, two-class balanced accuracy, or external fall-detection-effectiveness claims.
+- No checkpoint, threshold, operating point, model weighting, calibration rule, or scientific parameter may be changed from these results.
+- Interpretation manifest SHA256: `23f57b6ebc265e04f9ab607a9cb19d37ad80f19229748c5cf741d63f5c32f658`.
+
+## 2026-10-03 — Phase 4 complete
+
+Phase 4 — Sensor Fault Engine is complete.
+
+Completed scope:
+
+- prospective 300-ms FP32 baseline frozen under the Phase-3 protocol;
+- qualified static PTQ v7 mixed-precision comparator across all 15
+  seed×fold checkpoints;
+- deterministic P0 sensor-FI protocol with 12 fault families;
+- immutable 61-subject held-out sensor-FI outer execution;
+- frozen subject-level outer reporting and interpretation without retuning;
+- independent retained OnField Activity-only external execution and
+  interpretation without model, threshold, checkpoint, or operating-point
+  selection.
+
+Held-out sensor-FI execution scale:
+
+- 320,616 subject-condition rows;
+- 42,766,632 unique fault instances;
+- 479,750,160 model-window evaluations;
+- 4,536 family×severity inferential reporting records.
+
+External OnField execution scale:
+
+- 10 retained subjects;
+- 16 trials;
+- 1,023,337 Activity windows;
+- zero Falling windows;
+- 30,700,110 model-window evaluations;
+- 92,100,330 threshold applications.
+
+Scientific boundary:
+
+- held-out and external results did not feed back into tuning;
+- `NO_DIRECTIONAL_CONCLUSION` is not equivalence;
+- no FP32/PTQ equivalence claim is made;
+- no global binary robustness label is generated;
+- no MCU or physical-hardware claim is made.
+
+Roadmap boundary:
+
+- Phase 4 = Sensor Fault Engine;
+- Phase 5 = Compute Fault Engine;
+- Phase 6 = Cross-Layer Vulnerability Characterization over C0, CS, CC,
+  and CSC.
+
+Compute fault injection and the combined sensor+compute regime are therefore
+not claimed as Phase-4 deliverables and remain future governed work.
+
+Phase-4 completion manifest SHA256:
+`ca5db70026d94ea4831ceb233012ff4f299f34608e90c06654a0f5303e7fee9c`.

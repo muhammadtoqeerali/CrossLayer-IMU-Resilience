@@ -1,0 +1,48 @@
+{
+  "authorization": {
+    "cross_subject_reporting_after_success": true,
+    "immutable_subject_aggregation_execution": true,
+    "outer_result_based_retuning": false
+  },
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_subject_aggregation_v1.json",
+    "sha256": "9db89994cfc3b903bacbd0894bd4210470706d6b026ce1c47ce35024c7d7f531"
+  },
+  "freeze": {
+    "path": "manifests/phase_4h_sensor_fi_outer_subject_aggregation_v1_freeze.json",
+    "sha256": "9334ff69664880ce799a4a0df18c15271557eeaa49b9471e000d3a484e63ff24"
+  },
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_outer_subject_aggregation_v1.py",
+    "sha256": "55a54b17dfe7f6d6e1711e0af7444d910dfd6a7403dd6041b5b26e16ce309f25"
+  },
+  "phase": "4H",
+  "qualification_date": "2026-10-03",
+  "qualified_properties": [
+    "replicate_variant_seed_subject_hierarchy",
+    "qualified_timing_adapter_binding",
+    "paired_C0_CS_subject_values",
+    "individual_variant_detail_preserved",
+    "checkpoint_seed_detail_preserved",
+    "timing_q25_median_q75_descriptive_preserved",
+    "classification_and_event_denominator_source_counts_preserved",
+    "cross_subject_bootstrap_deferred",
+    "direction_status_deferred",
+    "global_robustness_label_prohibited",
+    "no_result_dependent_selection"
+  ],
+  "schema_version": "phase4h_sensor_fi_outer_subject_aggregation_v1_qualification",
+  "scientific_boundary": {
+    "outer_metric_values_read": false,
+    "outer_metric_values_used": false,
+    "outer_result_based_retuning": false,
+    "scientific_rule_changed": false,
+    "statistical_rule_changed": false,
+    "synthetic_or_structural_only": true
+  },
+  "status": "QUALIFIED_PRE_OUTER_METRIC_READ_SUBJECT_AGGREGATION",
+  "tests": {
+    "path": "tests/test_phase4_sensor_fi_outer_subject_aggregation_v1.py",
+    "sha256": "7ed4ba05f0589bf09d926e6fb1c96cdd497eb4fbaa4fcee412f7e1ee60dd48cd"
+  }
+}

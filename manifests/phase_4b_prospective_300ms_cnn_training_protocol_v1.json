@@ -1,0 +1,111 @@
+{
+  "dataset_protocol": {
+    "kfall_subject_count": 32,
+    "onfield_retained_ids": [
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "onfield_role": "external_validation_only",
+    "overlap_percent": 50,
+    "permanently_excluded_ids": [
+      "999",
+      "1000"
+    ],
+    "primary_subject_count": 61,
+    "samples_per_window": 30,
+    "sampling_hz": 100,
+    "stride_ms": 150,
+    "stride_samples": 15,
+    "univr_subject_count": 29,
+    "window_ms": 300
+  },
+  "fault_injection_boundary": {
+    "faults_before_baseline_freeze": false
+  },
+  "fold_authority": {
+    "manifest": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/manifests/phase_3j_primary_300ms_fivefold_v1.json",
+    "regenerate_folds": false,
+    "sha256": "deee09a7cddea2f5a0b1594905608e213a1235ce7857468411a6fdb7083fef92"
+  },
+  "model": {
+    "checkpoint_reuse": false,
+    "family": "CNN",
+    "source_checkpoint_selection": "none"
+  },
+  "phase": "4B",
+  "protocol_name": "prospective_300ms_cnn_fivefold_baseline",
+  "quantization_boundary": {
+    "calibration_source": "training_only",
+    "int8_calibration_before_baseline_freeze": false
+  },
+  "selection_boundary": {
+    "historical_checkpoint_accuracy_used_for_selection": false,
+    "onfield_open_during_training": false,
+    "onfield_used_for_checkpoint_selection": false,
+    "outer_test_open_during_training": false,
+    "outer_test_used_for_checkpoint_selection": false
+  },
+  "source_records": [
+    {
+      "files": [
+        {
+          "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/dataloaders/KFoldDataloader.py",
+          "sha256": "0d9594dfb1375927cc09204b2a0bf432c892a1d00eedc53c4d1cf0244f9b5148",
+          "size_bytes": 2821
+        },
+        {
+          "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/models/CNN.py",
+          "sha256": "5e1ddac378c80929068b6fb8f62fff0d351bacbf047297829bd0531ad9c43eb2",
+          "size_bytes": 2244
+        },
+        {
+          "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/models/modules/IMUNormalizer.py",
+          "sha256": "ec9abd57a3df5bd10bf73ee495a44daa0fa4294a9d094d353831fb98d193f9a2",
+          "size_bytes": 950
+        },
+        {
+          "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/train.py",
+          "sha256": "da4e46b583ebaa5374528d7f74426e68bc5ded3459b71d7516fb59c9648363ec",
+          "size_bytes": 9635
+        }
+      ],
+      "git_commit": "1453e2644d2b27a0356efa4523a97ce95b3c0b5f",
+      "root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori"
+    },
+    {
+      "files": [
+        {
+          "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/dataloaders/KFoldDataloader.py",
+          "sha256": "6f9d271856d3abe39a80617ed8f99506df004838abe8f22a2de740084b34bfc8",
+          "size_bytes": 3249
+        },
+        {
+          "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/models/CNN.py",
+          "sha256": "5e1ddac378c80929068b6fb8f62fff0d351bacbf047297829bd0531ad9c43eb2",
+          "size_bytes": 2244
+        },
+        {
+          "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/models/modules/IMUNormalizer.py",
+          "sha256": "ec9abd57a3df5bd10bf73ee495a44daa0fa4294a9d094d353831fb98d193f9a2",
+          "size_bytes": 950
+        },
+        {
+          "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master/train.py",
+          "sha256": "e5b71a5c5a9688cbe9a655c939541808a9d4b357fd2a00b0c86d1843c97108b2",
+          "size_bytes": 5227
+        }
+      ],
+      "git_commit": "8a27377f5bb94ab1a20e8dff9b1c361b150fd1f3",
+      "root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master"
+    }
+  ],
+  "status": "FROZEN_CANDIDATE"
+}

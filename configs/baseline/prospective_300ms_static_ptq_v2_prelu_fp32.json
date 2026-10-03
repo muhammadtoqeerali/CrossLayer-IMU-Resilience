@@ -1,0 +1,180 @@
+{
+  "calibration": {
+    "fault_injected_allowed": false,
+    "fold_specific_rule": "Each checkpoint uses only the corresponding fold's frozen 4096-window calibration identity set; the same fold identities are reused across its three seeds.",
+    "identity_config": {
+      "path": "configs/datasets/int8_calibration_identity_v1.json",
+      "sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e"
+    },
+    "onfield_allowed": false,
+    "outer_test_allowed": false,
+    "quant_params_shared_across_folds": false,
+    "source_partition": "training only",
+    "total_fold_window_instances": 20480,
+    "validation_allowed": false,
+    "windows_per_fold": 4096
+  },
+  "frozen_date": "2026-10-02",
+  "method": {
+    "backend": "x86",
+    "dynamic_quantization": "prohibited as silent substitute",
+    "framework": "PyTorch FX",
+    "global_qconfig": "get_default_qconfig_mapping('x86')",
+    "object_type_overrides": {
+      "torch.nn.PReLU": null
+    },
+    "prelu_precision": "FP32",
+    "primary_method": "static_post_training_quantization",
+    "qat": "prohibited as silent substitute",
+    "quantized_weighted_operators_required": [
+      "Conv1d",
+      "Linear"
+    ]
+  },
+  "next_action": "Realize only the frozen seed42/fold1 v2 pilot using the exact fold-1 4096-window training-only calibration set and evaluate the unchanged numerical gates.",
+  "numerical_acceptance": {
+    "evaluation_data": "only the corresponding fold's frozen 4096 training-only calibration windows",
+    "required": {
+      "all_outputs_finite": true,
+      "argmax_agreement_fraction_min": 0.99,
+      "mean_absolute_probability_error_max": 0.01,
+      "output_shape_exactly_preserved": true,
+      "p99_absolute_probability_error_max": 0.05
+    },
+    "source": "unchanged from frozen v1"
+  },
+  "phase": "4G",
+  "predecessor": {
+    "v1_precision": "MIXED_PRECISION_STATIC_PTQ",
+    "v1_protocol": {
+      "path": "configs/baseline/prospective_300ms_static_ptq_v1.json",
+      "sha256": "26440fafbda8a616a51c391764dd59dd16d5015e7e8f3ed584db541b156b09d8"
+    },
+    "v1_protocol_manifest": {
+      "path": "manifests/phase_4g_static_ptq_protocol_freeze_v1.json",
+      "sha256": "699a96746cfb79e83363c9b350abc10de2c7b744df1e1b92845c91d7bfbd4cdd"
+    },
+    "v1_result": "FAIL"
+  },
+  "provenance_tier": "P0 software quantization evidence",
+  "role": "targeted v2 static PTQ realization after preserved v1 failure",
+  "runtime_environment": {
+    "backend": "x86",
+    "python": "3.13.12",
+    "supported_quantized_engines": [
+      "qnnpack",
+      "onednn",
+      "x86",
+      "fbgemm"
+    ],
+    "torch": "2.12.0+cu130"
+  },
+  "schema_version": "prospective_300ms_static_ptq_v2_prelu_fp32",
+  "scientific_boundary": {
+    "fault_data_used_for_v2_design": false,
+    "fully_int8_claim": false,
+    "mcu_execution_claim": false,
+    "onfield_used_for_v2_design": false,
+    "outer_test_used_for_v2_design": false,
+    "v2_design_basis": "training-only calibration fidelity and operator-level engineering diagnostics",
+    "v2_quantized_model_created_before_freeze": false,
+    "v2_quantized_outputs_observed_before_freeze": false,
+    "validation_used_for_v2_design": false
+  },
+  "selection_policy": {
+    "candidate_count": 1,
+    "candidate_id": "torch_fx_x86_default_qconfig_prelu_fp32_v2",
+    "candidate_sweep": false,
+    "fallback": "If v2 fails the unchanged numerical or structural gates, preserve v2 as failed evidence. Any further change requires another separately versioned pre-result protocol.",
+    "pilot_checkpoint": {
+      "fold": 1,
+      "reason": "same checkpoint used for preserved v1 engineering failure diagnosis; not selected by outer-test performance",
+      "seed": 42
+    },
+    "selection_by_combined_fault_robustness": false,
+    "selection_by_compute_fault_robustness": false,
+    "selection_by_onfield": false,
+    "selection_by_outer_test_accuracy": false,
+    "selection_by_sensor_fault_robustness": false,
+    "selection_by_validation_accuracy": false
+  },
+  "status": "FROZEN_PRE_RESULT",
+  "structural_acceptance": {
+    "fully_int8_claim_allowed": false,
+    "precision_classification": "MIXED_PRECISION_STATIC_PTQ",
+    "reason": "PReLU is intentionally kept FP32 in v2, therefore v2 is mixed-precision by construction.",
+    "required": [
+      "both Conv1d layers converted to quantized Conv1d",
+      "both Linear layers converted to quantized Linear",
+      "all three PReLU modules remain FP32",
+      "PReLU learned slopes exactly preserve FP32 checkpoint values",
+      "no task weights are retrained or modified",
+      "serialization/load round-trip succeeds",
+      "converted operator inventory is recorded"
+    ]
+  },
+  "v1_failure_evidence": {
+    "corrected_v1_pilot_manifest": {
+      "bytes": 4648,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/pilot_manifest_v2_corrected.json",
+      "sha256": "09fa83b0d6323239ad3a58f4a36d8ba0c2b8772d180663211c4643752157d7e0"
+    },
+    "original_v1_pilot_manifest": {
+      "bytes": 3371,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/pilot_manifest.json",
+      "sha256": "3bd5b2b380ecd61105729a3282405ec388b4cb0a343bd9e540a4ba4a94424d79"
+    },
+    "v1_failure_diagnosis": {
+      "bytes": 4008,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/v1_failure_diagnosis.json",
+      "sha256": "a245e691f97b116a28d37250bd771d143fe49f9641983227363c33fd94dd1864"
+    },
+    "v1_first_block_diagnosis": {
+      "bytes": 2129,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/v1_first_block_diagnosis_v2.json",
+      "sha256": "b53ba15c88856b86e2ed72b1f519bb7ac10b7029c9448b083bc49188820131cf"
+    },
+    "v1_prelu_operator_microtest": {
+      "bytes": 24553,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/v1_quantized_prelu_operator_microtest.json",
+      "sha256": "684cda539b7cfe9ccdec54cf0388c04bfbfc9100cf3667cdbdea3da7f09e30fc"
+    },
+    "v1_prelu_saturation_diagnosis": {
+      "bytes": 3055,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/v1_prelu_saturation_diagnosis.json",
+      "sha256": "f79f1e5305d2ab4b4b1f43d886e9abada0b78ed7cace9c87769ed83b30ff3d68"
+    }
+  },
+  "v2_change_control": {
+    "change_count": 1,
+    "explicitly_not_changed": [
+      "observer family",
+      "activation dtype",
+      "weight dtype",
+      "weight granularity",
+      "backend",
+      "calibration identities",
+      "calibration sample count",
+      "numerical acceptance thresholds",
+      "model weights"
+    ],
+    "implementation": "get_default_qconfig_mapping('x86').set_object_type(torch.nn.PReLU, None)",
+    "rationale": "Frozen-v1 calibration-only operator microtest demonstrated a reproducible QuantizedPReLU positive-branch operator-contract failure: 25/25 positive cases mismatched while 0/22 negative cases mismatched across all three PReLUs.",
+    "single_targeted_change": "exclude torch.nn.PReLU from quantization",
+    "unchanged": [
+      "FP32 task weights",
+      "CNN architecture",
+      "x86 quantization backend",
+      "default x86 global qconfig for eligible operators",
+      "HistogramObserver activation policy",
+      "quint8 activation dtype for eligible operators",
+      "PerChannelMinMaxObserver weight policy",
+      "qint8 per-channel weights for eligible operators",
+      "4096 frozen training-only calibration windows per fold",
+      "five frozen calibration identity sets",
+      "three seeds x five folds checkpoint estate",
+      "numerical fidelity gates",
+      "no validation/test/OnField/fault quantizer selection"
+    ]
+  }
+}

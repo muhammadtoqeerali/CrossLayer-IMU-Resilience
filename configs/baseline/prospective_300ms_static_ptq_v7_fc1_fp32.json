@@ -1,0 +1,229 @@
+{
+  "calibration": {
+    "fault_injected_allowed": false,
+    "fold_specific_rule": "Each checkpoint receives only its corresponding fold's frozen 4096 training calibration identities; the same fold identities are reused across its three seeds.",
+    "identity_config": {
+      "path": "configs/datasets/int8_calibration_identity_v1.json",
+      "sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e"
+    },
+    "onfield_allowed": false,
+    "outer_test_allowed": false,
+    "source_partition": "training only",
+    "total_fold_window_instances": 20480,
+    "validation_allowed": false,
+    "windows_per_fold": 4096
+  },
+  "frozen_date": "2026-10-02",
+  "implementation": {
+    "continuous_fp32_fc_segment": [
+      "fc.0",
+      "fc.1",
+      "fc.2"
+    ],
+    "next_quantization_boundary": "immediately after fc.2 / before fc.3",
+    "parent_v6_implementation": {
+      "path": "experiments/phase_04/ptq_v6_postconv2_floattail.py",
+      "sha256": "ea3de29c92ca07143c301e357e85ef55f401441aa4cdd2024d5d8baa2d870ca9"
+    },
+    "path": "experiments/phase_04/ptq_v7_fc1_fp32.py",
+    "sha256": "38e34f3fa179c5b144d6db30494b2c1ace444156451685ddaa92268d635f14eb",
+    "v7_fp32_fc1_module": "fc.1"
+  },
+  "lineage": {
+    "v6": {
+      "fc_region_causal_decomposition": {
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v6_postconv2_floattail_pilot_seed42_fold1/v6_fc_region_causal_decomposition.json",
+        "sha256": "15a9dc19868758011c5103e9472b4f02712c00d81032c759d31d0e768ebb0958"
+      },
+      "implementation_path": "experiments/phase_04/ptq_v6_postconv2_floattail.py",
+      "implementation_sha256": "ea3de29c92ca07143c301e357e85ef55f401441aa4cdd2024d5d8baa2d870ca9",
+      "outcome": "FAIL p99 numerical fidelity",
+      "pilot_manifest": {
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v6_postconv2_floattail_pilot_seed42_fold1/pilot_manifest.json",
+        "sha256": "21261b80df88cfc6ca960ace36492430c585bc482b33a26b84967e5b90b01f01"
+      },
+      "protocol_path": "configs/baseline/prospective_300ms_static_ptq_v6_postconv2_floattail.json",
+      "protocol_sha256": "de15b4b438e093cca78870c09031d9d07c0428ed3ff66390c9154f5825c9a21c"
+    }
+  },
+  "method": {
+    "backend": "x86",
+    "conv2_dequantization_boundary": "after conv_2.0 / before conv_2.2",
+    "fc_quantization_boundary": "after fc.2 / before fc.3",
+    "first_quantization_boundary": "after front_end / before conv_2.0",
+    "float_regions_required": [
+      "front_end",
+      "conv_2.2",
+      "conv_2.3",
+      "conv_2.4",
+      "fc.0",
+      "fc.1",
+      "fc.2",
+      "fc.4"
+    ],
+    "framework": "PyTorch FX",
+    "fully_int8_claim_allowed": false,
+    "precision_classification": "MIXED_PRECISION_STATIC_PTQ",
+    "primary_method": "mixed_precision_static_post_training_quantization",
+    "quantized_linear_modules_required": [],
+    "quantized_weighted_modules_required": [
+      "conv_2.0"
+    ]
+  },
+  "next_action": "Execute only seed42/fold1 v7 using its frozen 4096 training calibration windows and evaluate unchanged structural, numerical, and serialization gates.",
+  "numerical_acceptance": {
+    "evaluation_data": "corresponding fold's frozen 4096 training-only calibration windows",
+    "required": {
+      "all_outputs_finite": true,
+      "argmax_agreement_fraction_min": 0.99,
+      "mean_absolute_probability_error_max": 0.01,
+      "output_shape_exactly_preserved": true,
+      "p99_absolute_probability_error_max": 0.05
+    },
+    "source": "unchanged from v1-v6"
+  },
+  "phase": "4G",
+  "provenance_tier": "P0 software quantization evidence",
+  "role": "versioned mixed-precision static PTQ after preserved v6 numerical failure and causal localization of the fc1 input activation quantization",
+  "runtime_environment": {
+    "backend": "x86",
+    "python": "3.13.12",
+    "supported_quantized_engines": [
+      "qnnpack",
+      "onednn",
+      "x86",
+      "fbgemm"
+    ],
+    "torch": "2.12.0+cu130"
+  },
+  "schema_version": "prospective_300ms_static_ptq_v7_fc1_fp32",
+  "scientific_boundary": {
+    "decision_threshold_changed": false,
+    "fault_data_used_for_v7_design": false,
+    "fully_int8_claim": false,
+    "mcu_execution_claim": false,
+    "numerical_gate_changed": false,
+    "onfield_used_for_v7_design": false,
+    "outer_test_used_for_v7_design": false,
+    "real_v7_calibration_fidelity_observed_before_freeze": false,
+    "real_v7_task_output_observed_before_freeze": false,
+    "synthetic_structural_capability_probe_used": true,
+    "training_calibration_engineering_evidence_used_for_design": true,
+    "validation_used_for_v7_design": false
+  },
+  "selection_policy": {
+    "candidate_count": 1,
+    "candidate_id": "torch_fx_x86_fc1_fp32_v7",
+    "candidate_sweep": false,
+    "fallback": "If v7 fails any frozen structural, numerical, or serialization gate, preserve the failure. Any further change requires another versioned pre-result protocol.",
+    "pilot_checkpoint": {
+      "fold": 1,
+      "reason": "same engineering pilot lineage used in v1-v6; not selected from held-out performance",
+      "seed": 42
+    },
+    "selection_by_combined_fault_robustness": false,
+    "selection_by_compute_fault_robustness": false,
+    "selection_by_onfield": false,
+    "selection_by_outer_test_accuracy": false,
+    "selection_by_sensor_fault_robustness": false,
+    "selection_by_validation_accuracy": false
+  },
+  "status": "FROZEN_PRE_RESULT",
+  "structural_acceptance": {
+    "fully_int8_claim_allowed": false,
+    "precision_classification": "MIXED_PRECISION_STATIC_PTQ",
+    "required": [
+      "opaque FP32 front_end contract from v5/v6 preserved",
+      "exactly one QuantizedConv1d: conv_2.0",
+      "conv_2.0 dequantizes before conv_2.2",
+      "continuous FP32 conv_2.2 -> conv_2.3 -> conv_2.4 -> fc.0 path preserved",
+      "fc.0 -> fc.1 direct FP32 edge",
+      "fc.1 is native FP32 Linear",
+      "fc.1 weight and bias exactly preserve checkpoint values",
+      "fc.1 -> fc.2 direct FP32 edge",
+      "zero quantized Linear modules",
+      "quantization begins immediately after fc.2",
+      "fc.3 receives quantized fc.2 output",
+      "fc.4 remains native FP32 Linear with exact weight and bias",
+      "exactly three FloatPReLU wrappers",
+      "zero QuantizedPReLU modules",
+      "serialization/load round-trip succeeds"
+    ]
+  },
+  "v7_change_control": {
+    "change_count": 1,
+    "explicitly_not_changed": [
+      "observer family",
+      "backend",
+      "calibration identities",
+      "calibration sample count",
+      "checkpoint weights",
+      "PReLU slopes",
+      "conv_2.0 precision",
+      "post-fc.2 quantization boundary",
+      "numerical gates",
+      "decision threshold",
+      "validation protocol",
+      "outer-test protocol"
+    ],
+    "pre_result_capability_evidence": {
+      "fc1_bias_exact": true,
+      "fc1_to_fc2_direct": true,
+      "fc1_to_fc2_tensor_exact": true,
+      "fc1_weight_exact": true,
+      "flatten_to_fc1_direct": true,
+      "flatten_to_fc1_tensor_exact": true,
+      "float_linear": [
+        "fc.1",
+        "fc.4"
+      ],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v6_postconv2_floattail_pilot_seed42_fold1/v7_fc1_fp32_structural_capability_probe.json",
+      "quantize_immediately_after_fc2": true,
+      "quantized_conv": [
+        "conv_2.0"
+      ],
+      "quantized_linear": [],
+      "real_dataset_samples_used": false,
+      "sha256": "00359cd805dc7bb1038995d426d1d9956190664d258bbfe8ce13525b4df94b90",
+      "structural_pass": true
+    },
+    "precision_boundary_after": "v7 keeps fc.0 -> fc.1 -> fc.2 continuously FP32 and quantizes only immediately after fc.2 / before fc.3",
+    "precision_boundary_before": "v6 quantized fc.0 output immediately before quantized fc.1",
+    "reason": {
+      "actual_quantized_fc1_p99": 0.08747794479131699,
+      "before_fc1_quantization_p99": 0.0256047323346138,
+      "fc1_input_activation_quantization_increment": 0.05597098171710968,
+      "fc1_input_quant_dequant_p99": 0.08157571405172348,
+      "fc1_quantized_linear_operator_increment": 0.005902230739593506,
+      "frozen_p99_limit": 0.05,
+      "post_fc2_requantization_increment": -0.005187205970287323,
+      "root_cause_classification": "FC1_INPUT_ACTIVATION_QUANTIZATION_PUSHES_P99_OVER_GATE"
+    },
+    "single_change_from_v6": "remove the activation quantization boundary before fc.1 by retaining fc.1 as native FP32 Linear, creating a continuous FP32 fc.0 -> fc.1 -> fc.2 segment while preserving quantization immediately after fc.2",
+    "unchanged_from_v6": [
+      "FP32 checkpoint weights",
+      "task architecture semantics",
+      "x86 backend",
+      "default x86 qconfig for eligible operators",
+      "activation observer family",
+      "activation dtype",
+      "weight observer family",
+      "weight dtype",
+      "opaque FP32 front_end",
+      "first quantization boundary before conv_2.0",
+      "conv_2.0 quantization",
+      "conv_2.2 FP32 precision",
+      "conv_2.3 FP32 precision",
+      "conv_2.4 FP32 precision",
+      "fc.0 FP32 precision",
+      "fc.2 FP32 precision",
+      "quantization immediately after fc.2",
+      "fc.4 FP32 precision",
+      "4096 frozen training-only calibration identities per fold",
+      "all five fold-specific calibration sets",
+      "all 15 Phase-4F checkpoints",
+      "all numerical acceptance gates",
+      "no held-out or fault-based selection"
+    ]
+  }
+}

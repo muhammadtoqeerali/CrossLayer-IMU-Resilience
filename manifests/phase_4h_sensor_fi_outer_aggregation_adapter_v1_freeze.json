@@ -1,0 +1,49 @@
+{
+  "adapter": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_outer_aggregation_adapter_v1.json",
+    "config_sha256": "f5b3ec1ab30943711f8f9a7c6deba456445b4bff82307d7cea150d815b96ee39",
+    "documentation_path": "docs/PHASE_4H_SENSOR_FI_OUTER_AGGREGATION_ADAPTER_V1.md",
+    "documentation_sha256": "78a4a453ab30320986c2c7f30a00a5cfc631fa09c13c33d6ea729adcbac66a89",
+    "implementation_path": "experiments/phase_04/sensor_fi_outer_aggregation_adapter_v1.py",
+    "implementation_sha256": "79a5560f644f4248ca912af6384885a37866d541406af5d79bed57def6a8e894",
+    "test_path": "tests/test_phase4_sensor_fi_outer_aggregation_adapter_v1.py",
+    "test_sha256": "e690a0363d19db0aab3f07bf75a81445f545a3842632c3dfa9631c843ae70b89"
+  },
+  "bindings": {
+    "dataset_specific_ci": "one_stratum_specialization_of_qualified_subject_bootstrap",
+    "incomplete_coverage_ci": "NA",
+    "incomplete_coverage_direction": "UNRESOLVED",
+    "sensor_lead_ms_inferential_source": "median_sensor_lead_ms",
+    "timing_descriptive_fields": [
+      "q25_sensor_lead_ms",
+      "median_sensor_lead_ms",
+      "q75_sensor_lead_ms"
+    ]
+  },
+  "date": "2026-10-03",
+  "next_action": "Qualify adapter with synthetic-only tests; only after qualification may immutable outer metrics be statistically aggregated.",
+  "parent_lineage": {
+    "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json": "ef95356b8e32d8f63bb41c967f35fcdfc24338e7d8ee59af40aa99c3424b0628",
+    "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v2_sampling_v3.json": "6ae6c53ed327ea74e23afcad8fb3766070f1d5d79d270e5e049b72a51090e7a4",
+    "experiments/phase_04/sensor_fi_aggregation.py": "eaad98b0bca6809bfde3e61774b6a48e2debda109e950ebf15c41921b08064a1",
+    "experiments/phase_04/sensor_fi_reporting_v2.py": "ee3360206fb035a0d038cf31b10d0e12c2311a27ed1b8bf6e2f740a42cf2269e",
+    "manifests/phase_4h_sensor_fi_evaluation_aggregation_qualification_v1.json": "ff4a61015e471084b9a76504854ab6f7948a4faf79034be774c530c9e3c2ba57",
+    "manifests/phase_4h_sensor_fi_evaluation_aggregation_sampling_v3_rebind_v1.json": "c0e4016fdcb7ca1bc44c4927fbf33b115b76dbb4067f459abd4a77408ecc0ee6",
+    "manifests/phase_4h_sensor_fi_outer_execution_completion_v1.json": "587d608f1f9ff1addbdcec312e3312591e008f05459253b60f754667f209b077",
+    "manifests/phase_4h_sensor_fi_robustness_reporting_v2_sampling_v3_qualification_v1.json": "83b364d0aeda5b8d2d45d8ba81bd8a19e937d5d771743cf59d99a0bcca1a6246"
+  },
+  "phase": "4H",
+  "schema_version": "phase4h_sensor_fi_outer_aggregation_adapter_v1_freeze",
+  "scientific_boundary": {
+    "fault_execution_performed": false,
+    "model_predictions_computed": false,
+    "onfield_used": false,
+    "outer_performance_values_read": false,
+    "outer_performance_values_used": false,
+    "scientific_rule_changed": false,
+    "selection_rule_changed": false,
+    "statistical_rule_changed": false,
+    "validation_used": false
+  },
+  "status": "FROZEN_POST_EXECUTION_PRE_OUTER_METRIC_ANALYSIS"
+}

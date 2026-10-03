@@ -1,0 +1,319 @@
+{
+  "date": "2026-10-03",
+  "descriptive_operating_point_ordering": {
+    "prospective_fp32_300ms": {
+      "activity_specificity_high_to_low": [
+        "balanced",
+        "low_false_alarm",
+        "timely_150ms"
+      ],
+      "false_triggers_per_activity_hour_low_to_high": [
+        "low_false_alarm",
+        "balanced",
+        "timely_150ms"
+      ],
+      "selection_authorized": false
+    },
+    "qualified_static_ptq_v7": {
+      "activity_specificity_high_to_low": [
+        "balanced",
+        "low_false_alarm",
+        "timely_150ms"
+      ],
+      "false_triggers_per_activity_hour_low_to_high": [
+        "low_false_alarm",
+        "balanced",
+        "timely_150ms"
+      ],
+      "selection_authorized": false
+    }
+  },
+  "external_scope": {
+    "checkpoint_count_per_model_variant": 15,
+    "falling_windows": 0,
+    "operating_points": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "role": "ACTIVITY_ONLY",
+    "subject_bootstrap_replicates": 10000,
+    "subjects": 10,
+    "trials": 16,
+    "windows": 1023337
+  },
+  "frozen_cohort_results": [
+    {
+      "activity_specificity": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 0.9993357460647851,
+        "ci95_low": 0.9986524578751759,
+        "eligible_subject_count": 10,
+        "point_estimate": 0.9990096618143672,
+        "sampling_unit": "subject"
+      },
+      "checkpoint_count_per_model_variant": 15,
+      "fall_side_metrics_available": false,
+      "false_triggers_per_activity_hour": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 23.659355173666853,
+        "ci95_low": 12.971141414646741,
+        "eligible_subject_count": 10,
+        "point_estimate": 18.328043671676262,
+        "sampling_unit": "subject"
+      },
+      "fp32_ptq_equivalence_test": false,
+      "global_binary_robustness_label": false,
+      "model_variant": "prospective_fp32_300ms",
+      "operating_point": "balanced",
+      "subject_count": 10
+    },
+    {
+      "activity_specificity": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 0.999328572965593,
+        "ci95_low": 0.9986508214151613,
+        "eligible_subject_count": 10,
+        "point_estimate": 0.9990045095549052,
+        "sampling_unit": "subject"
+      },
+      "checkpoint_count_per_model_variant": 15,
+      "fall_side_metrics_available": false,
+      "false_triggers_per_activity_hour": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 6.072853961215582,
+        "ci95_low": 2.3878985414850193,
+        "eligible_subject_count": 10,
+        "point_estimate": 4.0446657258272145,
+        "sampling_unit": "subject"
+      },
+      "fp32_ptq_equivalence_test": false,
+      "global_binary_robustness_label": false,
+      "model_variant": "prospective_fp32_300ms",
+      "operating_point": "low_false_alarm",
+      "subject_count": 10
+    },
+    {
+      "activity_specificity": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 0.9969847819226892,
+        "ci95_low": 0.9947658238166367,
+        "eligible_subject_count": 10,
+        "point_estimate": 0.9958992042260298,
+        "sampling_unit": "subject"
+      },
+      "checkpoint_count_per_model_variant": 15,
+      "fall_side_metrics_available": false,
+      "false_triggers_per_activity_hour": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 85.85133781205015,
+        "ci95_low": 53.383819110396146,
+        "eligible_subject_count": 10,
+        "point_estimate": 70.14813687675581,
+        "sampling_unit": "subject"
+      },
+      "fp32_ptq_equivalence_test": false,
+      "global_binary_robustness_label": false,
+      "model_variant": "prospective_fp32_300ms",
+      "operating_point": "timely_150ms",
+      "subject_count": 10
+    },
+    {
+      "activity_specificity": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 0.9992893187415778,
+        "ci95_low": 0.9985890406380442,
+        "eligible_subject_count": 10,
+        "point_estimate": 0.9989499660002199,
+        "sampling_unit": "subject"
+      },
+      "checkpoint_count_per_model_variant": 15,
+      "fall_side_metrics_available": false,
+      "false_triggers_per_activity_hour": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 24.88983918497175,
+        "ci95_low": 13.749373332048647,
+        "eligible_subject_count": 10,
+        "point_estimate": 19.44662404846435,
+        "sampling_unit": "subject"
+      },
+      "fp32_ptq_equivalence_test": false,
+      "global_binary_robustness_label": false,
+      "model_variant": "qualified_static_ptq_v7",
+      "operating_point": "balanced",
+      "subject_count": 10
+    },
+    {
+      "activity_specificity": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 0.9992800762310797,
+        "ci95_low": 0.9985920986904822,
+        "eligible_subject_count": 10,
+        "point_estimate": 0.9989474984168435,
+        "sampling_unit": "subject"
+      },
+      "checkpoint_count_per_model_variant": 15,
+      "fall_side_metrics_available": false,
+      "false_triggers_per_activity_hour": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 6.352724161388439,
+        "ci95_low": 2.6259222810117446,
+        "eligible_subject_count": 10,
+        "point_estimate": 4.289011684773785,
+        "sampling_unit": "subject"
+      },
+      "fp32_ptq_equivalence_test": false,
+      "global_binary_robustness_label": false,
+      "model_variant": "qualified_static_ptq_v7",
+      "operating_point": "low_false_alarm",
+      "subject_count": 10
+    },
+    {
+      "activity_specificity": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 0.9968238219340839,
+        "ci95_low": 0.9945134439581875,
+        "eligible_subject_count": 10,
+        "point_estimate": 0.9956574822391883,
+        "sampling_unit": "subject"
+      },
+      "checkpoint_count_per_model_variant": 15,
+      "fall_side_metrics_available": false,
+      "false_triggers_per_activity_hour": {
+        "bootstrap_replicates": 10000,
+        "ci95_high": 91.10030761749175,
+        "ci95_low": 57.45550545307291,
+        "eligible_subject_count": 10,
+        "point_estimate": 74.61172401709874,
+        "sampling_unit": "subject"
+      },
+      "fp32_ptq_equivalence_test": false,
+      "global_binary_robustness_label": false,
+      "model_variant": "qualified_static_ptq_v7",
+      "operating_point": "timely_150ms",
+      "subject_count": 10
+    }
+  ],
+  "governance_boundary": {
+    "binary_global_robustness_label": false,
+    "checkpoint_selection_from_onfield": false,
+    "fp32_ptq_equivalence_claim": false,
+    "fp32_ptq_superiority_claim": false,
+    "model_weighting_from_onfield": false,
+    "operating_point_selection_from_onfield": false,
+    "results_may_support_activity_side_reporting": true,
+    "results_may_support_fall_side_reporting": false,
+    "scientific_retuning_from_onfield": false,
+    "threshold_selection_from_onfield": false
+  },
+  "interpretive_statements": [
+    {
+      "id": "activity_specificity_is_high_for_all_frozen_conditions",
+      "scope": "descriptive external Activity-side result only",
+      "statement": "Across all six frozen model-variant \u00d7 operating-point summaries, Activity specificity is high on the retained external Activity-only cohort."
+    },
+    {
+      "id": "false_alarm_behavior_is_operating_point_dependent",
+      "selection_implication": "NONE; all three operating points remain frozen and reportable, and OnField cannot select among them.",
+      "statement": "Observed false-trigger burden differs strongly across the three predeclared operating points for both model variants: low_false_alarm has the lowest observed false-trigger rate, balanced is intermediate, and timely_150ms is highest."
+    },
+    {
+      "id": "fp32_ptq_are_descriptively_close",
+      "inference_boundary": "No model-difference or equivalence test was predeclared, so no superiority or equivalence conclusion is made.",
+      "statement": "FP32 and qualified PTQ point estimates are descriptively close at corresponding operating points."
+    },
+    {
+      "evidence_key": "subject_level_descriptive_ranges",
+      "id": "subject_heterogeneity_exists",
+      "statement": "Subject-level false-trigger rates vary substantially within each frozen condition, reinforcing the predeclared use of external subjects rather than overlapping windows as uncertainty units."
+    },
+    {
+      "id": "no_fall_side_external_claim",
+      "statement": "Because the retained external cohort contains zero Falling windows, the external evaluation cannot estimate fall recall, event recall, missed-fall rate, lead time, recovery, or external fall-detection effectiveness."
+    }
+  ],
+  "phase": "4I",
+  "schema_version": "phase4i_onfield_external_interpretation_v1",
+  "source_lineage": {
+    "artifact_manifest_sha256": "33728f61016ccbbebcdec00297b43a1c244118dadb1655ec723d2fb275597162",
+    "cohort_summary": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4i_onfield_external_evaluation_v1/cohort_summary.jsonl",
+      "sha256": "7fdd3bfbaa7a6e42d50898c73f3404aa441a19a39c923bf9864eacee9bc1148a"
+    },
+    "completion_sha256": "11f1d912adbc4818778cf06f8c7eab2e0dc44f27b5edd9c086291c588a193591",
+    "coverage_sha256": "0cd39edb10c0c6751a8c59e7cf82aaf70f22aac5433c33ed1769d49d30daa8aa",
+    "protocol_sha256": "de47fb6106b961f27cd4341ca11287d3522401431457241e05c93cfb1c323c41",
+    "subject_estate_summary": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4i_onfield_external_evaluation_v1/subject_estate_summary.jsonl",
+      "sha256": "151cc6772b5644e74029f35dc3bca1bb65385c70674919c74162b6792366411c"
+    },
+    "success_sha256": "588deabd2e2279ef6a4726a4c7d37c47de3a9bbd579ac4c191a2a2093b462df9"
+  },
+  "status": "FROZEN_ACTIVITY_ONLY_EXTERNAL_INTERPRETATION",
+  "subject_level_descriptive_ranges": {
+    "prospective_fp32_300ms": {
+      "balanced": {
+        "activity_specificity": {
+          "max": 0.9998789813152471,
+          "min": 0.9979221740154038
+        },
+        "false_triggers_per_activity_hour": {
+          "max": 31.14745062011943,
+          "min": 2.5533103269434085
+        }
+      },
+      "low_false_alarm": {
+        "activity_specificity": {
+          "max": 0.9998736618126206,
+          "min": 0.9979383176941446
+        },
+        "false_triggers_per_activity_hour": {
+          "max": 11.252030551603758,
+          "min": 0.2872474117811335
+        }
+      },
+      "timely_150ms": {
+        "activity_specificity": {
+          "max": 0.9991395704501628,
+          "min": 0.9926512629065348
+        },
+        "false_triggers_per_activity_hour": {
+          "max": 106.20119430408819,
+          "min": 17.968921425864234
+        }
+      }
+    },
+    "qualified_static_ptq_v7": {
+      "balanced": {
+        "activity_specificity": {
+          "max": 0.9998723319369639,
+          "min": 0.9978044596912522
+        },
+        "false_triggers_per_activity_hour": {
+          "max": 32.470372071658254,
+          "min": 2.680975843290579
+        }
+      },
+      "low_false_alarm": {
+        "activity_specificity": {
+          "max": 0.9998616929317109,
+          "min": 0.9978461641946659
+        },
+        "false_triggers_per_activity_hour": {
+          "max": 11.623331416290824,
+          "min": 0.41491292812830394
+        }
+      },
+      "timely_150ms": {
+        "activity_specificity": {
+          "max": 0.9990291907706629,
+          "min": 0.9922617966569133
+        },
+        "false_triggers_per_activity_hour": {
+          "max": 112.15434083601286,
+          "min": 20.043486066505757
+        }
+      }
+    }
+  }
+}

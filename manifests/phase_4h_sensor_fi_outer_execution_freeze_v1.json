@@ -1,0 +1,20 @@
+{
+  "OnField_used": false,
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_execution_v1.json",
+    "sha256": "fa3c30387c012f9a2c15912b873df3256c55f22f49dc28b590dd23b1565c38ee"
+  },
+  "date": "2026-10-02",
+  "frozen_before_outer_fault_execution": true,
+  "frozen_before_outer_model_predictions": true,
+  "outer_fault_results_seen": false,
+  "outer_model_predictions_seen": false,
+  "phase": "4H",
+  "planner": {
+    "path": "experiments/phase_04/sensor_fi_outer_execution_plan.py",
+    "sha256": "7107bdf6804d4bba472f9896fa20df0d49503812e43cc52cdf3548a2eb7203c8"
+  },
+  "schema_version": "phase4h_sensor_fi_outer_execution_freeze_v1",
+  "status": "FROZEN_PRE_OUTER_EXECUTION",
+  "validation_used_for_new_selection": false
+}

@@ -1,0 +1,69 @@
+{
+  "frozen_date": "2026-10-02",
+  "implementation": {
+    "parent_v5_path": "experiments/phase_04/ptq_v5_float_frontend.py",
+    "parent_v5_sha256": "d733eac88e5213e263d8733da8fb629e22dc1004126d45a5b8e8375061464dd8",
+    "path": "experiments/phase_04/ptq_v6_postconv2_floattail.py",
+    "sha256": "ea3de29c92ca07143c301e357e85ef55f401441aa4cdd2024d5d8baa2d870ca9"
+  },
+  "next_action": "seed42/fold1 v6 training-calibration pilot",
+  "phase": "4G",
+  "pre_result_state": {
+    "fault_data_used": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "real_v6_calibration_fidelity_observed": false,
+    "real_v6_task_output_observed": false,
+    "validation_used": false
+  },
+  "preserved_v5_failure": {
+    "numerical_status": "FAIL",
+    "p99_limit": 0.05,
+    "p99_observed": 0.08668307214975357,
+    "pilot_status": "FAIL",
+    "serialization_status": "PASS",
+    "structural_status": "PASS"
+  },
+  "protocol": {
+    "path": "configs/baseline/prospective_300ms_static_ptq_v6_postconv2_floattail.json",
+    "sha256": "de15b4b438e093cca78870c09031d9d07c0428ed3ff66390c9154f5825c9a21c"
+  },
+  "root_cause_evidence": {
+    "causal_suffix_sha256": "e91f586bb05bf6294fc3ffb6ca796ed79dd31d079cc3a990efde7b07d92d0b4b",
+    "classification": "POST_CONV2_PRELU_ACTIVATION_REQUANTIZATION_PUSHES_P99_OVER_GATE_MAXPOOL_KERNEL_IS_EXACT_ON_QUANTIZED_CODES",
+    "maxpool_exact": true,
+    "maxpool_integer_kernel_increment": 0.0,
+    "post_prelu_pool_decomposition_sha256": "c017df6216f35ee0cc29cc2a5952f462b7f2752491bccae595fbeeab7c5c2b02",
+    "post_prelu_quantization_increment": 0.05514233559370041
+  },
+  "schema_version": "phase4g_static_ptq_v6_postconv2_floattail_protocol_freeze_v1",
+  "status": "FROZEN_PRE_RESULT",
+  "unchanged_numerical_gates": {
+    "all_outputs_finite": true,
+    "argmax_agreement_fraction_min": 0.99,
+    "mean_absolute_probability_error_max": 0.01,
+    "output_shape_exactly_preserved": true,
+    "p99_absolute_probability_error_max": 0.05
+  },
+  "v6_design_evidence": {
+    "candidate_mechanism_changed_during_audit_repair": false,
+    "corrected_probe_sha256": "76ecf3b60e5939d87b23288e19a28138a6b86e67a6d953d16671a9937359f7ca",
+    "corrected_structural_probe_pass": true,
+    "dropout_to_flatten_tensor_exact": true,
+    "initial_probe_audit_bug": "global reachability scan over-counted desired later quantization boundaries",
+    "initial_structural_probe_recorded_pass": false,
+    "pool_to_dropout_tensor_exact": true,
+    "prelu_to_pool_tensor_exact": true,
+    "real_dataset_samples_used": false
+  },
+  "v6_single_change": {
+    "all_other_v5_precision_rules_unchanged": true,
+    "new_fp32_segment": [
+      "conv_2.3",
+      "conv_2.4",
+      "fc.0"
+    ],
+    "v5_second_quantization_entry": "immediately after conv_2.2 / before conv_2.3",
+    "v6_second_quantization_entry": "immediately after fc.0 / before fc.1"
+  }
+}

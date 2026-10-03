@@ -1,0 +1,47 @@
+{
+  "authorization": {
+    "cross_subject_outer_reporting": true,
+    "outer_result_based_retuning": false
+  },
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_reporting_v1.json",
+    "sha256": "78005968c97e6b2f66f60e487c593c19ebb8c7ff2f0320989fa98f412a6693cf"
+  },
+  "freeze": {
+    "path": "manifests/phase_4h_sensor_fi_outer_reporting_v1_freeze.json",
+    "sha256": "4b1f1239404c28f9d75479782b51b94441e48f84286fada091e53ec1ccab130f"
+  },
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_outer_reporting_v1.py",
+    "sha256": "ceeff62795ab0a08928e601569f743c410cafb56824fd9b3d586d49fc064dc2f"
+  },
+  "phase": "4H",
+  "qualification_date": "2026-10-03",
+  "qualified_properties": [
+    "mandatory_family_severity_inference_only",
+    "10000_subject_bootstrap_replicates",
+    "overall_61_subject_stratified_bootstrap",
+    "UNIVR_one_stratum_subject_bootstrap",
+    "KFALL_one_stratum_subject_bootstrap",
+    "paired_C0_CS_degradation",
+    "frozen_direction_status_rules",
+    "incomplete_coverage_is_UNRESOLVED",
+    "individual_variant_detail_is_descriptive",
+    "checkpoint_seed_detail_is_descriptive",
+    "no_binary_global_robustness_label",
+    "no_result_dependent_selection"
+  ],
+  "schema_version": "phase4h_sensor_fi_outer_reporting_v1_qualification",
+  "scientific_boundary": {
+    "outer_metric_values_used": false,
+    "outer_result_based_retuning": false,
+    "qualification_data": "synthetic_only",
+    "scientific_rule_changed": false,
+    "statistical_rule_changed": false
+  },
+  "status": "QUALIFIED_PRE_OUTER_REPORTING_EXECUTION",
+  "tests": {
+    "path": "tests/test_phase4_sensor_fi_outer_reporting_v1.py",
+    "sha256": "69f0dadd882642485eefe777d95f57f6aa1ee2c1868c9398cd479e3edaad0f07"
+  }
+}

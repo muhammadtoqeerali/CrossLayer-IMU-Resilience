@@ -1,0 +1,68 @@
+{
+  "acceptance": {
+    "all_gates_pass": true,
+    "family_count": 12,
+    "gate_count": 97,
+    "passed_gate_count": 97,
+    "real_training_calibration_smoke_families": [
+      "stuck_channel",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ]
+  },
+  "artifact_manifest": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_operator_engine_v1_sanity/artifact_manifest.json",
+    "sha256": "85a2e1db1b170f547e79d89a819250f776d105b6cda75801683a824e7cdf50e5"
+  },
+  "evidence_tier": "P0",
+  "next_action": "Build the Phase-4H execution runner that combines qualified sampling v3, frozen fold-local severity reference scales, the qualified 12-family operator engine, historical filtering/windowing, frozen model checkpoints, and reporting metadata. First run development/calibration execution checks only; do not execute outer-test robustness until the runner itself is qualified.",
+  "phase": "4H",
+  "pre_result_engine": {
+    "path": "experiments/phase_04/sensor_fi_operators.py",
+    "preserved_unchanged": true,
+    "sha256": "6559ddc1fcdca352fbd09bf003e28919bb355a76b2ef52e6985a99188fd69eaa"
+  },
+  "pre_result_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_operator_engine_freeze_v1.json",
+    "sha256": "4e7e25519e7de43a6c3aed6f388944ac555b0a40414dca14351d10e763c93184"
+  },
+  "qualification_date": "2026-10-02",
+  "qualified_properties": [
+    "all 12 frozen sensor-fault families are executable",
+    "operators preserve input shape and finite outputs",
+    "operators do not mutate caller input arrays",
+    "Euler channels remain unchanged",
+    "stochastic operators are deterministic from frozen instance seeds",
+    "frame loss uses causal prior-frame forward fill",
+    "jitter delegates to qualified bounded software time-warp semantics",
+    "delay is causal",
+    "orientation is a proper norm-preserving 3D rotation",
+    "OnField fault execution is rejected",
+    "reference-dependent operators require externally supplied frozen scales"
+  ],
+  "remaining_items_before_development_calibration_engine_execution": [],
+  "sanity_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_operator_engine_v1_sanity/operator_engine_sanity_result.json",
+    "sha256": "811fe58b3e36b1d141149de27a0eef5cb74d291eade0f6f1cec1f23856a28131",
+    "status": "PASS"
+  },
+  "schema_version": "phase4h_sensor_fi_operator_engine_qualification_v1",
+  "scientific_boundary": {
+    "model_loaded": false,
+    "model_predictions_computed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "physical_realism_claim": false,
+    "pre_result_engine_rewritten": false,
+    "project_dataset_files_mutated": false,
+    "reference_scales_reestimated": false,
+    "synthetic_operator_tests": true,
+    "threshold_selected": false,
+    "training_calibration_source_smoke": true,
+    "validation_used": false
+  },
+  "status": "QUALIFIED_12_FAMILY_OPERATOR_ENGINE"
+}

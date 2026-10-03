@@ -1,0 +1,50 @@
+{
+  "contract": {
+    "path": "configs/faults/phase4h_sensor_fi_input_contract_v1.json",
+    "sha256": "fb7f18ed6d10fc449c32d8e8d458753daaeaa8048ab6faba388566a53cacfe3f"
+  },
+  "date": "2026-10-02",
+  "fault_execution_performed": false,
+  "fault_families": [
+    "axis_loss",
+    "bias",
+    "clipping_saturation",
+    "delay",
+    "drift",
+    "dropout",
+    "frame_loss",
+    "jitter",
+    "noise",
+    "orientation",
+    "scale_factor",
+    "stuck_channel"
+  ],
+  "fault_family_count": 12,
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_contract.py",
+    "scope": "metadata validation and replay identity only",
+    "sha256": "ebe8d37a6411bbb699c8a7b06032070b72cc14f33a5494e36ca151faeecc85e7"
+  },
+  "next_action": "define and validate prospective severity semantics/ranges on development/calibration evidence only, then freeze a separate severity protocol before executing comparative FI experiments",
+  "phase": "4H",
+  "provenance_evidence": {
+    "path": "manifests/phase_4h_sensor_input_provenance_evidence_v1.json",
+    "sha256": "9a2f8f42df5b6f175ed799ada0953079e8fb3bda6b704494d4ffcf3659efc201"
+  },
+  "schema_version": "phase4h_sensor_fi_input_contract_freeze_v1",
+  "scientific_boundary": {
+    "compute_fault_domain_mixed": false,
+    "evidence_tier": "P0",
+    "onfield_outcomes_used": false,
+    "outer_test_outcomes_used": false,
+    "physical_realism_claim": false,
+    "validation_outcomes_used": false
+  },
+  "severity_values_frozen": false,
+  "status": "FROZEN_PRE_SEVERITY",
+  "taxonomy_candidate": {
+    "path": "docs/FAULT_TAXONOMY_CANDIDATE.md",
+    "role": "pre-existing candidate taxonomy source; not overwritten",
+    "sha256": "36b88d9ee57d9c9f488c6211285e8d62c80cd0610fbcece5f6fc6e302ea5a149"
+  }
+}

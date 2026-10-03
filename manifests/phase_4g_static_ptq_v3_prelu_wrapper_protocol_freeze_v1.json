@@ -1,0 +1,42 @@
+{
+  "frozen_date": "2026-10-02",
+  "implementation": {
+    "path": "experiments/phase_04/ptq_v3_prelu_wrapper.py",
+    "sha256": "d646a1ef24ac8e44791b5d7df549460dcd8beacb26728b6da2233a808cfda3f2"
+  },
+  "next_action": "seed42/fold1 real-calibration v3 pilot",
+  "phase": "4G",
+  "protocol": {
+    "path": "configs/baseline/prospective_300ms_static_ptq_v3_prelu_wrapper.json",
+    "sha256": "5d163f7297a2fabfa79ab28e460b930160bcba51a310b8a5fef60726a680ac13"
+  },
+  "schema_version": "phase4g_static_ptq_v3_prelu_wrapper_protocol_freeze_v1",
+  "status": "FROZEN_PRE_RESULT",
+  "synthetic_capability_evidence": {
+    "float_wrapper_structural_ok": true,
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v2_prelu_fp32_pilot_seed42_fold1/float_prelu_fx_capability_probe.json",
+    "real_dataset_samples_used": false,
+    "sha256": "b017b2c1d95ed1d43061e4339f038692646a749792d683cd6ae89ef8c3d38bd7",
+    "verdict": "FLOAT_PRELU_WRAPPER_WITH_EXPLICIT_QDQ_IS_STRUCTURALLY_VIABLE"
+  },
+  "unchanged_numerical_gates": {
+    "all_outputs_finite": true,
+    "argmax_agreement_fraction_min": 0.99,
+    "mean_absolute_probability_error_max": 0.01,
+    "output_shape_exactly_preserved": true,
+    "p99_absolute_probability_error_max": 0.05
+  },
+  "v2_failure": {
+    "failure_stage": "convert_fx",
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v2_prelu_fp32_pilot_seed42_fold1/v2_conversion_failure_manifest.json",
+    "sha256": "382f341eb9405cd3ebdf726f324d1c109723623c96958c246ce7e16a5fff58ca",
+    "status": "FAIL"
+  },
+  "v3_pre_result_state": {
+    "fault_data_used": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "real_calibration_fidelity_observed": false,
+    "validation_used": false
+  }
+}

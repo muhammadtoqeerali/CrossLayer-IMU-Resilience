@@ -1,0 +1,211 @@
+{
+  "allowed_modes": [
+    "dry-run",
+    "execute-shard"
+  ],
+  "condition_slot_key": [
+    "fault_family",
+    "severity_level",
+    "variant_id",
+    "replicate_index"
+  ],
+  "date": "2026-10-02",
+  "dry_run_contract": {
+    "may_call_fault_operator": false,
+    "may_call_model_forward": false,
+    "may_compute_outer_performance": false,
+    "may_generate_sampling_metadata": true,
+    "may_hash_model_artifacts": true,
+    "may_import_model_code": true,
+    "may_load_model_weights": false,
+    "may_read_outer_metadata_and_labels": true
+  },
+  "evidence_tier": "P0",
+  "execute_shard_contract": {
+    "all_three_operating_points": true,
+    "all_three_seeds": true,
+    "both_model_variants": true,
+    "fault_instance_reused_across_all_models": true,
+    "one_immutable_shard_per_invocation": true,
+    "operating_points_reuse_same_probabilities": true,
+    "raw_probabilities_persisted": false
+  },
+  "execution_locations": {
+    "dataset_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary",
+    "kfall_source_root": "/home/shared/data/protechto/KFall_oriented/sensors_data",
+    "output_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_execution_v1",
+    "univr_source_root": "/home/shared/data/protechto/UniVrFall_oriented/sensors_data"
+  },
+  "execution_parameters": {
+    "condition_output_format": "JSONL",
+    "device": "cpu",
+    "model_batch_size": 4096,
+    "raw_probability_persistence": false,
+    "sampling_rate_hz": 100.0,
+    "step_samples": 15,
+    "timing_quantile_method": "linear",
+    "window_samples": 30
+  },
+  "expected_global_matrix": {
+    "historical_activity_trials": 3390,
+    "historical_falling_trials": 2919,
+    "model_window_evaluations": 479750160,
+    "shards": 793,
+    "stored_label_activity_trials": 3391,
+    "stored_label_falling_trials": 2918,
+    "subject_condition_rows": 320616,
+    "subjects": 61,
+    "trials": 6309,
+    "unique_fault_instances": 42766632,
+    "windows": 273830
+  },
+  "frozen_dependencies": {
+    "checkpoint_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoint_manifest.csv",
+      "sha256": "0505438365d8179522632ddb8b52c794727d846e673322a48a09a9c96bbb8a7a"
+    },
+    "fp32_freeze": {
+      "path": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+      "sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+    },
+    "historical_evaluation": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+      "sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380"
+    },
+    "operator_engine": {
+      "path": "experiments/phase_04/sensor_fi_operators.py",
+      "sha256": "6559ddc1fcdca352fbd09bf003e28919bb355a76b2ef52e6985a99188fd69eaa"
+    },
+    "outer_v2_config": {
+      "path": "configs/evaluation/phase4h_sensor_fi_outer_execution_v2_historical_truth.json",
+      "sha256": "5167985edd3f4bf03fbbb4cc8d196407ac5b172a65477613813a7eaaed53243b"
+    },
+    "outer_v2_plan": {
+      "path": "manifests/phase_4h_sensor_fi_outer_execution_shards_v2_historical_truth.json",
+      "sha256": "a43df702c2694854e1ce79712af50a9bf91d0f24b40989241f604405f460024d"
+    },
+    "outer_v2_qualification": {
+      "path": "manifests/phase_4h_sensor_fi_outer_execution_plan_v2_qualification_v1.json",
+      "sha256": "921ca4d3e4497e5517a57cc0df03d1a16d9b037fd89030bfe33ebab3419ecb74"
+    },
+    "ptq_all15": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1/all15_qualification_manifest.json",
+      "sha256": "811481415964bb2dc964116600a0ab43af407b4cddef76422a0f0d1a85819316"
+    },
+    "ptq_qualification": {
+      "path": "manifests/phase_4g_static_ptq_v7_all15_training_calibration_qualification_v1.json",
+      "sha256": "cdcdcb6d3ed95660a9cc421c6f5ab4647d7d1038c4075eaba94b378b15bd4f23"
+    },
+    "risk_index": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/risk_data_generated/FALL_EVENT_INDEX_COMBINED_LABELED.csv",
+      "sha256": "b93ee2931fb3d54333bfd38308a130a60ff7240b9e6e5ace0805baca30c23401"
+    },
+    "runner_v2": {
+      "path": "experiments/phase_04/sensor_fi_devcal_runner_v2.py",
+      "sha256": "541af4663293ae5fbaf5286fc3dea7679d511fdabb50738863880e4712a9b86a"
+    },
+    "sampling_v3": {
+      "path": "experiments/phase_04/sensor_fi_sampling_v3.py",
+      "sha256": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74"
+    },
+    "severity_audit": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_severity_semantics_audit_v1/severity_semantics_feasibility_audit.json",
+      "sha256": "06a237399ca5c6d2c1cb78fbd0f4477b06a0dac7611c6183ef157591f45d2f22"
+    },
+    "severity_protocol": {
+      "path": "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+      "sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009"
+    },
+    "thresholds": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/validation_selected_thresholds.csv",
+      "sha256": "07cb5fb987ad16a6238bb97f938fcce388cc45edd5862ebc307c297b8051b004"
+    }
+  },
+  "historical_metric_semantics": {
+    "activity_seconds": "For true-Activity trials use last historical window end / 100 Hz; for true-Falling trials add fall_start_position / 100 Hz when positive.",
+    "exception_event_id": "KFALL_106_T27_R05",
+    "exception_forced_miss": true,
+    "exception_relabelled": false,
+    "false_trigger_episode_accounting": "All episodes on true-Activity trials plus trigger episodes on true-Falling trials whose complete run is not contained inside retained Falling labels.",
+    "lead_time": "(impact_position - confirmation_window_end_position) * 1000 / sampling_rate_hz",
+    "trial_truth": "true_fall = retained_falling_window_count > 0 OR risk_record_present",
+    "trigger_episode": "Threshold run emits start when run first reaches required_consecutive; re-arms only after below-threshold.",
+    "true_activity_prediction": "Any trigger episode predicts Falling.",
+    "true_fall_valid_trigger": "Complete required-consecutive trigger run must lie in retained Falling labels."
+  },
+  "model_input_contract": {
+    "cnn_source": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/models/CNN.py",
+      "sha256": "5e1ddac378c80929068b6fb8f62fff0d351bacbf047297829bd0531ad9c43eb2"
+    },
+    "executor_input_shape": "N x 30 x 9",
+    "executor_input_units": "historical stored/source-faithful raw units (Acc mg, Gyr mdps, Euler degrees)",
+    "external_normalization_before_model": false,
+    "normalizer_source": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/models/modules/IMUNormalizer.py",
+      "sha256": "ec9abd57a3df5bd10bf73ee495a44daa0fa4294a9d094d353831fb98d193f9a2"
+    },
+    "reason": "CNN/PTQ callable owns IMUNormalizer internally. Sensor FI therefore occurs before model normalization."
+  },
+  "partition": "outer_test",
+  "phase": "4H",
+  "purpose": "Execute one immutable v2 subject/block outer shard using qualified sampling-v3, operator-engine, Phase-3 source rewindowing, frozen model members and frozen validation operating points. Qualification before held-out execution is metadata/interface dry-run only.",
+  "required_condition_fields": [
+    "threshold",
+    "required_consecutive",
+    "trial_count",
+    "TP",
+    "FN",
+    "TN",
+    "FP",
+    "falling_recall",
+    "activity_specificity",
+    "balanced_accuracy",
+    "precision",
+    "f1",
+    "eligible_event_count",
+    "detected_event_count",
+    "missed_event_count",
+    "event_recall",
+    "median_sensor_lead_ms",
+    "q25_sensor_lead_ms",
+    "q75_sensor_lead_ms",
+    "false_trigger_episode_count",
+    "activity_seconds",
+    "parent_count",
+    "fault_instance_count",
+    "fault_identity_digest_sha256",
+    "model_window_evaluation_count",
+    "undefined_metric_fields"
+  ],
+  "resume_contract": {
+    "final_shard_immutable": true,
+    "partial_shard_never_aggregated": true,
+    "reuse_only_on_full_hash_validation": true,
+    "success_marker": "_SUCCESS.json",
+    "success_written_last": true,
+    "temporary_suffix": ".tmp"
+  },
+  "schema_version": "phase4h_sensor_fi_outer_executor_v1",
+  "scientific_boundary": {
+    "MCU_claim": false,
+    "OnField_used": false,
+    "outer_results_may_retune_any_parameter": false,
+    "physical_realism_claim": false
+  },
+  "status": "FROZEN_PRE_OUTER_EXECUTION_EXECUTOR",
+  "subject_condition_dimensions": [
+    "shard_id",
+    "model_variant",
+    "checkpoint_seed",
+    "fold",
+    "subject",
+    "dataset",
+    "operating_point",
+    "regime",
+    "fault_family",
+    "severity_level",
+    "variant_id",
+    "replicate_index"
+  ]
+}

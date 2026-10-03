@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-02",
+  "kfall_oriented_to_primary_300ms": {
+    "checked_window_index": 0,
+    "max_absolute_difference": 0.0,
+    "source_end_exclusive": 30,
+    "source_file": "/home/shared/data/protechto/KFall_oriented/sensors_data/SA06/S06T27R05.csv",
+    "source_start": 0,
+    "status": "EXACT_FILTERED_WINDOW_REPRODUCTION",
+    "stored_segments": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary/106/27/5/segments.npy"
+  },
+  "kfall_raw_to_oriented": {
+    "acceleration_exact": true,
+    "euler_all_zero": true,
+    "gyroscope_exact": true,
+    "operation": {
+      "acc_x_reflection_before_rotation": true,
+      "acceleration_destination_unit": "mg",
+      "acceleration_source_unit": "g",
+      "euler_destination": "zeroed",
+      "gyroscope_destination_unit": "mdps",
+      "gyroscope_source_unit": "degrees_per_second",
+      "rotation_matrix": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "scale_factor": 1000
+    },
+    "oriented_file": "/mnt/hdd16T/protechto/ThirdPartyDatasets/KFall_oriented/sensors_data/SA06/S06T01R01.csv",
+    "raw_file": "/mnt/hdd16T/protechto/ThirdPartyDatasets/KFall/sensors_data/SA06/S06T01R01.csv",
+    "rows_compared": 3072,
+    "status": "EXACT_CURRENT_TRANSFORM_MATCH"
+  },
+  "model_effective_input": {
+    "discarded_before_learned_convolution": [
+      6,
+      7,
+      8
+    ],
+    "discarded_channel_names": [
+      "EulerX",
+      "EulerY",
+      "EulerZ"
+    ],
+    "effective_channel_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "effective_channels": 6,
+    "first_model_side_transform": "IMUNormalizer",
+    "normalizer_output_order": [
+      "AccX",
+      "AccY",
+      "AccZ",
+      "GyrX",
+      "GyrY",
+      "GyrZ"
+    ],
+    "stored_channels": 9
+  },
+  "phase": "4H",
+  "primary_dataset": {
+    "overlap_fraction": 0.5,
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary",
+    "sampling_rate_hz": 100,
+    "stored_channel_order": [
+      "AccX",
+      "AccY",
+      "AccZ",
+      "GyrX",
+      "GyrY",
+      "GyrZ",
+      "EulerX",
+      "EulerY",
+      "EulerZ"
+    ],
+    "stored_window_shape": [
+      30,
+      9
+    ],
+    "stride_samples": 15,
+    "window_ms": 300
+  },
+  "schema_version": "phase4h_sensor_input_provenance_evidence_v1",
+  "scientific_boundary": {
+    "P2_P3_sensor_realism_validated": false,
+    "evidence_tier": "P0",
+    "fault_injection_executed": false,
+    "onfield_outcomes_used": false,
+    "outer_test_outcomes_used": false,
+    "physical_realism_claim": false,
+    "severity_values_frozen": false,
+    "validation_outcomes_used": false
+  },
+  "source_code": {
+    "IMUNormalizer.py": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/models/modules/IMUNormalizer.py",
+      "sha256": "ec9abd57a3df5bd10bf73ee495a44daa0fa4294a9d094d353831fb98d193f9a2"
+    },
+    "helper.py": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/preprocessing/helper.py",
+      "sha256": "ddfcee269bf4ba94faa56733749c69bf871d33498779d8f23f9397fc873f2800"
+    },
+    "orientation_changing.py": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/preprocessing/orientation_changing.py",
+      "sha256": "46dd3489806fd56be3f11f237d3ac0826c8a5dbb49d85e91b13e7caf075dd129"
+    },
+    "phase3c_lineage": {
+      "path": "manifests/phase_3c_official_dataset_and_fivefold_lineage_v1.json",
+      "sha256": "51c7bd3b4dc19ef562c819029029b4de2ecd50b711efd201181d0dcc3acf21e5"
+    },
+    "windowing.py": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/preprocessing/windowing.py",
+      "sha256": "d990895d7cb13b0bedc7af67f35eebd8f3a481e333ac32b88e371c4c94b3115e"
+    }
+  },
+  "status": "FROZEN",
+  "units": {
+    "AccX": "mg",
+    "AccY": "mg",
+    "AccZ": "mg",
+    "EulerX": "degrees_where_available",
+    "EulerY": "degrees_where_available",
+    "EulerZ": "degrees_where_available",
+    "GyrX": "mdps",
+    "GyrY": "mdps",
+    "GyrZ": "mdps",
+    "claim_scope": "documented_software_units_not_P2_P3_sensor_realism"
+  },
+  "univr_oriented_to_primary_300ms": {
+    "all_exact": true,
+    "all_unique": true,
+    "expected_15_sample_stride": true,
+    "matched_source_starts": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120,
+      135,
+      150,
+      165,
+      180,
+      195,
+      210,
+      225,
+      240,
+      255,
+      270,
+      285,
+      300,
+      315,
+      330,
+      345,
+      360,
+      375,
+      390,
+      405,
+      420,
+      435,
+      450
+    ],
+    "maximum_best_absolute_difference": 0.0,
+    "source_file": "/home/shared/data/protechto/UniVrFall_oriented/sensors_data/SA10/S10T10R01.csv",
+    "status": "EXACT_UNIQUE_FILTERED_WINDOW_REPRODUCTION_FOR_ALL_STORED_WINDOWS",
+    "stored_segments": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary/10/10/1/segments.npy",
+    "stored_windows_checked": 31
+  }
+}

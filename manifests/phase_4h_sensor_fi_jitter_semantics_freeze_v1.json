@@ -1,0 +1,29 @@
+{
+  "authoritative_lineage": {
+    "aggregation_rebind_sha256": "c0e4016fdcb7ca1bc44c4927fbf33b115b76dbb4067f459abd4a77408ecc0ee6",
+    "input_contract_sha256": "fb7f18ed6d10fc449c32d8e8d458753daaeaa8048ab6faba388566a53cacfe3f",
+    "reporting_v2_qualification_sha256": "83b364d0aeda5b8d2d45d8ba81bd8a19e937d5d771743cf59d99a0bcca1a6246",
+    "reporting_v2_sha256": "6ae6c53ed327ea74e23afcad8fb3766070f1d5d79d270e5e049b72a51090e7a4",
+    "sampling_v3_qualification_sha256": "18701172ab25147e4dfb54059a9f5e07b0b3d8f89f13025ffb4aaf282e78df7f",
+    "sampling_v3_sha256": "543b648a09091225cfc80eaac5cd03d835a1727118f7730d00697150db205518",
+    "severity_protocol_sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009"
+  },
+  "config": {
+    "path": "configs/faults/phase4h_sensor_fi_jitter_semantics_v1.json",
+    "sha256": "3af244d8f20e68cbfc543bc9ae594f682f3c4a4f1575ca5243ec778bb8d39dac"
+  },
+  "date": "2026-10-02",
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_jitter.py",
+    "sha256": "a73552c58235b890804087e464a40e41139321958fc3758db43ae6dd801b855c"
+  },
+  "onfield_outcomes_seen": false,
+  "outer_test_outcomes_seen": false,
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "prospective_before_model_predictions": true,
+  "prospective_before_sensor_fault_model_results": true,
+  "schema_version": "phase4h_sensor_fi_jitter_semantics_freeze_v1",
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "validation_outcomes_seen": false
+}

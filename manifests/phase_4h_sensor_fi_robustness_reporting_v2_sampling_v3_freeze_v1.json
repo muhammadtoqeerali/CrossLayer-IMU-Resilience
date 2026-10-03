@@ -1,0 +1,60 @@
+{
+  "aggregation_v1_rebind": {
+    "path": "manifests/phase_4h_sensor_fi_evaluation_aggregation_sampling_v3_rebind_v1.json",
+    "sha256": "c0e4016fdcb7ca1bc44c4927fbf33b115b76dbb4067f459abd4a77408ecc0ee6",
+    "status": "QUALIFIED_UNCHANGED_AGGREGATION_REBOUND_TO_SAMPLING_V3"
+  },
+  "date": "2026-10-02",
+  "faults_executed": false,
+  "model_predictions_seen": false,
+  "onfield_outcomes_seen": false,
+  "outer_test_outcomes_seen": false,
+  "parent_reporting_v1": {
+    "path": "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v1.json",
+    "preserved_unchanged": true,
+    "qualification_path": "manifests/phase_4h_sensor_fi_robustness_reporting_qualification_v1.json",
+    "qualification_sha256": "127a86e0d91342b73143909948c8aa45aec4ebc55530bead79c16d52c06889bb",
+    "sha256": "c5e609c6702977391a63a5e1953d3d44c8bb6221078e3a1e7b1e5791081ec9d1"
+  },
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "prospective_before_fault_execution": true,
+  "prospective_before_model_robustness_results": true,
+  "reporting_v2": {
+    "path": "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v2_sampling_v3.json",
+    "sha256": "6ae6c53ed327ea74e23afcad8fb3766070f1d5d79d270e5e049b72a51090e7a4"
+  },
+  "reporting_v2_implementation": {
+    "path": "experiments/phase_04/sensor_fi_reporting_v2.py",
+    "sha256": "ee3360206fb035a0d038cf31b10d0e12c2311a27ed1b8bf6e2f740a42cf2269e"
+  },
+  "sampling_v3": {
+    "qualification_path": "manifests/phase_4h_sensor_fi_instance_sampling_v3_qualification_v1.json",
+    "qualification_sha256": "18701172ab25147e4dfb54059a9f5e07b0b3d8f89f13025ffb4aaf282e78df7f",
+    "status": "QUALIFIED_METADATA_REPLAY_CAUSAL_FRAME_LOSS"
+  },
+  "schema_version": "phase4h_sensor_fi_robustness_reporting_v2_sampling_v3_freeze_v1",
+  "single_change": {
+    "OnField_policy_changed": false,
+    "arbitrary_practical_margin_introduced": false,
+    "claim_policy_changed": false,
+    "clean_reference_reporting_changed": false,
+    "direction_status_rules_changed": false,
+    "fault_matrix_changed": false,
+    "field": "execution_interpretability_gate.required sampling qualification key",
+    "heldout_governance_changed": false,
+    "mandatory_reporting_changed": false,
+    "missingness_policy_changed": false,
+    "multiple_condition_policy_changed": false,
+    "performance_margin_policy_changed": false,
+    "primary_metrics_changed": false,
+    "publication_record_changed": false,
+    "reason": "Sampling v3 supersedes sampling v2 for future fault execution after causal frame-loss qualification.",
+    "required_model_variants_changed": false,
+    "secondary_metrics_changed": false,
+    "v1_value": "qualified_sampling_v2_hash_matches",
+    "v2_value": "qualified_sampling_v3_hash_matches"
+  },
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "validation_outcomes_seen": false
+}

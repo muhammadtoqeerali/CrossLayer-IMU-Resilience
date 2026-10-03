@@ -1,0 +1,88 @@
+{
+  "acceptance": {
+    "all_gates_pass": true,
+    "gate_count": 23,
+    "gates": {
+      "all_15_fp32_artifacts_hashed": true,
+      "all_15_ptq_artifacts_hashed": true,
+      "all_45_threshold_rows_checked": true,
+      "all_61_subjects_checked": true,
+      "all_6309_source_paths_checked": true,
+      "all_793_shards_checked": true,
+      "config_preserved_after_freeze": true,
+      "dry_run_pass": true,
+      "historical_truth_3390_2919": true,
+      "implementation_preserved_after_freeze": true,
+      "no_fault_operator": true,
+      "no_model_forward": true,
+      "no_model_weights_loaded": true,
+      "no_onfield": true,
+      "no_outer_fault_outcomes": true,
+      "no_outer_model_outcomes": true,
+      "no_outer_performance": true,
+      "planned_condition_rows_unchanged": true,
+      "planned_fault_total_unchanged": true,
+      "planned_model_evals_unchanged": true,
+      "v2_config_preserved": true,
+      "v2_plan_preserved": true,
+      "v2_qualification_preserved": true
+    },
+    "passed_gate_count": 23
+  },
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_executor_v1.json",
+    "preserved_unchanged": true,
+    "sha256": "bb73d35e2a8458d490d2e605551eb1cbfae3112fad74cfdea322175de52c1ef9"
+  },
+  "date": "2026-10-02",
+  "dry_run": {
+    "coverage": {
+      "condition_slots_checked": 17812,
+      "fp32_artifacts_hashed": 15,
+      "historical_truth": {
+        "Activity": 3390,
+        "Falling": 2919
+      },
+      "planned_model_window_evaluations": 479750160,
+      "planned_subject_condition_rows": 320616,
+      "planned_unique_fault_instances": 42766632,
+      "ptq_artifacts_hashed": 15,
+      "shards_checked": 793,
+      "source_paths_checked": 6309,
+      "subjects_checked": 61,
+      "threshold_rows_checked": 45
+    },
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_executor_v1_dry_run/dry_run_report.json",
+    "sha256": "63cab6dd467c21ebfc2665783091c4d63e5bc5c52cd7e8bc74236811a26fcb63",
+    "status": "PASS"
+  },
+  "execution_authorization_state": "EXECUTOR_QUALIFIED_FOR_FROZEN_OUTER_SHARD_EXECUTION",
+  "freeze": {
+    "path": "manifests/phase_4h_sensor_fi_outer_executor_v1_freeze.json",
+    "sha256": "3dcaf7f560d516be675e95236917e4cbd874d415a5dcce3bcf7f9e19b2022162"
+  },
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+    "preserved_unchanged": true,
+    "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+  },
+  "next_action": "Execute the already-frozen immutable v2 shards with this exact executor/config/freeze. Do not alter fault, threshold, model, aggregation, reporting, or truth parameters.",
+  "outer_v2": {
+    "config_sha256": "5167985edd3f4bf03fbbb4cc8d196407ac5b172a65477613813a7eaaed53243b",
+    "plan_sha256": "a43df702c2694854e1ce79712af50a9bf91d0f24b40989241f604405f460024d",
+    "qualification_sha256": "921ca4d3e4497e5517a57cc0df03d1a16d9b037fd89030bfe33ebab3419ecb74"
+  },
+  "phase": "4H",
+  "schema_version": "phase4h_sensor_fi_outer_executor_v1_qualification",
+  "scientific_boundary": {
+    "OnField_used": false,
+    "fault_operator_called": false,
+    "model_forward_called": false,
+    "model_weights_loaded": false,
+    "outer_fault_outcomes_seen": false,
+    "outer_model_outcomes_seen": false,
+    "outer_performance_computed": false,
+    "validation_used_for_new_selection": false
+  },
+  "status": "QUALIFIED_PRE_OUTER_EXECUTION_EXECUTOR_DRY_RUN"
+}

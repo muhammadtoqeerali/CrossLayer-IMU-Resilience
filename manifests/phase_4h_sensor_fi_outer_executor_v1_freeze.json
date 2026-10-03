@@ -1,0 +1,28 @@
+{
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_executor_v1.json",
+    "sha256": "bb73d35e2a8458d490d2e605551eb1cbfae3112fad74cfdea322175de52c1ef9"
+  },
+  "date": "2026-10-02",
+  "dry_run_only_next": true,
+  "frozen_before_first_outer_fault_application": true,
+  "frozen_before_first_outer_model_forward": true,
+  "frozen_before_first_outer_model_load": true,
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+    "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+  },
+  "outer_fault_outcomes_seen": false,
+  "outer_model_outcomes_seen": false,
+  "outer_v2_plan": {
+    "path": "manifests/phase_4h_sensor_fi_outer_execution_shards_v2_historical_truth.json",
+    "sha256": "a43df702c2694854e1ce79712af50a9bf91d0f24b40989241f604405f460024d"
+  },
+  "outer_v2_qualification": {
+    "path": "manifests/phase_4h_sensor_fi_outer_execution_plan_v2_qualification_v1.json",
+    "sha256": "921ca4d3e4497e5517a57cc0df03d1a16d9b037fd89030bfe33ebab3419ecb74"
+  },
+  "phase": "4H",
+  "schema_version": "phase4h_sensor_fi_outer_executor_v1_freeze",
+  "status": "FROZEN_PRE_OUTER_EXECUTION_EXECUTOR"
+}

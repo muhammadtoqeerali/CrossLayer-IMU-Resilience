@@ -1,0 +1,53 @@
+{
+  "cross_subject_bootstrap_in_this_stage": false,
+  "direction_status_classification_in_this_stage": false,
+  "hierarchy": [
+    "replicate",
+    "variant",
+    "checkpoint_seed",
+    "subject"
+  ],
+  "interpretability_lineage_paths": {
+    "aggregation_rebind": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/manifests/phase_4h_sensor_fi_evaluation_aggregation_sampling_v3_rebind_v1.json",
+    "input_contract": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/configs/faults/phase4h_sensor_fi_input_contract_v1.json",
+    "sampling_qualification": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/manifests/phase_4h_sensor_fi_instance_sampling_v3_qualification_v1.json",
+    "severity": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/configs/faults/phase4h_sensor_fi_severity_protocol_v1.json"
+  },
+  "metrics": [
+    "falling_recall",
+    "activity_specificity",
+    "balanced_accuracy",
+    "precision",
+    "f1",
+    "event_recall",
+    "sensor_lead_ms"
+  ],
+  "outer_execution_completion_path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/manifests/phase_4h_sensor_fi_outer_execution_completion_v1.json",
+  "outer_execution_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_execution_v1",
+  "outer_result_based_retuning_allowed": false,
+  "outer_result_based_selection_allowed": false,
+  "output_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_subject_aggregation_v1r1",
+  "phase": "4H",
+  "schema_version": "phase4h_sensor_fi_outer_subject_aggregation_v1r1",
+  "sensor_lead_source_field": "median_sensor_lead_ms",
+  "status": "FROZEN_TECHNICAL_REPAIR_POST_OUTER_READ_NO_RESULT_INTERPRETATION",
+  "technical_repair": {
+    "aggregation_math_changed": false,
+    "bootstrap_changed": false,
+    "failure": "qualified helper float(None) TypeError",
+    "failure_classification": "TECHNICAL_MISSING_VALUE_REPRESENTATION_FAILURE_NOT_SCIENTIFIC_RESULT",
+    "metric_selection_changed": false,
+    "missingness_policy_changed": false,
+    "null_to_zero": false,
+    "outer_metric_values_printed_or_interpreted": false,
+    "outer_metric_values_used_to_choose_repair": false,
+    "parent_runner_version": "phase4h_sensor_fi_outer_subject_aggregation_v1",
+    "reason": "executor null values exactly match undefined_metric_fields and the qualified helper already implements NaN-aware equal weighting",
+    "repair": "convert executor JSON null to float NaN immediately before calls to the unchanged qualified aggregation helper"
+  },
+  "timing_descriptive_fields": [
+    "q25_sensor_lead_ms",
+    "median_sensor_lead_ms",
+    "q75_sensor_lead_ms"
+  ]
+}

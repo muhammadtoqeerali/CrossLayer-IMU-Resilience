@@ -1,0 +1,62 @@
+{
+  "acceptance": {
+    "all_gates_pass": true,
+    "gate_count": 14,
+    "passed_gate_count": 14
+  },
+  "evidence_tier": "P0",
+  "next_action": "Implement and unit-qualify the exact frozen sensor-fault operators without loading a model. Operator implementation must not alter severity, sampling, aggregation, or reporting protocols. After operator qualification, run development/calibration execution checks before final held-out evaluation.",
+  "phase": "4H",
+  "pre_result_config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v1.json",
+    "preserved_unchanged": true,
+    "sha256": "c5e609c6702977391a63a5e1953d3d44c8bb6221078e3a1e7b1e5791081ec9d1"
+  },
+  "pre_result_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_robustness_reporting_freeze_v1.json",
+    "sha256": "7f449b499f10a696eb97a7b9d1d596fa02d607a0f1ee9094e15ed9aa6f0421e2"
+  },
+  "pre_result_implementation": {
+    "path": "experiments/phase_04/sensor_fi_reporting.py",
+    "sha256": "464a5c521c2e1846651b37dcbd45a232e507d977a83aaa80f747266fb2a16c1a"
+  },
+  "preexecution_governance_status": "COMPLETE",
+  "qualification_date": "2026-10-02",
+  "qualified_properties": [
+    "protocol_compliance_interpretability_gate",
+    "no_arbitrary_practical_performance_margin",
+    "no_binary_global_robustness_label",
+    "condition_level_CI_direction_classification",
+    "incomplete_coverage_maps_to_UNRESOLVED",
+    "all_12_sensor_fault_families_required",
+    "all_L1_L2_L3_severities_required",
+    "both_current_Phase4_model_variants_required",
+    "outer_test_cannot_retune_protocol",
+    "OnField_faulted_evaluation_prohibited"
+  ],
+  "remaining_governance_items_before_fault_operator_implementation": [],
+  "sanity_artifact_manifest": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_robustness_reporting_v1_sanity/artifact_manifest.json",
+    "sha256": "be69422e44ce74c4d3f0001f18e7d8497892e0f746981585af8519794130d5f0"
+  },
+  "sanity_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_robustness_reporting_v1_sanity/robustness_reporting_sanity_result.json",
+    "sha256": "2fbd5a44f1d18cbbddb3d4276ed16458b727f661a8d7c0f245acaa95d66e5efa",
+    "status": "PASS"
+  },
+  "schema_version": "phase4h_sensor_fi_robustness_reporting_qualification_v1",
+  "scientific_boundary": {
+    "arbitrary_practical_margin_introduced": false,
+    "fault_injection_executed": false,
+    "model_loaded": false,
+    "model_predictions_computed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "physical_realism_claim": false,
+    "pre_result_protocol_rewritten": false,
+    "sensor_values_mutated": false,
+    "synthetic_or_metadata_only": true,
+    "validation_used": false
+  },
+  "status": "QUALIFIED_PREEXECUTION_REPORTING_POLICY"
+}

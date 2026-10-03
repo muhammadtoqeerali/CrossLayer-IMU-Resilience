@@ -1,0 +1,24 @@
+{
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_execution_v2_historical_truth.json",
+    "sha256": "5167985edd3f4bf03fbbb4cc8d196407ac5b172a65477613813a7eaaed53243b"
+  },
+  "date": "2026-10-02",
+  "frozen_before_outer_fault_execution": true,
+  "frozen_before_outer_model_predictions": true,
+  "outer_fault_outcomes_seen": false,
+  "outer_model_outcomes_seen": false,
+  "phase": "4H",
+  "planner": {
+    "path": "experiments/phase_04/sensor_fi_outer_execution_plan_v2.py",
+    "sha256": "92dc135cf2a8ff788981c086a0d6677129ec7e7aa8e21f6eea3ab70b03299cca"
+  },
+  "schema_version": "phase4h_sensor_fi_outer_execution_v2_historical_truth_freeze_v1",
+  "single_scientific_clarification": "Historical trial truth denominator: 3390 Activity / 2919 Falling rather than interpreting the stored-label 3391 / 2918 inventory as classification truth.",
+  "status": "FROZEN_PRE_OUTER_EXECUTION",
+  "v1_preserved": {
+    "config_sha256": "fa3c30387c012f9a2c15912b873df3256c55f22f49dc28b590dd23b1565c38ee",
+    "qualification_sha256": "ae8bd864084412fe84185aa30a4e9be83282d62d5b4926e42834cc6bc3a8a1d9",
+    "shard_plan_sha256": "836bd94054702d462e1450ca3cb145f21b435942d5b4dce766a5dabd50095ba1"
+  }
+}

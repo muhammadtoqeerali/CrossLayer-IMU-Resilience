@@ -1,0 +1,73 @@
+{
+  "frozen_date": "2026-10-02",
+  "next_action": "seed42/fold1 v2 calibration-only realization",
+  "phase": "4G",
+  "pre_result_freeze": {
+    "fault_data_used": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "v2_model_created": false,
+    "v2_outputs_observed": false,
+    "validation_used": false
+  },
+  "protocol": {
+    "path": "configs/baseline/prospective_300ms_static_ptq_v2_prelu_fp32.json",
+    "sha256": "d3c8313df39503de055f659a84c3f8717eaf86ad5c51c6ca5ffc474eefcd41a9"
+  },
+  "schema_version": "phase4g_static_ptq_v2_prelu_fp32_protocol_freeze_v1",
+  "status": "FROZEN_PRE_RESULT",
+  "unchanged_numerical_gates": {
+    "all_outputs_finite": true,
+    "argmax_agreement_fraction_min": 0.99,
+    "mean_absolute_probability_error_max": 0.01,
+    "output_shape_exactly_preserved": true,
+    "p99_absolute_probability_error_max": 0.05
+  },
+  "v1_failure_preserved": {
+    "corrected_precision": "MIXED_PRECISION_STATIC_PTQ",
+    "evidence": {
+      "corrected_v1_pilot_manifest": {
+        "bytes": 4648,
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/pilot_manifest_v2_corrected.json",
+        "sha256": "09fa83b0d6323239ad3a58f4a36d8ba0c2b8772d180663211c4643752157d7e0"
+      },
+      "original_v1_pilot_manifest": {
+        "bytes": 3371,
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/pilot_manifest.json",
+        "sha256": "3bd5b2b380ecd61105729a3282405ec388b4cb0a343bd9e540a4ba4a94424d79"
+      },
+      "v1_failure_diagnosis": {
+        "bytes": 4008,
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/v1_failure_diagnosis.json",
+        "sha256": "a245e691f97b116a28d37250bd771d143fe49f9641983227363c33fd94dd1864"
+      },
+      "v1_first_block_diagnosis": {
+        "bytes": 2129,
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/v1_first_block_diagnosis_v2.json",
+        "sha256": "b53ba15c88856b86e2ed72b1f519bb7ac10b7029c9448b083bc49188820131cf"
+      },
+      "v1_prelu_operator_microtest": {
+        "bytes": 24553,
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/v1_quantized_prelu_operator_microtest.json",
+        "sha256": "684cda539b7cfe9ccdec54cf0388c04bfbfc9100cf3667cdbdea3da7f09e30fc"
+      },
+      "v1_prelu_saturation_diagnosis": {
+        "bytes": 3055,
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v1_pilot_seed42_fold1/v1_prelu_saturation_diagnosis.json",
+        "sha256": "f79f1e5305d2ab4b4b1f43d886e9abada0b78ed7cace9c87769ed83b30ff3d68"
+      }
+    },
+    "negative_cases": 22,
+    "negative_failures": 0,
+    "operator_microtest_classification": "QUANTIZED_PRELU_POSITIVE_BRANCH_OPERATOR_CONTRACT_FAILURE",
+    "positive_cases": 25,
+    "positive_failures": 25,
+    "result": "FAIL"
+  },
+  "v2_single_change": {
+    "conv_linear_qconfig": "unchanged x86 default",
+    "operator": "torch.nn.PReLU",
+    "precision": "FP32",
+    "qconfig": null
+  }
+}

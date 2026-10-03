@@ -1,0 +1,114 @@
+{
+  "acceptance": {
+    "all_folds_pass": true,
+    "fail_count": 0,
+    "fold_count": 5,
+    "folds": [
+      {
+        "fold": 1,
+        "gate_count": 11,
+        "largest_predeclared_temporal_requirement_samples": 100,
+        "passed_gate_count": 11,
+        "shortest_parent_trial_samples": 276,
+        "status": "PASS"
+      },
+      {
+        "fold": 2,
+        "gate_count": 11,
+        "largest_predeclared_temporal_requirement_samples": 100,
+        "passed_gate_count": 11,
+        "shortest_parent_trial_samples": 212,
+        "status": "PASS"
+      },
+      {
+        "fold": 3,
+        "gate_count": 11,
+        "largest_predeclared_temporal_requirement_samples": 100,
+        "passed_gate_count": 11,
+        "shortest_parent_trial_samples": 271,
+        "status": "PASS"
+      },
+      {
+        "fold": 4,
+        "gate_count": 11,
+        "largest_predeclared_temporal_requirement_samples": 100,
+        "passed_gate_count": 11,
+        "shortest_parent_trial_samples": 232,
+        "status": "PASS"
+      },
+      {
+        "fold": 5,
+        "gate_count": 11,
+        "largest_predeclared_temporal_requirement_samples": 100,
+        "passed_gate_count": 11,
+        "shortest_parent_trial_samples": 242,
+        "status": "PASS"
+      }
+    ],
+    "pass_count": 5
+  },
+  "evidence_tier": "P0",
+  "next_action": "Freeze the Phase-4H fault-instance sampling and deterministic replay protocol before executing any model robustness experiment.",
+  "not_qualified_claims": [
+    "model robustness under sensor faults",
+    "outer-test robustness",
+    "OnField robustness",
+    "physical sensor-fault realism",
+    "hardware sensor-fault behavior",
+    "HIL behavior",
+    "MCU sensor-fault behavior",
+    "P2 realism",
+    "P3 realism"
+  ],
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "pre_result_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_severity_protocol_freeze_v1.json",
+    "sha256": "ae8d9db5f9ec0073ac18b334992111b3e1dd9c3699622700dbe0717f5e77abdb"
+  },
+  "pre_result_implementation": {
+    "path": "experiments/phase_04/sensor_fi_severity.py",
+    "sha256": "ec925c9351c9d144cf67462d7f047ecd0784037fbaadb63359ad2f1323c906e4"
+  },
+  "pre_result_protocol": {
+    "path": "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+    "preserved_unchanged": true,
+    "sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009"
+  },
+  "protocol_class": "P0_SOFTWARE_STRESS_SEVERITY_LADDER",
+  "qualification_date": "2026-10-02",
+  "qualified_claims": [
+    "The frozen Phase-4H v1 software-stress severity ladder passes all predeclared input-space sanity gates on each fold's frozen training-only calibration identities.",
+    "Fold-local reference materialization avoids cross-fold pooling of data-derived signal scales.",
+    "The v1 severity ladder may proceed to prospectively frozen fault-instance sampling/replay design."
+  ],
+  "sanity_artifact_manifest": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_severity_protocol_v1_sanity/artifact_manifest.json",
+    "sha256": "23e39380c8dcfce37636ecf0f26e2dfba3395bc91cdaff95167f5316afb970c8"
+  },
+  "sanity_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_severity_protocol_v1_sanity/severity_protocol_v1_sanity_result.json",
+    "sha256": "6311e52e386db12759d18d243c62da3f71e5ec972bcc0bc116e3db63e81a5edb",
+    "status": "PASS"
+  },
+  "schema_version": "phase4h_sensor_fi_severity_protocol_v1_sanity_qualification",
+  "scientific_boundary": {
+    "cross_fold_pooled_reference_scale": false,
+    "fault_injection_executed": false,
+    "model_checkpoint_loaded": false,
+    "model_predictions_computed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "physical_realism_claim": false,
+    "pre_result_protocol_rewritten": false,
+    "validation_used": false
+  },
+  "status": "QUALIFIED_INPUT_SPACE_SANITY",
+  "still_not_frozen": [
+    "fault-instance onset sampling policy",
+    "number of stochastic fault instances per parent sequence",
+    "fault-instance seed namespace",
+    "evaluation aggregation protocol",
+    "robustness acceptance criteria"
+  ]
+}

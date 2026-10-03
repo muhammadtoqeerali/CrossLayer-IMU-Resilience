@@ -1,0 +1,518 @@
+{
+  "aggregation_policy": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_strata": {
+      "KFALL": 32,
+      "UNIVR": 29
+    },
+    "each_operating_point_gets_full_independent_report": true,
+    "folds_not_independent_uncertainty_units": true,
+    "operating_points_aggregated_together": false,
+    "paired_C0_CS_subject_bootstrap": true,
+    "primary_inferential_unit": "subject",
+    "replicate_then_variant_then_seed_equal_weighting": true,
+    "windows_not_independent_uncertainty_units": true
+  },
+  "claim_policy": {
+    "HIL_claim": false,
+    "MCU_claim": false,
+    "NO_DIRECTIONAL_CONCLUSION_is_equivalence": false,
+    "direction_status_only": [
+      "DEGRADATION_SUPPORTED",
+      "IMPROVEMENT_SUPPORTED",
+      "NO_DIRECTIONAL_CONCLUSION",
+      "UNRESOLVED"
+    ],
+    "global_robust_not_robust_label": false,
+    "physical_realism_claim": false
+  },
+  "date": "2026-10-02",
+  "evidence_tier": "P0",
+  "execution_allowed_after_static_qualification": true,
+  "execution_locations": {
+    "stored_window_dataset_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary"
+  },
+  "fault_matrix": {
+    "all_stochastic_replicates_required": true,
+    "all_variants_required": true,
+    "expected_sequence_instances_per_trial": 138,
+    "expected_unique_fault_instances_total": 42766632,
+    "expected_unique_sequence_fault_instances": 870642,
+    "expected_unique_window_fault_instances": 41895990,
+    "expected_window_instances_per_parent": 153,
+    "fault_families_in_order": [
+      "bias",
+      "drift",
+      "scale_factor",
+      "noise",
+      "clipping_saturation",
+      "stuck_channel",
+      "axis_loss",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "no_family_or_severity_selection_after_outer_results": true,
+    "regimes": [
+      "C0",
+      "CS"
+    ],
+    "sequence_families": [
+      "drift",
+      "stuck_channel",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "severity_levels": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "window_value_families": [
+      "bias",
+      "scale_factor",
+      "noise",
+      "clipping_saturation",
+      "axis_loss"
+    ]
+  },
+  "ground_truth_contract": {
+    "authoritative_truth_counts": {
+      "Activity": 3390,
+      "Falling": 2919,
+      "total": 6309
+    },
+    "classification_confusion_unit": "trial",
+    "classification_truth_source": "Recovered historical evaluator semantics in master_training/evaluation.py plus the frozen Phase-3 risk/event index.",
+    "historical_evaluator": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+      "sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380"
+    },
+    "mismatch_count": 1,
+    "mismatch_trial": {
+      "event_id": "KFALL_106_T27_R05",
+      "fall_start_frame": 12,
+      "fall_start_position": 11,
+      "historical_evaluator_true_event": "Falling",
+      "impact_position": 52,
+      "outer_fold": 4,
+      "retained_falling_window_count": 0,
+      "risk_record_present": true,
+      "stored_label_class": "Activity",
+      "subject": 106,
+      "task": 27,
+      "trial": 5
+    },
+    "no_relabeling": true,
+    "phase3_manifest": {
+      "path": "manifests/phase_3n_final_protocol_freeze_v3.json",
+      "sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39"
+    },
+    "reason": "Phase 3 explicitly froze this trial as historical lineage discordance: classification labels remain unchanged while the current event annotation/risk record is retained.",
+    "risk_index": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/risk_data_generated/FALL_EVENT_INDEX_COMBINED_LABELED.csv",
+      "sha256": "b93ee2931fb3d54333bfd38308a130a60ff7240b9e6e5ace0805baca30c23401"
+    },
+    "stored_label_inventory_counts": {
+      "Activity": 3391,
+      "Falling": 2918,
+      "total": 6309
+    },
+    "true_activity_rule": "A trial is true Activity only when retained Falling-window count is zero AND no risk-index record exists.",
+    "true_fall_rule": "A trial is true Falling when retained Falling-window count is greater than zero OR a risk-index record exists for the subject/task/trial."
+  },
+  "heldout_governance": {
+    "heldout_suggested_change": "Preserve original execution/result, define a new protocol version, return to development/calibration, and refreeze.",
+    "outer_result_may_change_aggregation": false,
+    "outer_result_may_change_fault_sampling": false,
+    "outer_result_may_change_fault_severity": false,
+    "outer_result_may_change_reporting": false,
+    "outer_result_may_change_threshold": false,
+    "outer_result_may_select_fault_families": false,
+    "outer_result_may_select_operating_point": false,
+    "v2_truth_contract_change_after_outer_execution": false
+  },
+  "historical_event_rule": {
+    "activity_trial_prediction": "Activity-only trial is predicted positive when at least one frozen-rule trigger episode occurs.",
+    "confusion_unit": "trial",
+    "consecutive_rule_resets_at_trial_boundary": true,
+    "fall_trial_prediction": "Falling trial is predicted positive when at least one valid Falling-label trigger exists.",
+    "fall_trial_valid_trigger": "Use the frozen first_valid_trigger rule: the complete required-consecutive run must lie in retained Falling labels for a Falling trial.",
+    "known_exception_trigger_semantics": {
+      "consequence": "Because this historical exception has zero retained Falling labels, it cannot produce a valid Falling trigger under the frozen historical evaluator; it contributes a false negative for trial-level classification under every condition/model/operating point.",
+      "detected_event": false,
+      "eligible_annotated_event": true,
+      "event_id": "KFALL_106_T27_R05",
+      "excluded_from_truth_denominator": false,
+      "first_valid_trigger_rule": "For true-fall trials, a valid trigger requires every retained label in the complete required-consecutive trigger run to equal 1.",
+      "relabeled": false,
+      "retained_segment_labels": "all Activity",
+      "sensor_lead_ms": null,
+      "true_event": "FALLING"
+    },
+    "pooled_window_confusion_as_primary": false,
+    "source": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+    "source_sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380",
+    "trigger_episodes": "Within one chronological trial, increment run while probability >= frozen threshold; emit the start index when run first reaches required_consecutive; re-arm only after a below-threshold window.",
+    "true_event_rule": "true_fall = bool(falling_count > 0 or risk_record)"
+  },
+  "lineage": {
+    "aggregation_config": {
+      "path": "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json",
+      "sha256": "ef95356b8e32d8f63bb41c967f35fcdfc24338e7d8ee59af40aa99c3424b0628"
+    },
+    "aggregation_impl": {
+      "path": "experiments/phase_04/sensor_fi_aggregation.py",
+      "sha256": "eaad98b0bca6809bfde3e61774b6a48e2debda109e950ebf15c41921b08064a1"
+    },
+    "aggregation_qualification": {
+      "path": "manifests/phase_4h_sensor_fi_evaluation_aggregation_qualification_v1.json",
+      "sha256": "ff4a61015e471084b9a76504854ab6f7948a4faf79034be774c530c9e3c2ba57"
+    },
+    "checkpoint_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoint_manifest.csv",
+      "sha256": "0505438365d8179522632ddb8b52c794727d846e673322a48a09a9c96bbb8a7a"
+    },
+    "fp32_freeze": {
+      "path": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+      "sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+    },
+    "historical_evaluation_source": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+      "sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380"
+    },
+    "input_contract": {
+      "path": "configs/faults/phase4h_sensor_fi_input_contract_v1.json",
+      "sha256": "fb7f18ed6d10fc449c32d8e8d458753daaeaa8048ab6faba388566a53cacfe3f"
+    },
+    "jitter_qualification": {
+      "path": "manifests/phase_4h_sensor_fi_jitter_semantics_qualification_v1.json",
+      "sha256": "d12c84239b139d980df975b887db81efdcf83f50daec7de5325bb608143655c8"
+    },
+    "operator_engine": {
+      "path": "experiments/phase_04/sensor_fi_operators.py",
+      "sha256": "6559ddc1fcdca352fbd09bf003e28919bb355a76b2ef52e6985a99188fd69eaa"
+    },
+    "operator_qualification": {
+      "path": "manifests/phase_4h_sensor_fi_operator_engine_qualification_v1.json",
+      "sha256": "09a408dbefe57758199f2ec85d89528ed0ab9aad92fb3900b0e0673d0d2602e1"
+    },
+    "phase3_protocol": {
+      "path": "manifests/phase_3n_final_protocol_freeze_v3.json",
+      "sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39"
+    },
+    "ptq_all15_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1/all15_qualification_manifest.json",
+      "sha256": "811481415964bb2dc964116600a0ab43af407b4cddef76422a0f0d1a85819316"
+    },
+    "ptq_qualification": {
+      "path": "manifests/phase_4g_static_ptq_v7_all15_training_calibration_qualification_v1.json",
+      "sha256": "cdcdcb6d3ed95660a9cc421c6f5ab4647d7d1038c4075eaba94b378b15bd4f23"
+    },
+    "reporting_config": {
+      "path": "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v2_sampling_v3.json",
+      "sha256": "6ae6c53ed327ea74e23afcad8fb3766070f1d5d79d270e5e049b72a51090e7a4"
+    },
+    "reporting_impl": {
+      "path": "experiments/phase_04/sensor_fi_reporting_v2.py",
+      "sha256": "ee3360206fb035a0d038cf31b10d0e12c2311a27ed1b8bf6e2f740a42cf2269e"
+    },
+    "reporting_qualification": {
+      "path": "manifests/phase_4h_sensor_fi_robustness_reporting_v2_sampling_v3_qualification_v1.json",
+      "sha256": "83b364d0aeda5b8d2d45d8ba81bd8a19e937d5d771743cf59d99a0bcca1a6246"
+    },
+    "risk_index": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/risk_data_generated/FALL_EVENT_INDEX_COMBINED_LABELED.csv",
+      "sha256": "b93ee2931fb3d54333bfd38308a130a60ff7240b9e6e5ace0805baca30c23401"
+    },
+    "runner_v2": {
+      "path": "experiments/phase_04/sensor_fi_devcal_runner_v2.py",
+      "sha256": "541af4663293ae5fbaf5286fc3dea7679d511fdabb50738863880e4712a9b86a"
+    },
+    "runner_v2_qualification": {
+      "path": "manifests/phase_4h_sensor_fi_devcal_runner_v2_phase3_falling_route_qualification_v1.json",
+      "sha256": "e7bf28d53e7f4f0151cb6b70e4b36e8f83dde4b8027d55c4288261e98ddfee09"
+    },
+    "sampling_config": {
+      "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss.json",
+      "sha256": "543b648a09091225cfc80eaac5cd03d835a1727118f7730d00697150db205518"
+    },
+    "sampling_impl": {
+      "path": "experiments/phase_04/sensor_fi_sampling_v3.py",
+      "sha256": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74"
+    },
+    "sampling_qualification": {
+      "path": "manifests/phase_4h_sensor_fi_instance_sampling_v3_qualification_v1.json",
+      "sha256": "18701172ab25147e4dfb54059a9f5e07b0b3d8f89f13025ffb4aaf282e78df7f"
+    },
+    "severity_protocol": {
+      "path": "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+      "sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009"
+    },
+    "threshold_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/validation_selected_thresholds.csv",
+      "sha256": "07cb5fb987ad16a6238bb97f938fcce388cc45edd5862ebc307c297b8051b004"
+    }
+  },
+  "model_matrix": {
+    "PTQ_MCU_claim": false,
+    "PTQ_fully_int8_claim": false,
+    "checkpoint_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "model_member_count_per_subject_shard": 6,
+    "model_variants": [
+      "prospective_fp32_300ms",
+      "qualified_static_ptq_v7"
+    ],
+    "paired_execution": "For each exact clean/corrupted 30x9 tensor, execute all three seed-matched FP32/PTQ model pairs without changing the fault instance.",
+    "same_fault_instance_across_model_variants": true,
+    "same_fault_instance_across_seeds": true
+  },
+  "next_action_after_static_qualification": "Implement and freeze the outer shard executor against the qualified v2 truth contract and v2 shard plan. Perform metadata/interface dry-run qualification before any outer model or fault execution.",
+  "operating_points": {
+    "all_three_evaluated": true,
+    "expected_row_count": 45,
+    "no_outer_threshold_reselection": true,
+    "report_each_operating_point_separately": true,
+    "required_names": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "selection_or_averaging_across_operating_points": false,
+    "source": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/validation_selected_thresholds.csv",
+    "source_sha256": "07cb5fb987ad16a6238bb97f938fcce388cc45edd5862ebc307c297b8051b004",
+    "threshold_and_required_consecutive_from_matching_seed_fold_row": true
+  },
+  "outer_population": {
+    "KFALL_subject_count": 32,
+    "UNIVR_subject_count": 29,
+    "activity_window_count": 264024,
+    "annotated_fall_event_count": 2919,
+    "each_subject_in_exactly_one_outer_fold": true,
+    "falling_window_count": 9806,
+    "historical_evaluator_trial_truth_inventory": {
+      "Activity": 3390,
+      "Falling": 2919,
+      "authoritative_for_classification_metrics": true,
+      "rule": "true_fall = (falling_count > 0) OR (risk record present)",
+      "total": 6309
+    },
+    "historical_exception_count": 1,
+    "piecewise_falling_label_trial_count": 2918,
+    "stored_label_trial_inventory": {
+      "Activity": 3391,
+      "Falling": 2918,
+      "meaning": "Counts obtained only from retained segments/labels.npy. These are lineage/data-layout counts and are not the final historical evaluator classification truth denominator.",
+      "total": 6309
+    },
+    "subject_count": 61,
+    "trial_count": 6309,
+    "window_count": 273830
+  },
+  "output_policy": {
+    "C0_storage": "One clean row set per subject/model/seed/operating_point; C0 is joined to every CS condition by subject/fold/model/seed/operating_point during aggregation and is never recomputed per fault family.",
+    "classification_truth_fields": [
+      "stored_falling_window_count",
+      "risk_record_present",
+      "historical_true_event"
+    ],
+    "condition_row_classification_fields": [
+      "trial_count",
+      "TP",
+      "FN",
+      "TN",
+      "FP",
+      "falling_recall",
+      "activity_specificity",
+      "balanced_accuracy",
+      "precision",
+      "f1"
+    ],
+    "condition_row_coverage_fields": [
+      "parent_count",
+      "fault_instance_count",
+      "model_window_evaluation_count",
+      "undefined_metric_fields"
+    ],
+    "condition_row_descriptive_fields": [
+      "false_trigger_episode_count",
+      "activity_seconds"
+    ],
+    "condition_row_dimensions": [
+      "shard_id",
+      "model_variant",
+      "checkpoint_seed",
+      "fold",
+      "subject",
+      "dataset",
+      "operating_point",
+      "regime",
+      "fault_family",
+      "severity_level",
+      "variant_id",
+      "replicate_index"
+    ],
+    "condition_row_event_fields": [
+      "eligible_event_count",
+      "detected_event_count",
+      "missed_event_count",
+      "median_sensor_lead_ms",
+      "q25_sensor_lead_ms",
+      "q75_sensor_lead_ms"
+    ],
+    "condition_row_frozen_rule_fields": [
+      "threshold",
+      "required_consecutive"
+    ],
+    "deterministic_row_order": "model_variant, checkpoint_seed, operating_point, severity_level, variant_id, replicate_index",
+    "exception_audit_fields": [
+      "historical_exception",
+      "valid_trigger_possible_under_retained_labels"
+    ],
+    "expected_total_subject_condition_rows": 320616,
+    "raw_per_window_probability_default": "do_not_persist",
+    "raw_per_window_probability_persistence_required": false,
+    "reason": "Frozen reporting requires subject-level sufficient statistics and deterministic replay, not hundreds of millions of persisted raw probability rows.",
+    "required_shard_files": [
+      "subject_condition_metrics.jsonl",
+      "coverage.json",
+      "_SUCCESS.json"
+    ],
+    "timing_quantile_method": "numpy.quantile_method_linear",
+    "undefined_metric_representation": "JSON null plus field name in undefined_metric_fields"
+  },
+  "partition": "outer_test",
+  "phase": "4H",
+  "post_execution_interpretability_gates": {
+    "all_793_shards_complete_required": true,
+    "partial_matrix_publication_as_complete_result": false,
+    "required": [
+      "frozen_input_contract_hash_matches",
+      "frozen_severity_protocol_hash_matches",
+      "qualified_sampling_v3_hash_matches",
+      "qualified_aggregation_protocol_hash_matches",
+      "all_required_checkpoints_and_model_variants_accounted_for",
+      "all_fault_instances_have_valid_replay_ids",
+      "no_outer_test_tuning_occurred",
+      "no_OnField_fault_generation_occurred",
+      "all_required_result_dimensions_present",
+      "all_missing_or_undefined_metrics_explicitly_accounted_for",
+      "historical_trial_truth_counts_equal_3390_activity_2919_falling",
+      "KFALL_106_T27_R05_preserved_as_risk_linked_true_fall_with_retained_activity_labels"
+    ]
+  },
+  "prohibited_inputs": {
+    "OnField_fault_generation": true,
+    "OnField_fault_tuning": true,
+    "outer_family_selection": true,
+    "outer_fault_severity_tuning": true,
+    "outer_threshold_tuning": true
+  },
+  "purpose": "Freeze the exact held-out outer-test sensor-FI execution matrix, deterministic subject-family shard plan, output sufficient-statistics schema, resume semantics, and hash lineage before any outer-test model/fault execution.",
+  "resume_semantics": {
+    "atomic_finalize": "Validate expected coverage and file hashes in temporary directory, then atomically rename to final shard directory and write _SUCCESS.json last.",
+    "final_shard_directory_is_immutable": true,
+    "partial_or_mismatched_shard": "Never aggregate; remove/recompute that shard from the same frozen manifest.",
+    "scientific_parameter_change_on_resume": false,
+    "skip_on_resume_only_when": [
+      "_SUCCESS.json exists",
+      "shard_id matches",
+      "execution_config_sha256 matches",
+      "shard_plan_sha256 matches",
+      "runner_v2_sha256 matches",
+      "all required output-file hashes match",
+      "coverage counts equal frozen shard expectations"
+    ],
+    "success_marker_written_last": true,
+    "temporary_directory_suffix": ".tmp"
+  },
+  "schema_version": "phase4h_sensor_fi_outer_execution_v2_historical_truth",
+  "scientific_boundary": {
+    "OnField_used": false,
+    "config_created_before_outer_fault_execution": true,
+    "config_created_before_outer_model_predictions": true,
+    "outer_fault_results_seen": false,
+    "outer_labels_used_for_complete_inventory_only": true,
+    "outer_model_predictions_seen": false,
+    "v2_created_before_outer_fault_execution": true,
+    "v2_created_before_outer_model_predictions": true,
+    "v2_ground_truth_clarification_uses_metadata_labels_annotations_only": true,
+    "validation_outcomes_used_for_new_selection": false
+  },
+  "sharding": {
+    "all_three_checkpoint_seeds_inside_same_shard": true,
+    "all_three_operating_points_from_same_model_probabilities": true,
+    "blocks": [
+      "C0",
+      "bias",
+      "drift",
+      "scale_factor",
+      "noise",
+      "clipping_saturation",
+      "stuck_channel",
+      "axis_loss",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "both_model_variants_inside_same_shard": true,
+    "execution_blocks_per_subject": 13,
+    "expected_shard_count": 793,
+    "namespace": "crosslayer-phase4h-outer-shard-v2-historical-truth",
+    "order": "fold ascending, canonical subject ascending, C0 then fault_families_in_order",
+    "reason": "Subject-level shards preserve the frozen inferential unit while family blocks bound restart cost. Keeping all seeds and both model variants together permits exact same-fault pairing and avoids regenerating different fault instances.",
+    "scientific_change_from_v1": "Ground-truth denominator clarification only; shard membership, fault matrix, subject assignment, condition slots, model matrix, thresholds, and workload are unchanged.",
+    "shard_id": "p4h-o2-f{fold}-s{subject:03d}-{block}-{sha256(namespace|fold|subject|block)[:12]}",
+    "unit": "one_outer_subject_x_one_execution_block"
+  },
+  "status": "FROZEN_PRE_OUTER_EXECUTION",
+  "supersedes": {
+    "protocol": "phase4h_sensor_fi_outer_execution_v1",
+    "reason": "Pre-execution clarification of trial-level ground truth for the already-frozen historical exception KFALL_106_T27_R05.",
+    "v1_config_path": "configs/evaluation/phase4h_sensor_fi_outer_execution_v1.json",
+    "v1_config_sha256": "fa3c30387c012f9a2c15912b873df3256c55f22f49dc28b590dd23b1565c38ee",
+    "v1_preserved_unchanged": true,
+    "v1_qualification_path": "manifests/phase_4h_sensor_fi_outer_execution_plan_qualification_v1.json",
+    "v1_qualification_sha256": "ae8bd864084412fe84185aa30a4e9be83282d62d5b4926e42834cc6bc3a8a1d9",
+    "v1_shard_plan_path": "manifests/phase_4h_sensor_fi_outer_execution_shards_v1.json",
+    "v1_shard_plan_sha256": "836bd94054702d462e1450ca3cb145f21b435942d5b4dce766a5dabd50095ba1"
+  },
+  "timing_contract": {
+    "activity_window_physical_end_position": "30 + 15 * activity_local_index",
+    "falling_window_physical_end_position": "fall_start_position + 30 + 15 * falling_local_index",
+    "historical_exception_timing": {
+      "annotated_event_retained": true,
+      "event_id": "KFALL_106_T27_R05",
+      "impact_position": 52,
+      "lead_when_missed": "NA",
+      "valid_detection_possible_under_retained_labels": false
+    },
+    "missed_event_sensor_lead": "NA",
+    "physical_timing_position": "Physical/event timing remains on curated zero-based positions / oriented FrameCounter correspondence.",
+    "sensor_lead_ms": "(impact_position - trigger_confirmation_window_end_position) * 1000 / 100",
+    "source_slice_route": "Falling source-row slicing uses frozen Phase-3 fall_start_frame + 15 * falling_local_index.",
+    "system_latency_added": false,
+    "system_lead_claim": false,
+    "trigger_confirmation_index": "trigger_start_index + required_consecutive - 1",
+    "trigger_lead_uses_confirmation_window": true
+  },
+  "workload": {
+    "clean_window_model_evaluations": 1642980,
+    "operating_points_do_not_multiply_model_forward_count": true,
+    "probabilities_thresholded_three_ways_after_same_forward": true,
+    "sequence_fault_window_model_evaluations": 226731240,
+    "total_window_model_evaluations": 479750160,
+    "window_fault_model_evaluations": 251375940
+  }
+}

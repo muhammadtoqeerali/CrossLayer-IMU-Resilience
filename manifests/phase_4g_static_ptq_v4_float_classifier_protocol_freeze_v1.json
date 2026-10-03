@@ -1,0 +1,55 @@
+{
+  "frozen_date": "2026-10-02",
+  "implementation": {
+    "parent_v3_path": "experiments/phase_04/ptq_v3_prelu_wrapper.py",
+    "parent_v3_sha256": "d646a1ef24ac8e44791b5d7df549460dcd8beacb26728b6da2233a808cfda3f2",
+    "path": "experiments/phase_04/ptq_v4_float_classifier.py",
+    "sha256": "a0af6f6bcfb63da2feb80ab69b6fcae9d44d99552892a6e508dfa28b3e571524"
+  },
+  "next_action": "seed42/fold1 v4 training-calibration pilot",
+  "phase": "4G",
+  "pre_result_state": {
+    "fault_data_used": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "real_v4_calibration_fidelity_observed": false,
+    "real_v4_task_output_observed": false,
+    "validation_used": false
+  },
+  "preserved_v3_failure": {
+    "failed_gate": "p99_absolute_probability_error_max",
+    "frozen_p99_limit": 0.05,
+    "numerical_status": "FAIL",
+    "observed_p99": 0.1361749768257141,
+    "pilot_status": "FAIL",
+    "serialization_status": "PASS",
+    "structural_status": "PASS"
+  },
+  "protocol": {
+    "path": "configs/baseline/prospective_300ms_static_ptq_v4_float_classifier.json",
+    "sha256": "2e754d200ac876db98ef4f63c69bf0cb36b437723e2aa30ed5576ac318ff2958"
+  },
+  "schema_version": "phase4g_static_ptq_v4_float_classifier_protocol_freeze_v1",
+  "status": "FROZEN_PRE_RESULT",
+  "unchanged_numerical_gates": {
+    "all_outputs_finite": true,
+    "argmax_agreement_fraction_min": 0.99,
+    "mean_absolute_probability_error_max": 0.01,
+    "output_shape_exactly_preserved": true,
+    "p99_absolute_probability_error_max": 0.05
+  },
+  "v4_design_evidence": {
+    "float_fc4_synthetic_structural_pass": true,
+    "max_adjacent_probability_step": 0.074439554555013,
+    "real_dataset_samples_used_by_structural_probe": false,
+    "v3_final_classifier_output_scale": 0.29998788237571716,
+    "worst25_lattice_match": true,
+    "worst25_lattice_max_residual": 4.2479528561401025e-08
+  },
+  "v4_single_change": {
+    "all_other_v3_precision_rules_unchanged": true,
+    "module": "fc.4",
+    "v3_precision": "quantized Linear",
+    "v4_precision": "FP32 Linear"
+  }
+}

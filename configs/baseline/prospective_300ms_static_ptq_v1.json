@@ -1,0 +1,220 @@
+{
+  "calibration": {
+    "class_balancing": false,
+    "fault_injected_allowed": false,
+    "fold_specific_rule": "Each seed/fold checkpoint uses only that fold's frozen 4096-window calibration identity set. The same fold calibration identities are reused across its three seeds.",
+    "identity_config": "configs/datasets/int8_calibration_identity_v1.json",
+    "identity_config_sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e",
+    "identity_generator": "experiments/phase_03/freeze_phase3_final_protocol_v1.py",
+    "identity_generator_sha256": "dba4e711922b487ecdf3c7ae7a01e28919ce918dae3c3462613c690da744e525",
+    "namespace": "crosslayer-static-ptq-calibration-v1",
+    "onfield_allowed": false,
+    "outer_test_allowed": false,
+    "quant_params_shared_across_folds": false,
+    "replay_audit": {
+      "1": {
+        "calibration_subjects": 38,
+        "calibration_windows": 4096,
+        "class_counts": {
+          "Activity": 3961,
+          "Falling": 135
+        },
+        "onfield_used": false,
+        "outer_test_subject_leakage": false,
+        "replay_tensor_sha256": "c12d02f2355ba648ed47f67f5425bc37cb3d0a10e85a6fe13dc9f79b8da1ca19",
+        "training_subjects": 38,
+        "training_windows": 172696,
+        "validation_subject_leakage": false
+      },
+      "2": {
+        "calibration_subjects": 39,
+        "calibration_windows": 4096,
+        "class_counts": {
+          "Activity": 3962,
+          "Falling": 134
+        },
+        "onfield_used": false,
+        "outer_test_subject_leakage": false,
+        "replay_tensor_sha256": "2dc8ef1954753dbeed48cb59a5e7ada58489387d26368324258990556d4f9244",
+        "training_subjects": 39,
+        "training_windows": 170190,
+        "validation_subject_leakage": false
+      },
+      "3": {
+        "calibration_subjects": 39,
+        "calibration_windows": 4096,
+        "class_counts": {
+          "Activity": 3965,
+          "Falling": 131
+        },
+        "onfield_used": false,
+        "outer_test_subject_leakage": false,
+        "replay_tensor_sha256": "a73f0f63fce0f9c003b1e6e98c86c0d981a4684495e886f2481ca06ccda9c46e",
+        "training_subjects": 39,
+        "training_windows": 174553,
+        "validation_subject_leakage": false
+      },
+      "4": {
+        "calibration_subjects": 39,
+        "calibration_windows": 4096,
+        "class_counts": {
+          "Activity": 3934,
+          "Falling": 162
+        },
+        "onfield_used": false,
+        "outer_test_subject_leakage": false,
+        "replay_tensor_sha256": "b0691649cfd2cf71e407f842e43f4b1e72afc86f9dba87b61a11769ecd2e3cf2",
+        "training_subjects": 39,
+        "training_windows": 172104,
+        "validation_subject_leakage": false
+      },
+      "5": {
+        "calibration_subjects": 39,
+        "calibration_windows": 4096,
+        "class_counts": {
+          "Activity": 3960,
+          "Falling": 136
+        },
+        "onfield_used": false,
+        "outer_test_subject_leakage": false,
+        "replay_tensor_sha256": "9b13e9db7c0450edc21afdb6eb299c925a7185b6189266d5762adc2558ede1a2",
+        "training_subjects": 39,
+        "training_windows": 173608,
+        "validation_subject_leakage": false
+      }
+    },
+    "selection_method": "training-only deterministic SHA256-ranked window identities",
+    "source_partition": "training only",
+    "total_fold_window_instances": 20480,
+    "validation_allowed": false,
+    "windows_per_fold": 4096
+  },
+  "evidence_to_freeze_after_realization": [
+    "converted artifact identity and SHA256 for all 15 checkpoints",
+    "exact checkpoint-to-calibration-fold binding",
+    "converted graph/operator inventory",
+    "quantized-versus-FP32 calibration fidelity metrics",
+    "artifact byte size",
+    "serialization/load round-trip status",
+    "runtime/framework/backend constraints",
+    "precision classification: fully INT8 vs mixed precision",
+    "later clean outer-test metrics kept separate from calibration/selection evidence"
+  ],
+  "fp32_source": {
+    "checkpoint_count": 15,
+    "checkpoint_policy": "retain all 15; no best seed/fold selection",
+    "cnn_source_sha256": "5e1ddac378c80929068b6fb8f62fff0d351bacbf047297829bd0531ad9c43eb2",
+    "phase4f_manifest": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+    "phase4f_manifest_sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+  },
+  "frozen_date": "2026-10-02",
+  "method": {
+    "dynamic_quantization": "prohibited as deployment substitute",
+    "framework": "PyTorch FX",
+    "primary_method": "static_post_training_quantization",
+    "qat": "prohibited as silent substitute",
+    "runtime_qconfig": {
+      "activation_dtype": "quint8",
+      "activation_observer_class": "torch.ao.quantization.observer.HistogramObserver",
+      "activation_qscheme": "torch.per_tensor_affine",
+      "api": "torch.ao.quantization.quantize_fx",
+      "backend": "x86",
+      "global_qconfig_repr": "QConfig(activation=functools.partial(<class 'torch.ao.quantization.observer.HistogramObserver'>, reduce_range=True){}, weight=functools.partial(<class 'torch.ao.quantization.observer.PerChannelMinMaxObserver'>, dtype=torch.qint8, qscheme=torch.per_channel_symmetric){})",
+      "qconfig_constructor": "get_default_qconfig_mapping('x86')",
+      "weight_dtype": "qint8",
+      "weight_observer_class": "torch.ao.quantization.observer.PerChannelMinMaxObserver",
+      "weight_qscheme": "torch.per_channel_symmetric"
+    }
+  },
+  "numerical_acceptance": {
+    "evaluation_data": "only the corresponding fold's 4096 frozen training-only calibration windows",
+    "interpretation": "Engineering FP32-to-PTQ fidelity gate frozen before observing any PTQ output. It is not a clinical or physical-safety threshold.",
+    "non_gating_report_fields": [
+      "max_absolute_probability_error",
+      "mean_absolute_logit_error",
+      "max_absolute_logit_error",
+      "calibration_confusion_FP32_vs_quantized"
+    ],
+    "output_domain_for_error": "two-class softmax probabilities",
+    "reference": "the same frozen checkpoint in FP32",
+    "required": {
+      "all_outputs_finite": true,
+      "argmax_agreement_fraction_min": 0.99,
+      "mean_absolute_probability_error_max": 0.01,
+      "output_shape_exactly_preserved": true,
+      "p99_absolute_probability_error_max": 0.05
+    }
+  },
+  "phase": "4G",
+  "phase2_relationship": {
+    "historical_candidate": "configs/baseline/quantization_protocol_candidate_v1.json",
+    "historical_candidate_sha256": "d1d29bac642887db42e6368fd8a89872690473839e33a249d032eba62cb1e5ae",
+    "preserved_principles": [
+      "static PTQ",
+      "training/development-only clean calibration",
+      "no held-out-test quantizer selection",
+      "no fault-evidence quantizer selection",
+      "no silent QAT substitution"
+    ],
+    "versioned_change": "Phase-2 left format, integer activation type, weight granularity, and backend-dependent realization unfrozen. Phase-4G freezes a PyTorch-FX x86 realization for the fresh prospective 300-ms CNN before observing quantized outputs."
+  },
+  "provenance_tier": "P0 software quantization evidence",
+  "role": "prospective 300-ms static PTQ realization protocol",
+  "runtime_environment": {
+    "onnxruntime_required": false,
+    "python": "3.13.12",
+    "selected_backend": "x86",
+    "supported_quantized_engines": [
+      "qnnpack",
+      "onednn",
+      "x86",
+      "fbgemm"
+    ],
+    "torch": "2.12.0+cu130"
+  },
+  "schema_version": "prospective_300ms_static_ptq_v1",
+  "scientific_boundary": {
+    "fault_data_allowed_for_quantizer_choice": false,
+    "mcu_execution_claim": false,
+    "onfield_allowed_for_quantizer_choice": false,
+    "outer_test_predictions_allowed_for_quantizer_choice": false,
+    "physical_fault_claim": false,
+    "quantization_results_seen_before_this_freeze": false,
+    "validation_predictions_allowed_for_quantizer_choice": false
+  },
+  "selection_policy": {
+    "candidate_count": 1,
+    "candidate_id": "torch_fx_x86_default_qconfig_v1",
+    "candidate_sweep": false,
+    "fallback": "If v1 fails structural/runtime/numerical acceptance, preserve the failed v1 evidence. Do not silently tune it. Any alternative observer, backend, granularity, format, or QAT route requires a separately versioned protocol using only permitted development/calibration evidence.",
+    "selection_by_combined_fault_robustness": false,
+    "selection_by_compute_fault_robustness": false,
+    "selection_by_model_size": false,
+    "selection_by_onfield": false,
+    "selection_by_outer_test_accuracy": false,
+    "selection_by_runtime_speed": false,
+    "selection_by_sensor_fault_robustness": false,
+    "selection_by_validation_accuracy": false
+  },
+  "status": "FROZEN_PRE_RESULT",
+  "structural_acceptance": {
+    "batchnorm_rule": "BatchNorm may be fused/eliminated as part of standard static quantization preparation; it must not create a new learned task model.",
+    "checkpoint_estate": "all 15 frozen Phase-4F checkpoints",
+    "dropout_rule": "evaluation-mode Dropout must be inactive",
+    "full_int8_claim_allowed_only_if": [
+      "every Conv1d executes as a quantized operator/module",
+      "every Linear executes as a quantized operator/module",
+      "every PReLU executes without an intervening FP32 island",
+      "no internal dequantize/requantize boundary exists except explicitly permitted model input/output boundaries",
+      "operator inventory is recorded from the converted graph"
+    ],
+    "mixed_precision_acceptance": "A structurally valid mixed-precision PTQ realization may be retained as evidence if the weighted operators are quantized and numerical gates pass, but it must be labeled mixed-precision and not fully INT8.",
+    "model_input_contract": "[N,30,9] source windows, transformed only by the existing frozen model input path",
+    "model_output_contract": "[N,2] logits",
+    "prelu_rule": "PReLU coverage must be audited explicitly. If PReLU executes in FP32 with dequantize/requantize boundaries, the artifact is mixed-precision static PTQ and MUST NOT be called fully INT8.",
+    "required_weighted_operator_quantization": [
+      "Conv1d",
+      "Linear"
+    ]
+  }
+}

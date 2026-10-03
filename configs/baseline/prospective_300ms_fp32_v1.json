@@ -1,0 +1,94 @@
+{
+  "dataset": {
+    "fold_manifest": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/risk_data_generated/SUBJECT_FOLDS_PHASE3J_PRIMARY_300MS_V1.json",
+    "fold_manifest_sha256": "fa181f78842bce6b750091c64b24f8b7bbc64b0ff151d08f8b784eaf588db898",
+    "fold_source_manifest": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/manifests/phase_3j_primary_300ms_fivefold_v1.json",
+    "fold_source_manifest_sha256": "deee09a7cddea2f5a0b1594905608e213a1235ce7857468411a6fdb7083fef92",
+    "population": "UniVR + KFall clean primary population",
+    "risk_index": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/risk_data_generated/FALL_EVENT_INDEX_COMBINED_LABELED.csv",
+    "risk_index_sha256": "b93ee2931fb3d54333bfd38308a130a60ff7240b9e6e5ace0805baca30c23401",
+    "root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary",
+    "subjects": 61
+  },
+  "exclusions": {
+    "400ms_primary": true,
+    "95_percent_overlap_primary": true,
+    "onfield_calibration": true,
+    "onfield_threshold_tuning": true,
+    "onfield_training": true,
+    "onfield_validation": true,
+    "rejected_subjects": [
+      "999",
+      "1000"
+    ]
+  },
+  "frozen_date": "2026-10-02",
+  "int8_transition_constraint": {
+    "calibration_partition": "frozen training-only calibration IDs",
+    "fault_injected_data_may_set_quantization_parameters": false,
+    "onfield_may_set_quantization_parameters": false,
+    "outer_test_may_set_quantization_parameters": false,
+    "validation_may_set_quantization_parameters": false
+  },
+  "operating_points": [
+    "balanced",
+    "low_false_alarm",
+    "timely_150ms"
+  ],
+  "provenance_tier": "P0",
+  "role": "primary prospective FP32 clean baseline",
+  "schema_version": "prospective_300ms_fp32_v1",
+  "selection_policy": {
+    "checkpoint_selection": "best validation loss within each seed/fold",
+    "deployment_checkpoint_policy": "no single deployment checkpoint selected in Phase 4F; retain all 15 seed/fold checkpoints as the primary CV estate",
+    "operating_threshold_selection": "validation only",
+    "outer_test": "evaluation only",
+    "single_best_seed_fold_selection": "prohibited"
+  },
+  "status": "FROZEN",
+  "training": {
+    "batch_size": 128,
+    "config_repr_exact": "{'alpha_value': 0.01397150045307849, 'batch_size': 128, 'conv_1_dim': 64, 'conv_1_filter': 4, 'conv_dropout': 0.4, 'conv_pool': 2, 'criterion': CrossEntropyLoss(), 'fc': 128, 'fc_dropout': 0.4, 'lr': 0.001078759046949597, 'wd': 4.864667834921314e-05, 'prediction_bias': 0.6}",
+    "entry_point": "python -m train",
+    "epochs": 100,
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "original_models_CNN_used": true,
+    "parsed_scalar_config": {
+      "alpha_value": 0.01397150045307849,
+      "batch_size": 128,
+      "conv_1_dim": 64,
+      "conv_1_filter": 4,
+      "conv_dropout": 0.4,
+      "conv_pool": 2,
+      "fc": 128,
+      "fc_dropout": 0.4,
+      "lr": 0.001078759046949597,
+      "prediction_bias": 0.6,
+      "wd": 4.864667834921314e-05
+    },
+    "seeds": [
+      42,
+      123,
+      2025
+    ],
+    "task_metadata_used_as_model_input": false
+  },
+  "workload": {
+    "augmentation": "none",
+    "model": "CNN",
+    "overlap_fraction": 0.5,
+    "primary": true,
+    "samples_per_window": 30,
+    "sampling_hz": 100,
+    "stride_ms": 150,
+    "stride_samples": 15,
+    "task": "binary Activity/Falling",
+    "window_ms": 300
+  }
+}

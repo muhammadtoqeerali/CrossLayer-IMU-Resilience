@@ -1,0 +1,91 @@
+{
+  "completion_scope": {
+    "independent_onfield_activity_only_external_execution_complete": true,
+    "independent_onfield_activity_only_interpretation_frozen": true,
+    "prospective_300ms_fp32_baseline_frozen": true,
+    "qualified_static_ptq_v7_all15": true,
+    "sensor_fault_outer_execution_complete": true,
+    "sensor_fault_outer_interpretation_frozen": true,
+    "sensor_fault_protocol_frozen": true
+  },
+  "deployment_boundary": {
+    "hardware_target_frozen": false,
+    "mcu_claim_made": false,
+    "project_yaml_historical_final_int8_status_preserved": "deferred_until_data_protocol_freeze",
+    "prospective_fp32_role": "frozen primary same-backbone reference",
+    "ptq_v7_fully_int8": false,
+    "ptq_v7_role": "qualified mixed-precision static PTQ comparator"
+  },
+  "generated_date": "2026-10-03",
+  "important_file_sha256": {
+    "configs/project.yaml": "ab1f5cc2b3641ee06bbfb9a17b5e24aedf6e70e861a84f06c35f57fb1094ac37",
+    "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd",
+    "manifests/phase_4g_static_ptq_v7_all15_training_calibration_qualification_v1.json": "cdcdcb6d3ed95660a9cc421c6f5ab4647d7d1038c4075eaba94b378b15bd4f23",
+    "manifests/phase_4h_sensor_fi_outer_execution_completion_v1.json": "587d608f1f9ff1addbdcec312e3312591e008f05459253b60f754667f209b077",
+    "manifests/phase_4h_sensor_fi_outer_interpretation_v1.json": "a5daf46f342b669cc461d0f6d66d2d933349b2739f57e700c3e7d7073719025b",
+    "manifests/phase_4i_onfield_external_execution_completion_v1.json": "11f1d912adbc4818778cf06f8c7eab2e0dc44f27b5edd9c086291c588a193591",
+    "manifests/phase_4i_onfield_external_interpretation_v1.json": "23f57b6ebc265e04f9ab607a9cb19d37ad80f19229748c5cf741d63f5c32f658"
+  },
+  "next_phase": "phase_5_compute_fault_engine",
+  "onfield_external_evidence": {
+    "bootstrap_replicates": 10000,
+    "checkpoint_selection_from_onfield": false,
+    "fall_side_claims_supported": false,
+    "falling_windows": 0,
+    "model_window_evaluations": 30700110,
+    "operating_point_selection_from_onfield": false,
+    "raw_probabilities_stored": false,
+    "results_used_for_retuning": false,
+    "retained_subjects": 10,
+    "retained_trials": 16,
+    "retained_windows": 1023337,
+    "scientific_role": "ACTIVITY_ONLY_EXTERNAL_FIELD_EVALUATION",
+    "threshold_applications": 92100330
+  },
+  "phase": 4,
+  "phase_name": "Sensor Fault Engine",
+  "repository_parent_commit": "475926b07afe881d6d93d5d08616c919fa29c3d9",
+  "roadmap_boundary": {
+    "combined_regime_completed_in_phase4": false,
+    "compute_and_combined_work_deferred_by_roadmap": true,
+    "compute_fault_engine_completed_in_phase4": false,
+    "phase4": "Sensor Fault Engine",
+    "phase5": "Compute Fault Engine",
+    "phase6": "Cross-Layer Vulnerability Characterization",
+    "phase6_required_regimes": [
+      "C0",
+      "CS",
+      "CC",
+      "CSC"
+    ]
+  },
+  "schema": "crosslayer_phase4_completion_v1",
+  "scientific_guards": {
+    "fp32_ptq_equivalence_claim": false,
+    "hardware_realism_claim_without_hardware": false,
+    "no_directional_conclusion_treated_as_equivalence": false,
+    "onfield_used_for_calibration": false,
+    "onfield_used_for_checkpoint_selection": false,
+    "onfield_used_for_operating_point_selection": false,
+    "onfield_used_for_threshold_selection": false,
+    "onfield_used_for_training": false,
+    "onfield_used_for_validation": false,
+    "outer_test_used_for_fault_severity_selection": false,
+    "outer_test_used_for_model_selection": false,
+    "outer_test_used_for_threshold_selection": false,
+    "sensor_fault_results_used_for_posthoc_protocol_change": false
+  },
+  "sensor_fault_evidence": {
+    "bootstrap_replicates": 10000,
+    "fault_family_count": 12,
+    "global_binary_robustness_label": false,
+    "heldout_outer_rows": 320616,
+    "heldout_outer_subjects": 61,
+    "heldout_results_used_for_retuning": false,
+    "model_window_evaluations": 479750160,
+    "outer_reporting_family_severity_records": 4536,
+    "provenance_tier": "P0",
+    "unique_fault_instances": 42766632
+  },
+  "status": "COMPLETE"
+}

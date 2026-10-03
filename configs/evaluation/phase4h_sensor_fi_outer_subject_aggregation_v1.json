@@ -1,0 +1,39 @@
+{
+  "schema_version": "phase4h_sensor_fi_outer_subject_aggregation_v1",
+  "phase": "4H",
+  "status": "FROZEN_PRE_OUTER_METRIC_READ",
+  "outer_execution_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_execution_v1",
+  "outer_execution_completion_path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/manifests/phase_4h_sensor_fi_outer_execution_completion_v1.json",
+  "output_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_subject_aggregation_v1",
+  "metrics": [
+    "falling_recall",
+    "activity_specificity",
+    "balanced_accuracy",
+    "precision",
+    "f1",
+    "event_recall",
+    "sensor_lead_ms"
+  ],
+  "sensor_lead_source_field": "median_sensor_lead_ms",
+  "timing_descriptive_fields": [
+    "q25_sensor_lead_ms",
+    "median_sensor_lead_ms",
+    "q75_sensor_lead_ms"
+  ],
+  "hierarchy": [
+    "replicate",
+    "variant",
+    "checkpoint_seed",
+    "subject"
+  ],
+  "cross_subject_bootstrap_in_this_stage": false,
+  "direction_status_classification_in_this_stage": false,
+  "outer_result_based_retuning_allowed": false,
+  "outer_result_based_selection_allowed": false,
+  "interpretability_lineage_paths": {
+    "input_contract": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/configs/faults/phase4h_sensor_fi_input_contract_v1.json",
+    "severity": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+    "sampling_qualification": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/manifests/phase_4h_sensor_fi_instance_sampling_v3_qualification_v1.json",
+    "aggregation_rebind": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/CrossLayer-IMU-Resilience/manifests/phase_4h_sensor_fi_evaluation_aggregation_sampling_v3_rebind_v1.json"
+  }
+}

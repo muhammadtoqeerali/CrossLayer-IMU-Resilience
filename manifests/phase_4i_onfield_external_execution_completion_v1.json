@@ -1,0 +1,133 @@
+{
+  "authorization": {
+    "activity_only_result_interpretation": true,
+    "checkpoint_reselection": false,
+    "fall_side_interpretation": false,
+    "operating_point_reselection": false,
+    "scientific_retuning": false,
+    "threshold_reselection": false
+  },
+  "completion_gate": "QUALIFIED_COMPLETE_EXTERNAL_ACTIVITY_ONLY_EXECUTION",
+  "date": "2026-10-03",
+  "execution_guarantees": {
+    "all_15_checkpoints_evaluated": true,
+    "all_3_operating_points_evaluated": true,
+    "checkpoint_selection": false,
+    "fall_side_metrics_generated": false,
+    "global_binary_robustness_label": false,
+    "operating_point_selection": false,
+    "raw_probabilities_stored": false,
+    "subject_level_bootstrap_complete": true,
+    "threshold_tuning": false
+  },
+  "execution_inventory": {
+    "cohort_summary_rows": 6,
+    "model_window_evaluations": 30700110,
+    "retained_subject_count": 10,
+    "retained_trial_count": 16,
+    "retained_window_count": 1023337,
+    "subject_bootstrap_replicates": 10000,
+    "subject_checkpoint_operating_point_rows": 900,
+    "subject_estate_summary_rows": 60,
+    "threshold_applications": 92100330,
+    "trial_checkpoint_operating_point_rows": 1440
+  },
+  "lineage": {
+    "executor": {
+      "path": "experiments/phase_04/onfield_external_executor_v1.py",
+      "sha256": "6834c363204c0820c3fb1c83013d942352cea59229a3bd28aab2a9af83ca26f7"
+    },
+    "executor_config": {
+      "path": "configs/evaluation/phase4i_onfield_external_executor_v1.json",
+      "sha256": "afdd94eef070418df2c3499200639f6c0befb1257b96feeba97fda69a9aeeeb8"
+    },
+    "executor_freeze": {
+      "path": "manifests/phase_4i_onfield_external_executor_v1_freeze.json",
+      "sha256": "9e6ea4efbf4b1ae8edfcc4f1313101d6fc65c2ff1c635c0cb7e42cd1e6c84746"
+    },
+    "executor_qualification": {
+      "path": "manifests/phase_4i_onfield_external_executor_v1_qualification.json",
+      "sha256": "9281496c77210e345af7e1fa50bc777848ab54ad9810637cf3449f3c29ad417d"
+    },
+    "protocol": {
+      "path": "configs/evaluation/phase4i_onfield_external_evaluation_protocol_v1.json",
+      "sha256": "de47fb6106b961f27cd4341ca11287d3522401431457241e05c93cfb1c323c41"
+    },
+    "protocol_freeze": {
+      "path": "manifests/phase_4i_onfield_external_evaluation_protocol_v1_freeze.json",
+      "sha256": "ed5d4d92e218e07a99084016e8d8a310f438b145f0867b24d5ad9d32e9883ff1"
+    },
+    "result_coverage": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4i_onfield_external_evaluation_v1/coverage.json",
+      "sha256": "0cd39edb10c0c6751a8c59e7cf82aaf70f22aac5433c33ed1769d49d30daa8aa"
+    },
+    "result_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4i_onfield_external_evaluation_v1/artifact_manifest.json",
+      "sha256": "33728f61016ccbbebcdec00297b43a1c244118dadb1655ec723d2fb275597162"
+    },
+    "result_success": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4i_onfield_external_evaluation_v1/_SUCCESS.json",
+      "sha256": "588deabd2e2279ef6a4726a4c7d37c47de3a9bbd579ac4c191a2a2093b462df9"
+    },
+    "root_binding": {
+      "path": "configs/datasets/phase4i_onfield_external_300ms_root_binding_v1.json",
+      "sha256": "0cf01d32571e72caa8ec2c0cec99fbc05d5ca7ce5aa34c2425b168759731e608"
+    },
+    "root_binding_manifest": {
+      "path": "manifests/phase_4i_onfield_external_300ms_root_binding_v1.json",
+      "sha256": "531adcec5bcb1ad988aec0e9ad942e8e1def1d00be075c0ad633853b6d294d16"
+    }
+  },
+  "phase": "4I",
+  "result_files": {
+    "cohort_summary.jsonl": {
+      "bytes": 4220,
+      "sha256": "7fdd3bfbaa7a6e42d50898c73f3404aa441a19a39c923bf9864eacee9bc1148a"
+    },
+    "coverage.json": {
+      "bytes": 720,
+      "sha256": "0cd39edb10c0c6751a8c59e7cf82aaf70f22aac5433c33ed1769d49d30daa8aa"
+    },
+    "subject_checkpoint_operating_point.jsonl": {
+      "bytes": 469211,
+      "sha256": "02fed4bd8d409876ba9c4e4ccbb804cdb7903865b0d9c3b6748ab350ed238223"
+    },
+    "subject_estate_summary.jsonl": {
+      "bytes": 49316,
+      "sha256": "151cc6772b5644e74029f35dc3bca1bb65385c70674919c74162b6792366411c"
+    },
+    "trial_checkpoint_operating_point.jsonl": {
+      "bytes": 799982,
+      "sha256": "d4ab271cdbfb1fd470cd2346104ecf67d0f5697b3e459c75dbbb98f686248b81"
+    }
+  },
+  "result_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4i_onfield_external_evaluation_v1",
+  "schema_version": "phase4i_onfield_external_execution_completion_v1",
+  "scientific_scope": {
+    "allowed_interpretation_after_completion": [
+      "activity_specificity",
+      "false_trigger_episode_count",
+      "false_triggers_per_activity_hour",
+      "activity-side field-domain false-alarm behavior",
+      "checkpoint-specific descriptive variability"
+    ],
+    "external_role": "ACTIVITY_ONLY",
+    "onfield_results_used_for_checkpoint_selection": false,
+    "onfield_results_used_for_operating_point_selection": false,
+    "onfield_results_used_for_threshold_selection": false,
+    "onfield_results_used_for_tuning": false,
+    "performance_values_read_while_creating_completion_record": false,
+    "prohibited_claims": [
+      "fall_recall",
+      "event_recall",
+      "missed_fall_rate",
+      "sensor_lead_time",
+      "fall_recovery",
+      "two_class_balanced_accuracy",
+      "external_fall_detection_effectiveness",
+      "FP32_PTQ_equivalence",
+      "binary_global_robustness_label"
+    ]
+  },
+  "status": "COMPLETE_IMMUTABLE_ONFIELD_ACTIVITY_ONLY_EXTERNAL_EXECUTION"
+}

@@ -1,0 +1,160 @@
+{
+  "acceptance": {
+    "all_folds_pass": true,
+    "fail_count": 0,
+    "fold_count": 5,
+    "folds": [
+      {
+        "fold": 1,
+        "gate_count": 14,
+        "passed_gate_count": 14,
+        "sequence_instance_count": 138,
+        "status": "PASS",
+        "total_instance_count": 291,
+        "window_instance_count": 153
+      },
+      {
+        "fold": 2,
+        "gate_count": 14,
+        "passed_gate_count": 14,
+        "sequence_instance_count": 138,
+        "status": "PASS",
+        "total_instance_count": 291,
+        "window_instance_count": 153
+      },
+      {
+        "fold": 3,
+        "gate_count": 14,
+        "passed_gate_count": 14,
+        "sequence_instance_count": 138,
+        "status": "PASS",
+        "total_instance_count": 291,
+        "window_instance_count": 153
+      },
+      {
+        "fold": 4,
+        "gate_count": 14,
+        "passed_gate_count": 14,
+        "sequence_instance_count": 138,
+        "status": "PASS",
+        "total_instance_count": 291,
+        "window_instance_count": 153
+      },
+      {
+        "fold": 5,
+        "gate_count": 14,
+        "passed_gate_count": 14,
+        "sequence_instance_count": 138,
+        "status": "PASS",
+        "total_instance_count": 291,
+        "window_instance_count": 153
+      }
+    ],
+    "pass_count": 5
+  },
+  "evidence_tier": "P0",
+  "next_action": "Freeze evaluation aggregation and uncertainty rules, then freeze robustness acceptance/reporting criteria. Only after both are frozen may Phase-4H execute sensor faults against models.",
+  "not_qualified_claims": [
+    "sensor-fault model robustness",
+    "outer-test robustness",
+    "OnField robustness",
+    "physical sensor-fault realism",
+    "hardware fault behavior",
+    "HIL behavior",
+    "MCU fault behavior",
+    "P2 evidence",
+    "P3 evidence"
+  ],
+  "parent_v1": {
+    "failed_gates": {
+      "2": [
+        "no_cross_fold_fault_id_collision"
+      ],
+      "3": [
+        "no_cross_fold_fault_id_collision"
+      ],
+      "4": [
+        "no_cross_fold_fault_id_collision"
+      ]
+    },
+    "failure_classification": "FAULT_ID_NAMESPACE_COLLISION_ONLY",
+    "preserved_unchanged": true,
+    "protocol": {
+      "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v1.json",
+      "sha256": "8174885d78a8864ce1f1c9f5fb1faaa1b3e1a7d1f34538c8e4120c87ecd452f0"
+    },
+    "sanity_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_instance_sampling_v1_sanity/instance_sampling_sanity_result.json",
+      "sha256": "63239c25e9ace0fe7d6126a0f2d2a50be0f1ce253b10617a9f8ea2096e7f857d",
+      "status": "FAIL"
+    }
+  },
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "qualification_date": "2026-10-02",
+  "qualified_claims": [
+    "The Phase-4H v2 sampling/replay metadata protocol is deterministic across repeated generation.",
+    "The v2 protocol produces globally unique fault_id and replay_id values across the five sanity folds.",
+    "The v2 protocol preserves exact instance counts, temporal bounds, stochastic replicate structure, onset strata, input-contract validity, and OnField rejection.",
+    "Model identity is excluded from fault sampling and replay identity, allowing the same causal fault instance to be reused across same-backbone precision/protection variants."
+  ],
+  "schema_version": "phase4h_sensor_fi_instance_sampling_v2_qualification_v1",
+  "scientific_boundary": {
+    "fault_injection_executed": false,
+    "metadata_only": true,
+    "model_loaded": false,
+    "model_predictions_computed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "physical_realism_claim": false,
+    "sampling_changed_except_fault_id_namespace": false,
+    "seed_derivation_changed": false,
+    "sensor_values_mutated": false,
+    "severity_changed": false,
+    "v1_rewritten": false,
+    "v2_pre_result_protocol_rewritten": false,
+    "validation_used": false
+  },
+  "single_change_from_v1": {
+    "duration_policy_changed": false,
+    "field": "fault_id",
+    "onset_policy_changed": false,
+    "partition_policy_changed": false,
+    "reason": "the same source-trial parent may legitimately appear in training-calibration identities for multiple outer folds; v1 replay_id was already unique because fold participates in the canonical instance, but the human-readable fault_id collided across folds",
+    "replay_canonicalization_changed": false,
+    "replicate_policy_changed": false,
+    "seed_derivation_changed": false,
+    "seed_namespace_changed": false,
+    "severity_changed": false,
+    "target_policy_changed": false,
+    "v1_behavior": "fault_id encoded family/severity/variant/replicate and parent hash but omitted partition/fold",
+    "v2_behavior": "fault_id additionally encodes partition and fold"
+  },
+  "status": "QUALIFIED_METADATA_REPLAY",
+  "still_not_frozen": [
+    "evaluation aggregation protocol",
+    "robustness acceptance criteria"
+  ],
+  "v2_pre_result_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_instance_sampling_v2_fault_id_freeze_v1.json",
+    "sha256": "67e4a75c4af819f789a0d78da0d7742d573192a5245f9a3ce428ac921ddb3615"
+  },
+  "v2_pre_result_implementation": {
+    "path": "experiments/phase_04/sensor_fi_sampling_v2.py",
+    "sha256": "51b75d7d51180ade0ff1cb1dc506d1797303564b23cd77ca62da1d311e7b0ae3"
+  },
+  "v2_pre_result_protocol": {
+    "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v2_fault_id.json",
+    "preserved_unchanged": true,
+    "sha256": "6004868ec664981f5feb8fc03d70f7263b41e94be597805fa7dba5f9831a3cdd"
+  },
+  "v2_sanity_artifact_manifest": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_instance_sampling_v2_fault_id_sanity/artifact_manifest.json",
+    "sha256": "02c95f5d21e56aba890763301a016526484c9f3c28586cddded14543f2ee1d83"
+  },
+  "v2_sanity_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_instance_sampling_v2_fault_id_sanity/instance_sampling_v2_sanity_result.json",
+    "sha256": "5159dc3c06865824401a2dc63fb5218d7712155921b870c2a023368d33ab28e6",
+    "status": "PASS"
+  }
+}

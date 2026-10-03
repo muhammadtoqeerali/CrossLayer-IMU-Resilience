@@ -1,0 +1,42 @@
+{
+  "aggregation_v1": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json",
+    "config_sha256": "ef95356b8e32d8f63bb41c967f35fcdfc24338e7d8ee59af40aa99c3424b0628",
+    "implementation_path": "experiments/phase_04/sensor_fi_aggregation.py",
+    "implementation_sha256": "eaad98b0bca6809bfde3e61774b6a48e2debda109e950ebf15c41921b08064a1",
+    "qualification_path": "manifests/phase_4h_sensor_fi_evaluation_aggregation_qualification_v1.json",
+    "qualification_sha256": "ff4a61015e471084b9a76504854ab6f7948a4faf79034be774c530c9e3c2ba57",
+    "qualification_status": "QUALIFIED_SYNTHETIC_HIERARCHY"
+  },
+  "date": "2026-10-02",
+  "fault_execution_used": false,
+  "model_predictions_used": false,
+  "onfield_used": false,
+  "outer_test_used": false,
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "reason": "Sampling v3 changes only the minimum eligible onset for frame loss. The already-qualified aggregation mathematics operates on resulting subject/family/severity metrics and does not depend on whether a frame-loss instance began at sample 0 or sample 1.",
+  "sampling_v3": {
+    "config_path": "configs/faults/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss.json",
+    "config_sha256": "543b648a09091225cfc80eaac5cd03d835a1727118f7730d00697150db205518",
+    "implementation_path": "experiments/phase_04/sensor_fi_sampling_v3.py",
+    "implementation_sha256": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74",
+    "qualification_path": "manifests/phase_4h_sensor_fi_instance_sampling_v3_qualification_v1.json",
+    "qualification_sha256": "18701172ab25147e4dfb54059a9f5e07b0b3d8f89f13025ffb4aaf282e78df7f",
+    "qualification_status": "QUALIFIED_METADATA_REPLAY_CAUSAL_FRAME_LOSS"
+  },
+  "schema_version": "phase4h_sensor_fi_evaluation_aggregation_sampling_v3_rebind_v1",
+  "scientific_change": {
+    "OnField_policy_changed": false,
+    "aggregation_math_changed": false,
+    "bootstrap_changed": false,
+    "fold_handling_changed": false,
+    "metric_definitions_changed": false,
+    "only_lineage_binding_changed": true,
+    "primary_inferential_unit_changed": false,
+    "seed_weighting_changed": false,
+    "variant_weighting_changed": false
+  },
+  "status": "QUALIFIED_UNCHANGED_AGGREGATION_REBOUND_TO_SAMPLING_V3",
+  "validation_used": false
+}

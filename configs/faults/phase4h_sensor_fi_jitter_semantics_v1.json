@@ -1,0 +1,135 @@
+{
+  "authoritative_parents": {
+    "input_contract": {
+      "path": "configs/faults/phase4h_sensor_fi_input_contract_v1.json",
+      "sha256": "fb7f18ed6d10fc449c32d8e8d458753daaeaa8048ab6faba388566a53cacfe3f"
+    },
+    "sampling_v3": {
+      "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss.json",
+      "qualification_path": "manifests/phase_4h_sensor_fi_instance_sampling_v3_qualification_v1.json",
+      "qualification_sha256": "18701172ab25147e4dfb54059a9f5e07b0b3d8f89f13025ffb4aaf282e78df7f",
+      "sha256": "543b648a09091225cfc80eaac5cd03d835a1727118f7730d00697150db205518"
+    },
+    "severity_protocol": {
+      "path": "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+      "sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009"
+    }
+  },
+  "date": "2026-10-02",
+  "downstream_processing": {
+    "IMUNormalizer_unchanged": true,
+    "historical_filtering_unchanged": true,
+    "historical_windowing_unchanged": true,
+    "low_pass_filter_hz": 5,
+    "stride_samples": 15,
+    "window_samples": 30
+  },
+  "evidence_tier": "P0",
+  "fault_family": "jitter",
+  "governance": {
+    "OnField_used": false,
+    "aggregation_changed": false,
+    "outer_test_used": false,
+    "physical_realism_claim": false,
+    "reporting_changed": false,
+    "sampling_v3_changed": false,
+    "selected_before_model_predictions": true,
+    "selected_before_sensor_fault_model_results": true,
+    "severity_values_changed": false,
+    "validation_used": false
+  },
+  "input": {
+    "Euler_channels_mutated": false,
+    "FrameCounter_mutated": false,
+    "channel_order": [
+      "AccX",
+      "AccY",
+      "AccZ",
+      "GyrX",
+      "GyrY",
+      "GyrZ",
+      "EulerX",
+      "EulerY",
+      "EulerZ"
+    ],
+    "effective_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "layer": "source_faithful_oriented_trial_before_filtering_windowing",
+    "measurement_matrix_shape": "N_x_9",
+    "source_timestamp_column_required": false
+  },
+  "interpretation": {
+    "claim": "P0 software timing-jitter stress implemented as bounded deterministic signal time-warp",
+    "not_a_claim_of": [
+      "physical IMU clock-jitter realism",
+      "transport-layer packet-jitter realism",
+      "hardware timestamp behavior",
+      "HIL timing behavior",
+      "MCU timing behavior"
+    ]
+  },
+  "motivation": {
+    "consequence": "Mutating a timestamp field alone would not alter the historical model input. Jitter must therefore be defined as a P0 software time-warp of the six effective signal channels before the unchanged historical filtering and windowing pipeline.",
+    "historical_preprocessing_uses_source_timestamps_for_windowing": false,
+    "historical_preprocessing_window_basis": "row_order_at_nominal_100Hz"
+  },
+  "next_action_after_qualification": "Implement and unit-qualify the complete frozen sensor-fault operator engine for all 12 families without model inference.",
+  "nominal_time_grid": {
+    "definition": "t_i = i * 10 ms",
+    "period_ms": 10.0,
+    "row_count_preserved": true,
+    "row_order_preserved": true,
+    "sampling_rate_hz": 100
+  },
+  "ordering_guarantee": {
+    "duplicate_query_times_allowed": false,
+    "half_nominal_period_ms": 5.0,
+    "maximum_frozen_J_ms": 4.0,
+    "minimum_unclipped_neighbor_spacing_ms": 2.0,
+    "sample_reordering_allowed": false,
+    "strict_condition": "J < nominal_period/2"
+  },
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "random_displacement": {
+    "J_from_frozen_severity_level_ms": {
+      "L1": 1.0,
+      "L2": 2.0,
+      "L3": 4.0
+    },
+    "distribution": "Uniform(-J,+J)",
+    "new_random_seed_namespace": false,
+    "one_draw_per_frame": true,
+    "same_draw_shared_across_all_six_effective_channels": true,
+    "seed": "fault_instance_seed_from_sampling_v3"
+  },
+  "schema_version": "phase4h_sensor_fi_jitter_semantics_v1",
+  "software_time_warp": {
+    "boundary_rule": "clip query time to [0,t_last], equivalent to endpoint hold outside available source support",
+    "interpolation_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "non_interpolated_channels": [
+      6,
+      7,
+      8
+    ],
+    "output_definition": "y_i,c = linear_interp(q_i, t, x_c) for effective channels c=0..5",
+    "query_time_definition": "q_i = clip(t_i + epsilon_i, 0, t_last)",
+    "signal_model": "piecewise-linear interpolation of each original effective source channel over the nominal grid",
+    "timestamp_column_emitted": false,
+    "timestamp_column_mutated": false
+  },
+  "status": "FROZEN_PRE_SANITY_RESULT"
+}

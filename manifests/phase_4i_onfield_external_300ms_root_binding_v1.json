@@ -1,0 +1,59 @@
+{
+  "binding_config": {
+    "path": "configs/datasets/phase4i_onfield_external_300ms_root_binding_v1.json",
+    "sha256": "0cf01d32571e72caa8ec2c0cec99fbc05d5ca7ce5aa34c2425b168759731e608"
+  },
+  "canonical_root_inventory": {
+    "retained_label_counts": {
+      "Activity": 1023337
+    },
+    "retained_storage_ids": [
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "retained_subject_count": 10,
+    "retained_trial_count": 16,
+    "retained_window_count": 1023337
+  },
+  "date": "2026-10-03",
+  "namespace_resolution": {
+    "canonical_root_selected": true,
+    "evaluation_will_use_alias_mapping": false,
+    "workstation_aliases": {
+      "1109": {
+        "byte_identical": true,
+        "canonical_storage_id": "1009",
+        "recursive_file_manifest_sha256": "460c5f2df8e6897290dfcf8dc3f055b0e909961e5e525eaf83712b91ca291380"
+      },
+      "1110": {
+        "byte_identical": true,
+        "canonical_storage_id": "1010",
+        "recursive_file_manifest_sha256": "4db681ec0442c70c8315aa47aca97617db8d7ec19ef81b0aaf0b3afb17a0112e"
+      }
+    },
+    "workstation_tree_renamed_or_modified": false
+  },
+  "phase": "4I",
+  "phase3_role_lineage": {
+    "configs/datasets/onfield_role_candidate_v1.json": "aab93ab334b07b3c969f0ef825b7b2ffb3002c004ae8bf28bb38fed8902a286d",
+    "docs/PHASE_3I_ONFIELD_EXTERNAL_VALIDATION.md": "3b75b95d04f2eb01ad083bc5087a62de5f9a33fd27588f7aeacf2bee3c08d0f5",
+    "manifests/phase_3i_onfield_external_role_v1.json": "93ee0500c07cf8d1d6da9dce162b0a645f3476bb80a280cd4bf360c6b2919b15"
+  },
+  "schema_version": "phase4i_onfield_external_300ms_root_binding_v1_manifest",
+  "scientific_boundary": {
+    "OnField_used_for_tuning": false,
+    "data_modified": false,
+    "model_outputs_read": false,
+    "performance_metrics_read": false,
+    "scientific_rule_changed": false
+  },
+  "status": "QUALIFIED_CANONICAL_ROOT_BINDING_PRE_EXTERNAL_EVALUATION"
+}

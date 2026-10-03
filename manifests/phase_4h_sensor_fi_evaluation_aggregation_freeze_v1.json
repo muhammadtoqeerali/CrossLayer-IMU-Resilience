@@ -1,0 +1,40 @@
+{
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json",
+    "sha256": "ef95356b8e32d8f63bb41c967f35fcdfc24338e7d8ee59af40aa99c3424b0628"
+  },
+  "date": "2026-10-02",
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_aggregation.py",
+    "sha256": "eaad98b0bca6809bfde3e61774b6a48e2debda109e950ebf15c41921b08064a1"
+  },
+  "model_predictions_seen": false,
+  "onfield_outcomes_seen": false,
+  "only_remaining_preexecution_freeze": "robustness acceptance criteria",
+  "outer_test_outcomes_seen": false,
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "prerequisites": {
+    "input_contract": {
+      "path": "configs/faults/phase4h_sensor_fi_input_contract_v1.json",
+      "sha256": "fb7f18ed6d10fc449c32d8e8d458753daaeaa8048ab6faba388566a53cacfe3f"
+    },
+    "sampling_v2": {
+      "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v2_fault_id.json",
+      "sha256": "6004868ec664981f5feb8fc03d70f7263b41e94be597805fa7dba5f9831a3cdd"
+    },
+    "sampling_v2_qualification": {
+      "path": "manifests/phase_4h_sensor_fi_instance_sampling_v2_qualification_v1.json",
+      "sha256": "ffb6f825d87c79da681cf3d088e146cd52b965b762c7eaaf7c9720a80404b4f9"
+    },
+    "severity_protocol": {
+      "path": "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+      "sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009"
+    }
+  },
+  "prospective_before_sensor_fault_model_results": true,
+  "schema_version": "phase4h_sensor_fi_evaluation_aggregation_freeze_v1",
+  "sensor_fault_results_seen": false,
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "validation_outcomes_seen": false
+}

@@ -1,0 +1,365 @@
+{
+  "acceptance": {
+    "all_15_pass": true,
+    "numerical_pass_count": 15,
+    "overall_fail_count": 0,
+    "overall_pass_count": 15,
+    "serialization_pass_count": 15,
+    "structural_pass_count": 15
+  },
+  "aggregate_descriptive_metrics": {
+    "argmax_agreement": {
+      "max": 1.0,
+      "mean": 0.9994303385416666,
+      "min": 0.998291015625
+    },
+    "falling_p99_non_gating": {
+      "max": 0.16742312908172607,
+      "mean": 0.09559480895598729,
+      "min": 0.05399579554796219
+    },
+    "mean_absolute_probability_error": {
+      "max": 0.002004042034968734,
+      "mean": 0.0011549994116649032,
+      "min": 0.0008188242209143937
+    },
+    "p99_absolute_probability_error": {
+      "limit": 0.05,
+      "max": 0.04277973994612694,
+      "mean": 0.026808109134435654,
+      "min": 0.017051076516509056
+    }
+  },
+  "best_p99_member": {
+    "fold": 2,
+    "p99": 0.017051076516509056,
+    "seed": 123
+  },
+  "candidate": "torch_fx_x86_fc1_fp32_v7",
+  "claim_boundary": {
+    "falling_class_p99_is_non_gating": true,
+    "not_supported": [
+      "fully INT8 execution",
+      "MCU execution",
+      "MCU latency",
+      "MCU energy",
+      "outer-test predictive performance",
+      "OnField performance",
+      "sensor-fault robustness",
+      "compute-fault robustness",
+      "combined-fault robustness"
+    ],
+    "note": "Per-class diagnostics remain descriptive only. The frozen numerical acceptance gates are defined over the complete fold calibration population.",
+    "supported": [
+      "On the frozen 4096-window training-only calibration identities for each fold, all 15 frozen v7 checkpoints passed the predeclared structural, numerical-fidelity, and serialization gates.",
+      "The v7 artifact is mixed-precision static PTQ with conv_2.0 as the sole quantized weighted operator under this protocol."
+    ]
+  },
+  "fully_int8_claim": false,
+  "implementation": {
+    "path": "experiments/phase_04/ptq_v7_fc1_fp32.py",
+    "sha256": "38e34f3fa179c5b144d6db30494b2c1ace444156451685ddaa92268d635f14eb"
+  },
+  "mcu_execution_claim": false,
+  "members": [
+    {
+      "activity_p99_non_gating": 0.03230660781264305,
+      "argmax_agreement_fraction": 0.998291015625,
+      "checkpoint_sha256": "a7ddddf583289df7faf44f8323b6eaf03b8ad8fe57d9abc062826c7a7f1be20f",
+      "falling_p99_non_gating": 0.16742312908172607,
+      "fold": 1,
+      "max_absolute_probability_error": 0.239912211894989,
+      "mean_absolute_probability_error": 0.002004042034968734,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.04277973994612694,
+      "seed": 42,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.017256053164601326,
+      "argmax_agreement_fraction": 0.999755859375,
+      "checkpoint_sha256": "9d2e4c66596fb85e8586d63402f49746acdd3854c7e0b0096f33c08eb7b1b151",
+      "falling_p99_non_gating": 0.09563682228326797,
+      "fold": 2,
+      "max_absolute_probability_error": 0.13792955875396729,
+      "mean_absolute_probability_error": 0.001020742580294609,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.022603144869208336,
+      "seed": 42,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.026534592732787132,
+      "argmax_agreement_fraction": 1.0,
+      "checkpoint_sha256": "a6fea1f9bc0ff88ef413bdd689eae20930255050c0d36c89a09574390264698c",
+      "falling_p99_non_gating": 0.08158255368471146,
+      "fold": 3,
+      "max_absolute_probability_error": 0.14153122901916504,
+      "mean_absolute_probability_error": 0.0011721018236130476,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.030967485159635544,
+      "seed": 42,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.016161536797881126,
+      "argmax_agreement_fraction": 0.999267578125,
+      "checkpoint_sha256": "c995b861db89beb126a01a9de51139a9b946466ceff1c0b2a6ecfb6cb68ac445",
+      "falling_p99_non_gating": 0.15124234557151794,
+      "fold": 4,
+      "max_absolute_probability_error": 0.1711159646511078,
+      "mean_absolute_probability_error": 0.0011273850686848164,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.027842648327350616,
+      "seed": 42,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.01898154430091381,
+      "argmax_agreement_fraction": 0.999755859375,
+      "checkpoint_sha256": "303b59926d51c9664b9e4d302f3d814c9d5ac5661aa911275faefbcf3799bffe",
+      "falling_p99_non_gating": 0.0964028388261795,
+      "fold": 5,
+      "max_absolute_probability_error": 0.12080419063568115,
+      "mean_absolute_probability_error": 0.00105197518132627,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.028433512896299362,
+      "seed": 42,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.027335528284311295,
+      "argmax_agreement_fraction": 0.998779296875,
+      "checkpoint_sha256": "3fb97001f798d49270a695364dd233f9e15eef6b4c12fac9a76162f99ebc9f2c",
+      "falling_p99_non_gating": 0.10060542821884155,
+      "fold": 1,
+      "max_absolute_probability_error": 0.3295512795448303,
+      "mean_absolute_probability_error": 0.0015892761293798685,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.038337841629981995,
+      "seed": 123,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.01338611077517271,
+      "argmax_agreement_fraction": 0.999755859375,
+      "checkpoint_sha256": "6d85923c266e4066585d0a30026aff78f4002d3ca9e8c434ef74ba06e7116cac",
+      "falling_p99_non_gating": 0.06555891036987305,
+      "fold": 2,
+      "max_absolute_probability_error": 0.1316392421722412,
+      "mean_absolute_probability_error": 0.0008782197837717831,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.017051076516509056,
+      "seed": 123,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.018539423123002052,
+      "argmax_agreement_fraction": 0.99951171875,
+      "checkpoint_sha256": "8446e96a290896d9fbab48f1567d46c7125cfc206f34bad859a30446690c3c00",
+      "falling_p99_non_gating": 0.05462653189897537,
+      "fold": 3,
+      "max_absolute_probability_error": 0.09680366516113281,
+      "mean_absolute_probability_error": 0.0010120931547135115,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.02424624003469944,
+      "seed": 123,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.011814124882221222,
+      "argmax_agreement_fraction": 0.999755859375,
+      "checkpoint_sha256": "4891ad96ac80768432e11abb8c594bacadbcfdba8316d71e797eff901ecf9846",
+      "falling_p99_non_gating": 0.06800281256437302,
+      "fold": 4,
+      "max_absolute_probability_error": 0.17976868152618408,
+      "mean_absolute_probability_error": 0.0008188242209143937,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.018832750618457794,
+      "seed": 123,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.011283583007752895,
+      "argmax_agreement_fraction": 0.999267578125,
+      "checkpoint_sha256": "3e08a1adbf8c615f9ff2b340188086448e2ebc5cdf63700ae3a248c8b7c75c1e",
+      "falling_p99_non_gating": 0.06731013208627701,
+      "fold": 5,
+      "max_absolute_probability_error": 0.22312134504318237,
+      "mean_absolute_probability_error": 0.0008392652962356806,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.019009480252861977,
+      "seed": 123,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.02521342784166336,
+      "argmax_agreement_fraction": 0.999267578125,
+      "checkpoint_sha256": "ecae943c13f4c3b248ad5bb2f158f17367d4d4ca5914e860ca64f3647b3cf428",
+      "falling_p99_non_gating": 0.12640167772769928,
+      "fold": 1,
+      "max_absolute_probability_error": 0.12891075015068054,
+      "mean_absolute_probability_error": 0.0013925021048635244,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.037970516830682755,
+      "seed": 2025,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.020079581066966057,
+      "argmax_agreement_fraction": 1.0,
+      "checkpoint_sha256": "fd6d7dce675af0c802da899280629172ecb06f1005edb3671c3cb26fce97d3a1",
+      "falling_p99_non_gating": 0.09999575465917587,
+      "fold": 2,
+      "max_absolute_probability_error": 0.11739039421081543,
+      "mean_absolute_probability_error": 0.0012789673637598753,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.025994382798671722,
+      "seed": 2025,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.01814272068440914,
+      "argmax_agreement_fraction": 0.99951171875,
+      "checkpoint_sha256": "313a0ef7af40204e70ea836c42fba9e54b1dfcebc2d64bda7bae5d223ed9c999",
+      "falling_p99_non_gating": 0.05399579554796219,
+      "fold": 3,
+      "max_absolute_probability_error": 0.08514559268951416,
+      "mean_absolute_probability_error": 0.0009229712886735797,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.02128390036523342,
+      "seed": 2025,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.01585395820438862,
+      "argmax_agreement_fraction": 0.9990234375,
+      "checkpoint_sha256": "9897dba0c3706c6d7e55cf9af52ff35c71938a60c3193826e84d31ae4439584b",
+      "falling_p99_non_gating": 0.0958925187587738,
+      "fold": 4,
+      "max_absolute_probability_error": 0.20066070556640625,
+      "mean_absolute_probability_error": 0.0010742559097707272,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.024565882980823517,
+      "seed": 2025,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    },
+    {
+      "activity_p99_non_gating": 0.017820941284298897,
+      "argmax_agreement_fraction": 0.99951171875,
+      "checkpoint_sha256": "3c4dcae88f9f74169506c317889c913dcef7f55425b5ed2fa7f4f5a7e9a4574b",
+      "falling_p99_non_gating": 0.10924488306045532,
+      "fold": 5,
+      "max_absolute_probability_error": 0.1256667971611023,
+      "mean_absolute_probability_error": 0.0011423692340031266,
+      "numerical_status": "PASS",
+      "p99_absolute_probability_error": 0.022203033789992332,
+      "seed": 2025,
+      "serialization_status": "PASS",
+      "status": "PASS",
+      "structural_status": "PASS"
+    }
+  ],
+  "next_action": "Retain v7 as the Phase-4G training-calibration-qualified mixed-precision PTQ configuration and proceed to the next prospectively governed Phase-4 work without using outer-test or OnField evidence for tuning.",
+  "phase": "4G",
+  "pre_result_protocol": {
+    "path": "configs/baseline/prospective_300ms_static_ptq_v7_fc1_fp32.json",
+    "preserved_unchanged": true,
+    "sha256": "fce8535e9666db57eaf08b3fae9c0d1d56d60dfc9a91792a1f9647778aa148eb",
+    "status": "FROZEN_PRE_RESULT"
+  },
+  "precision_classification": "MIXED_PRECISION_STATIC_PTQ",
+  "qualification_date": "2026-10-02",
+  "qualification_scope": {
+    "calibration_partition": "training only",
+    "calibration_windows_per_fold": 4096,
+    "checkpoint_count": 15,
+    "fault_data_used": false,
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "onfield_used": false,
+    "outer_test_used": false,
+    "same_fold_calibration_reused_across_three_seeds": true,
+    "seeds": [
+      42,
+      123,
+      2025
+    ],
+    "validation_used": false
+  },
+  "schema_version": "phase4g_static_ptq_v7_all15_training_calibration_qualification_v1",
+  "scientific_boundary": {
+    "candidate_changed_after_observing_results": false,
+    "decision_threshold_changed": false,
+    "fault_data_used": false,
+    "fully_int8_claim": false,
+    "mcu_execution_claim": false,
+    "numerical_gate_changed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "pre_result_protocol_rewritten": false,
+    "quantizer_changed": false,
+    "validation_used": false
+  },
+  "source_execution": {
+    "all15_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1/all15_qualification_manifest.json",
+      "sha256": "811481415964bb2dc964116600a0ab43af407b4cddef76422a0f0d1a85819316"
+    },
+    "artifact_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1/artifact_manifest.json",
+      "sha256": "1a81556c274cc076c86dd5be5d16c4d4fcb0f8328f8a4ebe6d41748f94757274"
+    },
+    "root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1",
+    "summary_csv": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1/all15_qualification_summary.csv",
+      "sha256": "d209cb0568e67f2b4ed0835ebed58609672c7fdff0ca029ff10add79e34ee854"
+    }
+  },
+  "status": "QUALIFIED_TRAINING_CALIBRATION",
+  "unchanged_numerical_gates": {
+    "all_outputs_finite": true,
+    "argmax_agreement_fraction_min": 0.99,
+    "mean_absolute_probability_error_max": 0.01,
+    "output_shape_exactly_preserved": true,
+    "p99_absolute_probability_error_max": 0.05
+  },
+  "worst_p99_member": {
+    "fold": 1,
+    "p99": 0.04277973994612694,
+    "seed": 42
+  }
+}

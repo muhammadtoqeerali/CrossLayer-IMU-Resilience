@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-02",
+  "downstream_rebinding_required": true,
+  "faults_executed": false,
+  "model_predictions_seen": false,
+  "onfield_outcomes_seen": false,
+  "outer_test_outcomes_seen": false,
+  "parent_v2": {
+    "config_path": "configs/faults/phase4h_sensor_fi_instance_sampling_v2_fault_id.json",
+    "config_sha256": "6004868ec664981f5feb8fc03d70f7263b41e94be597805fa7dba5f9831a3cdd",
+    "implementation_path": "experiments/phase_04/sensor_fi_sampling_v2.py",
+    "implementation_sha256": "51b75d7d51180ade0ff1cb1dc506d1797303564b23cd77ca62da1d311e7b0ae3",
+    "preserved_unchanged": true,
+    "qualification_path": "manifests/phase_4h_sensor_fi_instance_sampling_v2_qualification_v1.json",
+    "qualification_sha256": "ffb6f825d87c79da681cf3d088e146cd52b965b762c7eaaf7c9720a80404b4f9"
+  },
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "prospective_before_fault_execution": true,
+  "prospective_before_model_robustness_results": true,
+  "schema_version": "phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss_freeze_v1",
+  "single_change": {
+    "duration_changed": false,
+    "family": "frame_loss",
+    "fault_family_changed": false,
+    "field": "minimum_eligible_onset_sample",
+    "partition_policy_changed": false,
+    "physical_realism_claim_changed": false,
+    "reason": "The frozen frame-loss reconstruction rule requires causal forward-fill from the last available complete frame. At onset sample 0 no prior complete frame exists, making those instances non-executable without violating the frozen causal rule.",
+    "replicate_count_changed": false,
+    "replicate_strata_count_changed": false,
+    "seed_derivation_changed": false,
+    "seed_namespace_changed": false,
+    "severity_changed": false,
+    "target_policy_changed": false,
+    "v2_value": 0,
+    "v3_value": 1
+  },
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "v3_config": {
+    "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss.json",
+    "sha256": "543b648a09091225cfc80eaac5cd03d835a1727118f7730d00697150db205518"
+  },
+  "v3_implementation": {
+    "path": "experiments/phase_04/sensor_fi_sampling_v3.py",
+    "sha256": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74"
+  },
+  "validation_outcomes_seen": false
+}

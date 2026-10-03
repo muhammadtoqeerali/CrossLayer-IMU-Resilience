@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-02",
+  "families": {
+    "axis_loss": {
+      "coordinate": "number_of_effective_channels_zeroed",
+      "levels": {
+        "L1": {
+          "channel_count": 1,
+          "target_variants": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ]
+          ]
+        },
+        "L2": {
+          "channel_count": 3,
+          "target_variants": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              5
+            ]
+          ]
+        },
+        "L3": {
+          "channel_count": 6,
+          "target_variants": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ]
+        }
+      },
+      "physical_realism_claim": false,
+      "replacement": 0.0
+    },
+    "bias": {
+      "coordinate": "signed_fraction_of_fold_channel_q99_abs",
+      "levels": {
+        "L1": 0.05,
+        "L2": 0.1,
+        "L3": 0.2
+      },
+      "physical_realism_claim": false,
+      "reference": "per-fold per-channel q99(abs(filtered signal))",
+      "reported_units": "mg or mdps",
+      "sign_variants": [
+        -1,
+        1
+      ]
+    },
+    "clipping_saturation": {
+      "coordinate": "symmetric_threshold_fraction_of_fold_channel_q99_abs",
+      "levels": {
+        "L1": 1.0,
+        "L2": 0.75,
+        "L3": 0.5
+      },
+      "operation": "clip to [-threshold,+threshold]",
+      "physical_realism_claim": false,
+      "reference": "per-fold per-channel q99(abs(filtered signal))",
+      "reported_units": "mg or mdps after fold-local materialization",
+      "severity_direction": "lower threshold is higher stress"
+    },
+    "delay": {
+      "coordinate": "causal_sample_delay",
+      "levels": {
+        "L1": 1,
+        "L2": 5,
+        "L3": 10
+      },
+      "milliseconds": {
+        "L1": 10,
+        "L2": 50,
+        "L3": 100
+      },
+      "physical_realism_claim": false,
+      "prefix_rule": "repeat first available sample for the unavailable delayed prefix"
+    },
+    "drift": {
+      "coordinate": "signed_endpoint_excursion_fraction_of_fold_channel_q99_abs",
+      "injection_layer": "source_faithful_oriented_trial_before_filtering_windowing",
+      "levels": {
+        "L1": 0.05,
+        "L2": 0.1,
+        "L3": 0.2
+      },
+      "nominal_fault_duration_ms": 1000,
+      "nominal_fault_duration_samples": 100,
+      "physical_realism_claim": false,
+      "reference": "per-fold per-channel q99(abs(filtered signal))",
+      "reported_units": "mg or mdps endpoint excursion",
+      "sign_variants": [
+        -1,
+        1
+      ],
+      "trajectory": "linear_from_zero_to_endpoint_excursion"
+    },
+    "dropout": {
+      "coordinate": "contiguous_zero_fill_duration_samples",
+      "levels": {
+        "L1": 5,
+        "L2": 15,
+        "L3": 30
+      },
+      "milliseconds": {
+        "L1": 50,
+        "L2": 150,
+        "L3": 300
+      },
+      "physical_realism_claim": false,
+      "replacement": 0.0,
+      "seed_required_for_onset": true
+    },
+    "frame_loss": {
+      "coordinate": "contiguous_complete_frame_loss_count",
+      "levels": {
+        "L1": 1,
+        "L2": 3,
+        "L3": 5
+      },
+      "milliseconds": {
+        "L1": 10,
+        "L2": 30,
+        "L3": 50
+      },
+      "physical_realism_claim": false,
+      "reconstruction_rule": "mark complete frames lost, then causally forward-fill from the last available complete frame before downstream filtering/windowing",
+      "seed_required_for_onset": true
+    },
+    "jitter": {
+      "coordinate": "maximum_absolute_timestamp_displacement_ms",
+      "distribution": "independent_uniform_bounded",
+      "levels": {
+        "L1": 1.0,
+        "L2": 2.0,
+        "L3": 4.0
+      },
+      "ordering_constraint": "maximum displacement must remain below half the 10 ms nominal sample period",
+      "physical_realism_claim": false,
+      "sample_period_ms": 10.0,
+      "seed_required": true
+    },
+    "noise": {
+      "coordinate": "sigma_fraction_of_fold_channel_robust_sigma",
+      "distribution": "zero_mean_gaussian",
+      "levels": {
+        "L1": 0.5,
+        "L2": 1.0,
+        "L3": 2.0
+      },
+      "physical_realism_claim": false,
+      "reference": "per-fold per-channel MAD(abs deviation)*1.4826",
+      "reported_units": "mg or mdps after fold-local materialization",
+      "seed_required": true
+    },
+    "orientation": {
+      "coordinate": "software_axis_rotation_angle_degrees",
+      "euler_channels_used": false,
+      "levels": {
+        "L1": 5.0,
+        "L2": 15.0,
+        "L3": 30.0
+      },
+      "operation": "apply the same proper 3D rotation to the accelerometer and gyroscope triads before filtering/windowing",
+      "physical_realism_claim": false,
+      "rotation_axis_variants": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "scale_factor": {
+      "coordinate": "absolute_gain_delta_from_one",
+      "dimensionless": true,
+      "gain_variants": "1-delta and 1+delta",
+      "levels": {
+        "L1": 0.05,
+        "L2": 0.1,
+        "L3": 0.2
+      },
+      "physical_realism_claim": false
+    },
+    "stuck_channel": {
+      "coordinate": "contiguous_hold_duration_samples",
+      "hold_rule": "hold selected channel at the last value available at fault onset",
+      "levels": {
+        "L1": 5,
+        "L2": 15,
+        "L3": 30
+      },
+      "milliseconds": {
+        "L1": 50,
+        "L2": 150,
+        "L3": 300
+      },
+      "physical_realism_claim": false
+    }
+  },
+  "fold_local_materialization_rule": {
+    "cross_fold_pooling_for_scale_selection": false,
+    "enabled": true,
+    "reason": "a globally pooled data-derived scale would use subjects that are outer-test subjects in other folds",
+    "reference_source": "each outer fold's frozen training-only 4096-window calibration identity set",
+    "same_dimensionless_level_across_folds": true
+  },
+  "next_action": "qualify this frozen severity ladder with the predeclared input-space sanity gates; if all gates pass, preserve the result separately and then freeze the fault-instance sampling/replay protocol before any model robustness run",
+  "not_yet_frozen": [
+    "fault-instance onset sampling policy",
+    "number of stochastic fault instances per parent sequence",
+    "fault-instance seed namespace",
+    "evaluation aggregation protocol",
+    "robustness acceptance criteria"
+  ],
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "protocol_class": "P0_SOFTWARE_STRESS_SEVERITY_LADDER",
+  "sanity_gates": {
+    "all_fold_local_reference_scales_positive": true,
+    "all_materialized_values_finite": true,
+    "axis_loss_channel_counts": [
+      1,
+      3,
+      6
+    ],
+    "clipping_thresholds_strictly_decrease_L1_to_L3": true,
+    "jitter_L3_strictly_less_than_half_sample_period": true,
+    "model_predictions_allowed": false,
+    "onfield_allowed": false,
+    "ordered_levels_monotonic": true,
+    "orientation_rotation_matrices_orthonormal": true,
+    "orientation_rotation_matrix_determinant": 1.0,
+    "outer_test_allowed": false,
+    "scale_factor_all_gains_positive": true,
+    "temporal_levels_fit_shortest_fold_training_calibration_parent_trial": true,
+    "validation_allowed": false
+  },
+  "schema_version": "phase4h_sensor_fi_severity_protocol_v1",
+  "scope_boundaries": {
+    "compute_fault_domain": false,
+    "model_predictions_used_for_design": false,
+    "model_robustness_measured": false,
+    "onfield_outcomes_used": false,
+    "outer_test_outcomes_used": false,
+    "physical_realism_claim": false,
+    "severity_values_may_be_changed_after_model_outcomes": false,
+    "validation_outcomes_used": false
+  },
+  "severity_levels": {
+    "interpretation": {
+      "L1": "lower software stress",
+      "L2": "intermediate software stress",
+      "L3": "higher software stress"
+    },
+    "ordered": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "warning": "L1/L2/L3 are ordinal software-corruption levels. They are not calibrated probabilities of real sensor failure and are not physical-realism categories."
+  },
+  "status": "FROZEN_PRE_SANITY_RESULT"
+}

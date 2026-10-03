@@ -1,0 +1,84 @@
+{
+  "acceptance": {
+    "all_gates_pass": true,
+    "gate_count": 21,
+    "gates": {
+      "all_shard_ids_unique": true,
+      "all_shards_include_both_model_variants": true,
+      "all_shards_include_three_operating_points": true,
+      "all_shards_include_three_seeds": true,
+      "dataset_strata_29_32": true,
+      "each_subject_exactly_13_blocks": true,
+      "each_subject_exactly_one_fold": true,
+      "exact_61_subjects": true,
+      "exact_793_shards": true,
+      "model_window_evaluation_total_exact": true,
+      "no_operating_point_selection": true,
+      "no_outer_retuning": true,
+      "no_raw_probability_persistence_required": true,
+      "outer_inventory_exact": true,
+      "resume_hash_guarded": true,
+      "runner_v2_still_qualified": true,
+      "sequence_family_total_138": true,
+      "static_plan_no_model_or_fault_execution": true,
+      "subject_condition_row_total_exact": true,
+      "unique_fault_instance_total_exact": true,
+      "window_family_total_153": true
+    },
+    "passed_gate_count": 21
+  },
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_execution_v1.json",
+    "preserved_unchanged": true,
+    "sha256": "fa3c30387c012f9a2c15912b873df3256c55f22f49dc28b590dd23b1565c38ee"
+  },
+  "date": "2026-10-02",
+  "evidence_tier": "P0",
+  "execution_matrix": {
+    "all_predeclared_variants": true,
+    "all_stochastic_replicates": true,
+    "checkpoint_seeds": 3,
+    "fault_families": 12,
+    "model_variants": 2,
+    "operating_points": 3,
+    "severity_levels": 3
+  },
+  "frozen_workload": {
+    "immutable_shards": 793,
+    "model_window_evaluations": 479750160,
+    "outer_subject_count": 61,
+    "outer_trial_count": 6309,
+    "outer_window_count": 273830,
+    "subject_condition_rows_expected": 320616,
+    "unique_fault_instances": 42766632
+  },
+  "next_action": "Implement and freeze the shard executor against this exact qualified plan. First run metadata/interface dry checks only. After executor qualification, execute the immutable 793-shard outer matrix without changing any scientific parameter.",
+  "phase": "4H",
+  "planner": {
+    "path": "experiments/phase_04/sensor_fi_outer_execution_plan.py",
+    "preserved_unchanged": true,
+    "sha256": "7107bdf6804d4bba472f9896fa20df0d49503812e43cc52cdf3548a2eb7203c8"
+  },
+  "pre_execution_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_outer_execution_freeze_v1.json",
+    "sha256": "9281ebe259aff5f71109434ecf85915323c88afb37ff24320e73f9a9cf564c99"
+  },
+  "schema_version": "phase4h_sensor_fi_outer_execution_plan_qualification_v1",
+  "scientific_boundary": {
+    "OnField_used": false,
+    "fault_injection_executed": false,
+    "metadata_or_labels_only": true,
+    "model_loaded": false,
+    "model_predictions_computed": false,
+    "outer_fault_outcomes_seen": false,
+    "outer_model_outcomes_seen": false,
+    "physical_realism_claim": false,
+    "validation_used_for_new_selection": false
+  },
+  "shard_plan": {
+    "path": "manifests/phase_4h_sensor_fi_outer_execution_shards_v1.json",
+    "sha256": "836bd94054702d462e1450ca3cb145f21b435942d5b4dce766a5dabd50095ba1",
+    "shard_count": 793
+  },
+  "status": "QUALIFIED_PRE_OUTER_EXECUTION_PLAN"
+}

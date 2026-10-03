@@ -1,0 +1,15 @@
+{
+  "classification": "TECHNICAL_MISSING_VALUE_REPRESENTATION_FAILURE_NOT_SCIENTIFIC_RESULT",
+  "failed_run_final_output_created": false,
+  "failed_run_partial_artifact": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_subject_aggregation_v1.tmp/execution_interpretability.json",
+    "sha256": "2f766450476e99dbed63963f8041ada0c33a264f7527019e6a04961539653101"
+  },
+  "failed_runner": "experiments/phase_04/sensor_fi_outer_subject_aggregation_v1.py",
+  "performance_values_printed_or_interpreted": false,
+  "repair": "None to NaN at helper boundary only",
+  "repaired_runner": "experiments/phase_04/sensor_fi_outer_subject_aggregation_v1r1.py",
+  "root_cause": "immutable executor JSON null becomes Python None; qualified aggregation helper calls float(value)",
+  "schema_version": "phase4h_sensor_fi_outer_subject_aggregation_v1r1_technical_repair",
+  "scientific_protocol_changed": false
+}

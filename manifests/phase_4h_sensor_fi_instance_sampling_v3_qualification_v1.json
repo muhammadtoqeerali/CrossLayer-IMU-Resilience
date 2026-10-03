@@ -1,0 +1,94 @@
+{
+  "acceptance": {
+    "all_folds_pass": true,
+    "bounds_failure_count": 0,
+    "contract_failure_count": 0,
+    "fail_count": 0,
+    "fold_count": 5,
+    "frame_loss_fault_id_mismatch_count": 0,
+    "frame_loss_seed_mismatch_count": 0,
+    "non_frame_loss_sampling_mismatch_count": 0,
+    "pass_count": 5,
+    "v2_frame_loss_onset0_observed": 142,
+    "v3_frame_loss_onset0_observed": 0
+  },
+  "artifact_manifest": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss_sanity/artifact_manifest.json",
+    "sha256": "36b8d503cca082a33c96a0ea2e3d463410313dc29b6982f521a0eff77f4c45ea"
+  },
+  "downstream_governance_status": "REBIND_REQUIRED",
+  "evidence_tier": "P0",
+  "next_action": "Rebind the unchanged aggregation and reporting rules to qualified sampling v3, then freeze jitter operator semantics before implementing the full sensor fault operator engine.",
+  "parent_v2": {
+    "config_path": "configs/faults/phase4h_sensor_fi_instance_sampling_v2_fault_id.json",
+    "config_sha256": "6004868ec664981f5feb8fc03d70f7263b41e94be597805fa7dba5f9831a3cdd",
+    "implementation_path": "experiments/phase_04/sensor_fi_sampling_v2.py",
+    "implementation_sha256": "51b75d7d51180ade0ff1cb1dc506d1797303564b23cd77ca62da1d311e7b0ae3",
+    "preserved_unchanged": true,
+    "qualification_path": "manifests/phase_4h_sensor_fi_instance_sampling_v2_qualification_v1.json",
+    "qualification_sha256": "ffb6f825d87c79da681cf3d088e146cd52b965b762c7eaaf7c9720a80404b4f9"
+  },
+  "phase": "4H",
+  "qualification_date": "2026-10-02",
+  "qualified_claims": [
+    "Every v3 frame-loss instance has at least one prior complete frame available for the frozen causal forward-fill rule.",
+    "All non-frame-loss sequence instances are unchanged from qualified sampling v2.",
+    "Frame-loss severity, target channels, replicate counts, seed namespace, and seed values are unchanged from v2."
+  ],
+  "remaining_items_before_fault_operator_implementation": [
+    "rebind unchanged aggregation/reporting governance lineage from sampling v2 to qualified sampling v3",
+    "freeze executable jitter semantics for the historical row-based 100 Hz preprocessing path"
+  ],
+  "sanity_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss_sanity/instance_sampling_v3_sanity_result.json",
+    "sha256": "8883cc0b46b25798d185cd9f00e81a24c1212dd550f809473f704580866fcb26",
+    "status": "PASS"
+  },
+  "schema_version": "phase4h_sensor_fi_instance_sampling_v3_qualification_v1",
+  "scientific_boundary": {
+    "fault_injection_executed": false,
+    "metadata_only": true,
+    "model_loaded": false,
+    "model_predictions_computed": false,
+    "non_frame_loss_sampling_changed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "physical_realism_claim": false,
+    "seed_derivation_changed": false,
+    "sensor_values_mutated": false,
+    "severity_changed": false,
+    "v2_rewritten": false,
+    "validation_used": false
+  },
+  "single_change_from_v2": {
+    "duration_changed": false,
+    "family": "frame_loss",
+    "fault_family_changed": false,
+    "field": "minimum_eligible_onset_sample",
+    "partition_policy_changed": false,
+    "physical_realism_claim_changed": false,
+    "reason": "The frozen frame-loss reconstruction rule requires causal forward-fill from the last available complete frame. At onset sample 0 no prior complete frame exists, making those instances non-executable without violating the frozen causal rule.",
+    "replicate_count_changed": false,
+    "replicate_strata_count_changed": false,
+    "seed_derivation_changed": false,
+    "seed_namespace_changed": false,
+    "severity_changed": false,
+    "target_policy_changed": false,
+    "v2_value": 0,
+    "v3_value": 1
+  },
+  "status": "QUALIFIED_METADATA_REPLAY_CAUSAL_FRAME_LOSS",
+  "v3_pre_result_config": {
+    "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss.json",
+    "preserved_unchanged": true,
+    "sha256": "543b648a09091225cfc80eaac5cd03d835a1727118f7730d00697150db205518"
+  },
+  "v3_pre_result_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_instance_sampling_v3_causal_frame_loss_freeze_v1.json",
+    "sha256": "1fdb73af43dd8a05dd0ce3a8d8737eb41a0270a808fb639db9d4c43e1d6b02ed"
+  },
+  "v3_pre_result_implementation": {
+    "path": "experiments/phase_04/sensor_fi_sampling_v3.py",
+    "sha256": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74"
+  }
+}

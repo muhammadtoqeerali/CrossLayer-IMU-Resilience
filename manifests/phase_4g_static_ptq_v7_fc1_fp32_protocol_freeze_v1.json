@@ -1,0 +1,73 @@
+{
+  "frozen_date": "2026-10-02",
+  "implementation": {
+    "parent_v6_path": "experiments/phase_04/ptq_v6_postconv2_floattail.py",
+    "parent_v6_sha256": "ea3de29c92ca07143c301e357e85ef55f401441aa4cdd2024d5d8baa2d870ca9",
+    "path": "experiments/phase_04/ptq_v7_fc1_fp32.py",
+    "sha256": "38e34f3fa179c5b144d6db30494b2c1ace444156451685ddaa92268d635f14eb"
+  },
+  "next_action": "seed42/fold1 v7 training-calibration pilot",
+  "phase": "4G",
+  "pre_result_state": {
+    "fault_data_used": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "real_v7_calibration_fidelity_observed": false,
+    "real_v7_task_output_observed": false,
+    "validation_used": false
+  },
+  "preserved_v6_failure": {
+    "numerical_status": "FAIL",
+    "p99_limit": 0.05,
+    "p99_observed": 0.08229073882102966,
+    "pilot_status": "FAIL",
+    "serialization_status": "PASS",
+    "structural_status": "PASS"
+  },
+  "protocol": {
+    "path": "configs/baseline/prospective_300ms_static_ptq_v7_fc1_fp32.json",
+    "sha256": "fce8535e9666db57eaf08b3fae9c0d1d56d60dfc9a91792a1f9647778aa148eb"
+  },
+  "root_cause_evidence": {
+    "before_fc1_quant_p99": 0.0256047323346138,
+    "classification": "FC1_INPUT_ACTIVATION_QUANTIZATION_PUSHES_P99_OVER_GATE",
+    "fc1_input_qdq_p99": 0.08157571405172348,
+    "fc1_input_quantization_increment": 0.05597098171710968,
+    "fc1_quantized_linear_increment": 0.005902230739593506,
+    "fc_region_diagnosis_sha256": "15a9dc19868758011c5103e9472b4f02712c00d81032c759d31d0e768ebb0958",
+    "post_fc2_requantization_increment": -0.005187205970287323
+  },
+  "schema_version": "phase4g_static_ptq_v7_fc1_fp32_protocol_freeze_v1",
+  "status": "FROZEN_PRE_RESULT",
+  "unchanged_numerical_gates": {
+    "all_outputs_finite": true,
+    "argmax_agreement_fraction_min": 0.99,
+    "mean_absolute_probability_error_max": 0.01,
+    "output_shape_exactly_preserved": true,
+    "p99_absolute_probability_error_max": 0.05
+  },
+  "v7_design_evidence": {
+    "fc1_bias_exact": true,
+    "fc1_to_fc2_direct": true,
+    "fc1_weight_exact": true,
+    "flatten_to_fc1_direct": true,
+    "float_linear": [
+      "fc.1",
+      "fc.4"
+    ],
+    "probe_sha256": "00359cd805dc7bb1038995d426d1d9956190664d258bbfe8ce13525b4df94b90",
+    "quantize_immediately_after_fc2": true,
+    "quantized_conv": [
+      "conv_2.0"
+    ],
+    "quantized_linear": [],
+    "real_dataset_samples_used": false,
+    "structural_probe_pass": true
+  },
+  "v7_single_change": {
+    "all_other_v6_precision_rules_unchanged": true,
+    "preserved_next_quantization_boundary": "after fc.2 / before fc.3",
+    "v6_fc1_entry": "quantize after fc.0 / before quantized fc.1",
+    "v7_fc1_entry": "fc.0 -> fc.1 -> fc.2 remain FP32"
+  }
+}

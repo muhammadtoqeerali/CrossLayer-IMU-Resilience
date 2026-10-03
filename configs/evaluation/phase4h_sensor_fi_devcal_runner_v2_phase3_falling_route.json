@@ -1,0 +1,107 @@
+{
+  "data": {
+    "dataset_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary",
+    "kfall_source_root": "/home/shared/data/protechto/KFall_oriented/sensors_data",
+    "severity_audit": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_severity_semantics_audit_v1/severity_semantics_feasibility_audit.json",
+    "severity_audit_sha256": "06a237399ca5c6d2c1cb78fbd0f4477b06a0dac7611c6183ef157591f45d2f22",
+    "severity_protocol": "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+    "severity_protocol_sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009",
+    "univr_source_root": "/home/shared/data/protechto/UniVrFall_oriented/sensors_data"
+  },
+  "date": "2026-10-02",
+  "evidence_tier": "P0",
+  "models": {
+    "fp32_freeze": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+    "fp32_freeze_sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd",
+    "paired_seed_fold_required": true,
+    "ptq_all15_manifest": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1/all15_qualification_manifest.json",
+    "ptq_all15_manifest_sha256": "811481415964bb2dc964116600a0ab43af407b4cddef76422a0f0d1a85819316",
+    "same_corrupted_tensor_required": true
+  },
+  "next_after_qualification": "Freeze the exact final outer-test execution manifest and shard plan using runner v2. Do not alter scientific parameters.",
+  "phase": "4H",
+  "phase3_route": {
+    "historical_exception_event_id": "KFALL_106_T27_R05",
+    "historical_exception_route": "whole_trial_fallback",
+    "manifest_path": "manifests/phase_3n_final_protocol_freeze_v3.json",
+    "manifest_sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39",
+    "piecewise_exact_event_count": 2918,
+    "unresolved_route_count": 0
+  },
+  "qualification": {
+    "calibration_identity_path": "configs/datasets/int8_calibration_identity_v1.json",
+    "calibration_identity_sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e",
+    "exhaustive_clean_route_reconstruction": true,
+    "expected_dataset_parent_counts": {
+      "KFALL": 1813,
+      "UNIVR": 456
+    },
+    "expected_unique_falling_parent_count": 2269,
+    "fault_level": "L1",
+    "model_fault_smoke": true,
+    "model_seed": 42,
+    "partition": "training_calibration",
+    "performance_acceptance_gate": false,
+    "probability_delta_gate": false,
+    "sequence_families": [
+      "drift",
+      "stuck_channel",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "smoke_parent_selection": "For each fold/family, scan lexicographically sorted training-calibration Falling parents and choose the first parent whose frozen L1 instance produces a nonzero change in at least one retained reconstructed effective-channel window. Selection is geometry-only and occurs before model forward; no probability or performance value participates.",
+    "threshold_selection": false,
+    "thresholds_applied": false
+  },
+  "risk_index": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/risk_data_generated/FALL_EVENT_INDEX_COMBINED_LABELED.csv",
+    "required_fields": [
+      "dataset_id",
+      "source_subject_id",
+      "task_id",
+      "trial_id",
+      "fall_start_frame",
+      "fall_start_position"
+    ],
+    "sha256": "b93ee2931fb3d54333bfd38308a130a60ff7240b9e6e5ace0805baca30c23401"
+  },
+  "runner_v1_preservation": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_devcal_runner_v1.json",
+    "config_sha256": "a3ff7a37f991078aaa31e5023edf30101048cfd55171c40dc56497605aa7a090",
+    "qualification_path": "manifests/phase_4h_sensor_fi_devcal_runner_qualification_v1.json",
+    "qualification_sha256": "f803f5749d5d607142be83167e1f9ee6c8dadb2a7ba110a332569396499c2cf1",
+    "runner_path": "experiments/phase_04/sensor_fi_devcal_runner.py",
+    "runner_sha256": "bee7b43423723d5ccdbf237d6dbcf70633d9db489d2aca35d1aca26c5100d398",
+    "v1_qualification_remains_valid_for_exercised_activity_only_sequence_path": true,
+    "v1_rewritten": false
+  },
+  "schema_version": "phase4h_sensor_fi_devcal_runner_v2_phase3_falling_route",
+  "scientific_boundary": {
+    "onfield_allowed": false,
+    "outer_test_allowed": false,
+    "performance_tuning_allowed": false,
+    "physical_realism_claim": false,
+    "robustness_claim_from_qualification": false,
+    "threshold_tuning_allowed": false,
+    "training_calibration_only": true,
+    "validation_allowed": false
+  },
+  "single_scientific_repair": {
+    "dataset_conventions": {
+      "KFALL": "fall_start_frame == curated zero-based fall_start_position + 1",
+      "UNIVR": "fall_start_frame == curated zero-based fall_start_position"
+    },
+    "frozen_rule": "fall_start_frame + 15 * falling_local_index",
+    "historical_slice_index_rule": "Use annotation frame value directly as Python array index, exactly as in the recovered preprocessing source.",
+    "no_other_scientific_parameter_changed": true,
+    "physical_event_position_separate": true,
+    "scope": "Falling-window source-row origin only",
+    "v1_unexercised_semantic_name": "fall_start_position",
+    "v2_authoritative_semantic_name": "fall_start_frame"
+  },
+  "status": "FROZEN_PRE_QUALIFICATION_RESULT",
+  "supersedes_for_future_sequence_execution": "phase4h_sensor_fi_devcal_runner_v1"
+}

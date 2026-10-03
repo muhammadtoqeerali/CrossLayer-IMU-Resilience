@@ -1,0 +1,33 @@
+{
+  "authorization": "SYNTHETIC_AND_STRUCTURAL_QUALIFICATION_ONLY",
+  "date": "2026-10-03",
+  "executor": {
+    "path": "experiments/phase_04/onfield_external_executor_v1.py",
+    "sha256": "6834c363204c0820c3fb1c83013d942352cea59229a3bd28aab2a9af83ca26f7"
+  },
+  "executor_config": {
+    "path": "configs/evaluation/phase4i_onfield_external_executor_v1.json",
+    "sha256": "afdd94eef070418df2c3499200639f6c0befb1257b96feeba97fda69a9aeeeb8"
+  },
+  "frozen_dependencies": {
+    "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380",
+    "configs/datasets/phase4i_onfield_external_300ms_root_binding_v1.json": "0cf01d32571e72caa8ec2c0cec99fbc05d5ca7ce5aa34c2425b168759731e608",
+    "configs/evaluation/phase4h_sensor_fi_outer_executor_v1.json": "bb73d35e2a8458d490d2e605551eb1cbfae3112fad74cfdea322175de52c1ef9",
+    "configs/evaluation/phase4i_onfield_external_evaluation_protocol_v1.json": "de47fb6106b961f27cd4341ca11287d3522401431457241e05c93cfb1c323c41",
+    "experiments/phase_04/sensor_fi_outer_executor_v1.py": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d",
+    "manifests/phase_4i_onfield_external_evaluation_protocol_v1_freeze.json": "ed5d4d92e218e07a99084016e8d8a310f438b145f0867b24d5ad9d32e9883ff1"
+  },
+  "phase": "4I",
+  "schema_version": "phase4i_onfield_external_executor_v1_freeze",
+  "scientific_boundary": {
+    "checkpoint_selection": false,
+    "fall_side_claims": false,
+    "onfield_model_forward_passes_before_freeze": false,
+    "onfield_performance_values_read_before_freeze": false,
+    "operating_point_selection": false,
+    "probability_level_ensemble": false,
+    "scientific_rule_change": false,
+    "threshold_tuning": false
+  },
+  "status": "FROZEN_PRE_ONFIELD_INFERENCE"
+}

@@ -1,0 +1,27 @@
+{
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_devcal_runner_v2_phase3_falling_route.json",
+    "sha256": "5fd8fd4b67d76dc1f8d8fba203ca96755c80e95b7f9c42050dfb2911b8b662e4"
+  },
+  "date": "2026-10-02",
+  "frozen_before_v2_fault_execution": true,
+  "frozen_before_v2_model_predictions": true,
+  "onfield_used": false,
+  "outer_test_used": false,
+  "phase": "4H",
+  "phase3_route_sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39",
+  "risk_index_sha256": "b93ee2931fb3d54333bfd38308a130a60ff7240b9e6e5ace0805baca30c23401",
+  "runner": {
+    "path": "experiments/phase_04/sensor_fi_devcal_runner_v2.py",
+    "sha256": "541af4663293ae5fbaf5286fc3dea7679d511fdabb50738863880e4712a9b86a"
+  },
+  "schema_version": "phase4h_sensor_fi_devcal_runner_v2_phase3_falling_route_freeze_v1",
+  "single_scientific_repair": "Falling source-window origin bound to frozen Phase-3 fall_start_frame route",
+  "status": "FROZEN_PRE_QUALIFICATION_RESULT",
+  "v1_preserved": {
+    "config_sha256": "a3ff7a37f991078aaa31e5023edf30101048cfd55171c40dc56497605aa7a090",
+    "qualification_sha256": "f803f5749d5d607142be83167e1f9ee6c8dadb2a7ba110a332569396499c2cf1",
+    "runner_sha256": "bee7b43423723d5ccdbf237d6dbcf70633d9db489d2aca35d1aca26c5100d398"
+  },
+  "validation_used": false
+}

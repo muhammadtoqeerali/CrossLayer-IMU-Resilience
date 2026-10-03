@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-03",
+  "input_subject_aggregation": {
+    "artifact_manifest_sha256": "d897f9707d5addcd4245247181a504da171a219ca963dee62dbca66177e3798a",
+    "config_path": "configs/evaluation/phase4h_sensor_fi_outer_subject_aggregation_v1r1.json",
+    "config_sha256": "5688044c2b758449bf48131ad3ef713a888c24dec8c1f110020c0d6cf56d3b0e",
+    "freeze_path": "manifests/phase_4h_sensor_fi_outer_subject_aggregation_v1r1_freeze.json",
+    "freeze_sha256": "ac9734f4df68ffae437be630d9ee125ce0ba83105754a031df49d4504c0a73f0",
+    "qualification_path": "manifests/phase_4h_sensor_fi_outer_subject_aggregation_v1r1_qualification.json",
+    "qualification_sha256": "9b6c9fbb4e8a316021647e87d9f66e5db41e2020aac8245920be54cfbbf27553",
+    "runner_path": "experiments/phase_04/sensor_fi_outer_subject_aggregation_v1r1.py",
+    "runner_sha256": "f2a9e7276cf86220886e8a1e9bdb26a12cabad764e8cbe932e5585fce3f74f91",
+    "success_sha256": "5ad570e1186387f6819fec98c5738bf897a149e40557545455af317aca4434d6"
+  },
+  "phase": "4H",
+  "predeclared_reporting_scope": {
+    "checkpoint_seed_specific": "descriptive_subject_macro_and_coverage",
+    "family_severity_macro": "inferential_10000_subject_bootstrap",
+    "global_binary_robustness_label": false,
+    "individual_fault_variant": "descriptive_subject_macro_and_coverage",
+    "required_strata": [
+      "overall_61_subject",
+      "UNIVR",
+      "KFALL"
+    ]
+  },
+  "qualified_parents": {
+    "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json": "ef95356b8e32d8f63bb41c967f35fcdfc24338e7d8ee59af40aa99c3424b0628",
+    "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v2_sampling_v3.json": "6ae6c53ed327ea74e23afcad8fb3766070f1d5d79d270e5e049b72a51090e7a4",
+    "experiments/phase_04/sensor_fi_aggregation.py": "eaad98b0bca6809bfde3e61774b6a48e2debda109e950ebf15c41921b08064a1",
+    "experiments/phase_04/sensor_fi_outer_aggregation_adapter_v1.py": "79a5560f644f4248ca912af6384885a37866d541406af5d79bed57def6a8e894",
+    "experiments/phase_04/sensor_fi_reporting_v2.py": "ee3360206fb035a0d038cf31b10d0e12c2311a27ed1b8bf6e2f740a42cf2269e",
+    "manifests/phase_4h_sensor_fi_outer_aggregation_adapter_v1_qualification.json": "51c755353eb14f2a1b9ac02e8f5d4bb971063bb832549c7f60e2998ae7d4bbf8"
+  },
+  "runner": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_outer_reporting_v1.json",
+    "config_sha256": "78005968c97e6b2f66f60e487c593c19ebb8c7ff2f0320989fa98f412a6693cf",
+    "documentation_path": "docs/PHASE_4H_SENSOR_FI_OUTER_REPORTING_V1.md",
+    "documentation_sha256": "ba5aebc73d4df616dc2aafd8555b1a218ce8643f61caa43e040a92b330537a02",
+    "implementation_path": "experiments/phase_04/sensor_fi_outer_reporting_v1.py",
+    "implementation_sha256": "ceeff62795ab0a08928e601569f743c410cafb56824fd9b3d586d49fc064dc2f",
+    "test_path": "tests/test_phase4_sensor_fi_outer_reporting_v1.py",
+    "test_sha256": "69f0dadd882642485eefe777d95f57f6aa1ee2c1868c9398cd479e3edaad0f07"
+  },
+  "schema_version": "phase4h_sensor_fi_outer_reporting_v1_freeze",
+  "scientific_boundary": {
+    "arbitrary_performance_margin_added": false,
+    "outer_result_based_retuning": false,
+    "result_dependent_selection": false,
+    "statistical_rule_changed": false,
+    "subject_metric_values_inspected_to_define_runner": false
+  },
+  "status": "FROZEN_PRE_CROSS_SUBJECT_OUTER_REPORTING"
+}

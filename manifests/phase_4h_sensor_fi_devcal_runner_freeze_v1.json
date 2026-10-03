@@ -1,0 +1,58 @@
+{
+  "authoritative_dependency_hashes": {
+    "aggregation": {
+      "path": "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json",
+      "sha256": "ef95356b8e32d8f63bb41c967f35fcdfc24338e7d8ee59af40aa99c3424b0628"
+    },
+    "input_contract": {
+      "path": "configs/faults/phase4h_sensor_fi_input_contract_v1.json",
+      "sha256": "fb7f18ed6d10fc449c32d8e8d458753daaeaa8048ab6faba388566a53cacfe3f"
+    },
+    "jitter": {
+      "path": "configs/faults/phase4h_sensor_fi_jitter_semantics_v1.json",
+      "qualification_sha256": "d12c84239b139d980df975b887db81efdcf83f50daec7de5325bb608143655c8",
+      "sha256": "3af244d8f20e68cbfc543bc9ae594f682f3c4a4f1575ca5243ec778bb8d39dac"
+    },
+    "operator_engine": {
+      "path": "experiments/phase_04/sensor_fi_operators.py",
+      "qualification_sha256": "09a408dbefe57758199f2ec85d89528ed0ab9aad92fb3900b0e0673d0d2602e1",
+      "sha256": "6559ddc1fcdca352fbd09bf003e28919bb355a76b2ef52e6985a99188fd69eaa"
+    },
+    "reporting": {
+      "path": "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v2_sampling_v3.json",
+      "qualification_sha256": "83b364d0aeda5b8d2d45d8ba81bd8a19e937d5d771743cf59d99a0bcca1a6246",
+      "sha256": "6ae6c53ed327ea74e23afcad8fb3766070f1d5d79d270e5e049b72a51090e7a4"
+    },
+    "sampling_v3": {
+      "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss.json",
+      "qualification_sha256": "18701172ab25147e4dfb54059a9f5e07b0b3d8f89f13025ffb4aaf282e78df7f",
+      "sha256": "543b648a09091225cfc80eaac5cd03d835a1727118f7730d00697150db205518"
+    },
+    "severity_protocol": {
+      "path": "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+      "sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009"
+    }
+  },
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_devcal_runner_v1.json",
+    "sha256": "a3ff7a37f991078aaa31e5023edf30101048cfd55171c40dc56497605aa7a090"
+  },
+  "date": "2026-10-02",
+  "phase": "4H",
+  "runner": {
+    "path": "experiments/phase_04/sensor_fi_devcal_runner.py",
+    "sha256": "bee7b43423723d5ccdbf237d6dbcf70633d9db489d2aca35d1aca26c5100d398"
+  },
+  "schema_version": "phase4h_sensor_fi_devcal_runner_freeze_v1",
+  "scientific_boundary": {
+    "frozen_before_runner_fault_execution": true,
+    "frozen_before_runner_model_predictions": true,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "performance_based_runner_acceptance": false,
+    "qualification_partition": "training_calibration",
+    "threshold_reselection_allowed": false,
+    "validation_used": false
+  },
+  "status": "FROZEN_PRE_QUALIFICATION_RESULT"
+}

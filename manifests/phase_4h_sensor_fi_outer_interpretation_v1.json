@@ -1,0 +1,1242 @@
+{
+  "clean_reference_summary": {
+    "KFALL": {
+      "prospective_fp32_300ms": {
+        "balanced": {
+          "activity_specificity": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.964720230473111,
+            "total_subject_count": 32
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9693787000972,
+            "total_subject_count": 32
+          },
+          "event_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9740371697212891,
+            "total_subject_count": 32
+          },
+          "f1": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9671592887808542,
+            "total_subject_count": 32
+          },
+          "falling_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9740371697212891,
+            "total_subject_count": 32
+          },
+          "precision": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9615282950914509,
+            "total_subject_count": 32
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 32,
+            "point_estimate": 320.98958333333337,
+            "total_subject_count": 32
+          }
+        },
+        "low_false_alarm": {
+          "activity_specificity": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9935019067513157,
+            "total_subject_count": 32
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9158694639361102,
+            "total_subject_count": 32
+          },
+          "event_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8382370211209047,
+            "total_subject_count": 32
+          },
+          "f1": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9071940326545025,
+            "total_subject_count": 32
+          },
+          "falling_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8382370211209047,
+            "total_subject_count": 32
+          },
+          "precision": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9920031040198104,
+            "total_subject_count": 32
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 32,
+            "point_estimate": 181.77083333333331,
+            "total_subject_count": 32
+          }
+        },
+        "timely_150ms": {
+          "activity_specificity": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.859958984024245,
+            "total_subject_count": 32
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9005106542668122,
+            "total_subject_count": 32
+          },
+          "event_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9410623245093792,
+            "total_subject_count": 32
+          },
+          "f1": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8953874628378463,
+            "total_subject_count": 32
+          },
+          "falling_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9410623245093792,
+            "total_subject_count": 32
+          },
+          "precision": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8567395243676312,
+            "total_subject_count": 32
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 32,
+            "point_estimate": 369.11458333333337,
+            "total_subject_count": 32
+          }
+        }
+      },
+      "qualified_static_ptq_v7": {
+        "balanced": {
+          "activity_specificity": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9622850028009727,
+            "total_subject_count": 32
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9669705604854923,
+            "total_subject_count": 32
+          },
+          "event_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.971656118170012,
+            "total_subject_count": 32
+          },
+          "f1": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9645448379914765,
+            "total_subject_count": 32
+          },
+          "falling_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.971656118170012,
+            "total_subject_count": 32
+          },
+          "precision": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9587985322062271,
+            "total_subject_count": 32
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 32,
+            "point_estimate": 321.6666666666667,
+            "total_subject_count": 32
+          }
+        },
+        "low_false_alarm": {
+          "activity_specificity": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9930144962501295,
+            "total_subject_count": 32
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9157058631718298,
+            "total_subject_count": 32
+          },
+          "event_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8383972300935303,
+            "total_subject_count": 32
+          },
+          "f1": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9070094221488159,
+            "total_subject_count": 32
+          },
+          "falling_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8383972300935303,
+            "total_subject_count": 32
+          },
+          "precision": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.9912729521457816,
+            "total_subject_count": 32
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 32,
+            "point_estimate": 183.59375,
+            "total_subject_count": 32
+          }
+        },
+        "timely_150ms": {
+          "activity_specificity": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8537879514585098,
+            "total_subject_count": 32
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8964379922917369,
+            "total_subject_count": 32
+          },
+          "event_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.939088033124964,
+            "total_subject_count": 32
+          },
+          "f1": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8911908629728205,
+            "total_subject_count": 32
+          },
+          "falling_recall": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.939088033124964,
+            "total_subject_count": 32
+          },
+          "precision": {
+            "eligible_subject_count": 32,
+            "point_estimate": 0.8506954228592752,
+            "total_subject_count": 32
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 32,
+            "point_estimate": 369.4270833333333,
+            "total_subject_count": 32
+          }
+        }
+      }
+    },
+    "UNIVR": {
+      "prospective_fp32_300ms": {
+        "balanced": {
+          "activity_specificity": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9106201769245248,
+            "total_subject_count": 29
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9217946575330382,
+            "total_subject_count": 29
+          },
+          "event_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9329691381415519,
+            "total_subject_count": 29
+          },
+          "f1": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.912772919729358,
+            "total_subject_count": 29
+          },
+          "falling_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9329691381415519,
+            "total_subject_count": 29
+          },
+          "precision": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8993202749755587,
+            "total_subject_count": 29
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 29,
+            "point_estimate": 263.7356321839081,
+            "total_subject_count": 29
+          }
+        },
+        "low_false_alarm": {
+          "activity_specificity": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9782703345297049,
+            "total_subject_count": 29
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8465397358763176,
+            "total_subject_count": 29
+          },
+          "event_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.7148091372229305,
+            "total_subject_count": 29
+          },
+          "f1": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8145421623155439,
+            "total_subject_count": 29
+          },
+          "falling_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.7148091372229305,
+            "total_subject_count": 29
+          },
+          "precision": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9610714580288617,
+            "total_subject_count": 29
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 29,
+            "point_estimate": 141.26436781609192,
+            "total_subject_count": 29
+          }
+        },
+        "timely_150ms": {
+          "activity_specificity": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.7379432578083254,
+            "total_subject_count": 29
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8243102557945137,
+            "total_subject_count": 29
+          },
+          "event_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9106772537807022,
+            "total_subject_count": 29
+          },
+          "f1": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8205381563735218,
+            "total_subject_count": 29
+          },
+          "falling_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9106772537807022,
+            "total_subject_count": 29
+          },
+          "precision": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.7531512445584034,
+            "total_subject_count": 29
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 29,
+            "point_estimate": 311.66666666666674,
+            "total_subject_count": 29
+          }
+        }
+      },
+      "qualified_static_ptq_v7": {
+        "balanced": {
+          "activity_specificity": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9060669881509462,
+            "total_subject_count": 29
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9195727976837421,
+            "total_subject_count": 29
+          },
+          "event_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9330786072165382,
+            "total_subject_count": 29
+          },
+          "f1": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9104398676132839,
+            "total_subject_count": 29
+          },
+          "falling_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9330786072165382,
+            "total_subject_count": 29
+          },
+          "precision": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8950440261622559,
+            "total_subject_count": 29
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 29,
+            "point_estimate": 263.5632183908046,
+            "total_subject_count": 29
+          }
+        },
+        "low_false_alarm": {
+          "activity_specificity": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.977223239029836,
+            "total_subject_count": 29
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8480234720302188,
+            "total_subject_count": 29
+          },
+          "event_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.7188237050306018,
+            "total_subject_count": 29
+          },
+          "f1": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8172156013761394,
+            "total_subject_count": 29
+          },
+          "falling_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.7188237050306018,
+            "total_subject_count": 29
+          },
+          "precision": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9590442800381949,
+            "total_subject_count": 29
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 29,
+            "point_estimate": 140.80459770114942,
+            "total_subject_count": 29
+          }
+        },
+        "timely_150ms": {
+          "activity_specificity": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.7297092795593543,
+            "total_subject_count": 29
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.819180677726405,
+            "total_subject_count": 29
+          },
+          "event_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9086520758934553,
+            "total_subject_count": 29
+          },
+          "f1": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.8155313116460973,
+            "total_subject_count": 29
+          },
+          "falling_recall": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.9086520758934553,
+            "total_subject_count": 29
+          },
+          "precision": {
+            "eligible_subject_count": 29,
+            "point_estimate": 0.7467184428505937,
+            "total_subject_count": 29
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 29,
+            "point_estimate": 312.8735632183908,
+            "total_subject_count": 29
+          }
+        }
+      }
+    },
+    "overall_61_subject": {
+      "prospective_fp32_300ms": {
+        "balanced": {
+          "activity_specificity": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9390005328844386,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9467567782224345,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9545130235604304,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9413034739858805,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9545130235604304,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9319539904461905,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 61,
+            "point_estimate": 293.7704918032786,
+            "total_subject_count": 61
+          }
+        },
+        "low_false_alarm": {
+          "activity_specificity": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9862606674984187,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8829094292847333,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.7795581910710481,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8631464221654894,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.7795581910710481,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9772978952700151,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 61,
+            "point_estimate": 162.51366120218577,
+            "total_subject_count": 61
+          }
+        },
+        "timely_150ms": {
+          "activity_specificity": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8019515076265126,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8642842353209653,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.926616963015418,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8598033663220197,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.926616963015418,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8074926372452115,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 61,
+            "point_estimate": 341.80327868852453,
+            "total_subject_count": 61
+          }
+        }
+      },
+      "qualified_static_ptq_v7": {
+        "balanced": {
+          "activity_specificity": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9355584056722716,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9444371978420375,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9533159900118031,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9388228028936472,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9533159900118031,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.928489012939421,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 61,
+            "point_estimate": 294.0437158469945,
+            "total_subject_count": 61
+          }
+        },
+        "low_false_alarm": {
+          "activity_specificity": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9855071772437602,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8835289886946704,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.7815508001455804,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8643205565355762,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.7815508001455804,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9759511244225026,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 61,
+            "point_estimate": 163.25136612021862,
+            "total_subject_count": 61
+          }
+        },
+        "timely_150ms": {
+          "activity_specificity": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.7947997303916982,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8597091050393662,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9246184796870336,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.855221568079788,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.9246184796870336,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "eligible_subject_count": 61,
+            "point_estimate": 0.8012637438387545,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "eligible_subject_count": 61,
+            "point_estimate": 342.5409836065574,
+            "total_subject_count": 61
+          }
+        }
+      }
+    }
+  },
+  "dataset_direction_status_disagreement_counts": {
+    "prospective_fp32_300ms": {
+      "balanced": {
+        "activity_specificity": 3,
+        "balanced_accuracy": 4,
+        "event_recall": 9,
+        "f1": 3,
+        "falling_recall": 9,
+        "precision": 3,
+        "sensor_lead_ms": 13
+      },
+      "low_false_alarm": {
+        "activity_specificity": 8,
+        "balanced_accuracy": 7,
+        "event_recall": 9,
+        "f1": 9,
+        "falling_recall": 9,
+        "precision": 5,
+        "sensor_lead_ms": 13
+      },
+      "timely_150ms": {
+        "activity_specificity": 6,
+        "balanced_accuracy": 7,
+        "event_recall": 4,
+        "f1": 4,
+        "falling_recall": 4,
+        "precision": 5,
+        "sensor_lead_ms": 14
+      }
+    },
+    "qualified_static_ptq_v7": {
+      "balanced": {
+        "activity_specificity": 4,
+        "balanced_accuracy": 2,
+        "event_recall": 11,
+        "f1": 2,
+        "falling_recall": 11,
+        "precision": 4,
+        "sensor_lead_ms": 16
+      },
+      "low_false_alarm": {
+        "activity_specificity": 8,
+        "balanced_accuracy": 6,
+        "event_recall": 7,
+        "f1": 7,
+        "falling_recall": 7,
+        "precision": 6,
+        "sensor_lead_ms": 19
+      },
+      "timely_150ms": {
+        "activity_specificity": 8,
+        "balanced_accuracy": 5,
+        "event_recall": 4,
+        "f1": 5,
+        "falling_recall": 4,
+        "precision": 8,
+        "sensor_lead_ms": 15
+      }
+    }
+  },
+  "date": "2026-10-03",
+  "direction_counts_all_strata": {
+    "DEGRADATION_SUPPORTED": 2677,
+    "IMPROVEMENT_SUPPORTED": 268,
+    "NO_DIRECTIONAL_CONCLUSION": 1555,
+    "UNRESOLVED": 36
+  },
+  "direction_counts_by_stratum": {
+    "KFALL": {
+      "DEGRADATION_SUPPORTED": 979,
+      "IMPROVEMENT_SUPPORTED": 71,
+      "NO_DIRECTIONAL_CONCLUSION": 450,
+      "UNRESOLVED": 12
+    },
+    "UNIVR": {
+      "DEGRADATION_SUPPORTED": 770,
+      "IMPROVEMENT_SUPPORTED": 101,
+      "NO_DIRECTIONAL_CONCLUSION": 629,
+      "UNRESOLVED": 12
+    },
+    "overall_61_subject": {
+      "DEGRADATION_SUPPORTED": 928,
+      "IMPROVEMENT_SUPPORTED": 96,
+      "NO_DIRECTIONAL_CONCLUSION": 476,
+      "UNRESOLVED": 12
+    }
+  },
+  "governance_boundary": {
+    "NO_DIRECTIONAL_CONCLUSION_means_equivalence": false,
+    "binary_global_robustness_label_generated": false,
+    "outer_results_may_be_interpreted": true,
+    "outer_results_may_be_reported": true,
+    "outer_results_may_be_used_for_retuning": false,
+    "outer_results_may_change_fault_severities": false,
+    "outer_results_may_change_operating_points": false,
+    "outer_results_may_change_reporting_rules": false,
+    "outer_results_may_change_thresholds": false
+  },
+  "interpretive_statements": [
+    {
+      "evidence": {
+        "DEGRADATION_SUPPORTED": 2677,
+        "IMPROVEMENT_SUPPORTED": 268,
+        "NO_DIRECTIONAL_CONCLUSION": 1555,
+        "UNRESOLVED": 36
+      },
+      "id": "degradation_common_but_not_universal",
+      "statement": "Across the predeclared family\u00d7severity inferential grid, degradation-supported records substantially outnumber improvement-supported records, while many conditions remain non-directional."
+    },
+    {
+      "evidence_key": "predeclared_failure_pattern_checks.axis_loss_L3_overall",
+      "id": "axis_loss_L3_is_severe_failure_mode",
+      "statement": "Axis loss at L3 produces severe degradation across recall and balanced accuracy for both frozen model variants and all operating points; precision and sensor lead are unresolved because inferential coverage is incomplete."
+    },
+    {
+      "evidence_key": "clean_reference_summary.overall_61_subject",
+      "id": "clean_ptq_fp32_close_descriptively",
+      "statement": "Clean FP32 and qualified PTQ references are descriptively close across the three frozen operating points; this record does not turn that descriptive observation into an equivalence claim."
+    },
+    {
+      "evidence_key": "dataset_direction_status_disagreement_counts",
+      "id": "dataset_strata_not_interchangeable",
+      "statement": "UniVR and KFall direction statuses disagree for a nontrivial subset of family\u00d7severity conditions, especially sensor-lead summaries, so dataset-specific strata remain necessary."
+    },
+    {
+      "evidence": {
+        "global_binary_robustness_label": false
+      },
+      "id": "improvement_status_is_metric_specific",
+      "statement": "IMPROVEMENT_SUPPORTED is interpreted only for the named metric and frozen operating point; it is not a global robustness claim and may reflect operating-point trade-offs."
+    }
+  ],
+  "phase": "4H",
+  "predeclared_failure_pattern_checks": {
+    "axis_loss_L3_overall": {
+      "prospective_fp32_300ms": {
+        "balanced": {
+          "activity_specificity": {
+            "ci95_high": -0.04808848306906981,
+            "ci95_low": -0.07475528152155807,
+            "degradation_point": -0.06099946711556119,
+            "direction_status": "IMPROVEMENT_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "ci95_high": 0.45469129685960774,
+            "ci95_low": 0.43847314558264355,
+            "degradation_point": 0.44675677822243454,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "ci95_high": 0.963188173164115,
+            "ci95_low": 0.9451632764546452,
+            "degradation_point": 0.9545130235604304,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "ci95_high": 0.9504762954435876,
+            "ci95_low": 0.9319282978263992,
+            "degradation_point": 0.9413034739858805,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "ci95_high": 0.9632735916187316,
+            "ci95_low": 0.9452111811384695,
+            "degradation_point": 0.9545130235604304,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          }
+        },
+        "low_false_alarm": {
+          "activity_specificity": {
+            "ci95_high": -0.007998366311239036,
+            "ci95_low": -0.020254498107275438,
+            "degradation_point": -0.013739332501581302,
+            "direction_status": "IMPROVEMENT_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "ci95_high": 0.3930485774263297,
+            "ci95_low": 0.3724774177911634,
+            "degradation_point": 0.3829094292847334,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "ci95_high": 0.799283954884039,
+            "ci95_low": 0.7596738777823642,
+            "degradation_point": 0.7795581910710481,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "ci95_high": 0.8770946167668422,
+            "ci95_low": 0.8484491244461099,
+            "degradation_point": 0.8631464221654894,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "ci95_high": 0.7989940532294667,
+            "ci95_low": 0.7592625034725491,
+            "degradation_point": 0.7795581910710481,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          }
+        },
+        "timely_150ms": {
+          "activity_specificity": {
+            "ci95_high": -0.17711356061764985,
+            "ci95_low": -0.21974693358889766,
+            "degradation_point": -0.19804849237348732,
+            "direction_status": "IMPROVEMENT_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "ci95_high": 0.377437966560535,
+            "ci95_low": 0.350369370914231,
+            "degradation_point": 0.3642842353209653,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "ci95_high": 0.9399859524920663,
+            "ci95_low": 0.9129676405488678,
+            "degradation_point": 0.926616963015418,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "ci95_high": 0.8730766657853488,
+            "ci95_low": 0.8462880407039209,
+            "degradation_point": 0.8598033663220197,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "ci95_high": 0.9401281591650045,
+            "ci95_low": 0.9125292231199063,
+            "degradation_point": 0.926616963015418,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          }
+        }
+      },
+      "qualified_static_ptq_v7": {
+        "balanced": {
+          "activity_specificity": {
+            "ci95_high": -0.05062606924972855,
+            "ci95_low": -0.07900678965535424,
+            "degradation_point": -0.0644415943277284,
+            "direction_status": "IMPROVEMENT_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "ci95_high": 0.45285522083428525,
+            "ci95_low": 0.4361810907850051,
+            "degradation_point": 0.4444371978420373,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "ci95_high": 0.9617326585471486,
+            "ci95_low": 0.944603046489915,
+            "degradation_point": 0.9533159900118031,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "ci95_high": 0.9483023657629673,
+            "ci95_low": 0.9292654529357202,
+            "degradation_point": 0.9388228028936472,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "ci95_high": 0.9615254720215524,
+            "ci95_low": 0.9446092840514985,
+            "degradation_point": 0.9533159900118031,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          }
+        },
+        "low_false_alarm": {
+          "activity_specificity": {
+            "ci95_high": -0.008637617205665285,
+            "ci95_low": -0.020866264846251932,
+            "degradation_point": -0.014492822756239714,
+            "direction_status": "IMPROVEMENT_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "ci95_high": 0.39359267685645555,
+            "ci95_low": 0.37312865665621775,
+            "degradation_point": 0.38352898869467034,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "ci95_high": 0.8001111723718684,
+            "ci95_low": 0.7624194521174865,
+            "degradation_point": 0.7815508001455804,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "ci95_high": 0.8779985493861389,
+            "ci95_low": 0.8503911357554781,
+            "degradation_point": 0.8643205565355762,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "ci95_high": 0.8001441157314878,
+            "ci95_low": 0.7629312521871001,
+            "degradation_point": 0.7815508001455804,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          }
+        },
+        "timely_150ms": {
+          "activity_specificity": {
+            "ci95_high": -0.18406312547082262,
+            "ci95_low": -0.22748496052892261,
+            "degradation_point": -0.2052002696083017,
+            "direction_status": "IMPROVEMENT_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "balanced_accuracy": {
+            "ci95_high": 0.372833189097619,
+            "ci95_low": 0.34617549401297215,
+            "degradation_point": 0.35970910503936593,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "event_recall": {
+            "ci95_high": 0.9389333183809204,
+            "ci95_low": 0.9103764537553838,
+            "degradation_point": 0.9246184796870336,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "f1": {
+            "ci95_high": 0.8684790743837247,
+            "ci95_low": 0.84171869148663,
+            "degradation_point": 0.855221568079788,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "falling_recall": {
+            "ci95_high": 0.9386634532474737,
+            "ci95_low": 0.9100778276080083,
+            "degradation_point": 0.9246184796870336,
+            "direction_status": "DEGRADATION_SUPPORTED",
+            "eligible_subject_count": 61,
+            "total_subject_count": 61
+          },
+          "precision": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          },
+          "sensor_lead_ms": {
+            "ci95_high": NaN,
+            "ci95_low": NaN,
+            "degradation_point": NaN,
+            "direction_status": "UNRESOLVED",
+            "eligible_subject_count": 0,
+            "total_subject_count": 61
+          }
+        }
+      }
+    },
+    "incomplete_record_count": 36,
+    "incomplete_record_structures": [
+      {
+        "fault_family": "axis_loss",
+        "metric": "precision",
+        "severity_level": "L3"
+      },
+      {
+        "fault_family": "axis_loss",
+        "metric": "sensor_lead_ms",
+        "severity_level": "L3"
+      }
+    ]
+  },
+  "record_inventory": {
+    "clean_reference_records": 126,
+    "family_severity_inferential_records": 4536,
+    "fault_families": [
+      "axis_loss",
+      "bias",
+      "clipping_saturation",
+      "delay",
+      "drift",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "noise",
+      "orientation",
+      "scale_factor",
+      "stuck_channel"
+    ],
+    "metrics": [
+      "activity_specificity",
+      "balanced_accuracy",
+      "event_recall",
+      "f1",
+      "falling_recall",
+      "precision",
+      "sensor_lead_ms"
+    ],
+    "models": [
+      "prospective_fp32_300ms",
+      "qualified_static_ptq_v7"
+    ],
+    "operating_points": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "severity_levels": [
+      "L1",
+      "L2",
+      "L3"
+    ]
+  },
+  "schema_version": "phase4h_sensor_fi_outer_interpretation_v1",
+  "source_reporting": {
+    "artifact_manifest_sha256": "c2837ddce46f011572a868a6abb8a95372d524338f27d571f24eeb650fe91209",
+    "bootstrap_replicates": 10000,
+    "clean_reference_summary_sha256": "e83c430a80c91a8b7a7f8bead8b0af17156bcbcaf92fa5ef96147ed7f7e34907",
+    "coverage_sha256": "5896915326e41631ce12192911d29ebcdd646b8de8d6ac4501be0c2b4cbf460e",
+    "execution_interpretability": "EXECUTION_INTERPRETABLE",
+    "family_severity_report_sha256": "06593d35380ace2d967038225509372d187c7d444de39fd4a6a0f61e9c955ae1",
+    "success_sha256": "f8a797efde094b4c7d06120c539b20f7a96b952ac8ac253c64f7d904a6bca3ef"
+  },
+  "status": "FROZEN_INTERPRETATION_OF_HELD_OUT_OUTER_RESULTS"
+}

@@ -1,0 +1,163 @@
+{
+  "calibration": {
+    "fault_injected_allowed": false,
+    "fold_specific_rule": "Each checkpoint receives only its corresponding fold's frozen 4096 training calibration identities; the same fold identities are reused across its three seeds.",
+    "identity_config": {
+      "path": "configs/datasets/int8_calibration_identity_v1.json",
+      "sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e"
+    },
+    "onfield_allowed": false,
+    "outer_test_allowed": false,
+    "source_partition": "training only",
+    "total_fold_window_instances": 20480,
+    "validation_allowed": false,
+    "windows_per_fold": 4096
+  },
+  "frozen_date": "2026-10-02",
+  "implementation": {
+    "float_wrapper_class": "FloatPReLU",
+    "float_wrapper_qconfig": null,
+    "path": "experiments/phase_04/ptq_v3_prelu_wrapper.py",
+    "prelu_module_names": [
+      "conv_1.2",
+      "conv_2.2",
+      "fc.2"
+    ],
+    "prepare_custom_config": "PrepareCustomConfig.set_non_traceable_module_classes([FloatPReLU])",
+    "qconfig": "get_default_qconfig_mapping('x86')",
+    "sha256": "d646a1ef24ac8e44791b5d7df549460dcd8beacb26728b6da2233a808cfda3f2",
+    "weight_preservation": "exact tensor equality required",
+    "wrapper_function": "torch.where(x >= 0, x, self.weight * x)"
+  },
+  "lineage": {
+    "synthetic_capability_probe": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v2_prelu_fp32_pilot_seed42_fold1/float_prelu_fx_capability_probe.json",
+      "real_dataset_samples_used": false,
+      "sha256": "b017b2c1d95ed1d43061e4339f038692646a749792d683cd6ae89ef8c3d38bd7",
+      "task_accuracy_observed": false,
+      "verdict": "FLOAT_PRELU_WRAPPER_WITH_EXPLICIT_QDQ_IS_STRUCTURALLY_VIABLE"
+    },
+    "v1": {
+      "outcome": "numerical acceptance FAIL",
+      "protocol_path": "configs/baseline/prospective_300ms_static_ptq_v1.json",
+      "protocol_sha256": "26440fafbda8a616a51c391764dd59dd16d5015e7e8f3ed584db541b156b09d8"
+    },
+    "v2": {
+      "failure_manifest_path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v2_prelu_fp32_pilot_seed42_fold1/v2_conversion_failure_manifest.json",
+      "failure_manifest_sha256": "382f341eb9405cd3ebdf726f324d1c109723623c96958c246ce7e16a5fff58ca",
+      "outcome": "convert_fx FAIL",
+      "protocol_path": "configs/baseline/prospective_300ms_static_ptq_v2_prelu_fp32.json",
+      "protocol_sha256": "d3c8313df39503de055f659a84c3f8717eaf86ad5c51c6ca5ffc474eefcd41a9"
+    }
+  },
+  "method": {
+    "backend": "x86",
+    "dynamic_quantization": "prohibited as silent substitute",
+    "framework": "PyTorch FX",
+    "fully_int8_claim_allowed": false,
+    "precision_classification": "MIXED_PRECISION_STATIC_PTQ",
+    "prelu_execution": "FP32 FloatPReLU wrapper",
+    "primary_method": "static_post_training_quantization",
+    "qat": "prohibited as silent substitute",
+    "quantized_weighted_operators_required": [
+      "Conv1d",
+      "Linear"
+    ]
+  },
+  "next_action": "Execute seed42/fold1 v3 using only its frozen 4096 training calibration windows and evaluate the unchanged structural, numerical, and serialization gates.",
+  "numerical_acceptance": {
+    "evaluation_data": "corresponding fold's 4096 frozen training-only calibration windows",
+    "required": {
+      "all_outputs_finite": true,
+      "argmax_agreement_fraction_min": 0.99,
+      "mean_absolute_probability_error_max": 0.01,
+      "output_shape_exactly_preserved": true,
+      "p99_absolute_probability_error_max": 0.05
+    },
+    "source": "unchanged from v1 and v2"
+  },
+  "phase": "4G",
+  "provenance_tier": "P0 software quantization evidence",
+  "role": "versioned mixed-precision static-PTQ realization after preserved v1 numerical failure and preserved v2 native-exclusion conversion failure",
+  "runtime_environment": {
+    "backend": "x86",
+    "python": "3.13.12",
+    "supported_quantized_engines": [
+      "qnnpack",
+      "onednn",
+      "x86",
+      "fbgemm"
+    ],
+    "torch": "2.12.0+cu130"
+  },
+  "schema_version": "prospective_300ms_static_ptq_v3_prelu_wrapper",
+  "scientific_boundary": {
+    "fault_data_used_for_v3_design": false,
+    "fully_int8_claim": false,
+    "mcu_execution_claim": false,
+    "onfield_used_for_v3_design": false,
+    "outer_test_used_for_v3_design": false,
+    "real_calibration_fidelity_observed_before_v3_freeze": false,
+    "synthetic_structural_capability_probe_preceded_freeze": true,
+    "task_metric_used_for_v3_design": false,
+    "validation_used_for_v3_design": false
+  },
+  "selection_policy": {
+    "candidate_count": 1,
+    "candidate_id": "torch_fx_x86_float_prelu_wrapper_v3",
+    "candidate_sweep": false,
+    "fallback": "If v3 fails structural, numerical, or serialization acceptance, preserve the failure. Any further implementation or quantizer change requires a new versioned pre-result protocol.",
+    "pilot_checkpoint": {
+      "fold": 1,
+      "reason": "same engineering pilot checkpoint used for v1/v2; not selected from held-out performance",
+      "seed": 42
+    },
+    "selection_by_combined_fault_robustness": false,
+    "selection_by_compute_fault_robustness": false,
+    "selection_by_onfield": false,
+    "selection_by_outer_test_accuracy": false,
+    "selection_by_sensor_fault_robustness": false,
+    "selection_by_validation_accuracy": false
+  },
+  "status": "FROZEN_PRE_RESULT",
+  "structural_acceptance": {
+    "fully_int8_claim_allowed": false,
+    "precision_classification": "MIXED_PRECISION_STATIC_PTQ",
+    "required": [
+      "exactly two QuantizedConv1d modules",
+      "exactly two QuantizedLinear modules",
+      "exactly three FloatPReLU wrappers",
+      "zero QuantizedPReLU modules",
+      "zero native nn.PReLU modules after wrapper replacement",
+      "all three FloatPReLU weights exactly equal FP32 checkpoint slopes",
+      "explicit dequantize boundary before each FloatPReLU",
+      "explicit requantize boundary after each FloatPReLU before the next quantized region",
+      "model output remains FP32",
+      "serialization/load round-trip succeeds"
+    ]
+  },
+  "v3_change_control": {
+    "change_count": 1,
+    "not_a_task_metric_selection": true,
+    "reason": "In this PyTorch runtime, setting native nn.PReLU qconfig to None still enters QuantizedPReLU lowering and fails during convert_fx. A synthetic structural probe demonstrated that an opaque equivalent wrapper converts successfully while retaining two quantized Conv1d layers, two quantized Linear layers, zero QuantizedPReLU modules, and three float wrappers.",
+    "single_change_from_v2": "replace native nn.PReLU exclusion mechanism with a mathematically equivalent non-traceable FloatPReLU wrapper so FX emits explicit Q/DQ boundaries",
+    "unchanged_from_v2": [
+      "FP32 task checkpoint weights",
+      "CNN mathematical architecture",
+      "x86 backend",
+      "default x86 qconfig for eligible operators",
+      "HistogramObserver activation policy",
+      "quint8 eligible activations",
+      "PerChannelMinMaxObserver weight policy",
+      "qint8 per-channel eligible weights",
+      "Conv1d quantization target",
+      "Linear quantization target",
+      "PReLU mathematical function and learned slope",
+      "4096 frozen training-only calibration identities per fold",
+      "five frozen calibration identity sets",
+      "all 15 frozen Phase-4F checkpoints",
+      "numerical acceptance gates",
+      "prohibition on held-out/fault quantizer selection"
+    ]
+  }
+}

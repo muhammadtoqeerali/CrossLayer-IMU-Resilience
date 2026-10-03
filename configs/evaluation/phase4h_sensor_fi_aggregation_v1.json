@@ -1,0 +1,246 @@
+{
+  "activity_false_alarm_reporting": {
+    "false_positive_count": "reported",
+    "pooled_false_positive_window_rate": "descriptive_only",
+    "reason": "overlapping activity windows cannot be treated as independent false-alarm opportunities",
+    "subject_level_primary": "activity_specificity"
+  },
+  "classification_metrics": {
+    "definitions": {
+      "activity_specificity": "TN/(TN+FP)",
+      "balanced_accuracy": "(falling_recall+activity_specificity)/2",
+      "f1": "2*precision*falling_recall/(precision+falling_recall)",
+      "falling_recall": "TP/(TP+FN)",
+      "precision": "TP/(TP+FP)"
+    },
+    "pooled_window_level": "descriptive_only",
+    "subject_level_primary": [
+      "falling_recall",
+      "activity_specificity",
+      "balanced_accuracy"
+    ],
+    "subject_level_secondary": [
+      "precision",
+      "f1"
+    ],
+    "undefined_metric_policy": "record NA with numerator/denominator counts; never replace with zero; report coverage count for every macro summary"
+  },
+  "clean_fault_pairing": {
+    "clean_regime": "C0",
+    "paired_subject_resampling": true,
+    "required": true,
+    "same_checkpoint_seed_fold": true,
+    "same_fault_instance_across_same_backbone_variants": true,
+    "same_parent_window_or_sequence": true,
+    "same_preprocessing": true,
+    "same_subject": true,
+    "same_threshold": true,
+    "sensor_fault_regime": "CS"
+  },
+  "dataset_strata": {
+    "KFALL_subject_count": 32,
+    "UNIVR_subject_count": 29,
+    "bootstrap_stratified_by_dataset": true,
+    "dataset_specific_results": true,
+    "primary_overall_macro": "equal_weight_per_subject",
+    "reason": "preserve the fixed 29/32 dataset composition in subject-level uncertainty resampling",
+    "total_subject_count": 61
+  },
+  "date": "2026-10-02",
+  "evidence_tier": "P0",
+  "fall_event_metrics": {
+    "event_detected_definition": "at least one threshold-positive eligible evaluation window mapped to that annotated fall event",
+    "event_detection_unit": "annotated fall event",
+    "event_recall": "detected_events/eligible_annotated_events",
+    "missed_event_timing": "NA_and_counted_as_missed_not_imputed",
+    "per_event_timing_summary": "earliest threshold-positive eligible window for that event",
+    "sensor_lead_definition": "impact_time_ms - window_end_time_ms",
+    "subject_level_timing_summary": [
+      "median_sensor_lead_ms",
+      "q25_sensor_lead_ms",
+      "q75_sensor_lead_ms"
+    ],
+    "system_lead_not_in_phase4h_offline_sensor_fi": true,
+    "timing_metric": "sensor_lead_ms",
+    "timing_uncertainty_cluster": "subject"
+  },
+  "fold_aggregation": {
+    "fold_count": 5,
+    "fold_macro_as_primary": false,
+    "folds_independent_for_uncertainty": false,
+    "rule": "concatenate each subject's one outer-test fold assignment into the 61-subject evaluation population, then aggregate by subject",
+    "subjects_appear_in_outer_test_once": true
+  },
+  "governance": {
+    "aggregation_tuned_after_results": false,
+    "model_predictions_seen": false,
+    "onfield_outcomes_used": false,
+    "outer_test_outcomes_used": false,
+    "overlapping_windows_treated_as_independent": false,
+    "physical_realism_claim": false,
+    "sensor_fault_results_seen": false,
+    "validation_outcomes_used": false
+  },
+  "hierarchy": {
+    "model_seed": "repeated_model_realization_not_independent_subject",
+    "outer_fold": "partition_assignment_not_independent_sample",
+    "sequence_faults": [
+      "window",
+      "fault_instance",
+      "variant",
+      "trial_or_fall_event",
+      "subject"
+    ],
+    "stochastic_replicate": "nested_within_parent_variant_severity",
+    "window_value_faults": [
+      "window",
+      "fault_instance",
+      "variant",
+      "trial",
+      "subject"
+    ]
+  },
+  "minimum_denominator_reporting": {
+    "bootstrap": [
+      "bootstrap_replicates",
+      "stratum_sample_sizes"
+    ],
+    "classification": [
+      "TP",
+      "FN",
+      "TN",
+      "FP"
+    ],
+    "fall_events": [
+      "eligible_event_count",
+      "detected_event_count",
+      "missed_event_count"
+    ],
+    "subject_macro": [
+      "eligible_subject_count",
+      "total_subject_count"
+    ]
+  },
+  "nested_aggregation_order": [
+    "compute raw predictions per frozen checkpoint and exact fault instance",
+    "compute metric within subject for each checkpoint seed, fault family, severity, variant, and stochastic replicate",
+    "average stochastic replicates within subject/seed/variant with equal replicate weight",
+    "retain every target/sign/axis variant as a separate reported result and also form an equal-weight variant macro within subject/seed/family/severity",
+    "average the three model seeds with equal weight within subject/family/severity",
+    "compute the primary cross-subject macro mean from one value per subject/family/severity"
+  ],
+  "next_action": "qualify this aggregation/uncertainty protocol with synthetic hierarchical data and deterministic bootstrap checks; then freeze robustness acceptance/reporting criteria before any sensor-fault/model execution",
+  "onfield_policy": {
+    "part_of_phase4h_fault_generation": false,
+    "part_of_phase4h_faulted_evaluation": false,
+    "reason": "OnField is independent external Activity-only evaluation and is prohibited from prospective Phase-4H fault tuning/generation"
+  },
+  "paired_degradation": {
+    "absolute_fault_metric_also_reported": true,
+    "clean_metric_also_reported": true,
+    "degradation_definition_higher_is_better": "C0-CS",
+    "higher_is_better_metrics": [
+      "falling_recall",
+      "activity_specificity",
+      "balanced_accuracy",
+      "precision",
+      "f1",
+      "event_recall",
+      "sensor_lead_ms"
+    ],
+    "interpretation": "positive_value_means_worse_under_sensor_fault"
+  },
+  "phase": "4H",
+  "primary_inferential_unit": "subject",
+  "primary_statistical_principle": "overlapping windows, stochastic fault replicates, model seeds, and fold membership are nested/repeated observations and are not independent experimental units",
+  "raw_prediction_unit": {
+    "independent_for_uncertainty": false,
+    "overlap_fraction": 0.5,
+    "pooled_window_metrics": "descriptive_only",
+    "sampling_rate_hz": 100,
+    "stride_ms": 150,
+    "stride_samples": 15,
+    "unit": "300ms_window",
+    "window_samples": 30
+  },
+  "regimes_in_scope": [
+    "C0",
+    "CS"
+  ],
+  "regimes_not_yet_in_scope": [
+    "CC",
+    "CSC"
+  ],
+  "reporting_dimensions": {
+    "dataset_specific_summary_required": true,
+    "family_severity_summary_required": true,
+    "required": [
+      "model_variant",
+      "checkpoint_seed",
+      "fold",
+      "subject",
+      "dataset",
+      "regime",
+      "fault_family",
+      "severity_level",
+      "variant_id",
+      "replicate_index"
+    ],
+    "seed_specific_summary_required": true,
+    "variant_specific_summary_required": true
+  },
+  "schema_version": "phase4h_sensor_fi_evaluation_aggregation_v1",
+  "scope": "sensor_fault_robustness_evaluation",
+  "secondary_independent_unit_for_fall_specific_analysis": "annotated_fall_event_nested_within_subject",
+  "seed_aggregation": {
+    "checkpoint_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "primary_subject_value": "equal_weight_mean_across_three_seeds",
+    "seed_specific_results_reported": true,
+    "seeds_independent_for_uncertainty": false
+  },
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "still_not_frozen": [
+    "robustness acceptance criteria"
+  ],
+  "threshold_policy": {
+    "retuning_on_OnField": false,
+    "retuning_on_outer_test": false,
+    "retuning_under_faults": false,
+    "source": "frozen prospective baseline threshold records"
+  },
+  "uncertainty": {
+    "bootstrap_replicates": 10000,
+    "confidence_level": 0.95,
+    "fault_instance_bootstrap_as_independent_unit_prohibited": true,
+    "fold_bootstrap_as_independent_unit_prohibited": true,
+    "method": "stratified_paired_subject_bootstrap_percentile",
+    "model_seed_bootstrap_as_independent_unit_prohibited": true,
+    "namespace": "crosslayer-phase4h-sensor-fi-eval-bootstrap-v1",
+    "p_values_primary": false,
+    "paired_clean_fault_resampling": true,
+    "reported_interval": "2.5th_and_97.5th_percentiles",
+    "resample_sizes": {
+      "KFALL": 32,
+      "UNIVR": 29
+    },
+    "resample_unit": "subject",
+    "same_subject_draw_used_for_C0_and_CS": true,
+    "seed_algorithm": "SHA256_first_8_bytes_big_endian_unsigned",
+    "strata": [
+      "UNIVR",
+      "KFALL"
+    ],
+    "window_bootstrap_prohibited": true
+  },
+  "variant_aggregation": {
+    "family_macro_reported": true,
+    "family_macro_weighting": "equal_weight_per_predeclared_variant",
+    "individual_variants_reported": true,
+    "reason": "families with more target variants must not receive greater statistical weight merely because they enumerate more channels/signs/axes",
+    "sample_count_weighting_across_variants": false
+  }
+}

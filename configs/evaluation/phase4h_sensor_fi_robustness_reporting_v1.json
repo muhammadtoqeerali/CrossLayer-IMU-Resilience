@@ -1,0 +1,228 @@
+{
+  "OnField_policy": {
+    "activity_only_external_clean_evaluation_remains_separate": true,
+    "fall_recall_claim_allowed": false,
+    "fall_timing_claim_allowed": false,
+    "faulted_evaluation_allowed": false,
+    "recovery_claim_allowed": false
+  },
+  "claim_policy": {
+    "allowed_P0_language": [
+      "under the frozen P0 software-corruption condition, a metric showed DEGRADATION_SUPPORTED",
+      "under the frozen P0 software-corruption condition, a metric showed IMPROVEMENT_SUPPORTED",
+      "under the frozen P0 software-corruption condition, the interval yielded NO_DIRECTIONAL_CONCLUSION",
+      "the execution characterized sensitivity to the frozen P0 software fault protocol"
+    ],
+    "prohibited_without_later_evidence": [
+      "physically realistic sensor robustness",
+      "hardware fault tolerance",
+      "HIL robustness",
+      "MCU fault tolerance",
+      "field-proven robustness",
+      "safety certification",
+      "P2 robustness",
+      "P3 robustness",
+      "globally robust",
+      "fault tolerant under all sensor faults"
+    ]
+  },
+  "clean_reference_reporting": {
+    "C0_always_reported": true,
+    "fault_metric_without_clean_reference_allowed": false,
+    "paired_degradation_without_absolute_C0_CS_allowed": false
+  },
+  "condition_level_direction_status": {
+    "DEGRADATION_SUPPORTED": {
+      "meaning": "the paired 95% subject-bootstrap interval lies entirely on the worse-under-fault side",
+      "rule": "ci95_low > 0"
+    },
+    "IMPROVEMENT_SUPPORTED": {
+      "meaning": "the paired 95% subject-bootstrap interval lies entirely on the better-under-fault side",
+      "rule": "ci95_high < 0"
+    },
+    "NO_DIRECTIONAL_CONCLUSION": {
+      "meaning": "the paired 95% interval includes zero; this is not an equivalence or no-effect claim",
+      "rule": "ci95_low <= 0 <= ci95_high"
+    },
+    "UNRESOLVED": {
+      "rule": "point_or_interval_not_finite_or_required_coverage_missing"
+    },
+    "degradation_definition": "C0-CS",
+    "higher_is_better": true
+  },
+  "date": "2026-10-02",
+  "evidence_tier": "P0",
+  "execution_interpretability_gate": {
+    "fail_label": "EXECUTION_NOT_INTERPRETABLE",
+    "note": "This gate determines whether an execution is scientifically interpretable; it does not declare the model robust.",
+    "pass_label": "EXECUTION_INTERPRETABLE",
+    "required": [
+      "frozen_input_contract_hash_matches",
+      "frozen_severity_protocol_hash_matches",
+      "qualified_sampling_v2_hash_matches",
+      "qualified_aggregation_protocol_hash_matches",
+      "all_required_checkpoints_and_model_variants_accounted_for",
+      "all_fault_instances_have_valid_replay_ids",
+      "no_outer_test_tuning_occurred",
+      "no_OnField_fault_generation_occurred",
+      "all_required_result_dimensions_present",
+      "all_missing_or_undefined_metrics_explicitly_accounted_for"
+    ]
+  },
+  "governance": {
+    "arbitrary_practical_margin_introduced": false,
+    "defined_before_sensor_fault_model_results": true,
+    "model_predictions_seen": false,
+    "onfield_outcomes_used": false,
+    "outer_test_outcomes_used": false,
+    "physical_realism_claim": false,
+    "sensor_fault_results_seen": false,
+    "validation_outcomes_used": false
+  },
+  "heldout_governance": {
+    "heldout_suggested_change_policy": "preserve original result; define new protocol version, return to development/calibration, and refreeze before any new held-out execution",
+    "outer_test_results_may_change_aggregation": false,
+    "outer_test_results_may_change_reporting_rules": false,
+    "outer_test_results_may_change_sampling": false,
+    "outer_test_results_may_change_severity": false,
+    "outer_test_results_may_select_fault_families": false,
+    "outer_test_results_may_select_only_favorable_metrics": false
+  },
+  "important_interpretation_rule": "NO_DIRECTIONAL_CONCLUSION must never be rewritten as 'no degradation', 'equivalent', 'safe', or 'robust'.",
+  "mandatory_reporting": {
+    "classification_denominators": [
+      "TP",
+      "FN",
+      "TN",
+      "FP"
+    ],
+    "fall_event_denominators": [
+      "eligible_event_count",
+      "detected_event_count",
+      "missed_event_count"
+    ],
+    "for_each_model_family_severity_metric": [
+      "C0_point_estimate",
+      "CS_point_estimate",
+      "paired_degradation_point",
+      "paired_degradation_ci95_low",
+      "paired_degradation_ci95_high",
+      "direction_status",
+      "eligible_subject_count",
+      "total_subject_count"
+    ],
+    "required_detail": [
+      "family_severity_macro",
+      "individual_fault_variant",
+      "checkpoint_seed_specific"
+    ],
+    "required_strata": [
+      "overall_61_subject",
+      "UNIVR",
+      "KFALL"
+    ]
+  },
+  "missingness_policy": {
+    "coverage_count_required": true,
+    "execution_can_be_interpretable_with_missing_required_condition": false,
+    "missing_condition_silently_dropped": false,
+    "undefined_metrics_remain_NA": true,
+    "undefined_metrics_replaced_with_zero": false
+  },
+  "multiple_condition_policy": {
+    "best_case_only_reporting": false,
+    "condition_level_intervals": "reported_without_global_significance_claim",
+    "experiment_wide_hypothesis_claim": false,
+    "family_wide_significance_claim": false,
+    "selective_family_omission": false,
+    "selective_severity_omission": false,
+    "selective_variant_omission": false,
+    "worst_case_only_reporting": false
+  },
+  "next_action_after_qualification": "implement and unit-qualify the exact frozen sensor-fault operators without model inference; then execute development/calibration engine checks before any final held-out robustness run",
+  "performance_margin_policy": {
+    "P2_P3_validated_margin_available": false,
+    "application_level_practical_margin_available": false,
+    "arbitrary_numeric_robustness_margin_allowed": false,
+    "binary_global_robust_not_robust_label_allowed": false,
+    "reason": "No validated application safety margin or P2/P3 sensor evidence exists from which to justify a universal numeric performance-loss threshold. Results must therefore be reported condition-by-condition with uncertainty rather than converted into an arbitrary global robustness score."
+  },
+  "phase": "4H",
+  "preexecution_governance_complete_after_qualification": true,
+  "primary_metrics": [
+    "falling_recall",
+    "activity_specificity",
+    "balanced_accuracy"
+  ],
+  "publication_minimum_record": [
+    "git_commit",
+    "config_hashes",
+    "dataset_manifest_hash",
+    "model_checkpoint_hashes",
+    "model_seed",
+    "fold",
+    "fault_protocol_hash",
+    "severity_protocol_hash",
+    "sampling_protocol_hash",
+    "aggregation_protocol_hash",
+    "software_versions",
+    "hardware_identifier_when_applicable",
+    "result_artifact_manifest_hash"
+  ],
+  "purpose": "freeze interpretation, completeness, claim, and reporting rules before any sensor-fault/model robustness result exists",
+  "required_fault_matrix": {
+    "all_61_outer_test_subjects_required_for_final_evaluation": true,
+    "all_five_outer_folds_required_for_final_evaluation": true,
+    "all_three_checkpoint_seeds_required": true,
+    "family_severity_macro_count_per_model_variant": 36,
+    "fault_families": [
+      "bias",
+      "drift",
+      "scale_factor",
+      "noise",
+      "clipping_saturation",
+      "stuck_channel",
+      "axis_loss",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "individual_predeclared_variants_must_also_be_reported": true,
+    "regimes": [
+      "C0",
+      "CS"
+    ],
+    "severity_levels": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "stochastic_replicates_must_not_be_selectively_removed": true
+  },
+  "required_model_variants": {
+    "prospective_fp32_300ms": {
+      "checkpoint_count": 15,
+      "fold_count": 5,
+      "role": "unprotected_clean_precision_reference",
+      "seed_count": 3
+    },
+    "qualified_static_ptq_v7": {
+      "MCU_execution_claim": false,
+      "checkpoint_count": 15,
+      "fold_count": 5,
+      "fully_int8_claim": false,
+      "role": "qualified_mixed_precision_PTQ_comparator",
+      "seed_count": 3
+    }
+  },
+  "schema_version": "phase4h_sensor_fi_robustness_reporting_v1",
+  "secondary_metrics": [
+    "precision",
+    "f1",
+    "event_recall",
+    "sensor_lead_ms"
+  ],
+  "status": "FROZEN_PRE_SANITY_RESULT"
+}

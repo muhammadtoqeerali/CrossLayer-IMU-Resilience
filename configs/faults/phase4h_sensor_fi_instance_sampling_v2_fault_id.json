@@ -1,0 +1,322 @@
+{
+  "date": "2026-10-02",
+  "domain": "sensor",
+  "evidence_tier": "P0",
+  "expected_instances_per_parent": {
+    "derivation": {
+      "source_trial": {
+        "delay": 3,
+        "drift": 36,
+        "dropout": 54,
+        "frame_loss": 9,
+        "jitter": 9,
+        "orientation": 9,
+        "stuck_channel": 18
+      },
+      "stored_window": {
+        "axis_loss": 9,
+        "bias": 36,
+        "clipping_saturation": 18,
+        "noise": 54,
+        "scale_factor": 36
+      }
+    },
+    "source_trial": 138,
+    "stored_window": 153
+  },
+  "fault_id_policy": {
+    "fold_in_fault_id": true,
+    "format": "p4h-{partition}-f{fold}-{family}-{level}-{variant_id}-r{replicate_index}-{parent_hash12}",
+    "model_identity_in_fault_id": false,
+    "partition_in_fault_id": true
+  },
+  "governance": {
+    "faults_executed": false,
+    "model_predictions_computed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "overlapping_windows_independent_for_uncertainty": false,
+    "physical_realism_claim": false,
+    "sampling_tuned_on_model_outcomes": false,
+    "validation_used": false
+  },
+  "instance_required_fields": [
+    "fault_id",
+    "family",
+    "domain",
+    "evidence_tier",
+    "injection_layer",
+    "target_channels",
+    "onset_sample",
+    "duration_samples",
+    "persistence",
+    "severity",
+    "severity_provenance",
+    "seed",
+    "parent_sequence_id",
+    "partition",
+    "replay_id"
+  ],
+  "next_action": "qualify the isolated v2 fault-id namespace repair with the same metadata-only sanity gates; if all folds pass, preserve a separate post-result qualification record, then freeze evaluation aggregation and robustness reporting before any model robustness execution",
+  "not_yet_frozen": [
+    "evaluation aggregation protocol",
+    "robustness acceptance criteria"
+  ],
+  "parent_protocol": {
+    "failure_classification": "FAULT_ID_NAMESPACE_COLLISION_ONLY",
+    "path": "configs/faults/phase4h_sensor_fi_instance_sampling_v1.json",
+    "sanity_status": "FAIL",
+    "sha256": "8174885d78a8864ce1f1c9f5fb1faaa1b3e1a7d1f34538c8e4120c87ecd452f0"
+  },
+  "parent_units": {
+    "sequence_faults": "source_trial",
+    "window_value_faults": "stored_window"
+  },
+  "partition_policy": {
+    "development_sampling_source": "training_calibration",
+    "onfield_fault_generation_allowed": false,
+    "outer_test_generated_instances_may_change_protocol": false,
+    "outer_test_generation_after_full_protocol_freeze": true,
+    "outer_test_may_tune_sampling": false,
+    "validation_may_tune_sampling": false
+  },
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "replay_identity": {
+    "algorithm": "SHA256",
+    "canonicalization": "JSON sort_keys=True separators=(',',':') UTF-8; replay_id excluded",
+    "model_identity_in_replay_id": false,
+    "same_instance_reused_across_backbones": true,
+    "same_instance_reused_across_precision_variants": true
+  },
+  "replication_policy": {
+    "deterministic_families": {
+      "axis_loss": 1,
+      "bias": 1,
+      "clipping_saturation": 1,
+      "delay": 1,
+      "drift": 1,
+      "orientation": 1,
+      "scale_factor": 1,
+      "stuck_channel": 1
+    },
+    "replicates_are_independent_subjects_or_events": false,
+    "replicates_are_nested_within_parent_sequence": true,
+    "stochastic_families": {
+      "dropout": 3,
+      "frame_loss": 3,
+      "jitter": 3,
+      "noise": 3
+    }
+  },
+  "schema_version": "phase4h_sensor_fi_instance_sampling_v2_fault_id",
+  "seed_derivation": {
+    "algorithm": "SHA256",
+    "integer_conversion": "first_8_digest_bytes_big_endian_unsigned",
+    "model_identity_in_seed": false,
+    "payload_fields_in_order": [
+      "namespace",
+      "partition",
+      "fold",
+      "parent_kind",
+      "parent_sequence_id",
+      "family",
+      "severity_level",
+      "variant_id",
+      "replicate_index"
+    ]
+  },
+  "seed_namespace": "crosslayer-phase4h-sensor-fi-instance-v1",
+  "sequence_parent_identity": {
+    "format": "subject={subject}|task={task}|trial={trial}",
+    "sampling_rate_hz": 100
+  },
+  "single_change_from_v1": {
+    "duration_policy_changed": false,
+    "field": "fault_id",
+    "onset_policy_changed": false,
+    "partition_policy_changed": false,
+    "reason": "the same source-trial parent may legitimately appear in training-calibration identities for multiple outer folds; v1 replay_id was already unique because fold participates in the canonical instance, but the human-readable fault_id collided across folds",
+    "replay_canonicalization_changed": false,
+    "replicate_policy_changed": false,
+    "seed_derivation_changed": false,
+    "seed_namespace_changed": false,
+    "severity_changed": false,
+    "target_policy_changed": false,
+    "v1_behavior": "fault_id encoded family/severity/variant/replicate and parent hash but omitted partition/fold",
+    "v2_behavior": "fault_id additionally encodes partition and fold"
+  },
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "target_policy": {
+    "all_effective_channel_families": [
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "all_effective_channels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "axis_loss": {
+      "L1": {
+        "channel_count": 1,
+        "target_variants": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      },
+      "L2": {
+        "channel_count": 3,
+        "target_variants": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ]
+      },
+      "L3": {
+        "channel_count": 6,
+        "target_variants": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ]
+      }
+    },
+    "euler_channels_targeted": false,
+    "single_channel_families": [
+      "bias",
+      "drift",
+      "scale_factor",
+      "noise",
+      "clipping_saturation",
+      "stuck_channel",
+      "dropout"
+    ],
+    "single_channel_variants": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ]
+    ]
+  },
+  "temporal_placement": {
+    "delay": {
+      "duration_samples": null,
+      "onset_policy": "0",
+      "persistence": "until_end"
+    },
+    "drift": {
+      "duration_samples": 100,
+      "onset_formula": "floor((parent_length-duration)/2)",
+      "onset_policy": "centered_in_parent_trial",
+      "persistence": "transient"
+    },
+    "dropout": {
+      "duration_from_severity_protocol": true,
+      "onset_policy": "seeded_uniform_within_replicate_stratum",
+      "persistence": "transient",
+      "replicate_strata": 3,
+      "strata": [
+        "early eligible starts",
+        "middle eligible starts",
+        "late eligible starts"
+      ]
+    },
+    "frame_loss": {
+      "duration_from_severity_protocol": true,
+      "onset_policy": "seeded_uniform_within_replicate_stratum",
+      "persistence": "transient",
+      "replicate_strata": 3,
+      "strata": [
+        "early eligible starts",
+        "middle eligible starts",
+        "late eligible starts"
+      ]
+    },
+    "jitter": {
+      "duration_samples": null,
+      "onset_policy": "0",
+      "persistence": "until_end",
+      "randomness": "seeded per-sample bounded displacement"
+    },
+    "orientation": {
+      "duration_samples": null,
+      "onset_policy": "0",
+      "persistence": "until_end"
+    },
+    "stuck_channel": {
+      "duration_from_severity_protocol": true,
+      "onset_formula": "floor((parent_length-duration)/2)",
+      "onset_policy": "centered_in_parent_trial",
+      "persistence": "transient"
+    }
+  },
+  "variant_policy": {
+    "axis_loss": "severity protocol target variants: six single axes at L1, two sensor triads at L2, all six effective channels at L3",
+    "bias": "six single-channel targets x two signs",
+    "clipping_saturation": "six single-channel targets",
+    "delay": "all six effective channels together",
+    "drift": "six single-channel targets x two signs",
+    "dropout": "six single-channel targets",
+    "frame_loss": "all six effective channels together",
+    "jitter": "all six effective channels together",
+    "noise": "six single-channel targets",
+    "orientation": "all six effective channels; x/y/z rotation-axis variants",
+    "scale_factor": "six single-channel targets x lower/upper gain variants",
+    "stuck_channel": "six single-channel targets"
+  },
+  "window_parent_identity": {
+    "duration_samples": 30,
+    "format": "subject={subject}|task={task}|trial={trial}|window={window}",
+    "onset_policy": "0",
+    "persistence": "transient",
+    "window_samples": 30
+  }
+}

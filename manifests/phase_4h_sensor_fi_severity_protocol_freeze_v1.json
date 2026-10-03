@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-02",
+  "fault_family_count": 12,
+  "faults_executed": false,
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_severity.py",
+    "scope": "severity-coordinate materialization only; no fault execution",
+    "sha256": "ec925c9351c9d144cf67462d7f047ecd0784037fbaadb63359ad2f1323c906e4"
+  },
+  "input_contract": {
+    "path": "configs/faults/phase4h_sensor_fi_input_contract_v1.json",
+    "sha256": "fb7f18ed6d10fc449c32d8e8d458753daaeaa8048ab6faba388566a53cacfe3f"
+  },
+  "input_contract_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_input_contract_freeze_v1.json",
+    "sha256": "e12cfde682269f6583c84161b0ff59da62699facd8b6b41f874878dd83063e00"
+  },
+  "model_robustness_results_seen": false,
+  "onfield_outcomes_seen": false,
+  "outer_test_outcomes_seen": false,
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "prospective_before_model_robustness_results": true,
+  "protocol": {
+    "path": "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json",
+    "sha256": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009"
+  },
+  "schema_version": "phase4h_sensor_fi_severity_protocol_freeze_v1",
+  "severity_level_count": 3,
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "training_calibration_semantics_audit": {
+    "model_predictions_present": false,
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_severity_semantics_audit_v1/severity_semantics_feasibility_audit.json",
+    "sha256": "06a237399ca5c6d2c1cb78fbd0f4477b06a0dac7611c6183ef157591f45d2f22",
+    "used_for": "feasibility and fold-local reference materialization only"
+  },
+  "validation_outcomes_seen": false
+}

@@ -1,0 +1,587 @@
+{
+  "activity_only_metrics": {
+    "activity_specificity_formula": "TN / (TN + FP), with every retained OnField window being true Activity",
+    "false_positive_window_definition": "positive fall probability >= frozen checkpoint/operating-point threshold",
+    "false_trigger_episode_definition": "historical trigger_episodes rule using frozen threshold and required_consecutive; every emitted episode is false because OnField contains no Falling labels",
+    "false_triggers_per_activity_hour_formula": "false_trigger_episode_count / (activity_seconds / 3600)",
+    "overlapping_windows_treated_as_independent_in_uncertainty": false,
+    "pooled_window_metrics": "DESCRIPTIVE_ONLY",
+    "primary_subject_level": [
+      "activity_specificity",
+      "false_triggers_per_activity_hour"
+    ],
+    "supporting_subject_level": [
+      "false_trigger_episode_count",
+      "activity_seconds",
+      "activity_window_count",
+      "false_positive_window_count"
+    ],
+    "trial_episode_state_reset": true
+  },
+  "checkpoint_aggregation": {
+    "checkpoint_performance_used_for_selection": false,
+    "checkpoint_performance_used_for_weighting": false,
+    "checkpoint_specific_results_retained": true,
+    "cohort_summary_rows_expected": 6,
+    "complete_rectangular_estate_equivalent_weight": "1/15 per checkpoint",
+    "subject_checkpoint_rows_expected": 900,
+    "subject_estate_summary_rows_expected": 60,
+    "trial_checkpoint_rows_expected": 1440,
+    "within_subject_hierarchy": [
+      "compute metric independently for each checkpoint",
+      "equal mean across 5 folds within each seed",
+      "equal mean across the 3 seeds"
+    ]
+  },
+  "claim_boundary": {
+    "allowed": [
+      "activity_specificity",
+      "false_trigger_episode_count",
+      "false_triggers_per_activity_hour",
+      "activity-side field-domain false-alarm behavior",
+      "checkpoint-specific descriptive variability"
+    ],
+    "prohibited": [
+      "fall_recall",
+      "event_recall",
+      "missed_fall_rate",
+      "fall_precision_as_two_class_external_metric",
+      "sensor_lead_time",
+      "fall_recovery",
+      "balanced_accuracy_as_two_class_external_metric",
+      "external fall-detection effectiveness",
+      "FP32/PTQ equivalence",
+      "binary global robustness label"
+    ]
+  },
+  "dataset": {
+    "binding_config": "configs/datasets/phase4i_onfield_external_300ms_root_binding_v1.json",
+    "binding_config_sha256": "0cf01d32571e72caa8ec2c0cec99fbc05d5ca7ce5aa34c2425b168759731e608",
+    "canonical_root": "/mnt/hdd16T/protechto/data/OnField/segments/300ms_50ov_npseg_filt_binary",
+    "label_inventory": {
+      "Activity": 1023337,
+      "Falling": 0
+    },
+    "overlap": 0.5,
+    "rejected_storage_ids": [
+      "999",
+      "1000"
+    ],
+    "retained_storage_ids": [
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010"
+    ],
+    "retained_subject_count": 10,
+    "retained_trial_count": 16,
+    "retained_window_count": 1023337,
+    "sampling_rate_hz": 100,
+    "stride_samples": 15,
+    "trial_activity_seconds_formula": "((window_count - 1) * 15 + 30) / 100 for each nonempty trial; trial boundaries are never bridged",
+    "trial_boundaries_reset_trigger_state": true,
+    "window_samples": 30
+  },
+  "date": "2026-10-03",
+  "expected_execution_counts": {
+    "cohort_summary_rows": 6,
+    "model_window_evaluations": 30700110,
+    "subject_checkpoint_operating_point_rows": 900,
+    "subject_estate_summary_rows": 60,
+    "threshold_applications": 92100330,
+    "trial_checkpoint_operating_point_rows": 1440
+  },
+  "governance": {
+    "onfield_used_for_checkpoint_selection": false,
+    "onfield_used_for_fault_parameter_selection": false,
+    "onfield_used_for_int8_calibration": false,
+    "onfield_used_for_model_weighting": false,
+    "onfield_used_for_operating_point_selection": false,
+    "onfield_used_for_threshold_tuning": false,
+    "onfield_used_for_training": false,
+    "onfield_used_for_validation": false,
+    "post_result_retuning": false,
+    "result_dependent_protocol_changes": false
+  },
+  "implementation_reuse": {
+    "historical_evaluator": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+    "historical_evaluator_sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380",
+    "no_sensor_fault_injection": true,
+    "outer_executor": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+    "outer_executor_model_loading_and_probability_semantics": "reuse unchanged where applicable",
+    "trigger_episodes_semantics": "reuse unchanged"
+  },
+  "model_estate": {
+    "best_seed_or_fold_selection": "PROHIBITED",
+    "checkpoint_count_per_model_variant": 15,
+    "external_evaluation_rule": "Every one of the 15 seed\u00d7fold members is evaluated independently for both model variants.",
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fp32_checkpoints": [
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_42/fold_1/best-checkpoint.ckpt",
+        "checkpoint_sha256": "a7ddddf583289df7faf44f8323b6eaf03b8ad8fe57d9abc062826c7a7f1be20f",
+        "fold": 1,
+        "seed": 42
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_42/fold_2/best-checkpoint.ckpt",
+        "checkpoint_sha256": "9d2e4c66596fb85e8586d63402f49746acdd3854c7e0b0096f33c08eb7b1b151",
+        "fold": 2,
+        "seed": 42
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_42/fold_3/best-checkpoint.ckpt",
+        "checkpoint_sha256": "a6fea1f9bc0ff88ef413bdd689eae20930255050c0d36c89a09574390264698c",
+        "fold": 3,
+        "seed": 42
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_42/fold_4/best-checkpoint.ckpt",
+        "checkpoint_sha256": "c995b861db89beb126a01a9de51139a9b946466ceff1c0b2a6ecfb6cb68ac445",
+        "fold": 4,
+        "seed": 42
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_42/fold_5/best-checkpoint.ckpt",
+        "checkpoint_sha256": "303b59926d51c9664b9e4d302f3d814c9d5ac5661aa911275faefbcf3799bffe",
+        "fold": 5,
+        "seed": 42
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_123/fold_1/best-checkpoint.ckpt",
+        "checkpoint_sha256": "3fb97001f798d49270a695364dd233f9e15eef6b4c12fac9a76162f99ebc9f2c",
+        "fold": 1,
+        "seed": 123
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_123/fold_2/best-checkpoint.ckpt",
+        "checkpoint_sha256": "6d85923c266e4066585d0a30026aff78f4002d3ca9e8c434ef74ba06e7116cac",
+        "fold": 2,
+        "seed": 123
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_123/fold_3/best-checkpoint.ckpt",
+        "checkpoint_sha256": "8446e96a290896d9fbab48f1567d46c7125cfc206f34bad859a30446690c3c00",
+        "fold": 3,
+        "seed": 123
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_123/fold_4/best-checkpoint.ckpt",
+        "checkpoint_sha256": "4891ad96ac80768432e11abb8c594bacadbcfdba8316d71e797eff901ecf9846",
+        "fold": 4,
+        "seed": 123
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_123/fold_5/best-checkpoint.ckpt",
+        "checkpoint_sha256": "3e08a1adbf8c615f9ff2b340188086448e2ebc5cdf63700ae3a248c8b7c75c1e",
+        "fold": 5,
+        "seed": 123
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_2025/fold_1/best-checkpoint.ckpt",
+        "checkpoint_sha256": "ecae943c13f4c3b248ad5bb2f158f17367d4d4ca5914e860ca64f3647b3cf428",
+        "fold": 1,
+        "seed": 2025
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_2025/fold_2/best-checkpoint.ckpt",
+        "checkpoint_sha256": "fd6d7dce675af0c802da899280629172ecb06f1005edb3671c3cb26fce97d3a1",
+        "fold": 2,
+        "seed": 2025
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_2025/fold_3/best-checkpoint.ckpt",
+        "checkpoint_sha256": "313a0ef7af40204e70ea836c42fba9e54b1dfcebc2d64bda7bae5d223ed9c999",
+        "fold": 3,
+        "seed": 2025
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_2025/fold_4/best-checkpoint.ckpt",
+        "checkpoint_sha256": "9897dba0c3706c6d7e55cf9af52ff35c71938a60c3193826e84d31ae4439584b",
+        "fold": 4,
+        "seed": 2025
+      },
+      {
+        "checkpoint": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_2025/fold_5/best-checkpoint.ckpt",
+        "checkpoint_sha256": "3c4dcae88f9f74169506c317889c913dcef7f55425b5ed2fa7f4f5a7e9a4574b",
+        "fold": 5,
+        "seed": 2025
+      }
+    ],
+    "model_variants": [
+      "prospective_fp32_300ms",
+      "qualified_static_ptq_v7"
+    ],
+    "probability_level_ensemble": "PROHIBITED_NOT_PART_OF_FROZEN_MODEL",
+    "ptq_all_15_members_qualified": true,
+    "ptq_qualification_manifest": "manifests/phase_4g_static_ptq_v7_all15_training_calibration_qualification_v1.json",
+    "ptq_qualification_manifest_sha256": "cdcdcb6d3ed95660a9cc421c6f5ab4647d7d1038c4075eaba94b378b15bd4f23",
+    "seeds": [
+      42,
+      123,
+      2025
+    ],
+    "single_deployment_checkpoint_selected": false
+  },
+  "operating_points": {
+    "all_three_operating_points_must_be_reported": true,
+    "names": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "onfield_operating_point_selection": false,
+    "onfield_threshold_tuning": false,
+    "reuse_same_checkpoint_probabilities_across_three_operating_points": true,
+    "rows": [
+      {
+        "fold": 1,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.895
+      },
+      {
+        "fold": 1,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.895
+      },
+      {
+        "fold": 1,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.515
+      },
+      {
+        "fold": 2,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.89
+      },
+      {
+        "fold": 2,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.885
+      },
+      {
+        "fold": 2,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.30500000000000005
+      },
+      {
+        "fold": 3,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.87
+      },
+      {
+        "fold": 3,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.795
+      },
+      {
+        "fold": 3,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.51
+      },
+      {
+        "fold": 4,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.845
+      },
+      {
+        "fold": 4,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.89
+      },
+      {
+        "fold": 4,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.4
+      },
+      {
+        "fold": 5,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.795
+      },
+      {
+        "fold": 5,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.71
+      },
+      {
+        "fold": 5,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.37
+      },
+      {
+        "fold": 1,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.885
+      },
+      {
+        "fold": 1,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.85
+      },
+      {
+        "fold": 1,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.42500000000000004
+      },
+      {
+        "fold": 2,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.855
+      },
+      {
+        "fold": 2,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.85
+      },
+      {
+        "fold": 2,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.255
+      },
+      {
+        "fold": 3,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.755
+      },
+      {
+        "fold": 3,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.875
+      },
+      {
+        "fold": 3,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.45499999999999996
+      },
+      {
+        "fold": 4,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.875
+      },
+      {
+        "fold": 4,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.875
+      },
+      {
+        "fold": 4,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.32
+      },
+      {
+        "fold": 5,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.835
+      },
+      {
+        "fold": 5,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.86
+      },
+      {
+        "fold": 5,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.275
+      },
+      {
+        "fold": 1,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.885
+      },
+      {
+        "fold": 1,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.885
+      },
+      {
+        "fold": 1,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.385
+      },
+      {
+        "fold": 2,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.865
+      },
+      {
+        "fold": 2,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.86
+      },
+      {
+        "fold": 2,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.365
+      },
+      {
+        "fold": 3,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.58
+      },
+      {
+        "fold": 3,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.645
+      },
+      {
+        "fold": 3,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.375
+      },
+      {
+        "fold": 4,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.89
+      },
+      {
+        "fold": 4,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.84
+      },
+      {
+        "fold": 4,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.30000000000000004
+      },
+      {
+        "fold": 5,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.885
+      },
+      {
+        "fold": 5,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.875
+      },
+      {
+        "fold": 5,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.31
+      }
+    ],
+    "selection_source": "frozen validation-only threshold registry",
+    "threshold_registry_path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/validation_selected_thresholds.csv",
+    "threshold_registry_sha256": "07cb5fb987ad16a6238bb97f938fcce388cc45edd5862ebc307c297b8051b004",
+    "threshold_row_count": 45
+  },
+  "phase": "4I",
+  "schema_version": "phase4i_onfield_external_evaluation_protocol_v1",
+  "scientific_role": "INDEPENDENT_ACTIVITY_ONLY_EXTERNAL_FIELD_EVALUATION",
+  "status": "FROZEN_PRE_ONFIELD_MODEL_INFERENCE",
+  "uncertainty": {
+    "bootstrap_after_checkpoint_aggregation": true,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed_rule": "SHA256-derived deterministic seed from phase4i_onfield_external_evaluation_protocol_v1|model_variant|operating_point|metric",
+    "bootstrap_type": "ordinary paired subject bootstrap with replacement over the 10 retained OnField subjects",
+    "confidence_interval": "two-sided percentile 95% interval",
+    "equivalence_test": "NOT_PREDECLARED",
+    "model_variant_difference_test": "NOT_PREDECLARED",
+    "sampling_unit": "external subject",
+    "subject_count": 10,
+    "trials_bootstrapped_as_independent_units": false,
+    "windows_bootstrapped": false
+  }
+}

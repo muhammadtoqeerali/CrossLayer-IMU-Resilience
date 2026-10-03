@@ -1,0 +1,72 @@
+{
+  "schema_version": "phase4i_onfield_external_executor_v1",
+  "phase": "4I",
+  "status": "CANDIDATE_PRE_ONFIELD_INFERENCE",
+  "protocol": {
+    "path": "configs/evaluation/phase4i_onfield_external_evaluation_protocol_v1.json",
+    "sha256": "de47fb6106b961f27cd4341ca11287d3522401431457241e05c93cfb1c323c41"
+  },
+  "protocol_freeze": {
+    "path": "manifests/phase_4i_onfield_external_evaluation_protocol_v1_freeze.json",
+    "sha256": "ed5d4d92e218e07a99084016e8d8a310f438b145f0867b24d5ad9d32e9883ff1"
+  },
+  "root_binding": {
+    "path": "configs/datasets/phase4i_onfield_external_300ms_root_binding_v1.json",
+    "sha256": "0cf01d32571e72caa8ec2c0cec99fbc05d5ca7ce5aa34c2425b168759731e608"
+  },
+  "reused_runtime": {
+    "outer_executor": {
+      "path": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+      "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+    },
+    "outer_executor_config": {
+      "path": "configs/evaluation/phase4h_sensor_fi_outer_executor_v1.json",
+      "sha256": "bb73d35e2a8458d490d2e605551eb1cbfae3112fad74cfdea322175de52c1ef9"
+    },
+    "historical_evaluator": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+      "sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380"
+    }
+  },
+  "execution": {
+    "batch_size": 4096,
+    "output_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4i_onfield_external_evaluation_v1",
+    "temporary_suffix": ".partial",
+    "store_probabilities": false,
+    "atomic_finalization": true,
+    "folds_executed_sequentially": true,
+    "trial_boundaries_reset_trigger_state": true,
+    "probabilities_reused_across_three_operating_points": true
+  },
+  "subject_metric_implementation": {
+    "activity_specificity": "sum TN across that subject's trials divided by sum Activity windows across those trials",
+    "false_triggers_per_activity_hour": "sum false trigger episodes across that subject's trials divided by summed Activity duration in hours",
+    "activity_seconds": "sum trial Activity seconds; trial durations use ((N-1)*15+30)/100",
+    "trial_weighting_for_primary_subject_metrics": "denominator based, not equal trial averaging"
+  },
+  "estate_summary": {
+    "checkpoint_specific_results_retained": true,
+    "fold_mean_within_seed": true,
+    "seed_mean_after_fold_mean": true,
+    "checkpoint_selection": false,
+    "checkpoint_performance_weighting": false
+  },
+  "uncertainty": {
+    "bootstrap_replicates": 10000,
+    "sampling_unit": "subject",
+    "windows_are_not_independent_bootstrap_units": true,
+    "trials_are_not_independent_bootstrap_units": true
+  },
+  "scientific_boundary": {
+    "onfield_training": false,
+    "onfield_validation": false,
+    "onfield_calibration": false,
+    "onfield_threshold_tuning": false,
+    "onfield_checkpoint_selection": false,
+    "onfield_operating_point_selection": false,
+    "onfield_model_weighting": false,
+    "fall_side_claims": false,
+    "fp32_ptq_equivalence_claim": false,
+    "global_binary_robustness_label": false
+  }
+}

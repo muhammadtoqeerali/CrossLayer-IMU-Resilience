@@ -1,0 +1,50 @@
+{
+  "calibration_identity": {
+    "exact_training_only_replay_passed": true,
+    "path": "configs/datasets/int8_calibration_identity_v1.json",
+    "replay_tensor_sha256_by_fold": {
+      "1": "c12d02f2355ba648ed47f67f5425bc37cb3d0a10e85a6fe13dc9f79b8da1ca19",
+      "2": "2dc8ef1954753dbeed48cb59a5e7ada58489387d26368324258990556d4f9244",
+      "3": "a73f0f63fce0f9c003b1e6e98c86c0d981a4684495e886f2481ca06ccda9c46e",
+      "4": "b0691649cfd2cf71e407f842e43f4b1e72afc86f9dba87b61a11769ecd2e3cf2",
+      "5": "9b13e9db7c0450edc21afdb6eb299c925a7185b6189266d5762adc2558ede1a2"
+    },
+    "sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e",
+    "total_fold_window_instances": 20480,
+    "windows_per_fold": 4096
+  },
+  "fp32_baseline": {
+    "checkpoint_count": 15,
+    "path": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+    "sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+  },
+  "frozen_date": "2026-10-02",
+  "next_action": "Realize the single frozen torch_fx_x86_default_qconfig_v1 candidate for all 15 checkpoints using only the corresponding fold's frozen 4096 calibration windows.",
+  "phase": "4G",
+  "pre_result_freeze": {
+    "fault_data_used": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "quantized_model_created": false,
+    "quantized_outputs_observed": false,
+    "validation_used": false
+  },
+  "protocol": {
+    "path": "configs/baseline/prospective_300ms_static_ptq_v1.json",
+    "sha256": "26440fafbda8a616a51c391764dd59dd16d5015e7e8f3ed584db541b156b09d8"
+  },
+  "runtime_qconfig": {
+    "activation_dtype": "quint8",
+    "activation_observer_class": "torch.ao.quantization.observer.HistogramObserver",
+    "activation_qscheme": "torch.per_tensor_affine",
+    "api": "torch.ao.quantization.quantize_fx",
+    "backend": "x86",
+    "global_qconfig_repr": "QConfig(activation=functools.partial(<class 'torch.ao.quantization.observer.HistogramObserver'>, reduce_range=True){}, weight=functools.partial(<class 'torch.ao.quantization.observer.PerChannelMinMaxObserver'>, dtype=torch.qint8, qscheme=torch.per_channel_symmetric){})",
+    "qconfig_constructor": "get_default_qconfig_mapping('x86')",
+    "weight_dtype": "qint8",
+    "weight_observer_class": "torch.ao.quantization.observer.PerChannelMinMaxObserver",
+    "weight_qscheme": "torch.per_channel_symmetric"
+  },
+  "schema_version": "phase4g_static_ptq_protocol_freeze_v1",
+  "status": "FROZEN_PRE_RESULT"
+}

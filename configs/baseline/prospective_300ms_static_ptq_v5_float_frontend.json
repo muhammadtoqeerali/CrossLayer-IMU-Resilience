@@ -1,0 +1,242 @@
+{
+  "calibration": {
+    "fault_injected_allowed": false,
+    "fold_specific_rule": "Each checkpoint receives only its corresponding fold's frozen 4096 training calibration identities; the same fold identities are reused across its three seeds.",
+    "identity_config": {
+      "path": "configs/datasets/int8_calibration_identity_v1.json",
+      "sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e"
+    },
+    "onfield_allowed": false,
+    "outer_test_allowed": false,
+    "source_partition": "training only",
+    "total_fold_window_instances": 20480,
+    "validation_allowed": false,
+    "windows_per_fold": 4096
+  },
+  "frozen_date": "2026-10-02",
+  "implementation": {
+    "first_quantization_boundary": "immediately after front_end",
+    "front_end_contents": [
+      "normalizer",
+      "permute(0,2,1)",
+      "conv_1"
+    ],
+    "front_end_fx_trace": "non-traceable/opaque",
+    "front_end_module": "front_end",
+    "front_end_precision": "FP32",
+    "parent_v3_implementation": {
+      "path": "experiments/phase_04/ptq_v3_prelu_wrapper.py",
+      "sha256": "d646a1ef24ac8e44791b5d7df549460dcd8beacb26728b6da2233a808cfda3f2"
+    },
+    "parent_v4_implementation": {
+      "path": "experiments/phase_04/ptq_v4_float_classifier.py",
+      "sha256": "a0af6f6bcfb63da2feb80ab69b6fcae9d44d99552892a6e508dfa28b3e571524"
+    },
+    "path": "experiments/phase_04/ptq_v5_float_frontend.py",
+    "sha256": "d733eac88e5213e263d8733da8fb629e22dc1004126d45a5b8e8375061464dd8"
+  },
+  "lineage": {
+    "v3": {
+      "implementation_sha256": "d646a1ef24ac8e44791b5d7df549460dcd8beacb26728b6da2233a808cfda3f2",
+      "outcome": "FAIL p99 numerical fidelity",
+      "protocol_path": "configs/baseline/prospective_300ms_static_ptq_v3_prelu_wrapper.json",
+      "protocol_sha256": "5d163f7297a2fabfa79ab28e460b930160bcba51a310b8a5fef60726a680ac13"
+    },
+    "v4": {
+      "causal_suffix_diagnosis": {
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v4_float_classifier_pilot_seed42_fold1/v4_causal_suffix_diagnosis.json",
+        "sha256": "e4cab300bdaff9c9e8fdcce231dcbf3bcfc93bb5bdc631103e8593ced56ee17c"
+      },
+      "first_block_decomposition": {
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v4_float_classifier_pilot_seed42_fold1/v4_first_quantized_block_decomposition.json",
+        "sha256": "42ff03ca91a49c32e36ac9ce72be3cb38cf7b51aa9cbb5dc82296b24f1671f82"
+      },
+      "implementation_path": "experiments/phase_04/ptq_v4_float_classifier.py",
+      "implementation_sha256": "a0af6f6bcfb63da2feb80ab69b6fcae9d44d99552892a6e508dfa28b3e571524",
+      "outcome": "FAIL p99 numerical fidelity",
+      "pilot_manifest": {
+        "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v4_float_classifier_pilot_seed42_fold1/pilot_manifest.json",
+        "sha256": "ca80819b5bfc4774f77e0855d043b611e1bdb8840c51698c66c1c73b636c83d1"
+      },
+      "protocol_path": "configs/baseline/prospective_300ms_static_ptq_v4_float_classifier.json",
+      "protocol_sha256": "2e754d200ac876db98ef4f63c69bf0cb36b437723e2aa30ed5576ac318ff2958"
+    }
+  },
+  "method": {
+    "backend": "x86",
+    "float_regions_required": [
+      "front_end",
+      "conv_2.2",
+      "fc.2",
+      "fc.4"
+    ],
+    "float_weighted_operators": {
+      "FloatPReLU": 3,
+      "Linear": 1,
+      "front_end.Conv1d": 1
+    },
+    "framework": "PyTorch FX",
+    "front_end_precision": "FP32",
+    "fully_int8_claim_allowed": false,
+    "precision_classification": "MIXED_PRECISION_STATIC_PTQ",
+    "primary_method": "mixed_precision_static_post_training_quantization",
+    "quantized_modules_required": [
+      "conv_2.0",
+      "fc.1"
+    ],
+    "quantized_weighted_operators": {
+      "Conv1d": 1,
+      "Linear": 1
+    }
+  },
+  "next_action": "Execute only seed42/fold1 v5 using its frozen 4096 training calibration windows and evaluate unchanged structural, numerical, and serialization gates.",
+  "numerical_acceptance": {
+    "evaluation_data": "corresponding fold's frozen 4096 training-only calibration windows",
+    "required": {
+      "all_outputs_finite": true,
+      "argmax_agreement_fraction_min": 0.99,
+      "mean_absolute_probability_error_max": 0.01,
+      "output_shape_exactly_preserved": true,
+      "p99_absolute_probability_error_max": 0.05
+    },
+    "source": "unchanged from v1-v4"
+  },
+  "phase": "4G",
+  "provenance_tier": "P0 software quantization evidence",
+  "role": "versioned mixed-precision static PTQ after preserved v4 numerical failure and causal localization of the first input activation quantization",
+  "runtime_environment": {
+    "backend": "x86",
+    "python": "3.13.12",
+    "supported_quantized_engines": [
+      "qnnpack",
+      "onednn",
+      "x86",
+      "fbgemm"
+    ],
+    "torch": "2.12.0+cu130"
+  },
+  "schema_version": "prospective_300ms_static_ptq_v5_float_frontend",
+  "scientific_boundary": {
+    "decision_threshold_changed": false,
+    "fault_data_used_for_v5_design": false,
+    "fully_int8_claim": false,
+    "mcu_execution_claim": false,
+    "numerical_gate_changed": false,
+    "onfield_used_for_v5_design": false,
+    "outer_test_used_for_v5_design": false,
+    "real_v5_calibration_fidelity_observed_before_freeze": false,
+    "real_v5_task_output_observed_before_freeze": false,
+    "synthetic_structural_capability_probe_used": true,
+    "training_calibration_engineering_evidence_used_for_design": true,
+    "validation_used_for_v5_design": false
+  },
+  "selection_policy": {
+    "candidate_count": 1,
+    "candidate_id": "torch_fx_x86_float_frontend_v5",
+    "candidate_sweep": false,
+    "fallback": "If v5 fails any frozen structural, numerical, or serialization gate, preserve the failure. Any further change requires another versioned pre-result protocol.",
+    "pilot_checkpoint": {
+      "fold": 1,
+      "reason": "same engineering pilot lineage used in v1-v4; not selected from held-out performance",
+      "seed": 42
+    },
+    "selection_by_combined_fault_robustness": false,
+    "selection_by_compute_fault_robustness": false,
+    "selection_by_onfield": false,
+    "selection_by_outer_test_accuracy": false,
+    "selection_by_sensor_fault_robustness": false,
+    "selection_by_validation_accuracy": false
+  },
+  "status": "FROZEN_PRE_RESULT",
+  "structural_acceptance": {
+    "fully_int8_claim_allowed": false,
+    "precision_classification": "MIXED_PRECISION_STATIC_PTQ",
+    "required": [
+      "one opaque FP32 front_end call exists",
+      "front_end receives the raw model input",
+      "zero quantize nodes upstream of front_end",
+      "zero dequantize nodes upstream of front_end",
+      "front_end contains normalizer, permutation semantics, and complete conv_1",
+      "front_end contains no quantized module",
+      "front_end output is functionally exact to the pre-FX FP32 front end",
+      "quantization begins immediately after front_end",
+      "exactly one QuantizedConv1d module: conv_2.0",
+      "exactly one QuantizedLinear module: fc.1",
+      "fc.4 is native FP32 Linear with exact checkpoint weight and bias",
+      "exactly three FloatPReLU wrappers",
+      "zero QuantizedPReLU modules",
+      "serialization/load round-trip succeeds"
+    ]
+  },
+  "v5_change_control": {
+    "change_count": 1,
+    "explicitly_not_changed": [
+      "observer family",
+      "backend",
+      "calibration identities",
+      "calibration sample count",
+      "checkpoint weights",
+      "PReLU slopes",
+      "numerical gates",
+      "decision threshold",
+      "validation protocol",
+      "outer-test protocol"
+    ],
+    "failed_mechanisms_preserved": [
+      {
+        "evidence_sha256": "d848451baedcd30f1b621ecca7f9e0dec68c6270b9aedd0e651eececbed14ebf",
+        "mechanism": "conv_1.0 qconfig=None only",
+        "result": "FAIL because upstream quantize/dequantize remained"
+      },
+      {
+        "evidence_sha256": "4b832105fd8ee246df5c044dfd1d1ee80c38ecbc528fcb86050cab78d3f8798e",
+        "mechanism": "opaque complete conv_1 only",
+        "result": "FAIL because upstream normalizer-output quantization remained"
+      }
+    ],
+    "precision_boundary_after": "v5 keeps normalizer + permute + complete conv_1 in FP32 and quantizes only the front_end output before conv_2.0",
+    "precision_boundary_before": "v4 quantized normalized network input before the first Conv1d",
+    "reason": {
+      "frozen_p99_limit": 0.05,
+      "input_quantization_only_p99": 0.109141506254673,
+      "qconv_integer_output_increment": -0.014504805207252502,
+      "root_cause_classification": "FIRST_INPUT_ACTIVATION_QUANTIZATION_ALONE_EXCEEDS_P99_GATE",
+      "v4_first_stage_over_frozen_p99_limit": "conv1_bn",
+      "v4_largest_p99_increment_stage": "conv1_bn",
+      "weight_quantization_increment": -0.005175307393074036
+    },
+    "single_change_from_v4": "move the first quantization boundary from the normalizer output to the output of an opaque FP32 front_end containing normalizer, permutation, and the complete conv_1 block",
+    "successful_pre_result_capability_mechanism": {
+      "converted_front_input_exact": true,
+      "converted_front_output_exact": true,
+      "evidence_path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v4_float_classifier_pilot_seed42_fold1/v5_float_front_end_structural_capability_probe.json",
+      "evidence_sha256": "aadd6f75d0cbbd612bcfa0c6d3bb1b1655216f9a6f08fa97127822067f68c5b7",
+      "mechanism": "opaque FP32 front_end containing normalizer, permute, and complete conv_1",
+      "no_upstream_dequantize": true,
+      "no_upstream_quantize": true,
+      "quantization_begins_immediately_after_front_end": true,
+      "real_dataset_samples_used": false,
+      "structural_pass": true,
+      "task_metric_observed": false
+    },
+    "unchanged_from_v4": [
+      "FP32 checkpoint weights",
+      "task architecture semantics",
+      "x86 backend",
+      "default x86 qconfig for eligible operators",
+      "activation observer family",
+      "activation dtype",
+      "weight observer family",
+      "weight dtype",
+      "conv_2.0 quantization",
+      "fc.1 quantization",
+      "FloatPReLU mathematical implementation",
+      "fc.4 FP32 precision",
+      "4096 frozen training-only calibration identities per fold",
+      "five frozen calibration identity sets",
+      "all 15 Phase-4F checkpoints",
+      "all numerical acceptance gates",
+      "no held-out or fault-based selection"
+    ]
+  }
+}

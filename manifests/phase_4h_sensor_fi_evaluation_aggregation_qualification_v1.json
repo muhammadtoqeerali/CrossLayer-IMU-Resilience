@@ -1,0 +1,67 @@
+{
+  "acceptance": {
+    "all_gates_pass": true,
+    "gate_count": 12,
+    "passed_gate_count": 12
+  },
+  "evidence_tier": "P0",
+  "next_action": "Freeze robustness interpretation, acceptance, completeness, and reporting rules before any sensor-fault/model execution.",
+  "phase": "4H",
+  "pre_result_config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json",
+    "preserved_unchanged": true,
+    "sha256": "ef95356b8e32d8f63bb41c967f35fcdfc24338e7d8ee59af40aa99c3424b0628"
+  },
+  "pre_result_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_evaluation_aggregation_freeze_v1.json",
+    "sha256": "a9e8bd810c82c1e6cd551895289eb3f592fbb94b2284b118c473a3ab75ed95a2"
+  },
+  "pre_result_implementation": {
+    "path": "experiments/phase_04/sensor_fi_aggregation.py",
+    "sha256": "eaad98b0bca6809bfde3e61774b6a48e2debda109e950ebf15c41921b08064a1"
+  },
+  "qualification_date": "2026-10-02",
+  "qualified_properties": [
+    "subject_is_primary_inferential_unit",
+    "overlapping_windows_not_independent",
+    "stochastic_replicates_nested",
+    "model_seeds_not_independent_subjects",
+    "folds_not_independent_samples",
+    "equal_weight_replicate_variant_seed_aggregation",
+    "paired_C0_CS_degradation",
+    "deterministic_dataset_stratified_subject_bootstrap",
+    "29_UNIVR_plus_32_KFALL_subject_strata",
+    "OnField_excluded_from_faulted_evaluation"
+  ],
+  "sanity_artifact_manifest": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_evaluation_aggregation_v1_sanity/artifact_manifest.json",
+    "sha256": "ce5ff3c7755c8fd781a11b0e51c0fb32a9f0d8e926cc793b595ee4be7051bae5"
+  },
+  "sanity_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_evaluation_aggregation_v1_sanity/evaluation_aggregation_sanity_result.json",
+    "sha256": "795af9af2049b91218841323e53072655917c8bc1b33b48b568e00021e8c0c6d",
+    "status": "PASS"
+  },
+  "schema_version": "phase4h_sensor_fi_evaluation_aggregation_qualification_v1",
+  "scientific_boundary": {
+    "fault_injection_executed": false,
+    "model_loaded": false,
+    "model_predictions_computed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "physical_realism_claim": false,
+    "pre_result_protocol_rewritten": false,
+    "sensor_values_mutated": false,
+    "synthetic_or_metadata_only": true,
+    "validation_used": false
+  },
+  "status": "QUALIFIED_SYNTHETIC_HIERARCHY",
+  "still_not_frozen": [
+    "robustness acceptance criteria"
+  ],
+  "technical_failure_record": {
+    "classification": "TECHNICAL_SERIALIZATION_FAILURE_NOT_SCIENTIFIC_RESULT",
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_evaluation_aggregation_v1_sanity/prior_technical_failure.txt",
+    "sha256": "47fcf018293ec1540d76ee05f65236dfaa8209c3702cf294e61919d4dae383f4"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "aggregation_qualification": {
+    "path": "manifests/phase_4h_sensor_fi_evaluation_aggregation_qualification_v1.json",
+    "sha256": "ff4a61015e471084b9a76504854ab6f7948a4faf79034be774c530c9e3c2ba57",
+    "status": "QUALIFIED_SYNTHETIC_HIERARCHY"
+  },
+  "arbitrary_numeric_robustness_margin_introduced": false,
+  "binary_global_robustness_label_allowed": false,
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v1.json",
+    "sha256": "c5e609c6702977391a63a5e1953d3d44c8bb6221078e3a1e7b1e5791081ec9d1"
+  },
+  "date": "2026-10-02",
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_reporting.py",
+    "sha256": "464a5c521c2e1846651b37dcbd45a232e507d977a83aaa80f747266fb2a16c1a"
+  },
+  "model_predictions_seen": false,
+  "onfield_outcomes_seen": false,
+  "outer_test_outcomes_seen": false,
+  "phase": "4H",
+  "physical_realism_claim": false,
+  "prospective_before_sensor_fault_model_results": true,
+  "schema_version": "phase4h_sensor_fi_robustness_reporting_freeze_v1",
+  "sensor_fault_results_seen": false,
+  "status": "FROZEN_PRE_SANITY_RESULT",
+  "validation_outcomes_seen": false
+}

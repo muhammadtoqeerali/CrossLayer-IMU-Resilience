@@ -1,0 +1,44 @@
+{
+  "authorization": {
+    "outer_result_based_retuning": false,
+    "rerun_subject_aggregation": true
+  },
+  "config": {
+    "path": "configs/evaluation/phase4h_sensor_fi_outer_subject_aggregation_v1r1.json",
+    "sha256": "5688044c2b758449bf48131ad3ef713a888c24dec8c1f110020c0d6cf56d3b0e"
+  },
+  "freeze": {
+    "path": "manifests/phase_4h_sensor_fi_outer_subject_aggregation_v1r1_freeze.json",
+    "sha256": "ac9734f4df68ffae437be630d9ee125ce0ba83105754a031df49d4504c0a73f0"
+  },
+  "implementation": {
+    "path": "experiments/phase_04/sensor_fi_outer_subject_aggregation_v1r1.py",
+    "sha256": "f2a9e7276cf86220886e8a1e9bdb26a12cabad764e8cbe932e5585fce3f74f91"
+  },
+  "phase": "4H",
+  "qualification_date": "2026-10-03",
+  "qualified_properties": [
+    "None_to_NaN_only_at_qualified_helper_boundary",
+    "original_outer_row_objects_not_mutated",
+    "undefined_precision_remains_NA",
+    "undefined_timing_remains_NA",
+    "None_and_NaN_missingness_semantics_identical",
+    "finite_values_unchanged",
+    "mixed_missingness_uses_existing_nanmean_equal_behavior",
+    "no_cross_subject_inference_added",
+    "no_global_robustness_label_added"
+  ],
+  "schema_version": "phase4h_sensor_fi_outer_subject_aggregation_v1r1_qualification",
+  "scientific_boundary": {
+    "outer_values_used_for_qualification": false,
+    "result_dependent_selection": false,
+    "scientific_rule_changed": false,
+    "statistical_rule_changed": false,
+    "synthetic_repair_tests_only": true
+  },
+  "status": "QUALIFIED_TECHNICAL_MISSING_VALUE_REPRESENTATION_REPAIR",
+  "tests": {
+    "path": "tests/test_phase4_sensor_fi_outer_subject_aggregation_v1r1.py",
+    "sha256": "614f9b7f50d6ae44b276f56faaa641d0b49417260f07cf2e7e4b5c99dae2af8a"
+  }
+}

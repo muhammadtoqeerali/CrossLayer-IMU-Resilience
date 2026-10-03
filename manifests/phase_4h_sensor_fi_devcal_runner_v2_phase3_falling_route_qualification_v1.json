@@ -1,0 +1,93 @@
+{
+  "artifact_manifest": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_devcal_runner_v2_phase3_falling_route_qualification/artifact_manifest.json",
+    "sha256": "efea4e7f7aa1cdf1448f40e7bf0dbe4fb497efc1754fbd4c88121100e0338992"
+  },
+  "evidence_tier": "P0",
+  "fault_model_smoke_acceptance": {
+    "check_count": 35,
+    "families": [
+      "drift",
+      "stuck_channel",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "family_count": 7,
+    "fold_count": 5,
+    "model_seed": 42,
+    "performance_acceptance": false,
+    "same_corrupted_tensor_fp32_ptq": true
+  },
+  "next_action": "Freeze and statically qualify the final outer-test execution manifest. Do not change fault severity, sampling, model, threshold, aggregation, reporting, or route parameters.",
+  "not_qualified_claims": [
+    "outer-test robustness",
+    "fault-family robustness ordering",
+    "FP32-versus-PTQ robustness ordering",
+    "physical fault realism",
+    "HIL behavior",
+    "MCU behavior"
+  ],
+  "phase": "4H",
+  "pre_result_v2": {
+    "config_path": "configs/evaluation/phase4h_sensor_fi_devcal_runner_v2_phase3_falling_route.json",
+    "config_sha256": "5fd8fd4b67d76dc1f8d8fba203ca96755c80e95b7f9c42050dfb2911b8b662e4",
+    "freeze_path": "manifests/phase_4h_sensor_fi_devcal_runner_v2_phase3_falling_route_freeze_v1.json",
+    "freeze_sha256": "23ee9bbdffd60f78226ee85ef4e289fb50bd0eb2209f72579b8a6d20a78e8de6",
+    "preserved_unchanged": true,
+    "runner_path": "experiments/phase_04/sensor_fi_devcal_runner_v2.py",
+    "runner_sha256": "541af4663293ae5fbaf5286fc3dea7679d511fdabb50738863880e4712a9b86a"
+  },
+  "qualification_date": "2026-10-02",
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_devcal_runner_v2_phase3_falling_route_qualification/qualification_result.json",
+    "sha256": "5949b1902551776dc45e65eab14d6fdd92c3acc3c6a241d26332af653b124c3d",
+    "status": "PASS"
+  },
+  "qualified_properties": [
+    "all 2,269 training-calibration-represented Falling parents exactly reconstruct with the frozen Phase-3 annotation-frame slice route",
+    "all 1,813 KFall Falling parents require the frozen +1 frame-versus-zero-based-position convention",
+    "all 456 UniVR Falling parents reconstruct where frame and zero-based position coincide",
+    "all seven sequence FI families execute through the corrected Falling route in every fold and reach paired FP32/PTQ models",
+    "runner v1 is preserved unchanged"
+  ],
+  "remaining_before_outer_test_execution": [
+    "freeze final outer-test execution manifest using runner v2, including exact full model/fault matrix, deterministic shards, resume rules, output schemas, and hash lineage"
+  ],
+  "route_acceptance": {
+    "authoritative_falling_rule": "fall_start_frame + 15 * falling_local_index",
+    "dataset_parent_counts": {
+      "KFALL": 1813,
+      "UNIVR": 456
+    },
+    "exact_phase3_frame_route_count": 2269,
+    "historical_exception": "KFALL_106_T27_R05 -> whole-trial fallback / retained Activity labels",
+    "position_route_exact_count_diagnostic_only": 456,
+    "route_identity_digest_sha256": "6f394a6d6eef82a78f5aac3ff6929f557cea5f8f30984fd9562f836d9dd8cb5a",
+    "unique_training_calibration_falling_parents": 2269
+  },
+  "schema_version": "phase4h_sensor_fi_devcal_runner_v2_phase3_falling_route_qualification_v1",
+  "scientific_boundary": {
+    "model_predictions_computed": true,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "performance_metrics_computed": false,
+    "physical_realism_claim": false,
+    "probabilities_persisted": false,
+    "protocol_tuned_from_model_outputs": false,
+    "robustness_comparison_made": false,
+    "sensor_fault_injection_executed": true,
+    "threshold_selection": false,
+    "thresholds_applied": false,
+    "training_calibration_used": true,
+    "validation_used": false
+  },
+  "status": "QUALIFIED_PHASE3_FALLING_ROUTE_TRAINING_CALIBRATION",
+  "v1_preserved": {
+    "qualification_sha256": "f803f5749d5d607142be83167e1f9ee6c8dadb2a7ba110a332569396499c2cf1",
+    "rewritten": false,
+    "runner_sha256": "bee7b43423723d5ccdbf237d6dbcf70633d9db489d2aca35d1aca26c5100d398"
+  }
+}

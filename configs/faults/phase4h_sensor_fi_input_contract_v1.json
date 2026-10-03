@@ -1,0 +1,227 @@
+{
+  "claim_boundary": {
+    "allowed_claim": "deterministic software sensor-corruption protocol",
+    "evidence_tier": "P0",
+    "not_allowed": [
+      "physically realistic sensor fault",
+      "measured hardware fault",
+      "HIL fault",
+      "MCU sensor fault",
+      "P2 realism",
+      "P3 realism"
+    ]
+  },
+  "date": "2026-10-02",
+  "fault_families": {
+    "axis_loss": {
+      "injection_layer": "stored_filtered_window_before_IMUNormalizer",
+      "stochastic": false,
+      "temporal_class": "window_value"
+    },
+    "bias": {
+      "injection_layer": "stored_filtered_window_before_IMUNormalizer",
+      "stochastic": false,
+      "temporal_class": "window_value"
+    },
+    "clipping_saturation": {
+      "injection_layer": "stored_filtered_window_before_IMUNormalizer",
+      "stochastic": false,
+      "temporal_class": "window_value"
+    },
+    "delay": {
+      "injection_layer": "source_faithful_oriented_trial_before_filtering_windowing",
+      "stochastic": false,
+      "temporal_class": "sequence"
+    },
+    "drift": {
+      "injection_layer": "source_faithful_oriented_trial_before_filtering_windowing",
+      "stochastic": false,
+      "temporal_class": "sequence"
+    },
+    "dropout": {
+      "injection_layer": "source_faithful_oriented_trial_before_filtering_windowing",
+      "stochastic": true,
+      "temporal_class": "sequence"
+    },
+    "frame_loss": {
+      "injection_layer": "source_faithful_oriented_trial_before_filtering_windowing",
+      "stochastic": true,
+      "temporal_class": "sequence"
+    },
+    "jitter": {
+      "injection_layer": "source_faithful_oriented_trial_before_filtering_windowing",
+      "stochastic": true,
+      "temporal_class": "sequence"
+    },
+    "noise": {
+      "injection_layer": "stored_filtered_window_before_IMUNormalizer",
+      "stochastic": true,
+      "temporal_class": "window_value"
+    },
+    "orientation": {
+      "injection_layer": "source_faithful_oriented_trial_before_filtering_windowing",
+      "note": "orientation fault acts on effective accelerometer/gyroscope axes; it is not defined as mutation of the discarded Euler channels",
+      "stochastic": false,
+      "temporal_class": "sequence"
+    },
+    "scale_factor": {
+      "injection_layer": "stored_filtered_window_before_IMUNormalizer",
+      "stochastic": false,
+      "temporal_class": "window_value"
+    },
+    "stuck_channel": {
+      "injection_layer": "source_faithful_oriented_trial_before_filtering_windowing",
+      "stochastic": false,
+      "temporal_class": "sequence"
+    }
+  },
+  "injection_layers": {
+    "source_faithful_oriented_trial_before_filtering_windowing": {
+      "downstream_reprocessing_required": [
+        "historical 5 Hz low-pass filtering",
+        "300 ms / 30-sample windowing",
+        "15-sample stride"
+      ],
+      "filtering_already_applied": false,
+      "primary_fault_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "purpose": "faults whose meaning depends on temporal continuity, sample timing, persistence, or sequence reconstruction",
+      "windowing_already_applied": false
+    },
+    "stored_filtered_window_before_IMUNormalizer": {
+      "filtering_already_applied": true,
+      "input_shape": [
+        30,
+        9
+      ],
+      "normalization_already_applied": false,
+      "primary_fault_targets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "purpose": "value-domain corruptions that do not require cross-window temporal state"
+    }
+  },
+  "model_effective_input_contract": {
+    "effective_channel_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "effective_channel_names": [
+      "AccX",
+      "AccY",
+      "AccZ",
+      "GyrX",
+      "GyrY",
+      "GyrZ"
+    ],
+    "excluded_primary_fault_target_indices": [
+      6,
+      7,
+      8
+    ],
+    "excluded_primary_fault_target_names": [
+      "EulerX",
+      "EulerY",
+      "EulerZ"
+    ],
+    "reason": "IMUNormalizer discards Euler channels before learned convolution"
+  },
+  "next_action": "define and validate prospective severity semantics/ranges on development/calibration evidence only, then freeze a separate severity protocol before executing comparative FI experiments",
+  "partition_policy": {
+    "development_or_calibration_only_for_severity_design": true,
+    "onfield_fault_results_may_tune_engine": false,
+    "onfield_may_select_severity": false,
+    "outer_test_fault_results_may_tune_engine": false,
+    "outer_test_may_select_severity": false,
+    "validation_outcomes_may_select_severity": false
+  },
+  "phase": "4H",
+  "provenance_evidence": {
+    "path": "manifests/phase_4h_sensor_input_provenance_evidence_v1.json",
+    "sha256": "9a2f8f42df5b6f175ed799ada0953079e8fb3bda6b704494d4ffcf3659efc201"
+  },
+  "purpose": "freeze sensor-domain fault semantics, data layers, channel/unit contract, deterministic replay metadata, and leakage boundaries before any severity values are selected",
+  "replay_contract": {
+    "clean_corrupt_pairing": "same parent sequence and same partition",
+    "domain": "sensor",
+    "evidence_tier": "P0",
+    "fault_instance_reuse_for_same_backbone_causal_comparison": true,
+    "replay_id": "sha256 of canonical fault instance excluding replay_id",
+    "seed_required_for_every_instance": true,
+    "split_before_stochastic_fault_injection": true
+  },
+  "required_fault_instance_fields": [
+    "fault_id",
+    "family",
+    "domain",
+    "evidence_tier",
+    "injection_layer",
+    "target_channels",
+    "onset_sample",
+    "duration_samples",
+    "persistence",
+    "severity",
+    "severity_provenance",
+    "seed",
+    "parent_sequence_id",
+    "partition",
+    "replay_id"
+  ],
+  "schema_version": "phase4h_sensor_fi_input_contract_v1",
+  "severity_policy": {
+    "default_severities": null,
+    "physical_realism_claim_allowed": false,
+    "rule": "No fault magnitude is called physically realistic merely because it is expressed in mg, mdps, samples, or milliseconds. Severity values require separate prospective validation and freeze.",
+    "selection_allowed_at_this_stage": false,
+    "severity_grid": null,
+    "severity_values_frozen": false,
+    "software_units_may_be_used": true
+  },
+  "status": "FROZEN_PRE_SEVERITY",
+  "stored_input_contract": {
+    "channel_order": [
+      "AccX",
+      "AccY",
+      "AccZ",
+      "GyrX",
+      "GyrY",
+      "GyrZ",
+      "EulerX",
+      "EulerY",
+      "EulerZ"
+    ],
+    "sampling_rate_hz": 100,
+    "shape": [
+      30,
+      9
+    ],
+    "software_units": {
+      "0": "mg",
+      "1": "mg",
+      "2": "mg",
+      "3": "mdps",
+      "4": "mdps",
+      "5": "mdps",
+      "6": "degrees_where_available",
+      "7": "degrees_where_available",
+      "8": "degrees_where_available"
+    },
+    "stride_samples": 15,
+    "window_ms": 300
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "acceptance": {
+    "all_gates_pass": true,
+    "gate_count": 28,
+    "levels_qualified": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "passed_gate_count": 28
+  },
+  "artifact_manifest": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_jitter_semantics_v1_sanity/artifact_manifest.json",
+    "sha256": "b091f1de41b5e52758df289f3c47bd20ed284703a770264fb057bf2ac7e9a237"
+  },
+  "evidence_tier": "P0",
+  "next_action": "Implement and unit-qualify the complete sensor-fault operator engine for all 12 frozen families, without model inference.",
+  "phase": "4H",
+  "pre_result_config": {
+    "path": "configs/faults/phase4h_sensor_fi_jitter_semantics_v1.json",
+    "preserved_unchanged": true,
+    "sha256": "3af244d8f20e68cbfc543bc9ae594f682f3c4a4f1575ca5243ec778bb8d39dac"
+  },
+  "pre_result_freeze": {
+    "path": "manifests/phase_4h_sensor_fi_jitter_semantics_freeze_v1.json",
+    "sha256": "a04e135759a252f2a9d08d8adb468834edb15d6edb0d98b6d451382b522d4c70"
+  },
+  "pre_result_implementation": {
+    "path": "experiments/phase_04/sensor_fi_jitter.py",
+    "sha256": "a73552c58235b890804087e464a40e41139321958fc3758db43ae6dd801b855c"
+  },
+  "qualification_date": "2026-10-02",
+  "qualified_properties": [
+    "jitter deterministically changes effective signal values in the historical row-based preprocessing path",
+    "one frame-level displacement is shared by all six effective accelerometer/gyroscope channels",
+    "all frozen jitter bounds preserve strict sample ordering",
+    "Euler channels remain unchanged",
+    "zero jitter is exact identity and constant signals remain invariant under interpolation"
+  ],
+  "remaining_items_before_fault_operator_implementation": [],
+  "sanity_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_jitter_semantics_v1_sanity/jitter_semantics_sanity_result.json",
+    "sha256": "c23b7133ec1c6d26af7122fb9acf37a7257c8428c7d32d4ceb09082737b548ba",
+    "status": "PASS"
+  },
+  "schema_version": "phase4h_sensor_fi_jitter_semantics_qualification_v1",
+  "scientific_boundary": {
+    "model_loaded": false,
+    "model_predictions_computed": false,
+    "onfield_used": false,
+    "outer_test_used": false,
+    "physical_realism_claim": false,
+    "pre_result_protocol_rewritten": false,
+    "project_dataset_files_mutated": false,
+    "real_dataset_fault_execution": false,
+    "synthetic_operator_exercised": true,
+    "validation_used": false
+  },
+  "status": "QUALIFIED_EXECUTABLE_JITTER_SEMANTICS"
+}

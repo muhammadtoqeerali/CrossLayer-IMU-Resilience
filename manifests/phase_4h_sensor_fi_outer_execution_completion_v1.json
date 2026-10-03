@@ -1,0 +1,119 @@
+{
+  "artifact_integrity": {
+    "all_declared_output_hashes_verified": true,
+    "all_shard_success_marker_index_digest_sha256": "0683f407f68e6a9c1f1a3a93e5a2a6a5c2387cdeeea867c859dacc440b017dee",
+    "all_success_markers_pass": true,
+    "raw_probabilities_persisted": false,
+    "temporary_shard_directories_remaining": 0
+  },
+  "completion_gate": {
+    "aggregation_authorized": true,
+    "reporting_authorized_after_frozen_aggregation": true,
+    "scientific_retuning_authorized": false,
+    "state": "QUALIFIED_COMPLETE_OUTER_EXECUTION_INTEGRITY"
+  },
+  "completion_totals": {
+    "dataset_subject_counts": {
+      "KFALL": 32,
+      "UNIVR": 29
+    },
+    "family_shards": {
+      "C0": 61,
+      "axis_loss": 61,
+      "bias": 61,
+      "clipping_saturation": 61,
+      "delay": 61,
+      "drift": 61,
+      "dropout": 61,
+      "frame_loss": 61,
+      "jitter": 61,
+      "noise": 61,
+      "orientation": 61,
+      "scale_factor": 61,
+      "stuck_channel": 61
+    },
+    "fold_subject_counts": {
+      "1": 13,
+      "2": 12,
+      "3": 12,
+      "4": 12,
+      "5": 12
+    },
+    "model_window_evaluations": 479750160,
+    "regime_shards": {
+      "C0": 61,
+      "CS": 732
+    },
+    "shards": 793,
+    "subject_condition_rows": 320616,
+    "subjects": 61,
+    "unique_fault_instances": 42766632
+  },
+  "execution_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4h_sensor_fi_outer_v2_execution_v1",
+  "frozen_lineage": {
+    "configs/evaluation/phase4h_sensor_fi_outer_executor_v1.json": {
+      "sha256": "bb73d35e2a8458d490d2e605551eb1cbfae3112fad74cfdea322175de52c1ef9"
+    },
+    "experiments/phase_04/sensor_fi_outer_executor_v1.py": {
+      "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+    },
+    "manifests/phase_4h_sensor_fi_outer_execution_plan_v2_qualification_v1.json": {
+      "sha256": "921ca4d3e4497e5517a57cc0df03d1a16d9b037fd89030bfe33ebab3419ecb74"
+    },
+    "manifests/phase_4h_sensor_fi_outer_execution_shards_v2_historical_truth.json": {
+      "sha256": "a43df702c2694854e1ce79712af50a9bf91d0f24b40989241f604405f460024d"
+    },
+    "manifests/phase_4h_sensor_fi_outer_executor_v1_freeze.json": {
+      "sha256": "3dcaf7f560d516be675e95236917e4cbd874d415a5dcce3bcf7f9e19b2022162"
+    },
+    "manifests/phase_4h_sensor_fi_outer_executor_v1_qualification.json": {
+      "sha256": "5f2a5ad39a5de850dfc6fe2a66045028b2981f385189525ae8c108cb765720e7"
+    }
+  },
+  "operational_recovery_incidents": [
+    {
+      "classification": "operational_resume_not_scientific_retuning",
+      "fault_family": "stuck_channel",
+      "final_success_marker_sha256": "bf75fdd20e3b1d398b0d6e6293663dd354d8c9510ed59ee52918f6927568e49e",
+      "fold": 2,
+      "plan_index": 292,
+      "recovery_mechanism": "frozen_executor_--recompute-partial",
+      "result_values_used_to_choose_recovery": false,
+      "scientific_parameters_changed": false,
+      "shard_id": "p4h-o2-f2-s120-stuck_channel-3dc8bd0e9771",
+      "state_before_recovery": "stale_empty_temporary_directory_only",
+      "subject": 120
+    }
+  ],
+  "plan_totals_source": {
+    "json_path": "$.expected_totals_from_shards",
+    "values": {
+      "model_window_evaluations": 479750160,
+      "subject_condition_rows": 320616,
+      "unique_fault_instances": 42766632
+    }
+  },
+  "recorded_date": "2026-10-03",
+  "schema": "crosslayer_phase4h_sensor_fi_outer_execution_completion_v1",
+  "scientific_scope": {
+    "model_variants": [
+      "prospective_fp32_300ms",
+      "qualified_static_ptq_v7"
+    ],
+    "onfield_used": false,
+    "operating_points": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "outer_results_used_for_tuning": false,
+    "partition": "outer_test",
+    "performance_values_used_during_execution_gating": false,
+    "phase": "4H",
+    "regimes_executed": [
+      "C0",
+      "CS"
+    ]
+  },
+  "status": "COMPLETE_IMMUTABLE_OUTER_EXECUTION"
+}

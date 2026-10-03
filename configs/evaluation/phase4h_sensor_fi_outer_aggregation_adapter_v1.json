@@ -1,0 +1,71 @@
+{
+  "schema_version": "phase4h_sensor_fi_outer_aggregation_adapter_v1",
+  "phase": "4H",
+  "status": "FROZEN_POST_EXECUTION_PRE_OUTER_METRIC_ANALYSIS",
+  "purpose": "Executable binding of already-frozen aggregation/reporting rules to immutable Phase-4H outer subject-condition rows.",
+  "scientific_change": false,
+  "statistical_rule_change": false,
+  "outer_performance_values_used_to_define_adapter": false,
+  "selection_changes": {
+    "metric_selection_changed": false,
+    "fault_family_selection_changed": false,
+    "severity_selection_changed": false,
+    "variant_selection_changed": false,
+    "operating_point_selection_changed": false,
+    "model_selection_changed": false,
+    "threshold_selection_changed": false,
+    "bootstrap_replicates_changed": false,
+    "confidence_level_changed": false,
+    "inferential_unit_changed": false
+  },
+  "parent_contracts": {
+    "aggregation_config": "configs/evaluation/phase4h_sensor_fi_aggregation_v1.json",
+    "aggregation_implementation": "experiments/phase_04/sensor_fi_aggregation.py",
+    "aggregation_qualification": "manifests/phase_4h_sensor_fi_evaluation_aggregation_qualification_v1.json",
+    "aggregation_sampling_v3_rebind": "manifests/phase_4h_sensor_fi_evaluation_aggregation_sampling_v3_rebind_v1.json",
+    "reporting_config": "configs/evaluation/phase4h_sensor_fi_robustness_reporting_v2_sampling_v3.json",
+    "reporting_implementation": "experiments/phase_04/sensor_fi_reporting_v2.py",
+    "reporting_qualification": "manifests/phase_4h_sensor_fi_robustness_reporting_v2_sampling_v3_qualification_v1.json",
+    "outer_execution_completion": "manifests/phase_4h_sensor_fi_outer_execution_completion_v1.json"
+  },
+  "timing_binding": {
+    "reporting_metric": "sensor_lead_ms",
+    "inferential_outer_row_field": "median_sensor_lead_ms",
+    "basis": "Frozen aggregation config defines sensor_lead_ms as the timing metric and separately predeclares median_sensor_lead_ms, q25_sensor_lead_ms, and q75_sensor_lead_ms as subject-level timing summaries.",
+    "descriptive_outer_row_fields": [
+      "q25_sensor_lead_ms",
+      "median_sensor_lead_ms",
+      "q75_sensor_lead_ms"
+    ],
+    "q25_q75_used_as_substitutes_for_inferential_median": false
+  },
+  "dataset_specific_uncertainty_binding": {
+    "required_reporting_strata": [
+      "overall_61_subject",
+      "UNIVR",
+      "KFALL"
+    ],
+    "overall_method": "qualified_stratified_subject_bootstrap",
+    "dataset_specific_method": "one_stratum_specialization_of_qualified_subject_bootstrap",
+    "resampling_unit": "subject",
+    "replacement": true,
+    "confidence_level": 0.95,
+    "bootstrap_replicates": 10000,
+    "interval": "2.5th_and_97.5th_percentiles",
+    "seed_namespace": "crosslayer-phase4h-sensor-fi-eval-bootstrap-v1",
+    "seed_algorithm": "SHA256_first_8_bytes_big_endian_unsigned",
+    "fixed_subject_counts": {
+      "UNIVR": 29,
+      "KFALL": 32,
+      "overall": 61
+    },
+    "paired_C0_CS_degradation_formed_before_bootstrap": true
+  },
+  "missingness_binding": {
+    "undefined_values_replaced_with_zero": false,
+    "finite_subject_macro_reported_with_coverage": true,
+    "inferential_bootstrap_requires_complete_finite_subject_coverage_for_requested_stratum": true,
+    "incomplete_coverage_ci": "NA",
+    "incomplete_coverage_direction_status": "UNRESOLVED"
+  }
+}
