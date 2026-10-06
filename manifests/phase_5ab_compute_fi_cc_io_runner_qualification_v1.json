@@ -1,0 +1,83 @@
+{
+  "documentation": {
+    "path": "docs/PHASE_5AB_COMPUTE_FI_CC_IO_RUNNER_QUALIFICATION_V1.md",
+    "sha256": "d5760baee85f7ff6a0bb2d2c46cda29a6a2bcc736550508d9cf0264899ed0399"
+  },
+  "focused_repair": {
+    "expected_check_count_before": 13,
+    "performed": true,
+    "qualified_check_count": 12,
+    "reason": "qualifier bookkeeping expected 13 checks while 12 named checks are recorded",
+    "runner_changed": false,
+    "scientific_semantics_changed": false
+  },
+  "generated_date": "2026-10-06",
+  "implementation_boundary": {
+    "prospective_CC_outcome_analysis_executed": false,
+    "prospective_IO_runner_implemented": true,
+    "prospective_IO_runner_qualified": true,
+    "prospective_outer_ingestion_executed": false
+  },
+  "next_action": "Freeze the prospective CC outcome execution gate binding Phase-5Z, qualified Phase-5AA analyzer, and qualified Phase-5AB I/O runner before accepted prediction JSONL or outer label arrays are opened.",
+  "phase": "5AB",
+  "qualification_boundary": {
+    "CSC_result_generated": false,
+    "accepted_clean_outputs_jsonl_opened": false,
+    "accepted_fault_outputs_jsonl_opened": false,
+    "accepted_outer_label_array_loaded": false,
+    "accepted_outer_result_root_accessed": false,
+    "aggregate_CC_result_generated": false,
+    "fault_execution_executed": false,
+    "model_forward_executed": false,
+    "model_loaded": false,
+    "onfield_used": false,
+    "outer_CC_metric_computed": false,
+    "outer_prediction_deserialized": false,
+    "outer_threshold_applied": false
+  },
+  "qualification_checks": {
+    "clean_sequence_join": true,
+    "historical_fallback_truth_rule": true,
+    "historical_window_end_reconstruction": true,
+    "label_length_guard": true,
+    "malformed_json_abort": true,
+    "phase5m_frozen_hash_adapter": true,
+    "phase5m_transient_adapter": true,
+    "phase5r_clean_hash_before_parse": true,
+    "phase5r_persistent_adapter": true,
+    "risk_index_join": true,
+    "stored_label_normalization": true,
+    "tamper_abort_before_parse": true
+  },
+  "qualification_config": {
+    "path": "configs/evaluation/phase5ab_compute_fi_cc_io_runner_qualification_v1.json",
+    "sha256": "6148cf9d47d85f8969b3bb6f23ed6ee93bd03581999994273776f25941402a4e"
+  },
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ab_compute_fi_cc_io_runner_qualification_v1/qualification.json",
+    "sha256": "ac8371f2655a6954f4463712ba2a4163f0274b92b213dad2cd5dfd2431f3cf9f"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_cc_outcome_io_runner_v1.py",
+    "sha256": "428fe86d56cc21933c2299fd22a9040b1fea840a83c6be8c41abcce86245dc1c"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5ab_compute_fi_cc_io_runner.py",
+    "sha256": "07d2dcd7232fd51448df1509a458fb1892e1a51bfc01a412e3d178f9b9c6c22b"
+  },
+  "runner": {
+    "path": "experiments/phase_05/cc_outcome_io_runner_v1.py",
+    "sha256": "0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f"
+  },
+  "schema_version": "phase5ab_compute_fi_cc_io_runner_qualification_manifest_v1",
+  "status": "QUALIFIED_PROSPECTIVE_CC_IO_RUNNER_PRE_OUTCOME",
+  "synthetic_fixture_boundary": {
+    "accepted_outer_label_payload_used": false,
+    "accepted_outer_prediction_payload_used": false,
+    "accepted_outer_result_root_used": false,
+    "synthetic_filesystem_used": true,
+    "synthetic_jsonl_used": true,
+    "synthetic_labels_npy_used": true,
+    "synthetic_risk_csv_used": true
+  }
+}

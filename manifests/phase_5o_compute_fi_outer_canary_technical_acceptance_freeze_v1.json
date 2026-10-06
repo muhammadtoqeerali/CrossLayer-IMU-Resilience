@@ -1,0 +1,44 @@
+{
+  "CC_result_generated": false,
+  "CSC_result_generated": false,
+  "acceptance": {
+    "executed_fault_shards": 1,
+    "full_fleet_execution_authorized": false,
+    "metrics_generated": false,
+    "outcome_based_scientific_selection": false,
+    "prediction_values_interpreted": false,
+    "remaining_fault_shards_not_executed": 731,
+    "technical_only": true,
+    "threshold_selection_performed": false
+  },
+  "acceptance_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5o_compute_fi_outer_canary_technical_acceptance_v1/technical_acceptance.json",
+    "sha256": "d67dba6513a62c8192137c3b19d1806db91e4b257cb17b6481ad11a86a897d72"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5O_COMPUTE_FI_OUTER_CANARY_TECHNICAL_ACCEPTANCE_V1.md",
+    "sha256": "b69f624519e6a10f4cb16f6761da6caa8323f4f70532ac9f72a6d7649d4ee7bc"
+  },
+  "evidence_tier": "P0",
+  "freeze_date": "2026-10-05",
+  "next_action": "Freeze a prospective full-fleet execution authorization bound to this acceptance result and unchanged Phase-5E estate; do not execute another shard in the same step.",
+  "phase": "5O",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "phase5l_config": {
+    "path": "configs/evaluation/phase5l_compute_fi_outer_canary_execution_v1.json",
+    "sha256": "b169e2997499dfb75927938d98d39018d01f60a93e04148d2b4fcb70f30692be"
+  },
+  "phase5m_executor": {
+    "path": "experiments/phase_05/compute_fi_outer_canary_executor_v1.py",
+    "sha256": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5o_compute_fi_outer_canary_technical_acceptance.py",
+    "sha256": "50bb00653de2c38d47a817a24440439e34b83b347611439a066d361f608606ff"
+  },
+  "schema_version": "phase5o_compute_fi_outer_canary_technical_acceptance_freeze_manifest_v1",
+  "status": "TECHNICALLY_ACCEPTED_SINGLE_OUTER_CANARY"
+}

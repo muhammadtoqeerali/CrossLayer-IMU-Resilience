@@ -1,0 +1,125 @@
+{
+  "CC_result_generated": false,
+  "CSC_result_generated": false,
+  "counts": {
+    "clean_cache_artifacts": 2,
+    "fault_shard_artifacts": 14,
+    "outer_instance_fixture_records": 42,
+    "persistent_shard_artifacts": 7,
+    "transient_shard_artifacts": 7,
+    "window_effect_records": 70
+  },
+  "coverage": {
+    "all_atomic_artifacts_reusable": true,
+    "clean_cache_shared_between_persistence_modes": true,
+    "common_fp32_coordinates_reused_across_variants": true,
+    "fp32_model_representations": [
+      "fp32_activation",
+      "fp32_buffer"
+    ],
+    "outer_instance_ids_unique": true,
+    "persistence_modes": [
+      "transient_one_inference",
+      "persistent_from_onset_until_trial_end"
+    ],
+    "persistent_active_mask": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "ptq_eager_torchscript_clean_bitwise_equal_all_sequence_windows": true,
+    "ptq_model_representations": [
+      "fp32_activation",
+      "fp32_buffer",
+      "quantized_activation",
+      "quantized_buffer",
+      "int8_persistent_weight"
+    ],
+    "ptq_weight_cross_trial_reset": true,
+    "transient_active_mask": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "documentation": {
+    "path": "docs/PHASE_5H_COMPUTE_FI_SHARD_STYLE_EXECUTION_QUALIFICATION_V1.md",
+    "sha256": "808ddfa7e740076f9af6217242cee49ceef6281d26c689543df4cf780a760831"
+  },
+  "evidence_tier": "P0",
+  "next_action": "Run final pre-outer no-selection/governance audit before any execution-gate enablement.",
+  "outer_execution_enabled": false,
+  "outer_execution_performed": false,
+  "phase": "5H",
+  "phase5g_qualification": {
+    "path": "manifests/phase_5g_compute_fi_outer_shard_executor_dry_run_qualification_v1.json",
+    "sha256": "7ea089c9465782ebe5baa45628b2720b02cec07a9c714ed2e83ba2db23b97fd5"
+  },
+  "qualification_config": {
+    "path": "configs/evaluation/phase5h_compute_fi_shard_style_execution_qualification_v1.json",
+    "sha256": "1c9a1875dbc33f0db18ec61a77652185035f6a37b44224726c2715f63e96d728"
+  },
+  "qualification_date": "2026-10-05",
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5h_compute_fi_shard_style_execution_qualification_v1/qualification.json",
+    "sha256": "3f680e2ed4d1bfbf0654ddc8395a1d233e40891efd8e9d21e4f3ca104189ebd0"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_compute_fi_shard_style_execution_v1.py",
+    "sha256": "af6c072496be63257cce46ea5b2f6beea8807d2c395232b7b0e66b9cf3ab05cc"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5h_compute_fi_shard_style_execution.py",
+    "sha256": "bb278b6a7040bbf7054c1f95d095562e236856e1f643bee74ad2cf5e749ca820"
+  },
+  "repair_transparency": {
+    "documentation_linebreak_repair": {
+      "classification": "REGRESSION_DOCUMENTATION_LINE_WRAP_REPAIR",
+      "fault_semantics_changed": false,
+      "fixture_rerun_required": false,
+      "joined_literal": "omitted one concatenation operator",
+      "problem": "The required literal phrase was split by a Markdown source newline.",
+      "qualification_config_changed": false,
+      "qualification_result_changed": false,
+      "qualifier_changed": false,
+      "runtime_changed": false,
+      "sampling_changed": false,
+      "scientific_protocol_changed": false
+    },
+    "failed_result_estate_discarded_before_rerun": true,
+    "fault_semantics_changed": false,
+    "initial_failure_class": "QUALIFIER_SHARD_ID_STRING_CONCATENATION_SYNTAX_ERROR",
+    "phase5h_config_changed": false,
+    "pre_failure_clean_cache_artifacts_written": 2,
+    "pre_failure_clean_model_forward_executed": true,
+    "pre_failure_fault_shard_execution_count": 0,
+    "pre_failure_training_calibration_payload_read": true,
+    "sampling_changed": false,
+    "scientific_protocol_changed": false
+  },
+  "schema_version": "phase5h_compute_fi_shard_style_execution_qualification_manifest_v1",
+  "scientific_boundary": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "onfield_used": false,
+    "outer_execution_gate_enabled": false,
+    "outer_fault_execution_executed": false,
+    "outer_model_forward_executed": false,
+    "outer_prediction_read": false,
+    "outer_shard_executed": false,
+    "outer_test_payload_used": false,
+    "phase5d_identity_changed": false,
+    "phase5d_sampling_changed": false,
+    "phase5e_plan_changed": false,
+    "training_calibration_payload_used": true
+  },
+  "shard_runtime": {
+    "path": "experiments/phase_05/compute_fi_shard_runtime_v1.py",
+    "sha256": "b3bf60c2637a03fa9ddb364637171d7f5d81e5b367586b82bd94972d3e1f91e7"
+  },
+  "status": "QUALIFIED_COMPLETE_SHARD_STYLE_EXECUTION"
+}

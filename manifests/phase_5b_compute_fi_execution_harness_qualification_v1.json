@@ -1,0 +1,89 @@
+{
+  "acceptance": {
+    "all_five_frozen_fault_families_executed": true,
+    "clean_ptq_eager_matches_frozen_torchscript": true,
+    "deterministic_fault_replay": true,
+    "exact_single_element_single_bit_mutation_recorded": true,
+    "fp32_family_executed_on_fp32_variant": true,
+    "fp32_family_executed_on_ptq_mixed_precision_regions": true,
+    "new_trial_reset_clean": true,
+    "persistent_onset_schedule_exact": true,
+    "qint8_weight_execution_qualified": true,
+    "quint8_activation_execution_qualified": true,
+    "quint8_buffer_execution_qualified": true,
+    "same_checkpoint_clean_fault_pair": true,
+    "same_input_clean_fault_pair": true,
+    "source_artifacts_unchanged": true,
+    "transient_restore_after_call": true
+  },
+  "documentation": {
+    "path": "docs/PHASE_5B_COMPUTE_FI_EXECUTION_HARNESS_QUALIFICATION_V1.md",
+    "sha256": "6677164a2b02a41d9332bc6026621b2f61e09cfcdfdaed49086a0e8d970ed81b"
+  },
+  "execution_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5b_compute_fi_execution_harness_qualification_v1/harness_qualification.json",
+    "sha256": "ee699b11f9e4d37fadab798b5818fadd2f0f347404cf13705e558b222c5859dd"
+  },
+  "harness_source": {
+    "path": "experiments/phase_05/compute_fi_execution_harness.py",
+    "sha256": "68418e44d50f7c8192777ffe6c7f7f5f0dc0cab2243788f627d07879ef19005b"
+  },
+  "harness_test": {
+    "path": "tests/test_phase5b_compute_fi_execution_harness.py",
+    "sha256": "99230d9b48415346953265c35daa1f0bec82b53f5c6bd476c7238881c791811c"
+  },
+  "next_action": "Qualify paired execution on development-safe training/calibration windows before freezing the immutable outer CC sampling plan.",
+  "outer_sampling_plan_frozen": false,
+  "parent_commit": "54577387fa199081407e91ce9766b0f2b6b05417",
+  "phase": "5B",
+  "phase5a_operator_qualification": {
+    "path": "manifests/phase_5a_compute_fi_operator_qualification_v1.json",
+    "sha256": "078da4d254ca91f468c842641ecc80f96878046407119f2362909d9157383fae"
+  },
+  "phase5a_protocol": {
+    "path": "configs/faults/phase5a_compute_fi_representation_protocol_v1.json",
+    "sha256": "279d5c9ebd865ae0d147ec62d0cd04d2ffb5d58d9c80544ee6c913f9a1964bd5"
+  },
+  "provenance_tier": "P0",
+  "qualification_date": "2026-10-05",
+  "qualification_source": {
+    "path": "experiments/phase_05/qualify_compute_fi_execution_harness_v1.py",
+    "sha256": "6e430ec2fae08c755148b46b3d738bcab1e630cc421bac2cb63c24f3ba76574a"
+  },
+  "qualified_execution_cases": [
+    "fp32_variant_fp32_activation",
+    "fp32_variant_fp32_buffer",
+    "ptq_variant_fp32_activation",
+    "ptq_variant_fp32_buffer",
+    "ptq_variant_qint8_weight",
+    "ptq_variant_quint8_activation",
+    "ptq_variant_quint8_buffer"
+  ],
+  "representation_binding": {
+    "fp32_activation_buffer": "torch.float32 / IEEE754 binary32",
+    "qint8_weight": "torch.qint8 / torch.int8",
+    "quint8_activation_buffer": "torch.quint8 / torch.uint8"
+  },
+  "schema_version": "phase5b_compute_fi_execution_harness_qualification_manifest_v1",
+  "scientific_boundary": {
+    "CC_task_performance_result_generated": false,
+    "CSC_result_generated": false,
+    "calibration_partition_read": false,
+    "dataset_read": false,
+    "faulted_real_dataset_inference_executed": false,
+    "faulted_synthetic_model_forward_executed": true,
+    "hardware_claim": false,
+    "onfield_read": false,
+    "outer_sampling_plan_frozen": false,
+    "outer_test_read": false,
+    "physical_fault_equivalence": false,
+    "synthetic_inputs_only": true,
+    "training_partition_read": false,
+    "validation_partition_read": false
+  },
+  "status": "QUALIFIED_PAIRED_SYNTHETIC_EXECUTION_HARNESS",
+  "success_marker": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5b_compute_fi_execution_harness_qualification_v1/_SUCCESS.json",
+    "sha256": "c48fa8eac197e1457b3bb5c325220201ce3c5b57c1081410f9299719b3d63618"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "CC_result_generated": false,
+  "CSC_result_generated": false,
+  "authorization": {
+    "authorized_shard_count": 1,
+    "canary_execution_authorized": true,
+    "canary_execution_performed": false,
+    "full_fleet_execution_authorized": false
+  },
+  "authorized_clean_cache_id": "p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b",
+  "authorized_shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+  "config": {
+    "path": "configs/evaluation/phase5l_compute_fi_outer_canary_execution_v1.json",
+    "sha256": "b169e2997499dfb75927938d98d39018d01f60a93e04148d2b4fcb70f30692be"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5L_COMPUTE_FI_OUTER_CANARY_EXECUTION_FREEZE_V1.md",
+    "sha256": "43092190037e4101664cd801d5c7dabcbcbf3148bc48ab794cb26a290ba38167"
+  },
+  "evidence_tier": "P0",
+  "forward_budget": {
+    "budget_must_match_exactly": true,
+    "clean_forward_source": "SEPARATE_FROZEN_CLEAN_CACHE_ONLY",
+    "clean_model_window_evaluations": 2481,
+    "embedded_clean_reference_forward_per_fault": false,
+    "fault_execution_source": "PHASE5K_FAULT_ONLY_MODULE_ONLY",
+    "faulted_model_window_evaluations": 24810,
+    "total_model_window_evaluations": 27291
+  },
+  "freeze_date": "2026-10-05",
+  "next_action": "Implement and statically validate an executor that accepts only the exact frozen Phase-5L canary before the first outer payload read.",
+  "outer_fault_execution_executed": false,
+  "outer_model_forward_executed": false,
+  "outer_model_loaded": false,
+  "outer_payload_read": false,
+  "outer_shard_executed": false,
+  "phase": "5L",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "phase5i_gate": {
+    "path": "configs/evaluation/phase5i_compute_fi_outer_execution_gate_v1.json",
+    "sha256": "ef7ab5c5dbf5959c37a7649a88ddfc7ca5a1839a7d98d0bd46b98bd6b7958fb3"
+  },
+  "phase5j_canary_binding": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5j_compute_fi_outer_canary_v1/canary_binding_audit.json",
+    "sha256": "7f039f2c93b55c1f307a66b63bf7b3442103fa5bc478c0d48b97b44c990e31a4"
+  },
+  "phase5k_fault_only_module": {
+    "path": "experiments/phase_05/compute_fi_fault_only_execution_v1.py",
+    "sha256": "f8bb4095bbfedc69c24fa4cc6e79ccf4914e14fa502ce080a06de01e740112cb"
+  },
+  "phase5k_qualification": {
+    "path": "manifests/phase_5k_compute_fi_fault_only_execution_qualification_v1.json",
+    "sha256": "120701fa970fe4b809353668d5d5eb14c8ae065a5e543992c3d5c2439c8815a7"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5l_compute_fi_outer_canary_execution_freeze.py",
+    "sha256": "b7118c19f9ca153d75c7c593c7dcf03b05983a8aaca830c48d3a2fed27fbe791"
+  },
+  "schema_repair": {
+    "actual_phase5d_field": "model_variants",
+    "binding_rule": "fp32 in target.model_variants",
+    "canary_changed": false,
+    "failed_assumption": "model_applicability",
+    "identity_changed": false,
+    "outer_execution_occurred_before_repair": false,
+    "sampling_changed": false,
+    "scientific_protocol_changed": false,
+    "target_count": 10
+  },
+  "schema_version": "phase5l_compute_fi_outer_canary_execution_freeze_manifest_v1",
+  "status": "FROZEN_HASH_BOUND_CANARY_ONLY_OUTER_EXECUTION_CONFIG"
+}

@@ -1,0 +1,30 @@
+{
+  "generated_date": "2026-10-06",
+  "phase": "5AI",
+  "reporting_rules": {
+    "FP32_PTQ_comparison": "descriptive common-ten-target results only",
+    "PTQ_only_four_targets_used_for_cross_variant_claim": false,
+    "checkpoint_selection": false,
+    "fault_family_selection": false,
+    "fault_resampling": false,
+    "model_selection": false,
+    "new_bootstrap": false,
+    "new_inferential_CI": false,
+    "new_significance_test": false,
+    "outer_result_feedback": false,
+    "persistent_vs_transient_comparison": "descriptive existing macro values only",
+    "positive_degradation_means_worse": true,
+    "protocol_change": false,
+    "source_is_phase5ah_only": true,
+    "subject_primary_median_lead_unavailable_preserved": true,
+    "target_selection": false,
+    "threshold_retuning": false,
+    "universal_variant_superiority_claim": false
+  },
+  "schema_version": "phase5ai_compute_fi_cc_scientific_reporting_v1",
+  "source": {
+    "phase5ah_interpretation_sha256": "3841ceb4a1af3ca2f1c32a7d1126ab3f94e6debbb46222f2635e694cec6012fb",
+    "phase5ah_manifest_sha256": "7abeb3a117b0759e0e36698a0437061058fa890cd39d0b70e4d4dbd6d22f6177"
+  },
+  "status": "FROZEN_SCIENTIFIC_REPORTING_CONTRACT"
+}

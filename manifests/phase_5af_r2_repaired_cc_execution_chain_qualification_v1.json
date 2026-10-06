@@ -1,0 +1,74 @@
+{
+  "documentation": {
+    "path": "docs/PHASE_5AF_R2_REPAIRED_CC_EXECUTION_CHAIN_QUALIFICATION_V1.md",
+    "sha256": "77a2564de3a6c85d97ce441d30b286fdfb84ea12528f190ee75a7312130d1b8f"
+  },
+  "focused_bookkeeping_repair": {
+    "expected_count_before": 8,
+    "performed": true,
+    "qualified_count": 7,
+    "scientific_semantics_changed": false,
+    "v2_analyzer_changed": false,
+    "v2_executor_changed": false,
+    "v2_io_runner_changed": false
+  },
+  "generated_date": "2026-10-06",
+  "historical_v1_analyzer": {
+    "modified": false,
+    "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+    "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66"
+  },
+  "historical_v1_executor": {
+    "modified": false,
+    "path": "experiments/phase_05/cc_outcome_executor_v1.py",
+    "sha256": "e564d4db2e0dfe3ff0aa35cf9a30061455dc995eac0b94644bdbfa29e3e7d7a5"
+  },
+  "historical_v1_io_runner": {
+    "modified": false,
+    "path": "experiments/phase_05/cc_outcome_io_runner_v1.py",
+    "sha256": "0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f"
+  },
+  "next_action": "Freeze a post-boundary continuation authorization binding the exact qualified V2 analyzer, V2 I/O runner and V2 executor plus R1/R2 evidence before Phase-5AF resumes.",
+  "phase": "5AF-R2",
+  "phase5af_resume_authorized": false,
+  "qualification_checks": {
+    "all_three_frozen_operating_points": true,
+    "dict_nan_persistent_end_to_end": true,
+    "dict_nan_transient_end_to_end": true,
+    "exact_repaired_module_hash_binding": true,
+    "finite_reconstruction_semantics_preserved": true,
+    "nonfinite_fault_accounting": true,
+    "paired_clean_and_faulted_metrics_constructed": true
+  },
+  "qualification_config": {
+    "path": "configs/evaluation/phase5af_r2_repaired_cc_execution_chain_qualification_v1.json",
+    "sha256": "04183d67b9a6ee1044991b41cef5277bca8b113c9dd5567043e41247b99dcff3"
+  },
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_r2_repaired_cc_execution_chain_qualification_v1/qualification.json",
+    "sha256": "edd64e473537aef3ba1d71de290bbcd311589f065662b23313cf6cef2de8641c"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_cc_outcome_execution_chain_v2_repair_v1.py",
+    "sha256": "936d6fb551f93c01d6c03358a471c2197950c55a5a9f2b598681eef6ea2e8491"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5af_r2_repaired_cc_execution_chain.py",
+    "sha256": "7d780bbcbd84808d768813387b0db315c592021029da1532830d9a5ebd08c30c"
+  },
+  "schema_version": "phase5af_r2_repaired_cc_execution_chain_qualification_manifest_v1",
+  "scientific_protocol_changed": false,
+  "status": "QUALIFIED_POST_BOUNDARY_REPAIRED_CC_EXECUTION_CHAIN",
+  "v2_analyzer": {
+    "path": "experiments/phase_05/cc_outcome_analyzer_v2.py",
+    "sha256": "0cfb60c9b32951482ffcc5be0ca14ec49c91b7d669e43eddf39fe28f26d01da5"
+  },
+  "v2_executor": {
+    "path": "experiments/phase_05/cc_outcome_executor_v2.py",
+    "sha256": "cfb5d618af37b5164c1e861fb6888b3c4dbe04caee2644a1218cd09f35b4aa50"
+  },
+  "v2_io_runner": {
+    "path": "experiments/phase_05/cc_outcome_io_runner_v2.py",
+    "sha256": "b8f14826f8d31c067f5753c633cec761b4b9e2ad2004e8367e38809e2fdc7bf2"
+  }
+}

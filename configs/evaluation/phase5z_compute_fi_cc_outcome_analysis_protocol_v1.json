@@ -1,0 +1,654 @@
+{
+  "aggregation_contract": {
+    "aggregate_CC_summary": {
+      "fp32_ptq_common_target_comparison": "common ten FP32-representable targets only",
+      "method": "for each metric, operating point, model variant, and persistence separately, macro-average subject-level target-stratum effects; do not weight targets by their number of windows or fault rows",
+      "ptq_all_target_summary": "separate descriptive 14-target PTQ summary",
+      "ptq_only_targets_in_cross_variant_comparison": false,
+      "scalar_score": false
+    },
+    "fault_instance_independence_for_inference_assumed": false,
+    "fold_handling": "fold is fixed by outer-subject assignment; no averaging of the same subject across folds",
+    "primary_CC_results": "target-stratified paired clean-versus-faulted metrics",
+    "seed_handling": "within each outer subject and reporting stratum, compute the metric independently for seeds 42, 123, 2025 and take their arithmetic mean with equal seed weight",
+    "subject_handling": "aggregate subject-level seed-equal estimates with equal weight across the 61 outer subjects",
+    "trial_independence_for_inference_assumed": false,
+    "window_independence_assumed": false
+  },
+  "analysis_boundary": {
+    "CSC_allowed": false,
+    "CS_recomputed": false,
+    "allowed_regimes": [
+      "C0",
+      "CC"
+    ],
+    "checkpoint_or_member_selection": false,
+    "fault_identity_change": false,
+    "fault_reexecution": false,
+    "fault_resampling": false,
+    "model_reexecution": false,
+    "onfield_allowed": false,
+    "outer_plan_change": false,
+    "prediction_deserialization_after_successful_freeze": true,
+    "prediction_deserialization_before_this_freeze": false,
+    "threshold_retuning": false,
+    "validation_allowed_for_new_selection": false
+  },
+  "class_semantics": {
+    "activity_class_index": 0,
+    "fall_probability_rule": "softmax_values[1]",
+    "falling_class_index": 1,
+    "phase5m_clean_field": "clean_softmax_values",
+    "phase5m_fault_field": "faulted_softmax_values",
+    "phase5r_clean_field": "clean_softmax_values",
+    "phase5r_fault_field": "faulted_softmax_values",
+    "probability_source": "stored direct softmax vector",
+    "required_softmax_length": 2,
+    "softmax_reconstruction_from_logits": false,
+    "task": "binary Activity/Falling"
+  },
+  "event_decision_semantics": {
+    "activity_trial_trigger_validity": "first threshold episode is a trigger",
+    "confirmation_index": "trigger_start + required_consecutive - 1",
+    "fall_trial_trigger_validity": "required_consecutive trigger windows must all have stored normalized label 1",
+    "first_valid_trigger_function": "historical_evaluator.first_valid_trigger",
+    "predicted_fall": "first_valid_trigger >= 0",
+    "trigger_episode_function": "historical_evaluator.trigger_episodes"
+  },
+  "freeze_boundary": {
+    "CC_metric_computed": false,
+    "CSC_result_generated": false,
+    "aggregate_CC_result_generated": false,
+    "fault_execution_executed": false,
+    "model_forward_executed": false,
+    "outer_label_array_loaded": false,
+    "outer_prediction_outcomes_interpreted": false,
+    "phase5_prediction_json_deserialized": false,
+    "phase5_prediction_jsonl_opened": false,
+    "threshold_applied_to_outer": false
+  },
+  "frozen_dependencies": {
+    "baseline_config": {
+      "path": "configs/baseline/prospective_300ms_fp32_v1.json",
+      "sha256": "145d0cc9435c1d9e212a12465356e75496b0532dff93a2f3c3c365d27a304130"
+    },
+    "baseline_freeze_manifest": {
+      "path": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+      "sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+    },
+    "historical_event_evaluator": {
+      "bound_functions": [
+        "_normalise_activity_label",
+        "_risk_lookup",
+        "trigger_episodes",
+        "first_valid_trigger",
+        "event_metrics"
+      ],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+      "sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380"
+    },
+    "phase3_timing_manifest": {
+      "path": "manifests/phase_3n_final_protocol_freeze_v3.json",
+      "sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39"
+    },
+    "phase4_outer_metric_implementation": {
+      "path": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+      "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+    },
+    "phase5d_compute_fault_protocol": {
+      "path": "configs/evaluation/phase5d_compute_fi_outer_protocol_v1.json",
+      "sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36"
+    },
+    "phase5e_outer_execution_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5m_canary_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_canary_executor_v1.py",
+      "sha256": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645"
+    },
+    "phase5r_fleet_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+    },
+    "phase5u_complete_estate_technical_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5u_compute_fi_outer_full_fleet_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "87932aebe474d515d5d43063724c8f3f0026084a6df40225e3666d83e3ae4f88"
+    },
+    "validation_selected_thresholds": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/validation_selected_thresholds.csv",
+      "row_count": 45,
+      "sha256": "07cb5fb987ad16a6238bb97f938fcce388cc45edd5862ebc307c297b8051b004"
+    }
+  },
+  "generated_date": "2026-10-06",
+  "integrity_and_abort_rules": {
+    "expected_artifact_directories": 1098,
+    "expected_clean_caches": 366,
+    "expected_fault_shards": 732,
+    "expected_outer_instance_ids": 20170008,
+    "expected_total_records": 31441800,
+    "malformed_json": "abort",
+    "missing_or_duplicate_clean_window": "abort",
+    "missing_or_duplicate_identity": "abort",
+    "require_label_length_matches_plan": true,
+    "require_parent_subject_task_trial": true,
+    "require_record_softmax_length_two": true,
+    "require_threshold_key_present": true,
+    "require_window_index_in_range": true,
+    "skip_bad_records": false,
+    "unexpected_model_variant": "abort",
+    "unexpected_schema": "abort",
+    "unexpected_seed_fold_operating_point": "abort",
+    "verify_phase5u_accepted_estate": true,
+    "verify_record_file_sha256_before_record_parse": true,
+    "verify_success_marker_before_record_parse": true
+  },
+  "label_and_truth_protocol": {
+    "activity_label": 0,
+    "falling_label": 1,
+    "historical_exception": "KFALL_106_T27_R05",
+    "historical_exception_stored_labels_rewritten": false,
+    "historical_exception_truth_from_frozen_risk_record": true,
+    "label_loading_authorized_only_after_protocol_freeze": true,
+    "normalization": "integer 1 iff 'FALL' occurs in the stripped upper-case stored label string; otherwise integer 0",
+    "required_length": "exactly Phase-5E trial_inventory.window_count",
+    "stored_label_file": "<dataset_root>/<subject>/<task>/<trial>/labels.npy",
+    "stored_label_index": "labels.npy[window_index]",
+    "trial_true_fall_rule": "true_fall = (retained Falling window count > 0) OR frozen risk/timing record present"
+  },
+  "metric_contract": {
+    "composite_robustness_score": false,
+    "exact_function_semantics": "historical_evaluator.event_metrics",
+    "false_trigger_definition": {
+      "activity_seconds_activity_trial": "last reconstructed window end / sampling_rate_hz",
+      "activity_seconds_fall_trial": "fall_start_position / sampling_rate_hz",
+      "activity_trial": "all trigger episodes",
+      "fall_trial": "trigger episodes whose entire required-consecutive span is not stored label 1",
+      "rate": "false_trigger_episodes / max(activity_seconds / 3600, 1e-9)"
+    },
+    "lead_summary_population": "detected true-fall scenarios with valid impact position",
+    "no_detected_fall_lead_summary": "NaN",
+    "primary_reporting_metrics": [
+      "balanced_accuracy",
+      "fall_recall",
+      "false_triggers_per_activity_hour",
+      "recall_by_150ms",
+      "median_trigger_lead_ms"
+    ],
+    "raw_metrics": [
+      "balanced_accuracy",
+      "macro_f1",
+      "fall_recall",
+      "fall_precision",
+      "activity_specificity",
+      "recall_by_150ms",
+      "false_triggers_per_activity_hour",
+      "median_trigger_lead_ms",
+      "mean_trigger_lead_ms",
+      "tn",
+      "fp",
+      "fn",
+      "tp"
+    ],
+    "recall_by_150ms": "number of true-fall scenarios detected with confirmation lead >= 150 ms divided by all true-fall scenarios"
+  },
+  "mixed_executor_adapter": {
+    "accepted_canary_executor": "phase5m_compute_fi_outer_canary_executor_v1",
+    "clean_window_index": "parent.window_index",
+    "phase5m_clean_caches": 1,
+    "phase5m_fault_shards": 1,
+    "phase5m_persistent_records_expected": false,
+    "phase5m_transient_fault_execution_window_index": "parent.window_index",
+    "phase5r_clean_caches": 365,
+    "phase5r_fault_execution_window_index": "execution_window_index",
+    "phase5r_fault_shards": 731,
+    "probability_semantics_identical": true,
+    "remaining_fleet_executor": "phase5r_compute_fi_outer_fleet_executor_v1"
+  },
+  "nonfinite_policy": {
+    "faulted_nonfinite_records_are_not_dropped": true,
+    "no_imputation": true,
+    "report_nonfinite_counts": true,
+    "threshold_comparison_semantics": "preserve the stored floating value and apply the exact Phase-4 >= comparator; NaN therefore does not satisfy the threshold comparison"
+  },
+  "paired_cc_effect_contract": {
+    "compute_for_every_metric": true,
+    "higher_is_better_degradation": "paired_clean_metric - faulted_metric",
+    "lead_time_degradation": "paired_clean_median_trigger_lead_ms - faulted_median_trigger_lead_ms",
+    "lower_is_better_false_trigger_degradation": "faulted_false_triggers_per_activity_hour - paired_clean_false_triggers_per_activity_hour",
+    "positive_degradation_value_means_worse_under_compute_fault": true
+  },
+  "phase": "5Z",
+  "primary_stratification": {
+    "dimensions": [
+      "model_variant",
+      "persistence",
+      "operating_point",
+      "fault_family",
+      "representation_class",
+      "target_name",
+      "target_role"
+    ],
+    "never_pool_across_operating_points": true,
+    "never_pool_fp32_and_ptq": true,
+    "never_pool_transient_and_persistent": true,
+    "outer_instance_id_is_not_an_independent_subject": true,
+    "secondary_descriptive_dimensions": [
+      "bit_position",
+      "element_index"
+    ]
+  },
+  "purpose": "Prospectively freeze all CC outcome reconstruction, decision, metric, pairing, aggregation, uncertainty, and reporting rules before any Phase-5 prediction JSONL is opened or any outer label array is loaded.",
+  "reporting_contract": {
+    "C0_unique_trial_baseline": true,
+    "CC_faulted": true,
+    "claim_MCU_resilience": false,
+    "claim_OnField_fall_performance": false,
+    "claim_runtime_resilience": false,
+    "generate_CSC_result": false,
+    "paired_C0_counterfactual_for_CC": true,
+    "report_absolute_metrics": true,
+    "report_missing_timing_summary_count": true,
+    "report_nonfinite_count": true,
+    "report_paired_deltas": true,
+    "report_subject_count": true,
+    "report_trial_or_fault_scenario_count": true
+  },
+  "scenario_reconstruction": {
+    "clean_estate_scenario": {
+      "probabilities": "chronological clean cache probabilities for every stored window in the trial",
+      "unit": "model_variant x checkpoint_seed x outer subject x trial"
+    },
+    "fault_scenario": {
+      "base_sequence": "the corresponding clean trial probability sequence",
+      "duplicate_execution_window_index_within_outer_instance_id": "abort",
+      "fault_rows_missing_from_expected_persistent_suffix": "abort",
+      "mixing_different_outer_instance_ids_in_one_trial": false,
+      "persistent_from_onset_until_trial_end": "group all rows sharing outer_instance_id; replace exactly their execution_window_index positions by faulted P(Falling); require contiguous coverage from frozen onset through the final trial window; all pre-onset windows remain clean",
+      "primary_identity": "outer_instance_id",
+      "transient_one_inference": "replace exactly the one execution window associated with outer_instance_id by that record's faulted P(Falling); every other window remains clean",
+      "unit": "one independently sampled compute-fault identity applied to its parent trial"
+    },
+    "paired_clean_counterfactual": {
+      "purpose": "CC-versus-clean deltas use the identical sampled fault-identity distribution rather than comparing injection-weighted CC against unique-trial C0.",
+      "required": true,
+      "unit": "one clean parent-trial copy per outer_instance_id"
+    }
+  },
+  "schema_version": "phase5z_compute_fi_cc_outcome_analysis_protocol_v1",
+  "status": "FROZEN_PROSPECTIVE_CC_OUTCOME_ANALYSIS_PROTOCOL",
+  "threshold_protocol": {
+    "applies_identically_to_model_variants": [
+      "fp32",
+      "ptq_v7"
+    ],
+    "comparison_operator": ">=",
+    "key": [
+      "checkpoint_seed",
+      "outer_fold",
+      "operating_point"
+    ],
+    "matrix": [
+      {
+        "fold": 1,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.895
+      },
+      {
+        "fold": 1,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.895
+      },
+      {
+        "fold": 1,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.515
+      },
+      {
+        "fold": 2,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.89
+      },
+      {
+        "fold": 2,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.885
+      },
+      {
+        "fold": 2,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.30500000000000005
+      },
+      {
+        "fold": 3,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.87
+      },
+      {
+        "fold": 3,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.795
+      },
+      {
+        "fold": 3,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.51
+      },
+      {
+        "fold": 4,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.845
+      },
+      {
+        "fold": 4,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.89
+      },
+      {
+        "fold": 4,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.4
+      },
+      {
+        "fold": 5,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.795
+      },
+      {
+        "fold": 5,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 42,
+        "threshold": 0.71
+      },
+      {
+        "fold": 5,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 42,
+        "threshold": 0.37
+      },
+      {
+        "fold": 1,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.885
+      },
+      {
+        "fold": 1,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.85
+      },
+      {
+        "fold": 1,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.42500000000000004
+      },
+      {
+        "fold": 2,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.855
+      },
+      {
+        "fold": 2,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.85
+      },
+      {
+        "fold": 2,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.255
+      },
+      {
+        "fold": 3,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.755
+      },
+      {
+        "fold": 3,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.875
+      },
+      {
+        "fold": 3,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.45499999999999996
+      },
+      {
+        "fold": 4,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.875
+      },
+      {
+        "fold": 4,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.875
+      },
+      {
+        "fold": 4,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.32
+      },
+      {
+        "fold": 5,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.835
+      },
+      {
+        "fold": 5,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 123,
+        "threshold": 0.86
+      },
+      {
+        "fold": 5,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 123,
+        "threshold": 0.275
+      },
+      {
+        "fold": 1,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.885
+      },
+      {
+        "fold": 1,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.885
+      },
+      {
+        "fold": 1,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.385
+      },
+      {
+        "fold": 2,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.865
+      },
+      {
+        "fold": 2,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.86
+      },
+      {
+        "fold": 2,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.365
+      },
+      {
+        "fold": 3,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.58
+      },
+      {
+        "fold": 3,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.645
+      },
+      {
+        "fold": 3,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.375
+      },
+      {
+        "fold": 4,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.89
+      },
+      {
+        "fold": 4,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.84
+      },
+      {
+        "fold": 4,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.30000000000000004
+      },
+      {
+        "fold": 5,
+        "operating_point": "balanced",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.885
+      },
+      {
+        "fold": 5,
+        "operating_point": "low_false_alarm",
+        "required_consecutive": 2,
+        "seed": 2025,
+        "threshold": 0.875
+      },
+      {
+        "fold": 5,
+        "operating_point": "timely_150ms",
+        "required_consecutive": 1,
+        "seed": 2025,
+        "threshold": 0.31
+      }
+    ],
+    "operating_points": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "outer_selection_or_retuning": false,
+    "required_consecutive_semantics": "Count consecutive windows with P(Falling) >= threshold; emit one trigger episode at the first window in the run when run length reaches required_consecutive; disarm until a below-threshold window resets the run and rearms.",
+    "selection_partition": "validation_only"
+  },
+  "trial_time_reconstruction": {
+    "activity_window_end_rule": "30 + stored_activity_window_index * 15",
+    "annotated_fall_event_count": 2919,
+    "falling_window_end_rule": "fall_start_position + 30 + falling_section_window_index * 15",
+    "framecounter_authoritative": true,
+    "historical_fallback_event_count": 1,
+    "historical_fallback_event_id": "KFALL_106_T27_R05",
+    "runtime_adjusted_lead_in_phase5_cc": false,
+    "sampling_rate_hz": 100.0,
+    "sensor_only_lead_ms": "(impact_FrameCounter - decision_window_end_FrameCounter) * 10",
+    "source_faithful_event_count": 2918,
+    "stride_ms": 150,
+    "stride_samples": 15,
+    "timely_rule": "sensor_only_lead_ms >= 150",
+    "trigger_lead_uses_confirmation_window": true,
+    "window_ms": 300,
+    "window_samples": 30
+  },
+  "uncertainty_contract": {
+    "bootstrap_replicates": 10000,
+    "cluster_preservation": "resampling a subject preserves all of that subject's trials, overlapping windows, fault identities, targets, and three checkpoint seeds",
+    "confidence_level": 0.95,
+    "method": "nonparametric subject-cluster percentile bootstrap",
+    "p_values_required": false,
+    "paired_delta_bootstrap": true,
+    "primary_unit": "outer subject",
+    "rng_seed": 20261006,
+    "timing_event_sensitivity": {
+      "bootstrap_replicates": 10000,
+      "enabled": true,
+      "method": "event-cluster percentile bootstrap",
+      "rng_seed": 20261007,
+      "role": "sensitivity/descriptive, not replacement for subject-primary uncertainty",
+      "unit": "event_id"
+    }
+  }
+}

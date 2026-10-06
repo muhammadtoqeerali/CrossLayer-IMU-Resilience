@@ -1,0 +1,177 @@
+{
+  "accepted_estate_cardinality": {
+    "artifact_directories": 1098,
+    "clean_caches": 366,
+    "clean_model_window_records": 1642980,
+    "fault_shards": 732,
+    "faulted_model_window_records": 29798820,
+    "outer_instance_ids": 20170008,
+    "phase5m_canary_clean_caches": 1,
+    "phase5m_canary_fault_shards": 1,
+    "phase5r_clean_caches": 365,
+    "phase5r_fault_shards": 731,
+    "stored_windows": 273830,
+    "subjects": 61,
+    "total_model_window_records": 31441800,
+    "trials": 6309
+  },
+  "analysis_scope": {
+    "CSC": false,
+    "OnField": false,
+    "all_three_checkpoint_seeds_retained": true,
+    "fault_resampling": false,
+    "model_variants": [
+      "fp32",
+      "ptq_v7"
+    ],
+    "operating_points": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "outcome_driven_protocol_change": false,
+    "outer_member_selection": false,
+    "outer_threshold_retuning": false,
+    "persistence_modes": [
+      "transient_one_inference",
+      "persistent_from_onset_to_trial_end"
+    ],
+    "regimes": [
+      "C0",
+      "CC"
+    ]
+  },
+  "execution_lifecycle": {
+    "accepted_outer_label_load_authorized_by_phase5ac_alone": false,
+    "accepted_outer_read_authorized_by_phase5ac_alone": false,
+    "final_outcome_executor_implemented": false,
+    "final_outcome_executor_qualified": false,
+    "outcome_executor_implementation_authorized": true,
+    "outcome_executor_synthetic_static_qualification_authorized": true,
+    "phase5ac_role": "freeze pre-outcome execution gate",
+    "required_before_first_accepted_payload_read": [
+      "implement a final end-to-end outcome executor that binds Phase-5Z, Phase-5AA, and Phase-5AB",
+      "qualify that executor without accepted prospective prediction or label payloads",
+      "freeze a final one-way outcome-execution activation binding the qualified executor hash"
+    ]
+  },
+  "first_outcome_read_policy": {
+    "activation_after_executor_qualification_required": true,
+    "first_CC_metric": "not authorized in Phase 5AC",
+    "first_accepted_prediction_row_read": "not authorized in Phase 5AC",
+    "first_outer_label_array_load": "not authorized in Phase 5AC",
+    "first_outer_threshold_application": "not authorized in Phase 5AC"
+  },
+  "frozen_dependencies": {
+    "phase3_timing_manifest": {
+      "path": "manifests/phase_3n_final_protocol_freeze_v3.json",
+      "sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39"
+    },
+    "phase5aa_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+      "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66"
+    },
+    "phase5aa_qualification_manifest": {
+      "path": "manifests/phase_5aa_compute_fi_cc_analyzer_qualification_v1.json",
+      "sha256": "05c6c262751b766cddf8d2483ab270cca34cb446f2218d52732861ddf2f5714d"
+    },
+    "phase5aa_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5aa_compute_fi_cc_analyzer_qualification_v1/qualification.json",
+      "sha256": "2e7edad2d3aede47ce8edce68bf58fa6b6deeac15b108b69e8ff8774b9c03c45"
+    },
+    "phase5ab_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v1.py",
+      "sha256": "0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f"
+    },
+    "phase5ab_qualification_manifest": {
+      "path": "manifests/phase_5ab_compute_fi_cc_io_runner_qualification_v1.json",
+      "sha256": "5e0dbc7b66a6e85b04cabcecb8a08bc215f8e00506116356ea6b755ce1979116"
+    },
+    "phase5ab_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ab_compute_fi_cc_io_runner_qualification_v1/qualification.json",
+      "sha256": "ac8371f2655a6954f4463712ba2a4163f0274b92b213dad2cd5dfd2431f3cf9f"
+    },
+    "phase5e_execution_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5o_canary_technical_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5o_compute_fi_outer_canary_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "d67dba6513a62c8192137c3b19d1806db91e4b257cb17b6481ad11a86a897d72"
+    },
+    "phase5u_complete_estate_technical_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5u_compute_fi_outer_full_fleet_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "87932aebe474d515d5d43063724c8f3f0026084a6df40225e3666d83e3ae4f88"
+    },
+    "phase5z_protocol": {
+      "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+      "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+    }
+  },
+  "future_input_roots": {
+    "accepted_outer_result_root": {
+      "accessed_during_phase5ac": false,
+      "listed_during_phase5ac": false,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5_outer_compute_fi_prospective_v1",
+      "stat_performed_during_phase5ac": false
+    },
+    "outer_dataset_root": {
+      "label_array_loaded_during_phase5ac": false,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary",
+      "payload_accessed_during_phase5ac": false
+    },
+    "timing_source": {
+      "rule": "Resolve timing/risk inputs only through the exact hash-bound Phase-3 timing manifest; no alternate risk/timing source may be substituted."
+    }
+  },
+  "generated_date": "2026-10-06",
+  "next_action": "Implement and synthetically/statically qualify the final end-to-end prospective CC outcome executor without opening accepted prediction JSONL or outer label arrays.",
+  "phase": "5AC",
+  "phase5ac_boundary": {
+    "CSC_result_generated": false,
+    "accepted_clean_outputs_jsonl_opened": false,
+    "accepted_fault_outputs_jsonl_opened": false,
+    "accepted_outer_label_array_loaded": false,
+    "accepted_outer_result_root_accessed": false,
+    "accepted_outer_root_listed": false,
+    "accepted_outer_root_stat_performed": false,
+    "accepted_prediction_json_deserialized": false,
+    "aggregate_CC_result_generated": false,
+    "fault_execution_executed": false,
+    "model_forward_executed": false,
+    "model_loaded": false,
+    "onfield_used": false,
+    "outer_CC_metric_computed": false,
+    "outer_threshold_applied": false
+  },
+  "purpose": "Bind the frozen Phase-5Z scientific protocol, qualified Phase-5AA analyzer, qualified Phase-5AB I/O runner, accepted Phase-5E estate, and immutable future input roots before any accepted prospective prediction or label payload is opened.",
+  "required_executor_behavior": {
+    "must_abort_on_integrity_failure": true,
+    "must_apply_only_frozen_validation_thresholds": true,
+    "must_bind_exact_phase5aa_analyzer": true,
+    "must_bind_exact_phase5ab_io_runner": true,
+    "must_bind_exact_phase5z_protocol": true,
+    "must_enforce_exact_trial_window_count": true,
+    "must_enforce_persistent_onset_to_end_suffix": true,
+    "must_group_faults_by_outer_instance_id": true,
+    "must_join_labels_by_subject_task_trial_window_index": true,
+    "must_not_mix_outer_instance_ids": true,
+    "must_not_skip_bad_records": true,
+    "must_not_treat_fault_rows_as_independent_subjects": true,
+    "must_not_treat_windows_as_independent": true,
+    "must_preserve_fp32_ptq_separation": true,
+    "must_preserve_operating_point_separation": true,
+    "must_preserve_phase4_event_metric_semantics": true,
+    "must_preserve_target_family_strata": true,
+    "must_preserve_transient_persistent_separation": true,
+    "must_produce_paired_clean_counterfactual": true,
+    "must_report_nonfinite_fault_outputs": true,
+    "must_use_equal_seed_weight_within_subject": true,
+    "must_use_subject_primary_uncertainty": true,
+    "must_verify_artifact_hashes_before_jsonl_parse": true,
+    "must_verify_phase5m_canary_against_frozen_acceptance": true,
+    "must_verify_phase5r_artifacts_against_success_metadata": true
+  },
+  "schema_version": "phase5ac_compute_fi_cc_pre_outcome_execution_gate_v1",
+  "status": "FROZEN_PRE_OUTCOME_CC_EXECUTION_GATE"
+}

@@ -1,0 +1,137 @@
+{
+  "authorization": {
+    "path": "configs/evaluation/phase5af_r3_post_boundary_continuation_authorization_v1.json",
+    "sha256": "ebc59be015964a53dee08a903d08a5ba8687bcc4f22fbb8cd936238a439613e3"
+  },
+  "authorized_continuation_chain": {
+    "replacement_scope": "implementation compatibility only: decode the exact Phase-5M/5R serialized nonfinite IEEE tokens and route the existing frozen analysis through that decoder",
+    "scientific_protocol_changed": false,
+    "v2_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v2.py",
+      "sha256": "0cfb60c9b32951482ffcc5be0ca14ec49c91b7d669e43eddf39fe28f26d01da5"
+    },
+    "v2_executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v2.py",
+      "sha256": "cfb5d618af37b5164c1e861fb6888b3c4dbe04caee2644a1218cd09f35b4aa50"
+    },
+    "v2_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v2.py",
+      "sha256": "b8f14826f8d31c067f5753c633cec761b4b9e2ad2004e8367e38809e2fdc7bf2"
+    }
+  },
+  "continuation_authorization": {
+    "CC_metric_computation_authorized": true,
+    "CSC_generation_authorized": false,
+    "OnField_access_authorized": false,
+    "accepted_outer_label_load_authorized": true,
+    "accepted_prediction_read_authorized": true,
+    "aggregate_CC_result_generation_authorized": true,
+    "aggregation_change_authorized": false,
+    "checkpoint_selection_authorized": false,
+    "exact_r2_binding_required": true,
+    "exact_v2_chain_required": true,
+    "fault_membership_change_authorized": false,
+    "fault_resampling_authorized": false,
+    "frozen_threshold_application_authorized": true,
+    "metric_change_authorized": false,
+    "model_forward_authorized": false,
+    "new_fault_execution_authorized": false,
+    "original_execution_start_may_be_modified": false,
+    "phase5af_resume_authorized": true,
+    "protocol_change_authorized": false,
+    "stratum_change_authorized": false,
+    "threshold_retuning_authorized": false,
+    "uncertainty_change_authorized": false,
+    "v1_executor_may_resume_production": false,
+    "v1_shard_outputs_may_be_created_after_r3": false
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AF_R3_POST_BOUNDARY_CONTINUATION_AUTHORIZATION_V1.md",
+    "sha256": "73ef81351bea9e8cc2830a46439c170ce1d6f3a6185c9a3e81c640564d9f6a4d"
+  },
+  "generated_date": "2026-10-06",
+  "next_action": "Resume the already-started Phase-5AF execution using only the exact V2 chain under this R3 continuation authorization, without changing any scientific rule.",
+  "original_execution_lineage": {
+    "completed_shards_before_repair": 0,
+    "execution_start": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_compute_fi_cc_outcome_execution_v1/execution_start.json",
+      "sha256": "73042416e26869fe3ce53994175bc0d2221260b9639906bf396154a7fa441eef"
+    },
+    "execution_start_must_remain_byte_identical": true,
+    "v1_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+      "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66"
+    },
+    "v1_executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v1.py",
+      "sha256": "e564d4db2e0dfe3ff0aa35cf9a30061455dc995eac0b94644bdbfa29e3e7d7a5"
+    },
+    "v1_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v1.py",
+      "sha256": "0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f"
+    }
+  },
+  "phase": "5AF-R3",
+  "r3_boundary": {
+    "CSC_generated": false,
+    "OnField_used": false,
+    "accepted_CC_metric_computed": false,
+    "accepted_outer_label_payload_loaded": false,
+    "accepted_prediction_payload_read": false,
+    "accepted_threshold_applied": false,
+    "aggregate_CC_result_generated": false,
+    "model_forward_executed": false,
+    "new_fault_execution_executed": false,
+    "phase5af_shard_resumed": false
+  },
+  "regression_test": {
+    "path": "tests/test_phase5af_r3_post_boundary_continuation_authorization.py",
+    "sha256": "649102767c20bf3ecffca07706f3701246e24b19d89c88449d2c1f8f37b55aa6"
+  },
+  "repair_evidence": {
+    "r1_manifest": {
+      "path": "manifests/phase_5af_r1_nonfinite_softmax_adapter_repair_v1.json",
+      "sha256": "08e4e9fd5f70d7e49db59128dd7fb95a1ef56c9ac099f96420541389ca01925a"
+    },
+    "r1_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_r1_nonfinite_softmax_adapter_repair_v1/qualification.json",
+      "sha256": "25e9a484ca8c9bd83cb936ab2d2349c7aa9d978737425fe1f83b12d1d650c2a4"
+    },
+    "r2_manifest": {
+      "path": "manifests/phase_5af_r2_repaired_cc_execution_chain_qualification_v1.json",
+      "sha256": "8f2af6ee06656f11eaad39164f85fd1a85b37b0b6636396901492b9d1b08df4f"
+    },
+    "r2_qualification_config": {
+      "path": "configs/evaluation/phase5af_r2_repaired_cc_execution_chain_qualification_v1.json",
+      "sha256": "04183d67b9a6ee1044991b41cef5277bca8b113c9dd5567043e41247b99dcff3"
+    },
+    "r2_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_r2_repaired_cc_execution_chain_qualification_v1/qualification.json",
+      "sha256": "edd64e473537aef3ba1d71de290bbcd311589f065662b23313cf6cef2de8641c"
+    }
+  },
+  "schema_version": "phase5af_r3_post_boundary_continuation_authorization_freeze_v1",
+  "scientific_invariants": {
+    "CSC": false,
+    "OnField": false,
+    "all_three_checkpoint_seeds_retained": true,
+    "bootstrap_replicates": 10000,
+    "equal_seed_weight_within_subject": true,
+    "equal_subject_weight": true,
+    "nan_threshold_semantics": "IEEE NaN does not satisfy >= comparison",
+    "nonfinite_imputation": false,
+    "operating_points": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "regimes": [
+      "C0",
+      "CC"
+    ],
+    "scientific_rules_mutable": false,
+    "subject_primary_uncertainty": true,
+    "threshold_comparator": ">="
+  },
+  "status": "FROZEN_POST_BOUNDARY_CC_CONTINUATION_AUTHORIZATION"
+}

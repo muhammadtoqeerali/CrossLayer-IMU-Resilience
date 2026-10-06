@@ -1,0 +1,61 @@
+{
+  "evidence_tier": "P0",
+  "frozen_dependencies": {
+    "calibration_identity_sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e",
+    "contract_sha256": "335efb0090318eb492e3ae1856dedbb4360840b2e49285f12a6ec14163791557",
+    "fault_only_module_sha256": "f8bb4095bbfedc69c24fa4cc6e79ccf4914e14fa502ce080a06de01e740112cb",
+    "operators_sha256": "663efc3d720e1b476e3c078c40a21b184e13abfda86cde8cfde6b6b38c783b91",
+    "paired_harness_sha256": "68418e44d50f7c8192777ffe6c7f7f5f0dc0cab2243788f627d07879ef19005b",
+    "phase5d_protocol_sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36",
+    "phase5h_result_sha256": "3f680e2ed4d1bfbf0654ddc8395a1d233e40891efd8e9d21e4f3ca104189ebd0",
+    "phase5i_gate_sha256": "ef7ab5c5dbf5959c37a7649a88ddfc7ca5a1839a7d98d0bd46b98bd6b7958fb3"
+  },
+  "partition": "training_calibration",
+  "phase": "5K",
+  "qualification_date": "2026-10-05",
+  "qualification_matrix": {
+    "fp32_targets": [
+      "fc1_output_fp32",
+      "flatten_buffer_fp32"
+    ],
+    "persistence_modes": [
+      "transient_one_inference",
+      "persistent_from_onset_until_trial_end"
+    ],
+    "persistent_onset_position": 2,
+    "ptq_activation_buffer_targets": [
+      "fc1_output_fp32",
+      "flatten_buffer_fp32",
+      "conv2_quantized_input",
+      "post_fc2_quantized_buffer"
+    ],
+    "ptq_weight_targets": [
+      "conv_2.0.weight"
+    ],
+    "sequence_length": 5,
+    "total_cases": 14
+  },
+  "required_equivalence": {
+    "active_mask_equal_to_paired_harness": true,
+    "embedded_clean_reference_forward": false,
+    "fault_id_equal_to_paired_harness": true,
+    "faulted_output_bitwise_equal_to_paired_harness": true,
+    "input_sha256_equal_to_paired_harness": true,
+    "mutation_record_equal_to_paired_harness": true
+  },
+  "schema_version": "phase5k_compute_fi_fault_only_execution_qualification_v1",
+  "scientific_boundary": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "onfield_allowed": false,
+    "outer_fault_execution_allowed": false,
+    "outer_model_forward_allowed": false,
+    "outer_payload_allowed": false,
+    "outer_prediction_read_allowed": false,
+    "phase5d_identity_change_allowed": false,
+    "phase5d_sampling_change_allowed": false,
+    "phase5e_plan_change_allowed": false,
+    "phase5i_gate_change_allowed": false
+  },
+  "status": "FROZEN_PRE_OUTER_FAULT_ONLY_EXECUTION_QUALIFICATION"
+}

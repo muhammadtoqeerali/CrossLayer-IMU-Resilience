@@ -1,0 +1,52 @@
+{
+  "schema_version": "phase5aa_compute_fi_cc_analyzer_qualification_v1",
+  "phase": "5AA",
+  "generated_date": "2026-10-06",
+  "status": "FROZEN_PRE_OUTCOME_CC_ANALYZER_QUALIFICATION_PROTOCOL",
+  "evidence_tier": "P0",
+  "phase5z_protocol": {
+    "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+    "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+  },
+  "phase5z_freeze_manifest": {
+    "path": "manifests/phase_5z_compute_fi_cc_outcome_analysis_protocol_freeze_v1.json",
+    "sha256": "f92b08aaebed81f85d737e5da02cf2291b4fc46c20f8c73f4d8a79076047fd9c"
+  },
+  "historical_evaluator": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+    "sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380"
+  },
+  "phase5u_technical_acceptance": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5u_compute_fi_outer_full_fleet_technical_acceptance_v1/technical_acceptance.json",
+    "sha256": "87932aebe474d515d5d43063724c8f3f0026084a6df40225e3666d83e3ae4f88"
+  },
+  "qualification_scope": {
+    "synthetic_records_only": true,
+    "historical_source_equivalence": true,
+    "threshold_matrix_validation": true,
+    "phase5m_phase5r_probability_schema_equivalence": true,
+    "transient_scenario_reconstruction": true,
+    "persistent_scenario_reconstruction": true,
+    "persistent_suffix_integrity_failure": true,
+    "duplicate_execution_window_failure": true,
+    "paired_clean_counterfactual": true,
+    "paired_degradation_direction": true,
+    "seed_equal_subject_aggregation": true,
+    "subject_cluster_bootstrap_determinism": true,
+    "nonfinite_counting": true
+  },
+  "prohibited_during_qualification": {
+    "prospective_outer_result_root_access": true,
+    "clean_outputs_jsonl_open": true,
+    "fault_outputs_jsonl_open": true,
+    "outer_labels_npy_load": true,
+    "phase5_prediction_deserialization": true,
+    "threshold_application_to_outer": true,
+    "outer_CC_metric_computation": true,
+    "model_load": true,
+    "model_forward": true,
+    "fault_execution": true,
+    "OnField_access": true,
+    "CSC_generation": true
+  }
+}

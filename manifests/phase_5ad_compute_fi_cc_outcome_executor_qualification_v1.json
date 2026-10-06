@@ -1,0 +1,79 @@
+{
+  "authorization": {
+    "accepted_CC_metric_computation_authorized": false,
+    "accepted_outer_label_load_authorized": false,
+    "accepted_outer_prediction_read_authorized": false,
+    "final_activation_binding_executor_hash_required": true,
+    "final_outcome_executor_implemented": true,
+    "final_outcome_executor_qualified": true
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AD_COMPUTE_FI_CC_OUTCOME_EXECUTOR_QUALIFICATION_V1.md",
+    "sha256": "e059b4799dec1ba585c501115f403c3ddadee58cf1ef60229a2e715ad4058000"
+  },
+  "executor": {
+    "path": "experiments/phase_05/cc_outcome_executor_v1.py",
+    "sha256": "e564d4db2e0dfe3ff0aa35cf9a30061455dc995eac0b94644bdbfa29e3e7d7a5"
+  },
+  "generated_date": "2026-10-06",
+  "implementation_boundary": {
+    "accepted_outcome_analysis_executed": false,
+    "final_outcome_executor_implemented": true,
+    "final_outcome_executor_qualified": true,
+    "production_execution_performed": false
+  },
+  "next_action": "Freeze a final one-way outcome-execution activation binding the exact Phase-5AD executor and qualification hashes before first accepted prediction JSONL or outer label access.",
+  "phase": "5AD",
+  "qualification_boundary": {
+    "CSC_result_generated": false,
+    "accepted_CC_metric_computed": false,
+    "accepted_outer_label_array_loaded": false,
+    "accepted_outer_root_accessed": false,
+    "accepted_outer_root_listed": false,
+    "accepted_outer_root_stat_performed": false,
+    "accepted_prediction_deserialized": false,
+    "accepted_prediction_jsonl_opened": false,
+    "accepted_threshold_applied": false,
+    "aggregate_accepted_CC_result_generated": false,
+    "fault_execution_executed": false,
+    "model_forward_executed": false,
+    "model_loaded": false,
+    "onfield_used": false,
+    "synthetic_estates_only": true
+  },
+  "qualification_checks": {
+    "clean_baseline_deduplicated_across_persistence": true,
+    "equal_seed_then_subject_aggregation": true,
+    "exact_lineage_binding": true,
+    "missing_timing_never_imputed": true,
+    "nonfinite_accounting": true,
+    "paired_clean_faulted_and_degradation_outputs": true,
+    "persistent_end_to_end": true,
+    "phase5m_style_frozen_hash_path": true,
+    "phase5r_integrity_path": true,
+    "production_path_binding_without_payload_access": true,
+    "subject_cluster_bootstrap": true,
+    "synthetic_label_and_risk_join": true,
+    "three_operating_points": true,
+    "transient_end_to_end": true,
+    "twelve_synthetic_subject_seed_persistence_jobs": true
+  },
+  "qualification_config": {
+    "path": "configs/evaluation/phase5ad_compute_fi_cc_outcome_executor_qualification_v1.json",
+    "sha256": "4375ccb8c93c06f282cb8da36aac6007b37bb26844b83b06358b28cdd0275be1"
+  },
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ad_compute_fi_cc_outcome_executor_qualification_v1/qualification.json",
+    "sha256": "a726592c10310eba7abedd11ea8ad0644fc2b692e8f89af4d21b023992bff620"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_cc_outcome_executor_v1.py",
+    "sha256": "4df201e9540e48a06dbb4a13aef4a4a7e644a60b2d58aa39f0139104a19bac01"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5ad_compute_fi_cc_outcome_executor.py",
+    "sha256": "14574447ec2fb646d11d19128c7239fbbe25898772e03312c3e6bbad1aee7104"
+  },
+  "schema_version": "phase5ad_compute_fi_cc_outcome_executor_qualification_manifest_v1",
+  "status": "QUALIFIED_FINAL_CC_OUTCOME_EXECUTOR_PRE_OUTCOME"
+}

@@ -1,0 +1,157 @@
+{
+  "estate": {
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fp32_freeze_manifest": {
+      "path": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+      "sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+    },
+    "member_count": 15,
+    "ptq_all15_manifest": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1/all15_qualification_manifest.json",
+      "sha256": "811481415964bb2dc964116600a0ab43af407b4cddef76422a0f0d1a85819316"
+    },
+    "seeds": [
+      42,
+      123,
+      2025
+    ],
+    "single_member_selection_allowed": false
+  },
+  "evidence_tier": "P0",
+  "expected_cardinality": {
+    "fp32_cases_per_member": 2,
+    "fp32_cases_total": 30,
+    "paired_cases_total": 105,
+    "ptq_cases_per_member": 5,
+    "ptq_cases_total": 75
+  },
+  "fixed_fault_coordinates": {
+    "bit_position": 0,
+    "element_index": 0,
+    "inference_index": 0,
+    "multiplicity": 1,
+    "persistence": "transient_one_inference",
+    "replicate_index": 0
+  },
+  "fp32_cases_per_member": [
+    {
+      "fault_family": "fp32_activation_single_bit_flip",
+      "representation_class": "fp32_activation",
+      "target_name": "fc1_output_fp32",
+      "target_role": "activation"
+    },
+    {
+      "fault_family": "fp32_buffer_single_bit_flip",
+      "representation_class": "fp32_buffer",
+      "target_name": "flatten_buffer_fp32",
+      "target_role": "intermediate_buffer"
+    }
+  ],
+  "freeze_date": "2026-10-05",
+  "next_action_if_qualified": "Freeze the prospective outer compute-FI sampling/cardinality protocol before any CC outer execution.",
+  "outer_sampling_plan_frozen": false,
+  "parent_commit": "54577387fa199081407e91ce9766b0f2b6b05417",
+  "partition": {
+    "calibration_identity_path": "configs/datasets/int8_calibration_identity_v1.json",
+    "calibration_identity_sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e",
+    "identity_selection_rule": "first lexicographic frozen calibration identity per fold",
+    "onfield_allowed": false,
+    "outer_test_allowed": false,
+    "qualification_partition": "training_calibration",
+    "same_fold_identity_reused_across_three_seeds": true,
+    "source_partition": "training only",
+    "validation_allowed": false,
+    "windows_per_fold": 4096
+  },
+  "phase": "5C",
+  "prerequisites": {
+    "phase5a_operator_qualification": {
+      "path": "manifests/phase_5a_compute_fi_operator_qualification_v1.json",
+      "sha256": "078da4d254ca91f468c842641ecc80f96878046407119f2362909d9157383fae"
+    },
+    "phase5a_protocol": {
+      "path": "configs/faults/phase5a_compute_fi_representation_protocol_v1.json",
+      "sha256": "279d5c9ebd865ae0d147ec62d0cd04d2ffb5d58d9c80544ee6c913f9a1964bd5"
+    },
+    "phase5b_execution_harness_qualification": {
+      "path": "manifests/phase_5b_compute_fi_execution_harness_qualification_v1.json",
+      "sha256": "8293fc6b983ac40359c4dd7d358f79f9b00a8cece6c9a9649a07aa723cceadb1"
+    }
+  },
+  "prohibited_adaptation": {
+    "bit_change": true,
+    "checkpoint_selection": true,
+    "element_index_change": true,
+    "fault_family_change": true,
+    "replicate_tuning": true,
+    "selection_from_faulted_outputs": true,
+    "target_change": true,
+    "threshold_change": true
+  },
+  "ptq_cases_per_member": [
+    {
+      "fault_family": "int8_weight_single_bit_flip",
+      "representation_class": "int8_persistent_weight",
+      "target_name": "conv_2.0.weight",
+      "target_role": "persistent_parameter"
+    },
+    {
+      "fault_family": "quantized_activation_single_bit_flip",
+      "representation_class": "quantized_activation",
+      "target_name": "conv2_quantized_input",
+      "target_role": "activation"
+    },
+    {
+      "fault_family": "quantized_buffer_single_bit_flip",
+      "representation_class": "quantized_buffer",
+      "target_name": "post_fc2_quantized_buffer",
+      "target_role": "intermediate_buffer"
+    },
+    {
+      "fault_family": "fp32_activation_single_bit_flip",
+      "representation_class": "fp32_activation",
+      "target_name": "fc1_output_fp32",
+      "target_role": "activation"
+    },
+    {
+      "fault_family": "fp32_buffer_single_bit_flip",
+      "representation_class": "fp32_buffer",
+      "target_name": "flatten_buffer_fp32",
+      "target_role": "intermediate_buffer"
+    }
+  ],
+  "purpose": "Qualify the Phase-5 paired compute-FI runner on real frozen training-calibration windows before any outer CC execution.",
+  "qualification_gates": {
+    "all_15_fp32_members_loaded": true,
+    "all_15_ptq_members_loaded": true,
+    "all_fault_ids_unique": true,
+    "classification_accuracy_gate": false,
+    "fault_identity_valid": true,
+    "one_selected_bit_changes": true,
+    "one_selected_element_changes": true,
+    "performance_value_gate": false,
+    "ptq_eager_clean_matches_frozen_torchscript": true,
+    "same_fold_real_calibration_identity_reused_across_seeds": true,
+    "source_artifacts_unchanged": true,
+    "threshold_gate": false
+  },
+  "reporting_boundary": {
+    "CC_task_performance_result": false,
+    "CSC_result": false,
+    "hardware_claim": false,
+    "physical_fault_equivalence": false,
+    "record_output_hashes": true,
+    "record_probabilities": false,
+    "record_raw_logits": false,
+    "report_accuracy_or_recall": false,
+    "use_faulted_results_for_protocol_choice": false
+  },
+  "schema_version": "phase5c_compute_fi_devcal_runner_v1",
+  "status": "FROZEN_PRE_EXECUTION_QUALIFICATION_PROTOCOL"
+}

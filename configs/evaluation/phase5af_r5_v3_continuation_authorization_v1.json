@@ -1,0 +1,183 @@
+{
+  "authorized_v3_chain": {
+    "analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v3.py",
+      "sha256": "22e7ac0d587527abd659585596a2c7b43df7af2f249c5aa594be566677e32544"
+    },
+    "canonical_persistence": "persistent_from_onset_until_trial_end",
+    "executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v3.py",
+      "sha256": "6b99d63805b2dfd64d1a44ec419cb9e9e5ca34573d1df4bdbe2083fdb12df61f"
+    },
+    "io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v3.py",
+      "sha256": "ad625947791a1d7763bacac17be2941382f2777349d02bc653053cfa123151d7"
+    },
+    "noncanonical_persistence_alias_authorized": false,
+    "scientific_protocol_changed": false
+  },
+  "boundary_state": "ONE_WAY_OUTCOME_BOUNDARY_ALREADY_CROSSED",
+  "continuation_authorization": {
+    "CC_metric_computation_authorized": true,
+    "CSC_generation_authorized": false,
+    "OnField_access_authorized": false,
+    "accepted_outer_label_load_authorized": true,
+    "accepted_prediction_read_authorized": true,
+    "aggregate_CC_result_generation_authorized": true,
+    "aggregation_change_authorized": false,
+    "any_other_v2_shard_reuse_authorized": false,
+    "checkpoint_selection_authorized": false,
+    "exact_v3_chain_required": true,
+    "fault_membership_change_authorized": false,
+    "fault_resampling_authorized": false,
+    "frozen_threshold_application_authorized": true,
+    "grandfathered_transient_shard_delete_authorized": false,
+    "grandfathered_transient_shard_rerun_authorized": false,
+    "grandfathered_transient_shard_reuse_authorized": true,
+    "metric_change_authorized": false,
+    "model_forward_authorized": false,
+    "new_fault_execution_authorized": false,
+    "phase5af_resume_authorized": true,
+    "protocol_change_authorized": false,
+    "stratum_change_authorized": false,
+    "threshold_retuning_authorized": false,
+    "uncertainty_change_authorized": false
+  },
+  "generated_date": "2026-10-06",
+  "grandfathered_completed_shard": {
+    "count": 1,
+    "created_under": "R3/V2",
+    "delete_authorized": false,
+    "outcome": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_compute_fi_cc_outcome_execution_v1/shards/p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9/outcome.json",
+      "sha256": "0af87e1594c3ab1d70c9e839811daf7c5ebe096a7e2df04b5759c031e1432f4d"
+    },
+    "persistence": "transient_one_inference",
+    "reason": "V2-to-V3 analyzer change affects only canonical persistent-mode vocabulary; R4 qualified transient V2/V3 behavioral equivalence.",
+    "rerun_authorized": false,
+    "reuse_authorized": true,
+    "shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+    "success_marker": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_compute_fi_cc_outcome_execution_v1/shards/p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9/_SUCCESS.json",
+      "sha256": "e2ef23df95c901a89f753ee34a0dd621a009dc5af62af555b745a72bac1d24cf"
+    }
+  },
+  "immutable_run_lineage": {
+    "original_execution_start": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_compute_fi_cc_outcome_execution_v1/execution_start.json",
+      "sha256": "73042416e26869fe3ce53994175bc0d2221260b9639906bf396154a7fa441eef"
+    },
+    "original_execution_start_may_be_modified": false,
+    "output_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_compute_fi_cc_outcome_execution_v1",
+    "r3_continuation_start_may_be_modified": false,
+    "r3_v2_continuation_start": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_compute_fi_cc_outcome_execution_v1/continuation_start_r3_v2.json",
+      "sha256": "8a2884e31fabaa70ff9cec949d6010b990feb80257e6577f57aa2cc622dccbd1"
+    }
+  },
+  "next_action": "Resume Phase-5AF using only the exact V3 chain for the remaining 731 shards, preserve and reuse the exact grandfathered transient R3/V2 shard without rerunning it, then aggregate only after all 732 shard results validate.",
+  "phase": "5AF-R5",
+  "purpose": "Authorize continuation of the already-started Phase-5AF prospective CC outcome run with the exact qualified V3 implementation chain, while preserving the one valid transient shard completed under R3/V2 and keeping every scientific rule immutable.",
+  "r5_boundary": {
+    "CSC_generated": false,
+    "OnField_used": false,
+    "accepted_CC_metric_computed": false,
+    "accepted_outer_label_payload_loaded": false,
+    "accepted_prediction_payload_read": false,
+    "accepted_threshold_applied": false,
+    "aggregate_CC_result_generated": false,
+    "model_forward_executed": false,
+    "new_fault_execution_executed": false,
+    "phase5af_production_resumed": false,
+    "preserved_shard_deleted": false,
+    "preserved_shard_rerun": false
+  },
+  "remaining_execution": {
+    "grandfathered_completed_shards": 1,
+    "other_v2_shard_reuse_authorized": false,
+    "partial_or_unverified_output_reuse": false,
+    "remaining_shards": 731,
+    "remaining_shards_must_bind_r5": true,
+    "remaining_shards_must_follow_exact_phase5e_order": true,
+    "remaining_shards_must_use_v3": true,
+    "skip_only_exact_grandfathered_shard": true,
+    "total_phase5e_shards": 732
+  },
+  "repair_evidence": {
+    "r4_manifest": {
+      "path": "manifests/phase_5af_r4_canonical_persistence_execution_chain_qualification_v1.json",
+      "sha256": "60b5820013b5e7f74a71a783d3f9bc2bd7a9c40b769886df43866f802abac850"
+    },
+    "r4_qualification_config": {
+      "path": "configs/evaluation/phase5af_r4_canonical_persistence_execution_chain_qualification_v1.json",
+      "sha256": "bd14058802318996192e859f86679d3214fe1bd9b638c7c04521bf070b4c0a59"
+    },
+    "r4_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_r4_canonical_persistence_execution_chain_qualification_v1/qualification.json",
+      "sha256": "7548f14b4bf95c615feeffd1a757312513cda70adabde4e6454b613cb968f036"
+    }
+  },
+  "required_resume_behavior": {
+    "aggregate_only_after_exactly_732_valid_total_shards": true,
+    "continuation_marker_must_bind_original_execution_start_sha": true,
+    "continuation_marker_must_bind_preserved_shard_hashes": true,
+    "continuation_marker_must_bind_r4_manifest_sha": true,
+    "continuation_marker_must_bind_r5_authorization_sha": true,
+    "continuation_marker_must_bind_v3_executor_sha": true,
+    "do_not_reexecute_preserved_shard": true,
+    "process_remaining_731_shards": true,
+    "technical_acceptance_before_scientific_interpretation": true,
+    "validate_preserved_shard_before_processing_remaining_shards": true,
+    "write_separate_r5_v3_continuation_marker": true
+  },
+  "schema_version": "phase5af_r5_v3_continuation_authorization_v1",
+  "scientific_authority": {
+    "phase5e_execution_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5z_protocol": {
+      "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+      "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+    },
+    "prior_r3_authorization": {
+      "path": "configs/evaluation/phase5af_r3_post_boundary_continuation_authorization_v1.json",
+      "sha256": "ebc59be015964a53dee08a903d08a5ba8687bcc4f22fbb8cd936238a439613e3"
+    },
+    "prior_r3_manifest": {
+      "path": "manifests/phase_5af_r3_post_boundary_continuation_authorization_freeze_v1.json",
+      "sha256": "45f5f49803b994a905db02483744cb8ddb8f22a3cf78522b487aabd81730fb1f"
+    },
+    "risk_index": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/risk_data_generated/FALL_EVENT_INDEX_COMBINED_LABELED.csv",
+      "sha256": "b93ee2931fb3d54333bfd38308a130a60ff7240b9e6e5ace0805baca30c23401"
+    }
+  },
+  "scientific_invariants": {
+    "CSC": false,
+    "OnField": false,
+    "all_three_checkpoint_seeds_retained": true,
+    "bootstrap_replicates": 10000,
+    "equal_seed_weight_within_subject": true,
+    "equal_subject_weight": true,
+    "nan_threshold_semantics": "IEEE NaN does not satisfy >= comparison",
+    "nonfinite_imputation": false,
+    "operating_points": [
+      "balanced",
+      "low_false_alarm",
+      "timely_150ms"
+    ],
+    "persistence_values": [
+      "transient_one_inference",
+      "persistent_from_onset_until_trial_end"
+    ],
+    "regimes": [
+      "C0",
+      "CC"
+    ],
+    "scientific_rules_mutable": false,
+    "subject_primary_uncertainty": true,
+    "threshold_comparator": ">="
+  },
+  "status": "FROZEN_POST_BOUNDARY_V3_CC_CONTINUATION_AUTHORIZATION"
+}

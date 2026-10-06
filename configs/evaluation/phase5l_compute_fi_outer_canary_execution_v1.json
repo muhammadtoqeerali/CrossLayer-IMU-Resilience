@@ -1,0 +1,806 @@
+{
+  "authorization": {
+    "all_other_shards_rejected": true,
+    "authorized_clean_cache_count": 1,
+    "authorized_clean_cache_id": "p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b",
+    "authorized_shard_count": 1,
+    "authorized_shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+    "canary_execution_authorized": true,
+    "canary_execution_performed": false,
+    "explicit_execute_subcommand_required": true,
+    "full_fleet_execution_authorized": false,
+    "outcome_may_not_expand_authorization": true
+  },
+  "canary": {
+    "checkpoint": {
+      "fold": 5,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/checkpoints/seed_42/fold_5/best-checkpoint.ckpt",
+      "seed": 42,
+      "sha256": "303b59926d51c9664b9e4d302f3d814c9d5ac5661aa911275faefbcf3799bffe"
+    },
+    "clean_cache": {
+      "canonical_subject": "UNIVR_09",
+      "checkpoint_seed": 42,
+      "clean_cache_id": "p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b",
+      "expected_clean_model_window_evaluations": 2481,
+      "fold": 5,
+      "model_variant": "fp32",
+      "shared_by_persistence_shards": true,
+      "subject": 9,
+      "window_count": 2481
+    },
+    "selection_policy": "FIRST_SHARD_IN_FROZEN_PHASE5E_ORDER",
+    "selection_uses_outer_outcome": false,
+    "shard": {
+      "canonical_subject": "UNIVR_09",
+      "checkpoint_seed": 42,
+      "clean_cache_id": "p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b",
+      "expected_faulted_model_window_evaluations": 24810,
+      "expected_outer_instance_ids": 24810,
+      "fold": 5,
+      "model_variant": "fp32",
+      "persistence": "transient_one_inference",
+      "primary_execution_key": "outer_instance_id",
+      "sampling_coordinates_are_frozen": true,
+      "shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+      "subject": 9,
+      "subject_inventory": {
+        "trial_count": 44,
+        "window_count": 2481
+      },
+      "target_count": 10,
+      "target_exposure": [
+        {
+          "fault_family": "fp32_activation_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_activation",
+          "target_name": "front_end_output_fp32",
+          "target_role": "activation"
+        },
+        {
+          "fault_family": "fp32_activation_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_activation",
+          "target_name": "conv2_dequantized_output_fp32",
+          "target_role": "activation"
+        },
+        {
+          "fault_family": "fp32_activation_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_activation",
+          "target_name": "post_conv2_prelu_fp32",
+          "target_role": "activation"
+        },
+        {
+          "fault_family": "fp32_activation_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_activation",
+          "target_name": "fc1_output_fp32",
+          "target_role": "activation"
+        },
+        {
+          "fault_family": "fp32_activation_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_activation",
+          "target_name": "fc2_prelu_output_fp32",
+          "target_role": "activation"
+        },
+        {
+          "fault_family": "fp32_activation_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_activation",
+          "target_name": "classifier_output_fp32",
+          "target_role": "activation"
+        },
+        {
+          "fault_family": "fp32_buffer_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_buffer",
+          "target_name": "post_conv2_pool_fp32",
+          "target_role": "intermediate_buffer"
+        },
+        {
+          "fault_family": "fp32_buffer_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_buffer",
+          "target_name": "post_conv2_dropout_fp32",
+          "target_role": "intermediate_buffer"
+        },
+        {
+          "fault_family": "fp32_buffer_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_buffer",
+          "target_name": "flatten_buffer_fp32",
+          "target_role": "intermediate_buffer"
+        },
+        {
+          "fault_family": "fp32_buffer_single_bit_flip",
+          "faulted_model_window_evaluations": 2481,
+          "outer_instance_count": 2481,
+          "representation_class": "fp32_buffer",
+          "target_name": "post_fc2_dequantized_buffer_fp32",
+          "target_role": "intermediate_buffer"
+        }
+      ],
+      "target_names": [
+        "front_end_output_fp32",
+        "conv2_dequantized_output_fp32",
+        "post_conv2_prelu_fp32",
+        "fc1_output_fp32",
+        "fc2_prelu_output_fp32",
+        "classifier_output_fp32",
+        "post_conv2_pool_fp32",
+        "post_conv2_dropout_fp32",
+        "flatten_buffer_fp32",
+        "post_fc2_dequantized_buffer_fp32"
+      ]
+    },
+    "shard_index": 0,
+    "target_inventory": [
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_activation_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_activation",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "front_end_output_fp32",
+        "target_numel_per_inference": 832,
+        "target_role": "activation",
+        "target_shape_per_inference": [
+          64,
+          13
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_activation_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_activation",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "conv2_dequantized_output_fp32",
+        "target_numel_per_inference": 640,
+        "target_role": "activation",
+        "target_shape_per_inference": [
+          64,
+          10
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_activation_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_activation",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "post_conv2_prelu_fp32",
+        "target_numel_per_inference": 640,
+        "target_role": "activation",
+        "target_shape_per_inference": [
+          64,
+          10
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_activation_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_activation",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "fc1_output_fp32",
+        "target_numel_per_inference": 128,
+        "target_role": "activation",
+        "target_shape_per_inference": [
+          128
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_activation_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_activation",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "fc2_prelu_output_fp32",
+        "target_numel_per_inference": 128,
+        "target_role": "activation",
+        "target_shape_per_inference": [
+          128
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_activation_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_activation",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "classifier_output_fp32",
+        "target_numel_per_inference": 2,
+        "target_role": "activation",
+        "target_shape_per_inference": [
+          2
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_buffer_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_buffer",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "post_conv2_pool_fp32",
+        "target_numel_per_inference": 320,
+        "target_role": "intermediate_buffer",
+        "target_shape_per_inference": [
+          64,
+          5
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_buffer_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_buffer",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "post_conv2_dropout_fp32",
+        "target_numel_per_inference": 320,
+        "target_role": "intermediate_buffer",
+        "target_shape_per_inference": [
+          64,
+          5
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_buffer_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_buffer",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "flatten_buffer_fp32",
+        "target_numel_per_inference": 320,
+        "target_role": "intermediate_buffer",
+        "target_shape_per_inference": [
+          320
+        ]
+      },
+      {
+        "cross_variant_sampling_pair": true,
+        "eligible_bit_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fault_family": "fp32_buffer_single_bit_flip",
+        "model_variants": [
+          "fp32",
+          "ptq_v7"
+        ],
+        "representation_class": "fp32_buffer",
+        "runtime_dtype": {
+          "fp32": "torch.float32",
+          "ptq_v7": "torch.float32"
+        },
+        "target_name": "post_fc2_dequantized_buffer_fp32",
+        "target_numel_per_inference": 128,
+        "target_role": "intermediate_buffer",
+        "target_shape_per_inference": [
+          128
+        ]
+      }
+    ],
+    "target_schema_binding": "PHASE5D_TARGET_INVENTORY_MODEL_VARIANTS_CONTAINS_FP32"
+  },
+  "evidence_tier": "P0",
+  "execution_state_at_freeze": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "outer_fault_execution_executed": false,
+    "outer_model_forward_executed": false,
+    "outer_model_loaded": false,
+    "outer_payload_read": false,
+    "outer_prediction_read": false,
+    "outer_shard_executed": false
+  },
+  "forward_budget": {
+    "budget_must_match_exactly": true,
+    "clean_forward_source": "SEPARATE_FROZEN_CLEAN_CACHE_ONLY",
+    "clean_model_window_evaluations": 2481,
+    "embedded_clean_reference_forward_per_fault": false,
+    "fault_execution_source": "PHASE5K_FAULT_ONLY_MODULE_ONLY",
+    "faulted_model_window_evaluations": 24810,
+    "total_model_window_evaluations": 27291
+  },
+  "freeze_date": "2026-10-05",
+  "frozen_dependencies": {
+    "fp32_freeze_manifest": {
+      "path": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+      "sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+    },
+    "phase5d_protocol": {
+      "path": "configs/evaluation/phase5d_compute_fi_outer_protocol_v1.json",
+      "sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36"
+    },
+    "phase5e_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5f_atomic_resume_core": {
+      "path": "experiments/phase_05/compute_fi_outer_executor_v1.py",
+      "sha256": "77ee323f71a5dbf4c54cc454a5911849aa45c5d4bdcc6d63bb908d8cece363d0"
+    },
+    "phase5i_gate": {
+      "path": "configs/evaluation/phase5i_compute_fi_outer_execution_gate_v1.json",
+      "sha256": "ef7ab5c5dbf5959c37a7649a88ddfc7ca5a1839a7d98d0bd46b98bd6b7958fb3"
+    },
+    "phase5i_gate_manifest": {
+      "path": "manifests/phase_5i_compute_fi_pre_outer_gate_freeze_v1.json",
+      "sha256": "9536dc626918e9f49dcd4b8af4f0e805747f80384d6f74a280d4c0d1e0d59c0a"
+    },
+    "phase5j_canary_binding": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5j_compute_fi_outer_canary_v1/canary_binding_audit.json",
+      "sha256": "7f039f2c93b55c1f307a66b63bf7b3442103fa5bc478c0d48b97b44c990e31a4"
+    },
+    "phase5k_fault_only_module": {
+      "path": "experiments/phase_05/compute_fi_fault_only_execution_v1.py",
+      "sha256": "f8bb4095bbfedc69c24fa4cc6e79ccf4914e14fa502ce080a06de01e740112cb"
+    },
+    "phase5k_qualification_config": {
+      "path": "configs/evaluation/phase5k_compute_fi_fault_only_execution_qualification_v1.json",
+      "sha256": "16f4aff51fdf0d8be3d17639fd0eff7cf011345ab644ea1a8563c74fb12126c0"
+    },
+    "phase5k_qualification_manifest": {
+      "path": "manifests/phase_5k_compute_fi_fault_only_execution_qualification_v1.json",
+      "sha256": "120701fa970fe4b809353668d5d5eb14c8ae065a5e543992c3d5c2439c8815a7"
+    },
+    "phase5k_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5k_compute_fi_fault_only_execution_qualification_v1/qualification.json",
+      "sha256": "dda8d57589b4ffa4e0864f90e03a2a5511a1f4c2b9132096dcee1fbec38997d2"
+    }
+  },
+  "mandatory_execution_guards": {
+    "atomic_output_commit": true,
+    "authorized_clean_cache_exact_match": true,
+    "authorized_shard_exact_match": true,
+    "bit_position_rederivation": true,
+    "checkpoint_sha_match": true,
+    "clean_forward_count_exact": true,
+    "element_index_rederivation": true,
+    "fault_id_rederivation": true,
+    "faulted_forward_count_exact": true,
+    "no_extra_clean_forward_inside_fault_loop": true,
+    "outer_instance_id_uniqueness": true,
+    "phase5e_plan_sha_match": true,
+    "phase5f_atomic_resume_core_sha_match": true,
+    "phase5i_gate_sha_match": true,
+    "phase5j_canary_binding_sha_match": true,
+    "phase5k_fault_only_module_sha_match": true,
+    "phase5l_config_sha_match": true,
+    "sampling_instance_id_rederivation": true,
+    "target_inventory_exact_match": true
+  },
+  "phase": "5L",
+  "post_canary_governance": {
+    "canary_outcome_may_be_used_to_select_science": false,
+    "canary_outcome_may_change_bits": false,
+    "canary_outcome_may_change_onsets": false,
+    "canary_outcome_may_change_persistence": false,
+    "canary_outcome_may_change_sampling": false,
+    "canary_outcome_may_change_targets": false,
+    "canary_outcome_may_change_thresholds": false,
+    "successful_canary_does_not_itself_authorize_full_fleet": true,
+    "technical_execution_failure_requires_return_to_non_outer_fixture_validation": true
+  },
+  "prospective_result_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5_outer_compute_fi_prospective_v1",
+  "required_result_layout": {
+    "atomic_success_marker_required": true,
+    "clean_cache_artifact_id": "p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b",
+    "fault_shard_artifact_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+    "partial_output_reuse_prohibited": true
+  },
+  "schema_version": "phase5l_compute_fi_outer_canary_execution_v1",
+  "selection_prohibitions": {
+    "canary_outcome_based_expansion": false,
+    "fault_resampling": false,
+    "fold_selection": false,
+    "outer_metric_selection": false,
+    "seed_selection": false,
+    "shard_selection": false,
+    "target_selection": false,
+    "threshold_retuning": false
+  },
+  "status": "FROZEN_HASH_BOUND_CANARY_ONLY_OUTER_EXECUTION_CONFIG"
+}

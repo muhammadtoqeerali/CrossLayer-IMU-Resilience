@@ -1,0 +1,88 @@
+{
+  "analyzer": {
+    "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+    "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AA_COMPUTE_FI_CC_ANALYZER_QUALIFICATION_V1.md",
+    "sha256": "789d8ae1b4ca61e0e70cf3fb9520d3eae3dbc000059d82c48fdd95c9e31d32f0"
+  },
+  "focused_repair": {
+    "analyzer_changed": false,
+    "performed": true,
+    "reason": "synthetic exact IEEE-754 equality assertion for 0.9 - 0.7",
+    "repair": "math.isclose with rel_tol=0 and abs_tol=1e-12",
+    "scientific_semantics_changed": false
+  },
+  "generated_date": "2026-10-06",
+  "historical_source_equivalence": {
+    "event_metrics": true,
+    "first_valid_trigger": true,
+    "label_normalization": true,
+    "trigger_episodes": true
+  },
+  "implementation_boundary": {
+    "outcome_analysis_executed": false,
+    "prospective_IO_runner_implemented": false,
+    "prospective_IO_runner_qualified": false,
+    "pure_analysis_core_qualified": true
+  },
+  "next_action": "Implement and statically qualify the prospective CC I/O runner bound to the exact Phase-5Z protocol and this qualified analyzer before opening accepted prediction JSONL or outer label arrays.",
+  "phase": "5AA",
+  "phase5z_protocol": {
+    "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+    "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+  },
+  "qualification_boundary": {
+    "CSC_result_generated": false,
+    "aggregate_CC_result_generated": false,
+    "clean_outputs_jsonl_opened": false,
+    "fault_execution_executed": false,
+    "fault_outputs_jsonl_opened": false,
+    "model_forward_executed": false,
+    "model_loaded": false,
+    "onfield_used": false,
+    "outer_CC_metric_computed": false,
+    "outer_label_array_loaded": false,
+    "prediction_json_deserialized": false,
+    "prediction_outcomes_interpreted": false,
+    "prospective_outer_result_root_accessed": false,
+    "threshold_applied_to_outer": false
+  },
+  "qualification_checks": {
+    "duplicate_execution_index_abort": true,
+    "event_metric_equivalence": true,
+    "first_valid_trigger_equivalence": true,
+    "label_normalization_equivalence": true,
+    "mixed_provenance_direct_softmax": true,
+    "nonfinite_aggregation_requires_explicit_future_policy": true,
+    "nonfinite_counting": true,
+    "paired_clean_counterfactual": true,
+    "paired_degradation_direction": true,
+    "persistent_reconstruction": true,
+    "persistent_suffix_abort": true,
+    "seed_subject_equal_weighting": true,
+    "subject_bootstrap_determinism": true,
+    "threshold_matrix_45_exact": true,
+    "transient_reconstruction": true,
+    "trigger_episode_equivalence": true
+  },
+  "qualification_config": {
+    "path": "configs/evaluation/phase5aa_compute_fi_cc_analyzer_qualification_v1.json",
+    "sha256": "d0a90a9d81dc5b61178d3c3cbc553950a54936ecd7a59bccc1055641544ade57"
+  },
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5aa_compute_fi_cc_analyzer_qualification_v1/qualification.json",
+    "sha256": "2e7edad2d3aede47ce8edce68bf58fa6b6deeac15b108b69e8ff8774b9c03c45"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_cc_outcome_analyzer_v1.py",
+    "sha256": "a0b312e15fa6e7306ce0334f8c06e72c55ef6bd266e4fc6f3cb9e30a3f29ac93"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5aa_compute_fi_cc_outcome_analyzer.py",
+    "sha256": "0b6c356e9a5451a41dba2afdbc19fd0a2195a71575dbcef61b9f0cc92db4a8fc"
+  },
+  "schema_version": "phase5aa_compute_fi_cc_analyzer_qualification_manifest_v1",
+  "status": "QUALIFIED_CC_ANALYZER_CORE_PRE_OUTCOME"
+}

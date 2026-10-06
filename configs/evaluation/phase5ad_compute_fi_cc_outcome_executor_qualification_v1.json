@@ -1,0 +1,86 @@
+{
+  "schema_version": "phase5ad_compute_fi_cc_outcome_executor_qualification_v1",
+  "phase": "5AD",
+  "generated_date": "2026-10-06",
+  "status": "FROZEN_PRE_OUTCOME_FINAL_CC_EXECUTOR_QUALIFICATION_PROTOCOL",
+  "evidence_tier": "P0",
+  "frozen_dependencies": {
+    "phase5z_protocol": {
+      "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+      "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+    },
+    "phase5aa_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+      "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66"
+    },
+    "phase5aa_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5aa_compute_fi_cc_analyzer_qualification_v1/qualification.json",
+      "sha256": "2e7edad2d3aede47ce8edce68bf58fa6b6deeac15b108b69e8ff8774b9c03c45"
+    },
+    "phase5aa_manifest": {
+      "path": "manifests/phase_5aa_compute_fi_cc_analyzer_qualification_v1.json",
+      "sha256": "05c6c262751b766cddf8d2483ab270cca34cb446f2218d52732861ddf2f5714d"
+    },
+    "phase5ab_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v1.py",
+      "sha256": "0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f"
+    },
+    "phase5ab_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ab_compute_fi_cc_io_runner_qualification_v1/qualification.json",
+      "sha256": "ac8371f2655a6954f4463712ba2a4163f0274b92b213dad2cd5dfd2431f3cf9f"
+    },
+    "phase5ab_manifest": {
+      "path": "manifests/phase_5ab_compute_fi_cc_io_runner_qualification_v1.json",
+      "sha256": "5e0dbc7b66a6e85b04cabcecb8a08bc215f8e00506116356ea6b755ce1979116"
+    },
+    "phase5ac_gate": {
+      "path": "configs/evaluation/phase5ac_compute_fi_cc_pre_outcome_execution_gate_v1.json",
+      "sha256": "2850a03b1f07893ee77c7a52d35bd77cb14f50ca4168289f608123485b633f17"
+    },
+    "phase5ac_manifest": {
+      "path": "manifests/phase_5ac_compute_fi_cc_pre_outcome_execution_gate_freeze_v1.json",
+      "sha256": "4282d818f2e7b6ff38435ddcce212424dcee149fec1ebeba58f32109a96e61c9"
+    },
+    "phase5e_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    }
+  },
+  "qualification_scope": {
+    "synthetic_estates_only": true,
+    "exact_lineage_binding": true,
+    "production_path_binding_without_access": true,
+    "phase5r_integrity_ingestion": true,
+    "phase5m_style_frozen_hash_ingestion": true,
+    "clean_trial_reconstruction": true,
+    "label_join": true,
+    "risk_timing_join": true,
+    "transient_end_to_end_scenarios": true,
+    "persistent_end_to_end_scenarios": true,
+    "three_operating_points": true,
+    "paired_clean_counterfactual_metrics": true,
+    "faulted_metrics": true,
+    "paired_degradation": true,
+    "nonfinite_accounting": true,
+    "equal_seed_subject_aggregation": true,
+    "subject_cluster_bootstrap": true,
+    "clean_baseline_deduplication_across_persistence": true,
+    "missing_timing_no_imputation_behavior": true
+  },
+  "prohibited_during_qualification": {
+    "accepted_outer_root_access": true,
+    "accepted_outer_root_stat": true,
+    "accepted_outer_root_list": true,
+    "accepted_prediction_jsonl_open": true,
+    "accepted_outer_label_load": true,
+    "accepted_prediction_deserialization": true,
+    "accepted_threshold_application": true,
+    "accepted_CC_metric_computation": true,
+    "aggregate_accepted_CC_result_generation": true,
+    "CSC_generation": true,
+    "model_load": true,
+    "model_forward": true,
+    "fault_execution": true,
+    "OnField_access": true
+  }
+}

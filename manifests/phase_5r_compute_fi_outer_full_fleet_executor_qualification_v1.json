@@ -1,0 +1,99 @@
+{
+  "documentation": {
+    "path": "docs/PHASE_5R_COMPUTE_FI_OUTER_FULL_FLEET_EXECUTOR_QUALIFICATION_V1.md",
+    "sha256": "e79796259de2292133c69ed11acc424afc3d6a96c3b68b735623352c1328890b"
+  },
+  "evidence_tier": "P0",
+  "execution_state": {
+    "CSC_result_generated": false,
+    "additional_outer_fault_execution_executed": false,
+    "additional_outer_model_forward_executed": false,
+    "additional_outer_payload_read": false,
+    "aggregate_CC_result_generated": false,
+    "executed_outer_clean_caches": 1,
+    "executed_outer_fault_shards": 1,
+    "full_fleet_execution_started": false,
+    "remaining_outer_clean_caches": 365,
+    "remaining_outer_fault_shards": 731
+  },
+  "fleet_executor": {
+    "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+    "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+  },
+  "next_action": "Freeze final full-fleet execution activation bound to the exact Phase-5P gate SHA, Phase-5E plan SHA, Phase-5R executor SHA, Phase-5R qualification-result SHA, and this qualification-manifest SHA without executing an additional outer shard.",
+  "phase": "5R",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "phase5k_fault_only_module": {
+    "path": "experiments/phase_05/compute_fi_fault_only_execution_v1.py",
+    "sha256": "f8bb4095bbfedc69c24fa4cc6e79ccf4914e14fa502ce080a06de01e740112cb"
+  },
+  "phase5p_gate": {
+    "path": "configs/evaluation/phase5p_compute_fi_outer_full_fleet_completion_gate_v1.json",
+    "sha256": "1f8d6dbd6491cbacf21c0be25053201e0f38a9ad8e987261468611d220af3719"
+  },
+  "qualification": {
+    "accepted_canary_reuse_qualified": true,
+    "four_execution_classes_supported": true,
+    "fp32_targets": 10,
+    "paired_runner_delegation": false,
+    "persistent_mask_qualified": true,
+    "persistent_onset_binding_rederivation_qualified": true,
+    "phase5f_atomic_resume_bound": true,
+    "phase5k_fault_only_bound": true,
+    "ptq_eager_torchscript_clean_equal": true,
+    "ptq_qint8_weight_reset_after_persistent": true,
+    "ptq_qint8_weight_reset_after_transient": true,
+    "ptq_targets": 14,
+    "training_calibration_cases": 6,
+    "training_calibration_fault_only_executions": 30,
+    "transient_mask_qualified": true
+  },
+  "qualification_config": {
+    "path": "configs/evaluation/phase5r_compute_fi_outer_fleet_executor_qualification_v1.json",
+    "sha256": "425f090fbf9ff1d039b76a9879ad78d20d1443c5dcd8f8f6e61ea13053e91e7a"
+  },
+  "qualification_date": "2026-10-05",
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5r_compute_fi_outer_fleet_executor_qualification_v1/qualification.json",
+    "sha256": "d02d858e4c4c292e76fc60369d5483bf2fc2f87e95138aa59848851f045120f8"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_compute_fi_outer_fleet_executor_v1.py",
+    "sha256": "423686e7a79d86b14e1c97b08b9ae8b61e721ada11eee42e7b59d7e980e9d4d9"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5r_compute_fi_outer_full_fleet_executor.py",
+    "sha256": "9e44cbd586d86683bcfb7aee0fd6f281e3caa9796059f0d482f1e4ca6d3d74bf"
+  },
+  "schema_repair": {
+    "actual_phase5k_key": "onfield_used",
+    "executor_logic_changed": false,
+    "failed_phase5k_key": "onfield_payload_used",
+    "fault_protocol_changed": false,
+    "identity_changed": false,
+    "outer_execution_occurred_before_repair": false,
+    "phase5r_result_field_onfield_payload_used_preserved": true,
+    "qualification_case_matrix_changed": false,
+    "qualification_partition_changed": false,
+    "qualifier_assertion_only": true,
+    "sampling_changed": false
+  },
+  "schema_version": "phase5r_compute_fi_outer_full_fleet_executor_qualification_manifest_v1",
+  "scientific_boundary": {
+    "additional_outer_test_payload_used": false,
+    "metric_used_for_selection": false,
+    "onfield_payload_used": false,
+    "phase5d_identity_changed": false,
+    "phase5d_sampling_changed": false,
+    "phase5e_plan_changed": false,
+    "phase5p_gate_changed": false,
+    "prediction_outcomes_used_for_selection": false,
+    "threshold_changed": false,
+    "training_calibration_payload_used": true,
+    "validation_payload_used": false
+  },
+  "status": "QUALIFIED_FULL_FLEET_EXECUTOR_PRE_OUTER"
+}

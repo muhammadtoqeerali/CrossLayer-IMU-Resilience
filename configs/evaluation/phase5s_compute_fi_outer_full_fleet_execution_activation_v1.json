@@ -1,0 +1,155 @@
+{
+  "activation": {
+    "accepted_canary_clean_cache_reuse_only": true,
+    "accepted_canary_fault_shard_reuse_only": true,
+    "activation_does_not_execute": true,
+    "activation_scope": "EXACT_REMAINING_PHASE5E_COMPLEMENT_ONLY",
+    "authorized_new_clean_caches": 365,
+    "authorized_new_fault_shards": 731,
+    "executor_path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+    "executor_sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188",
+    "explicit_execution_command_required": true,
+    "full_fleet_execution_activated": true,
+    "full_fleet_execution_started": false
+  },
+  "already_satisfied_estate": {
+    "clean_cache_id": "p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b",
+    "clean_caches": 1,
+    "clean_model_window_evaluations": 2481,
+    "fault_shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+    "fault_shards": 1,
+    "faulted_model_window_evaluations": 24810,
+    "outer_instance_ids": 24810,
+    "reuse_required": true,
+    "total_model_window_evaluations": 27291
+  },
+  "complete_estate_after_successful_execution": {
+    "clean_caches": 366,
+    "clean_model_window_evaluations": 1642980,
+    "fault_shards": 732,
+    "faulted_model_window_evaluations": 29798820,
+    "outer_instance_ids": 20170008,
+    "total_model_window_evaluations": 31441800
+  },
+  "evidence_tier": "P0",
+  "execution_state_at_activation_freeze": {
+    "CSC_result_generated": false,
+    "additional_outer_fault_execution_in_phase5s": false,
+    "additional_outer_model_forward_in_phase5s": false,
+    "additional_outer_payload_read_in_phase5s": false,
+    "aggregate_CC_result_generated": false,
+    "executed_outer_clean_caches": 1,
+    "executed_outer_fault_shards": 1,
+    "full_fleet_execution_started": false,
+    "remaining_outer_clean_caches": 365,
+    "remaining_outer_fault_shards": 731
+  },
+  "freeze_date": "2026-10-05",
+  "frozen_dependencies": {
+    "phase5e_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5p_completion_gate": {
+      "path": "configs/evaluation/phase5p_compute_fi_outer_full_fleet_completion_gate_v1.json",
+      "sha256": "1f8d6dbd6491cbacf21c0be25053201e0f38a9ad8e987261468611d220af3719"
+    },
+    "phase5p_gate_manifest": {
+      "path": "manifests/phase_5p_compute_fi_outer_full_fleet_completion_gate_freeze_v1.json",
+      "sha256": "874bfa1fad5639c2d879439cdbd58cee75dbc32e2a40d7fc2f840f4c33a50c19"
+    },
+    "phase5r_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+    },
+    "phase5r_qualification_config": {
+      "path": "configs/evaluation/phase5r_compute_fi_outer_fleet_executor_qualification_v1.json",
+      "sha256": "425f090fbf9ff1d039b76a9879ad78d20d1443c5dcd8f8f6e61ea13053e91e7a"
+    },
+    "phase5r_qualification_manifest": {
+      "path": "manifests/phase_5r_compute_fi_outer_full_fleet_executor_qualification_v1.json",
+      "sha256": "76a6b922f13508a50cc616376596c083f8b0075c24faaa00284b5c8d17e4bf78"
+    },
+    "phase5r_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5r_compute_fi_outer_fleet_executor_qualification_v1/qualification.json",
+      "sha256": "d02d858e4c4c292e76fc60369d5483bf2fc2f87e95138aa59848851f045120f8"
+    },
+    "phase5r_qualifier": {
+      "path": "experiments/phase_05/qualify_compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "423686e7a79d86b14e1c97b08b9ae8b61e721ada11eee42e7b59d7e980e9d4d9"
+    }
+  },
+  "mandatory_execution_guards": {
+    "accept_no_shard_outside_phase5e": true,
+    "exact_forward_cardinality_required": true,
+    "no_fault_resampling": true,
+    "no_labels": true,
+    "no_metric_based_adaptation_during_execution": true,
+    "no_onfield": true,
+    "no_plan_mutation": true,
+    "no_threshold_selection_during_execution": true,
+    "persistent_cross_trial_reset_required": true,
+    "phase5f_atomic_resume_required": true,
+    "phase5k_fault_only_required": true,
+    "reuse_accepted_canary": true,
+    "use_exact_phase5e_order": true,
+    "use_exact_phase5r_executor_sha": true,
+    "validate_accepted_canary_hashes": true,
+    "validate_activation_hash_before_launch": true,
+    "validate_all_frozen_dependency_hashes_before_launch": true
+  },
+  "phase": "5S",
+  "post_execution_boundary": {
+    "CSC_reserved_for_phase6": true,
+    "aggregate_analysis_only_after_complete_structural_acceptance": true,
+    "outer_results_may_not_reconfigure_estate": true,
+    "phase5_regimes": [
+      "C0",
+      "CC"
+    ],
+    "seed_equal_weighting_within_subject_required": true,
+    "single_best_member_reporting_prohibited": true,
+    "subject_level_uncertainty_required": true
+  },
+  "remaining_execution_estate": {
+    "clean_caches": 365,
+    "clean_model_window_evaluations": 1640499,
+    "fault_shards": 731,
+    "faulted_model_window_evaluations": 29774010,
+    "first_remaining_shard_id": "p5e-o1-f5-s009-fp32-seed42-persistent-3e49700130607447",
+    "last_remaining_shard_id": "p5e-o1-f4-s138-ptq_v7-seed2025-persistent-db9c89a6f412d109",
+    "outer_instance_ids": 20145198,
+    "remaining_clean_cache_ids_sha256": "d71d4622f25ae2754c378d974afa8a5ecd1d28dc0ef86adfe2c1a31be57c5ff6",
+    "remaining_shard_ids_sha256": "556fa5d19cecabee937ea52a8e8e18d3270485d8f252615a3246a02774025915",
+    "total_model_window_evaluations": 31414509
+  },
+  "schema_version": "phase5s_compute_fi_outer_full_fleet_execution_activation_v1",
+  "scientific_boundary": {
+    "activation_uses_labels": false,
+    "activation_uses_metrics": false,
+    "activation_uses_onfield": false,
+    "activation_uses_prediction_outcomes": false,
+    "activation_uses_thresholds": false,
+    "phase5d_identity_changed": false,
+    "phase5d_sampling_changed": false,
+    "phase5e_plan_changed": false,
+    "phase5p_gate_changed": false,
+    "phase5r_executor_changed": false
+  },
+  "selection_prohibitions": {
+    "best_member_selection": false,
+    "bit_selection_from_outcome": false,
+    "element_selection_from_outcome": false,
+    "fault_resampling": false,
+    "fold_selection": false,
+    "onset_selection_from_outcome": false,
+    "operating_point_retuning": false,
+    "outcome_based_execution_order": false,
+    "persistence_selection_from_outcome": false,
+    "seed_selection": false,
+    "shard_selection": false,
+    "target_selection": false,
+    "threshold_retuning": false
+  },
+  "status": "FROZEN_FINAL_FULL_FLEET_EXECUTION_ACTIVATION"
+}

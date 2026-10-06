@@ -1,0 +1,103 @@
+{
+  "accepted_estate": {
+    "CC_primary_strata": 720,
+    "R5_V3_shards": 731,
+    "clean_aggregate_rows": 30,
+    "clean_caches": 366,
+    "fault_records": 29798820,
+    "fault_shards": 732,
+    "grandfathered_R3_V2_transient_shards": 1,
+    "outer_instance_ids": 20170008,
+    "stored_windows": 273830,
+    "subjects": 61,
+    "trials": 6309,
+    "unique_clean_records": 1642980
+  },
+  "commit_push_authorization": {
+    "commit_created_by_phase5aj": false,
+    "commit_may_be_created_after_successful_phase5aj_regression": true,
+    "major_phase5_scope_complete": true,
+    "push_may_follow_that_commit": true,
+    "push_performed_by_phase5aj": false
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AJ_PHASE5_COMPUTE_FI_FINAL_SYNTHESIS_V1.md",
+    "sha256": "afcecac874798c425c956a0b0280873ad3638f67e897dc0931368d41935ae9b0"
+  },
+  "final_synthesis_contract": {
+    "path": "configs/evaluation/phase5aj_phase5_compute_fi_final_synthesis_v1.json",
+    "sha256": "57e6011b2e6a9d43876be96313b6ac222f537b497afe9804316e27ffca9cb1cd"
+  },
+  "final_synthesis_markdown": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5aj_phase5_compute_fi_final_synthesis_v1/PHASE5_FINAL_SYNTHESIS.md",
+    "sha256": "862e5c1535acef2a4949596802c8d03fac5d70090463f4e21717ae1cee2f28f0"
+  },
+  "final_synthesis_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5aj_phase5_compute_fi_final_synthesis_v1/final_synthesis.json",
+    "sha256": "80adeec431226833529410a0fe1b7550da53aca068c9ca7f0d25fedc4c066760"
+  },
+  "frozen_sources": {
+    "phase5af_final_success": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_compute_fi_cc_outcome_execution_v1/_SUCCESS.json",
+      "sha256": "0746c4c6d52a215dd85b7d943957aaf17dd0ad92eb739c892c80f4b2bb1742ac"
+    },
+    "phase5ag_technical_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ag_compute_fi_cc_outcome_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "9bd147a666db08fa369a1f3f7a144a71415fe0fb71b6f513603a326343c63b19"
+    },
+    "phase5ah_scientific_interpretation": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ah_compute_fi_cc_scientific_interpretation_v1/interpretation.json",
+      "sha256": "3841ceb4a1af3ca2f1c32a7d1126ab3f94e6debbb46222f2635e694cec6012fb"
+    },
+    "phase5ai_manifest": {
+      "path": "manifests/phase_5ai_compute_fi_cc_scientific_report_v1.json",
+      "sha256": "4cf491e940769091773ebe9587abafebb3b4969be50e61f790e0e2d3cc29bc93"
+    },
+    "phase5ai_scientific_report": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ai_compute_fi_cc_scientific_report_v1/scientific_report.json",
+      "sha256": "8a72edb086d255b45c9ad0fd6f9b0d207854611bfa052e6959e11f50a2f6e63f"
+    }
+  },
+  "generated_date": "2026-10-06",
+  "next_action": "After this Phase-5 completion freeze passes regression, the uncommitted Phase-5 estate may be committed and pushed as one major Phase-5 completion commit. Any later combined CSC work requires its own prospective protocol and must not reuse Phase-5 outer results for selection.",
+  "phase": "5AJ",
+  "phase5_completion_checks": {
+    "CSC_generated": false,
+    "OnField_used": false,
+    "all_732_fault_shards_accepted": true,
+    "model_forward_during_outcome_analysis": false,
+    "new_fault_execution_during_outcome_analysis": false,
+    "outer_result_feedback_occurred": false,
+    "prospective_compute_fault_estate_complete": true,
+    "scientific_interpretation_complete": true,
+    "scientific_protocol_changed_after_boundary": false,
+    "scientific_report_complete": true,
+    "technical_acceptance_complete": true,
+    "unavailable_timing_preserved": true
+  },
+  "phase5_governance_status": "FROZEN_PHASE5_COMPUTE_FAULT_STUDY_COMPLETE",
+  "regression_test": {
+    "path": "tests/test_phase5aj_phase5_compute_fi_final_synthesis.py",
+    "sha256": "051762aba4a16c0b5f6054ceb8057b1ea7f5f546ff60fa0d069a74c2027de117"
+  },
+  "schema_version": "phase5aj_phase5_compute_fi_final_freeze_v1",
+  "scientific_findings": {
+    "CC_available_strata": 576,
+    "CC_timing_unavailable_without_imputation": 144,
+    "PTQ_less_adverse_descriptive": 21,
+    "PTQ_more_adverse_descriptive": 3,
+    "PTQ_only_targets": 4,
+    "clean_available_rows": 24,
+    "clean_timing_unavailable_without_imputation": 6,
+    "common_FP32_PTQ_targets": 10,
+    "common_target_available_comparisons": 24,
+    "paired_effect_semantics": "positive degradation means worse under compute fault",
+    "persistent_less_adverse_descriptive": 0,
+    "persistent_more_adverse_descriptive": 24,
+    "persistent_vs_transient_available_comparisons": 24,
+    "subject_primary_median_lead_robustness_conclusion": false,
+    "unavailable_subject_primary_metric": "median_trigger_lead_ms",
+    "universal_variant_superiority_claim": false
+  },
+  "status": "PHASE5_COMPLETE_FROZEN"
+}

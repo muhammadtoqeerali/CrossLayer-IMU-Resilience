@@ -1,0 +1,63 @@
+{
+  "acceptance_protocol": {
+    "path": "configs/evaluation/phase5ag_compute_fi_cc_outcome_technical_acceptance_v1.json",
+    "sha256": "c7d52e18d3d0de62de09b2a9d975d89a4b7f6167d1e975f803216e490c55d133"
+  },
+  "accepted_execution": {
+    "CC_stratum_aggregate_rows": 720,
+    "clean_aggregate_rows": 30,
+    "clean_caches": 366,
+    "clean_record_estate": 1642980,
+    "clean_record_reads_across_shards": 3285960,
+    "fault_records": 29798820,
+    "fault_shards": 732,
+    "grandfathered_r3_v2_transient_shards": 1,
+    "outer_instance_ids": 20170008,
+    "r5_v3_shards": 731,
+    "stored_windows": 273830,
+    "subjects": 61,
+    "trials": 6309
+  },
+  "accepted_hashes": {
+    "aggregate_cc_outcome": "608a9f7c67b07a0c7b58df6ba6967943857d35e6c0856def8179fb6847317006",
+    "execution_success": "0746c4c6d52a215dd85b7d943957aaf17dd0ad92eb739c892c80f4b2bb1742ac",
+    "execution_summary": "3415af6156d1dcdf6326948cdfe61f71cf8416be73396ae65f0700a661202089",
+    "grandfathered_outcome": "0af87e1594c3ab1d70c9e839811daf7c5ebe096a7e2df04b5759c031e1432f4d",
+    "grandfathered_success": "e2ef23df95c901a89f753ee34a0dd621a009dc5af62af555b745a72bac1d24cf",
+    "ordered_shard_outcome_set": "969b4c5a5b1795cce83119815afc866852c710ab784f25701cc6bfbbd93c07a4"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AG_COMPUTE_FI_CC_OUTCOME_TECHNICAL_ACCEPTANCE_V1.md",
+    "sha256": "6283febff602dc6fafa90f62015410f74d97285aa28350a99ed0bf5f15539315"
+  },
+  "generated_date": "2026-10-06",
+  "next_action": "After freezing this technical acceptance, begin scientific interpretation of the already-frozen aggregate only; do not retune, resample, select checkpoints, or alter the protocol.",
+  "phase": "5AG",
+  "regression_test": {
+    "path": "tests/test_phase5ag_compute_fi_cc_outcome_technical_acceptance.py",
+    "sha256": "adb5c52fd1928a3c1ee6a9ac1a9d405368fbb4ae25c02b8ca567a949cd8e89ff"
+  },
+  "schema_version": "phase5ag_compute_fi_cc_outcome_technical_acceptance_manifest_v1",
+  "status": "TECHNICALLY_ACCEPTED_COMPLETE_PHASE5AF_CC_OUTCOME_EXECUTION",
+  "technical_acceptance_boundary": {
+    "CSC_generated": false,
+    "OnField_used": false,
+    "aggregate_payload_deserialized_for_structure": true,
+    "best_family_selection": false,
+    "best_target_selection": false,
+    "best_variant_selection": false,
+    "checkpoint_selection": false,
+    "fault_resampling": false,
+    "model_forward_executed": false,
+    "new_fault_execution": false,
+    "protocol_change": false,
+    "scientific_metric_interpretation": false,
+    "scientific_metric_values_printed": false,
+    "scientific_ranking": false,
+    "threshold_retuning": false
+  },
+  "technical_acceptance_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ag_compute_fi_cc_outcome_technical_acceptance_v1/technical_acceptance.json",
+    "sha256": "9bd147a666db08fa369a1f3f7a144a71415fe0fb71b6f513603a326343c63b19"
+  }
+}

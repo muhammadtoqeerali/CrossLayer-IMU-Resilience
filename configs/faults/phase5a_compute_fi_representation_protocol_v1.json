@@ -1,0 +1,388 @@
+{
+  "schema_version": "phase5a_compute_fi_representation_protocol_v1",
+  "phase": "5A",
+  "status": "FROZEN_PRE_OPERATOR_QUALIFICATION",
+  "frozen_date": "2026-10-05",
+  "provenance_tier": "P0",
+  "scientific_role": "software_compute_fault_representation_and_sampling_contract",
+  "parent_phase4_commit": "54577387fa199081407e91ce9766b0f2b6b05417",
+  "roadmap_alignment": {
+    "phase5_name": "Compute Fault Engine",
+    "initial_targets": [
+      "INT8 weights",
+      "activations",
+      "intermediate buffers"
+    ],
+    "required_dimensions": [
+      "layer",
+      "tensor",
+      "element",
+      "bit",
+      "time",
+      "transient/persistent",
+      "multiplicity"
+    ],
+    "bit_exact_tests_required": true,
+    "deterministic_replay_required": true
+  },
+  "model_estate": {
+    "checkpoint_policy": "retain all 15 seed/fold members; no best/worst member selection for compute-FI evaluation",
+    "seeds": [
+      42,
+      123,
+      2025
+    ],
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fp32_variant": {
+      "role": "frozen prospective 300ms FP32 same-backbone reference",
+      "checkpoint_manifest": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json"
+    },
+    "ptq_variant": {
+      "role": "qualified mixed-precision static PTQ v7 comparator",
+      "qualification_manifest": "manifests/phase_4g_static_ptq_v7_all15_training_calibration_qualification_v1.json",
+      "fully_int8": false
+    }
+  },
+  "representation_contract": {
+    "int8_persistent_weight": {
+      "model_variant": "ptq_v7",
+      "eligible_target_names": [
+        "conv_2.0.weight"
+      ],
+      "tensor_shape": [
+        64,
+        64,
+        4
+      ],
+      "element_count": 16384,
+      "storage_dtype": "signed_int8_payload",
+      "torch_dtype": "torch.qint8",
+      "qscheme": "torch.per_channel_affine",
+      "quantization_axis": 0,
+      "quantization_zero_points_expected": [
+        0
+      ],
+      "eligible_bit_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mutation_semantics": "XOR exactly one bit in the signed-int8 two-complement payload, then reconstruct the quantized tensor with unchanged frozen quantization metadata",
+      "quantization_metadata_faults_in_v1": false
+    },
+    "fp32_persistent_parameters": {
+      "initial_primary_weight_family_enabled": false,
+      "reason": "Phase-5 roadmap initial persistent-weight target is INT8 weights; FP32 parameter corruption remains a separately labeled future extension and must never be pooled with INT8 weight corruption",
+      "representation": "IEEE754_binary32",
+      "eligible_bit_positions_if_later_enabled": {
+        "mantissa": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "exponent": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "sign": [
+          31
+        ]
+      }
+    },
+    "quantized_activation": {
+      "model_variant": "ptq_v7",
+      "eligible_structural_boundaries": [
+        "conv2_quantized_input",
+        "conv2_quantized_output"
+      ],
+      "eligible_bit_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mutation_semantics": "XOR one selected bit in one selected integer payload element while preserving the tensor quantization parameters"
+    },
+    "quantized_buffer": {
+      "model_variant": "ptq_v7",
+      "eligible_structural_boundaries": [
+        "post_fc2_quantized_buffer"
+      ],
+      "eligible_bit_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mutation_semantics": "XOR one selected bit in one selected quantized intermediate-buffer element while preserving quantization parameters"
+    },
+    "fp32_activation": {
+      "model_variants": [
+        "fp32",
+        "ptq_v7_mixed_precision_regions"
+      ],
+      "eligible_structural_boundaries": [
+        "front_end_output_fp32",
+        "conv2_dequantized_output_fp32",
+        "post_conv2_prelu_fp32",
+        "fc1_output_fp32",
+        "fc2_prelu_output_fp32",
+        "classifier_output_fp32"
+      ],
+      "eligible_bit_positions": {
+        "mantissa": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "exponent": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "sign": [
+          31
+        ]
+      },
+      "mutation_semantics": "reinterpret exactly one float32 payload element as uint32, XOR exactly one selected bit, reinterpret as float32; do not clip, sanitize, repair, replace, or suppress NaN/Inf"
+    },
+    "fp32_buffer": {
+      "model_variants": [
+        "fp32",
+        "ptq_v7_mixed_precision_regions"
+      ],
+      "eligible_structural_boundaries": [
+        "post_conv2_pool_fp32",
+        "post_conv2_dropout_fp32",
+        "flatten_buffer_fp32",
+        "post_fc2_dequantized_buffer_fp32"
+      ],
+      "eligible_bit_positions": {
+        "mantissa": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "exponent": [
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "sign": [
+          31
+        ]
+      },
+      "mutation_semantics": "reinterpret exactly one float32 intermediate-buffer element as uint32, XOR exactly one selected bit, reinterpret as float32; do not clip, sanitize, repair, replace, or suppress NaN/Inf"
+    }
+  },
+  "fault_families": {
+    "int8_weight_single_bit_flip": {
+      "representation_class": "int8_persistent_weight",
+      "target_role": "persistent_parameter",
+      "enabled_in_v1": true
+    },
+    "quantized_activation_single_bit_flip": {
+      "representation_class": "quantized_activation",
+      "target_role": "activation",
+      "enabled_in_v1": true
+    },
+    "quantized_buffer_single_bit_flip": {
+      "representation_class": "quantized_buffer",
+      "target_role": "intermediate_buffer",
+      "enabled_in_v1": true
+    },
+    "fp32_activation_single_bit_flip": {
+      "representation_class": "fp32_activation",
+      "target_role": "activation",
+      "enabled_in_v1": true
+    },
+    "fp32_buffer_single_bit_flip": {
+      "representation_class": "fp32_buffer",
+      "target_role": "intermediate_buffer",
+      "enabled_in_v1": true
+    }
+  },
+  "fault_instance_identity": {
+    "canonical_fields": [
+      "protocol",
+      "model_variant",
+      "checkpoint_seed",
+      "fold",
+      "fault_family",
+      "representation_class",
+      "target_name",
+      "target_role",
+      "element_index",
+      "bit_position",
+      "inference_index",
+      "persistence",
+      "multiplicity",
+      "replicate_index"
+    ],
+    "fault_id": "SHA256 of canonical sorted compact JSON containing exactly the canonical fields",
+    "global_process_rng_state_permitted": false
+  },
+  "sampling_contract": {
+    "split_before_stochastic_fault_sampling": true,
+    "clean_and_faulted_parent_must_share_partition": true,
+    "deterministic_element_sampling": "SHA256 namespace mapping into the valid flattened element index range",
+    "bit_position": "explicit fault-instance field; no implicit random bit choice",
+    "inference_time_coordinate": "zero-based inference_index within the evaluation trial/sequence",
+    "replicate_index": "explicit non-negative integer included in identity",
+    "initial_multiplicity": 1,
+    "additional_multiplicity_levels_frozen": false,
+    "outer_replicate_cardinality_frozen": false,
+    "outer_fault_instance_count_frozen": false,
+    "outer_sampling_plan_frozen": false,
+    "qualification_must_precede_outer_sampling_freeze": true
+  },
+  "persistence_contract": {
+    "transient_one_inference": "fault exists only for the selected inference invocation and clean state/value is restored or naturally discarded immediately afterward",
+    "persistent_from_onset_until_trial_end": "same logical target and bit corruption applies from selected inference_index through the final inference of that trial/sequence",
+    "cross_trial_persistence": false,
+    "state_leakage_between_trials_permitted": false
+  },
+  "pairing_contract": {
+    "clean_and_faulted_inputs_identical": true,
+    "same_checkpoint": true,
+    "same_preprocessing": true,
+    "same_partition": true,
+    "same_operating_point": true,
+    "same_trial_order": true,
+    "changed_quantity_only": "frozen compute fault instance"
+  },
+  "qualification_scope": {
+    "synthetic_tensor_bit_exact_unit_tests_allowed": true,
+    "training_partition_allowed": true,
+    "calibration_partition_allowed": true,
+    "validation_partition_for_protocol_tuning": false,
+    "outer_test_allowed": false,
+    "onfield_allowed": false,
+    "sensor_outer_results_allowed_for_protocol_design": false,
+    "model_checkpoint_selection_by_compute_fault_robustness": false,
+    "operating_point_selection_by_compute_fault_robustness": false
+  },
+  "excluded_from_v1": [
+    "quantization scale corruption",
+    "quantization zero-point corruption",
+    "BatchNorm running-state corruption",
+    "FP32 persistent weight corruption as a primary family",
+    "register-file fault claims",
+    "cache fault claims",
+    "instruction corruption",
+    "control-flow corruption",
+    "arithmetic-unit physical fault models",
+    "DMA/bus fault claims",
+    "physical SRAM/flash upset rates",
+    "MCU memory-layout equivalence",
+    "P1 firmware evidence",
+    "P2 HIL evidence",
+    "P3 physical evidence"
+  ],
+  "claim_boundary": {
+    "software_P0_only": true,
+    "physical_SEU_equivalence": false,
+    "MCU_fault_equivalence": false,
+    "register_fault_claim": false,
+    "cache_fault_claim": false,
+    "hardware_target_frozen": false,
+    "CC_results_generated": false,
+    "CSC_results_generated": false
+  },
+  "next_action": "Implement exact bit-level operators and qualify deterministic replay/bit-exact restoration on synthetic tensors and development-safe data only before freezing outer sampling cardinality."
+}

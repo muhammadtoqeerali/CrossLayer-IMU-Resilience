@@ -1,0 +1,103 @@
+{
+  "dry_run_contract": {
+    "all_15_fp32_checkpoint_hashes_required": true,
+    "all_15_ptq_state_hashes_required": true,
+    "all_15_ptq_torchscript_hashes_required": true,
+    "all_366_clean_caches_required": true,
+    "all_732_shards_required": true,
+    "fault_operator_prohibited": true,
+    "labels_open_prohibited": true,
+    "metadata_plan_replay_required": true,
+    "model_forward_prohibited": true,
+    "np_load_prohibited": true,
+    "segments_npy_header_only": true,
+    "segments_payload_prohibited": true,
+    "torch_load_prohibited": true
+  },
+  "evidence_tier": "P0",
+  "execution_gate": {
+    "dry_run_enabled": true,
+    "enablement_requires_later_governed_freeze": true,
+    "execute_shard_enabled": false,
+    "outer_execution_enabled": false
+  },
+  "execution_locations": {
+    "dataset_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary",
+    "result_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5g_compute_fi_outer_shard_executor_dry_run_v1"
+  },
+  "expected_totals": {
+    "clean_caches": 366,
+    "clean_model_window_evaluations": 1642980,
+    "fault_shards": 732,
+    "model_artifacts_hashed": 45,
+    "outer_instance_ids": 20170008,
+    "persistent_faulted_model_window_evaluations": 10083060,
+    "total_faulted_model_window_evaluations": 29798820,
+    "total_model_window_evaluations_including_clean": 31441800,
+    "transient_faulted_model_window_evaluations": 19715760
+  },
+  "freeze_date": "2026-10-05",
+  "frozen_dependencies": {
+    "executor_implementation": {
+      "path": "experiments/phase_05/compute_fi_outer_shard_executor_v1.py",
+      "sha256": "7112f1ae046bac730729a26c5a858dc04ca257d29d8dedf1f9930607bd061cb2"
+    },
+    "fp32_freeze": {
+      "path": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+      "sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+    },
+    "phase5_harness": {
+      "path": "experiments/phase_05/compute_fi_execution_harness.py",
+      "sha256": "68418e44d50f7c8192777ffe6c7f7f5f0dc0cab2243788f627d07879ef19005b"
+    },
+    "phase5_operators": {
+      "path": "experiments/phase_05/compute_fi_operators.py",
+      "sha256": "663efc3d720e1b476e3c078c40a21b184e13abfda86cde8cfde6b6b38c783b91"
+    },
+    "phase5_sampler": {
+      "path": "experiments/phase_05/compute_fi_outer_sampling_v1.py",
+      "sha256": "8886b74043ef9ba32f2cb8e999d318c340c239d818caad53f430594546d2417d"
+    },
+    "phase5d_protocol": {
+      "path": "configs/evaluation/phase5d_compute_fi_outer_protocol_v1.json",
+      "sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36"
+    },
+    "phase5e_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5e_planner": {
+      "path": "experiments/phase_05/compute_fi_outer_execution_plan_v1.py",
+      "sha256": "a7da66a136e217f18731cc02346beff5482f8752bbfeb24256634485848d452a"
+    },
+    "phase5e_qualification": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_qualification_v1.json",
+      "sha256": "eb69004c52b389b0ad32e5de626a94de41683b761f523216a4290d5ef0772c95"
+    },
+    "phase5f_qualification": {
+      "path": "manifests/phase_5f_compute_fi_outer_executor_resume_qualification_v1.json",
+      "sha256": "a77274b5f2f502342249977c175852e918dbc187612116e210b84b0f4b3de01b"
+    },
+    "phase5f_resume_core": {
+      "path": "experiments/phase_05/compute_fi_outer_executor_v1.py",
+      "sha256": "77ee323f71a5dbf4c54cc454a5911849aa45c5d4bdcc6d63bb908d8cece363d0"
+    },
+    "primary_split": {
+      "path": "configs/datasets/primary_300ms_fivefold_v1.json",
+      "sha256": "93d3705b40506ceeb256556933fab59149987e3b3001c0ae5ca7d6d12bdaad7b"
+    },
+    "ptq_all15": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4g_ptq_300ms_v7_fc1_fp32_all15_training_calibration_v1/all15_qualification_manifest.json",
+      "sha256": "811481415964bb2dc964116600a0ab43af407b4cddef76422a0f0d1a85819316"
+    }
+  },
+  "phase": "5G",
+  "schema_version": "phase5g_compute_fi_outer_shard_executor_config_v1",
+  "scientific_boundary": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "onfield_used": false,
+    "outer_payload_execution": false
+  },
+  "status": "FROZEN_DRY_RUN_QUALIFICATION"
+}

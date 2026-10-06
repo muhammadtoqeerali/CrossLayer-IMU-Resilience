@@ -1,0 +1,95 @@
+{
+  "acceptance": {
+    "all_105_predeclared_pairs_executed": true,
+    "all_15_checkpoint_members_executed": true,
+    "all_15_ptq_members_executed": true,
+    "all_fault_ids_unique": true,
+    "all_five_fold_calibration_identities_loaded": true,
+    "all_mutations_active": true,
+    "all_mutations_exact_selected_bit": true,
+    "all_mutations_exact_selected_element": true,
+    "all_ptq_eager_models_match_frozen_torchscript_clean": true,
+    "qint8_weight_representation_preserved": true,
+    "qualification_rejects_onfield": true,
+    "qualification_rejects_outer_test": true,
+    "qualification_rejects_validation": true,
+    "quantization_metadata_preserved": true,
+    "quint8_activation_buffer_representation_preserved": true,
+    "same_fold_identity_reused_across_three_seeds": true,
+    "source_artifacts_unchanged": true
+  },
+  "documentation": {
+    "path": "docs/PHASE_5C_COMPUTE_FI_DEVCAL_RUNNER_QUALIFICATION_V1.md",
+    "sha256": "9664f0c4d485a069d0ade6358ede9cee41e821bc577c52a531e39dc974d217f3"
+  },
+  "evidence_tier": "P0",
+  "execution_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5c_compute_fi_devcal_runner_qualification_v1/devcal_qualification.json",
+    "sha256": "68a8d3b32bb86c0aa822e398a07c45c2d34821ba20bc23c9da8cf6b00375ab26"
+  },
+  "next_action": "Freeze the prospective outer compute-FI sampling/cardinality and reporting protocol before any CC outer-test execution.",
+  "outer_sampling_plan_frozen": false,
+  "parent_commit": "54577387fa199081407e91ce9766b0f2b6b05417",
+  "phase": "5C",
+  "pre_execution_protocol": {
+    "path": "configs/evaluation/phase5c_compute_fi_devcal_runner_v1.json",
+    "sha256": "1df39a0c6b0c1e16e1ea3898a6dedecaafff93cbf7204e501f087da23e81333c"
+  },
+  "qualification_counts": {
+    "fp32_paired_cases": 30,
+    "member_clean_checks": 15,
+    "model_members": 15,
+    "paired_cases_total": 105,
+    "ptq_paired_cases": 75,
+    "qint8_weight_cases": 15,
+    "quint8_activation_buffer_cases": 30,
+    "unique_fault_ids": 105,
+    "unique_fold_calibration_inputs": 5
+  },
+  "qualification_date": "2026-10-05",
+  "runner_source": {
+    "path": "experiments/phase_05/qualify_compute_fi_devcal_runner_v1.py",
+    "sha256": "5fb1a9eb726270985f135ecb75329c493457bae8f70a3ad394d11da0a29288a0"
+  },
+  "schema_version": "phase5c_compute_fi_devcal_runner_qualification_manifest_v1",
+  "scientific_boundary": {
+    "CC_task_performance_result_generated": false,
+    "CSC_result_generated": false,
+    "accuracy_or_recall_computed": false,
+    "bit_selected_from_results": false,
+    "checkpoint_selected_from_results": false,
+    "element_selected_from_results": false,
+    "fault_family_selected_from_results": false,
+    "faulted_training_calibration_forward_executed": true,
+    "hardware_claim": false,
+    "onfield_used": false,
+    "outer_sampling_plan_frozen": false,
+    "outer_test_used": false,
+    "physical_fault_equivalence": false,
+    "probabilities_recorded": false,
+    "raw_logits_recorded": false,
+    "real_training_calibration_windows_used": true,
+    "replicate_count_selected_from_results": false,
+    "target_selected_from_results": false,
+    "threshold_applied": false,
+    "threshold_changed": false,
+    "training_only_calibration_identity_used": true,
+    "validation_used": false
+  },
+  "serialization_repair": {
+    "acceptance_gate_changed": false,
+    "fault_protocol_changed": false,
+    "issue": "Frozen calibration identity labels are textual Activity/Falling values, but the first runner version attempted integer conversion during result serialization.",
+    "model_execution_semantics_changed": false,
+    "partition_changed": false,
+    "qualification_case_matrix_changed": false,
+    "repair": "Preserve the frozen calibration manifest label as a string in result metadata."
+  },
+  "source_artifact_count": 45,
+  "source_artifacts_unchanged": true,
+  "status": "QUALIFIED_REAL_TRAINING_CALIBRATION_PAIRED_RUNNER",
+  "success_marker": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5c_compute_fi_devcal_runner_qualification_v1/_SUCCESS.json",
+    "sha256": "09e9ad0b4357546238ff107b59e0980bf473b55ec01209f5e506b3d40289c4e4"
+  }
+}

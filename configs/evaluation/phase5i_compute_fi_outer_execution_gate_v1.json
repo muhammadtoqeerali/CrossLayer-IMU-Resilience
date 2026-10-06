@@ -1,0 +1,126 @@
+{
+  "authorization": {
+    "activation_requires_new_execution_config_bound_to_this_gate_sha": true,
+    "authorization_does_not_permit_protocol_mutation": true,
+    "authorization_scope": "EXACT_FROZEN_PHASE5E_732_SHARD_ESTATE_ONLY",
+    "outer_execution_authorized": true,
+    "outer_execution_performed": false,
+    "phase5g_legacy_dry_run_gate_remains_false": true
+  },
+  "evidence_tier": "P0",
+  "execution_estate": {
+    "checkpoint_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "clean_caches": 366,
+    "clean_model_window_evaluations": 1642980,
+    "fault_shards": 732,
+    "faulted_model_window_evaluations": 29798820,
+    "model_variants": [
+      "fp32",
+      "ptq_v7"
+    ],
+    "outer_instance_ids": 20170008,
+    "persistence_modes": [
+      "transient_one_inference",
+      "persistent_from_onset_until_trial_end"
+    ],
+    "subjects": 61,
+    "total_model_window_evaluations": 31441800
+  },
+  "execution_state_at_freeze": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "outer_execution_performed": false,
+    "outer_fault_execution_executed": false,
+    "outer_model_forward_executed": false,
+    "outer_payload_read": false,
+    "outer_prediction_read": false
+  },
+  "freeze_date": "2026-10-05",
+  "frozen_dependencies": {
+    "no_selection_audit": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5i_compute_fi_pre_outer_gate_v1/no_selection_audit.json",
+      "sha256": "ffe073a22a4d29a9ade54a21f437731ccf6f05428b9c03b4afb04af62f42cc4d"
+    },
+    "phase5d_protocol": {
+      "path": "configs/evaluation/phase5d_compute_fi_outer_protocol_v1.json",
+      "sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36"
+    },
+    "phase5e_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5f_resume_core": {
+      "path": "experiments/phase_05/compute_fi_outer_executor_v1.py",
+      "sha256": "77ee323f71a5dbf4c54cc454a5911849aa45c5d4bdcc6d63bb908d8cece363d0"
+    },
+    "phase5g_controller": {
+      "path": "experiments/phase_05/compute_fi_outer_shard_executor_v1.py",
+      "sha256": "7112f1ae046bac730729a26c5a858dc04ca257d29d8dedf1f9930607bd061cb2"
+    },
+    "phase5g_dry_run_config": {
+      "path": "configs/evaluation/phase5g_compute_fi_outer_shard_executor_v1.json",
+      "sha256": "3378f61ad6715151094d8a1fa3a2ed9718700fabfffe8842505e4eb71e436351"
+    },
+    "phase5h_qualification_config": {
+      "path": "configs/evaluation/phase5h_compute_fi_shard_style_execution_qualification_v1.json",
+      "sha256": "1c9a1875dbc33f0db18ec61a77652185035f6a37b44224726c2715f63e96d728"
+    },
+    "phase5h_qualification_manifest": {
+      "path": "manifests/phase_5h_compute_fi_shard_style_execution_qualification_v1.json",
+      "sha256": "f028e6e12268e55f6863cfa70e98cf4b765b4120bcb928e29658b51cd1f64a94"
+    },
+    "phase5h_runtime": {
+      "path": "experiments/phase_05/compute_fi_shard_runtime_v1.py",
+      "sha256": "b3bf60c2637a03fa9ddb364637171d7f5d81e5b367586b82bd94972d3e1f91e7"
+    }
+  },
+  "mandatory_runtime_guards": {
+    "atomic_success_marker_required": true,
+    "checkpoint_artifact_hash_match": true,
+    "clean_cache_success_required_before_fault_shard": true,
+    "executor_sha_match": true,
+    "gate_config_sha_match": true,
+    "no_cross_trial_persistent_state": true,
+    "nonfinite_output_sanitization_prohibited": true,
+    "outer_instance_id_uniqueness": true,
+    "partial_output_reuse_prohibited": true,
+    "persistent_onset_binding_sha_match": true,
+    "phase5e_plan_sha_match": true,
+    "subject_inventory_sha_match": true,
+    "trial_inventory_sha_match": true
+  },
+  "operating_points": [
+    "balanced",
+    "low_false_alarm",
+    "timely_150ms"
+  ],
+  "phase": "5I",
+  "prospective_result_root": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5_outer_compute_fi_prospective_v1",
+  "schema_version": "phase5i_compute_fi_outer_execution_gate_v1",
+  "scientific_scope": {
+    "CSC_generated_in_phase5": false,
+    "mcu_fault_equivalence_claim": false,
+    "physical_equivalence_claim": false,
+    "regimes_generated_in_phase5": [
+      "C0",
+      "CC"
+    ]
+  },
+  "selection_prohibitions": {
+    "bit_resampling": false,
+    "fold_selection": false,
+    "onfield_tuning": false,
+    "onset_resampling": false,
+    "outer_metric_selection": false,
+    "persistence_resampling": false,
+    "seed_selection": false,
+    "shard_selection": false,
+    "target_resampling": false,
+    "threshold_retuning": false
+  },
+  "status": "FROZEN_PROSPECTIVE_OUTER_EXECUTION_AUTHORIZATION"
+}

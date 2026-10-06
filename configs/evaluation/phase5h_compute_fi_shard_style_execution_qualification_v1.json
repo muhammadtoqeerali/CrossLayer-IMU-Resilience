@@ -1,0 +1,87 @@
+{
+  "evidence_tier": "P0",
+  "fixture_matrix": {
+    "clean_cache_fixture_count": 2,
+    "fp32": {
+      "persistence_modes": [
+        "transient_one_inference",
+        "persistent_from_onset_until_trial_end"
+      ],
+      "representations": [
+        "fp32_activation",
+        "fp32_buffer"
+      ],
+      "shard_fixture_count": 4
+    },
+    "ptq_v7": {
+      "persistence_modes": [
+        "transient_one_inference",
+        "persistent_from_onset_until_trial_end"
+      ],
+      "representations": [
+        "fp32_activation",
+        "fp32_buffer",
+        "quantized_activation",
+        "quantized_buffer",
+        "int8_persistent_weight"
+      ],
+      "shard_fixture_count": 10
+    },
+    "total_shard_fixture_count": 14
+  },
+  "frozen_dependencies": {
+    "calibration_identity_sha256": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e",
+    "fp32_freeze_sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd",
+    "phase5d_protocol_sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36",
+    "phase5e_plan_sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54",
+    "phase5f_core_sha256": "77ee323f71a5dbf4c54cc454a5911849aa45c5d4bdcc6d63bb908d8cece363d0",
+    "phase5f_qualification_sha256": "a77274b5f2f502342249977c175852e918dbc187612116e210b84b0f4b3de01b",
+    "phase5g_config_sha256": "3378f61ad6715151094d8a1fa3a2ed9718700fabfffe8842505e4eb71e436351",
+    "phase5g_executor_sha256": "7112f1ae046bac730729a26c5a858dc04ca257d29d8dedf1f9930607bd061cb2",
+    "phase5g_qualification_sha256": "7ea089c9465782ebe5baa45628b2720b02cec07a9c714ed2e83ba2db23b97fd5",
+    "ptq_all15_sha256": "811481415964bb2dc964116600a0ab43af407b4cddef76422a0f0d1a85819316",
+    "shard_runtime_sha256": "b3bf60c2637a03fa9ddb364637171d7f5d81e5b367586b82bd94972d3e1f91e7"
+  },
+  "partition": "training_calibration",
+  "persistent_onset_position": 2,
+  "phase": "5H",
+  "qualification_date": "2026-10-05",
+  "required_semantics": {
+    "atomic_success_artifact_required": true,
+    "clean_cache_shared_between_persistence_modes": true,
+    "common_fp32_coordinates_reused_across_variants": true,
+    "cross_trial_weight_leakage_allowed": false,
+    "outer_instance_id_required": true,
+    "persistent_expected_active_mask": [
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    "persistent_one_identity_per_trial_target": true,
+    "transient_expected_active_mask": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "transient_one_identity_per_window": true,
+    "weight_session_reset_required": true
+  },
+  "schema_version": "phase5h_compute_fi_shard_style_execution_qualification_v1",
+  "scientific_boundary": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "onfield_allowed": false,
+    "outer_execution_gate_enabled": false,
+    "outer_fault_execution_allowed": false,
+    "outer_model_forward_allowed": false,
+    "outer_payload_allowed": false,
+    "phase5e_plan_change_allowed": false,
+    "sampling_change_allowed": false
+  },
+  "sequence_length": 5,
+  "status": "FROZEN_PRE_QUALIFICATION_SHARD_STYLE_EXECUTION"
+}

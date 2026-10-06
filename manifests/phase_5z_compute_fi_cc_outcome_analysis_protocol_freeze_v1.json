@@ -1,0 +1,94 @@
+{
+  "authorization": {
+    "CSC_result_generated": false,
+    "aggregate_CC_result_generated": false,
+    "future_CC_metric_computation_permitted_only_under_qualified_implementation": true,
+    "future_label_loading_permitted_only_under_this_protocol": true,
+    "future_prediction_deserialization_permitted_only_under_this_protocol": true,
+    "outcome_analysis_executed": false,
+    "outcome_analysis_implementation_already_qualified": false,
+    "protocol_frozen": true
+  },
+  "documentation": {
+    "path": "docs/PHASE_5Z_COMPUTE_FI_CC_OUTCOME_ANALYSIS_PROTOCOL_FREEZE_V1.md",
+    "sha256": "922b7750f7fee8fee105aff742c114040edbd29eb0b1c9610717984d17244906"
+  },
+  "frozen_dependencies": {
+    "baseline_config": {
+      "path": "configs/baseline/prospective_300ms_fp32_v1.json",
+      "sha256": "145d0cc9435c1d9e212a12465356e75496b0532dff93a2f3c3c365d27a304130"
+    },
+    "baseline_freeze_manifest": {
+      "path": "manifests/phase_4f_prospective_300ms_fp32_freeze_v1.json",
+      "sha256": "6a07fa5ff4f62dbd61ce7be50cbfe72eed713cf00a789e565deefaca45aa5cdd"
+    },
+    "historical_event_evaluator": {
+      "bound_functions": [
+        "_normalise_activity_label",
+        "_risk_lookup",
+        "trigger_episodes",
+        "first_valid_trigger",
+        "event_metrics"
+      ],
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/master_training/evaluation.py",
+      "sha256": "866112cf56f156d05e7cd3b6cc3afdd459a7090075c08065d78dbf751238a380"
+    },
+    "phase3_timing_manifest": {
+      "path": "manifests/phase_3n_final_protocol_freeze_v3.json",
+      "sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39"
+    },
+    "phase4_outer_metric_implementation": {
+      "path": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+      "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+    },
+    "phase5d_compute_fault_protocol": {
+      "path": "configs/evaluation/phase5d_compute_fi_outer_protocol_v1.json",
+      "sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36"
+    },
+    "phase5e_outer_execution_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5m_canary_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_canary_executor_v1.py",
+      "sha256": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645"
+    },
+    "phase5r_fleet_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+    },
+    "phase5u_complete_estate_technical_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5u_compute_fi_outer_full_fleet_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "87932aebe474d515d5d43063724c8f3f0026084a6df40225e3666d83e3ae4f88"
+    },
+    "validation_selected_thresholds": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase4e_fixed5_fall_cnn_300ms_noaug_e100_p20_v3/validation_selected_thresholds.csv",
+      "row_count": 45,
+      "sha256": "07cb5fb987ad16a6238bb97f938fcce388cc45edd5862ebc307c297b8051b004"
+    }
+  },
+  "generated_date": "2026-10-06",
+  "phase": "5Z",
+  "protocol": {
+    "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+    "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5z_compute_fi_cc_outcome_analysis_protocol.py",
+    "sha256": "f835e46d289fbe6d20a8d14e9730bd3178cc7cf02e4ed149557cab21de4a28e5"
+  },
+  "schema_version": "phase5z_compute_fi_cc_outcome_analysis_protocol_freeze_v1",
+  "scientific_boundary": {
+    "CC_metric_computed": false,
+    "CSC_result_generated": false,
+    "aggregate_CC_result_generated": false,
+    "fault_execution_executed": false,
+    "model_forward_executed": false,
+    "outer_label_array_loaded": false,
+    "outer_prediction_outcomes_interpreted": false,
+    "phase5_prediction_json_deserialized": false,
+    "phase5_prediction_jsonl_opened": false,
+    "threshold_applied_to_outer": false
+  },
+  "status": "FROZEN_PROSPECTIVE_CC_OUTCOME_ANALYSIS_PROTOCOL"
+}

@@ -1,0 +1,161 @@
+{
+  "already_satisfied_estate": {
+    "clean_cache_id": "p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b",
+    "clean_caches": 1,
+    "clean_model_window_evaluations": 2481,
+    "fault_shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+    "fault_shards": 1,
+    "faulted_model_window_evaluations": 24810,
+    "outer_instance_ids": 24810,
+    "reexecution_not_required": true,
+    "reuse_required": true,
+    "total_model_window_evaluations": 27291
+  },
+  "authorization": {
+    "additional_clean_cache_executed_in_phase5p": false,
+    "additional_fault_shard_executed_in_phase5p": false,
+    "authorization_basis": "PHASE5O_TECHNICAL_ACCEPTANCE_ONLY",
+    "authorization_scope": "EXACT_PHASE5E_ESTATE_COMPLETION_ONLY",
+    "authorization_uses_labels": false,
+    "authorization_uses_metric": false,
+    "authorization_uses_onfield": false,
+    "authorization_uses_prediction_outcome": false,
+    "authorization_uses_threshold": false,
+    "fleet_executor_must_be_qualified_before_execution": true,
+    "fleet_executor_must_bind_this_gate_sha": true,
+    "full_fleet_completion_authorized": true,
+    "full_fleet_execution_started": false,
+    "new_fleet_executor_required": true
+  },
+  "complete_estate": {
+    "checkpoint_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "clean_caches": 366,
+    "clean_model_window_evaluations": 1642980,
+    "fault_shards": 732,
+    "faulted_model_window_evaluations": 29798820,
+    "folds": 5,
+    "model_variants": [
+      "fp32",
+      "ptq_v7"
+    ],
+    "outer_instance_ids": 20170008,
+    "persistence_modes": [
+      "transient_one_inference",
+      "persistent_from_onset_until_trial_end"
+    ],
+    "subjects": 61,
+    "total_model_window_evaluations": 31441800
+  },
+  "evidence_tier": "P0",
+  "execution_state_at_freeze": {
+    "CSC_result_generated": false,
+    "additional_outer_fault_execution_in_phase5p": false,
+    "additional_outer_model_forward_in_phase5p": false,
+    "additional_outer_payload_read_in_phase5p": false,
+    "aggregate_CC_result_generated": false,
+    "executed_clean_caches": 1,
+    "executed_fault_shards": 1,
+    "full_fleet_execution_started": false,
+    "remaining_clean_caches": 365,
+    "remaining_fault_shards": 731
+  },
+  "fleet_executor_requirements": {
+    "must_accept_exact_phase5e_shard_set": true,
+    "must_enforce_exact_forward_cardinality": true,
+    "must_enforce_no_cross_trial_persistent_state": true,
+    "must_not_compute_selection_metrics_during_execution": true,
+    "must_not_read_labels": true,
+    "must_not_read_onfield": true,
+    "must_not_rerun_accepted_canary_unless_explicit_corruption_recovery": true,
+    "must_not_select_thresholds": true,
+    "must_rederive_outer_instance_id": true,
+    "must_rederive_phase5a_fault_id": true,
+    "must_rederive_sampling_instance_id": true,
+    "must_reject_shards_not_in_phase5e_plan": true,
+    "must_reuse_existing_canary_artifacts": true,
+    "must_support_fp32": true,
+    "must_support_persistent": true,
+    "must_support_ptq_v7": true,
+    "must_support_transient": true,
+    "must_use_phase5f_atomic_resume_semantics": true,
+    "must_use_phase5k_fault_only_semantics": true,
+    "must_validate_existing_canary_success_hashes": true
+  },
+  "freeze_date": "2026-10-05",
+  "frozen_dependencies": {
+    "phase5e_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5i_pre_outer_gate": {
+      "path": "configs/evaluation/phase5i_compute_fi_outer_execution_gate_v1.json",
+      "sha256": "ef7ab5c5dbf5959c37a7649a88ddfc7ca5a1839a7d98d0bd46b98bd6b7958fb3"
+    },
+    "phase5l_canary_only_config": {
+      "path": "configs/evaluation/phase5l_compute_fi_outer_canary_execution_v1.json",
+      "sha256": "b169e2997499dfb75927938d98d39018d01f60a93e04148d2b4fcb70f30692be"
+    },
+    "phase5m_canary_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_canary_executor_v1.py",
+      "sha256": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645"
+    },
+    "phase5m_static_qualification": {
+      "path": "manifests/phase_5m_compute_fi_outer_canary_executor_static_qualification_v1.json",
+      "sha256": "55ef847d03a5cfac9ec55c9b7ab38358ea447a119fe1bc273ea9287f8d9914ee"
+    },
+    "phase5o_acceptance_freeze": {
+      "path": "manifests/phase_5o_compute_fi_outer_canary_technical_acceptance_freeze_v1.json",
+      "sha256": "09fe4836d954f98876656ebb383c306a60c444b6225dd1f99e1c67577bf1a74f"
+    },
+    "phase5o_technical_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5o_compute_fi_outer_canary_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "d67dba6513a62c8192137c3b19d1806db91e4b257cb17b6481ad11a86a897d72"
+    }
+  },
+  "phase": "5P",
+  "post_execution_reporting_boundary": {
+    "CSC_reserved_for_phase6": true,
+    "outer_results_may_not_reconfigure_estate": true,
+    "phase5_regimes": [
+      "C0",
+      "CC"
+    ],
+    "seed_equal_weighting_within_subject_required": true,
+    "single_best_member_reporting_prohibited": true,
+    "subject_level_uncertainty_required": true
+  },
+  "remaining_authorized_estate": {
+    "clean_caches": 365,
+    "clean_model_window_evaluations": 1640499,
+    "derivation": "PHASE5E_PLAN_MINUS_TECHNICALLY_ACCEPTED_PHASE5N_CANARY",
+    "fault_shards": 731,
+    "faulted_model_window_evaluations": 29774010,
+    "first_remaining_shard_id": "p5e-o1-f5-s009-fp32-seed42-persistent-3e49700130607447",
+    "last_remaining_shard_id": "p5e-o1-f4-s138-ptq_v7-seed2025-persistent-db9c89a6f412d109",
+    "outer_instance_ids": 20145198,
+    "remaining_clean_cache_ids_sha256": "d71d4622f25ae2754c378d974afa8a5ecd1d28dc0ef86adfe2c1a31be57c5ff6",
+    "remaining_shard_ids_sha256": "556fa5d19cecabee937ea52a8e8e18d3270485d8f252615a3246a02774025915",
+    "total_model_window_evaluations": 31414509
+  },
+  "schema_version": "phase5p_compute_fi_outer_full_fleet_completion_gate_v1",
+  "selection_prohibitions": {
+    "bit_selection_from_outcome": false,
+    "canary_outcome_based_authorization": false,
+    "element_selection_from_outcome": false,
+    "fault_resampling": false,
+    "fold_selection": false,
+    "onfield_tuning": false,
+    "onset_selection_from_outcome": false,
+    "operating_point_retuning": false,
+    "persistence_selection_from_outcome": false,
+    "seed_selection": false,
+    "shard_selection": false,
+    "target_selection": false,
+    "threshold_retuning": false
+  },
+  "status": "FROZEN_PROSPECTIVE_FULL_FLEET_COMPLETION_AUTHORIZATION"
+}

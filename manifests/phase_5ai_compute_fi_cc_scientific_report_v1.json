@@ -1,0 +1,441 @@
+{
+  "availability": {
+    "CC_available": 576,
+    "CC_timing_unavailable_without_imputation": 144,
+    "clean_available": 24,
+    "clean_timing_unavailable_without_imputation": 6,
+    "unavailable_metric": "median_trigger_lead_ms"
+  },
+  "common_target_FP32_PTQ_descriptive": {
+    "available_comparison_count": 24,
+    "common_target_count": 10,
+    "equal_count": 0,
+    "interpretation": "On the ten common targets, PTQ has lower descriptive degradation in most available macro comparisons but not all. Therefore no universal FP32/PTQ superiority claim or model selection is made.",
+    "ptq_less_adverse_count": 21,
+    "ptq_more_adverse_cells": [
+      {
+        "common_target_count": 10,
+        "comparison_status": "AVAILABLE",
+        "cross_variant_inferential_CI_computed": false,
+        "descriptive_direction": "ptq_more_adverse_descriptive",
+        "fp32_common_target_macro_degradation": 0.00028882058788750963,
+        "metric": "fall_recall",
+        "operating_point": "timely_150ms",
+        "persistence": "transient_one_inference",
+        "ptq_common_target_macro_degradation": 0.0002946974416121083,
+        "ptq_minus_fp32_macro_degradation": 5.876853724598647e-06,
+        "targets_dropped": false,
+        "targets_equal": 0,
+        "targets_ptq_less_adverse": 4,
+        "targets_ptq_more_adverse": 6,
+        "unavailable_target_count": 0,
+        "unavailable_targets": [],
+        "values_imputed": false
+      },
+      {
+        "common_target_count": 10,
+        "comparison_status": "AVAILABLE",
+        "cross_variant_inferential_CI_computed": false,
+        "descriptive_direction": "ptq_more_adverse_descriptive",
+        "fp32_common_target_macro_degradation": 12.256534420453029,
+        "metric": "false_triggers_per_activity_hour",
+        "operating_point": "low_false_alarm",
+        "persistence": "persistent_from_onset_until_trial_end",
+        "ptq_common_target_macro_degradation": 12.48834938521222,
+        "ptq_minus_fp32_macro_degradation": 0.2318149647591916,
+        "targets_dropped": false,
+        "targets_equal": 0,
+        "targets_ptq_less_adverse": 4,
+        "targets_ptq_more_adverse": 6,
+        "unavailable_target_count": 0,
+        "unavailable_targets": [],
+        "values_imputed": false
+      },
+      {
+        "common_target_count": 10,
+        "comparison_status": "AVAILABLE",
+        "cross_variant_inferential_CI_computed": false,
+        "descriptive_direction": "ptq_more_adverse_descriptive",
+        "fp32_common_target_macro_degradation": 19.10091245760264,
+        "metric": "false_triggers_per_activity_hour",
+        "operating_point": "timely_150ms",
+        "persistence": "persistent_from_onset_until_trial_end",
+        "ptq_common_target_macro_degradation": 20.076886458043557,
+        "ptq_minus_fp32_macro_degradation": 0.9759740004409174,
+        "targets_dropped": false,
+        "targets_equal": 0,
+        "targets_ptq_less_adverse": 5,
+        "targets_ptq_more_adverse": 5,
+        "unavailable_target_count": 0,
+        "unavailable_targets": [],
+        "values_imputed": false
+      }
+    ],
+    "ptq_more_adverse_count": 3,
+    "unavailable_timing_comparison_count": 6
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AI_COMPUTE_FI_CC_SCIENTIFIC_REPORT_V1.md",
+    "sha256": "2a5bcdc0d4d2414a6ec96dc744fa6a6844e9119898d1cf2fb2e0fa15fe682b9a"
+  },
+  "generated_date": "2026-10-06",
+  "next_action": "Use this frozen Phase-5AI report for Phase-5 synthesis/final governance. Do not feed these outer findings back into model, threshold, fault, or protocol selection.",
+  "persistent_vs_transient_descriptive": {
+    "available_comparison_count": 24,
+    "comparisons": [
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "balanced_accuracy",
+        "model_variant": "fp32",
+        "operating_point": "balanced",
+        "persistent_degradation": 0.016997012099644587,
+        "persistent_minus_transient": 0.011291109352088501,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.005705902747556085
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "fall_recall",
+        "model_variant": "fp32",
+        "operating_point": "balanced",
+        "persistent_degradation": 0.01611767028852461,
+        "persistent_minus_transient": 0.015863719391151863,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.0002539508973727484
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "false_triggers_per_activity_hour",
+        "model_variant": "fp32",
+        "operating_point": "balanced",
+        "persistent_degradation": 18.239076684872312,
+        "persistent_minus_transient": 14.694360640790478,
+        "status": "AVAILABLE",
+        "transient_degradation": 3.5447160440818335
+      },
+      {
+        "direction": "unavailable_without_imputation",
+        "metric": "median_trigger_lead_ms",
+        "model_variant": "fp32",
+        "operating_point": "balanced",
+        "persistent_degradation": null,
+        "persistent_minus_transient": null,
+        "status": "UNAVAILABLE_WITHOUT_IMPUTATION",
+        "transient_degradation": null
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "recall_by_150ms",
+        "model_variant": "fp32",
+        "operating_point": "balanced",
+        "persistent_degradation": 0.007558715309137975,
+        "persistent_minus_transient": 0.0073535763394200196,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.00020513896971795586
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "balanced_accuracy",
+        "model_variant": "fp32",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": 0.017197669311570178,
+        "persistent_minus_transient": 0.016779824776983965,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.00041784453458621276
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "fall_recall",
+        "model_variant": "fp32",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": 0.018325038257484792,
+        "persistent_minus_transient": 0.017506849638575454,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.0008181886189093394
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "false_triggers_per_activity_hour",
+        "model_variant": "fp32",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": 12.256534420453029,
+        "persistent_minus_transient": 12.23465004688633,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.021884373566700255
+      },
+      {
+        "direction": "unavailable_without_imputation",
+        "metric": "median_trigger_lead_ms",
+        "model_variant": "fp32",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": null,
+        "persistent_minus_transient": null,
+        "status": "UNAVAILABLE_WITHOUT_IMPUTATION",
+        "transient_degradation": null
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "recall_by_150ms",
+        "model_variant": "fp32",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": 0.00661160055484526,
+        "persistent_minus_transient": 0.006293475624436055,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.00031812493040920447
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "balanced_accuracy",
+        "model_variant": "fp32",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": 0.014786862058825827,
+        "persistent_minus_transient": 0.009076532831210168,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.00571032922761566
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "fall_recall",
+        "model_variant": "fp32",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": 0.013640863932468966,
+        "persistent_minus_transient": 0.013352043344581456,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.00028882058788750963
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "false_triggers_per_activity_hour",
+        "model_variant": "fp32",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": 19.10091245760264,
+        "persistent_minus_transient": 15.08851094440013,
+        "status": "AVAILABLE",
+        "transient_degradation": 4.0124015132025095
+      },
+      {
+        "direction": "unavailable_without_imputation",
+        "metric": "median_trigger_lead_ms",
+        "model_variant": "fp32",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": null,
+        "persistent_minus_transient": null,
+        "status": "UNAVAILABLE_WITHOUT_IMPUTATION",
+        "transient_degradation": null
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "recall_by_150ms",
+        "model_variant": "fp32",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": 0.007589089309002752,
+        "persistent_minus_transient": 0.007356266638735954,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.0002328226702667973
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "balanced_accuracy",
+        "model_variant": "ptq_v7",
+        "operating_point": "balanced",
+        "persistent_degradation": 0.012450153644471485,
+        "persistent_minus_transient": 0.008512402115122275,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.003937751529349209
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "fall_recall",
+        "model_variant": "ptq_v7",
+        "operating_point": "balanced",
+        "persistent_degradation": 0.011378046701102318,
+        "persistent_minus_transient": 0.011190921091726211,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.00018712560937610598
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "false_triggers_per_activity_hour",
+        "model_variant": "ptq_v7",
+        "operating_point": "balanced",
+        "persistent_degradation": 15.718011600776972,
+        "persistent_minus_transient": 13.270653471042909,
+        "status": "AVAILABLE",
+        "transient_degradation": 2.447358129734062
+      },
+      {
+        "direction": "unavailable_without_imputation",
+        "metric": "median_trigger_lead_ms",
+        "model_variant": "ptq_v7",
+        "operating_point": "balanced",
+        "persistent_degradation": null,
+        "persistent_minus_transient": null,
+        "status": "UNAVAILABLE_WITHOUT_IMPUTATION",
+        "transient_degradation": null
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "recall_by_150ms",
+        "model_variant": "ptq_v7",
+        "operating_point": "balanced",
+        "persistent_degradation": 0.006589597259675148,
+        "persistent_minus_transient": 0.006435666548792258,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.00015393071088289016
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "balanced_accuracy",
+        "model_variant": "ptq_v7",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": 0.012604818275325905,
+        "persistent_minus_transient": 0.012288714546390484,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.0003161037289354204
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "fall_recall",
+        "model_variant": "ptq_v7",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": 0.013843463277563733,
+        "persistent_minus_transient": 0.013227103605628726,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.0006163596719350055
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "false_triggers_per_activity_hour",
+        "model_variant": "ptq_v7",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": 10.280894268231297,
+        "persistent_minus_transient": 10.263488167399544,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.01740610083175315
+      },
+      {
+        "direction": "unavailable_without_imputation",
+        "metric": "median_trigger_lead_ms",
+        "model_variant": "ptq_v7",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": null,
+        "persistent_minus_transient": null,
+        "status": "UNAVAILABLE_WITHOUT_IMPUTATION",
+        "transient_degradation": null
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "recall_by_150ms",
+        "model_variant": "ptq_v7",
+        "operating_point": "low_false_alarm",
+        "persistent_degradation": 0.00537011410195176,
+        "persistent_minus_transient": 0.00512040854804122,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.0002497055539105401
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "balanced_accuracy",
+        "model_variant": "ptq_v7",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": 0.01138704362402525,
+        "persistent_minus_transient": 0.007210789819774147,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.004176253804251103
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "fall_recall",
+        "model_variant": "ptq_v7",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": 0.009914683109072847,
+        "persistent_minus_transient": 0.009637017417031815,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.0002776656920410321
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "false_triggers_per_activity_hour",
+        "model_variant": "ptq_v7",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": 18.810960630845706,
+        "persistent_minus_transient": 15.87039177364558,
+        "status": "AVAILABLE",
+        "transient_degradation": 2.9405688572001263
+      },
+      {
+        "direction": "unavailable_without_imputation",
+        "metric": "median_trigger_lead_ms",
+        "model_variant": "ptq_v7",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": null,
+        "persistent_minus_transient": null,
+        "status": "UNAVAILABLE_WITHOUT_IMPUTATION",
+        "transient_degradation": null
+      },
+      {
+        "direction": "persistent_more_adverse_descriptive",
+        "metric": "recall_by_150ms",
+        "model_variant": "ptq_v7",
+        "operating_point": "timely_150ms",
+        "persistent_degradation": 0.006101543814069821,
+        "persistent_minus_transient": 0.005919187681525183,
+        "status": "AVAILABLE",
+        "transient_degradation": 0.00018235613254463805
+      }
+    ],
+    "equal_count": 0,
+    "interpretation": "Across every available variant \u00d7 operating-point \u00d7 metric equal-target macro comparison, persistent faults have larger degradation than transient faults. This is a descriptive outer-result statement, not a new inferential test.",
+    "persistent_less_adverse_count": 0,
+    "persistent_more_adverse_count": 24,
+    "unavailable_timing_comparison_count": 6
+  },
+  "phase": "5AI",
+  "regression_test": {
+    "path": "tests/test_phase5ai_compute_fi_cc_scientific_report.py",
+    "sha256": "54f385e32ea94eab6786a849e259229ef05a65f03fbe202c351a7a2945b8d868"
+  },
+  "reporting_boundary": {
+    "CSC_generated": false,
+    "OnField_used": false,
+    "checkpoint_selection": false,
+    "fault_family_selected": false,
+    "fault_resampling": false,
+    "model_forward_executed": false,
+    "model_selected": false,
+    "new_bootstrap": false,
+    "new_fault_execution": false,
+    "new_inferential_CI": false,
+    "new_scientific_outcome_analysis": false,
+    "new_significance_test": false,
+    "protocol_change": false,
+    "scalar_robustness_score": false,
+    "target_selected": false,
+    "threshold_retuning": false,
+    "unavailable_values_dropped": false,
+    "unavailable_values_imputed": false,
+    "universal_variant_superiority_claim": false
+  },
+  "reporting_contract": {
+    "path": "configs/evaluation/phase5ai_compute_fi_cc_scientific_reporting_v1.json",
+    "sha256": "529c660c637ac8d445831dcd1d95b392b49e3b516e96abfebadfdddb303fe3f1"
+  },
+  "schema_version": "phase5ai_compute_fi_cc_scientific_report_manifest_v1",
+  "scientific_report_json": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ai_compute_fi_cc_scientific_report_v1/scientific_report.json",
+    "sha256": "8a72edb086d255b45c9ad0fd6f9b0d207854611bfa052e6959e11f50a2f6e63f"
+  },
+  "scientific_report_markdown": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ai_compute_fi_cc_scientific_report_v1/SCIENTIFIC_REPORT.md",
+    "sha256": "993e327281859b7d7d528978496fbdca45fc3f8c08bad6decac5b8ec19eb8596"
+  },
+  "source_phase5ah_manifest": {
+    "path": "manifests/phase_5ah_compute_fi_cc_scientific_interpretation_v1.json",
+    "sha256": "7abeb3a117b0759e0e36698a0437061058fa890cd39d0b70e4d4dbd6d22f6177"
+  },
+  "source_phase5ah_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ah_compute_fi_cc_scientific_interpretation_v1/interpretation.json",
+    "sha256": "3841ceb4a1af3ca2f1c32a7d1126ab3f94e6debbb46222f2635e694cec6012fb"
+  },
+  "status": "FROZEN_REPORTED_PHASE5AH_CC_SCIENTIFIC_FINDINGS"
+}

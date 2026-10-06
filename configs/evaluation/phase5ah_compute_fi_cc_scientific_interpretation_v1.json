@@ -1,0 +1,64 @@
+{
+  "accepted_aggregate_sha256": "608a9f7c67b07a0c7b58df6ba6967943857d35e6c0856def8179fb6847317006",
+  "analyzer_sha256": "22e7ac0d587527abd659585596a2c7b43df7af2f249c5aa594be566677e32544",
+  "generated_date": "2026-10-06",
+  "paired_effect_semantics": "positive_degradation_means_worse_under_compute_fault",
+  "phase": "5AH",
+  "phase5ag_acceptance_sha256": "9bd147a666db08fa369a1f3f7a144a71415fe0fb71b6f513603a326343c63b19",
+  "phase5z_protocol_sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4",
+  "rules": {
+    "checkpoint_selection": false,
+    "cross_variant_inferential_CI": false,
+    "equal_target_descriptive_macro": true,
+    "existing_subject_bootstrap_CI_only": true,
+    "fault_resampling": false,
+    "new_inferential_CI": false,
+    "new_subject_bootstrap": false,
+    "new_timing_event_bootstrap": false,
+    "nonfinite_or_unavailable_drop": false,
+    "nonfinite_or_unavailable_imputation": false,
+    "protocol_change": false,
+    "rank_based_selection": false,
+    "record_weighted_pooling": false,
+    "scalar_robustness_score": false,
+    "target_macro_inferential_CI": false,
+    "threshold_retuning": false
+  },
+  "schema_version": "phase5ah_compute_fi_cc_scientific_interpretation_v1",
+  "status": "FROZEN_SCIENTIFIC_INTERPRETATION_CONTRACT",
+  "target_policy": {
+    "common_target_count": 10,
+    "common_targets": [
+      "classifier_output_fp32",
+      "conv2_dequantized_output_fp32",
+      "fc1_output_fp32",
+      "fc2_prelu_output_fp32",
+      "flatten_buffer_fp32",
+      "front_end_output_fp32",
+      "post_conv2_dropout_fp32",
+      "post_conv2_pool_fp32",
+      "post_conv2_prelu_fp32",
+      "post_fc2_dequantized_buffer_fp32"
+    ],
+    "cross_variant_comparison": "common_targets_only",
+    "fp32_target_count": 10,
+    "ptq_only_target_count": 4,
+    "ptq_only_targets": [
+      "conv2_quantized_input",
+      "conv2_quantized_output",
+      "conv_2.0.weight",
+      "post_fc2_quantized_buffer"
+    ],
+    "ptq_target_count": 14
+  },
+  "unavailable_timing_semantics": {
+    "accepted_CC_unavailable_rows": 144,
+    "accepted_clean_unavailable_rows": 6,
+    "drop": false,
+    "impute": false,
+    "interpret_as_zero": false,
+    "macro_if_any_target_unavailable": "UNAVAILABLE_WITHOUT_IMPUTATION",
+    "metric": "median_trigger_lead_ms",
+    "representation": "null/null/null with status UNAVAILABLE_WITHOUT_IMPUTATION"
+  }
+}

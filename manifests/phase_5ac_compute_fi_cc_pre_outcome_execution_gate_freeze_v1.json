@@ -1,0 +1,124 @@
+{
+  "accepted_estate_cardinality": {
+    "artifact_directories": 1098,
+    "clean_caches": 366,
+    "clean_model_window_records": 1642980,
+    "fault_shards": 732,
+    "faulted_model_window_records": 29798820,
+    "outer_instance_ids": 20170008,
+    "phase5m_canary_clean_caches": 1,
+    "phase5m_canary_fault_shards": 1,
+    "phase5r_clean_caches": 365,
+    "phase5r_fault_shards": 731,
+    "stored_windows": 273830,
+    "subjects": 61,
+    "total_model_window_records": 31441800,
+    "trials": 6309
+  },
+  "authorization": {
+    "accepted_outer_label_load_authorized": false,
+    "accepted_outer_prediction_read_authorized": false,
+    "activation_after_final_executor_qualification_required": true,
+    "final_outcome_executor_implementation_authorized": true,
+    "final_outcome_executor_synthetic_static_qualification_authorized": true,
+    "outer_CC_metric_computation_authorized": false,
+    "outer_threshold_application_authorized": false,
+    "pre_outcome_gate_frozen": true
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AC_COMPUTE_FI_CC_PRE_OUTCOME_EXECUTION_GATE_V1.md",
+    "sha256": "ede87010c7a7b1a943e8a2205c198781ebaca0fa837fc4ea5685f4198106b2df"
+  },
+  "frozen_dependencies": {
+    "phase3_timing_manifest": {
+      "path": "manifests/phase_3n_final_protocol_freeze_v3.json",
+      "sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39"
+    },
+    "phase5aa_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+      "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66"
+    },
+    "phase5aa_qualification_manifest": {
+      "path": "manifests/phase_5aa_compute_fi_cc_analyzer_qualification_v1.json",
+      "sha256": "05c6c262751b766cddf8d2483ab270cca34cb446f2218d52732861ddf2f5714d"
+    },
+    "phase5aa_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5aa_compute_fi_cc_analyzer_qualification_v1/qualification.json",
+      "sha256": "2e7edad2d3aede47ce8edce68bf58fa6b6deeac15b108b69e8ff8774b9c03c45"
+    },
+    "phase5ab_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v1.py",
+      "sha256": "0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f"
+    },
+    "phase5ab_qualification_manifest": {
+      "path": "manifests/phase_5ab_compute_fi_cc_io_runner_qualification_v1.json",
+      "sha256": "5e0dbc7b66a6e85b04cabcecb8a08bc215f8e00506116356ea6b755ce1979116"
+    },
+    "phase5ab_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ab_compute_fi_cc_io_runner_qualification_v1/qualification.json",
+      "sha256": "ac8371f2655a6954f4463712ba2a4163f0274b92b213dad2cd5dfd2431f3cf9f"
+    },
+    "phase5e_execution_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5o_canary_technical_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5o_compute_fi_outer_canary_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "d67dba6513a62c8192137c3b19d1806db91e4b257cb17b6481ad11a86a897d72"
+    },
+    "phase5u_complete_estate_technical_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5u_compute_fi_outer_full_fleet_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "87932aebe474d515d5d43063724c8f3f0026084a6df40225e3666d83e3ae4f88"
+    },
+    "phase5z_protocol": {
+      "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+      "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+    }
+  },
+  "future_input_roots": {
+    "accepted_outer_result_root": {
+      "accessed_during_phase5ac": false,
+      "listed_during_phase5ac": false,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5_outer_compute_fi_prospective_v1",
+      "stat_performed_during_phase5ac": false
+    },
+    "outer_dataset_root": {
+      "label_array_loaded_during_phase5ac": false,
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/data/UniVrFall_KFall_NoOF/segments/300ms_50ov_npseg_filt_binary",
+      "payload_accessed_during_phase5ac": false
+    },
+    "timing_source": {
+      "rule": "Resolve timing/risk inputs only through the exact hash-bound Phase-3 timing manifest; no alternate risk/timing source may be substituted."
+    }
+  },
+  "gate": {
+    "path": "configs/evaluation/phase5ac_compute_fi_cc_pre_outcome_execution_gate_v1.json",
+    "sha256": "2850a03b1f07893ee77c7a52d35bd77cb14f50ca4168289f608123485b633f17"
+  },
+  "generated_date": "2026-10-06",
+  "next_action": "Implement and synthetically/statically qualify the final end-to-end prospective CC outcome executor without opening accepted prediction JSONL or outer label arrays.",
+  "phase": "5AC",
+  "regression_test": {
+    "path": "tests/test_phase5ac_compute_fi_cc_pre_outcome_execution_gate.py",
+    "sha256": "bc7815cb2551f5174d8a80419ee018a91a81e34b3f75f3f6b9184b3eaed62ccf"
+  },
+  "schema_version": "phase5ac_compute_fi_cc_pre_outcome_execution_gate_freeze_v1",
+  "scientific_boundary": {
+    "CSC_result_generated": false,
+    "accepted_clean_outputs_jsonl_opened": false,
+    "accepted_fault_outputs_jsonl_opened": false,
+    "accepted_outer_label_array_loaded": false,
+    "accepted_outer_result_root_accessed": false,
+    "accepted_outer_root_listed": false,
+    "accepted_outer_root_stat_performed": false,
+    "accepted_prediction_json_deserialized": false,
+    "aggregate_CC_result_generated": false,
+    "fault_execution_executed": false,
+    "model_forward_executed": false,
+    "model_loaded": false,
+    "onfield_used": false,
+    "outer_CC_metric_computed": false,
+    "outer_threshold_applied": false
+  },
+  "status": "FROZEN_PRE_OUTCOME_CC_EXECUTION_GATE"
+}

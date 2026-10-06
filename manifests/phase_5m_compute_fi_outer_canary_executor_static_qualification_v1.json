@@ -1,0 +1,72 @@
+{
+  "authorization": {
+    "authorized_clean_cache_id": "p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b",
+    "authorized_shard_count": 1,
+    "authorized_shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+    "full_fleet_execution_authorized": false
+  },
+  "documentation": {
+    "path": "docs/PHASE_5M_COMPUTE_FI_OUTER_CANARY_EXECUTOR_STATIC_QUALIFICATION_V1.md",
+    "sha256": "65aaebf2aec158ed0baf01345f190bda2cf275b2f80d31b6f26b31a74ce80fa6"
+  },
+  "evidence_tier": "P0",
+  "execution_state": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "np_load_executed": false,
+    "outer_fault_execution_executed": false,
+    "outer_model_forward_executed": false,
+    "outer_model_loaded": false,
+    "outer_payload_read": false,
+    "outer_prediction_read": false,
+    "outer_shard_executed": false,
+    "torch_load_executed": false
+  },
+  "executor": {
+    "path": "experiments/phase_05/compute_fi_outer_canary_executor_v1.py",
+    "sha256": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645"
+  },
+  "forward_budget": {
+    "clean": 2481,
+    "faulted": 24810,
+    "total": 27291
+  },
+  "next_action": "Run exactly one execute-canary invocation using this frozen executor SHA and the Phase-5L config; do not authorize any additional shard.",
+  "phase": "5M",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "phase5k_fault_only_module": {
+    "path": "experiments/phase_05/compute_fi_fault_only_execution_v1.py",
+    "sha256": "f8bb4095bbfedc69c24fa4cc6e79ccf4914e14fa502ce080a06de01e740112cb"
+  },
+  "phase5l_config": {
+    "path": "configs/evaluation/phase5l_compute_fi_outer_canary_execution_v1.json",
+    "sha256": "b169e2997499dfb75927938d98d39018d01f60a93e04148d2b4fcb70f30692be"
+  },
+  "phase5l_manifest": {
+    "path": "manifests/phase_5l_compute_fi_outer_canary_execution_freeze_v1.json",
+    "sha256": "51c2b91138766bef371fdd9c32e471b254f7f0b4203d62c90e24dc24868086fa"
+  },
+  "qualification_date": "2026-10-05",
+  "regression_test": {
+    "path": "tests/test_phase5m_compute_fi_outer_canary_executor.py",
+    "sha256": "b505cda3877a8ea7a7524846a09af06d8091037d98fd915a88d90f6530886d96"
+  },
+  "schema_version": "phase5m_compute_fi_outer_canary_executor_static_qualification_manifest_v1",
+  "static_qualification": {
+    "identity_rederivation_passed": true,
+    "labels_npy_access": false,
+    "outer_array_loader_confined_to_execution_path": true,
+    "paired_runner_delegation": false,
+    "phase5f_atomic_resume_bound": true,
+    "phase5k_fault_only_runner_bound": true,
+    "unauthorized_second_shard_rejected": true,
+    "validation_path_has_fault_runner": false,
+    "validation_path_has_model_loader": false,
+    "validation_path_has_np_load": false,
+    "validation_path_has_torch_load": false
+  },
+  "status": "QUALIFIED_STATIC_CANARY_EXECUTOR_PRE_OUTER"
+}

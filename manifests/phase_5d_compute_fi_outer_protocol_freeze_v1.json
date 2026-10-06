@@ -1,0 +1,81 @@
+{
+  "CC_outer_result_generated": false,
+  "CSC_result_generated": false,
+  "documentation": {
+    "path": "docs/PHASE_5D_COMPUTE_FI_OUTER_PROTOCOL_V1.md",
+    "sha256": "06d3621374ab3050e49568c192118affadc4d5cc613c26113cfbafb63f6228f1"
+  },
+  "evidence_tier": "P0",
+  "freeze_date": "2026-10-05",
+  "frozen_cardinality": {
+    "clean_C0_model_window_forwards": 1642980,
+    "execution_plan_must_freeze_exact_forward_count_before_execution": true,
+    "model_specific_fault_ids": {
+      "deprecated_as_primary_execution_key": true,
+      "meaning": "Legacy pre-repair field name retained for provenance. These counts are the planned variant/seed-specific outer execution records, not a claim that Phase-5A fault_id is globally unique across outer parents.",
+      "persistent": 454248,
+      "phase5a_fault_id_globally_unique_across_outer_parents": false,
+      "total": 20170008,
+      "transient": 19715760
+    },
+    "outer_execution_instance_ids": {
+      "cardinality_changed_by_repair": false,
+      "globally_parent_bound": true,
+      "persistent": 454248,
+      "primary_execution_key": "outer_instance_id",
+      "total": 20170008,
+      "transient": 19715760
+    },
+    "persistent_faulted_model_window_forwards": "DERIVE_EXACTLY_IN_EXECUTION_PLAN_FROM_FROZEN_TRIAL_WINDOW_COUNTS_AND_FROZEN_ONSETS_BEFORE_ANY_OUTER_MODEL_FORWARD",
+    "persistent_forward_count_may_change_sampling": false,
+    "unique_sampling_ids": {
+      "meaning": "Model-seed-independent sampling identities; common FP32 targets are shared across FP32/PTQ.",
+      "persistent": 88326,
+      "total": 3921946,
+      "transient": 3833620
+    }
+  },
+  "next_action": "Generate and qualify deterministic parent-bound outer identity, persistent exposure, shard, resume and artifact plan using frozen metadata only before any outer model forward.",
+  "outer_execution_instance_id_count": 20170008,
+  "outer_execution_performed": false,
+  "outer_sampling_plan_frozen": true,
+  "parent_commit": "54577387fa199081407e91ce9766b0f2b6b05417",
+  "phase": "5D",
+  "prerequisites": {
+    "phase5a_protocol_sha256": "279d5c9ebd865ae0d147ec62d0cd04d2ffb5d58d9c80544ee6c913f9a1964bd5",
+    "phase5a_qualification_sha256": "078da4d254ca91f468c842641ecc80f96878046407119f2362909d9157383fae",
+    "phase5b_qualification_sha256": "8293fc6b983ac40359c4dd7d358f79f9b00a8cece6c9a9649a07aa723cceadb1",
+    "phase5c_qualification_sha256": "e915a7ce99e0810e94864ae6ad0b198c0622399d04a4a247738863710284a932",
+    "primary_split_sha256": "93d3705b40506ceeb256556933fab59149987e3b3001c0ae5ca7d6d12bdaad7b"
+  },
+  "protocol": {
+    "path": "configs/evaluation/phase5d_compute_fi_outer_protocol_v1.json",
+    "sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5d_compute_fi_outer_protocol.py",
+    "sha256": "a0a082f1638144eba563af8d98cc1d54c24fdd6c499ee49ac807504d5f6eaa56"
+  },
+  "sampler": {
+    "path": "experiments/phase_05/compute_fi_outer_sampling_v1.py",
+    "sha256": "8886b74043ef9ba32f2cb8e999d318c340c239d818caad53f430594546d2417d"
+  },
+  "schema_version": "phase5d_compute_fi_outer_protocol_freeze_manifest_v1",
+  "status": "FROZEN_PROSPECTIVE_OUTER_COMPUTE_FI_PROTOCOL",
+  "target_inventory_summary": {
+    "common_fp32_targets": 10,
+    "ptq_only_targets": 4,
+    "unique_sampling_target_strata": 14,
+    "variant_target_strata": 24
+  },
+  "technical_identity_repair": {
+    "cardinality_changed": false,
+    "classification": "TECHNICAL_IDENTITY_NAMESPACE_REPAIR_NOT_SAMPLING_PROTOCOL_CHANGE",
+    "outer_data_used": false,
+    "outer_execution_used": false,
+    "parent_bound_outer_instance_id_added": true,
+    "phase5a_fault_id_preserved": true,
+    "primary_execution_key": "outer_instance_id",
+    "sampling_coordinates_changed": false
+  }
+}

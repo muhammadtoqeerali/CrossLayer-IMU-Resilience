@@ -1,0 +1,51 @@
+{
+  "CSC_result_generated": false,
+  "aggregate_CC_result_generated": false,
+  "already_satisfied": {
+    "clean_caches": 1,
+    "fault_shards": 1
+  },
+  "authorization": {
+    "additional_outer_shards_executed_in_phase5p": 0,
+    "authorization_is_outcome_independent": true,
+    "full_fleet_completion_authorized": true,
+    "full_fleet_execution_started": false,
+    "new_fleet_executor_required": true
+  },
+  "documentation": {
+    "path": "docs/PHASE_5P_COMPUTE_FI_OUTER_FULL_FLEET_COMPLETION_GATE_V1.md",
+    "sha256": "cab821047c5251db8fd6a790324dca7d72901ae708bf2700f48756bfec59e143"
+  },
+  "evidence_tier": "P0",
+  "freeze_date": "2026-10-05",
+  "gate_config": {
+    "path": "configs/evaluation/phase5p_compute_fi_outer_full_fleet_completion_gate_v1.json",
+    "sha256": "1f8d6dbd6491cbacf21c0be25053201e0f38a9ad8e987261468611d220af3719"
+  },
+  "next_action": "Implement and qualify a Phase-5P-hash-bound fleet executor that reuses the accepted canary and can execute only the exact remaining Phase-5E complement; do not execute additional outer shards during executor qualification.",
+  "phase": "5P",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "phase5o_acceptance_freeze": {
+    "path": "manifests/phase_5o_compute_fi_outer_canary_technical_acceptance_freeze_v1.json",
+    "sha256": "09fe4836d954f98876656ebb383c306a60c444b6225dd1f99e1c67577bf1a74f"
+  },
+  "phase5o_technical_acceptance": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5o_compute_fi_outer_canary_technical_acceptance_v1/technical_acceptance.json",
+    "sha256": "d67dba6513a62c8192137c3b19d1806db91e4b257cb17b6481ad11a86a897d72"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5p_compute_fi_outer_full_fleet_completion_gate.py",
+    "sha256": "5897604e5f200b5111a74321fc544f23d5ed50c39d38c3962707312e2f819481"
+  },
+  "remaining_authorized": {
+    "clean_caches": 365,
+    "fault_shards": 731,
+    "model_window_evaluations": 31414509,
+    "outer_instance_ids": 20145198
+  },
+  "schema_version": "phase5p_compute_fi_outer_full_fleet_completion_gate_freeze_manifest_v1",
+  "status": "FROZEN_PROSPECTIVE_FULL_FLEET_COMPLETION_AUTHORIZATION"
+}

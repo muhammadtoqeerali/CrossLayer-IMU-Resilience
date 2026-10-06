@@ -1,0 +1,105 @@
+{
+  "base_phase5ac_gate": {
+    "path": "configs/evaluation/phase5ac_compute_fi_cc_pre_outcome_execution_gate_v1.json",
+    "sha256": "2850a03b1f07893ee77c7a52d35bd77cb14f50ca4168289f608123485b633f17"
+  },
+  "canonical_persistence_contract": {
+    "noncanonical_alias_authorized": false,
+    "noncanonical_consumer_literal": "persistent_from_onset_to_trial_end",
+    "persistent": "persistent_from_onset_until_trial_end",
+    "persistent_semantics": "fault applies from the frozen onset through the exact final trial window",
+    "transient": "transient_one_inference"
+  },
+  "generated_date": "2026-10-06",
+  "implementation_lineage": {
+    "historical_v2_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v2.py",
+      "sha256": "0cfb60c9b32951482ffcc5be0ca14ec49c91b7d669e43eddf39fe28f26d01da5"
+    },
+    "historical_v2_executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v2.py",
+      "sha256": "cfb5d618af37b5164c1e861fb6888b3c4dbe04caee2644a1218cd09f35b4aa50"
+    },
+    "historical_v2_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v2.py",
+      "sha256": "b8f14826f8d31c067f5753c633cec761b4b9e2ad2004e8367e38809e2fdc7bf2"
+    },
+    "v3_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v3.py",
+      "sha256": "22e7ac0d587527abd659585596a2c7b43df7af2f249c5aa594be566677e32544"
+    },
+    "v3_executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v3.py",
+      "sha256": "6b99d63805b2dfd64d1a44ec419cb9e9e5ca34573d1df4bdbe2083fdb12df61f"
+    },
+    "v3_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v3.py",
+      "sha256": "ad625947791a1d7763bacac17be2941382f2777349d02bc653053cfa123151d7"
+    }
+  },
+  "phase": "5AF-R4",
+  "phase5af_resume_authorized_by_r4": false,
+  "phase5z_protocol": {
+    "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+    "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+  },
+  "post_boundary_authority": {
+    "r3_authorization": {
+      "path": "configs/evaluation/phase5af_r3_post_boundary_continuation_authorization_v1.json",
+      "sha256": "ebc59be015964a53dee08a903d08a5ba8687bcc4f22fbb8cd936238a439613e3"
+    },
+    "r3_manifest": {
+      "path": "manifests/phase_5af_r3_post_boundary_continuation_authorization_freeze_v1.json",
+      "sha256": "45f5f49803b994a905db02483744cb8ddb8f22a3cf78522b487aabd81730fb1f"
+    }
+  },
+  "preserved_completed_production_shard": {
+    "created_under_r3_v2": true,
+    "must_not_be_deleted_or_rerun_by_r4": true,
+    "outcome_sha256": "0af87e1594c3ab1d70c9e839811daf7c5ebe096a7e2df04b5759c031e1432f4d",
+    "persistence": "transient_one_inference",
+    "shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+    "success_sha256": "e2ef23df95c901a89f753ee34a0dd621a009dc5af62af555b745a72bac1d24cf"
+  },
+  "prior_repair_evidence": {
+    "r2_manifest": {
+      "path": "manifests/phase_5af_r2_repaired_cc_execution_chain_qualification_v1.json",
+      "sha256": "8f2af6ee06656f11eaad39164f85fd1a85b37b0b6636396901492b9d1b08df4f"
+    },
+    "r2_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_r2_repaired_cc_execution_chain_qualification_v1/qualification.json",
+      "sha256": "edd64e473537aef3ba1d71de290bbcd311589f065662b23313cf6cef2de8641c"
+    }
+  },
+  "prohibited_during_r4": {
+    "CSC_generation": true,
+    "OnField_access": true,
+    "accepted_CC_metric_computation": true,
+    "accepted_threshold_application": true,
+    "aggregation_change": true,
+    "fault_membership_change": true,
+    "metric_change": true,
+    "model_forward": true,
+    "new_fault_execution": true,
+    "phase5af_production_resume": true,
+    "preserved_shard_delete": true,
+    "preserved_shard_rerun": true,
+    "scientific_protocol_change": true,
+    "threshold_change": true,
+    "uncertainty_change": true
+  },
+  "qualification_scope": {
+    "all_three_operating_points": true,
+    "canonical_persistent_end_to_end": true,
+    "dict_nan_nonfinite_compatibility_preserved": true,
+    "noncanonical_persistence_rejected": true,
+    "paired_clean_faulted_metrics": true,
+    "persistent_exact_suffix_validation": true,
+    "synthetic_only": true,
+    "transient_behavior_equivalence": true
+  },
+  "repair_reason": "Frozen Phase-5A/5E/5Z/5R and accepted persistent rows use persistent_from_onset_until_trial_end, while the analysis consumer used the noncanonical spelling persistent_from_onset_to_trial_end.",
+  "schema_version": "phase5af_r4_canonical_persistence_execution_chain_qualification_v1",
+  "scientific_protocol_changed": false,
+  "status": "POST_BOUNDARY_CANONICAL_PERSISTENCE_IMPLEMENTATION_REPAIR_PROTOCOL"
+}

@@ -1,0 +1,56 @@
+{
+  "activation": {
+    "accepted_canary_reuse_only": true,
+    "authorized_remaining_clean_caches": 365,
+    "authorized_remaining_fault_shards": 731,
+    "explicit_execution_command_required": true,
+    "full_fleet_execution_activated": true,
+    "full_fleet_execution_started": false,
+    "outcome_independent": true
+  },
+  "activation_config": {
+    "path": "configs/evaluation/phase5s_compute_fi_outer_full_fleet_execution_activation_v1.json",
+    "sha256": "3c47fc42aa257897d1d4df4e96378789da1849e263f7277265d90ff35d2482c8"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5S_COMPUTE_FI_OUTER_FULL_FLEET_EXECUTION_ACTIVATION_V1.md",
+    "sha256": "fa10c977c830ec13232ccc9ba8dbbfc15971ccc19567873cfcddb098913c868b"
+  },
+  "evidence_tier": "P0",
+  "execution_state": {
+    "CSC_result_generated": false,
+    "additional_outer_shards_executed_in_phase5s": 0,
+    "aggregate_CC_result_generated": false,
+    "executed_outer_clean_caches": 1,
+    "executed_outer_fault_shards": 1
+  },
+  "freeze_date": "2026-10-05",
+  "next_action": "Execute only the exact 731-shard Phase-5E complement using the exact Phase-5R executor after validating this Phase-5S activation SHA and all bound dependency hashes; reuse the accepted canary and do not perform scientific adaptation during execution.",
+  "phase": "5S",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "phase5p_completion_gate": {
+    "path": "configs/evaluation/phase5p_compute_fi_outer_full_fleet_completion_gate_v1.json",
+    "sha256": "1f8d6dbd6491cbacf21c0be25053201e0f38a9ad8e987261468611d220af3719"
+  },
+  "phase5r_executor": {
+    "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+    "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+  },
+  "phase5r_qualification_manifest": {
+    "path": "manifests/phase_5r_compute_fi_outer_full_fleet_executor_qualification_v1.json",
+    "sha256": "76a6b922f13508a50cc616376596c083f8b0075c24faaa00284b5c8d17e4bf78"
+  },
+  "phase5r_qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5r_compute_fi_outer_fleet_executor_qualification_v1/qualification.json",
+    "sha256": "d02d858e4c4c292e76fc60369d5483bf2fc2f87e95138aa59848851f045120f8"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5s_compute_fi_outer_full_fleet_execution_activation.py",
+    "sha256": "edf9673e86b8f80a9945fb885211a606498ad5983464132a1a9c272fba6ff451"
+  },
+  "schema_version": "phase5s_compute_fi_outer_full_fleet_execution_activation_freeze_manifest_v1",
+  "status": "FROZEN_FINAL_FULL_FLEET_EXECUTION_ACTIVATION"
+}

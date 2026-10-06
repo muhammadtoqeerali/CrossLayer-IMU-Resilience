@@ -1,0 +1,91 @@
+{
+  "CC_result_generated": false,
+  "CSC_result_generated": false,
+  "clean_cache_count": 366,
+  "documentation": {
+    "path": "docs/PHASE_5E_COMPUTE_FI_OUTER_EXECUTION_PLAN_V1.md",
+    "sha256": "afcd0142351e60b49dda0628fed00b6e3b8c5b24eb888a6d0750b6e26f3c19e8"
+  },
+  "evidence_tier": "P0",
+  "expected_totals": {
+    "clean_model_window_evaluations": 1642980,
+    "persistent_faulted_model_window_evaluations": 10083060,
+    "persistent_outer_instance_ids": 454248,
+    "total_faulted_model_window_evaluations": 29798820,
+    "total_model_window_evaluations_including_clean": 31441800,
+    "total_outer_instance_ids": 20170008,
+    "transient_faulted_model_window_evaluations": 19715760,
+    "transient_outer_instance_ids": 19715760,
+    "unique_sampling_ids": 3921946
+  },
+  "frozen_dependencies": {
+    "phase5d_protocol_sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36",
+    "phase5d_sampler_sha256": "8886b74043ef9ba32f2cb8e999d318c340c239d818caad53f430594546d2417d",
+    "primary_split_sha256": "93d3705b40506ceeb256556933fab59149987e3b3001c0ae5ca7d6d12bdaad7b"
+  },
+  "inventory": {
+    "fold_summary": {
+      "1": {
+        "subject_count": 13,
+        "trial_count": 1114,
+        "window_count": 49132
+      },
+      "2": {
+        "subject_count": 12,
+        "trial_count": 1310,
+        "window_count": 56103
+      },
+      "3": {
+        "subject_count": 12,
+        "trial_count": 1328,
+        "window_count": 57566
+      },
+      "4": {
+        "subject_count": 12,
+        "trial_count": 1202,
+        "window_count": 53618
+      },
+      "5": {
+        "subject_count": 12,
+        "trial_count": 1355,
+        "window_count": 57411
+      }
+    },
+    "header_version_counts": {
+      "(1, 0)": 6309
+    },
+    "persistent_onset_binding_sha256": "4d17d427c2f0af5e30405c641b3a5f50d5eaf3c8aeae872a90be6a11876705d2",
+    "segment_dtype_counts": {
+      "<f8": 6309
+    },
+    "subject_count": 61,
+    "subject_inventory_sha256": "139aa8efcf613770300f6cafbe04eb690d0ac20384bf914b72d5cc8dcd110208",
+    "trial_count": 6309,
+    "trial_inventory_sha256": "ffdd772db741c53ba452054e00ed8d9cba76412ed11ac4801edf4f5694f994d3",
+    "window_count": 273830
+  },
+  "metadata_only_qualification": true,
+  "next_action": "Implement and qualify the frozen Phase-5 outer executor and resume contract against synthetic/training-calibration-safe fixtures before any outer shard execution.",
+  "outer_fault_execution": false,
+  "outer_model_execution": false,
+  "outer_payload_read": false,
+  "outer_prediction_read": false,
+  "parent_commit": "54577387fa199081407e91ce9766b0f2b6b05417",
+  "phase": "5E",
+  "plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "planner": {
+    "path": "experiments/phase_05/compute_fi_outer_execution_plan_v1.py",
+    "sha256": "a7da66a136e217f18731cc02346beff5482f8752bbfeb24256634485848d452a"
+  },
+  "qualification_date": "2026-10-05",
+  "regression_test": {
+    "path": "tests/test_phase5e_compute_fi_outer_execution_plan.py",
+    "sha256": "0b0b4c535a75f4977f792b466f6716471459a8ae7d5c667b316bd64fba930534"
+  },
+  "schema_version": "phase5e_compute_fi_outer_execution_plan_qualification_v1",
+  "shard_count": 732,
+  "status": "QUALIFIED_FROZEN_DERIVED_EXECUTION_PLAN"
+}

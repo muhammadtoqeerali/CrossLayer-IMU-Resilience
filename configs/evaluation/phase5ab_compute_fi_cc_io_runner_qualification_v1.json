@@ -1,0 +1,72 @@
+{
+  "schema_version": "phase5ab_compute_fi_cc_io_runner_qualification_v1",
+  "phase": "5AB",
+  "generated_date": "2026-10-06",
+  "status": "FROZEN_PRE_OUTCOME_CC_IO_RUNNER_QUALIFICATION_PROTOCOL",
+  "evidence_tier": "P0",
+  "frozen_dependencies": {
+    "phase5z_protocol": {
+      "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+      "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+    },
+    "phase5aa_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+      "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66"
+    },
+    "phase5aa_qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5aa_compute_fi_cc_analyzer_qualification_v1/qualification.json",
+      "sha256": "2e7edad2d3aede47ce8edce68bf58fa6b6deeac15b108b69e8ff8774b9c03c45"
+    },
+    "phase5e_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase5m_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_canary_executor_v1.py",
+      "sha256": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645"
+    },
+    "phase5r_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+    },
+    "timing_manifest": {
+      "path": "manifests/phase_3n_final_protocol_freeze_v3.json",
+      "sha256": "782580b0557e5cd2f9284fc3784ce98097daa250f1101fe43aa4a8c0cd6e9c39"
+    },
+    "phase5u_acceptance": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5u_compute_fi_outer_full_fleet_technical_acceptance_v1/technical_acceptance.json",
+      "sha256": "87932aebe474d515d5d43063724c8f3f0026084a6df40225e3666d83e3ae4f88"
+    }
+  },
+  "qualification_scope": {
+    "synthetic_filesystem_only": true,
+    "hash_before_jsonl_parse": true,
+    "phase5r_success_marker_validation": true,
+    "phase5m_frozen_hash_validation": true,
+    "clean_sequence_join": true,
+    "fault_identity_grouping": true,
+    "phase5m_transient_window_adapter": true,
+    "phase5r_persistent_suffix_adapter": true,
+    "stored_label_normalization": true,
+    "label_length_guard": true,
+    "risk_index_join": true,
+    "historical_window_end_reconstruction": true,
+    "historical_fallback_truth_rule": true,
+    "tamper_abort_before_parse": true,
+    "malformed_json_abort": true
+  },
+  "prohibited_during_qualification": {
+    "accepted_outer_result_root_access": true,
+    "accepted_clean_outputs_jsonl_open": true,
+    "accepted_fault_outputs_jsonl_open": true,
+    "accepted_outer_labels_npy_load": true,
+    "outer_threshold_application": true,
+    "outer_CC_metric_computation": true,
+    "aggregate_CC_result_generation": true,
+    "CSC_generation": true,
+    "model_load": true,
+    "model_forward": true,
+    "fault_execution": true,
+    "OnField_access": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "CC_result_generated": false,
+  "CSC_result_generated": false,
+  "authorization": {
+    "legacy_phase5g_gate_remains_false": true,
+    "new_execution_config_required": true,
+    "outer_execution_authorized": true,
+    "outer_execution_performed": false
+  },
+  "documentation": {
+    "path": "docs/PHASE_5I_COMPUTE_FI_PRE_OUTER_NO_SELECTION_GATE_V1.md",
+    "sha256": "a77f607d55e6e48fa4766b186119d7cf7fc7176ce32c9ce50635d720b3f4e615"
+  },
+  "estate": {
+    "clean_caches": 366,
+    "fault_shards": 732,
+    "outer_instance_ids": 20170008,
+    "total_model_window_evaluations": 31441800
+  },
+  "evidence_tier": "P0",
+  "freeze_date": "2026-10-05",
+  "gate_config": {
+    "path": "configs/evaluation/phase5i_compute_fi_outer_execution_gate_v1.json",
+    "sha256": "ef7ab5c5dbf5959c37a7649a88ddfc7ca5a1839a7d98d0bd46b98bd6b7958fb3"
+  },
+  "next_action": "Create an execution configuration that binds this Phase-5I gate SHA and the frozen Phase-5E plan, then run a single governed outer canary shard before fleet execution.",
+  "no_selection_audit": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5i_compute_fi_pre_outer_gate_v1/no_selection_audit.json",
+    "sha256": "ffe073a22a4d29a9ade54a21f437731ccf6f05428b9c03b4afb04af62f42cc4d"
+  },
+  "no_selection_audit_passed": true,
+  "outer_fault_execution_executed": false,
+  "outer_model_forward_executed": false,
+  "outer_payload_read": false,
+  "outer_prediction_read": false,
+  "phase": "5I",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "phase5h_qualification": {
+    "path": "manifests/phase_5h_compute_fi_shard_style_execution_qualification_v1.json",
+    "sha256": "f028e6e12268e55f6863cfa70e98cf4b765b4120bcb928e29658b51cd1f64a94"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5i_compute_fi_pre_outer_gate.py",
+    "sha256": "39db1f8551f7c3af3de9e0de45de92526e5cccda3e97f977bfb4690540a5c462"
+  },
+  "schema_version": "phase5i_compute_fi_pre_outer_gate_freeze_manifest_v1",
+  "status": "FROZEN_PROSPECTIVE_OUTER_EXECUTION_AUTHORIZATION"
+}

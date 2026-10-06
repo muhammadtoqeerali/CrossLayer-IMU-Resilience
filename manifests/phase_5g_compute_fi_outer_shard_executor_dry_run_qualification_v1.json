@@ -1,0 +1,64 @@
+{
+  "CC_result_generated": false,
+  "CSC_result_generated": false,
+  "artifact_hash_checks": {
+    "fp32_checkpoints": 15,
+    "ptq_state_dicts": 15,
+    "ptq_torchscript": 15,
+    "total_model_artifacts": 45
+  },
+  "documentation": {
+    "path": "docs/PHASE_5G_COMPUTE_FI_OUTER_SHARD_EXECUTOR_DRY_RUN_V1.md",
+    "sha256": "88b14b1915efa96b9c852891ad81df2e446f0841e6f50e8c9b7bd969fc372174"
+  },
+  "dry_run_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5g_compute_fi_outer_shard_executor_dry_run_v1/dry_run.json",
+    "sha256": "bb4ad8244b6d4c0fd821dc40b5036eef5c82d17b7f291ba313035ff328abdbd0"
+  },
+  "evidence_tier": "P0",
+  "executor_config": {
+    "path": "configs/evaluation/phase5g_compute_fi_outer_shard_executor_v1.json",
+    "sha256": "3378f61ad6715151094d8a1fa3a2ed9718700fabfffe8842505e4eb71e436351"
+  },
+  "executor_implementation": {
+    "path": "experiments/phase_05/compute_fi_outer_shard_executor_v1.py",
+    "sha256": "7112f1ae046bac730729a26c5a858dc04ca257d29d8dedf1f9930607bd061cb2"
+  },
+  "metadata_plan_replay": "EXACT",
+  "next_action": "Implement and qualify complete transient/persistent shard-style execution on synthetic and training-calibration fixtures before enabling outer execution.",
+  "outer_execution_enabled": false,
+  "outer_execution_performed": false,
+  "outer_prediction_read": false,
+  "phase": "5G",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "phase5f_resume_core_qualification": {
+    "path": "manifests/phase_5f_compute_fi_outer_executor_resume_qualification_v1.json",
+    "sha256": "a77274b5f2f502342249977c175852e918dbc187612116e210b84b0f4b3de01b"
+  },
+  "plan_summary": {
+    "clean_cache_count": 366,
+    "clean_model_window_evaluations": 1642980,
+    "fp32_shards": 366,
+    "persistent_faulted_model_window_evaluations": 10083060,
+    "persistent_outer_instance_ids": 454248,
+    "persistent_shards": 366,
+    "ptq_shards": 366,
+    "shard_count": 732,
+    "total_faulted_model_window_evaluations": 29798820,
+    "total_model_window_evaluations_including_clean": 31441800,
+    "total_outer_instance_ids": 20170008,
+    "transient_faulted_model_window_evaluations": 19715760,
+    "transient_outer_instance_ids": 19715760,
+    "transient_shards": 366
+  },
+  "qualification_date": "2026-10-05",
+  "regression_test": {
+    "path": "tests/test_phase5g_compute_fi_outer_shard_executor_dry_run.py",
+    "sha256": "6c517d88f431a361d9ad9fb8f2851ab5dfd8e8fa33ed0c6a420f7da170bff188"
+  },
+  "schema_version": "phase5g_compute_fi_outer_shard_executor_dry_run_qualification_v1",
+  "status": "QUALIFIED_732_SHARD_DRY_RUN"
+}

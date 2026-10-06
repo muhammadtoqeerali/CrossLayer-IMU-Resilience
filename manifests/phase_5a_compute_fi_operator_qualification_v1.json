@@ -1,0 +1,102 @@
+{
+  "acceptance": {
+    "FP32_nan_inf_not_sanitized": true,
+    "all_nonselected_payload_elements_unchanged": true,
+    "cross_trial_state_leakage": false,
+    "deterministic_target_mapping": true,
+    "double_flip_restores_exact_payload": true,
+    "exactly_one_selected_payload_bit_changes": true,
+    "persistent_schedule_exact": true,
+    "quantized_metadata_preserved": true,
+    "source_tensor_unchanged": true,
+    "transient_schedule_exact": true
+  },
+  "correction_record": {
+    "fault_family_names_changed": false,
+    "frozen_contract_changed": false,
+    "issue": "Initial operator implementation accepted qint8 quantized tensors only.",
+    "repair": "Added explicit quint8/uint8 activation and buffer payload support while retaining qint8/int8 weight semantics.",
+    "residual_repair": "Updated the schedule qualification clean-parent comparison from synthetic qint8 to synthetic quint8 so it matches the repaired activation representation.",
+    "weight_semantics_changed": false
+  },
+  "documentation": {
+    "path": "docs/PHASE_5A_COMPUTE_FI_OPERATOR_QUALIFICATION_V1.md",
+    "sha256": "5d3b691d2b7b8c80a6ae0be6bd5fde0a150d3d4c6d87ffdb1655d7d5a61671b9"
+  },
+  "frozen_representation_manifest": {
+    "path": "manifests/phase_5a_compute_fi_representation_protocol_freeze_v1.json",
+    "sha256": "c99b3d98dc965f4ff9b3cfa2d624f159f656fbe508a5d8cc4e67652d77a21a8e"
+  },
+  "frozen_representation_protocol": {
+    "path": "configs/faults/phase5a_compute_fi_representation_protocol_v1.json",
+    "sha256": "279d5c9ebd865ae0d147ec62d0cd04d2ffb5d58d9c80544ee6c913f9a1964bd5"
+  },
+  "next_action": "Proceed to paired clean/faulted synthetic execution harness qualification using exact qint8 weight and quint8 activation/buffer representations.",
+  "operator_regression_test": {
+    "path": "tests/test_phase5a_compute_fi_operators.py",
+    "sha256": "981daaca54ef1396d9228c646675d2959eced2c69e6e9fe08796f5c1ec47592a"
+  },
+  "operator_source": {
+    "path": "experiments/phase_05/compute_fi_operators.py",
+    "sha256": "663efc3d720e1b476e3c078c40a21b184e13abfda86cde8cfde6b6b38c783b91"
+  },
+  "outer_sampling_plan_frozen": false,
+  "parent_commit": "54577387fa199081407e91ce9766b0f2b6b05417",
+  "phase": "5A",
+  "provenance_tier": "P0",
+  "qualification_counts": {
+    "fp32_tensor_cases": 512,
+    "int8_scalar_cases": 2048,
+    "qint8_tensor_cases": 128,
+    "quint8_tensor_cases": 128,
+    "real_fp32_tensor_cases": 4,
+    "real_ptq_cases": 4
+  },
+  "qualification_date": "2026-10-05",
+  "qualification_source": {
+    "path": "experiments/phase_05/qualify_compute_fi_operators_v1.py",
+    "sha256": "f87f7227f7fa17d01cdaa1d39d66498e47c58c362ab7ef213cba06dd28d977f8"
+  },
+  "representation_coverage": {
+    "fp32_activation_buffer": {
+      "integer_reinterpretation": "uint32",
+      "torch_dtype": "torch.float32"
+    },
+    "persistent_weight": {
+      "integer_payload_dtype": "torch.int8",
+      "qualified_role": "conv_2.0.weight",
+      "torch_dtype": "torch.qint8"
+    },
+    "quantized_activation_buffer": {
+      "integer_payload_dtype": "torch.uint8",
+      "qualified_roles": [
+        "quantized_activation",
+        "quantized_buffer"
+      ],
+      "torch_dtype": "torch.quint8"
+    }
+  },
+  "schema_version": "phase5a_compute_fi_operator_qualification_manifest_v1",
+  "scientific_boundary": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "dataset_read": false,
+    "faulted_model_inference": false,
+    "hardware_claim": false,
+    "model_forward_passes": 0,
+    "onfield_read": false,
+    "outer_test_read": false,
+    "physical_fault_equivalence": false
+  },
+  "source_execution": {
+    "operator_qualification": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5a_compute_fi_operator_qualification_v1/operator_qualification.json",
+      "sha256": "31fae824bbfbb1142dc7ffb9a3c91d8d60e8b670cc006b06c32a757abff4b12b"
+    },
+    "success_marker": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5a_compute_fi_operator_qualification_v1/_SUCCESS.json",
+      "sha256": "f47b8bc89016c91b28ee08f68f17ca6f407aa6e70e65fa075266b1a8798f1667"
+    }
+  },
+  "status": "QUALIFIED_BIT_EXACT_P0_OPERATORS"
+}

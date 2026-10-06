@@ -1,0 +1,94 @@
+{
+  "schema_version": "phase5af_r1_nonfinite_softmax_adapter_repair_v1",
+  "phase": "5AF-R1",
+  "generated_date": "2026-10-06",
+  "status": "POST_BOUNDARY_IMPLEMENTATION_COMPATIBILITY_REPAIR_PROTOCOL",
+  "scientific_protocol_changed": false,
+  "repair_reason": "Frozen Phase-5M/5R producers serialize nonfinite softmax values as one-key JSON dictionaries; V1 consumer attempted direct dtype=float conversion.",
+  "observed_accepted_representation": {
+    "accepted_record_count_scanned": 31441800,
+    "dict_valued_softmax_element_count": 61752,
+    "unexpected_dict_shape_count": 0,
+    "observed_dict_keys": ["nonfinite"],
+    "observed_nonfinite_tokens": ["nan"],
+    "clean_dict_valued_softmax_elements_observed": false,
+    "faulted_dict_valued_softmax_elements_observed": true
+  },
+  "producer_contract": {
+    "phase5m_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_canary_executor_v1.py",
+      "sha256": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645"
+    },
+    "phase5r_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+    },
+    "allowed_serialized_nonfinite_tokens": [
+      "nan",
+      "+inf",
+      "-inf"
+    ]
+  },
+  "frozen_scientific_contract": {
+    "phase5z_protocol": {
+      "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+      "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+    },
+    "phase5ae_activation": {
+      "path": "configs/evaluation/phase5ae_compute_fi_cc_outcome_execution_activation_v1.json",
+      "sha256": "f1a8d55601c5dfa766262f623e96b478c19c02d090e4e1d0cecb6b3e25a8eeb5"
+    },
+    "nonfinite_semantics": "restore the producer's serialized IEEE value exactly; do not impute or clip; preserve exact Phase-4 >= threshold comparison semantics",
+    "nan_threshold_behavior": "NaN >= threshold is false"
+  },
+  "implementation_lineage": {
+    "v1_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+      "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66",
+      "preserved": true
+    },
+    "v2_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v2.py",
+      "repair_scope": "serialized scalar decoding in softmax fields only"
+    },
+    "phase5ab_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v1.py",
+      "sha256": "0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f",
+      "modified": false
+    },
+    "phase5ad_executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v1.py",
+      "sha256": "e564d4db2e0dfe3ff0aa35cf9a30061455dc995eac0b94644bdbfa29e3e7d7a5",
+      "modified": false
+    }
+  },
+  "qualification_scope": {
+    "finite_behavior_equivalence_to_v1": true,
+    "nan_token_decode": true,
+    "positive_infinity_token_decode": true,
+    "negative_infinity_token_decode": true,
+    "unknown_token_abort": true,
+    "unexpected_dictionary_shape_abort": true,
+    "nan_threshold_nontrigger": true,
+    "nan_fault_scenario_reconstruction": true,
+    "historical_event_metric_nan_equivalence": true,
+    "no_outer_payload_use_during_requalification": true
+  },
+  "prohibited_during_repair_qualification": {
+    "phase5af_shard_resume": true,
+    "accepted_threshold_application": true,
+    "accepted_CC_metric_computation": true,
+    "scientific_protocol_change": true,
+    "threshold_change": true,
+    "metric_change": true,
+    "aggregation_change": true,
+    "uncertainty_change": true,
+    "stratum_change": true,
+    "member_change": true,
+    "fault_membership_change": true,
+    "CSC_generation": true,
+    "OnField_access": true,
+    "model_forward": true,
+    "fault_execution": true
+  }
+}

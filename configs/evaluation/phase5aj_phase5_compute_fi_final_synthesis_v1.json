@@ -1,0 +1,81 @@
+{
+  "accepted_estate": {
+    "CC_primary_strata": 720,
+    "R5_V3_shards": 731,
+    "clean_aggregate_rows": 30,
+    "clean_caches": 366,
+    "fault_records": 29798820,
+    "fault_shards": 732,
+    "grandfathered_R3_V2_transient_shards": 1,
+    "outer_instance_ids": 20170008,
+    "stored_windows": 273830,
+    "subjects": 61,
+    "trials": 6309,
+    "unique_clean_records": 1642980
+  },
+  "frozen_lineage": {
+    "phase5af_aggregate_sha256": "608a9f7c67b07a0c7b58df6ba6967943857d35e6c0856def8179fb6847317006",
+    "phase5af_execution_summary_sha256": "3415af6156d1dcdf6326948cdfe61f71cf8416be73396ae65f0700a661202089",
+    "phase5af_final_success_sha256": "0746c4c6d52a215dd85b7d943957aaf17dd0ad92eb739c892c80f4b2bb1742ac",
+    "phase5af_ordered_shard_outcome_set_sha256": "969b4c5a5b1795cce83119815afc866852c710ab784f25701cc6bfbbd93c07a4",
+    "phase5ag_technical_acceptance_sha256": "9bd147a666db08fa369a1f3f7a144a71415fe0fb71b6f513603a326343c63b19",
+    "phase5ah_scientific_interpretation_sha256": "3841ceb4a1af3ca2f1c32a7d1126ab3f94e6debbb46222f2635e694cec6012fb",
+    "phase5ai_manifest_sha256": "4cf491e940769091773ebe9587abafebb3b4969be50e61f790e0e2d3cc29bc93",
+    "phase5ai_scientific_report_sha256": "8a72edb086d255b45c9ad0fd6f9b0d207854611bfa052e6959e11f50a2f6e63f",
+    "phase5e_plan_sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54",
+    "phase5z_protocol_sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+  },
+  "generated_date": "2026-10-06",
+  "irreversible_governance": {
+    "CSC_claim_authorized": false,
+    "MCU_or_physical_realism_claim_authorized": false,
+    "OnField_fall_claim_authorized": false,
+    "new_phase5_inference_after_freeze_without_new_protocol": false,
+    "outer_results_may_modify_phase5_protocol": false,
+    "outer_results_may_resample_faults": false,
+    "outer_results_may_retune_threshold": false,
+    "outer_results_may_select_checkpoint": false,
+    "outer_results_may_select_fault_family": false,
+    "outer_results_may_select_model": false,
+    "outer_results_may_select_operating_point": false,
+    "outer_results_may_select_target": false,
+    "unavailable_timing_may_be_dropped": false,
+    "unavailable_timing_may_be_imputed": false
+  },
+  "next_action": "After this Phase-5 completion freeze passes regression, the uncommitted Phase-5 estate may be committed and pushed as one major Phase-5 completion commit. Any later combined CSC work requires its own prospective protocol and must not reuse Phase-5 outer results for selection.",
+  "phase": "5AJ",
+  "phase5_scope": {
+    "CSC_completed": false,
+    "OnField_used": false,
+    "compute_fault_engine": "COMPLETE",
+    "physical_or_MCU_validation_claim": false,
+    "prospective_CC_execution": "COMPLETE",
+    "regimes_completed": [
+      "C0",
+      "CC"
+    ],
+    "scientific_interpretation": "COMPLETE",
+    "scientific_reporting": "COMPLETE",
+    "technical_acceptance": "COMPLETE"
+  },
+  "schema_version": "phase5aj_phase5_compute_fi_final_synthesis_v1",
+  "scientific_findings": {
+    "CC_available_strata": 576,
+    "CC_timing_unavailable_without_imputation": 144,
+    "PTQ_less_adverse_descriptive": 21,
+    "PTQ_more_adverse_descriptive": 3,
+    "PTQ_only_targets": 4,
+    "clean_available_rows": 24,
+    "clean_timing_unavailable_without_imputation": 6,
+    "common_FP32_PTQ_targets": 10,
+    "common_target_available_comparisons": 24,
+    "paired_effect_semantics": "positive degradation means worse under compute fault",
+    "persistent_less_adverse_descriptive": 0,
+    "persistent_more_adverse_descriptive": 24,
+    "persistent_vs_transient_available_comparisons": 24,
+    "subject_primary_median_lead_robustness_conclusion": false,
+    "unavailable_subject_primary_metric": "median_trigger_lead_ms",
+    "universal_variant_superiority_claim": false
+  },
+  "status": "FROZEN_PHASE5_COMPUTE_FAULT_STUDY_COMPLETE"
+}

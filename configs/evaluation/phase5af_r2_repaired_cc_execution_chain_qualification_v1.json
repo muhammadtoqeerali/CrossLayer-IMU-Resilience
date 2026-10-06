@@ -1,0 +1,79 @@
+{
+  "schema_version": "phase5af_r2_repaired_cc_execution_chain_qualification_v1",
+  "phase": "5AF-R2",
+  "generated_date": "2026-10-06",
+  "status": "POST_BOUNDARY_REPAIRED_EXECUTION_CHAIN_QUALIFICATION_PROTOCOL",
+  "scientific_protocol_changed": false,
+  "base_phase5ac_gate": {
+    "path": "configs/evaluation/phase5ac_compute_fi_cc_pre_outcome_execution_gate_v1.json",
+    "sha256": "2850a03b1f07893ee77c7a52d35bd77cb14f50ca4168289f608123485b633f17"
+  },
+  "phase5z_protocol": {
+    "path": "configs/evaluation/phase5z_compute_fi_cc_outcome_analysis_protocol_v1.json",
+    "sha256": "3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4"
+  },
+  "phase5af_r1_repair": {
+    "qualification_result": {
+      "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_r1_nonfinite_softmax_adapter_repair_v1/qualification.json",
+      "sha256": "25e9a484ca8c9bd83cb936ab2d2349c7aa9d978737425fe1f83b12d1d650c2a4"
+    },
+    "manifest": {
+      "path": "manifests/phase_5af_r1_nonfinite_softmax_adapter_repair_v1.json",
+      "sha256": "08e4e9fd5f70d7e49db59128dd7fb95a1ef56c9ac099f96420541389ca01925a"
+    }
+  },
+  "implementation_lineage": {
+    "historical_v1_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+      "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66",
+      "modified": false
+    },
+    "v2_analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v2.py",
+      "sha256": "0cfb60c9b32951482ffcc5be0ca14ec49c91b7d669e43eddf39fe28f26d01da5"
+    },
+    "historical_v1_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v1.py",
+      "sha256": "0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f",
+      "modified": false
+    },
+    "v2_io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v2.py",
+      "sha256": "b8f14826f8d31c067f5753c633cec761b4b9e2ad2004e8367e38809e2fdc7bf2"
+    },
+    "historical_v1_executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v1.py",
+      "sha256": "e564d4db2e0dfe3ff0aa35cf9a30061455dc995eac0b94644bdbfa29e3e7d7a5",
+      "modified": false
+    },
+    "v2_executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v2.py",
+      "sha256": "cfb5d618af37b5164c1e861fb6888b3c4dbe04caee2644a1218cd09f35b4aa50"
+    }
+  },
+  "repair_scope": {
+    "v2_io_change": "bind existing I/O semantics to qualified V2 analyzer",
+    "v2_executor_change": "bind existing executor semantics to V2 analyzer/V2 I/O and require explicit repair binding",
+    "threshold_change": false,
+    "metric_change": false,
+    "aggregation_change": false,
+    "uncertainty_change": false,
+    "stratum_change": false,
+    "checkpoint_membership_change": false,
+    "fault_membership_change": false,
+    "CSC_change": false,
+    "OnField_change": false
+  },
+  "qualification_scope": {
+    "synthetic_estate_only": true,
+    "finite_path_equivalence": true,
+    "dict_nan_end_to_end_transient": true,
+    "dict_nan_end_to_end_persistent": true,
+    "nonfinite_accounting": true,
+    "frozen_threshold_semantics": true,
+    "paired_clean_counterfactual": true,
+    "repair_hash_binding": true,
+    "accepted_payload_use": false
+  },
+  "phase5af_resume_authorized": false
+}

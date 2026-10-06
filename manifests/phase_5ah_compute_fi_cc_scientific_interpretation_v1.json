@@ -1,0 +1,120 @@
+{
+  "CC_equal_target_macro_summary_csv": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ah_compute_fi_cc_scientific_interpretation_v1/cc_equal_target_macro_summary.csv",
+    "sha256": "cbea2a21b79d2666ce921b444f8393c2b3088f0bf8a8a81cec03c88d05095c55"
+  },
+  "CC_primary_strata_csv": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ah_compute_fi_cc_scientific_interpretation_v1/cc_primary_strata.csv",
+    "sha256": "0871b2a84915ea4452b00df439d64b796bc788b89e29a0ce0a7f4d0365bcde2d"
+  },
+  "availability_accounting": {
+    "CC_available": 576,
+    "CC_unavailable_without_imputation": 144,
+    "clean_available": 24,
+    "clean_unavailable_without_imputation": 6,
+    "unavailable_metric": "median_trigger_lead_ms"
+  },
+  "clean_absolute_metrics_csv": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ah_compute_fi_cc_scientific_interpretation_v1/clean_absolute_metrics.csv",
+    "sha256": "d1b0c225facf1c4bb70852798cb6643875e2afddad8ef4450c8d8099d1c7a7e7"
+  },
+  "common_target_FP32_PTQ_comparison_csv": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ah_compute_fi_cc_scientific_interpretation_v1/common_target_fp32_ptq_comparison.csv",
+    "sha256": "ce554b72770d9a85bc492c17312ae8e42a95f769f1e0f244326adf28c2fadbf9"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AH_COMPUTE_FI_CC_SCIENTIFIC_INTERPRETATION_V1.md",
+    "sha256": "fc3c5bd3a3d0089205d1deb44a5a04b6a75a976665f388359b16ad7afc68be09"
+  },
+  "generated_date": "2026-10-06",
+  "interpretation_boundary": {
+    "CSC_generated": false,
+    "OnField_used": false,
+    "best_family_selected": false,
+    "best_target_selected": false,
+    "best_variant_selected": false,
+    "checkpoint_selection": false,
+    "common_target_variant_comparison_descriptive_only": true,
+    "existing_subject_bootstrap_CI_interpreted": true,
+    "fault_resampling": false,
+    "model_forward_executed": false,
+    "new_fault_execution": false,
+    "new_inferential_CI_created": false,
+    "new_subject_bootstrap_performed": false,
+    "new_timing_event_bootstrap_performed": false,
+    "protocol_change": false,
+    "rank_based_selection": false,
+    "record_weighted_pooling": false,
+    "scalar_robustness_score": false,
+    "target_macro_descriptive_only": true,
+    "threshold_retuning": false,
+    "unavailable_timing_preserved": true,
+    "unavailable_values_dropped": false,
+    "unavailable_values_imputed": false
+  },
+  "interpretation_contract": {
+    "path": "configs/evaluation/phase5ah_compute_fi_cc_scientific_interpretation_v1.json",
+    "sha256": "5c043f1758a2cc56bf5756bdf09c37fae5acd5a65c572a6b4fd1f0fab154605b"
+  },
+  "interpretation_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5ah_compute_fi_cc_scientific_interpretation_v1/interpretation.json",
+    "sha256": "3841ceb4a1af3ca2f1c32a7d1126ab3f94e6debbb46222f2635e694cec6012fb"
+  },
+  "next_action": "Freeze and report the Phase-5AH findings, explicitly reporting median-trigger-lead subject-primary summaries as unavailable without imputation rather than dropping or reconstructing them.",
+  "phase": "5AH",
+  "regression_test": {
+    "path": "tests/test_phase5ah_compute_fi_cc_scientific_interpretation.py",
+    "sha256": "215802e1574bd8074f4c059bf803ff83c81b3748584c95fd2b672b9d7950409c"
+  },
+  "schema_version": "phase5ah_compute_fi_cc_scientific_interpretation_manifest_v1",
+  "status": "SCIENTIFICALLY_INTERPRETED_FROZEN_CC_AGGREGATE_WITH_UNAVAILABLE_TIMING_PRESERVED",
+  "target_sets": {
+    "common_targets": [
+      "classifier_output_fp32",
+      "conv2_dequantized_output_fp32",
+      "fc1_output_fp32",
+      "fc2_prelu_output_fp32",
+      "flatten_buffer_fp32",
+      "front_end_output_fp32",
+      "post_conv2_dropout_fp32",
+      "post_conv2_pool_fp32",
+      "post_conv2_prelu_fp32",
+      "post_fc2_dequantized_buffer_fp32"
+    ],
+    "fp32_only_targets": [],
+    "fp32_targets": [
+      "classifier_output_fp32",
+      "conv2_dequantized_output_fp32",
+      "fc1_output_fp32",
+      "fc2_prelu_output_fp32",
+      "flatten_buffer_fp32",
+      "front_end_output_fp32",
+      "post_conv2_dropout_fp32",
+      "post_conv2_pool_fp32",
+      "post_conv2_prelu_fp32",
+      "post_fc2_dequantized_buffer_fp32"
+    ],
+    "ptq_only_targets": [
+      "conv2_quantized_input",
+      "conv2_quantized_output",
+      "conv_2.0.weight",
+      "post_fc2_quantized_buffer"
+    ],
+    "ptq_targets": [
+      "classifier_output_fp32",
+      "conv2_dequantized_output_fp32",
+      "conv2_quantized_input",
+      "conv2_quantized_output",
+      "conv_2.0.weight",
+      "fc1_output_fp32",
+      "fc2_prelu_output_fp32",
+      "flatten_buffer_fp32",
+      "front_end_output_fp32",
+      "post_conv2_dropout_fp32",
+      "post_conv2_pool_fp32",
+      "post_conv2_prelu_fp32",
+      "post_fc2_dequantized_buffer_fp32",
+      "post_fc2_quantized_buffer"
+    ]
+  }
+}

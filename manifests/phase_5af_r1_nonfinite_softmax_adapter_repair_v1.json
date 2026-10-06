@@ -1,0 +1,38 @@
+{
+  "config": {
+    "path": "configs/evaluation/phase5af_r1_nonfinite_softmax_adapter_repair_v1.json",
+    "sha256": "969da940ee903500b66d1c491322bab6abc38814654c2b67b4e605de1235e836"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AF_R1_NONFINITE_SOFTMAX_ADAPTER_REPAIR_V1.md",
+    "sha256": "1e12f8d9f5afc2e589ecb59164afadbc83d262b9422883ea46256aeacb3fa3c8"
+  },
+  "generated_date": "2026-10-06",
+  "historical_v1_analyzer": {
+    "modified": false,
+    "path": "experiments/phase_05/cc_outcome_analyzer_v1.py",
+    "sha256": "74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66"
+  },
+  "next_action": "Create and synthetically qualify a repaired final outcome executor variant bound to the exact V2 analyzer, then freeze a post-boundary continuation authorization before Phase-5AF resumes.",
+  "phase": "5AF-R1",
+  "phase5af_resume_authorized": false,
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_r1_nonfinite_softmax_adapter_repair_v1/qualification.json",
+    "sha256": "25e9a484ca8c9bd83cb936ab2d2349c7aa9d978737425fe1f83b12d1d650c2a4"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_cc_outcome_analyzer_v2_repair_v1.py",
+    "sha256": "9cdcbd24157a78b16672f056f9b80fcfcf0b25bafe40e67819bd34fbb918edf4"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5af_r1_nonfinite_softmax_adapter_repair.py",
+    "sha256": "1a27903d6d2af1d47a804d2151094cb13227a160685b457b26de3a534c4594d4"
+  },
+  "repaired_v2_analyzer": {
+    "path": "experiments/phase_05/cc_outcome_analyzer_v2.py",
+    "sha256": "0cfb60c9b32951482ffcc5be0ca14ec49c91b7d669e43eddf39fe28f26d01da5"
+  },
+  "schema_version": "phase5af_r1_nonfinite_softmax_adapter_repair_manifest_v1",
+  "scientific_protocol_changed": false,
+  "status": "QUALIFIED_POST_BOUNDARY_NONFINITE_ADAPTER_REPAIR"
+}

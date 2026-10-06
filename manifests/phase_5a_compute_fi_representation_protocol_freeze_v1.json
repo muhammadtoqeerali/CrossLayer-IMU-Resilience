@@ -1,0 +1,103 @@
+{
+  "contract_source": {
+    "path": "experiments/phase_05/compute_fi_contract.py",
+    "sha256": "335efb0090318eb492e3ae1856dedbb4360840b2e49285f12a6ec14163791557"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5A_COMPUTE_FI_REPRESENTATION_PROTOCOL_V1.md",
+    "sha256": "53a2d9dd4d31fbdaf77825634920bb7955708260258b9d3e5016d60da5066fb7"
+  },
+  "fp32_bit_layout": {
+    "exponent": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "mantissa": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "sign": [
+      31
+    ]
+  },
+  "frozen_date": "2026-10-05",
+  "frozen_families": [
+    "int8_weight_single_bit_flip",
+    "quantized_activation_single_bit_flip",
+    "quantized_buffer_single_bit_flip",
+    "fp32_activation_single_bit_flip",
+    "fp32_buffer_single_bit_flip"
+  ],
+  "int8_weight_surface": {
+    "bit_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "element_count": 16384,
+    "model_variant": "ptq_v7",
+    "quantization_metadata_faulted": false,
+    "target": "conv_2.0.weight"
+  },
+  "next_action": "Implement and qualify exact compute-fault operators before freezing the outer sampling plan.",
+  "parent_commit": "54577387fa199081407e91ce9766b0f2b6b05417",
+  "phase": "5A",
+  "protocol": {
+    "path": "configs/faults/phase5a_compute_fi_representation_protocol_v1.json",
+    "sha256": "279d5c9ebd865ae0d147ec62d0cd04d2ffb5d58d9c80544ee6c913f9a1964bd5"
+  },
+  "provenance_tier": "P0",
+  "sampling_state": {
+    "initial_multiplicity": 1,
+    "outer_fault_instance_count_frozen": false,
+    "outer_replicate_cardinality_frozen": false,
+    "outer_sampling_plan_frozen": false,
+    "qualification_required_before_outer_plan": true
+  },
+  "schema_version": "phase5a_compute_fi_representation_protocol_freeze_v1",
+  "scientific_boundary": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "compute_fault_performance_result_generated": false,
+    "dataset_read_for_freeze": false,
+    "hardware_target_frozen": false,
+    "model_inference_executed_for_freeze": false,
+    "onfield_read": false,
+    "outer_test_read": false,
+    "physical_fault_equivalence_claim": false
+  },
+  "status": "FROZEN_PRE_OPERATOR_QUALIFICATION",
+  "title": "P0 Compute-FI Representation Protocol Freeze"
+}

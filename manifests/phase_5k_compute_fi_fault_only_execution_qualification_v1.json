@@ -1,0 +1,73 @@
+{
+  "CC_result_generated": false,
+  "CSC_result_generated": false,
+  "counts": {
+    "fault_only_sequence_executions": 70,
+    "qualification_cases": 14,
+    "sequence_windows_per_case": 5
+  },
+  "coverage": {
+    "active_mask_equal_to_paired": true,
+    "all_five_representation_families": true,
+    "embedded_clean_reference_forward": false,
+    "fault_id_equal_to_paired": true,
+    "faulted_output_bitwise_equal_to_paired": true,
+    "fp32_fault_only_one_model_forward_per_invocation": true,
+    "input_sha256_equal_to_paired": true,
+    "mutation_record_equal_to_paired": true,
+    "ptq_activation_buffer_one_interpreter_execution_per_invocation": true,
+    "ptq_weight_one_model_forward_per_invocation": true,
+    "ptq_weight_reset_clean": true,
+    "transient_and_persistent": true
+  },
+  "documentation": {
+    "path": "docs/PHASE_5K_COMPUTE_FI_FAULT_ONLY_EXECUTION_QUALIFICATION_V1.md",
+    "sha256": "27ee31e6327c0a65343adcb90cb980c9b57ebcb42eb455ca8f023660c5576e54"
+  },
+  "evidence_tier": "P0",
+  "fault_only_module": {
+    "path": "experiments/phase_05/compute_fi_fault_only_execution_v1.py",
+    "sha256": "f8bb4095bbfedc69c24fa4cc6e79ccf4914e14fa502ce080a06de01e740112cb"
+  },
+  "next_action": "Bind this fault-only module SHA, the Phase-5I gate SHA, and the deterministic Phase-5J canary binding in a canary-only execution configuration before reading any outer payload.",
+  "outer_execution_performed": false,
+  "phase": "5K",
+  "phase5i_gate": {
+    "path": "configs/evaluation/phase5i_compute_fi_outer_execution_gate_v1.json",
+    "sha256": "ef7ab5c5dbf5959c37a7649a88ddfc7ca5a1839a7d98d0bd46b98bd6b7958fb3"
+  },
+  "qualification_config": {
+    "path": "configs/evaluation/phase5k_compute_fi_fault_only_execution_qualification_v1.json",
+    "sha256": "16f4aff51fdf0d8be3d17639fd0eff7cf011345ab644ea1a8563c74fb12126c0"
+  },
+  "qualification_date": "2026-10-05",
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5k_compute_fi_fault_only_execution_qualification_v1/qualification.json",
+    "sha256": "dda8d57589b4ffa4e0864f90e03a2a5511a1f4c2b9132096dcee1fbec38997d2"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_compute_fi_fault_only_execution_v1.py",
+    "sha256": "e8a8d0995789805446f5284a07511daae083b955d817560206f4310190eb18f2"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5k_compute_fi_fault_only_execution.py",
+    "sha256": "ced66d4ae9cfe1ed5a39500cdd390903f0ad48793bdfb4df677340306216d0a0"
+  },
+  "schema_version": "phase5k_compute_fi_fault_only_execution_qualification_manifest_v1",
+  "scientific_boundary": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "onfield_used": false,
+    "outer_fault_execution_executed": false,
+    "outer_model_forward_executed": false,
+    "outer_prediction_read": false,
+    "outer_shard_executed": false,
+    "outer_test_payload_used": false,
+    "phase5d_identity_changed": false,
+    "phase5d_sampling_changed": false,
+    "phase5e_plan_changed": false,
+    "phase5i_gate_changed": false,
+    "training_calibration_payload_used": true
+  },
+  "status": "QUALIFIED_FAULT_ONLY_EXECUTION_EQUIVALENCE"
+}

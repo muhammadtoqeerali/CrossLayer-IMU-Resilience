@@ -1,0 +1,53 @@
+{
+  "CC_result_generated": false,
+  "CSC_result_generated": false,
+  "documentation": {
+    "path": "docs/PHASE_5F_COMPUTE_FI_OUTER_EXECUTOR_RESUME_QUALIFICATION_V1.md",
+    "sha256": "64e4a5c17b9ef95da99d6621ec5eaf0969d2b8469a6e10636851a6d6633dcd69"
+  },
+  "evidence_tier": "P0",
+  "executor": {
+    "path": "experiments/phase_05/compute_fi_outer_executor_v1.py",
+    "sha256": "77ee323f71a5dbf4c54cc454a5911849aa45c5d4bdcc6d63bb908d8cece363d0"
+  },
+  "fixture_case_count": 3,
+  "next_action": "Implement full frozen outer shard executor atop the qualified atomic/resume core and dry-run/hash-validate all 732 shards without model execution.",
+  "outer_execute_shard_api_enabled": false,
+  "outer_execution_performed": false,
+  "outer_instance_ids_unique": true,
+  "phase": "5F",
+  "phase5e_plan": {
+    "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+    "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "ptq_eager_torchscript_clean_bitwise_equal": true,
+  "qualification_config": {
+    "path": "configs/evaluation/phase5f_compute_fi_outer_executor_qualification_v1.json",
+    "sha256": "2a4f0bffba1de0db2f9402be83d040ce5cd0b76186a8d372247e65e7b791437b"
+  },
+  "qualification_date": "2026-10-05",
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5f_compute_fi_outer_executor_resume_qualification_v1/qualification.json",
+    "sha256": "2bcfc5ce73464632da7f04af8f177d044768ba69dc203e2ac26e9ac0fa7f99e9"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5f_compute_fi_outer_executor_resume.py",
+    "sha256": "a58337ab2f9290f9e91f548337b8ee11386a167d78e67e0057ee8287bf7f7d30"
+  },
+  "schema_version": "phase5f_compute_fi_outer_executor_resume_qualification_manifest_v1",
+  "scientific_boundary": {
+    "CC_result_generated": false,
+    "CSC_result_generated": false,
+    "onfield_used": false,
+    "outer_prediction_read": false,
+    "outer_shard_executed": false,
+    "outer_test_fault_execution_executed": false,
+    "outer_test_model_forward_executed": false,
+    "outer_test_payload_used": false,
+    "phase5e_plan_changed": false,
+    "sampling_changed": false,
+    "synthetic_resume_fixture_used": true,
+    "training_calibration_model_fixture_used": true
+  },
+  "status": "QUALIFIED_EXECUTOR_RESUME_CORE"
+}

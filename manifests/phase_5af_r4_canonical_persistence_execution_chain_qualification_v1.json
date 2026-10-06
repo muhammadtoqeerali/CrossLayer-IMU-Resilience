@@ -1,0 +1,87 @@
+{
+  "canonical_persistence_contract": {
+    "noncanonical_alias_authorized": false,
+    "noncanonical_consumer_literal": "persistent_from_onset_to_trial_end",
+    "persistent": "persistent_from_onset_until_trial_end",
+    "persistent_semantics": "fault applies from the frozen onset through the exact final trial window",
+    "transient": "transient_one_inference"
+  },
+  "documentation": {
+    "path": "docs/PHASE_5AF_R4_CANONICAL_PERSISTENCE_EXECUTION_CHAIN_QUALIFICATION_V1.md",
+    "sha256": "fc9f076ab7969a1973420252dedecc183e05e31d8b7f9cf3986bd826ff495986"
+  },
+  "generated_date": "2026-10-06",
+  "historical_v2_chain": {
+    "analyzer": {
+      "modified": false,
+      "path": "experiments/phase_05/cc_outcome_analyzer_v2.py",
+      "sha256": "0cfb60c9b32951482ffcc5be0ca14ec49c91b7d669e43eddf39fe28f26d01da5"
+    },
+    "executor": {
+      "modified": false,
+      "path": "experiments/phase_05/cc_outcome_executor_v2.py",
+      "sha256": "cfb5d618af37b5164c1e861fb6888b3c4dbe04caee2644a1218cd09f35b4aa50"
+    },
+    "io_runner": {
+      "modified": false,
+      "path": "experiments/phase_05/cc_outcome_io_runner_v2.py",
+      "sha256": "b8f14826f8d31c067f5753c633cec761b4b9e2ad2004e8367e38809e2fdc7bf2"
+    }
+  },
+  "next_action": "Freeze a new post-boundary continuation authorization binding the exact V3 chain and explicitly preserving the one completed transient R3/V2 shard.",
+  "phase": "5AF-R4",
+  "phase5af_resume_authorized": false,
+  "preserved_completed_production_shard": {
+    "created_under_r3_v2": true,
+    "must_not_be_deleted_or_rerun_by_r4": true,
+    "outcome_sha256": "0af87e1594c3ab1d70c9e839811daf7c5ebe096a7e2df04b5759c031e1432f4d",
+    "persistence": "transient_one_inference",
+    "shard_id": "p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9",
+    "success_sha256": "e2ef23df95c901a89f753ee34a0dd621a009dc5af62af555b745a72bac1d24cf"
+  },
+  "qualification_checks": {
+    "all_three_frozen_operating_points": true,
+    "canonical_persistent_end_to_end_v3_chain": true,
+    "canonical_persistent_exact_suffix_reconstruction": true,
+    "canonical_persistent_preserves_nonfinite_nan": true,
+    "exact_v3_module_hash_binding": true,
+    "noncanonical_persistence_alias_rejected": true,
+    "paired_clean_faulted_metrics_constructed": true,
+    "transient_end_to_end_v3_chain": true,
+    "transient_v2_v3_behavior_equivalent": true,
+    "v2_failure_mode_reproduced": true
+  },
+  "qualification_config": {
+    "path": "configs/evaluation/phase5af_r4_canonical_persistence_execution_chain_qualification_v1.json",
+    "sha256": "bd14058802318996192e859f86679d3214fe1bd9b638c7c04521bf070b4c0a59"
+  },
+  "qualification_result": {
+    "path": "/mnt/hdd16T/ToqeerHomeBackup/toqeer/Protechto-master_ori/results/phase5af_r4_canonical_persistence_execution_chain_qualification_v1/qualification.json",
+    "sha256": "7548f14b4bf95c615feeffd1a757312513cda70adabde4e6454b613cb968f036"
+  },
+  "qualifier": {
+    "path": "experiments/phase_05/qualify_cc_outcome_execution_chain_v3_persistence_repair_v1.py",
+    "sha256": "faa249c2c838d983a3dc33d6ec994a41a29cbf22db33a90184b58361ddef15ae"
+  },
+  "regression_test": {
+    "path": "tests/test_phase5af_r4_canonical_persistence_execution_chain.py",
+    "sha256": "b094e82b42c0f9c2455ad30c9822e85de2ecfdaf64ab63afe27a650366b67468"
+  },
+  "schema_version": "phase5af_r4_canonical_persistence_execution_chain_qualification_manifest_v1",
+  "scientific_protocol_changed": false,
+  "status": "QUALIFIED_POST_BOUNDARY_CANONICAL_PERSISTENCE_V3_CHAIN",
+  "v3_chain": {
+    "analyzer": {
+      "path": "experiments/phase_05/cc_outcome_analyzer_v3.py",
+      "sha256": "22e7ac0d587527abd659585596a2c7b43df7af2f249c5aa594be566677e32544"
+    },
+    "executor": {
+      "path": "experiments/phase_05/cc_outcome_executor_v3.py",
+      "sha256": "6b99d63805b2dfd64d1a44ec419cb9e9e5ca34573d1df4bdbe2083fdb12df61f"
+    },
+    "io_runner": {
+      "path": "experiments/phase_05/cc_outcome_io_runner_v3.py",
+      "sha256": "ad625947791a1d7763bacac17be2941382f2777349d02bc653053cfa123151d7"
+    }
+  }
+}

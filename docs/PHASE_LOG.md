@@ -1898,3 +1898,1499 @@ not claimed as Phase-4 deliverables and remain future governed work.
 
 Phase-4 completion manifest SHA256:
 `ca5db70026d94ea4831ceb233012ff4f299f34608e90c06654a0f5303e7fee9c`.
+
+## 2026-10-05 — Phase 5A compute-FI representation protocol frozen
+
+Phase 5 Compute Fault Engine work has begun with a frozen P0
+representation/identity contract before any compute-fault performance run.
+
+Frozen initial families:
+
+- INT8 persistent-weight single-bit flip;
+- quantized-activation single-bit flip;
+- quantized-buffer single-bit flip;
+- FP32-activation single-bit flip;
+- FP32-buffer single-bit flip.
+
+Structural boundary:
+
+- the qualified mixed-precision PTQ v7 model has one genuine INT8 persistent
+  weight tensor: `conv_2.0.weight`;
+- INT8 and FP32 corruption remain explicitly separate;
+- quantization metadata corruption is excluded from v1;
+- multiplicity is frozen at one for v1;
+- transient and within-trial persistent semantics are defined;
+- deterministic SHA-256 fault identity/replay is required.
+
+Scientific boundary:
+
+- no model inference was executed to create the freeze;
+- no dataset was read;
+- outer test and OnField remain prohibited;
+- no CC/CSC performance result exists;
+- evidence remains P0 software injection only;
+- no physical MCU/SEU/register/cache equivalence is claimed.
+
+Outer replicate cardinality and the final outer compute-FI sampling plan remain
+unfrozen until exact operator implementation and development-safe
+qualification pass.
+
+Protocol SHA256: `279d5c9ebd865ae0d147ec62d0cd04d2ffb5d58d9c80544ee6c913f9a1964bd5`.
+
+Freeze manifest SHA256: `c99b3d98dc965f4ff9b3cfa2d624f159f656fbe508a5d8cc4e67652d77a21a8e`.
+
+## 2026-10-05 — Phase 5A bit-exact compute-FI operators qualified
+
+The frozen Phase-5A P0 compute-FI representation contract now has a qualified
+bit-exact operator implementation.
+
+Qualification covered:
+
+- 2048 exhaustive signed-INT8 scalar bit cases;
+- 128 synthetic qint8 tensor element/bit cases;
+- 512 synthetic FP32 tensor element/bit cases;
+- frozen PTQ v7 `conv_2.0.weight` payload checks;
+- representative frozen FP32 checkpoint tensor checks;
+- exact transient and within-trial persistent schedule semantics;
+- exact restoration after the same bit is flipped twice;
+- preservation of quantized metadata;
+- preservation of FP32 NaN/Inf outcomes without sanitization;
+- no cross-trial state leakage.
+
+Scientific boundary:
+
+- no dataset was read;
+- no model forward pass was executed;
+- outer test and OnField were not read;
+- no CC or CSC task-performance result was generated;
+- evidence remains P0 software-level fault semantics only.
+
+The outer compute-FI sampling plan remains unfrozen.
+
+Qualification manifest SHA256: `c2ce24636f868c8f7d2a9c6250bc9a0364a7d423e49c80ea9fd5bdb61a414a9e`.
+
+Qualification result SHA256: `1f33743a6fd882dce8a844617d026a027dd9c435db56eb016f0f251448abccbd`.
+
+## 2026-10-05 — Phase 5A quantized activation/buffer dtype qualification corrected
+
+A pre-commit Phase-5A audit found a representation-specific implementation
+gap in the first compute-FI operator qualification:
+
+- the persistent PTQ v7 quantized weight `conv_2.0.weight` is
+  `torch.qint8` with `torch.int8` payload storage;
+- the actual PTQ v7 quantized activation and intermediate-buffer tensors are
+  `torch.quint8` with `torch.uint8` payload storage.
+
+The frozen fault taxonomy and eight-bit XOR semantics were already generic
+enough for the activation/buffer representation and therefore did not change.
+
+The operator implementation and qualification were corrected to:
+
+- retain exact qint8/int8 weight corruption semantics;
+- add exact quint8/uint8 activation and buffer corruption semantics;
+- preserve quantization metadata for both storage classes;
+- retain exact single-element/single-bit mutation and double-flip restoration;
+- use quint8 for transient/persistent quantized activation schedule
+  qualification and clean-parent restoration checks.
+
+No dataset, outer test or OnField evidence was used. No faulted task inference
+was performed. The outer compute-FI sampling plan remains unfrozen.
+
+Corrected qualification manifest SHA256: `078da4d254ca91f468c842641ecc80f96878046407119f2362909d9157383fae`.
+
+Corrected qualification result SHA256: `31fae824bbfbb1142dc7ffb9a3c91d8d60e8b670cc006b06c32a757abff4b12b`.
+
+## 2026-10-05 — Phase 5B paired synthetic compute-FI execution harness qualified
+
+The Phase-5 compute-fault execution layer now has a qualified paired
+clean/faulted synthetic harness.
+
+Qualification demonstrated:
+
+- exact frozen FP32 checkpoint reconstruction;
+- eager PTQ v7 reconstruction with strict frozen-state loading;
+- bitwise clean agreement between eager PTQ and frozen TorchScript;
+- execution of all five frozen Phase-5A fault families;
+- qint8/int8 persistent-weight injection;
+- quint8/uint8 quantized activation and buffer injection;
+- FP32 activation/buffer injection in FP32 and mixed-precision PTQ paths;
+- exact single-element/single-bit mutation records;
+- deterministic fault replay;
+- transient one-inference restoration;
+- persistent weight onset semantics;
+- clean reset at a new trial/session;
+- unchanged source checkpoint/PTQ/TorchScript artifact hashes.
+
+Scientific boundary:
+
+- qualification used synthetic 30x9 inputs only;
+- no dataset partition was read;
+- no outer test or OnField evidence was read;
+- no CC task-performance or CSC result was generated;
+- the outer compute-FI sampling plan remains unfrozen;
+- evidence remains P0 software FI only.
+
+Qualification manifest SHA256: `8293fc6b983ac40359c4dd7d358f79f9b00a8cece6c9a9649a07aa723cceadb1`.
+
+Qualification result SHA256: `ee699b11f9e4d37fadab798b5818fadd2f0f347404cf13705e558b222c5859dd`.
+
+## 2026-10-05 — Phase 5C real training-calibration paired compute-FI runner qualified
+
+The Phase-5 compute-FI paired runner was qualified on real frozen
+training-calibration inputs under a protocol frozen before execution.
+
+Qualification used all 15 prospective model-estate members and exactly 105
+predeclared paired cases: 30 FP32 cases and 75 PTQ-v7 cases.
+
+Each fold used its first lexicographically ordered identity from the frozen
+4096-window training-only calibration selection, with the same fold identity
+reused across seeds 42, 123, and 2025.
+
+Every case used the predeclared smoke coordinates:
+
+- element index 0;
+- bit position 0;
+- inference index 0;
+- transient-one-inference persistence;
+- multiplicity 1;
+- replicate index 0.
+
+These coordinates do not constitute the outer compute-FI sampling plan.
+
+All 15 eager PTQ reconstructions matched their frozen TorchScript references
+bit-for-bit on the selected real training-calibration input.
+
+All 105 fault IDs were unique, and active mutations changed exactly the
+selected payload element/bit with qint8, quint8, or FP32 representation
+semantics preserved as applicable.
+
+The first execution attempt stopped only during result metadata serialization:
+the frozen calibration identity label is textual (`Activity`/`Falling`) and
+was incorrectly converted to integer. The runner was repaired to preserve that
+label string. No model execution semantics, partition, fault coordinate,
+105-case matrix, protocol choice, or acceptance gate changed. The exact same
+frozen qualification was rerun.
+
+Source FP32 checkpoint, PTQ-state, and TorchScript hashes remained unchanged.
+
+No raw logits or probabilities were persisted. No accuracy, recall,
+specificity, threshold, timing, or other task-performance value participated
+in qualification or protocol selection.
+
+Validation, outer-test, and OnField partitions were explicitly prohibited.
+
+No CC outer-test result or CSC result was generated.
+
+The outer compute-FI sampling/cardinality plan remains unfrozen.
+
+Pre-execution protocol SHA256: `1df39a0c6b0c1e16e1ea3898a6dedecaafff93cbf7204e501f087da23e81333c`.
+
+Qualification manifest SHA256: `e915a7ce99e0810e94864ae6ad0b198c0622399d04a4a247738863710284a932`.
+
+Qualification result SHA256: `68a8d3b32bb86c0aa822e398a07c45c2d34821ba20bc23c9da8cf6b00375ab26`.
+
+## 2026-10-05 — Phase 5D prospective outer compute-FI protocol frozen
+
+The prospective Phase-5 outer compute-FI protocol was frozen before any
+compute-fault outer-test model execution.
+
+The frozen outer population is 61 subjects, 6,309 trials, and 273,830 windows.
+
+All 15 checkpoint members remain required.
+
+The five qualified compute-fault families remain required.
+
+The target estate contains:
+
+- 10 FP32 targets common to FP32 and PTQ;
+- 4 PTQ-only targets;
+- 14 model-independent sampling target strata;
+- 24 variant-specific target strata.
+
+Sampling uses one deterministic multiplicity-1, replicate-0 bit fault per
+eligible target and parent.
+
+Both frozen temporal modes are retained:
+
+- transient one-inference faults, parented by outer windows;
+- persistent-from-onset faults, parented by outer trials.
+
+SHA-256 selects target element, bit, and persistent onset. Global RNG state is
+not used.
+
+Checkpoint seed and model variant are excluded from sampling-coordinate
+identity. Therefore logical coordinates are reused across all three checkpoint
+seeds and, for common FP32 targets, across FP32 and PTQ. Model-specific
+FaultIdentity records remain distinct.
+
+Frozen cardinality:
+
+- transient model-independent sampling IDs: 3,833,620;
+- persistent model-independent sampling IDs: 88,326;
+- total model-independent sampling IDs: 3,921,946;
+- transient model-specific fault IDs: 19,715,760;
+- persistent model-specific fault IDs: 454,248;
+- total model-specific fault IDs: 20,170,008;
+- clean C0 window forwards: 1,642,980.
+
+Persistent model-forward exposure will be derived exactly from frozen
+trial-window counts and deterministic onset hashes in a separate execution-plan
+qualification before any outer model forward. That calculation may not alter
+sampling.
+
+Transient instances are alternate-world single-inference pairs and may not be
+concatenated into artificial faulted sequences.
+
+Persistent instances are coherent trial sequences with clean reset at trial
+boundaries.
+
+Non-finite outputs are never sanitized or silently coerced to Activity/Falling
+and must be explicitly reported.
+
+Primary uncertainty remains subject-level; overlapping windows are not
+independent uncertainty units. All three checkpoint seeds are equal-weighted
+within subject.
+
+Every predeclared target remains reportable. Outer outcomes cannot select
+targets, bits, families, metrics, checkpoint seeds, or persistence modes.
+
+Phase 5 will produce C0/CC only. CSC remains deferred to Phase 6.
+
+No outer arrays, outer predictions, outer model forwards, OnField evidence, or
+hardware/physical claims were used for this freeze.
+
+Protocol SHA256: `395689f0eaa1a3c3c3aa8c6fbdeadf52f7d49f73f8b15a3bda12daeb88d3c0dd`.
+
+Sampler SHA256: `6ad87aa55e9a553abc8f96cad8d7b8fbc72076acfa86e47a76e6226dd4f9c6e9`.
+
+Freeze manifest SHA256: `eda67d2e063517e422151dfb1b5cef50b07c4c2f7ae7344ed8b07ac24e27c214`.
+
+## 2026-10-05 — Phase 5D parent-bound outer execution identity technical repair
+
+A read-only post-freeze identity audit found that the qualified Phase-5A
+`fault_id` does not contain subject/task/trial/window parent identity.
+
+The Phase-5A identifier therefore remains the immutable mutation-specification
+ID, but it is not globally unique across outer parents.
+
+A technical identity repair added a separate parent-bound `outer_instance_id`.
+
+The identity hierarchy is now explicit:
+
+- `sampling_instance_id`: parent-bound, model-independent sampling identity;
+- `phase5a_fault_id`: unchanged model/checkpoint mutation-specification ID;
+- `outer_instance_id`: parent-bound model/checkpoint execution-record ID.
+
+`outer_instance_id` hashes the frozen sampling-instance ID, unchanged Phase-5A
+fault ID, model variant, and checkpoint seed.
+
+This technical repair changed no:
+
+- sampling payload;
+- element coordinate;
+- bit coordinate;
+- persistent onset;
+- target;
+- fault family;
+- persistence mode;
+- multiplicity;
+- replicate count;
+- reporting endpoint;
+- frozen cardinality.
+
+The planned parent-bound outer execution-record count remains **20,170,008**.
+
+The existing `model_specific_fault_ids` cardinality field is retained for
+provenance but is explicitly deprecated as a claim that Phase-5A `fault_id`
+itself is unique across outer parents.
+
+No outer data, predictions, model execution, fault injection, OnField evidence,
+CC result, or CSC result was used for the repair.
+
+Updated protocol SHA256: `0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36`.
+
+Updated sampler SHA256: `8886b74043ef9ba32f2cb8e999d318c340c239d818caad53f430594546d2417d`.
+
+Updated freeze manifest SHA256: `2330244d8a20658b1804e006574d410b191faf451cefb59481a62f7419518695`.
+
+## 2026-10-05 — Phase 5E deterministic outer compute-FI execution plan qualified
+
+The already-frozen Phase-5D prospective outer compute-FI protocol was converted
+into a deterministic, metadata-only, resumable execution plan.
+
+The planner reads only frozen JSON metadata, filesystem parent names, and
+`segments.npy` NPY headers.
+
+It does not open label payloads, call `np.load`, create a memmap, materialize
+signals, load a model, execute a model, inject a fault, or read outer
+predictions.
+
+The exact previously-qualified bindings were reproduced:
+
+- 61 outer subjects;
+- 6,309 outer trials;
+- 273,830 outer windows;
+- trial-window inventory SHA256
+  `ffdd772db741c53ba452054e00ed8d9cba76412ed11ac4801edf4f5694f994d3`;
+- subject inventory SHA256
+  `139aa8efcf613770300f6cafbe04eb690d0ac20384bf914b72d5cc8dcd110208`;
+- persistent-onset binding SHA256
+  `4d17d427c2f0af5e30405c641b3a5f50d5eaf3c8aeae872a90be6a11876705d2`.
+
+The immutable fault-shard unit is:
+
+`subject × model_variant × checkpoint_seed × persistence`.
+
+This produces exactly **732 fault shards**.
+
+Clean C0 inference uses **366 subject × variant × seed caches** shared between
+transient and persistent shards.
+
+Frozen execution cardinality remains:
+
+- transient outer instances: 19,715,760;
+- persistent outer instances: 454,248;
+- total outer instances: 20,170,008;
+- clean model-window evaluations: 1,642,980;
+- transient faulted model-window evaluations:
+  19,715,760;
+- persistent faulted model-window evaluations:
+  10,083,060;
+- total faulted model-window evaluations:
+  29,798,820;
+- total clean + faulted model-window evaluations:
+  31,441,800.
+
+Persistent exposure was derived from the already-frozen per-trial window counts
+and deterministic onset hashes. No sampling decision changed.
+
+Every fault shard references exactly one clean cache.
+
+`outer_instance_id` remains the required primary execution-record key, while
+Phase-5A `fault_id` remains unchanged mutation provenance.
+
+No CC result or CSC result exists yet.
+
+Planner SHA256: `a7da66a136e217f18731cc02346beff5482f8752bbfeb24256634485848d452a`.
+
+Execution-plan SHA256: `95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54`.
+
+Qualification manifest SHA256: `eb69004c52b389b0ad32e5de626a94de41683b761f523216a4290d5ef0772c95`.
+
+## 2026-10-05 — Phase 5F compute-FI executor/resume core qualified
+
+The atomic execution-record and resume core for the frozen Phase-5 compute-FI
+outer executor was qualified without executing any outer shard.
+
+The core reuses the already-qualified Phase-5 bit mutation and paired-execution
+primitives and adds no new fault semantics.
+
+Atomic artifact semantics are now qualified:
+
+- write to `<artifact_id>.partial`;
+- hash every declared output;
+- atomically rename the temporary directory to the final directory;
+- write `_SUCCESS.json` last;
+- reuse only when artifact ID, artifact kind, frozen plan hash, executor hash,
+  and every output SHA-256 match;
+- reject corrupted successful output;
+- reject partial final directories;
+- reject partial temporary directories;
+- require explicit recomputation for partial artifacts.
+
+Synthetic resume tests passed for first write, exact reuse, corrupted-output
+rejection, wrong-plan rejection, wrong-executor rejection, partial-final
+rejection, partial-temp rejection, and recomputation cleanup.
+
+Training-calibration integration was qualified on three representation classes:
+
+- FP32 activation;
+- PTQ quint8 activation;
+- PTQ qint8 weight.
+
+The reconstructed eager PTQ clean output remained bitwise equal to the frozen
+TorchScript reference.
+
+All fixture execution records had unique parent-bound `outer_instance_id`
+values.
+
+No outer payload, outer model forward, outer fault execution, outer prediction,
+OnField evidence, CC result, or CSC result was used or generated.
+
+The full outer `execute-shard` path is intentionally still disabled.
+
+Executor SHA256: `77ee323f71a5dbf4c54cc454a5911849aa45c5d4bdcc6d63bb908d8cece363d0`.
+
+Qualification manifest SHA256: `a77274b5f2f502342249977c175852e918dbc187612116e210b84b0f4b3de01b`.
+
+## 2026-10-05 — Phase 5G outer compute-FI 732-shard dry run qualified
+
+The frozen Phase-5E execution plan was wired to a Phase-5G outer shard
+controller while retaining an explicit hard execution gate.
+
+`outer_execution_enabled = false`.
+
+The controller dry-run validated all **732 fault shards** and **366 clean
+caches** without model execution.
+
+The dry run SHA-256 verified all 45 frozen model artifacts:
+
+- 15 FP32 checkpoints;
+- 15 PTQ state dictionaries;
+- 15 PTQ TorchScript artifacts.
+
+The Phase-5E metadata/header-only plan regenerated exactly, including the
+trial inventory, subject inventory, persistent onset binding, clean-cache
+records, and every shard record.
+
+Frozen execution totals remain:
+
+- transient outer instances: 19,715,760;
+- persistent outer instances: 454,248;
+- total outer instances: 20,170,008;
+- clean model-window evaluations: 1,642,980;
+- transient faulted evaluations:
+  19,715,760;
+- persistent faulted evaluations:
+  10,083,060;
+- total faulted evaluations:
+  29,798,820;
+- total clean + faulted evaluations:
+  31,441,800.
+
+The `execute-shard` command was explicitly probed and correctly rejected before
+dataset/model access because the execution gate is false.
+
+The dry run used only filesystem metadata, `segments.npy` headers, JSON
+metadata, and SHA-256 artifact reads.
+
+It did not read segment payloads, open labels, call `np.load`, call
+`torch.load`, load a model, execute a model, invoke a fault operator, execute an
+outer shard, read an outer prediction, use OnField, or generate CC/CSC results.
+
+Phase-5D sampling/identity and the Phase-5E plan remain unchanged.
+
+Executor SHA256: `7112f1ae046bac730729a26c5a858dc04ca257d29d8dedf1f9930607bd061cb2`.
+
+Dry-run result SHA256: `bb4ad8244b6d4c0fd821dc40b5036eef5c82d17b7f291ba313035ff328abdbd0`.
+
+Qualification manifest SHA256: `7ea089c9465782ebe5baa45628b2720b02cec07a9c714ed2e83ba2db23b97fd5`.
+
+## 2026-10-05 — Phase 5H complete compute-FI shard-style execution qualified
+
+Complete transient and persistent shard-style compute-FI mechanics were
+qualified on frozen training-calibration fixtures while the outer execution
+gate remained false.
+
+The first execution attempt stopped before the first fault-shard execution
+because the qualifier's `shard_id` expression omitted one concatenation
+operator. Before that failure, permitted training-calibration payloads had been
+read, models and clean forwards had been exercised, and two clean-cache
+artifacts had been written. No fault shard had executed.
+
+The qualifier repair added only the missing concatenation operator. The frozen
+Phase-5H qualification configuration did not change. The failed result estate
+was discarded before the complete rerun.
+
+The complete rerun qualified:
+
+- 2 shared clean-cache artifacts;
+- 14 fault-shard fixture artifacts;
+- 7 transient shard fixtures;
+- 7 persistent shard fixtures;
+- 42 unique parent-bound execution records;
+- 70 per-window effect records.
+
+Transient active mask:
+
+`True, True, True, True, True`.
+
+Persistent active mask:
+
+`False, False, True, True, True`.
+
+All five representation families were covered.
+
+Common FP32 target coordinates were identical across FP32 and PTQ variants.
+
+The PTQ qint8 persistent-weight session was reset, and a distinct
+training-calibration trial proved post-reset bitwise equality to the clean PTQ
+model. Cross-trial leakage is rejected.
+
+All 16 final atomic fixture artifacts passed success-marker and output-hash
+reuse validation.
+
+A later regression failure was documentation-only: the literal phrase
+`omitted one concatenation operator` was split across two Markdown source
+lines. Only that line wrap was repaired. No execution artifact changed and no
+fixture rerun was performed.
+
+The next regression attempt failed only because the shell omitted the project
+`PYTHONPATH`, preventing import of `models.CNN`. Restoring the established
+Phase-5 Python import path required no source, result, protocol, or fixture
+change.
+
+No outer-test payload, outer model forward, outer fault execution, frozen outer
+shard execution, outer prediction, OnField evidence, CC result, or CSC result
+was used or generated.
+
+The outer execution gate remains false.
+
+Runtime SHA256: `b3bf60c2637a03fa9ddb364637171d7f5d81e5b367586b82bd94972d3e1f91e7`.
+
+Qualifier SHA256: `af6c072496be63257cce46ea5b2f6beea8807d2c395232b7b0e66b9cf3ab05cc`.
+
+Qualification result SHA256: `3f680e2ed4d1bfbf0654ddc8395a1d233e40891efd8e9d21e4f3ca104189ebd0`.
+
+Qualification manifest SHA256: `f028e6e12268e55f6863cfa70e98cf4b765b4120bcb928e29658b51cd1f64a94`.
+
+## 2026-10-05 — Phase 5I final pre-outer no-selection audit and execution authorization frozen
+
+The final Phase-5 pre-outer governance audit passed without reading or
+executing outer data.
+
+No prior Phase-5 manifest records completed outer execution, a CC result, or a
+CSC result.
+
+The frozen sampler and execution sources contain no executable logic for
+best/worst seed selection, fold selection, shard ranking, outer-metric-driven
+selection, threshold retuning, or adaptive fault resampling.
+
+The deterministic sampler contains no global Python/NumPy/Torch random
+sampling path and remains SHA-256-derived.
+
+The prospective estate remains complete and unchanged:
+
+- 61 subjects;
+- all 5 folds;
+- seeds 42, 123, and 2025;
+- FP32 and PTQ-v7;
+- transient and persistent modes;
+- 732 fault shards;
+- 366 clean caches;
+- 20,170,008 outer execution identities;
+- 31,441,800 total clean + faulted model-window evaluations.
+
+The frozen operating points remain:
+
+- balanced;
+- low_false_alarm;
+- timely_150ms.
+
+No single best seed/fold/member may replace the all-15 estate.
+
+Phase 5I freezes prospective authorization for exactly this estate:
+
+`outer_execution_authorized = true`.
+
+No outer shard is executed by this freeze.
+
+The prior Phase-5G dry-run gate remains false and unchanged. A new execution
+configuration must bind the Phase-5I gate SHA before outer execution can start.
+
+Outer outcomes remain prohibited from changing sampling, targets, elements,
+bits, onsets, persistence, multiplicity, thresholds, or operating points.
+
+OnField remains unavailable for tuning.
+
+Phase 5 remains C0/CC only; CSC remains Phase 6.
+
+No physical or MCU equivalence claim is made.
+
+No-selection audit SHA256: `ffe073a22a4d29a9ade54a21f437731ccf6f05428b9c03b4afb04af62f42cc4d`.
+
+Execution gate SHA256: `ef7ab5c5dbf5959c37a7649a88ddfc7ca5a1839a7d98d0bd46b98bd6b7958fb3`.
+
+Gate-freeze manifest SHA256: `9536dc626918e9f49dcd4b8af4f0e805747f80384d6f74a280d4c0d1e0d59c0a`.
+
+## 2026-10-05 — Phase 5K fault-only compute-FI execution qualified
+
+A source audit showed that the previously qualified paired execution harness
+performs a clean-reference forward in addition to the requested faulted
+forward.
+
+That paired behavior is correct for qualification but is incompatible with the
+frozen prospective Phase-5E forward accounting, where clean forwards are
+already budgeted separately through the clean-cache estate.
+
+Phase 5K therefore added a separate fault-only execution layer without
+modifying the paired harness.
+
+The new layer reuses the existing qualified target mappings, mutation
+operators, mutation-record validation, PTQ interpreter logic, and qint8 state
+mutation semantics.
+
+It contains no embedded clean-reference forward.
+
+Training-calibration equivalence qualification covered all five representation
+families under transient and persistent semantics: 14 cases and 70
+fault-only sequence executions.
+
+For every qualification inference, the fault-only path matched the paired
+harness in:
+
+- faulted output bitwise;
+- mutation record;
+- fault ID;
+- input SHA-256;
+- active/inactive schedule.
+
+FP32 and PTQ-weight paths were instrumented to prove one model forward per
+fault-only invocation. PTQ activation/buffer execution uses exactly one FX
+interpreter run per invocation.
+
+No outer payload, outer forward, outer fault, outer prediction, CC result, or
+CSC result was generated.
+
+Phase-5D sampling/identity, the Phase-5E plan, and Phase-5I authorization
+remain unchanged.
+
+Fault-only module SHA256: `f8bb4095bbfedc69c24fa4cc6e79ccf4914e14fa502ce080a06de01e740112cb`.
+
+Qualifier SHA256: `e8a8d0995789805446f5284a07511daae083b955d817560206f4310190eb18f2`.
+
+Qualification result SHA256: `dda8d57589b4ffa4e0864f90e03a2a5511a1f4c2b9132096dcee1fbec38997d2`.
+
+Qualification manifest SHA256: `120701fa970fe4b809353668d5d5eb14c8ae065a5e543992c3d5c2439c8815a7`.
+
+## 2026-10-05 — Phase 5L hash-bound canary-only outer execution configuration frozen
+
+A canary-only prospective outer execution configuration was frozen without
+reading or executing outer payloads.
+
+The first Phase-5L attempt stopped before writing the config because it assumed
+a non-existent `model_applicability` target field.
+
+A read-only schema probe established the frozen Phase-5D field is
+`model_variants`.
+
+The corrected binding uses:
+
+`"fp32" in target["model_variants"]`
+
+and yields exactly the 10 common FP32 targets already frozen in Phase 5D,
+matching the frozen canary target count exactly.
+
+No scientific protocol, sampling, identity, target, canary, or execution
+semantics changed.
+
+Exactly one fault shard is authorized:
+
+`p5e-o1-f5-s009-fp32-seed42-transient-6d97ac3095dc8dc9`
+
+Exactly one clean cache is authorized:
+
+`p5e-c0-f5-s009-fp32-seed42-e19b32428112a04b`.
+
+Every other shard remains unauthorized.
+
+Full-fleet execution remains unauthorized.
+
+The frozen canary forward budget is:
+
+- 2,481 clean forwards;
+- 24,810 faulted forwards;
+- 27,291 total forwards.
+
+Clean forwards are separate-cache only.
+
+Fault forwards are Phase-5K fault-only execution only.
+
+No embedded clean-reference fault-loop forward is permitted.
+
+No outer payload, outer model load, outer forward, outer fault execution,
+prediction, CC result, or CSC result existed at freeze.
+
+Phase-5L config SHA256: `b169e2997499dfb75927938d98d39018d01f60a93e04148d2b4fcb70f30692be`.
+
+Phase-5L manifest SHA256: `51c2b91138766bef371fdd9c32e471b254f7f0b4203d62c90e24dc24868086fa`.
+
+## 2026-10-05 — Phase 5M exact outer canary executor statically qualified
+
+The exact executor for the single Phase-5L-authorized canary was implemented
+without invoking its outer execution path.
+
+The validation path hard-binds the frozen Phase-5L config SHA and validates all
+frozen dependency hashes, the Phase-5E plan, checkpoint hash, 44-trial/2,481
+window canary inventory, 10 FP32 target mappings, and exact forward budget.
+
+Exactly the frozen shard-zero ID is accepted.
+
+The second Phase-5E shard was explicitly rejected before any signal-array or
+model access.
+
+Static call-path auditing proves `validate-config` and `validate-shard` contain
+no `np.load`, `torch.load`, model loader, fault runner, or execution-boundary
+call.
+
+Only the `execute-canary` path can reach the outer array loader.
+
+The executor implements a separate 2,481-forward clean-cache pass and a
+24,810-forward Phase-5K fault-only pass.
+
+No paired runner is used in the fault loop.
+
+The executor reuses Phase-5F atomic/resume semantics, with success markers bound
+to both the frozen Phase-5E plan SHA and exact executor source SHA.
+
+Fault records use the frozen Phase-5D sampler to rederive
+`sampling_instance_id`, element, bit, transient inference index, Phase-5A
+`fault_id`, and parent-bound `outer_instance_id`.
+
+No labels, thresholds, or metrics are read or computed by the executor.
+
+At qualification time no outer payload, model load, forward, fault execution,
+prediction, CC result, or CSC result was produced.
+
+Executor SHA256: `aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645`.
+
+Static qualification manifest SHA256: `55ef847d03a5cfac9ec55c9b7ab38358ea447a119fe1bc273ea9287f8d9914ee`.
+
+## 2026-10-05 — Phase 5O single outer canary technically accepted
+
+The single frozen Phase-5N outer canary was accepted on technical execution
+integrity only.
+
+Acceptance used no prediction-value interpretation and no scientific
+performance outcome.
+
+The accepted canary contains exactly:
+
+- 1 clean-cache artifact;
+- 1 fault-shard artifact;
+- 44 trials;
+- 2,481 windows;
+- 10 FP32 targets;
+- 2,481 clean forwards;
+- 24,810 faulted forwards;
+- 24,810 outer execution instances.
+
+Both atomic success markers validate.
+
+Every output-file hash bound by those success markers matches.
+
+The JSONL files contain exactly 2,481 clean records and 24,810 fault records.
+
+No partial or unauthorized artifact is present.
+
+No clean-reference forward occurred inside the fault loop.
+
+Prediction JSONL rows were not deserialized for Phase-5O acceptance.
+
+No labels or OnField data were read.
+
+No threshold, metric, or outcome-driven selection was computed.
+
+No sampling, identity, target, bit, onset, persistence, threshold, or operating
+point was changed.
+
+This technical acceptance is not an aggregate CC result.
+
+CSC remains absent.
+
+The remaining 731 fault shards remain unexecuted and full-fleet authorization
+remains false.
+
+Technical acceptance result SHA256: `d67dba6513a62c8192137c3b19d1806db91e4b257cb17b6481ad11a86a897d72`.
+
+Acceptance freeze manifest SHA256: `09fe4836d954f98876656ebb383c306a60c444b6225dd1f99e1c67577bf1a74f`.
+
+## 2026-10-05 — Phase 5P prospective full-fleet completion authorization frozen
+
+Prospective authorization to complete the exact frozen Phase-5E outer estate
+was frozen after Phase-5O technical canary acceptance.
+
+The authorization uses only canary execution integrity and does not use
+prediction outcomes, labels, metrics, thresholds, OnField, or fault-effect
+magnitude.
+
+The already accepted canary is retained as satisfied estate:
+
+- 1 fault shard;
+- 1 clean cache;
+- 24,810 outer execution instances;
+- 27,291 model-window evaluations.
+
+The exact remaining Phase-5E complement is authorized:
+
+- 731 fault shards;
+- 365 clean caches;
+- 20,145,198 outer execution identities;
+- 1,640,499 clean model-window evaluations;
+- 29,774,010 faulted model-window evaluations;
+- 31,414,509 remaining model-window evaluations.
+
+No subset was selected from canary outcome.
+
+The complete frozen estate remains exactly 732 fault shards, 366 clean caches,
+20,170,008 outer execution identities, and 31,441,800 total model-window
+evaluations.
+
+Phase 5P executes no additional shard.
+
+A new fleet executor is required before execution may continue. It must bind
+the Phase-5P gate SHA, reuse the accepted canary artifacts, preserve the
+Phase-5E estate exactly, and be qualified before any additional outer
+execution.
+
+No aggregate CC result or CSC result is generated by this freeze.
+
+Phase-5P gate SHA256: `1f8d6dbd6491cbacf21c0be25053201e0f38a9ad8e987261468611d220af3719`.
+
+Phase-5P manifest SHA256: `874bfa1fad5639c2d879439cdbd58cee75dbc32e2a40d7fc2f840f4c33a50c19`.
+
+## 2026-10-05 — Phase 5R full-fleet outer executor qualified pre-outer
+
+The Phase-5P-hash-bound full-fleet compute-FI executor was implemented and
+qualified before any additional outer execution.
+
+The executor supports all four frozen production execution classes: FP32
+transient, FP32 persistent, PTQ-v7 transient, and PTQ-v7 persistent.
+
+It preserves the frozen 10-target FP32 and 14-target PTQ-v7 inventories.
+
+Persistent onset bindings and exposure counts are rederived from the frozen
+Phase-5D/5E metadata before execution.
+
+Fault execution uses only Phase-5K fault-only interfaces.
+
+No paired fault runner or embedded clean-reference fault-loop forward is used.
+
+PTQ qint8 weight state is reset after every execution sequence.
+
+The accepted canary artifacts are hash-validated and reused.
+
+Training-calibration qualification used five real windows from frozen fold-1
+training-only calibration data and covered six production orchestration routes,
+for exactly 30 fault-only sequence executions.
+
+Transient active mask passed as `[True, True, True, True, True]`.
+
+Persistent active mask passed as `[False, False, True, True, True]`.
+
+PTQ eager clean inference matched the frozen TorchScript reference bitwise.
+
+PTQ qint8 weight reset passed after transient and persistent routes.
+
+A schema-only qualification repair changed one Phase-5K metadata assertion from
+the non-existent key `onfield_payload_used` to the actual frozen key
+`onfield_used`. The Phase-5R result field `onfield_payload_used=false` remained
+unchanged.
+
+No executor logic, protocol, qualification matrix, partition, sampling,
+identity, target, persistence, gate, or outer estate changed because of that
+repair.
+
+No validation or OnField payload was used.
+
+No additional outer-test payload, outer forward, or outer fault execution
+occurred.
+
+The outer estate remains exactly one executed canary fault shard and one clean
+cache.
+
+Full-fleet execution remains unstarted.
+
+No aggregate CC result and no CSC result exists.
+
+Phase-5R executor SHA256: `82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188`.
+
+Phase-5R qualifier SHA256: `423686e7a79d86b14e1c97b08b9ae8b61e721ada11eee42e7b59d7e980e9d4d9`.
+
+Phase-5R qualification result SHA256: `d02d858e4c4c292e76fc60369d5483bf2fc2f87e95138aa59848851f045120f8`.
+
+Phase-5R qualification manifest SHA256: `76a6b922f13508a50cc616376596c083f8b0075c24faaa00284b5c8d17e4bf78`.
+
+## 2026-10-05 — Phase 5S final full-fleet execution activation frozen
+
+Final prospective full-fleet execution activation was frozen without executing
+an additional outer shard.
+
+The activation binds the unchanged Phase-5E plan, Phase-5P completion gate,
+exact qualified Phase-5R executor, Phase-5R qualification result, and Phase-5R
+qualification manifest.
+
+The accepted canary remains reuse-only.
+
+The exact activated complement is:
+
+- 731 fault shards;
+- 365 clean caches;
+- 20,145,198 outer execution identities;
+- 1,640,499 clean forwards;
+- 29,774,010 faulted forwards;
+- 31,414,509 remaining model-window evaluations.
+
+After successful completion the estate must remain exactly the original
+Phase-5E totals: 732 fault shards, 366 clean caches, 20,170,008 outer execution
+identities, and 31,441,800 total model-window evaluations.
+
+Activation is outcome-independent and uses no prediction values, metrics,
+thresholds, labels, or OnField data.
+
+Phase 5S performs no model load, model forward, fault execution, or additional
+outer payload read.
+
+The first complete Phase-5 regression invocation after activation freeze failed
+during test collection only because the shell omitted the previously required
+Protech/CrossLayer PYTHONPATH entries. No scientific artifact, activation
+artifact, executor, outer payload, model state, or fault execution was changed.
+
+The regression was resumed under the restored environment without regenerating
+the Phase-5S activation artifacts.
+
+At activation freeze the outer estate remains exactly one accepted canary fault
+shard and one accepted clean cache.
+
+No aggregate CC result or CSC result exists.
+
+Phase-5S activation SHA256: `3c47fc42aa257897d1d4df4e96378789da1849e263f7277265d90ff35d2482c8`.
+
+Phase-5S freeze manifest SHA256: `5153fbce714594d7440e98191fadb06ac5b51ca01995f4243f80dadb053c77d8`.
+
+## 2026-10-06 — Phase 5U complete outer estate technically accepted
+
+The complete frozen Phase-5E compute-fault outer estate was technically
+accepted after full-fleet execution.
+
+Accepted cardinalities are exactly:
+
+- 732 fault shards;
+- 366 clean caches;
+- 1,098 atomic artifact directories;
+- 20,170,008 outer execution identities;
+- 1,642,980 clean records;
+- 29,798,820 faulted records;
+- 31,441,800 total model-window records.
+
+All Phase-5R-produced artifacts were verified against their atomic success
+markers, metadata, output hashes, and frozen Phase-5E cardinalities.
+
+The accepted Phase-5N canary was independently reverified against its frozen
+Phase-5O hashes.
+
+Record JSONL files were read only as binary streams for SHA256 verification,
+newline counting, and byte-size accounting.
+
+Prediction JSON rows were not deserialized.
+
+No prediction outcome, softmax value, class count, CC metric, threshold, label,
+or OnField payload was inspected or used.
+
+Post-execution regression explicitly deselects one frozen historical
+filesystem-state assertion:
+
+`tests/test_phase5r_compute_fi_outer_full_fleet_executor.py::test_outer_estate_remains_single_accepted_canary`
+
+That Phase-5R test correctly described the pre-fleet state but is no longer a
+valid assertion about the live result root after successful Phase 5T execution.
+
+The frozen Phase-5R test and frozen Phase-5R manifest remain byte-identical and
+hash-consistent; neither was rewritten to accommodate the later lifecycle
+state.
+
+No scientific sampling, identity, plan, gate, or executor changed.
+
+No aggregate CC result and no CSC result was generated.
+
+Phase-5U technical acceptance SHA256: `87932aebe474d515d5d43063724c8f3f0026084a6df40225e3666d83e3ae4f88`.
+
+Phase-5U freeze manifest SHA256: `5c82fb20f83ed7479efa85d50945313904f5046dc2c11c3e950e0b30c63559da`.
+
+## 2026-10-06 — Phase 5Z prospective CC outcome-analysis protocol frozen
+
+The prospective compute-only (`CC`) outcome-analysis contract was frozen
+before opening any Phase-5 prediction JSONL or loading any outer-test label
+array.
+
+The protocol binds:
+
+- the exact 45 validation-selected threshold/consecutive rows;
+- Activity=0 / Falling=1 class semantics;
+- direct Phase-5M and Phase-5R clean/fault softmax fields;
+- exact Phase-4 `>=` trigger and consecutive-run behavior;
+- the frozen historical truth and FrameCounter timing semantics;
+- one `outer_instance_id` per compute-fault scenario;
+- clean-prefix/faulted-window reconstruction for transient and persistent
+  faults;
+- a paired clean parent-trial counterfactual for every compute-fault identity;
+- target/family/model/persistence/operating-point stratification;
+- equal checkpoint-seed weighting within subject;
+- equal subject weighting;
+- subject-cluster bootstrap uncertainty;
+- no composite robustness scalar;
+- no record-count-weighted target aggregation;
+- strict integrity abort rules.
+
+The accepted Phase-5M canary and Phase-5R fleet both expose direct
+`clean_softmax_values` and `faulted_softmax_values`, so no canary-specific
+probability reconstruction is needed.
+
+The first full repository regression invocation after the Phase-5Z freeze
+failed during collection only because the shell omitted the previously required
+Protech/CrossLayer PYTHONPATH entries. The Phase-5Z protocol, documentation,
+test, and manifest were not regenerated or changed.
+
+Regression was resumed under the restored import environment.
+
+At freeze time and throughout this repair:
+
+- prediction JSONL opened: false;
+- prediction JSON deserialized: false;
+- outer label array loaded: false;
+- threshold applied to outer prediction: false;
+- CC metric computed: false;
+- aggregate CC result generated: false;
+- CSC result generated: false;
+- model forward executed: false;
+- fault execution executed: false.
+
+Phase-5Z protocol SHA256: `3ad80af971aa80de0661b6eb622987cc08b0a72f596e097af56265bf22a3d9a4`.
+
+Phase-5Z freeze manifest SHA256: `f92b08aaebed81f85d737e5da02cf2291b4fc46c20f8c73f4d8a79076047fd9c`.
+
+## 2026-10-06 — Phase 5AA CC analyzer core qualified pre-outcome
+
+The pure compute-fault CC analysis core was qualified before any prospective
+Phase-5 prediction JSONL or outer label array was opened.
+
+The qualification completed 16 synthetic/source-equivalence checks covering
+the frozen threshold matrix, historical trigger and event-metric semantics,
+mixed Phase-5M/Phase-5R direct softmax extraction, transient and persistent
+scenario reconstruction, persistent integrity failures, paired clean
+counterfactuals, degradation direction, equal seed/subject weighting,
+subject-cluster bootstrap determinism, and non-finite accounting.
+
+The first qualifier invocation stopped on an exact floating-point comparison
+of `0.9 - 0.7` against decimal `0.2`. The analyzer itself was unchanged. Only
+the synthetic assertion was repaired to use `math.isclose` with zero relative
+tolerance and `1e-12` absolute tolerance. All 16 qualification checks then
+passed.
+
+No prospective outer payload or outer labels were used.
+
+No threshold was applied to outer predictions.
+
+No outer CC metric, aggregate CC result, or CSC result was generated.
+
+The prospective CC I/O runner remains unimplemented and unqualified.
+
+Analyzer SHA256: `74c052101b01a33b40e157727cc485d3fd8d716c4f4bdc6fd27f0d5e5398ea66`.
+
+Qualifier SHA256: `a0b312e15fa6e7306ce0334f8c06e72c55ef6bd266e4fc6f3cb9e30a3f29ac93`.
+
+Qualification result SHA256: `2e7edad2d3aede47ce8edce68bf58fa6b6deeac15b108b69e8ff8774b9c03c45`.
+
+Phase-5AA manifest SHA256: `05c6c262751b766cddf8d2483ab270cca34cb446f2218d52732861ddf2f5714d`.
+
+## 2026-10-06 — Phase 5AB prospective CC I/O runner qualified pre-outcome
+
+The prospective compute-only CC artifact-I/O runner was implemented and
+qualified using temporary synthetic filesystem fixtures only.
+
+The qualification records 12 named checks covering clean sequence joins,
+historical fallback truth, historical window-end reconstruction, label-length
+validation, malformed-JSON rejection, Phase-5M exact-hash and transient
+adaptation, Phase-5R hash-before-parse and persistent adaptation, risk-index
+joining, stored-label normalization, and tamper rejection before parsing.
+
+The first qualification invocation reached its final bookkeeping assertion
+but expected 13 checks while exactly 12 named checks were recorded. Only that
+expected count was corrected from 13 to 12. The runner remained byte-identical
+and no scientific semantics changed.
+
+The accepted prospective outer result root was not accessed.
+
+No accepted clean or fault prediction JSONL was opened.
+
+No accepted outer label array was loaded.
+
+No outer prediction was deserialized or thresholded.
+
+No outer CC metric, aggregate CC result, or CSC result was generated.
+
+Runner SHA256: `0135d48f7e34622af49584b25b02371b42e0cc81da6adbe7b6d60ca915d96b5f`.
+
+Qualifier SHA256: `428fe86d56cc21933c2299fd22a9040b1fea840a83c6be8c41abcce86245dc1c`.
+
+Qualification result SHA256: `ac8371f2655a6954f4463712ba2a4163f0274b92b213dad2cd5dfd2431f3cf9f`.
+
+Phase-5AB manifest SHA256: `5e0dbc7b66a6e85b04cabcecb8a08bc215f8e00506116356ea6b755ce1979116`.
+
+## 2026-10-06 — Phase 5AC pre-outcome CC execution gate frozen
+
+The pre-outcome compute-only execution gate was frozen after qualification of
+the Phase-5AA analysis core and Phase-5AB artifact-I/O runner.
+
+The gate binds the frozen Phase-5Z scientific protocol, Phase-5AA analyzer,
+Phase-5AB I/O runner, Phase-5E execution plan, Phase-3 timing manifest,
+accepted Phase-5O canary acceptance, and complete Phase-5U estate acceptance.
+
+The future accepted result root and outer dataset root are recorded as
+immutable path strings only.
+
+Phase 5AC did not stat, list, or open the accepted outer result root.
+
+No accepted prediction JSONL or outer label array was opened.
+
+No outer prediction was deserialized or thresholded.
+
+No CC metric, aggregate CC result, or CSC result was generated.
+
+Phase 5AC authorizes only implementation and synthetic/static qualification of
+the final end-to-end outcome executor.
+
+A separate final activation binding that qualified executor hash is required
+before the first accepted prediction or label payload may be opened.
+
+Phase-5AC gate SHA256: `2850a03b1f07893ee77c7a52d35bd77cb14f50ca4168289f608123485b633f17`.
+
+Phase-5AC manifest SHA256: `4282d818f2e7b6ff38435ddcce212424dcee149fec1ebeba58f32109a96e61c9`.
+
+## 2026-10-06 — Phase 5AD final CC outcome executor qualified pre-outcome
+
+The final end-to-end compute-only outcome executor was implemented and
+qualified exclusively against temporary synthetic accepted-style estates.
+
+Production mode binds the exact Phase-5AC gate, Phase-5Z protocol,
+Phase-5AA analyzer, Phase-5AB I/O runner, Phase-5E plan, accepted outer-root
+string, and accepted dataset-root string.
+
+Qualification exercises both Phase-5R-style integrity metadata and an
+accepted-canary-style externally frozen hash path, transient and persistent
+fault reconstruction, all three operating points, paired-clean/faulted
+metrics, paired degradation, non-finite accounting, equal checkpoint-seed
+weighting inside subject, equal subject weighting, the frozen subject-cluster
+bootstrap, clean-baseline deduplication across persistence, and explicit
+no-imputation behavior for missing timing summaries.
+
+No accepted outer result root was accessed, statted, or listed.
+
+No accepted prediction JSONL or outer label array was opened.
+
+No accepted outer prediction was deserialized or thresholded.
+
+No accepted CC metric, aggregate accepted CC result, or CSC result was
+generated.
+
+A final one-way activation binding the exact qualified executor hash is still
+required before first accepted outcome access.
+
+Executor SHA256: `e564d4db2e0dfe3ff0aa35cf9a30061455dc995eac0b94644bdbfa29e3e7d7a5`.
+
+Qualification result SHA256: `a726592c10310eba7abedd11ea8ad0644fc2b692e8f89af4d21b023992bff620`.
+
+Phase-5AD manifest SHA256: `fe0207f90a28654a937b07fd22b3f8a42e36d39d68b77e78c9c227a24abc797e`.
+
+## 2026-10-06 — Phase 5AE final one-way CC outcome execution activation frozen
+
+The final one-way prospective compute-only outcome activation was frozen.
+
+The activation binds the exact Phase-5AD end-to-end executor and all frozen
+Phase-5Z / 5AA / 5AB / 5AC lineage, the Phase-5E estate, accepted canary and
+fleet technical acceptance, exact dataset root, and exact risk-index hash.
+
+The activation authorizes the exact qualified executor to perform the first
+accepted outer prediction and label reads, apply only the frozen validation
+operating points, compute C0/CC outcomes, paired degradation, and the frozen
+subject-primary aggregate.
+
+It does not authorize threshold retuning, model selection, fault resampling,
+new model forwards, new fault execution, OnField use, or CSC generation.
+
+Production must process all 732 frozen Phase-5E shards before aggregate
+interpretation.
+
+After the first accepted payload read, observed outcomes cannot change any
+scientific rule.
+
+The activation itself did not stat, list, or open the accepted outer result
+root and did not load outer labels.
+
+Activation SHA256: `f1a8d55601c5dfa766262f623e96b478c19c02d090e4e1d0cecb6b3e25a8eeb5`.
+
+Activation manifest SHA256: `035b6c2dcfa7ccfcf4a83d17add8cef4fbdd982b64e9247191f05a4b0cf1df9a`.
+
+## 2026-10-06 — Phase 5AF-R1 post-boundary nonfinite softmax adapter repair qualified
+
+Phase-5AF crossed the one-way accepted-outcome boundary and then stopped before
+completing any shard because the V1 analysis consumer could not decode the
+frozen producer representation for non-finite softmax values.
+
+The representation audit established that the accepted estate contains 61,752
+dict-valued softmax elements, all in faulted softmax fields, all with the exact
+shape `{"nonfinite":"nan"}`, and no unexpected dictionary shape.
+
+The scientific protocol was not changed.
+
+The historical V1 analyzer remains byte-identical.
+
+A versioned V2 analyzer restores the Phase-5M/5R serialized IEEE token to its
+original floating value before applying the already-frozen analysis semantics.
+
+Synthetic qualification passed for finite V1/V2 equivalence, NaN/+inf/-inf
+decoding, strict malformed-token rejection, frozen NaN comparator behavior,
+NaN scenario reconstruction, and unchanged event-metric semantics.
+
+Phase-5AF was not resumed by this repair step.
+
+V2 analyzer SHA256: `0cfb60c9b32951482ffcc5be0ca14ec49c91b7d669e43eddf39fe28f26d01da5`.
+
+Repair qualification result SHA256: `25e9a484ca8c9bd83cb936ab2d2349c7aa9d978737425fe1f83b12d1d650c2a4`.
+
+Repair manifest SHA256: `08e4e9fd5f70d7e49db59128dd7fb95a1ef56c9ac099f96420541389ca01925a`.
+
+## 2026-10-06 — Phase 5AF-R2 repaired CC execution chain qualified
+
+The post-boundary repaired compute-only execution chain was qualified without
+resuming the accepted Phase-5AF outcome run.
+
+The qualified chain is the versioned V2 analyzer, V2 I/O runner, and V2 final
+executor.
+
+The V2 I/O runner binds existing I/O semantics to the qualified V2 analyzer.
+
+The V2 final executor binds the V2 analyzer and V2 I/O runner and requires an
+explicit repair-binding artifact.
+
+Synthetic accepted-style qualification passed seven named checks covering
+exact repaired-module hashes, transient and persistent dict-valued NaN
+handling, non-finite accounting, all three frozen operating points,
+paired-clean/faulted metric construction, and finite reconstruction semantics.
+
+The initial R2 qualifier expected eight checks while seven named checks were
+recorded. Only that bookkeeping expectation was corrected. The V2
+implementation files remained byte-identical.
+
+No scientific rule changed.
+
+Phase-5AF remained at zero completed shards and was not resumed.
+
+V2 analyzer SHA256: `0cfb60c9b32951482ffcc5be0ca14ec49c91b7d669e43eddf39fe28f26d01da5`.
+
+V2 I/O runner SHA256: `b8f14826f8d31c067f5753c633cec761b4b9e2ad2004e8367e38809e2fdc7bf2`.
+
+V2 executor SHA256: `cfb5d618af37b5164c1e861fb6888b3c4dbe04caee2644a1218cd09f35b4aa50`.
+
+R2 qualification result SHA256: `edd64e473537aef3ba1d71de290bbcd311589f065662b23313cf6cef2de8641c`.
+
+R2 manifest SHA256: `8f2af6ee06656f11eaad39164f85fd1a85b37b0b6636396901492b9d1b08df4f`.
+
+## 2026-10-06 — Phase 5AF-R3 post-boundary continuation authorization frozen
+
+The post-boundary continuation authorization was frozen after qualification of
+the versioned V2 analysis, I/O, and final-executor chain.
+
+The original Phase-5AF execution start remains immutable and is hash-bound by
+R3. It records the already-crossed one-way outcome boundary under the original
+Phase-5AE activation.
+
+There were zero completed shards before repair.
+
+R3 authorizes continuation only with the exact qualified V2 chain. The
+historical V1 executor is not authorized to resume production.
+
+The repair scope remains implementation compatibility only: restoring the
+already-frozen Phase-5M/5R serialized IEEE non-finite representation.
+
+No threshold, metric, aggregation, uncertainty, stratum, checkpoint, fault
+membership, CSC, OnField, model-forward, or fault-execution rule changed.
+
+R3 itself did not resume Phase-5AF, read a new accepted prediction payload,
+load an outer label array, apply a threshold, or compute a CC metric.
+
+R3 authorization SHA256: `ebc59be015964a53dee08a903d08a5ba8687bcc4f22fbb8cd936238a439613e3`.
+
+R3 manifest SHA256: `45f5f49803b994a905db02483744cb8ddb8f22a3cf78522b487aabd81730fb1f`.
+
+## 2026-10-06 — Phase 5AF-R4 canonical persistence execution chain qualified
+
+The post-boundary persistence vocabulary audit established that the canonical
+frozen persistent value is `persistent_from_onset_until_trial_end` across the
+compute-FI contract, Phase-5E plan, Phase-5Z protocol, Phase-5R producer, and
+accepted records.
+
+The V2 analyzer alone used the accidental noncanonical spelling
+`persistent_from_onset_to_trial_end`.
+
+A versioned V3 chain was qualified. The V3 analyzer differs from V2 only by
+using the canonical persistence literal. No alias was introduced.
+
+The prior non-finite decoding repair is preserved.
+
+One transient R3/V2 production shard had already completed before this second
+compatibility failure. It was preserved byte-for-byte and was neither deleted
+nor rerun during R4.
+
+Synthetic qualification passed ten checks, including canonical persistent
+suffix behavior, rejection of the noncanonical alias, transient V2/V3
+equivalence, dict-valued NaN preservation, and end-to-end transient/persistent
+execution under all three frozen operating points.
+
+No scientific rule changed and production was not resumed.
+
+V3 analyzer SHA256: `22e7ac0d587527abd659585596a2c7b43df7af2f249c5aa594be566677e32544`.
+
+V3 I/O runner SHA256: `ad625947791a1d7763bacac17be2941382f2777349d02bc653053cfa123151d7`.
+
+V3 executor SHA256: `6b99d63805b2dfd64d1a44ec419cb9e9e5ca34573d1df4bdbe2083fdb12df61f`.
+
+R4 result SHA256: `7548f14b4bf95c615feeffd1a757312513cda70adabde4e6454b613cb968f036`.
+
+R4 manifest SHA256: `60b5820013b5e7f74a71a783d3f9bc2bd7a9c40b769886df43866f802abac850`.
+
+## 2026-10-06 — Phase 5AF-R5 V3 continuation authorization frozen
+
+The post-boundary V3 continuation authorization was frozen.
+
+R5 binds the exact qualified V3 analyzer, V3 I/O runner, and V3 executor plus
+the complete R4 repair evidence.
+
+Exactly one transient R3/V2 shard had completed before the canonical
+persistence-vocabulary failure.
+
+That shard is grandfathered by exact shard ID, outcome hash, and success-marker
+hash. It must be preserved byte-for-byte and may not be deleted or rerun.
+
+R4 qualified transient V2/V3 behavioral equivalence, so only this exact
+already-completed transient shard is authorized for V2 reuse.
+
+The remaining 731 Phase-5E shards must execute with the exact V3 chain.
+
+No scientific rule changed.
+
+R5 itself did not resume production, read accepted prediction payloads, load
+outer labels, apply thresholds, or compute CC metrics.
+
+R5 authorization SHA256: `81dee95ad55bd7dbc63d7abf3cf1caecf6497348f5a74574fdafc8d59d5a329d`.
+
+R5 manifest SHA256: `045940fa23020abb35ae96b69525d18680b898ab104e98bbcc36e01c71e92497`.
+
+## 2026-10-06 — Phase 5AG complete CC outcome execution technically accepted
+
+The completed Phase-5AF prospective compute-only outcome execution was
+technically accepted before scientific interpretation.
+
+Technical acceptance verified all 732 frozen Phase-5E shard outputs: one exact
+grandfathered transient R3/V2 shard and 731 exact R5/V3 shards.
+
+The grandfathered shard remained byte-identical and was not rerun.
+
+Accepted cardinalities are 20,170,008 outer identities, 29,798,820 fault
+records, 30 clean aggregate rows, and 720 CC stratum aggregate rows.
+
+The ordered shard-outcome digest was independently reconstructed in frozen
+Phase-5E order and matched the completed execution.
+
+The aggregate, execution summary, and final success artifacts were accepted by
+exact SHA256.
+
+The aggregate structure retains FP32/PTQ separation, transient/persistent
+separation using the canonical persistent vocabulary, and all three frozen
+operating points.
+
+Phase 5AG did not print, rank, optimize, or scientifically interpret metric
+values and performed no threshold retuning, checkpoint selection, resampling,
+CSC, OnField access, model forward, or new fault execution.
+
+Technical acceptance result SHA256: `9bd147a666db08fa369a1f3f7a144a71415fe0fb71b6f513603a326343c63b19`.
+
+Technical acceptance manifest SHA256: `388970ca6836439799228e0e43e92d62cdbfac4f411ec84e031c7cd4260451ac`.
+
+## 2026-10-06 — Phase 5AH frozen CC aggregate scientifically interpreted
+
+Scientific interpretation was performed only after Phase 5AG technically
+accepted the complete frozen Phase-5AF aggregate.
+
+The exact Phase-5Z paired-effect contract was retained: positive degradation
+means worse behavior under compute fault.
+
+Of the 720 primary CC strata, 576 have available subject-primary estimates and
+existing bootstrap intervals.
+
+All 144 unavailable CC strata are `median_trigger_lead_ms` and remain
+`UNAVAILABLE_WITHOUT_IMPUTATION`.
+
+Likewise, six clean median-trigger-lead summaries remain unavailable.
+
+No unavailable timing value was dropped, converted to zero, or imputed.
+
+Equal-target descriptive macros remain unavailable whenever a contributing
+target is unavailable.
+
+Common-target FP32/PTQ timing comparisons likewise remain unavailable.
+
+No new subject bootstrap, event bootstrap, inferential CI, scalar robustness
+score, rank-based selection, threshold retuning, checkpoint selection, fault
+resampling, protocol change, CSC, OnField use, model forward, or new fault
+execution occurred.
+
+Interpretation result SHA256: `3841ceb4a1af3ca2f1c32a7d1126ab3f94e6debbb46222f2635e694cec6012fb`.
+
+Interpretation manifest SHA256: `7abeb3a117b0759e0e36698a0437061058fa890cd39d0b70e4d4dbd6d22f6177`.
+
+## 2026-10-06 — Phase 5AI frozen compute-FI CC scientific findings reported
+
+The Phase-5AH scientific interpretation was frozen into a bounded reporting
+layer without any new outer-outcome inference or selection.
+
+Persistent faults had larger descriptive equal-target degradation than
+transient faults in all 24 available matched variant × operating-point ×
+metric comparisons. Six median-trigger-lead comparisons remained unavailable
+without imputation.
+
+On the ten common FP32/PTQ targets, PTQ had lower descriptive degradation in
+21 of 24 available comparisons and higher degradation in three. Because the
+pattern is not uniform and no cross-variant inferential CI was constructed, no
+universal variant-superiority claim or model selection was made.
+
+All six clean and all 144 CC subject-primary median-trigger-lead summaries
+remain unavailable without imputation. No subject-primary median-lead
+robustness conclusion was reported.
+
+No new bootstrap, inferential CI, significance test, scalar robustness score,
+threshold retuning, checkpoint selection, fault resampling, protocol change,
+CSC, OnField use, model forward, or new fault execution occurred.
+
+Scientific report SHA256: `8a72edb086d255b45c9ad0fd6f9b0d207854611bfa052e6959e11f50a2f6e63f`.
+
+Phase-5AI manifest SHA256: `4cf491e940769091773ebe9587abafebb3b4969be50e61f790e0e2d3cc29bc93`.
+
+## 2026-10-06 — Phase 5 compute-fault study complete and frozen
+
+Phase 5 completed the prospective C0/CC compute-fault study and froze the full
+production, technical-acceptance, scientific-interpretation, and reporting
+lineage.
+
+The accepted estate contains 732 fault shards, 20,170,008 outer fault
+identities, and 29,798,820 fault records.
+
+Production outcome analysis consists of one exact grandfathered transient
+R3/V2 shard plus 731 exact R5/V3 shards.
+
+Phase 5AG technically accepted the completed execution before interpretation.
+
+Of 720 primary CC strata, 576 are available and 144
+`median_trigger_lead_ms` strata remain unavailable without imputation.
+Likewise, six clean timing rows remain unavailable.
+
+Persistent faults have larger descriptive degradation than transient faults in
+all 24 available matched equal-target comparisons.
+
+On the ten common FP32/PTQ targets, PTQ has lower descriptive degradation in
+21 of 24 available comparisons and higher degradation in three. No universal
+variant-superiority claim or model selection is made.
+
+No unavailable timing values were dropped or imputed.
+
+No outer-result feedback into model, target, family, operating-point,
+checkpoint, threshold, fault sampling, or protocol selection occurred.
+
+Phase 5 makes no CSC, OnField fall-performance, MCU, or physical-realism claim.
+
+Phase-5AJ final synthesis SHA256: `80adeec431226833529410a0fe1b7550da53aca068c9ca7f0d25fedc4c066760`.
+
+Phase-5AJ final freeze manifest SHA256: `81beb2a7f6abdc8aac4e48dff8075416af4780aadd91ac447030b448bd5c0abb`.
+
+The Phase-5 scope is now complete and eligible for a single major completion
+commit and push after this freeze passes final regression.
