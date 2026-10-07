@@ -1,0 +1,121 @@
+{
+  "adapter_boundary": {
+    "computes_metrics": false,
+    "executes_compute_fault": false,
+    "executes_model_forward": false,
+    "executes_sensor_fault": false,
+    "execution_enabled": false,
+    "execution_hard_stop": "PHASE6G_EXECUTION_DISABLED_PRE_FORWARD_ADAPTER",
+    "imports_numpy": false,
+    "imports_phase5_executor": false,
+    "imports_sensor_operator": false,
+    "imports_torch": false,
+    "loads_model": false,
+    "reads_outer_arrays": false
+  },
+  "bindings": {
+    "frozen_metadata_executor": {
+      "path": "experiments/phase_06/csc_outer_executor_v1.py",
+      "sha256": "99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd"
+    },
+    "frozen_metadata_executor_test": {
+      "path": "tests/test_phase6e_csc_outer_executor_metadata_v1.py",
+      "sha256": "5da200d643c1c9333efba7e5fa38d32aa02ba72f8c8f8aa5eeed4451c882f0c2"
+    },
+    "phase6e_execution_plan": {
+      "path": "configs/evaluation/phase6e_csc_execution_plan_v1.json",
+      "sha256": "888d90f720682d19cfed6ea211d84b12b4ea8fb1408aaef36cffdb7301975bea"
+    },
+    "phase6f_binding_config": {
+      "path": "configs/evaluation/phase6f_csc_metadata_executor_binding_v1.json",
+      "sha256": "9bcb887c06701a9a1598b8500b2becd059479a5f465c1f11180cd7f551b29d1b"
+    },
+    "phase6f_binding_manifest": {
+      "path": "manifests/phase_6f_csc_metadata_executor_binding_freeze_v1.json",
+      "sha256": "9412c1928c803cd5403f7b66f39a485596b74087d331a793a5b7ecdf68973808"
+    },
+    "phase6g_pre_forward_adapter": {
+      "path": "experiments/phase_06/csc_execution_adapter_v1.py",
+      "sha256": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5"
+    },
+    "phase6g_pre_forward_adapter_test": {
+      "path": "tests/test_phase6g_csc_execution_adapter_pre_forward_v1.py",
+      "sha256": "7a341af41a2e5e5986dc522620870a25615d368b01a1acba26c6f28d85e77cb8"
+    }
+  },
+  "execution_authorized": false,
+  "frozen_execution_semantics": {
+    "clean_reference_forward_inside_fault_loop": false,
+    "persistent_compute_execution": "frozen_Phase5_onset_through_trial_end_suffix",
+    "phase5_fault_identity_required": true,
+    "phase5_window_tensor_conversion": "torch.from_numpy(np.asarray(window,dtype=np.float32)).unsqueeze(0)",
+    "ptq_clean_state_semantics_preserved": true,
+    "ptq_weight_route_clean_state_restored_in_finally": true,
+    "sensor_corruption_precedes_phase5_window_tensor_conversion": true,
+    "transient_compute_execution": "exactly_one_frozen_R1_selected_window_per_pair",
+    "zero_overlap_persistent_pairs_filtered": false,
+    "zero_overlap_persistent_pairs_resampled": false
+  },
+  "governance": {
+    "checkpoint_selection": false,
+    "commit_created": false,
+    "onfield_used": false,
+    "outer_performance_outcomes_used": false,
+    "pair_files_materialized": false,
+    "push_performed": false,
+    "rebalancing": false,
+    "resampling": false,
+    "threshold_retuning": false,
+    "validation_used": false
+  },
+  "next_action": "Any callable CSC runtime must be introduced separately and must pass a new explicit pre-execution authorization/freeze without modifying this adapter or the frozen metadata executor.",
+  "phase": "6G",
+  "pinned_execution_api_modules": {
+    "phase4h_executor": {
+      "path": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+      "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+    },
+    "phase4h_runner_v1_source_helpers": {
+      "path": "experiments/phase_04/sensor_fi_devcal_runner.py",
+      "sha256": "bee7b43423723d5ccdbf237d6dbcf70633d9db489d2aca35d1aca26c5100d398",
+      "v2_exports": {
+        "load_source_trial": "V1.load_source_trial",
+        "source_trial_path": "V1.source_trial_path"
+      }
+    },
+    "phase4h_runner_v2": {
+      "path": "experiments/phase_04/sensor_fi_devcal_runner_v2.py",
+      "sha256": "541af4663293ae5fbaf5286fc3dea7679d511fdabb50738863880e4712a9b86a"
+    },
+    "phase4h_sensor_operators": {
+      "path": "experiments/phase_04/sensor_fi_operators.py",
+      "sha256": "6559ddc1fcdca352fbd09bf003e28919bb355a76b2ef52e6985a99188fd69eaa"
+    },
+    "phase5_execution_harness": {
+      "path": "experiments/phase_05/compute_fi_execution_harness.py",
+      "sha256": "68418e44d50f7c8192777ffe6c7f7f5f0dc0cab2243788f627d07879ef19005b"
+    },
+    "phase5_fault_contract": {
+      "path": "experiments/phase_05/compute_fi_contract.py",
+      "sha256": "335efb0090318eb492e3ae1856dedbb4360840b2e49285f12a6ec14163791557"
+    },
+    "phase5_fault_only_execution": {
+      "path": "experiments/phase_05/compute_fi_fault_only_execution_v1.py",
+      "sha256": "f8bb4095bbfedc69c24fa4cc6e79ccf4914e14fa502ce080a06de01e740112cb"
+    },
+    "phase5_outer_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+    }
+  },
+  "purpose": "Freeze the qualified metadata-to-execution-request adapter before any callable CSC sensor/model execution runtime exists.",
+  "qualified_before_freeze": {
+    "full_repository_tests_passed": 927,
+    "historical_phase5r_lifecycle_test_deselected": 1,
+    "phase6d_through_phase6g_tests_passed": 77,
+    "phase6g_adapter_tests_passed": 14
+  },
+  "schema_version": "phase6g_csc_pre_forward_adapter_binding_v1",
+  "scientific_change": false,
+  "status": "FROZEN_PRE_FORWARD_ADAPTER_BINDING_EXECUTION_DISABLED"
+}

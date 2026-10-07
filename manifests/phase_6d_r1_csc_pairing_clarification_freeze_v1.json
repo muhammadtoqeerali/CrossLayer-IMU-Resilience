@@ -1,0 +1,90 @@
+{
+  "authoritative_implementation_hashes": {
+    "experiments/phase_04/sensor_fi_devcal_runner.py": "bee7b43423723d5ccdbf237d6dbcf70633d9db489d2aca35d1aca26c5100d398",
+    "experiments/phase_04/sensor_fi_operators.py": "6559ddc1fcdca352fbd09bf003e28919bb355a76b2ef52e6985a99188fd69eaa",
+    "experiments/phase_04/sensor_fi_outer_executor_v1.py": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d",
+    "experiments/phase_04/sensor_fi_sampling_v3.py": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74",
+    "experiments/phase_05/compute_fi_outer_sampling_v1.py": "8886b74043ef9ba32f2cb8e999d318c340c239d818caad53f430594546d2417d"
+  },
+  "config": {
+    "path": "configs/evaluation/phase6d_r1_csc_pairing_clarification_v1.json",
+    "sha256": "60b557b16cb7c9d75ea7fd67299c264624b024fe962d436ce336827031faeea0"
+  },
+  "documentation": {
+    "path": "docs/PHASE_6D_R1_CSC_PAIRING_CLARIFICATION_V1.md",
+    "sha256": "17f3c847785a48daa83c57ffeff6aa6f0c6d5f7d0f4b8839145e3bac9515490f"
+  },
+  "execution_plan_governance": {
+    "CC_performance_outcomes_used": false,
+    "CSC_model_forward_before_this_freeze": false,
+    "CS_performance_outcomes_used": false,
+    "OnField_used": false,
+    "checkpoint_selection": false,
+    "compute_persistence_selection": false,
+    "compute_target_selection": false,
+    "pair_materialization_before_this_freeze": false,
+    "phase6e_must_depend_on_this_clarification": true,
+    "physical_or_MCU_claim": false,
+    "sensor_family_selection": false,
+    "sensor_severity_selection": false,
+    "threshold_retuning": false
+  },
+  "generated_date": "2026-10-06",
+  "next_action": "Derive and freeze the exact Phase-6E CSC execution plan using the original Phase-6D protocol plus this R1 clarification. Abort if any source-trial transient pair has zero sensor-exposed evaluation windows.",
+  "parent_phase6d": {
+    "config_path": "configs/evaluation/phase6d_csc_pairing_protocol_v1.json",
+    "config_sha256": "4f4585e410782ed039c4cd7f21bce418ab13ac7e1ee4c9aa4750cba15677617e",
+    "manifest_path": "manifests/phase_6d_csc_pairing_protocol_freeze_v1.json",
+    "manifest_sha256": "f4f9f79485d60948aa4e88f405b5453b63f83760e44a4e2f787392aca799bea8"
+  },
+  "persistent_compute_temporal_overlap": {
+    "compute_active_window_set": "ordered trial-local window indices persistent_onset_index through window_count-1",
+    "filter_pair_when_no_overlap": false,
+    "overlap_set": "sensor_exposed_window_set intersection compute_active_window_set",
+    "resample_when_no_overlap": false,
+    "scientific_reason": "Phase-6D forbids overlap filtering because the exact Phase-5 persistent comparator identity must remain fixed.",
+    "source_trial_sensor_exposed_set": "all trial-local window indices satisfying the frozen sensor_exposed_window_rule",
+    "stored_window_sensor_exposed_set": "singleton set containing sensor parent window_index",
+    "temporal_overlap": "len(overlap_set) > 0",
+    "temporal_overlap_window_count": "len(overlap_set)"
+  },
+  "phase": "6D-R1",
+  "regression_test": {
+    "path": "tests/test_phase6d_r1_csc_pairing_clarification.py",
+    "sha256": "3625b68f495a9bcc255d62d233e3fd6dfa948fc9eb35d8e8bd0b88f0dda03b4d"
+  },
+  "schema_version": "phase6d_r1_csc_pairing_clarification_freeze_v1",
+  "scientific_change": false,
+  "source_trial_transient_compute_window_selection": {
+    "applies_when": "sensor_parent_kind == source_trial and compute_persistence == transient_one_inference",
+    "canonical_payload_fields": [
+      "namespace",
+      "sensor_replay_id",
+      "target_name"
+    ],
+    "canonical_payload_schema": {
+      "namespace": "fixed namespace string",
+      "sensor_replay_id": "exact frozen Phase-4H replay_id string",
+      "target_name": "exact frozen Phase-5D target_name string"
+    },
+    "digest": "SHA256",
+    "digest_to_integer": "first 8 digest bytes interpreted as unsigned big-endian integer",
+    "index_rule": "digest_u64 modulo len(ordered_exposed_window_indices)",
+    "namespace": "crosslayer-phase6d-r1-source-trial-transient-window-v1",
+    "outcome_dependent_reselection_allowed": false,
+    "rebalancing_allowed": false,
+    "resampling_allowed": false,
+    "selected_window": "ordered_exposed_window_indices[selected_index]",
+    "serialization": "UTF-8 JSON with sort_keys=True, separators=(',', ':'), ensure_ascii=False",
+    "zero_exposed_window_policy": "ABORT_PLAN_DERIVATION_NO_FALLBACK"
+  },
+  "status": "FROZEN_PRE_PLAN_CSC_PAIRING_CLARIFICATION",
+  "window_geometry": {
+    "historical_window_end_semantics": "exclusive_stop",
+    "window_length_samples": 30,
+    "window_start": "historical_window_end - 30",
+    "window_stop_exclusive": "historical_window_end",
+    "window_stride_samples": 15,
+    "window_support_inclusive": "[historical_window_end-30,historical_window_end-1]"
+  }
+}

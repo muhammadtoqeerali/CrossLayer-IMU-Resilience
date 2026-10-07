@@ -1,0 +1,38 @@
+{
+  "execution_enabled": false,
+  "frozen_files": [
+    {
+      "path": "configs/evaluation/phase6g_csc_pre_forward_adapter_binding_v1.json",
+      "sha256": "886cbaf4bf713e4604dd3d27e28e2634800d63696d6a7b5c12034d44a9810f7a"
+    },
+    {
+      "path": "docs/PHASE_6G_CSC_PRE_FORWARD_ADAPTER_BINDING_V1.md",
+      "sha256": "a25c405aa0aa7c4c31df9bce709cd0aa5ce1e2cc2bec28249c4b224dce8d73bb"
+    },
+    {
+      "path": "tests/test_phase6g_csc_pre_forward_adapter_binding.py",
+      "sha256": "239e6ef2db068be0f53e9581b00123c780ba2a8760df5f1acc813173644c98f2"
+    },
+    {
+      "path": "experiments/phase_06/csc_execution_adapter_v1.py",
+      "sha256": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5"
+    },
+    {
+      "path": "tests/test_phase6g_csc_execution_adapter_pre_forward_v1.py",
+      "sha256": "7a341af41a2e5e5986dc522620870a25615d368b01a1acba26c6f28d85e77cb8"
+    }
+  ],
+  "git_head": "2cd3bb5a5a0990951216a19f1735c7adbd08506a",
+  "model_forward_authorized": false,
+  "next_boundary": "separate execution-capable runtime plus explicit prospective authorization/freeze before any CSC outer forward",
+  "phase": "6G",
+  "schema_version": "phase6g_csc_pre_forward_adapter_binding_freeze_v1",
+  "scientific_change": false,
+  "status": "FROZEN_PRE_FORWARD_ADAPTER_BINDING_EXECUTION_DISABLED",
+  "upstream_frozen_bindings": {
+    "metadata_executor_sha256": "99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd",
+    "phase6e_execution_plan_sha256": "888d90f720682d19cfed6ea211d84b12b4ea8fb1408aaef36cffdb7301975bea",
+    "phase6f_binding_config_sha256": "9bcb887c06701a9a1598b8500b2becd059479a5f465c1f11180cd7f551b29d1b",
+    "phase6f_binding_manifest_sha256": "9412c1928c803cd5403f7b66f39a485596b74087d331a793a5b7ecdf68973808"
+  }
+}

@@ -3394,3 +3394,411 @@ Phase-5AJ final freeze manifest SHA256: `81beb2a7f6abdc8aac4e48dff8075416af4780a
 
 The Phase-5 scope is now complete and eligible for a single major completion
 commit and push after this freeze passes final regression.
+
+## 2026-10-06 — Phase 6D prospective CSC pairing protocol frozen
+
+A new prospective combined sensor-plus-compute fault pairing protocol was
+frozen before any CSC execution.
+
+The protocol preserves all 12 frozen Phase-4H sensor families, all L1/L2/L3
+severity levels, all 14 frozen Phase-5 compute targets, both compute
+persistence modes, all eligible model variants, all three checkpoint seeds,
+all five folds, and the validation-selected operating-point thresholds.
+
+CSC uses a deterministic sparse sensor sample: exactly one frozen sensor fault
+instance per outer parent × sensor family × severity, giving 4,239,939
+selected sensor instances before compute-stratum assignment.
+
+Each selected sensor instance is prospectively assigned exactly one of the 28
+frozen compute target × persistence strata by immutable SHA256 modulo mapping.
+Counts may not be rebalanced after observation.
+
+The exact Phase-5 compute coordinate is reused for CC/CSC causal pairing.
+Sensor corruption is reconstructed first and the compute fault is applied to
+the inference generated from that same sensor-corrupted parent.
+
+C0, CS, CC and CSC comparator identities are retained. Cross-subject,
+cross-fold and cross-trial pairing is forbidden.
+
+No CS or CC performance outcome was used to select sensor family, severity,
+compute target, bit, persistence, checkpoint, threshold or pair membership.
+
+No CSC execution, model forward, metric calculation, OnField use, MCU claim,
+or physical-realism claim occurred in Phase 6D.
+
+Phase-6D protocol SHA256: `4f4585e410782ed039c4cd7f21bce418ab13ac7e1ee4c9aa4750cba15677617e`.
+
+Phase-6D freeze manifest SHA256: `f4f9f79485d60948aa4e88f405b5453b63f83760e44a4e2f787392aca799bea8`.
+
+Next: derive and freeze the exact Phase-6E execution plan before any CSC outer
+model forward.
+
+## 2026-10-06 — Phase 6D-R1 CSC pairing clarification frozen
+
+A narrow pre-plan clarification to the frozen Phase-6D CSC pairing protocol
+was frozen before any CSC pair materialization or model execution.
+
+There was no scientific surface change.
+
+The clarification makes the source-trial transient-compute window selection
+machine-exact:
+
+- historical window ends are exclusive stops;
+- 30-sample window support is `[end-30, end-1]`;
+- finite sensor support is `[onset, onset+duration-1]`;
+- until-end sensor support is `[onset, parent_length-1]`;
+- sensor exposure uses exact half-open interval intersection;
+- exposed windows are ordered by ascending trial-local window index;
+- the selection payload is canonical compact sorted JSON containing namespace,
+  sensor replay ID, and compute target name;
+- SHA256 first eight bytes are interpreted as unsigned big-endian;
+- selected index is digest-u64 modulo exposed-window count;
+- zero exposed windows abort plan derivation with no fallback.
+
+Persistent compute overlap is also made machine-exact as the intersection of
+sensor-exposed windows and the frozen Phase-5 persistent active-window set.
+Zero-overlap pairs are retained and never resampled.
+
+No CS or CC performance outcome was used. No threshold, checkpoint, family,
+severity, target, persistence mode, or model variant was selected from held-out
+results.
+
+Phase-6D-R1 config SHA256: `60b557b16cb7c9d75ea7fd67299c264624b024fe962d436ce336827031faeea0`.
+
+Phase-6D-R1 freeze manifest SHA256: `ee11de570884f646a85494fc0e065fcc3b2609e641998ec00141a5215b711278`.
+
+Next: derive and freeze the exact Phase-6E CSC pair inventory and execution
+workload.
+
+## Phase 6D-R2 — Prospective CSC structural-omission amendment freeze — 2026-10-06
+
+Status: **FROZEN_PRE_PLAN_PROSPECTIVE_CSC_STRUCTURAL_OMISSION_AMENDMENT**
+
+Phase 6D-R2 is a prospective scientific protocol amendment qualified using
+training/calibration geometry only.
+
+Frozen rule:
+
+- generate only frozen Phase-4H source-trial candidates;
+- retain only candidates with at least one retained-window exposure;
+- if the eligible set is nonempty, apply the unchanged Phase-6D SHA256
+  hash-min ranking;
+- if the eligible set is empty, record
+  `STRUCTURALLY_INELIGIBLE_NO_CSC_PAIR`;
+- do not assign a compute target/persistence stratum to an omitted group;
+- never fall back, resample, temporally relocate, replace, or rebalance.
+
+Development/calibration qualification:
+
+- unique parents: 5,346;
+- fold-parent memberships: 11,221;
+- source-trial family×severity groups: 235,641;
+- retained groups: 233,391;
+- structurally ineligible groups: 2,250;
+- structural omission rate: 0.009548423237;
+- all fold×family×severity strata retained;
+- all seven source-family×three-severity surfaces retained;
+- Falling-event coverage retained in every family×severity cell.
+
+R2 candidate-rule digest:
+
+`740b444fa8b9a08fbc5aa154b9f0ea2d4f77d38f33bd4921b363d49bf008b412`
+
+The original Phase-6D nominal count of 4,239,939 pairs is no longer
+authoritative after R2. The exact revised pair count must be derived by a
+geometry-only outer structural census before Phase 6E freezes its execution
+plan.
+
+No outer performance outcome, validation result, OnField result, model
+forward, CSC metric, physical claim, or MCU claim was used.
+
+Frozen artifacts:
+
+- `configs/evaluation/phase6d_r2_csc_structural_omission_amendment_v1.json` — SHA256 `0c67b4c291966f35d2649b5c6065bed1ee5fe076bf0e8f209336348e5bd6d16e`
+- `docs/PHASE_6D_R2_CSC_STRUCTURAL_OMISSION_AMENDMENT_V1.md` — SHA256 `29a50983cd3047efcba55f332dc0c3a1ecb2391508c0e5415fbb940a286576be`
+- `tests/test_phase6d_r2_csc_structural_omission_amendment.py` — SHA256 `e90a88f94f7d40fe84e7698988aa0f5f5d527f4936fdc4cff05805535dc79bb9`
+- `manifests/phase_6d_r2_csc_structural_omission_amendment_freeze_v1.json` — SHA256 `c4ca0a21fb16dc770a42c1083099846c165b2227047d47b812c86abecf8002f4`
+
+Dedicated regression result:
+
+```
+10 passed in 0.03s
+```
+
+Full repository regression result, with the frozen historical Phase5R
+single-canary lifecycle test explicitly deselected:
+
+```
+880 passed, 1 deselected in 3.13s
+```
+
+Next action: perform one read-only geometry-only outer R2 structural census.
+No model execution or performance outcomes are authorized in that census.
+
+## Phase 6E — Exact CSC Execution Plan V1
+
+Status: **FROZEN_PRE_EXECUTION_CSC_PLAN**
+
+Frozen on 2026-10-07 before any CSC pair-file materialization or CSC model
+forward.
+
+Exact prospective execution surface:
+
+- model-independent CSC pairs: **4,237,835**
+- source-trial retained pairs: **130,385**
+- source-trial structural omissions: **2,104**
+- stored-window pairs: **4,107,450**
+- model/seed pair-members: **21,793,038**
+- compute-faulted member windows: **411,540,372**
+- simultaneous CSC-overlap member windows: **19,926,021**
+- persistent zero-overlap pairs retained: **1,018,215**
+- persistent zero-overlap pair-members retained: **5,234,355**
+- subject x sensor-family shards: **732**
+- zero-pair shards: **0**
+
+Frozen derivation bindings:
+
+- pair surface: `3b39a909ea140db75da52315abcf5efe2748fcdb2d31f0fc98ddf766b000af53`
+- combined compute coordinates: `2117c7b07084566607ccac46db150faae81d28bef51d0dcab7c700627d8eb435`
+- temporal workload: `5b447bca2f45d4889bcf0dc86d6170c40a1028171a9f1b0ea7a28e2884f12ba8`
+
+Freeze artifacts:
+
+- `configs/evaluation/phase6e_csc_execution_plan_v1.json` — SHA256 `888d90f720682d19cfed6ea211d84b12b4ea8fb1408aaef36cffdb7301975bea`
+- `docs/PHASE_6E_CSC_EXECUTION_PLAN_V1.md` — SHA256 `3934951bd08482d266f43fabf1365168b78003dcff779692d6d9b9595c3bfafd`
+- `tests/test_phase6e_csc_execution_plan.py` — SHA256 `287ae5ad919dc3468e450604620d57956df66b7beb4edffa15790056809dc3f9`
+- `manifests/phase_6e_csc_execution_plan_freeze_v1.json` — SHA256 `862693f5a45f35b6785ea56184e87a025081f466f7ba683e572289ea42ab4f03`
+
+R2 structural omissions remain explicit missingness with no imputation,
+replacement, relocation, resampling, or rebalancing. Persistent pairs with
+zero temporal sensor/compute overlap remain in the plan and are reported rather
+than filtered.
+
+No CS, CC, CSC, validation, or OnField performance outcome was used to select
+or modify any pair, target, persistence mode, coordinate, threshold,
+checkpoint, or workload.
+
+No CSC model forward is authorized by this freeze itself. Next action is to
+implement and qualify an executor that reproduces the frozen pair-surface,
+compute-coordinate, and temporal-workload bindings before execution.
+
+## Phase 6F — CSC Metadata-Executor Binding V1
+
+Status: **FROZEN_METADATA_EXECUTOR_BINDING_PRE_EXECUTION**
+
+Frozen on 2026-10-07 after qualification of the metadata-only Phase-6E CSC
+executor and before any execution-capable CSC implementation.
+
+Bound implementation:
+
+- `experiments/phase_06/csc_outer_executor_v1.py`
+- SHA256 `99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd`
+
+Bound regression test:
+
+- `tests/test_phase6e_csc_outer_executor_metadata_v1.py`
+- SHA256 `5da200d643c1c9333efba7e5fa38d32aa02ba72f8c8f8aa5eeed4451c882f0c2`
+
+Qualification before freeze:
+
+- metadata-executor suite: **13 passed**
+- Phase-6D/Phase-6E dedicated suite: **54 passed**
+- full repository fleet: **904 passed, 1 deselected**
+
+The one deselected test remains the frozen historical Phase5R lifecycle test:
+`tests/test_phase5r_compute_fi_outer_full_fleet_executor.py::test_outer_estate_remains_single_accepted_canary`.
+
+The metadata executor remains execution-disabled:
+
+- `EXECUTION_ENABLED=False`
+- `execute_shard(...)` hard-stops with
+  `PHASE6E_EXECUTION_DISABLED_METADATA_ONLY`
+- no Torch import
+- no Phase-4H sensor-operator import
+- no model loading
+- no sensor `apply_fault`
+- no compute-fault execution
+- no CSC model forward
+- no CSC metric computation
+- no pair-file materialization
+
+Frozen Phase-6F artifacts:
+
+- `configs/evaluation/phase6f_csc_metadata_executor_binding_v1.json` — SHA256 `9bcb887c06701a9a1598b8500b2becd059479a5f465c1f11180cd7f551b29d1b`
+- `docs/PHASE_6F_CSC_METADATA_EXECUTOR_BINDING_V1.md` — SHA256 `f1e427beb7e50947184ef8a45a52f1e80fecd678878842ebdb492c15410c5dcd`
+- `tests/test_phase6f_csc_metadata_executor_binding.py` — SHA256 `ea36e44073dbc648f6e58bc7ad73dd8dbd618f3c1f7593d39993bcf6162db9a9`
+- `manifests/phase_6f_csc_metadata_executor_binding_freeze_v1.json` — SHA256 `9412c1928c803cd5403f7b66f39a485596b74087d331a793a5b7ecdf68973808`
+
+This freeze makes no scientific change and uses no outer, CS, CC, CSC,
+validation, or OnField performance outcome.
+
+Any execution-capable CSC path must be implemented and qualified separately
+without silently mutating this frozen metadata-only executor.
+
+## PHASE 6G — CSC PRE-FORWARD ADAPTER BINDING
+
+Status: `FROZEN_PRE_FORWARD_ADAPTER_BINDING_EXECUTION_DISABLED`
+
+Phase 6G freezes the separately implemented, execution-disabled CSC
+pre-forward adapter before any callable sensor/model execution runtime.
+
+Frozen adapter:
+- `experiments/phase_06/csc_execution_adapter_v1.py`
+- SHA256: `2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5`
+
+Adapter qualification test:
+- `tests/test_phase6g_csc_execution_adapter_pre_forward_v1.py`
+- SHA256: `7a341af41a2e5e5986dc522620870a25615d368b01a1acba26c6f28d85e77cb8`
+
+Freeze artifacts:
+- config SHA256: `886cbaf4bf713e4604dd3d27e28e2634800d63696d6a7b5c12034d44a9810f7a`
+- documentation SHA256: `a25c405aa0aa7c4c31df9bce709cd0aa5ce1e2cc2bec28249c4b224dce8d73bb`
+- binding test SHA256: `239e6ef2db068be0f53e9581b00123c780ba2a8760df5f1acc813173644c98f2`
+- freeze manifest SHA256: `ec0c2e4bda9ed96a38d580e4d8a36a8ca626afa121cdaa04de909a8c03cd7538`
+
+Pre-freeze qualification:
+- Phase-6G adapter suite: 14 passed.
+- Phase-6D through Phase-6G regression set: 77 passed.
+- Full repository fleet: 927 passed, 1 historical Phase-5R lifecycle test deselected.
+
+Scientific/execution boundary:
+- scientific change: FALSE
+- execution enabled: FALSE
+- pair files materialized: FALSE
+- outer arrays read by Phase-6G adapter: FALSE
+- sensor fault execution: FALSE
+- compute fault execution: FALSE
+- model loaded: FALSE
+- CSC model forward: FALSE
+- CSC metrics computed: FALSE
+- outer performance outcomes used: FALSE
+- validation used: FALSE
+- OnField used: FALSE
+- threshold retuning: FALSE
+- checkpoint selection: FALSE
+- resampling: FALSE
+- rebalancing: FALSE
+
+The frozen Phase-6E metadata executor remains byte-identical at
+`99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd`.
+
+Any future execution-capable CSC runtime must be a separate implementation
+and must receive a new explicit prospective authorization/freeze before any
+outer CSC model forward.
+
+## PHASE 6H — CSC EXECUTION ARCHITECTURE CLARIFICATION
+
+Status: `FROZEN_PRE_IMPLEMENTATION_EXECUTION_ARCHITECTURE_CLARIFICATION`
+
+The Phase-6H read-only architecture-gap probe established that the frozen
+Phase-6E–6G artifacts did not machine-define eight required runtime concerns:
+execution shard identity, sensor-reference cache identity/reuse, reference
+ownership, model lifecycle, atomic/resume semantics, executed-record schema,
+pair-member streaming order, and zero-overlap artifact representation.
+
+Phase 6H prospectively freezes those implementation details without changing
+the scientific surface and without authorizing execution.
+
+Key frozen architecture:
+- 732 subject × sensor-family runtime shards.
+- Phase-6 C0 forwards: zero; reuse only validated frozen Phase-5 clean caches.
+- Phase-6 owns raw sensor-reference outputs.
+- Sensor-reference cache key: selected sensor instance × model member.
+- Per compute-active window, reference is Phase-6 sensor reference when sensor
+  active, otherwise the matching frozen Phase-5 clean output.
+- Sensor corruption precedes compute fault injection.
+- One model bundle per shard × variant × seed stream.
+- Canonical stream: FP32 then PTQ-v7; seeds 42,123,2025; canonical pair order;
+  compute windows ascending.
+- PTQ persistent-weight state restoration remains mandatory in `finally`.
+- One atomic final artifact per subject-family shard.
+- No row-level resume.
+- Output files: pair-members, sensor-reference, CSC-fault JSONL, metadata,
+  and success marker.
+- Zero-overlap persistent pairs remain retained and executed; their compute
+  windows reference Phase-5 clean outputs and are never resampled.
+
+Frozen Phase-6H hashes:
+- config: `7cb6234876506fe8f127ee823550d235a04063643013eb3348d81583fdb88a26`
+- documentation: `7024e141bf0320d73f9c3e74685a45b65aaa8619a5e1a4a14b3e9472be265f71`
+- test: `d8cbd4a449087a0eb0be7d5d6d5e7a1b2e67ff6d717aad75169d4db9cf6b15a9`
+- manifest: `6fc3cdc4fed48259795d5d0c93b6ecfeaae1c45cd1ffb1a627be4aefec45c944`
+
+Execution/scientific boundary:
+- scientific change: FALSE
+- execution authorized: FALSE
+- pair files materialized: FALSE
+- outer arrays read: FALSE
+- model loaded: FALSE
+- sensor fault execution: FALSE
+- compute fault execution: FALSE
+- CSC model forward: FALSE
+- metrics computed: FALSE
+- performance outcomes used: FALSE
+- validation used: FALSE
+- OnField used: FALSE
+- retuning/reselection/resampling/rebalancing: FALSE
+
+Next: implement and qualify a separate execution-capable runtime with its
+execution entrypoint still gated. Before any CSC outer forward, freeze a new
+authorization manifest binding the runtime SHA, its tests, all 732 shard
+identities, exact per-shard cardinalities, and validation of the frozen
+Phase-5 clean-cache estate.
+
+## PHASE 6I — CSC SOURCE-TRIAL EXPOSURE HELPER BINDING
+
+Status: `FROZEN_METADATA_ONLY_SOURCE_TRIAL_EXPOSURE_HELPER_BINDING`
+
+Phase 6I freezes the qualified metadata-only producer of the source-trial
+sensor-exposure geometry required by frozen R2 observable-first CSC pairing.
+
+Frozen helper:
+- `experiments/phase_06/csc_source_trial_exposure_v1.py`
+- SHA256: `f4db0c1dfecd5992deed7947665c5a8afc8d60db28f97457ac7ad11bc24b0aeb`
+
+Qualification test:
+- `tests/test_phase6i_csc_source_trial_exposure_v1.py`
+- SHA256: `8335c3c9965d1471ed4b9bbd2f021c15fa198da5125d0ca0402fa6d3c81f4624`
+
+Freeze artifacts:
+- config SHA256: `018d1869c4e6ec6cd061aef0d7b769793c626725937bfe7f337de7dafdf82c5b`
+- documentation SHA256: `14a355a190247fcb62d0df63036077d3f7846bb1164a1400dc310b111d715f15`
+- binding test SHA256: `63bcdfc7c022918ac24d53da2db3fe8a274bb7f985d071c3789c58ab0308f867`
+- manifest SHA256: `c65c69732d6bff0fa1003e680705944dd3214fedfbec437a7dea177106e4a1ca`
+
+Frozen semantics:
+- finite source-trial fault support is half-open
+  `[onset_sample,onset_sample+duration_samples)`;
+- jitter, delay, and orientation use `[0,source_length)`;
+- retained windows are `[historical_window_end-30,historical_window_end)`;
+- exposure requires strict interval overlap;
+- R2 eligibility remains `sensor_exposed_window_count >= 1`;
+- structural omission remains
+  `STRUCTURALLY_INELIGIBLE_NO_CSC_PAIR`;
+- no fallback, replacement, relocation, resampling, or rebalancing.
+
+Pre-freeze qualification:
+- dedicated Phase-6I exposure-helper tests: 14 passed;
+- full Phase-6 regression set: 116 passed;
+- full repository fleet: 966 passed, 1 historical Phase-5R lifecycle test
+  deselected.
+
+Execution/scientific boundary:
+- scientific change: FALSE
+- execution authorized: FALSE
+- CSC runtime implemented: FALSE
+- outer arrays read: FALSE
+- pair files materialized: FALSE
+- sensor fault execution: FALSE
+- compute fault execution: FALSE
+- model loaded: FALSE
+- CSC model forward: FALSE
+- performance outcomes used: FALSE
+- validation used: FALSE
+- OnField used: FALSE
+- resampling/rebalancing: FALSE
+
+Next: implement a separate execution-capable CSC runtime while keeping outer
+execution unauthorized. Before any CSC outer forward, freeze a later gate
+binding the runtime, tests, all 732 shard identities, exact per-shard
+cardinalities, and validated Phase-5 clean-cache estate.

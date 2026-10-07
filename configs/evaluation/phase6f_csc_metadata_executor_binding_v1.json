@@ -1,0 +1,92 @@
+{
+  "bound_scientific_surface": {
+    "combined_compute_coordinate_binding_sha256": "2117c7b07084566607ccac46db150faae81d28bef51d0dcab7c700627d8eb435",
+    "model_independent_csc_pair_count": 4237835,
+    "pair_surface_binding_sha256": "3b39a909ea140db75da52315abcf5efe2748fcdb2d31f0fc98ddf766b000af53",
+    "seed_variant_expanded_pair_member_count": 21793038,
+    "temporal_workload_binding_sha256": "5b447bca2f45d4889bcf0dc86d6170c40a1028171a9f1b0ea7a28e2884f12ba8"
+  },
+  "execution_contract": {
+    "calls_sensor_apply_fault": false,
+    "computes_csc_metrics": false,
+    "execute_shard_behavior": "always raises PHASE6E_EXECUTION_DISABLED_METADATA_ONLY",
+    "executes_compute_fault": false,
+    "executes_model_forward": false,
+    "execution_capability_may_be_added_without_new_freeze": false,
+    "execution_enabled": false,
+    "imports_sensor_fault_operator_module": false,
+    "imports_torch": false,
+    "loads_model": false,
+    "materializes_pair_files": false,
+    "reads_outer_arrays_during_validate_config": false
+  },
+  "frozen_phase6e_plan": {
+    "config": {
+      "path": "configs/evaluation/phase6e_csc_execution_plan_v1.json",
+      "sha256": "888d90f720682d19cfed6ea211d84b12b4ea8fb1408aaef36cffdb7301975bea"
+    },
+    "documentation": {
+      "path": "docs/PHASE_6E_CSC_EXECUTION_PLAN_V1.md",
+      "sha256": "3934951bd08482d266f43fabf1365168b78003dcff779692d6d9b9595c3bfafd"
+    },
+    "manifest": {
+      "path": "manifests/phase_6e_csc_execution_plan_freeze_v1.json",
+      "sha256": "862693f5a45f35b6785ea56184e87a025081f466f7ba683e572289ea42ab4f03"
+    },
+    "regression_test": {
+      "path": "tests/test_phase6e_csc_execution_plan.py",
+      "sha256": "287ae5ad919dc3468e450604620d57956df66b7beb4edffa15790056809dc3f9"
+    }
+  },
+  "generated_date": "2026-10-07",
+  "governance": {
+    "cc_performance_outcomes_used": false,
+    "checkpoint_selection": false,
+    "commit_created": false,
+    "cs_performance_outcomes_used": false,
+    "csc_performance_outcomes_used": false,
+    "model_forward": false,
+    "onfield_used": false,
+    "outer_performance_outcomes_used": false,
+    "pair_materialization": false,
+    "push_performed": false,
+    "rebalancing": false,
+    "resampling": false,
+    "threshold_retuning": false,
+    "validation_performance_used": false
+  },
+  "implemented_metadata_capabilities": [
+    "frozen Phase-6E plan and dependency hash validation",
+    "Phase-6D sensor hash-min ranking",
+    "Phase-6D-R2 source-trial observable-first selection",
+    "Phase-6D compute-stratum assignment",
+    "Phase-6D-R1 source-trial transient compute-window selection",
+    "frozen Phase-5 compute-coordinate derivation",
+    "sensor/compute temporal-overlap accounting",
+    "model-independent CSC pair-metadata derivation"
+  ],
+  "next_action": "Design and qualify a separately gated execution-capable CSC path against this frozen metadata-executor binding before any outer model forward.",
+  "parent_head": "2cd3bb5a5a0990951216a19f1735c7adbd08506a",
+  "phase": "6F",
+  "phase_log_pre_freeze_sha256": "34f5c4999618d8deb05b5f252102dfd8df0fcbb5e477b8beec8c1c83b68bab9e",
+  "purpose": "freeze the qualified metadata-only Phase-6E CSC executor implementation before any execution-capable path is added",
+  "qualified_metadata_executor": {
+    "implementation": {
+      "path": "experiments/phase_06/csc_outer_executor_v1.py",
+      "sha256": "99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd"
+    },
+    "qualification_results": {
+      "full_repository": "904 passed, 1 deselected",
+      "historical_deselection": "tests/test_phase5r_compute_fi_outer_full_fleet_executor.py::test_outer_estate_remains_single_accepted_canary",
+      "metadata_executor_tests": "13 passed",
+      "phase6d_phase6e_dedicated": "54 passed"
+    },
+    "regression_test": {
+      "path": "tests/test_phase6e_csc_outer_executor_metadata_v1.py",
+      "sha256": "5da200d643c1c9333efba7e5fa38d32aa02ba72f8c8f8aa5eeed4451c882f0c2"
+    }
+  },
+  "schema_version": "phase6f_csc_metadata_executor_binding_v1",
+  "scientific_change": false,
+  "status": "FROZEN_METADATA_EXECUTOR_BINDING_PRE_EXECUTION"
+}

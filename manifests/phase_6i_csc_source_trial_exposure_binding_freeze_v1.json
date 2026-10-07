@@ -1,0 +1,38 @@
+{
+  "csc_runtime_implemented": false,
+  "execution_authorized": false,
+  "frozen_files": [
+    {
+      "path": "configs/evaluation/phase6i_csc_source_trial_exposure_binding_v1.json",
+      "sha256": "018d1869c4e6ec6cd061aef0d7b769793c626725937bfe7f337de7dafdf82c5b"
+    },
+    {
+      "path": "docs/PHASE_6I_CSC_SOURCE_TRIAL_EXPOSURE_BINDING_V1.md",
+      "sha256": "14a355a190247fcb62d0df63036077d3f7846bb1164a1400dc310b111d715f15"
+    },
+    {
+      "path": "tests/test_phase6i_csc_source_trial_exposure_binding.py",
+      "sha256": "63bcdfc7c022918ac24d53da2db3fe8a274bb7f985d071c3789c58ab0308f867"
+    },
+    {
+      "path": "experiments/phase_06/csc_source_trial_exposure_v1.py",
+      "sha256": "f4db0c1dfecd5992deed7947665c5a8afc8d60db28f97457ac7ad11bc24b0aeb"
+    },
+    {
+      "path": "tests/test_phase6i_csc_source_trial_exposure_v1.py",
+      "sha256": "8335c3c9965d1471ed4b9bbd2f021c15fa198da5125d0ca0402fa6d3c81f4624"
+    }
+  ],
+  "git_head": "2cd3bb5a5a0990951216a19f1735c7adbd08506a",
+  "next_boundary": "separate execution-capable CSC runtime implementation, qualification without outer execution, then explicit pre-execution authorization freeze",
+  "phase": "6I",
+  "schema_version": "phase6i_csc_source_trial_exposure_binding_freeze_v1",
+  "scientific_change": false,
+  "status": "FROZEN_METADATA_ONLY_SOURCE_TRIAL_EXPOSURE_HELPER_BINDING",
+  "upstream_bindings": {
+    "metadata_executor_sha256": "99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd",
+    "phase6g_adapter_sha256": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5",
+    "phase6h_config_sha256": "7cb6234876506fe8f127ee823550d235a04063643013eb3348d81583fdb88a26",
+    "phase6h_manifest_sha256": "6fc3cdc4fed48259795d5d0c93b6ecfeaae1c45cd1ffb1a627be4aefec45c944"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "claim_boundary": {
+    "CSC_outer_execution_authorized_by_this_protocol": false,
+    "MCU_fault_equivalence_claim": false,
+    "OnField_fall_performance_claim": false,
+    "OnField_used": false,
+    "P2_or_P3_realism_claim": false,
+    "execution_plan_must_be_frozen_first": true,
+    "hardware_fault_rate_claim": false,
+    "physical_fault_equivalence_claim": false
+  },
+  "compute_surface_summary": {
+    "common_fp32_ptq_target_count": 10,
+    "compute_stratum_count": 28,
+    "ptq_only_target_count": 4,
+    "target_count": 14
+  },
+  "config": {
+    "path": "configs/evaluation/phase6d_csc_pairing_protocol_v1.json",
+    "sha256": "4f4585e410782ed039c4cd7f21bce418ab13ac7e1ee4c9aa4750cba15677617e"
+  },
+  "documentation": {
+    "path": "docs/PHASE_6D_CSC_PAIRING_PROTOCOL_V1.md",
+    "sha256": "1dbaa4ff24e2133202992c91850dfe88833393d9ec83caf28635e9de3322b9c1"
+  },
+  "freeze_boundary": {
+    "CC_performance_outcomes_used_to_design_pairing": false,
+    "CSC_fault_pairs_materialized": false,
+    "CSC_metrics_computed": false,
+    "CSC_model_forward_executed": false,
+    "CSC_results_interpreted": false,
+    "CS_performance_outcomes_used_to_design_pairing": false
+  },
+  "frozen_dependencies": {
+    "configs/evaluation/phase4h_sensor_fi_outer_execution_v2_historical_truth.json": "5167985edd3f4bf03fbbb4cc8d196407ac5b172a65477613813a7eaaed53243b",
+    "configs/evaluation/phase5aj_phase5_compute_fi_final_synthesis_v1.json": "57e6011b2e6a9d43876be96313b6ac222f537b497afe9804316e27ffca9cb1cd",
+    "configs/evaluation/phase5d_compute_fi_outer_protocol_v1.json": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36",
+    "configs/faults/phase4h_sensor_fi_instance_sampling_v3_causal_frame_loss.json": "543b648a09091225cfc80eaac5cd03d835a1727118f7730d00697150db205518",
+    "configs/faults/phase4h_sensor_fi_severity_protocol_v1.json": "48b8927628f2580642c93ed9b492cf562a4ad40a21c7815bc3d5a93ca970b009",
+    "configs/faults/phase5a_compute_fi_representation_protocol_v1.json": "279d5c9ebd865ae0d147ec62d0cd04d2ffb5d58d9c80544ee6c913f9a1964bd5",
+    "manifests/phase_4h_sensor_fi_outer_execution_completion_v1.json": "587d608f1f9ff1addbdcec312e3312591e008f05459253b60f754667f209b077",
+    "manifests/phase_4h_sensor_fi_outer_execution_shards_v2_historical_truth.json": "a43df702c2694854e1ce79712af50a9bf91d0f24b40989241f604405f460024d",
+    "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+  },
+  "generated_date": "2026-10-06",
+  "next_action": "Derive and freeze the exact Phase-6E CSC execution plan from this immutable pairing rule and frozen CS/CC metadata. The plan must materialize exact pair counts, all 28 compute stratum coverage, sharding, temporal-overlap metadata and model-forward workload before any CSC outer execution.",
+  "phase": "6D",
+  "prospective_sharding": {
+    "all_eligible_model_variants_inside_same_shard": true,
+    "all_three_checkpoint_seeds_inside_same_shard": true,
+    "all_three_sensor_severities_inside_same_shard": true,
+    "compute_target_and_persistence_are_per_selected_sensor_instance": true,
+    "exact_workload_must_be_derived_and_frozen_before_any_CSC_model_forward": true,
+    "expected_shard_count_before_plan_derivation": 732,
+    "planned_unit": "one outer subject x one sensor family"
+  },
+  "regression_test": {
+    "path": "tests/test_phase6d_csc_pairing_protocol.py",
+    "sha256": "0961f42b90df11ed08430f7d001b3c5c96070b5a02ac0dbc23480df9400a3b68"
+  },
+  "schema_version": "phase6d_csc_pairing_protocol_freeze_v1",
+  "sensor_surface": {
+    "exact_selected_instance_cardinality_before_compute_assignment": {
+      "source_trial_parent_instances": 132489,
+      "stored_window_parent_instances": 4107450,
+      "total": 4239939
+    },
+    "families": [
+      "bias",
+      "drift",
+      "scale_factor",
+      "noise",
+      "clipping_saturation",
+      "stuck_channel",
+      "axis_loss",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "family_count": 12,
+    "selected_instance_rule": {
+      "algorithm": "SHA256 canonical compact sorted JSON; choose the candidate with lexicographically smallest digest within each parent x family x severity group",
+      "candidate_universe": "exact frozen Phase-4H sensor-fault instance universe",
+      "outcome_dependent_reselection": false,
+      "resampling_after_execution": false,
+      "resampling_after_plan_derivation": false,
+      "sampling_without_replacement": true,
+      "selection_namespace": "crosslayer-phase6d-csc-sensor-instance-selection-v1",
+      "selection_payload": [
+        "namespace",
+        "fold",
+        "subject",
+        "parent_kind",
+        "parent_sequence_id",
+        "family",
+        "severity",
+        "fault_id",
+        "replay_id"
+      ],
+      "unit": "one frozen sensor fault instance per outer parent x family x severity"
+    },
+    "sequence_families": [
+      "drift",
+      "stuck_channel",
+      "dropout",
+      "frame_loss",
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "severity_count": 3,
+    "severity_levels": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "window_value_families": [
+      "bias",
+      "scale_factor",
+      "noise",
+      "clipping_saturation",
+      "axis_loss"
+    ]
+  },
+  "status": "FROZEN_PROSPECTIVE_CSC_PAIRING_PROTOCOL_PRE_EXECUTION_PLAN"
+}

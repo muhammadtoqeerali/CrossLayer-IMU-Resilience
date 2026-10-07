@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "config": {
+      "path": "configs/evaluation/phase6e_csc_execution_plan_v1.json",
+      "sha256": "888d90f720682d19cfed6ea211d84b12b4ea8fb1408aaef36cffdb7301975bea"
+    },
+    "documentation": {
+      "path": "docs/PHASE_6E_CSC_EXECUTION_PLAN_V1.md",
+      "sha256": "3934951bd08482d266f43fabf1365168b78003dcff779692d6d9b9595c3bfafd"
+    },
+    "regression_test": {
+      "path": "tests/test_phase6e_csc_execution_plan.py",
+      "sha256": "287ae5ad919dc3468e450604620d57956df66b7beb4edffa15790056809dc3f9"
+    }
+  },
+  "bindings": {
+    "combined_compute_coordinate_binding_sha256": "2117c7b07084566607ccac46db150faae81d28bef51d0dcab7c700627d8eb435",
+    "pair_surface_binding_sha256": "3b39a909ea140db75da52315abcf5efe2748fcdb2d31f0fc98ddf766b000af53",
+    "subject_family_shard_inventory_sha256": "14f35652ea9e9439de9b07aad5d66ddc233f96600ce6b7a6044659b44b215848",
+    "temporal_workload_binding_sha256": "5b447bca2f45d4889bcf0dc86d6170c40a1028171a9f1b0ea7a28e2884f12ba8"
+  },
+  "cardinality": {
+    "compute_faulted_member_windows": 411540372,
+    "model_independent_csc_pairs": 4237835,
+    "seed_variant_expanded_pair_members": 21793038,
+    "simultaneous_csc_overlap_member_windows": 19926021,
+    "subject_family_shards": 732,
+    "zero_overlap_persistent_pair_members": 5234355,
+    "zero_overlap_persistent_pairs": 1018215,
+    "zero_pair_shards": 0
+  },
+  "generated_date": "2026-10-07",
+  "governance": {
+    "commit_created": false,
+    "csc_model_forward_before_freeze": false,
+    "pair_materialization_before_freeze": false,
+    "performance_outcomes_used": false,
+    "push_performed": false,
+    "resampling_or_rebalancing": false,
+    "threshold_or_checkpoint_retuning": false
+  },
+  "next_action": "Implement and qualify the Phase-6E CSC executor against this exact frozen plan before any CSC model forward.",
+  "parent_head": "2cd3bb5a5a0990951216a19f1735c7adbd08506a",
+  "phase": "6E",
+  "phase_log_pre_freeze_sha256": "306a84f98a24ccb74cd2f640c8e5cc2bbc2bf0c780201e0b9d5e7ad800cdb473",
+  "schema_version": "phase6e_csc_execution_plan_freeze_v1",
+  "status": "FROZEN_PRE_EXECUTION_CSC_PLAN"
+}

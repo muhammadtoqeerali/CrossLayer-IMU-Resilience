@@ -1,0 +1,117 @@
+{
+  "csc_runtime_implemented": false,
+  "execution_authorized": false,
+  "frozen_active_support": {
+    "finite_episode_families": [
+      "drift",
+      "stuck_channel",
+      "dropout",
+      "frame_loss"
+    ],
+    "finite_support": "[onset_sample, onset_sample + duration_samples)",
+    "until_end_duration": null,
+    "until_end_families": [
+      "jitter",
+      "delay",
+      "orientation"
+    ],
+    "until_end_onset": 0,
+    "until_end_support": "[0, source_length)"
+  },
+  "frozen_helper": {
+    "path": "experiments/phase_06/csc_source_trial_exposure_v1.py",
+    "qualification_test_path": "tests/test_phase6i_csc_source_trial_exposure_v1.py",
+    "qualification_test_sha256": "8335c3c9965d1471ed4b9bbd2f021c15fa198da5125d0ca0402fa6d3c81f4624",
+    "sha256": "f4db0c1dfecd5992deed7947665c5a8afc8d60db28f97457ac7ad11bc24b0aeb"
+  },
+  "frozen_retained_window_geometry": {
+    "exposure_predicate": "window_start < fault_stop_exclusive and fault_start < window_stop_exclusive",
+    "ordered_result": "ascending stored evaluation window_index",
+    "window_length_samples": 30,
+    "window_start": "historical_window_end - 30",
+    "window_stop": "historical_window_end",
+    "window_stop_semantics": "exclusive",
+    "window_stride_samples": 15
+  },
+  "governance": {
+    "checkpoint_selection": false,
+    "commit_created": false,
+    "onfield_used": false,
+    "outer_performance_outcomes_used": false,
+    "push_performed": false,
+    "rebalancing": false,
+    "resampling": false,
+    "threshold_retuning": false,
+    "validation_used": false
+  },
+  "helper_boundary": {
+    "applies_sensor_fault": false,
+    "computes_performance_metrics": false,
+    "executes_compute_fault": false,
+    "executes_model_forward": false,
+    "imports_numpy": false,
+    "imports_sensor_operator": false,
+    "imports_torch": false,
+    "loads_model": false,
+    "materializes_pair_files": false,
+    "metadata_only": true,
+    "reads_outer_arrays": false
+  },
+  "next_boundary": "Any execution-capable CSC runtime must be introduced as a separate new implementation and remain unauthorized until a later pre-execution gate freezes its bytes, tests, shard identities, exact per-shard cardinalities, and Phase-5 clean cache validation.",
+  "phase": "6I",
+  "purpose": "Freeze the qualified metadata-only producer of the exact Phase-6D-R1 source-trial exposure geometry consumed by the Phase-6D-R2 observable-first source-trial selection rule.",
+  "qualification_entering_freeze": {
+    "dedicated_exposure_tests_passed": 14,
+    "full_repository_tests_passed": 966,
+    "historical_phase5r_lifecycle_test_deselected": 1,
+    "phase6_tests_passed": 116
+  },
+  "r2_census_contract": {
+    "eligible_predicate": "sensor_exposed_window_count >= 1",
+    "fallback": false,
+    "outputs": [
+      "sensor_exposed_window_indices_by_fault_id",
+      "exposure_count_by_fault_id"
+    ],
+    "producer": "source_trial_exposure_census",
+    "rebalancing": false,
+    "relocation": false,
+    "replacement": false,
+    "resampling": false,
+    "selection_consumer": "csc_outer_executor_v1.select_source_trial_candidate",
+    "structural_omission_status": "STRUCTURALLY_INELIGIBLE_NO_CSC_PAIR"
+  },
+  "schema_version": "phase6i_csc_source_trial_exposure_binding_v1",
+  "scientific_change": false,
+  "status": "FROZEN_METADATA_ONLY_SOURCE_TRIAL_EXPOSURE_HELPER_BINDING",
+  "upstream_bindings": {
+    "phase4h_operators": {
+      "path": "experiments/phase_04/sensor_fi_operators.py",
+      "sha256": "6559ddc1fcdca352fbd09bf003e28919bb355a76b2ef52e6985a99188fd69eaa"
+    },
+    "phase4h_outer_executor": {
+      "path": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+      "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+    },
+    "phase4h_sampling_v3": {
+      "path": "experiments/phase_04/sensor_fi_sampling_v3.py",
+      "sha256": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74"
+    },
+    "phase6e_metadata_executor": {
+      "path": "experiments/phase_06/csc_outer_executor_v1.py",
+      "sha256": "99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd"
+    },
+    "phase6g_adapter": {
+      "path": "experiments/phase_06/csc_execution_adapter_v1.py",
+      "sha256": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5"
+    },
+    "phase6h_architecture_config": {
+      "path": "configs/evaluation/phase6h_csc_execution_architecture_clarification_v1.json",
+      "sha256": "7cb6234876506fe8f127ee823550d235a04063643013eb3348d81583fdb88a26"
+    },
+    "phase6h_manifest": {
+      "path": "manifests/phase_6h_csc_execution_architecture_clarification_freeze_v1.json",
+      "sha256": "6fc3cdc4fed48259795d5d0c93b6ecfeaae1c45cd1ffb1a627be4aefec45c944"
+    }
+  }
+}

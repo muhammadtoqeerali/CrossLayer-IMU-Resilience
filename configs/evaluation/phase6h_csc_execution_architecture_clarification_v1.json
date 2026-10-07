@@ -1,0 +1,380 @@
+{
+  "atomic_resume_contract": {
+    "artifact_granularity": "one final artifact directory per subject-family shard",
+    "commit_operation": "atomic directory rename/replace from .partial to final directory",
+    "exception_before_commit": "never produce a reusable final shard",
+    "final_directory": "{output_root}/shards/{shard_id}",
+    "invalid_final_without_recompute_partial": "ABORT",
+    "partial_directory_without_recompute_partial": "ABORT",
+    "recompute_partial_true": "delete invalid final/partial artifact and recompute entire subject-family shard from frozen inputs",
+    "row_level_resume": false,
+    "success_marker": "_SUCCESS.json",
+    "success_marker_is_part_of_final_directory": true,
+    "success_marker_written": "inside temporary directory after all output files and hashes are complete",
+    "temporary_directory": "{output_root}/shards/{shard_id}.partial",
+    "valid_final_reuse_requires": [
+      "shard_id exact match",
+      "Phase6H gate/config SHA exact match",
+      "execution-runtime SHA exact match",
+      "all declared output files present",
+      "all declared output SHA256 hashes exact",
+      "coverage/cardinality fields exact"
+    ]
+  },
+  "cardinality_contract": {
+    "global_counts_are_not_permission_to_execute": true,
+    "global_csc_fault_window_records": 411540372,
+    "global_pair_member_records": 21793038,
+    "global_sensor_reference_records": 35167107,
+    "global_zero_overlap_pair_member_records": 5234355,
+    "per_shard_exact_counts": "must be derived metadata-only and frozen in a later pre-execution authorization manifest before any CSC forward"
+  },
+  "clean_reference_ownership": {
+    "copy_clean_records_into_phase6_artifact": false,
+    "lookup_rule": "resolve exactly one matching clean_cache_id from the frozen Phase-5 plan",
+    "lookup_scope": [
+      "subject",
+      "fold",
+      "model_variant",
+      "checkpoint_seed"
+    ],
+    "missing_or_invalid_clean_cache": "ABORT_SHARD_NO_PHASE6_RECOMPUTE",
+    "owner": "frozen Phase-5 clean-cache estate",
+    "phase6_c0_model_forwards": 0,
+    "phase6_records_reference_phase5_clean_cache_id": true,
+    "reuse_requirement": "Phase-5 clean artifact must pass its frozen plan/executor/output-hash validation before the corresponding Phase-6 model-member stream may execute"
+  },
+  "csc_fault_record_schema": {
+    "reference_kind_values": [
+      "phase6_sensor_reference",
+      "phase5_clean_cache"
+    ],
+    "required_fields": [
+      "schema_version",
+      "shard_id",
+      "execution_request_id",
+      "sensor_reference_cache_id",
+      "phase5_clean_cache_id",
+      "fold",
+      "subject",
+      "task",
+      "trial",
+      "sensor_parent_kind",
+      "parent_local_index",
+      "sensor_fault_id",
+      "sensor_replay_id",
+      "model_variant",
+      "checkpoint_seed",
+      "target_name",
+      "target_role",
+      "representation_class",
+      "persistence",
+      "compute_sampling_instance_id",
+      "element_index",
+      "bit_position",
+      "onset_or_inference_index",
+      "execution_window_index",
+      "sensor_active_at_execution_window",
+      "simultaneous_sensor_compute_active",
+      "reference_kind",
+      "input_sha256",
+      "faulted_output_sha256",
+      "faulted_output_nonfinite",
+      "faulted_output_values",
+      "faulted_output_float32_hex",
+      "faulted_softmax_values",
+      "mutation"
+    ],
+    "schema_version": "phase6h_csc_fault_window_record_v1"
+  },
+  "execution_authorized": false,
+  "frozen_dependencies": {
+    "phase6e_execution_plan": {
+      "path": "configs/evaluation/phase6e_csc_execution_plan_v1.json",
+      "sha256": "888d90f720682d19cfed6ea211d84b12b4ea8fb1408aaef36cffdb7301975bea"
+    },
+    "phase6e_metadata_executor": {
+      "path": "experiments/phase_06/csc_outer_executor_v1.py",
+      "sha256": "99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd"
+    },
+    "phase6f_binding": {
+      "path": "configs/evaluation/phase6f_csc_metadata_executor_binding_v1.json",
+      "sha256": "9bcb887c06701a9a1598b8500b2becd059479a5f465c1f11180cd7f551b29d1b"
+    },
+    "phase6g_adapter": {
+      "path": "experiments/phase_06/csc_execution_adapter_v1.py",
+      "sha256": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5"
+    },
+    "phase6g_binding": {
+      "path": "configs/evaluation/phase6g_csc_pre_forward_adapter_binding_v1.json",
+      "sha256": "886cbaf4bf713e4604dd3d27e28e2634800d63696d6a7b5c12034d44a9810f7a"
+    },
+    "phase6g_manifest": {
+      "path": "manifests/phase_6g_csc_pre_forward_adapter_binding_freeze_v1.json",
+      "sha256": "ec0c2e4bda9ed96a38d580e4d8a36a8ca626afa121cdaa04de909a8c03cd7538"
+    }
+  },
+  "frozen_scientific_surface": {
+    "checkpoint_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "compute_faulted_member_window_count": 411540372,
+    "model_independent_pair_count": 4237835,
+    "model_variant_order": [
+      "fp32",
+      "ptq_v7"
+    ],
+    "seed_variant_expanded_pair_member_count": 21793038,
+    "sensor_reference_member_window_count": 35167107,
+    "severity_order": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "simultaneous_csc_overlap_member_window_count": 19926021,
+    "subject_family_shard_count": 732,
+    "zero_temporal_overlap_pair_count": 1018215,
+    "zero_temporal_overlap_pair_member_count": 5234355
+  },
+  "future_runtime_interface": {
+    "must_not_modify_phase6e_metadata_executor": true,
+    "must_not_modify_phase6g_adapter": true,
+    "optional_arguments": [
+      "--recompute-partial"
+    ],
+    "required_arguments": [
+      "--gate-path",
+      "--shard-id",
+      "--dataset-root",
+      "--phase5-output-root",
+      "--output-root"
+    ],
+    "runtime_must_be_separate_new_file": true
+  },
+  "governance": {
+    "checkpoint_selection": false,
+    "commit_created": false,
+    "compute_fault_executed": false,
+    "csc_model_forward": false,
+    "metrics_computed": false,
+    "model_loaded": false,
+    "onfield_used": false,
+    "outer_arrays_read": false,
+    "outer_performance_outcomes_used": false,
+    "pair_files_materialized": false,
+    "push_performed": false,
+    "rebalancing": false,
+    "resampling": false,
+    "sensor_fault_executed": false,
+    "threshold_retuning": false,
+    "validation_used": false
+  },
+  "model_lifecycle": {
+    "cross_shard_model_state_reuse": false,
+    "exception_policy": "any exception aborts the shard; partial directory remains invalid and a retry reloads the model from frozen artifacts",
+    "fp32_activation_or_buffer_routes": "reuse frozen Phase-5 fault-only execution semantics",
+    "load_count_rule": "load the frozen model bundle once when entering that model-member stream and release it after all eligible pairs for that stream are complete",
+    "model_eval_once_after_load": true,
+    "pair_members_executed_sequentially_within_model_stream": true,
+    "ptq_activation_or_buffer_routes": "reuse frozen Phase-5 fault-only execution semantics",
+    "ptq_clean_state_captured_from_frozen_model_bundle": true,
+    "ptq_persistent_weight_route": "reuse PTQWeightFaultOnlySession semantics",
+    "ptq_weight_sequence_must_reset_clean_state_in_finally": true,
+    "scope": "one model bundle per shard x model_variant x checkpoint_seed stream"
+  },
+  "next_action": "Implement and qualify a separate execution-capable runtime with execution still gated off; then freeze a complete pre-execution authorization manifest before any CSC outer forward.",
+  "output_files": {
+    "compression": "none",
+    "csc_fault_windows": "csc_fault.jsonl",
+    "jsonl_encoding": "one UTF-8 canonical JSON object per line; sort_keys=True, separators=(',',':'), ensure_ascii=False",
+    "metadata": "metadata.json",
+    "pair_members": "pair_members.jsonl",
+    "reason_for_no_compression": "stable byte hashing without compressor metadata ambiguity",
+    "sensor_references": "sensor_reference.jsonl",
+    "success": "_SUCCESS.json"
+  },
+  "pair_enumeration": {
+    "canonical_pair_sort_key": [
+      "task ascending",
+      "trial ascending",
+      "parent_local_index ascending; stored-window uses frozen window index, source-trial uses -1",
+      "severity rank L1 < L2 < L3",
+      "sensor_replay_id lexicographic"
+    ],
+    "ineligible_variant_pairs": "skip without replacement or reassignment",
+    "model_member_stream_order": [
+      "model_variant order fp32 then ptq_v7",
+      "checkpoint_seed order 42 then 123 then 2025",
+      "canonical pair sort key",
+      "compute execution window indices ascending"
+    ],
+    "pair_files_pre_materialized": false,
+    "pair_member_identity": "Phase6G execution_request_id plus runtime parent coordinates; no scientific coordinate is regenerated differently",
+    "regenerate_from_frozen_metadata": true
+  },
+  "pair_member_record_schema": {
+    "execution_status_value": "COMPLETE",
+    "metrics_generated": false,
+    "required_fields": [
+      "schema_version",
+      "shard_id",
+      "execution_request_id",
+      "fold",
+      "subject",
+      "task",
+      "trial",
+      "sensor_parent_kind",
+      "parent_local_index",
+      "sensor_fault_id",
+      "sensor_replay_id",
+      "target_name",
+      "target_role",
+      "representation_class",
+      "persistence",
+      "model_variant",
+      "checkpoint_seed",
+      "compute_sampling_instance_id",
+      "element_index",
+      "bit_position",
+      "onset_or_inference_index",
+      "trial_window_count",
+      "sensor_exposed_window_indices",
+      "compute_execution_window_indices",
+      "simultaneous_overlap_window_indices",
+      "temporal_overlap_window_count",
+      "zero_temporal_overlap",
+      "sensor_reference_cache_id",
+      "phase5_clean_cache_id",
+      "sensor_reference_record_count",
+      "csc_fault_record_count",
+      "execution_status",
+      "metrics_generated"
+    ],
+    "schema_version": "phase6h_csc_pair_member_record_v1"
+  },
+  "per_compute_window_reference_rule": {
+    "reason": "The CSC compute fault always operates on the sensor-conditioned window sequence. Windows outside sensor exposure are identical to the clean retained window and therefore resolve to the frozen clean reference.",
+    "sensor_active_at_compute_window": "reference is Phase-6 sensor-reference output for the same window and model member",
+    "sensor_inactive_at_compute_window": "reference is frozen Phase-5 clean-cache output for the same window and model member"
+  },
+  "phase": "6H",
+  "pre_execution_gate_required": {
+    "must_bind": [
+      "Phase6H architecture config/doc/test/manifest hashes",
+      "future execution-runtime implementation SHA256",
+      "future runtime qualification-test SHA256",
+      "all frozen upstream hashes",
+      "all 732 runtime shard identities",
+      "exact per-shard pair-member counts",
+      "exact per-shard sensor-reference counts",
+      "exact per-shard CSC fault-window counts",
+      "Phase5 clean-cache estate validation result"
+    ],
+    "must_exist_before_any_model_forward": true,
+    "outer_performance_outcomes_may_inform_gate": false,
+    "required": true
+  },
+  "purpose": "Resolve runtime architecture that was intentionally not inferred from Phase-6E workload bookkeeping or Phase-5 executor patterns.",
+  "runtime_work_unit": {
+    "all_compute_strata_assignments_for_those_selected_sensor_instances": true,
+    "all_eligible_model_variants_and_checkpoint_seeds": true,
+    "all_selected_parents_for_subject_family_in_same_shard": true,
+    "all_severities_in_same_shard": true,
+    "count": 732,
+    "human_shard_id": "phase6h_csc_f{fold}_s{subject}_{sensor_family}_{sha256_payload_first16}",
+    "intra_shard_model_mutation_concurrency": false,
+    "shard_identity_digest": "SHA256",
+    "shard_identity_encoding": "UTF-8 canonical JSON sort_keys=True separators=(',',':') ensure_ascii=False",
+    "shard_identity_payload": [
+      "schema_version=phase6h_csc_runtime_shard_identity_v1",
+      "fold",
+      "subject",
+      "sensor_family"
+    ],
+    "shard_is_unit_of_concurrency": true,
+    "unit": "one subject x one sensor-family shard"
+  },
+  "schema_version": "phase6h_csc_execution_architecture_clarification_v1",
+  "scientific_change": false,
+  "sensor_compute_composition": {
+    "compute_fault_input": "for every compute-active window use the corresponding sensor-conditioned retained window, whether or not that window is sensor-exposed",
+    "input_tensor_conversion": "np.asarray(window,dtype=np.float32) -> torch.from_numpy(...).unsqueeze(0)",
+    "no_compute_relocation": true,
+    "no_sensor_relocation": true,
+    "sensor_fault_applied_before_compute_fault": true,
+    "source_trial": "apply the frozen Phase-4H sensor operator to the source trial, rewindow with frozen Phase-4H v2 semantics, then use those sensor-conditioned windows for references and compute FI",
+    "stored_window": "apply the frozen Phase-4H sensor operator to the selected stored parent window; all other retained windows remain clean"
+  },
+  "sensor_reference_ownership": {
+    "cache_key_digest": "SHA256",
+    "cache_key_encoding": "UTF-8 canonical JSON sort_keys=True separators=(',',':') ensure_ascii=False",
+    "cache_key_payload": [
+      "schema_version=phase6h_sensor_reference_cache_id_v1",
+      "fold",
+      "subject",
+      "task",
+      "trial",
+      "sensor_parent_kind",
+      "parent_local_index",
+      "sensor_fault_id",
+      "sensor_replay_id",
+      "model_variant",
+      "checkpoint_seed"
+    ],
+    "cache_scope": "one selected sensor instance x one model member",
+    "owner": "Phase-6 CSC runtime",
+    "phase4h_aggregated_outputs_reused_as_raw_reference": false,
+    "reference_forward_occurs_before_compute_fault_sequence": true,
+    "reference_forward_uses_same_model_member_as_pair_member": true,
+    "reference_forward_uses_sensor_conditioned_input": true,
+    "reference_output_generated_once_per_cache_key_within_shard": true,
+    "reference_windows": "exact frozen sensor-exposed retained-window indices only; stored-window parents therefore contribute exactly one reference window"
+  },
+  "sensor_reference_record_schema": {
+    "required_fields": [
+      "schema_version",
+      "shard_id",
+      "execution_request_id",
+      "sensor_reference_cache_id",
+      "fold",
+      "subject",
+      "task",
+      "trial",
+      "sensor_parent_kind",
+      "parent_local_index",
+      "sensor_fault_id",
+      "sensor_replay_id",
+      "model_variant",
+      "checkpoint_seed",
+      "reference_window_index",
+      "input_sha256",
+      "output_sha256",
+      "output_nonfinite",
+      "output_values",
+      "output_float32_hex",
+      "softmax_values"
+    ],
+    "schema_version": "phase6h_csc_sensor_reference_record_v1"
+  },
+  "status": "FROZEN_PRE_IMPLEMENTATION_EXECUTION_ARCHITECTURE_CLARIFICATION",
+  "zero_overlap_record_contract": {
+    "compute_execution_window_set": "unchanged frozen Phase-5 suffix",
+    "compute_fault_execution_still_runs": true,
+    "csc_fault_rows_written": true,
+    "filter": false,
+    "pair_member_record_always_written": true,
+    "pair_retained": true,
+    "rebalance": false,
+    "reference_kind_for_every_compute_window": "phase5_clean_cache",
+    "relocate": false,
+    "replace": false,
+    "resample": false,
+    "sensor_active_at_every_compute_window": false,
+    "sensor_reference_rows_for_sensor_exposed_windows_still_written": true,
+    "simultaneous_overlap_window_indices": [],
+    "simultaneous_sensor_compute_active_at_every_compute_window": false,
+    "zero_temporal_overlap": true
+  }
+}

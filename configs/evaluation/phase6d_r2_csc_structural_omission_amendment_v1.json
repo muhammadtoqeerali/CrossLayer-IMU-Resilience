@@ -1,0 +1,156 @@
+{
+  "authoritative_implementation_hashes": {
+    "configs/datasets/int8_calibration_identity_v1.json": "50aea26af1c0e997736b63d3250d2ae9888186586fd16310c5bbdf788eb2a10e",
+    "configs/evaluation/phase4h_sensor_fi_devcal_runner_v1.json": "a3ff7a37f991078aaa31e5023edf30101048cfd55171c40dc56497605aa7a090",
+    "configs/evaluation/phase4h_sensor_fi_devcal_runner_v2_phase3_falling_route.json": "5fd8fd4b67d76dc1f8d8fba203ca96755c80e95b7f9c42050dfb2911b8b662e4",
+    "experiments/phase_04/sensor_fi_devcal_runner.py": "bee7b43423723d5ccdbf237d6dbcf70633d9db489d2aca35d1aca26c5100d398",
+    "experiments/phase_04/sensor_fi_devcal_runner_v2.py": "541af4663293ae5fbaf5286fc3dea7679d511fdabb50738863880e4712a9b86a",
+    "experiments/phase_04/sensor_fi_outer_executor_v1.py": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d",
+    "experiments/phase_04/sensor_fi_sampling_v3.py": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74"
+  },
+  "execution_plan_governance": {
+    "CC_performance_outcomes_used": false,
+    "CSC_model_forward_before_this_freeze": false,
+    "CSC_pair_materialization_before_this_freeze": false,
+    "CS_performance_outcomes_used": false,
+    "OnField_used": false,
+    "checkpoint_selection": false,
+    "compute_persistence_selection": false,
+    "compute_target_selection": false,
+    "phase6e_must_depend_on_r2": true,
+    "physical_or_MCU_claim": false,
+    "sensor_family_selection": false,
+    "sensor_severity_selection": false,
+    "threshold_retuning": false
+  },
+  "generated_date": "2026-10-06",
+  "interaction_with_r1": {
+    "r1_persistent_overlap_rule_unchanged": true,
+    "r1_sensor_exposure_predicate_unchanged": true,
+    "r1_transient_window_hash_rule_unchanged": true,
+    "r1_window_geometry_unchanged": true,
+    "r1_zero_exposure_abort_role_after_r2": "For any retained source-trial CSC pair, zero exposed windows remains an internal consistency failure requiring ABORT_PLAN_DERIVATION_NO_FALLBACK. A parent x family x severity group with no observable frozen sensor candidate does not reach compute-stratum assignment and is instead recorded prospectively as STRUCTURALLY_INELIGIBLE_NO_CSC_PAIR."
+  },
+  "next_action": "Perform one geometry-only outer structural census under the frozen R2 rule. Derive the exact retained source-trial sensor count, structural omissions, compute-stratum distribution, and revised total CSC pair count without model execution or performance outcomes. Only then freeze the exact Phase-6E execution plan.",
+  "pair_count_governance": {
+    "exact_post_r2_pair_count_known_before_outer_structural_recheck": false,
+    "outer_structural_recheck_may_execute_models": false,
+    "outer_structural_recheck_may_rebalance_or_resample": false,
+    "outer_structural_recheck_may_use_performance_outcomes": false,
+    "phase6d_original_nominal_pair_count": 4239939,
+    "phase6d_original_nominal_pair_count_still_authoritative": false,
+    "reason": "R2 may structurally omit source-trial parent x family x severity groups with no observable frozen candidate."
+  },
+  "parent_phase6d": {
+    "config_path": "configs/evaluation/phase6d_csc_pairing_protocol_v1.json",
+    "config_sha256": "4f4585e410782ed039c4cd7f21bce418ab13ac7e1ee4c9aa4750cba15677617e",
+    "manifest_path": "manifests/phase_6d_csc_pairing_protocol_freeze_v1.json",
+    "manifest_sha256": "f4f9f79485d60948aa4e88f405b5453b63f83760e44a4e2f787392aca799bea8"
+  },
+  "parent_phase6d_r1": {
+    "config_path": "configs/evaluation/phase6d_r1_csc_pairing_clarification_v1.json",
+    "config_sha256": "60b557b16cb7c9d75ea7fd67299c264624b024fe962d436ce336827031faeea0",
+    "manifest_path": "manifests/phase_6d_r1_csc_pairing_clarification_freeze_v1.json",
+    "manifest_sha256": "ee11de570884f646a85494fc0e065fcc3b2609e641998ec00141a5215b711278"
+  },
+  "phase": "6D-R2",
+  "qualification_domain": {
+    "CSC_pair_materialization_used": false,
+    "OnField_used": false,
+    "compute_fault_execution_used": false,
+    "model_outputs_used": false,
+    "outer_test_used": false,
+    "partition": "training_calibration",
+    "performance_outcomes_used": false,
+    "sensor_fault_execution_used": false,
+    "validation_used": false
+  },
+  "qualification_evidence": {
+    "devcal_parent_universe": {
+      "activity_only_parent_count": 3077,
+      "fold_parent_memberships": 11221,
+      "has_falling_parent_count": 2269,
+      "sha256": "8c506d09d053cdfd07c01351ab2f2ca5ddc6b10cba8db94b61b2775463fff234",
+      "unique_parent_count": 5346
+    },
+    "r2c_observability_census": {
+      "census_sha256": "db46998af6d00137529b89a7cfb7519b674def7de7d99ebe703d5e6cda00e0fc",
+      "filtered_hash_min_selection_change_count": 10257,
+      "filtered_selection_sha256": "fce784fc9645626830cc57b84f740a9bc3d64ca9be96af5c2dba6809349f6a1f",
+      "original_hash_min_unobservable_selection_count": 12507,
+      "qualification_group_count": 235641,
+      "total_frozen_candidates_visited": 1548498,
+      "total_structurally_eligible_candidates": 1427593,
+      "zero_eligible_group_count": 2250
+    },
+    "r2d_structural_omission_qualification": {
+      "activity_only_eligible_groups": 154938,
+      "activity_only_omitted_groups": 0,
+      "activity_only_total_groups": 154938,
+      "candidate_rule_digest_sha256": "740b444fa8b9a08fbc5aa154b9f0ea2d4f77d38f33bd4921b363d49bf008b412",
+      "coverage_gates": {
+        "all_falling_family_severity_have_event_coverage": true,
+        "all_fold_family_severity_strata_retained": true,
+        "all_fold_parent_severity_have_some_sequence_pair": true,
+        "all_source_family_severity_surfaces_retained": true
+      },
+      "eligible_source_trial_groups": 233391,
+      "falling_eligible_groups": 78453,
+      "falling_omitted_groups": 2250,
+      "falling_total_groups": 80703,
+      "fold_parent_memberships_with_any_omission": 778,
+      "structural_omission_rate": 0.009548423237,
+      "structurally_ineligible_groups": 2250,
+      "total_source_trial_groups": 235641,
+      "unique_parents_with_any_omission": 493,
+      "unique_subjects_with_any_omission": 50
+    }
+  },
+  "reason": "Prospective Phase-6D/R1 plan qualification discovered that some frozen source-trial sensor instances have no retained evaluation-window exposure. A training/calibration-only qualification then showed that some parent x family x severity groups contain no observable frozen candidate at all. R2 therefore changes source-trial CSC candidate eligibility and permits explicit structural omission without fallback, resampling, temporal relocation, replacement, or performance feedback.",
+  "schema_version": "phase6d_r2_csc_structural_omission_amendment_v1",
+  "scientific_change": true,
+  "scientific_surface": {
+    "all_12_sensor_families_retained_as_analysis_surface": true,
+    "all_3_sensor_severities_retained_as_analysis_surface": true,
+    "compute_persistence_set_changed": false,
+    "compute_target_set_changed": false,
+    "fault_pairs_are_independent_samples": false,
+    "primary_uncertainty_unit": "subject",
+    "sensor_family_set_changed": false,
+    "severity_set_changed": false,
+    "stored_window_families_changed": false,
+    "structural_missingness_must_be_reported": true,
+    "structural_missingness_must_not_be_imputed": true
+  },
+  "source_trial_candidate_eligibility": {
+    "applies_to": "Phase-6 CSC source-trial sensor parents only",
+    "candidate_resampling_allowed": false,
+    "candidate_universe": "only frozen Phase-4H source-trial sensor instances",
+    "candidate_values_changed": false,
+    "eligible_predicate": "sensor_exposed_window_count >= 1",
+    "evaluation_geometry": "exact frozen Phase-6D-R1 retained-window geometry",
+    "new_sensor_instances_generated": false,
+    "replacement_allowed": false,
+    "sensor_active_support": "exact frozen Phase-6D-R1 sensor active-support rule",
+    "stored_window_sensor_parents_changed": false,
+    "temporal_relocation_allowed": false
+  },
+  "source_trial_selection_rule": {
+    "hash_algorithm_changed": false,
+    "hash_namespace_changed": false,
+    "hash_payload_changed": false,
+    "hash_ranking_changed": false,
+    "omitted_group_CSC_pair": "NONE",
+    "omitted_group_compute_target_assignment": "NOT_PERFORMED",
+    "order": [
+      "generate exact frozen Phase-4H candidate instances",
+      "compute geometry-only retained-window exposure",
+      "retain candidates with sensor_exposed_window_count >= 1",
+      "if eligible set is nonempty apply unchanged Phase-6D SHA256 hash-min ranking",
+      "if eligible set is empty mark STRUCTURALLY_INELIGIBLE_NO_CSC_PAIR",
+      "only after retained sensor selection assign frozen Phase-6D compute stratum"
+    ],
+    "rebalancing_after_omission_allowed": false
+  },
+  "status": "FROZEN_PRE_PLAN_PROSPECTIVE_CSC_STRUCTURAL_OMISSION_AMENDMENT"
+}

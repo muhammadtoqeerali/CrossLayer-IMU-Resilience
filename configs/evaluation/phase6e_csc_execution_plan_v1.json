@@ -1,0 +1,737 @@
+{
+  "compute_strata": [
+    {
+      "compute_active_window_sum": 150834,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 0,
+      "member_compute_faulted_window_sum": 905004,
+      "member_overlap_window_sum": 905004,
+      "pair_count": 150834,
+      "pair_member_count": 905004,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 242789,
+      "sensor_exposed_window_sum": 242789,
+      "simultaneous_overlap_window_sum": 150834,
+      "target_name": "front_end_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 5625478,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 1,
+      "member_compute_faulted_window_sum": 33752868,
+      "member_overlap_window_sum": 747372,
+      "pair_count": 151314,
+      "pair_member_count": 907884,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5742495,
+      "sensor_exposed_window_sum": 241579,
+      "simultaneous_overlap_window_sum": 124562,
+      "target_name": "front_end_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 150857,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 2,
+      "member_compute_faulted_window_sum": 905142,
+      "member_overlap_window_sum": 905142,
+      "pair_count": 150857,
+      "pair_member_count": 905142,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 245692,
+      "sensor_exposed_window_sum": 245692,
+      "simultaneous_overlap_window_sum": 150857,
+      "target_name": "conv2_dequantized_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 5352711,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 3,
+      "member_compute_faulted_window_sum": 32116266,
+      "member_overlap_window_sum": 756690,
+      "pair_count": 151530,
+      "pair_member_count": 909180,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5478220,
+      "sensor_exposed_window_sum": 251624,
+      "simultaneous_overlap_window_sum": 126115,
+      "target_name": "conv2_dequantized_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 151878,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 4,
+      "member_compute_faulted_window_sum": 911268,
+      "member_overlap_window_sum": 911268,
+      "pair_count": 151878,
+      "pair_member_count": 911268,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 248635,
+      "sensor_exposed_window_sum": 248635,
+      "simultaneous_overlap_window_sum": 151878,
+      "target_name": "post_conv2_prelu_fp32"
+    },
+    {
+      "compute_active_window_sum": 5718132,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 5,
+      "member_compute_faulted_window_sum": 34308792,
+      "member_overlap_window_sum": 751626,
+      "pair_count": 151048,
+      "pair_member_count": 906288,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5834851,
+      "sensor_exposed_window_sum": 241990,
+      "simultaneous_overlap_window_sum": 125271,
+      "target_name": "post_conv2_prelu_fp32"
+    },
+    {
+      "compute_active_window_sum": 151121,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 6,
+      "member_compute_faulted_window_sum": 906726,
+      "member_overlap_window_sum": 906726,
+      "pair_count": 151121,
+      "pair_member_count": 906726,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 241063,
+      "sensor_exposed_window_sum": 241063,
+      "simultaneous_overlap_window_sum": 151121,
+      "target_name": "fc1_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 5411223,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 7,
+      "member_compute_faulted_window_sum": 32467338,
+      "member_overlap_window_sum": 732246,
+      "pair_count": 151726,
+      "pair_member_count": 910356,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5531874,
+      "sensor_exposed_window_sum": 242692,
+      "simultaneous_overlap_window_sum": 122041,
+      "target_name": "fc1_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 151407,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 8,
+      "member_compute_faulted_window_sum": 908442,
+      "member_overlap_window_sum": 908442,
+      "pair_count": 151407,
+      "pair_member_count": 908442,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 243391,
+      "sensor_exposed_window_sum": 243391,
+      "simultaneous_overlap_window_sum": 151407,
+      "target_name": "fc2_prelu_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 5623369,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 9,
+      "member_compute_faulted_window_sum": 33740214,
+      "member_overlap_window_sum": 759186,
+      "pair_count": 150691,
+      "pair_member_count": 904146,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5740903,
+      "sensor_exposed_window_sum": 244065,
+      "simultaneous_overlap_window_sum": 126531,
+      "target_name": "fc2_prelu_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 150163,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 10,
+      "member_compute_faulted_window_sum": 900978,
+      "member_overlap_window_sum": 900978,
+      "pair_count": 150163,
+      "pair_member_count": 900978,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 243779,
+      "sensor_exposed_window_sum": 243779,
+      "simultaneous_overlap_window_sum": 150163,
+      "target_name": "classifier_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 5549301,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 11,
+      "member_compute_faulted_window_sum": 33295806,
+      "member_overlap_window_sum": 743238,
+      "pair_count": 151568,
+      "pair_member_count": 909408,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5668969,
+      "sensor_exposed_window_sum": 243541,
+      "simultaneous_overlap_window_sum": 123873,
+      "target_name": "classifier_output_fp32"
+    },
+    {
+      "compute_active_window_sum": 151385,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 12,
+      "member_compute_faulted_window_sum": 908310,
+      "member_overlap_window_sum": 908310,
+      "pair_count": 151385,
+      "pair_member_count": 908310,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 242617,
+      "sensor_exposed_window_sum": 242617,
+      "simultaneous_overlap_window_sum": 151385,
+      "target_name": "post_conv2_pool_fp32"
+    },
+    {
+      "compute_active_window_sum": 5666633,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 13,
+      "member_compute_faulted_window_sum": 33999798,
+      "member_overlap_window_sum": 766680,
+      "pair_count": 152076,
+      "pair_member_count": 912456,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5780288,
+      "sensor_exposed_window_sum": 241435,
+      "simultaneous_overlap_window_sum": 127780,
+      "target_name": "post_conv2_pool_fp32"
+    },
+    {
+      "compute_active_window_sum": 151511,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 14,
+      "member_compute_faulted_window_sum": 909066,
+      "member_overlap_window_sum": 909066,
+      "pair_count": 151511,
+      "pair_member_count": 909066,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 246166,
+      "sensor_exposed_window_sum": 246166,
+      "simultaneous_overlap_window_sum": 151511,
+      "target_name": "post_conv2_dropout_fp32"
+    },
+    {
+      "compute_active_window_sum": 5451188,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 15,
+      "member_compute_faulted_window_sum": 32707128,
+      "member_overlap_window_sum": 758844,
+      "pair_count": 151922,
+      "pair_member_count": 911532,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5569791,
+      "sensor_exposed_window_sum": 245077,
+      "simultaneous_overlap_window_sum": 126474,
+      "target_name": "post_conv2_dropout_fp32"
+    },
+    {
+      "compute_active_window_sum": 151514,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 16,
+      "member_compute_faulted_window_sum": 909084,
+      "member_overlap_window_sum": 909084,
+      "pair_count": 151514,
+      "pair_member_count": 909084,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 241726,
+      "sensor_exposed_window_sum": 241726,
+      "simultaneous_overlap_window_sum": 151514,
+      "target_name": "flatten_buffer_fp32"
+    },
+    {
+      "compute_active_window_sum": 5659588,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 17,
+      "member_compute_faulted_window_sum": 33957528,
+      "member_overlap_window_sum": 771534,
+      "pair_count": 151251,
+      "pair_member_count": 907506,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5779101,
+      "sensor_exposed_window_sum": 248102,
+      "simultaneous_overlap_window_sum": 128589,
+      "target_name": "flatten_buffer_fp32"
+    },
+    {
+      "compute_active_window_sum": 150991,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 18,
+      "member_compute_faulted_window_sum": 905946,
+      "member_overlap_window_sum": 905946,
+      "pair_count": 150991,
+      "pair_member_count": 905946,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 241036,
+      "sensor_exposed_window_sum": 241036,
+      "simultaneous_overlap_window_sum": 150991,
+      "target_name": "post_fc2_dequantized_buffer_fp32"
+    },
+    {
+      "compute_active_window_sum": 5681803,
+      "eligible_model_variants": [
+        "fp32",
+        "ptq_v7"
+      ],
+      "index": 19,
+      "member_compute_faulted_window_sum": 34090818,
+      "member_overlap_window_sum": 746760,
+      "pair_count": 151724,
+      "pair_member_count": 910344,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5801834,
+      "sensor_exposed_window_sum": 244491,
+      "simultaneous_overlap_window_sum": 124460,
+      "target_name": "post_fc2_dequantized_buffer_fp32"
+    },
+    {
+      "compute_active_window_sum": 151432,
+      "eligible_model_variants": [
+        "ptq_v7"
+      ],
+      "index": 20,
+      "member_compute_faulted_window_sum": 454296,
+      "member_overlap_window_sum": 454296,
+      "pair_count": 151432,
+      "pair_member_count": 454296,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 244325,
+      "sensor_exposed_window_sum": 244325,
+      "simultaneous_overlap_window_sum": 151432,
+      "target_name": "conv2_quantized_input"
+    },
+    {
+      "compute_active_window_sum": 5640481,
+      "eligible_model_variants": [
+        "ptq_v7"
+      ],
+      "index": 21,
+      "member_compute_faulted_window_sum": 16921443,
+      "member_overlap_window_sum": 382080,
+      "pair_count": 151457,
+      "pair_member_count": 454371,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5758567,
+      "sensor_exposed_window_sum": 245446,
+      "simultaneous_overlap_window_sum": 127360,
+      "target_name": "conv2_quantized_input"
+    },
+    {
+      "compute_active_window_sum": 151374,
+      "eligible_model_variants": [
+        "ptq_v7"
+      ],
+      "index": 22,
+      "member_compute_faulted_window_sum": 454122,
+      "member_overlap_window_sum": 454122,
+      "pair_count": 151374,
+      "pair_member_count": 454122,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 241171,
+      "sensor_exposed_window_sum": 241171,
+      "simultaneous_overlap_window_sum": 151374,
+      "target_name": "conv2_quantized_output"
+    },
+    {
+      "compute_active_window_sum": 5495964,
+      "eligible_model_variants": [
+        "ptq_v7"
+      ],
+      "index": 23,
+      "member_compute_faulted_window_sum": 16487892,
+      "member_overlap_window_sum": 374391,
+      "pair_count": 151558,
+      "pair_member_count": 454674,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5615063,
+      "sensor_exposed_window_sum": 243896,
+      "simultaneous_overlap_window_sum": 124797,
+      "target_name": "conv2_quantized_output"
+    },
+    {
+      "compute_active_window_sum": 151468,
+      "eligible_model_variants": [
+        "ptq_v7"
+      ],
+      "index": 24,
+      "member_compute_faulted_window_sum": 454404,
+      "member_overlap_window_sum": 454404,
+      "pair_count": 151468,
+      "pair_member_count": 454404,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 245313,
+      "sensor_exposed_window_sum": 245313,
+      "simultaneous_overlap_window_sum": 151468,
+      "target_name": "post_fc2_quantized_buffer"
+    },
+    {
+      "compute_active_window_sum": 5485477,
+      "eligible_model_variants": [
+        "ptq_v7"
+      ],
+      "index": 25,
+      "member_compute_faulted_window_sum": 16456431,
+      "member_overlap_window_sum": 375444,
+      "pair_count": 151176,
+      "pair_member_count": 453528,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5607190,
+      "sensor_exposed_window_sum": 246861,
+      "simultaneous_overlap_window_sum": 125148,
+      "target_name": "post_fc2_quantized_buffer"
+    },
+    {
+      "compute_active_window_sum": 151211,
+      "eligible_model_variants": [
+        "ptq_v7"
+      ],
+      "index": 26,
+      "member_compute_faulted_window_sum": 453633,
+      "member_overlap_window_sum": 453633,
+      "pair_count": 151211,
+      "pair_member_count": 453633,
+      "persistence": "transient_one_inference",
+      "sensor_compute_union_window_sum": 245794,
+      "sensor_exposed_window_sum": 245794,
+      "simultaneous_overlap_window_sum": 151211,
+      "target_name": "conv_2.0.weight"
+    },
+    {
+      "compute_active_window_sum": 5450543,
+      "eligible_model_variants": [
+        "ptq_v7"
+      ],
+      "index": 27,
+      "member_compute_faulted_window_sum": 16351629,
+      "member_overlap_window_sum": 373509,
+      "pair_count": 151648,
+      "pair_member_count": 454944,
+      "persistence": "persistent_from_onset_until_trial_end",
+      "sensor_compute_union_window_sum": 5572623,
+      "sensor_exposed_window_sum": 246583,
+      "simultaneous_overlap_window_sum": 124503,
+      "target_name": "conv_2.0.weight"
+    }
+  ],
+  "derivation_bindings": {
+    "combined_compute_coordinate_binding_sha256": "2117c7b07084566607ccac46db150faae81d28bef51d0dcab7c700627d8eb435",
+    "member_expansion_descriptor_sha256": "006f6ab94acb482d41b1043d27a22d31bcb009008e01bd19aea7389e2ca26edc",
+    "pair_surface_binding_sha256": "3b39a909ea140db75da52315abcf5efe2748fcdb2d31f0fc98ddf766b000af53",
+    "source_compute_coordinate_binding_sha256": "d6fb5a6fd72a84e01e9e15249463897dacc0aa3ec975382a2b81521bd5a049ca",
+    "source_r2_assigned_pair_sha256": "ebe358d21bd217ae4bccbe2ee35e778b45255f57814f7f09218bbadadc5f2e76",
+    "source_r2_retained_sensor_selection_sha256": "bcca981bf19eb4df00bcd7257258ddbb28900bd67a58a4444097a2d6f2ff113f",
+    "source_r2_structural_census_sha256": "275c45f0522626cc65835332612efc1480bff6fbf73f927532c2586589cb5b13",
+    "stored_assigned_pair_sha256": "feb780c808529252a6bdd3ce1dcc5d190456b6edbc3979b548f20669632f043f",
+    "stored_compute_coordinate_binding_sha256": "4dc25833d0cd2ddf43987909c79963418b1af9f8b1e86ec32abb4957c4e636ad",
+    "stored_sensor_selection_sha256": "1cbaa09d00c64d5cbcf2d510965a1beb2cdb9f9038d22c32fae6ac62416285b4",
+    "subject_family_shard_inventory_sha256": "14f35652ea9e9439de9b07aad5d66ddc233f96600ce6b7a6044659b44b215848",
+    "temporal_workload_binding_sha256": "5b447bca2f45d4889bcf0dc86d6170c40a1028171a9f1b0ea7a28e2884f12ba8"
+  },
+  "evidence_tier": "P0",
+  "execution_gate": {
+    "required_before_any_csc_model_forward": [
+      "implementation must consume this exact frozen plan",
+      "all upstream hashes must match",
+      "pair-surface binding must reproduce exactly",
+      "compute-coordinate binding must reproduce exactly",
+      "temporal-workload binding must reproduce exactly",
+      "no held-out performance feedback may alter selection or workload"
+    ],
+    "status": "PLAN_FROZEN_EXECUTION_NOT_YET_PERFORMED"
+  },
+  "execution_semantics": {
+    "checkpoint_and_threshold_selection": "unchanged frozen Phase-4/Phase-5 prospective choices; outer execution cannot select",
+    "checkpoint_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "clean_reference_accounting": "frozen C0 cache cardinality and sensor-reference workload are reported separately; reference_plus_faulted_accounting_sum is not an implementation-architecture requirement",
+    "compute_stratum_assignment": "regenerate deterministically from frozen Phase-6D assignment; no rebalancing",
+    "model_variant_eligibility": "exact frozen Phase-5D target model_variants",
+    "pair_materialization": "not materialized at plan freeze; executor must regenerate from frozen upstream metadata and verify frozen bindings before model forward",
+    "persistent_compute_window_set": "ordered trial-local window indices from exact frozen Phase-5 persistent onset through trial end",
+    "persistent_temporal_overlap": "sensor-exposed window set intersection compute-active suffix",
+    "sensor_instance_selection": "regenerate deterministically from frozen Phase-4H sampler and Phase-6D/R2 rules; abort on count or digest mismatch",
+    "source_trial_transient_compute_window": "exact frozen Phase-6D-R1 hash selection over ascending sensor-exposed windows",
+    "stored_window_transient_compute_window": "same trial-local window_index as the stored-window sensor parent; no hash selection",
+    "structural_omission_policy": "R2 source-trial groups with no observable frozen candidate have no CSC pair, no compute stratum, and no execution",
+    "zero_persistent_overlap_policy": "retain pair and record zero overlap; do not filter, resample, relocate, replace, or rebalance"
+  },
+  "frozen_dependencies": {
+    "phase4h_outer_executor_config": {
+      "path": "configs/evaluation/phase4h_sensor_fi_outer_executor_v1.json",
+      "sha256": "bb73d35e2a8458d490d2e605551eb1cbfae3112fad74cfdea322175de52c1ef9"
+    },
+    "phase4h_sampling_v3": {
+      "path": "experiments/phase_04/sensor_fi_sampling_v3.py",
+      "sha256": "a78c1dbdafdfe1b074f66c4a9bcb493aef89cfd95eb13620bfc0c9f3c5c20f74"
+    },
+    "phase5_outer_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+    },
+    "phase5_sampling_v1": {
+      "path": "experiments/phase_05/compute_fi_outer_sampling_v1.py",
+      "sha256": "8886b74043ef9ba32f2cb8e999d318c340c239d818caad53f430594546d2417d"
+    },
+    "phase5d_outer_protocol": {
+      "path": "configs/evaluation/phase5d_compute_fi_outer_protocol_v1.json",
+      "sha256": "0ba30c9d336433748378f8d3eed1ed45b673fb9690250b1bd3bbbc79f88c9c36"
+    },
+    "phase5e_execution_plan": {
+      "path": "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json",
+      "sha256": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54"
+    },
+    "phase6d_config": {
+      "path": "configs/evaluation/phase6d_csc_pairing_protocol_v1.json",
+      "sha256": "4f4585e410782ed039c4cd7f21bce418ab13ac7e1ee4c9aa4750cba15677617e"
+    },
+    "phase6d_manifest": {
+      "path": "manifests/phase_6d_csc_pairing_protocol_freeze_v1.json",
+      "sha256": "f4f9f79485d60948aa4e88f405b5453b63f83760e44a4e2f787392aca799bea8"
+    },
+    "phase6d_r1_config": {
+      "path": "configs/evaluation/phase6d_r1_csc_pairing_clarification_v1.json",
+      "sha256": "60b557b16cb7c9d75ea7fd67299c264624b024fe962d436ce336827031faeea0"
+    },
+    "phase6d_r1_manifest": {
+      "path": "manifests/phase_6d_r1_csc_pairing_clarification_freeze_v1.json",
+      "sha256": "ee11de570884f646a85494fc0e065fcc3b2609e641998ec00141a5215b711278"
+    },
+    "phase6d_r2_config": {
+      "path": "configs/evaluation/phase6d_r2_csc_structural_omission_amendment_v1.json",
+      "sha256": "0c67b4c291966f35d2649b5c6065bed1ee5fe076bf0e8f209336348e5bd6d16e"
+    },
+    "phase6d_r2_manifest": {
+      "path": "manifests/phase_6d_r2_csc_structural_omission_amendment_freeze_v1.json",
+      "sha256": "c4ca0a21fb16dc770a42c1083099846c165b2227047d47b812c86abecf8002f4"
+    },
+    "phase_log_pre_freeze_sha256": "306a84f98a24ccb74cd2f640c8e5cc2bbc2bf0c780201e0b9d5e7ad800cdb473"
+  },
+  "generated_date": "2026-10-07",
+  "governance": {
+    "cc_performance_outcomes_used": false,
+    "checkpoint_selection": false,
+    "compute_persistence_selection": false,
+    "compute_target_selection": false,
+    "cs_performance_outcomes_used": false,
+    "csc_model_forward_before_freeze": false,
+    "csc_performance_outcomes_used": false,
+    "onfield_used": false,
+    "outer_performance_outcomes_used": false,
+    "pair_materialization_before_freeze": false,
+    "physical_or_mcu_claim": false,
+    "rebalancing": false,
+    "resampling": false,
+    "scientific_change_at_phase6e_freeze": false,
+    "sensor_family_selection": false,
+    "sensor_severity_selection": false,
+    "threshold_retuning": false,
+    "validation_performance_used": false
+  },
+  "model_variant_surface": {
+    "combined_model_variant_expanded_pair_count": 7264346,
+    "combined_seed_variant_expanded_pair_member_count": 21793038,
+    "fp32": {
+      "checkpoint_seed_count": 3,
+      "checkpoint_seeds": [
+        42,
+        123,
+        2025
+      ],
+      "pair_count": 3026511,
+      "persistent_pair_count": 1514850,
+      "seed_expanded_pair_member_count": 9079533,
+      "transient_pair_count": 1511661
+    },
+    "ptq_v7": {
+      "checkpoint_seed_count": 3,
+      "checkpoint_seeds": [
+        42,
+        123,
+        2025
+      ],
+      "pair_count": 4237835,
+      "persistent_pair_count": 2120689,
+      "seed_expanded_pair_member_count": 12713505,
+      "transient_pair_count": 2117146
+    }
+  },
+  "next_action": "Implement and qualify a Phase-6E executor against this frozen plan before any CSC model forward.",
+  "pair_surface": {
+    "model_independent_csc_pair_count": 4237835,
+    "nonzero_subject_family_shard_count": 732,
+    "original_phase6d_nominal_pair_count": 4239939,
+    "r2_pair_count_reduction": 2104,
+    "source_trial_original_group_count": 132489,
+    "source_trial_retained_pair_count": 130385,
+    "source_trial_structural_omission_count": 2104,
+    "stored_window_pair_count": 4107450,
+    "subject_family_shard_count": 732,
+    "zero_pair_shard_count": 0
+  },
+  "parent_head": "2cd3bb5a5a0990951216a19f1735c7adbd08506a",
+  "partition": "outer_test",
+  "persistence_surface": {
+    "combined": {
+      "persistent_pair_count": 2120689,
+      "transient_pair_count": 2117146
+    },
+    "source_trial": {
+      "persistent_pair_count": 65359,
+      "transient_pair_count": 65026
+    },
+    "stored_window": {
+      "persistent_pair_count": 2055330,
+      "transient_pair_count": 2052120
+    }
+  },
+  "phase": "6E",
+  "schema_version": "phase6e_csc_execution_plan_v1",
+  "scientific_role": "prospective_combined_sensor_compute_outer_execution_plan",
+  "status": "FROZEN_PRE_EXECUTION_CSC_PLAN",
+  "temporal_workload": {
+    "compute_faulted_member_window_count": 411540372,
+    "frozen_c0_clean_cache_window_cardinality": 1642980,
+    "parent_persistence_workload": {
+      "source_trial|persistent_from_onset_until_trial_end": {
+        "compute_active_window_sum": 1459733,
+        "member_compute_faulted_window_sum": 7488327,
+        "member_overlap_window_sum": 3634641,
+        "member_sensor_reference_window_sum": 7044897,
+        "member_union_window_sum": 10898583,
+        "pair_count": 65359,
+        "pair_member_count": 335580,
+        "sensor_compute_union_window_sum": 2124671,
+        "sensor_exposed_window_sum": 1372052,
+        "simultaneous_overlap_window_sum": 707114
+      },
+      "source_trial|transient_one_inference": {
+        "compute_active_window_sum": 65026,
+        "member_compute_faulted_window_sum": 334461,
+        "member_overlap_window_sum": 334461,
+        "member_sensor_reference_window_sum": 6999213,
+        "member_union_window_sum": 6999213,
+        "pair_count": 65026,
+        "pair_member_count": 334461,
+        "sensor_compute_union_window_sum": 1361377,
+        "sensor_exposed_window_sum": 1361377,
+        "simultaneous_overlap_window_sum": 65026
+      },
+      "stored_window|persistent_from_onset_until_trial_end": {
+        "compute_active_window_sum": 76352158,
+        "member_compute_faulted_window_sum": 393165624,
+        "member_overlap_window_sum": 5404959,
+        "member_sensor_reference_window_sum": 10571037,
+        "member_union_window_sum": 398331702,
+        "pair_count": 2055330,
+        "pair_member_count": 10571037,
+        "sensor_compute_union_window_sum": 77357098,
+        "sensor_exposed_window_sum": 2055330,
+        "simultaneous_overlap_window_sum": 1050390
+      },
+      "stored_window|transient_one_inference": {
+        "compute_active_window_sum": 2052120,
+        "member_compute_faulted_window_sum": 10551960,
+        "member_overlap_window_sum": 10551960,
+        "member_sensor_reference_window_sum": 10551960,
+        "member_union_window_sum": 10551960,
+        "pair_count": 2052120,
+        "pair_member_count": 10551960,
+        "sensor_compute_union_window_sum": 2052120,
+        "sensor_exposed_window_sum": 2052120,
+        "simultaneous_overlap_window_sum": 2052120
+      }
+    },
+    "reference_plus_faulted_accounting_sum": 446707479,
+    "reference_plus_faulted_accounting_sum_is_executor_architecture_claim": false,
+    "sensor_compute_union_member_window_count": 426781458,
+    "sensor_reference_member_window_count": 35167107,
+    "simultaneous_csc_overlap_member_window_count": 19926021,
+    "variant_workload": {
+      "fp32": {
+        "compute_faulted_window_count": 171753261,
+        "pair_member_count": 9079533,
+        "sensor_compute_union_window_count": 178095660,
+        "sensor_reference_window_count": 14644470,
+        "simultaneous_overlap_window_count": 8302071
+      },
+      "ptq_v7": {
+        "compute_faulted_window_count": 239787111,
+        "pair_member_count": 12713505,
+        "sensor_compute_union_window_count": 248685798,
+        "sensor_reference_window_count": 20522637,
+        "simultaneous_overlap_window_count": 11623950
+      }
+    },
+    "zero_overlap_by_parent_kind": {
+      "source_trial": {
+        "pair_count": 13275,
+        "pair_member_count": 68277
+      },
+      "stored_window": {
+        "pair_count": 1004940,
+        "pair_member_count": 5166078
+      }
+    },
+    "zero_temporal_overlap_pair_count": 1018215,
+    "zero_temporal_overlap_pair_member_count": 5234355
+  }
+}
