@@ -1,0 +1,148 @@
+{
+  "csc_runtime_implemented": true,
+  "execution_authorized": false,
+  "frozen_runtime": {
+    "path": "experiments/phase_06/csc_execution_runtime_v1.py",
+    "qualification_test_path": "tests/test_phase6j_csc_execution_runtime_pre_authorization_v1.py",
+    "qualification_test_sha256": "27828bb9681e1436c5e49fe1b7f13bf27a9e96c5d598e437c1bfc1d575d0de59",
+    "sha256": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438"
+  },
+  "governance": {
+    "checkpoint_selection": false,
+    "commit_created": false,
+    "onfield_used": false,
+    "outer_performance_outcomes_used": false,
+    "push_performed": false,
+    "rebalancing": false,
+    "relocation": false,
+    "replacement": false,
+    "resampling": false,
+    "threshold_retuning": false,
+    "validation_used": false
+  },
+  "implemented_runtime_contracts": {
+    "canonical_pair_member_order": true,
+    "execution_shard_identity": true,
+    "model_bundle_load_once_per_stream": true,
+    "model_bundle_scope": "one shard x model_variant x checkpoint_seed stream",
+    "per_compute_window_reference_switch": {
+      "sensor_active": "phase6_sensor_reference",
+      "sensor_inactive": "phase5_clean_cache"
+    },
+    "phase5_clean_cache_exact_scope_lookup": [
+      "fold",
+      "subject",
+      "model_variant",
+      "checkpoint_seed"
+    ],
+    "phase5_clean_cache_missing_or_invalid_action": "ABORT_SHARD_NO_PHASE6_RECOMPUTE",
+    "phase5_commit_atomic_artifact_reused": false,
+    "phase5_execute_fault_sequence_bound": true,
+    "phase5_execution_active_mask_bound": true,
+    "phase5_window_tensor_bound": true,
+    "phase6_c0_recompute": false,
+    "phase6_local_atomic_commit": true,
+    "phase6i_source_trial_exposure_helper_bound": true,
+    "ptq_persistent_weight_reset_owner": "pinned Phase-5 execute_fault_sequence finally -> PTQWeightFaultOnlySession.reset_clean()",
+    "row_level_resume": false,
+    "sensor_corruption_precedes_compute_fault": true,
+    "sensor_reference_generated_before_compute_fault_sequence": true,
+    "source_trial_fault_precedes_rewindow": true,
+    "source_trial_sensor_conditioning": true,
+    "stored_window_sensor_conditioning": true,
+    "whole_shard_recompute_on_explicit_recompute_partial": true,
+    "zero_temporal_overlap_pairs_retained": true
+  },
+  "next_boundary": "Derive and freeze all 732 runtime shard identities and exact per-shard pair-member, sensor-reference, and CSC-fault record cardinalities; validate the complete frozen Phase-5 clean-cache estate; then issue a separate prospective authorization gate binding those results together with this runtime SHA and test SHA before any real CSC outer model forward.",
+  "output_contract": {
+    "artifact_kind": "phase6j_csc_subject_family_shard_v1",
+    "files": [
+      "pair_members.jsonl",
+      "sensor_reference.jsonl",
+      "csc_fault.jsonl",
+      "metadata.json",
+      "_SUCCESS.json"
+    ],
+    "success_marker_written_before_atomic_directory_replace": true,
+    "success_schema": "phase6j_csc_shard_success_v1"
+  },
+  "phase": "6J",
+  "production_outer_execution_body_released": false,
+  "purpose": "Freeze the separately implemented and synthetically qualified Phase-6 CSC execution runtime before any authorization for real outer CSC model execution.",
+  "qualification_entering_freeze": {
+    "dedicated_phase6j_tests_passed": 22,
+    "full_repository_tests_passed": 998,
+    "historical_phase5r_lifecycle_test_deselected": 1,
+    "phase6_tests_passed": 148,
+    "ptq_reset_delegation_audit": "PASS",
+    "semantic_runtime_audit": "PASS"
+  },
+  "runtime_boundary": {
+    "authorized_execution_body_status": "PHASE6J_AUTHORIZED_EXECUTION_BODY_NOT_YET_RELEASED",
+    "execution_authorization_constant": "EXECUTION_AUTHORIZED=False",
+    "hard_stop": "PHASE6J_OUTER_EXECUTION_NOT_AUTHORIZED",
+    "heavy_runtime_imports_before_authorization": false,
+    "public_entrypoint": "execute_shard",
+    "qualification_mode": "synthetic_mocked_only",
+    "real_compute_fault_executed_during_qualification": false,
+    "real_model_forward_executed_during_qualification": false,
+    "real_model_loaded_during_qualification": false,
+    "real_outer_arrays_read_during_qualification": false,
+    "real_sensor_fault_executed_during_qualification": false,
+    "top_level_numpy_import": false,
+    "top_level_torch_import": false
+  },
+  "schema_version": "phase6j_csc_execution_runtime_binding_v1",
+  "scientific_change": false,
+  "status": "FROZEN_PRE_AUTHORIZATION_CSC_EXECUTION_RUNTIME_BINDING",
+  "upstream_bindings": {
+    "phase4h_operators": {
+      "path": "experiments/phase_04/sensor_fi_operators.py",
+      "sha256": "6559ddc1fcdca352fbd09bf003e28919bb355a76b2ef52e6985a99188fd69eaa"
+    },
+    "phase4h_outer_executor": {
+      "path": "experiments/phase_04/sensor_fi_outer_executor_v1.py",
+      "sha256": "350f3356b5eed65d7e318effdb2c152f4f022e117fac73fcc0a8ee4d1871e72d"
+    },
+    "phase4h_runner_v2": {
+      "path": "experiments/phase_04/sensor_fi_devcal_runner_v2.py",
+      "sha256": "541af4663293ae5fbaf5286fc3dea7679d511fdabb50738863880e4712a9b86a"
+    },
+    "phase5_executor": {
+      "path": "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py",
+      "sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+    },
+    "phase5_outer_core": {
+      "path": "experiments/phase_05/compute_fi_outer_executor_v1.py",
+      "sha256": "77ee323f71a5dbf4c54cc454a5911849aa45c5d4bdcc6d63bb908d8cece363d0"
+    },
+    "phase6e_metadata_executor": {
+      "path": "experiments/phase_06/csc_outer_executor_v1.py",
+      "sha256": "99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd"
+    },
+    "phase6g_adapter": {
+      "path": "experiments/phase_06/csc_execution_adapter_v1.py",
+      "sha256": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5"
+    },
+    "phase6h_architecture_config": {
+      "path": "configs/evaluation/phase6h_csc_execution_architecture_clarification_v1.json",
+      "sha256": "7cb6234876506fe8f127ee823550d235a04063643013eb3348d81583fdb88a26"
+    },
+    "phase6h_manifest": {
+      "path": "manifests/phase_6h_csc_execution_architecture_clarification_freeze_v1.json",
+      "sha256": "6fc3cdc4fed48259795d5d0c93b6ecfeaae1c45cd1ffb1a627be4aefec45c944"
+    },
+    "phase6i_binding_config": {
+      "path": "configs/evaluation/phase6i_csc_source_trial_exposure_binding_v1.json",
+      "sha256": "018d1869c4e6ec6cd061aef0d7b769793c626725937bfe7f337de7dafdf82c5b"
+    },
+    "phase6i_exposure_helper": {
+      "path": "experiments/phase_06/csc_source_trial_exposure_v1.py",
+      "sha256": "f4db0c1dfecd5992deed7947665c5a8afc8d60db28f97457ac7ad11bc24b0aeb"
+    },
+    "phase6i_manifest": {
+      "path": "manifests/phase_6i_csc_source_trial_exposure_binding_freeze_v1.json",
+      "sha256": "c65c69732d6bff0fa1003e680705944dd3214fedfbec437a7dea177106e4a1ca"
+    }
+  }
+}

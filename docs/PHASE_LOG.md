@@ -3802,3 +3802,73 @@ Next: implement a separate execution-capable CSC runtime while keeping outer
 execution unauthorized. Before any CSC outer forward, freeze a later gate
 binding the runtime, tests, all 732 shard identities, exact per-shard
 cardinalities, and validated Phase-5 clean-cache estate.
+
+## PHASE 6J — CSC EXECUTION RUNTIME BINDING
+
+Status: `FROZEN_PRE_AUTHORIZATION_CSC_EXECUTION_RUNTIME_BINDING`
+
+Phase 6J freezes the separately implemented CSC execution runtime after
+synthetic/pre-authorization qualification.
+
+Frozen runtime:
+- `experiments/phase_06/csc_execution_runtime_v1.py`
+- SHA256: `e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438`
+
+Runtime qualification test:
+- `tests/test_phase6j_csc_execution_runtime_pre_authorization_v1.py`
+- SHA256: `27828bb9681e1436c5e49fe1b7f13bf27a9e96c5d598e437c1bfc1d575d0de59`
+
+Freeze artifacts:
+- config SHA256: `54ec350e567cf2d209fae368478a81d7c1613ac0f19a599fb7ac27f142adef53`
+- documentation SHA256: `43c4ab5bcfad3fd3575e7b57094516611634d1d5cd67d994d0f74bd52858ace4`
+- binding test SHA256: `c55a09aacf273051ea6bc568e9f8a1c217ad454dad189dbbc978cb496380fb56`
+- freeze manifest SHA256: `5fe34387a79500407f3864039708b95b93ab4254b206c73feb3b3cb069bdbac0`
+
+Qualification entering the freeze:
+- dedicated Phase-6J synthetic/pre-authorization suite: 22 passed;
+- full Phase-6 regression set: 148 passed;
+- full repository fleet: 998 passed, 1 historical Phase-5R lifecycle test
+  deselected;
+- strict Phase-6H/runtime semantic audit: PASS;
+- pinned Phase-5 PTQ reset-delegation audit: PASS.
+
+Frozen runtime semantics include:
+- deterministic subject × sensor-family shard identity;
+- canonical variant/seed/pair/window ordering;
+- validated Phase-5 clean-cache ownership with
+  `ABORT_SHARD_NO_PHASE6_RECOMPUTE`;
+- no Phase-6 C0 recomputation;
+- direct Phase-6I source-trial exposure binding;
+- stored-window and source-trial sensor conditioning;
+- sensor corruption before compute fault injection;
+- source-trial faulting before historical rewindowing;
+- sensor-reference generation before compute-fault execution;
+- pinned Phase-5 tensor/fault-sequence/active-mask reuse;
+- per-window Phase-6 sensor-reference versus Phase-5 clean-reference routing;
+- retained zero-overlap semantics;
+- one model bundle per shard × variant × seed stream;
+- PTQ persistent-weight reset delegated to the pinned Phase-5 `finally`;
+- Phase-6-local atomic commit and whole-shard resume/recompute;
+- no reuse of the Phase-5 `commit_atomic_artifact` helper.
+
+Execution/scientific boundary:
+- scientific change: FALSE
+- execution authorized: FALSE
+- production outer execution body released: FALSE
+- real CSC execution: FALSE
+- outer arrays read: FALSE
+- model loaded: FALSE
+- real sensor fault execution: FALSE
+- real compute fault execution: FALSE
+- CSC model forward: FALSE
+- performance outcomes used: FALSE
+- validation used: FALSE
+- OnField used: FALSE
+- threshold retuning/checkpoint reselection: FALSE
+- resampling/replacement/relocation/rebalancing: FALSE
+
+Next: derive and freeze all 732 runtime shard identities and exact per-shard
+pair-member, sensor-reference, and CSC-fault record cardinalities; validate the
+complete frozen Phase-5 clean-cache estate; then issue a separate prospective
+authorization gate binding those results to this exact runtime/test before any
+real CSC outer model forward.

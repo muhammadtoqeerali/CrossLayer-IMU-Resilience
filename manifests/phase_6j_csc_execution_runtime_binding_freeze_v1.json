@@ -1,0 +1,48 @@
+{
+  "csc_runtime_implemented": true,
+  "execution_authorized": false,
+  "frozen_files": [
+    {
+      "path": "configs/evaluation/phase6j_csc_execution_runtime_binding_v1.json",
+      "sha256": "54ec350e567cf2d209fae368478a81d7c1613ac0f19a599fb7ac27f142adef53"
+    },
+    {
+      "path": "docs/PHASE_6J_CSC_EXECUTION_RUNTIME_BINDING_V1.md",
+      "sha256": "43c4ab5bcfad3fd3575e7b57094516611634d1d5cd67d994d0f74bd52858ace4"
+    },
+    {
+      "path": "tests/test_phase6j_csc_execution_runtime_binding.py",
+      "sha256": "c55a09aacf273051ea6bc568e9f8a1c217ad454dad189dbbc978cb496380fb56"
+    },
+    {
+      "path": "experiments/phase_06/csc_execution_runtime_v1.py",
+      "sha256": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438"
+    },
+    {
+      "path": "tests/test_phase6j_csc_execution_runtime_pre_authorization_v1.py",
+      "sha256": "27828bb9681e1436c5e49fe1b7f13bf27a9e96c5d598e437c1bfc1d575d0de59"
+    }
+  ],
+  "git_head": "e5bddee71062a0bf7cd1d0da625a23b04fe7ac3f",
+  "next_boundary": "metadata-only derivation and freeze of all 732 Phase6J runtime shard identities, exact per-shard pair-member/sensor-reference/CSC-fault cardinalities, complete Phase5 clean-cache validation, then a separate prospective real-execution authorization gate",
+  "phase": "6J",
+  "production_outer_execution_body_released": false,
+  "qualification_entering_freeze": {
+    "full_repository": "998 passed, 1 deselected",
+    "phase6_regression": "148 passed",
+    "phase6j_dedicated": "22 passed"
+  },
+  "schema_version": "phase6j_csc_execution_runtime_binding_freeze_v1",
+  "scientific_change": false,
+  "status": "FROZEN_PRE_AUTHORIZATION_CSC_EXECUTION_RUNTIME_BINDING",
+  "upstream_bindings": {
+    "phase5_executor_sha256": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188",
+    "phase6e_metadata_executor_sha256": "99320b5811c5e72940bcfc779fa530df88fb8b7a2f8662711b8f56e4cf5d61fd",
+    "phase6g_adapter_sha256": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5",
+    "phase6h_config_sha256": "7cb6234876506fe8f127ee823550d235a04063643013eb3348d81583fdb88a26",
+    "phase6h_manifest_sha256": "6fc3cdc4fed48259795d5d0c93b6ecfeaae1c45cd1ffb1a627be4aefec45c944",
+    "phase6i_config_sha256": "018d1869c4e6ec6cd061aef0d7b769793c626725937bfe7f337de7dafdf82c5b",
+    "phase6i_helper_sha256": "f4db0c1dfecd5992deed7947665c5a8afc8d60db28f97457ac7ad11bc24b0aeb",
+    "phase6i_manifest_sha256": "c65c69732d6bff0fa1003e680705944dd3214fedfbec437a7dea177106e4a1ca"
+  }
+}
