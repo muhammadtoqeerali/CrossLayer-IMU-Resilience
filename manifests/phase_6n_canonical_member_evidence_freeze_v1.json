@@ -1,0 +1,73 @@
+{
+  "all_full_phase6g_requests_individually_validated": false,
+  "documented_regression_deselection": "tests/test_phase5r_compute_fi_outer_full_fleet_executor.py::test_outer_estate_remains_single_accepted_canary",
+  "execution_authorized": false,
+  "execution_gate_created": false,
+  "freeze_document_and_test_sha256": {
+    "docs/PHASE_6N_CANONICAL_MEMBER_EVIDENCE_FREEZE_V1.md": "9372f61c550b5d2ba541b790a9d2e147cf83fbd7f6e9ba7bc7b4e5eab85a11e4",
+    "tests/test_phase6n_canonical_member_evidence_freeze_v1.py": "e43b32fa6246b39648bae5c980ef93d4b4f1cb72b5e355bd4d60d2b7da0f15e9"
+  },
+  "freeze_scope": "EVIDENCE_ONLY",
+  "frozen_global_workload": {
+    "compute_faulted_member_windows": 411540372,
+    "pair_count": 4237835,
+    "pair_member_count": 21793038,
+    "sensor_reference_member_windows": 35167107,
+    "simultaneous_overlap_member_windows": 19926021,
+    "structural_omission_count": 2104,
+    "union_member_windows": 426781458,
+    "zero_overlap_pair_count": 1018215
+  },
+  "frozen_upstream_files_sha256": {
+    "experiments/phase_06/csc_execution_adapter_v1.py": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5",
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "manifests/phase_6k_csc_numeric_evidence_freeze_v1.json": "b486264d2caeafc9c899bbd9cb0bf6e758ff952582466cffaacb7c8f511b0bfe",
+    "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_numeric_workload_report_v1.json": "e9b977b40dfdeb2a25a9ea041e5c3f22041a58251cfba79b8d9b055df2c725c2",
+    "manifests/phase_6l_producer_aware_cache_evidence_freeze_v1.json": "d1b355fe0d4ff13d7eebb6a6f14ba7af72f47da06519c9fbce14290c6d9c4ba5",
+    "manifests/phase_6m_csc_pre_forward_evidence_freeze_v1.json": "a77b437cf669894b4423caa65f9f094f27074b58e862261376c169d04b1a9607"
+  },
+  "historical_candidate_status_preserved": true,
+  "historical_phase6e_digests_reproduced": false,
+  "preserved_qualification_files_sha256": {
+    "docs/PHASE_6N_CANONICAL_MEMBER_QUALIFICATION_CANDIDATE_V1.md": "e709f9e9aabdbe74719dae06d76a72ec8d05364f682f4266ae7019d802675044",
+    "docs/PHASE_6N_CANONICAL_MEMBER_STREAM_CANDIDATE_V1.md": "121bc2581a5ad2dfdac43aafc59a2176e09a0f02a2228a48d005040e58b9f370",
+    "docs/PHASE_6N_FULL_FLEET_MEMBER_INDEX_CANDIDATE_V1.md": "94be048dd9b42bc5969ae27b97e186e43acef764c299e5cf0f81ba29b1794434",
+    "experiments/phase_06/csc_phase6n_canonical_member_stream_v1.py": "55ae23c5f84431a9b41c34fcfd82ff7fe3ca3c3690163b07c11299d7e9b504c7",
+    "experiments/phase_06/csc_phase6n_full_fleet_member_index_v1.py": "1ef391d4bba41a8e407cf09a28ad858b5a3f5d837b6a103f36a352a3aa1d448b",
+    "manifests/phase_6n_canonical_evidence_v1/phase6n_complete_subject9_canonical_member_stream_audit_v1.json": "d8bbff4006a7d78c11f20c134255ac3a0a9ab7f2081fba20af6861db96bffe2f",
+    "manifests/phase_6n_canonical_evidence_v1/phase6n_full_fleet_canonical_member_index_audit_v1.json": "abc7f60308a09022b2afcd915b4247f78a3a485e88dc30cc724155bf03608c45",
+    "manifests/phase_6n_canonical_member_qualification_candidate_v1.json": "c40b5b49a18a4a1cd615b089254cd7093de9d4933508b0abc2425c5577a20264",
+    "tests/test_phase6n_canonical_member_qualification_candidate_v1.py": "9100b957a012f322d8d2474b2c99602ae860ae05ea4fa36fdb434bcc8ca54dfe",
+    "tests/test_phase6n_canonical_member_stream_v1.py": "4ff99326e37e46cae749d854f83ea7239d4ff70f8ce643a307f4a3287067c494",
+    "tests/test_phase6n_full_fleet_member_index_v1.py": "0c947243505b40aba03a363c902fd321698acdc9cb794a0507fd8f93aa6b987d"
+  },
+  "production_execution_body_released": false,
+  "qualification_status": "FULL_FLEET_CANONICAL_METADATA_MEMBER_INDEX_PASS",
+  "real_csc_execution_performed": false,
+  "real_execution_integrated_and_qualified": false,
+  "real_model_forward_performed": false,
+  "schema_version": "phase6n_canonical_member_evidence_freeze_v1",
+  "scientific_and_execution_limitations": [
+    "Full-fleet member identities and ordering are metadata-only.",
+    "The 8784 Phase6G requests are sampled, not exhaustive.",
+    "Historical Phase6E stream digests have not been reproduced.",
+    "New Phase6N metadata digests cannot replace Phase6E digests.",
+    "No model checkpoints, sensor faults or compute faults were executed.",
+    "Phase6H production output contracts are not integrated.",
+    "Real PTQ state restoration and resource cleanup remain unqualified.",
+    "A separately reviewed CSC canary gate is still required."
+  ],
+  "upstream_commit": "8ecadc653fc5804859e531b4e6f6f67aea500d77",
+  "verified_counts": {
+    "canonical_model_member_streams": 4392,
+    "complete_subject9_pair_members": 195768,
+    "complete_subject9_pairs": 38107,
+    "complete_subject9_streams": 72,
+    "eligible_variant_seed_pair_members": 21793038,
+    "historical_phase6m_representative_requests_reconciled": 189,
+    "model_independent_pairs": 4237835,
+    "outer_subjects": 61,
+    "phase6g_sample_requests_validated": 8784,
+    "subject_family_shards": 732
+  }
+}
