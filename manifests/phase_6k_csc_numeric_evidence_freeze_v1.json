@@ -1,0 +1,65 @@
+{
+  "earlier_candidate_manifest_intentionally_preserved": true,
+  "execution_authorized": false,
+  "freeze_document_and_tests": {
+    "docs/PHASE_6K_CSC_NUMERIC_EVIDENCE_FREEZE_V1.md": "fc6e50e33fc2f1c6793d5cbeb728e33e91f9397ac5e57a6b5c7a8d868a2ece27",
+    "tests/test_phase6k_csc_numeric_evidence_freeze_v1.py": "f96addda0e526253a958e267c73effe6d8e917a9288c6d3c259f1d4d83d13d54"
+  },
+  "freeze_scope": "EVIDENCE_ONLY",
+  "frozen_dependency_files": {
+    "configs/evaluation/phase6e_csc_execution_plan_v1.json": "888d90f720682d19cfed6ea211d84b12b4ea8fb1408aaef36cffdb7301975bea",
+    "experiments/phase_05/compute_fi_outer_canary_executor_v1.py": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645",
+    "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188",
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54",
+    "manifests/phase_5o_compute_fi_outer_canary_technical_acceptance_freeze_v1.json": "09fe4836d954f98876656ebb383c306a60c444b6225dd1f99e1c67577bf1a74f",
+    "manifests/phase_5u_compute_fi_outer_full_fleet_technical_acceptance_freeze_v1.json": "5c82fb20f83ed7479efa85d50945313904f5046dc2c11c3e950e0b30c63559da"
+  },
+  "future_execution_gate_created": false,
+  "historical_phase6e_digests_reproduced": false,
+  "historical_phase6e_serializer_recovered": false,
+  "known_regression_exception": "tests/test_phase5r_compute_fi_outer_full_fleet_executor.py::test_outer_estate_remains_single_accepted_canary",
+  "model_forward_performed": false,
+  "phase6j_producer_aware_runtime_integration_pending": true,
+  "phase6j_producer_aware_runtime_qualified": false,
+  "phase6k_independent_inventory_sha256": "3d94b6123524896fbd8220a8cf2de46c82149f028cb3dc95adad666bdae842d2",
+  "probability_rows_parsed": false,
+  "qualification_candidate_files": {
+    "docs/PHASE_6K_CSC_NUMERIC_EVIDENCE_CANDIDATE_V1.md": "7442d5914e7da16de927fbc0b12538b2467384f64dccf8ea0175fd2d78ba3f4d",
+    "experiments/phase_06/csc_phase6k_metadata_fleet_auditor_v1.py": "78de159572ce76822ce3b958b2cbc5a408d8782a23ab8581934fa8b2d60cb43c",
+    "manifests/phase_6k_csc_numeric_evidence_candidate_v1.json": "888df3d5aaaddd1247f4aab952946dcba941fe881006c472d818fa4fbccf22b3",
+    "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_mixed_producer_cache_binding_audit_v1.json": "7b0e3f280b3b549794f6e76eaaddf8f8753a7391544ef09e6d98bd76f261d309",
+    "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_numeric_workload_report_v1.json": "e9b977b40dfdeb2a25a9ea041e5c3f22041a58251cfba79b8d9b055df2c725c2",
+    "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_phase5_clean_cache_integrity_audit_v1.json": "c47fad8e96d032c378a200849ac909d9921cd31e76f9eb01e7c8f75bf7f6fb38",
+    "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_shard_clean_cache_ownership_crosswalk_v1.json": "abc0c7c2230ba77781b19d5306a0fb3a4dd6916df49ba2cc8f0ffb93aee66312",
+    "tests/test_phase6k_csc_numeric_evidence_candidate_v1.py": "abf642344d879ce21540239f44f430f676935abcfdbff460b1e2a124c0ed4dec",
+    "tests/test_phase6k_metadata_fleet_auditor_v1.py": "7635ab3e13cf1a51e662b7e6602c2f27105d96bc69e1a92f998fcde8f724cabc"
+  },
+  "qualification_status": "METADATA_NUMERIC_AND_CACHE_EVIDENCE_PASS",
+  "real_csc_execution_performed": false,
+  "schema_version": "phase6k_csc_numeric_evidence_freeze_v1",
+  "threshold_selection_performed": false,
+  "unresolved_blockers": [
+    "Original Phase6E serialization and historical digest equivalence unresolved.",
+    "Phase6J runtime producer-aware mixed-canary/fleet cache integration not yet qualified.",
+    "Any real CSC execution needs a separate prospective authorization gate."
+  ],
+  "verified_counts": {
+    "clean_cache_window_cardinality": 1642980,
+    "clean_caches": 366,
+    "compute_faulted_member_windows": 411540372,
+    "model_independent_pairs": 4237835,
+    "overlap_member_windows": 19926021,
+    "pair_members": 21793038,
+    "phase5m_canary_clean_caches": 1,
+    "phase5r_fleet_clean_caches": 365,
+    "sensor_families": 12,
+    "sensor_reference_member_windows": 35167107,
+    "shards": 732,
+    "source_structural_omissions": 2104,
+    "subjects": 61,
+    "union_member_windows": 426781458,
+    "zero_overlap_members": 5234355,
+    "zero_overlap_pairs": 1018215
+  }
+}

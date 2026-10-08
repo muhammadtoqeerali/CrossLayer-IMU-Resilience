@@ -1,0 +1,67 @@
+{
+  "clean_cache_count": 366,
+  "clean_cache_window_cardinality": 1642980,
+  "compute_faulted_member_window_count": 411540372,
+  "crosswalk_contains_candidate_subject_cache_sets": true,
+  "crosswalk_is_not_exact_per_pair_cache_eligibility": true,
+  "evidence_files": [
+    {
+      "path": "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_mixed_producer_cache_binding_audit_v1.json",
+      "sha256": "7b0e3f280b3b549794f6e76eaaddf8f8753a7391544ef09e6d98bd76f261d309"
+    },
+    {
+      "path": "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_numeric_workload_report_v1.json",
+      "sha256": "e9b977b40dfdeb2a25a9ea041e5c3f22041a58251cfba79b8d9b055df2c725c2"
+    },
+    {
+      "path": "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_phase5_clean_cache_integrity_audit_v1.json",
+      "sha256": "c47fad8e96d032c378a200849ac909d9921cd31e76f9eb01e7c8f75bf7f6fb38"
+    },
+    {
+      "path": "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_shard_clean_cache_ownership_crosswalk_v1.json",
+      "sha256": "abc0c7c2230ba77781b19d5306a0fb3a4dd6916df49ba2cc8f0ffb93aee66312"
+    }
+  ],
+  "execution_authorized": false,
+  "freeze_status": "UNCOMMITTED_CANDIDATE",
+  "historical_phase6e_binding_digests_reproduced": false,
+  "historical_phase6e_digest_serializer_recovered": false,
+  "independent_phase6k_numerical_audit_passed": true,
+  "label_array_payload_read": false,
+  "model_independent_pair_count": 4237835,
+  "phase5_cache_producer_counts": {
+    "phase5m_accepted_canary": 1,
+    "phase5r_full_fleet": 365
+  },
+  "phase5_producer_source_sha256": {
+    "phase5m_accepted_canary": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645",
+    "phase5r_full_fleet": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188"
+  },
+  "phase6j_producer_aware_integration_pending": true,
+  "phase6k_independent_inventory_sha256": "3d94b6123524896fbd8220a8cf2de46c82149f028cb3dc95adad666bdae842d2",
+  "probability_rows_parsed": false,
+  "qualification_status": "NUMERIC_AND_CLEAN_CACHE_EVIDENCE_VERIFIED_EXECUTION_BLOCKED",
+  "real_csc_execution_performed": false,
+  "schema_version": "phase6k_csc_numeric_evidence_candidate_v1",
+  "seed_variant_pair_member_count": 21793038,
+  "sensor_compute_union_member_window_count": 426781458,
+  "sensor_family_count": 12,
+  "sensor_reference_member_window_count": 35167107,
+  "sensor_signal_values_read": false,
+  "shard_count": 732,
+  "simultaneous_overlap_member_window_count": 19926021,
+  "source_dependencies_sha256": {
+    "configs/evaluation/phase6e_csc_execution_plan_v1.json": "888d90f720682d19cfed6ea211d84b12b4ea8fb1408aaef36cffdb7301975bea",
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "experiments/phase_06/csc_phase6k_metadata_fleet_auditor_v1.py": "78de159572ce76822ce3b958b2cbc5a408d8782a23ab8581934fa8b2d60cb43c",
+    "tests/test_phase6k_metadata_fleet_auditor_v1.py": "7635ab3e13cf1a51e662b7e6602c2f27105d96bc69e1a92f998fcde8f724cabc"
+  },
+  "source_structural_omission_count": 2104,
+  "subject_count": 61,
+  "unresolved_blockers": [
+    "Original Phase6E derivation serializer and historical digest equality have not been reproduced.",
+    "Future prospective runtime must select the accepted Phase5M producer for its one canary clean cache and the Phase5R producer for the remaining 365.",
+    "Future execution authorization requires separate prospective qualification and an explicit gate; this candidate is not that gate."
+  ],
+  "zero_overlap_pair_count": 1018215
+}
