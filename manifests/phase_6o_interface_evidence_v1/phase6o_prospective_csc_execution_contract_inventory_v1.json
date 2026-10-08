@@ -1,0 +1,267 @@
+{
+  "all_full_phase6g_execution_requests_validated": false,
+  "execution_authorized": false,
+  "historical_phase6e_digests_reproduced": false,
+  "missing_required_entrypoints": [],
+  "model_forward_performed": false,
+  "model_loaded": false,
+  "next_prospective_interfaces": [
+    "Canonical stream-to-Phase6G request materialization",
+    "Phase4H conditioned-input execution boundary",
+    "Phase5 fault-sequence runtime routing",
+    "Frozen Phase6J member bundle lifecycle",
+    "Phase6H atomic output artifact contract",
+    "Explicit independently reviewed CSC canary authorization"
+  ],
+  "phase6h_output_lifecycle_qualified_by_this_survey": false,
+  "phase6n_evidence_freeze_sha256": "3d7585fdf355b7ced8e692a5076e6b90a26eea25ef43060968eaaea2b598dc8e",
+  "real_csc_execution_performed": false,
+  "real_execution_integration_qualified": false,
+  "real_ptq_state_restoration_qualified": false,
+  "schema_version": "phase6o_prospective_csc_execution_contract_inventory_v1",
+  "source_interfaces": [
+    {
+      "component": "phase6j_frozen_runtime",
+      "path": "experiments/phase_06/csc_execution_runtime_v1.py",
+      "required_entrypoints": [
+        "canonical_pair_member_sort_key",
+        "condition_sensor_parent",
+        "execute_bound_compute_fault_sequence",
+        "run_model_member_stream",
+        "prepare_phase6h_artifact",
+        "commit_phase6h_artifact",
+        "build_sensor_reference_record",
+        "build_csc_fault_record",
+        "build_pair_member_record",
+        "execute_shard"
+      ],
+      "sha256": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+      "verified_entrypoints": {
+        "build_csc_fault_record": {
+          "is_async": false,
+          "line_end": 1024,
+          "line_start": 898,
+          "parameters": [
+            "common",
+            "request",
+            "execution_window_index",
+            "sensor_active",
+            "fault_summary"
+          ]
+        },
+        "build_pair_member_record": {
+          "is_async": false,
+          "line_end": 1160,
+          "line_start": 1027,
+          "parameters": [
+            "common",
+            "request",
+            "sensor_reference_record_count",
+            "csc_fault_record_count"
+          ]
+        },
+        "build_sensor_reference_record": {
+          "is_async": false,
+          "line_end": 895,
+          "line_start": 837,
+          "parameters": [
+            "common",
+            "reference_window_index",
+            "output_summary"
+          ]
+        },
+        "canonical_pair_member_sort_key": {
+          "is_async": false,
+          "line_end": 804,
+          "line_start": 769,
+          "parameters": [
+            "row"
+          ]
+        },
+        "commit_phase6h_artifact": {
+          "is_async": false,
+          "line_end": 2322,
+          "line_start": 2203,
+          "parameters": [
+            "partial_dir",
+            "final_dir",
+            "shard_id_value",
+            "gate_sha256",
+            "runtime_sha256",
+            "output_hashes",
+            "coverage"
+          ]
+        },
+        "condition_sensor_parent": {
+          "is_async": false,
+          "line_end": 1534,
+          "line_start": 1394,
+          "parameters": [
+            "parent_kind",
+            "instance",
+            "parent_local_index",
+            "trial_window_count",
+            "stored_windows",
+            "source_trial",
+            "stored_labels",
+            "fall_start_frame",
+            "historical_window_ends",
+            "source_length",
+            "reference_scales",
+            "operators",
+            "runner",
+            "exposure_helper"
+          ]
+        },
+        "execute_bound_compute_fault_sequence": {
+          "is_async": false,
+          "line_end": 1642,
+          "line_start": 1537,
+          "parameters": [
+            "request",
+            "trial_windows",
+            "identities",
+            "model_bundle",
+            "phase5_executor"
+          ]
+        },
+        "execute_shard": {
+          "is_async": false,
+          "line_end": 2424,
+          "line_start": 2379,
+          "parameters": [
+            "gate_path",
+            "shard_id_value",
+            "dataset_root",
+            "phase5_output_root",
+            "output_root",
+            "recompute_partial"
+          ]
+        },
+        "prepare_phase6h_artifact": {
+          "is_async": false,
+          "line_end": 2200,
+          "line_start": 2120,
+          "parameters": [
+            "output_root",
+            "shard_id_value",
+            "gate_sha256",
+            "runtime_sha256",
+            "recompute_partial"
+          ]
+        },
+        "run_model_member_stream": {
+          "is_async": false,
+          "line_end": 1743,
+          "line_start": 1645,
+          "parameters": [
+            "fold",
+            "subject",
+            "model_variant",
+            "checkpoint_seed",
+            "pair_jobs",
+            "load_model_bundle_hook",
+            "pair_executor_hook"
+          ]
+        }
+      }
+    },
+    {
+      "component": "phase6g_frozen_request_adapter",
+      "path": "experiments/phase_06/csc_execution_adapter_v1.py",
+      "required_entrypoints": [
+        "build_execution_request",
+        "validate_execution_request",
+        "execute_request"
+      ],
+      "sha256": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5",
+      "verified_entrypoints": {
+        "build_execution_request": {
+          "is_async": false,
+          "line_end": 1038,
+          "line_start": 753,
+          "parameters": [
+            "pair_metadata",
+            "sensor_exposed_window_indices",
+            "trial_window_count",
+            "model_variant",
+            "checkpoint_seed",
+            "validated_bindings"
+          ]
+        },
+        "execute_request": {
+          "is_async": false,
+          "line_end": 1265,
+          "line_start": 1256,
+          "parameters": []
+        },
+        "validate_execution_request": {
+          "is_async": false,
+          "line_end": 1253,
+          "line_start": 1041,
+          "parameters": [
+            "request"
+          ]
+        }
+      }
+    },
+    {
+      "component": "phase6n_subject_metadata",
+      "path": "experiments/phase_06/csc_phase6n_canonical_member_stream_v1.py",
+      "required_entrypoints": [
+        "qualify_complete_subject",
+        "execute_shard"
+      ],
+      "sha256": "55ae23c5f84431a9b41c34fcfd82ff7fe3ca3c3690163b07c11299d7e9b504c7",
+      "verified_entrypoints": {
+        "execute_shard": {
+          "is_async": false,
+          "line_end": 843,
+          "line_start": 833,
+          "parameters": [
+            "shard_id_value",
+            "dataset_root",
+            "phase5_output_root",
+            "output_root",
+            "gate_path"
+          ]
+        },
+        "qualify_complete_subject": {
+          "is_async": false,
+          "line_end": 830,
+          "line_start": 293,
+          "parameters": [
+            "subject",
+            "progress"
+          ]
+        }
+      }
+    },
+    {
+      "component": "phase6n_fleet_metadata",
+      "path": "experiments/phase_06/csc_phase6n_full_fleet_member_index_v1.py",
+      "required_entrypoints": [
+        "qualify_full_fleet",
+        "execute_shard"
+      ],
+      "sha256": "1ef391d4bba41a8e407cf09a28ad858b5a3f5d837b6a103f36a352a3aa1d448b",
+      "verified_entrypoints": {
+        "execute_shard": {
+          "is_async": false,
+          "line_end": 856,
+          "line_start": 855,
+          "parameters": []
+        },
+        "qualify_full_fleet": {
+          "is_async": false,
+          "line_end": 852,
+          "line_start": 275,
+          "parameters": [
+            "progress"
+          ]
+        }
+      }
+    }
+  ],
+  "survey_scope": "READ_ONLY_STATIC_AST_INTERFACE_SURVEY"
+}

@@ -1,0 +1,59 @@
+{
+  "execution_authorized": false,
+  "frozen_output_file_count": 4,
+  "frozen_output_file_names": [
+    "pair_members.jsonl",
+    "sensor_reference.jsonl",
+    "csc_fault.jsonl",
+    "metadata.json"
+  ],
+  "full_phase6h_scientific_output_schemas_qualified": false,
+  "historical_phase6e_digests_reproduced": false,
+  "model_forward_performed": false,
+  "permanent_phase6h_success_marker_created": false,
+  "pinned_upstream_sha256": {
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "experiments/phase_06/csc_phase6o_synthetic_interface_bridge_v1.py": "083b3e6d63b763fcdde0475ad5a77810a48c99f50bd4b84fc2f9788276bf341a",
+    "manifests/phase_6n_canonical_member_evidence_freeze_v1.json": "3d7585fdf355b7ced8e692a5076e6b90a26eea25ef43060968eaaea2b598dc8e",
+    "manifests/phase_6o_interface_evidence_v1/phase6o_prospective_csc_execution_contract_inventory_v1.json": "c31352b05e88fb7c11417660081b041c3e33a68f84e0390c18f1d5a804ed77bf",
+    "manifests/phase_6o_interface_evidence_v1/phase6o_synthetic_interface_bridge_qualification_v1.json": "62dd32064441f8e4ff1c314e34619d559898b793c5316bd89aec2d93eee87c61"
+  },
+  "prior_phase6o_bridge_report_sha256": "62dd32064441f8e4ff1c314e34619d559898b793c5316bd89aec2d93eee87c61",
+  "prospective_production_body_integrated": false,
+  "ptq_restoration_qualified": false,
+  "qualification_scope": "DISPOSABLE_SYNTHETIC_FIXTURES_ONLY",
+  "qualification_status": "FROZEN_PHASE6H_SYNTHETIC_OUTPUT_LIFECYCLE_PASS",
+  "real_csc_artifacts_created": false,
+  "real_csc_execution_authorized": false,
+  "real_csc_execution_performed": false,
+  "real_ptq_restoration_qualified": false,
+  "schema_version": "phase6o_synthetic_output_lifecycle_qualification_v1",
+  "scientific_output_schema_validated": false,
+  "source_sha256": {
+    "docs/PHASE_6O_SYNTHETIC_OUTPUT_LIFECYCLE_CANDIDATE_V1.md": "5b32f992ec4a8fe6fa2ef3a091fd29901dede3740f6acf3cb6c701f0bcb5e8e3",
+    "experiments/phase_06/csc_phase6o_synthetic_output_lifecycle_v1.py": "6f7f9c6700a5195efc2e6a6ad9665f4fad7a272ee868ea45bb0b2032c90c2a5a",
+    "tests/test_phase6o_synthetic_output_lifecycle_v1.py": "8fe6ea71c29325cbc4e3986d56c26113afb14b97dac47a604d79db36e4e50ad5"
+  },
+  "synthetic_output_sha256": {
+    "csc_fault.jsonl": "00bca053a1bbbcbb06f3277e900811a41507c9a47d259add0050d55e69bfcad4",
+    "metadata.json": "60d872861ac4236388bf0415e3535582acad652f06aedceba92eef1b85eb43e4",
+    "pair_members.jsonl": "fceea67c845e3e76f501395fc35eb420bc550e8ff1bc38aa299a571de1dbbbfd",
+    "sensor_reference.jsonl": "2ddb47501536370dbc42d225d303a95dbc7d654f5b7cb562ed23ea6ab4e52105"
+  },
+  "synthetic_success_markers_created_then_deleted": 2,
+  "temporary_fixture_cleanup_verified": true,
+  "transition_counters": {
+    "explicit_recompute_checks": 1,
+    "incorrect_file_hash_rejections": 1,
+    "incorrect_output_set_rejections": 1,
+    "marker_before_rename_checks": 1,
+    "partial_interruption_rejections": 1,
+    "partial_recovery_checks": 1,
+    "recompute_required_checks": 1,
+    "synthetic_success_commits": 2,
+    "tamper_rejection_checks": 1,
+    "valid_success_reuse_checks": 1,
+    "wrong_gate_rejection_checks": 1
+  },
+  "upstream_commit": "67633084d9e329841e87ac6e7c5f71159b059cd5"
+}

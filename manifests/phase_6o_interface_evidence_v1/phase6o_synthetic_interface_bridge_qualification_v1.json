@@ -1,0 +1,760 @@
+{
+  "actual_model_forward_performed": false,
+  "actual_phase6h_artifacts_written": false,
+  "all_21793038_phase6g_requests_individually_validated": false,
+  "compute_strata_covered": 28,
+  "execution_authorized": false,
+  "fold": 5,
+  "full_fleet_csc_execution_qualified": false,
+  "full_fleet_model_execution_qualified": false,
+  "historical_phase6e_digests_reproduced": false,
+  "new_source_sha256": {
+    "docs/PHASE_6O_SYNTHETIC_INTERFACE_BRIDGE_CANDIDATE_V1.md": "cbefa51a4caa5bca49798ad6a901fc200776023090cd127aa6991690e9c4ed8d",
+    "experiments/phase_06/csc_phase6o_synthetic_interface_bridge_v1.py": "083b3e6d63b763fcdde0475ad5a77810a48c99f50bd4b84fc2f9788276bf341a",
+    "tests/test_phase6o_synthetic_interface_bridge_v1.py": "8180e97d759e83aea5b5831ba99bf2ab0e2e20696cd22374624e23abbef2870e"
+  },
+  "phase6o_survey_sha256": "c31352b05e88fb7c11417660081b041c3e33a68f84e0390c18f1d5a804ed77bf",
+  "pinned_dependencies_sha256": {
+    "experiments/phase_06/csc_execution_adapter_v1.py": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5",
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "experiments/phase_06/csc_phase6m_canonical_request_witness_v1.py": "6b3d8028b31ad52e10a0fb4e4060e0b7bf8866177cced7630c825adeb91fd774",
+    "experiments/phase_06/csc_phase6m_pre_forward_orchestrator_v1.py": "c19eb646ca3e5ad584c737af7d4a36383588b8df07430ba3ab1dd368e386af0e",
+    "experiments/phase_06/csc_phase6n_canonical_member_stream_v1.py": "55ae23c5f84431a9b41c34fcfd82ff7fe3ca3c3690163b07c11299d7e9b504c7",
+    "manifests/phase_6l_producer_aware_cache_evidence_freeze_v1.json": "d1b355fe0d4ff13d7eebb6a6f14ba7af72f47da06519c9fbce14290c6d9c4ba5",
+    "manifests/phase_6m_csc_pre_forward_evidence_freeze_v1.json": "a77b437cf669894b4423caa65f9f094f27074b58e862261376c169d04b1a9607",
+    "manifests/phase_6m_pre_forward_evidence_v1/phase6m_canonical_request_synthetic_witness_v1.json": "7ad0376d72161702cd36e60117c12fa2a85bf4405e5e032681525f40ce023d46",
+    "manifests/phase_6n_canonical_member_evidence_freeze_v1.json": "3d7585fdf355b7ced8e692a5076e6b90a26eea25ef43060968eaaea2b598dc8e",
+    "manifests/phase_6o_interface_evidence_v1/phase6o_prospective_csc_execution_contract_inventory_v1.json": "c31352b05e88fb7c11417660081b041c3e33a68f84e0390c18f1d5a804ed77bf"
+  },
+  "prior_frozen_request_ids_reconciled": 189,
+  "qualification_scope": "REAL_FROZEN_ORCHESTRATION_FUNCTIONS_WITH_SYNTHETIC_FIXTURES",
+  "qualification_status": "FROZEN_PHASE6J_SYNTHETIC_INTERFACE_BRIDGE_PASS",
+  "real_checkpoint_loaded": false,
+  "real_csc_execution_performed": false,
+  "real_faults_applied": false,
+  "real_labels_consumed": false,
+  "real_phase6h_artifacts_created": false,
+  "real_production_execution_body_integrated": false,
+  "real_ptq_state_restoration_qualified": false,
+  "real_sensor_inputs_consumed": false,
+  "schema_version": "phase6o_synthetic_interface_bridge_qualification_v1",
+  "sensor_family_count": 12,
+  "streams": [
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "sensor_family": "axis_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "sensor_family": "axis_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "sensor_family": "axis_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "sensor_family": "axis_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 8
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "sensor_family": "axis_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 8
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "sensor_family": "axis_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 8
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "sensor_family": "bias",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "sensor_family": "bias",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "sensor_family": "bias",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "sensor_family": "bias",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 6
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "sensor_family": "bias",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 6
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "sensor_family": "bias",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 6
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "sensor_family": "clipping_saturation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "sensor_family": "clipping_saturation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "sensor_family": "clipping_saturation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "sensor_family": "clipping_saturation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "sensor_family": "clipping_saturation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "sensor_family": "clipping_saturation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "sensor_family": "delay",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "sensor_family": "delay",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "sensor_family": "delay",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "sensor_family": "delay",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "sensor_family": "delay",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "sensor_family": "delay",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_drift_a450e5e93b4f3fef",
+      "sensor_family": "drift",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_drift_a450e5e93b4f3fef",
+      "sensor_family": "drift",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_drift_a450e5e93b4f3fef",
+      "sensor_family": "drift",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "sensor_family": "dropout",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "sensor_family": "dropout",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "sensor_family": "dropout",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "sensor_family": "dropout",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "sensor_family": "dropout",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "sensor_family": "dropout",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "sensor_family": "frame_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "sensor_family": "frame_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "sensor_family": "frame_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "sensor_family": "frame_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "sensor_family": "frame_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "sensor_family": "frame_loss",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "sensor_family": "jitter",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "sensor_family": "jitter",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "sensor_family": "jitter",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "sensor_family": "jitter",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "sensor_family": "jitter",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "sensor_family": "jitter",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "sensor_family": "noise",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "sensor_family": "noise",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "sensor_family": "noise",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "sensor_family": "noise",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "sensor_family": "noise",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "sensor_family": "noise",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 5
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "sensor_family": "orientation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "sensor_family": "orientation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "sensor_family": "orientation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "sensor_family": "orientation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "sensor_family": "orientation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "sensor_family": "orientation",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "sensor_family": "scale_factor",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "sensor_family": "scale_factor",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "sensor_family": "scale_factor",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 2
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "sensor_family": "scale_factor",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "sensor_family": "scale_factor",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "sensor_family": "scale_factor",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 4
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "sensor_family": "stuck_channel",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "sensor_family": "stuck_channel",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "runtime_shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "sensor_family": "stuck_channel",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "sensor_family": "stuck_channel",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "sensor_family": "stuck_channel",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "runtime_shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "sensor_family": "stuck_channel",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_pair_count": 1
+    }
+  ],
+  "subject": 9,
+  "synthetic_bundle_loads": 69,
+  "synthetic_bundle_releases": 69,
+  "synthetic_counts": {
+    "executed_synthetic_hooks": 189,
+    "parent_kind_source_trial": 45,
+    "parent_kind_stored_window": 144,
+    "synthetic_fault_rows": 13989,
+    "synthetic_operator_calls": 189,
+    "synthetic_overlap_rows": 2631,
+    "synthetic_phase5_calls": 189,
+    "synthetic_reference_rows": 5310,
+    "synthetic_rewindow_calls": 45
+  },
+  "synthetic_hooks_executed": 189,
+  "synthetic_member_streams": 69,
+  "unresolved_execution_requirements": [
+    "Real frozen Phase4H operator/runner/exposure integration",
+    "Real frozen Phase5 executor and model loading",
+    "PTQ persistent-weight restoration on genuine model state",
+    "True model-forward and fault-sequence verification",
+    "Phase6H real output and atomic success lifecycle",
+    "Historical Phase6E digest provenance adjudication",
+    "Separately reviewed explicit CSC canary execution gate"
+  ],
+  "upstream_commit": "67633084d9e329841e87ac6e7c5f71159b059cd5"
+}

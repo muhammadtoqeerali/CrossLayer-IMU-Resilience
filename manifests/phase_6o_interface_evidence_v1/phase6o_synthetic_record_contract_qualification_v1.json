@@ -1,0 +1,52 @@
+{
+  "all_frozen_required_fields_verified": true,
+  "canonical_jsonl_round_trip_passed": true,
+  "execution_authorized": false,
+  "four_synthetic_fixture_file_sha256": {
+    "csc_fault.jsonl": "3a97d9a72b420132edb1725d062c14f66fffc9910e6091a9d8039f3fb5d6d2e5",
+    "metadata.json": "9acea160258df290c5afd322569d878aeb3aa875f2281bb2e49fdf9969378f44",
+    "pair_members.jsonl": "ae766baab18b1d1717d780178fc57b4a96f0fe3e18b621727a1fcea076902cec",
+    "sensor_reference.jsonl": "786ff0fda931c9b14c4cfd7b76dad8dc5aef3a8c3732d2dacaf6ba90ebae7262"
+  },
+  "full_shard_frozen_cardinality_verified_by_this_stage": false,
+  "historical_phase6e_digests_reproduced": false,
+  "negative_coverage_mutation_rejected": true,
+  "per_request_relational_identities_verified": true,
+  "per_request_temporal_reference_routing_verified": true,
+  "permanent_phase6h_success_marker_created": false,
+  "pinned_files_sha256": {
+    "configs/evaluation/phase6h_csc_execution_architecture_clarification_v1.json": "7cb6234876506fe8f127ee823550d235a04063643013eb3348d81583fdb88a26",
+    "experiments/phase_06/csc_execution_adapter_v1.py": "2d8d218b0d2214e099dab28b769eeb9fb90d6fa6420b50351b21e54cc4bd1fb5",
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "experiments/phase_06/csc_phase6m_canonical_request_witness_v1.py": "6b3d8028b31ad52e10a0fb4e4060e0b7bf8866177cced7630c825adeb91fd774",
+    "manifests/phase_6m_pre_forward_evidence_v1/phase6m_canonical_request_synthetic_witness_v1.json": "7ad0376d72161702cd36e60117c12fa2a85bf4405e5e032681525f40ce023d46",
+    "manifests/phase_6n_canonical_member_evidence_freeze_v1.json": "3d7585fdf355b7ced8e692a5076e6b90a26eea25ef43060968eaaea2b598dc8e",
+    "manifests/phase_6o_interface_evidence_v1/phase6o_synthetic_output_lifecycle_qualification_v1.json": "fe4a4b0f1c83a43bb00c1a231702c4ec8c282ecbb47d8b4e8f6279d5b33d2a71"
+  },
+  "previous_output_lifecycle_report_sha256": "fe4a4b0f1c83a43bb00c1a231702c4ec8c282ecbb47d8b4e8f6279d5b33d2a71",
+  "production_coverage_marker_validator_complete": false,
+  "qualification_status": "PHASE6O_FROZEN_SYNTHETIC_RECORD_CONTRACT_PASS",
+  "real_csc_execution_performed": false,
+  "real_label_arrays_read": false,
+  "real_model_forward_performed": false,
+  "real_model_loaded": false,
+  "real_sensor_inputs_read": false,
+  "schema_version": "phase6o_synthetic_record_contract_qualification_v1",
+  "scientific_prediction_values_validated": false,
+  "scope": "189_FROZEN_REQUESTS_WITH_SYNTHETIC_OUTPUT_VALUES",
+  "source_sha256": {
+    "docs/PHASE_6O_SYNTHETIC_RECORD_CONTRACT_CANDIDATE_V1.md": "078088541d6b02bb639086d6be399640a5dec90bc809302f1fae649ed5fc0437",
+    "experiments/phase_06/csc_phase6o_synthetic_record_contract_v1.py": "3c0b9a0a6b81ca3a78922f6226f9991b63c4a2d460e1d9b26ca0580f78a4f168",
+    "tests/test_phase6o_synthetic_record_contract_v1.py": "768ba46a4876394d0edae301a5cfff428cc080894394b545f854fc4ed6a43ff6"
+  },
+  "synthetic_overlap_records": 2631,
+  "temporary_fixture_cleanup_verified": true,
+  "upstream_commit": "67633084d9e329841e87ac6e7c5f71159b059cd5",
+  "validated_record_counts": {
+    "csc_fault_windows": 13989,
+    "pair_members": 189,
+    "sensor_references": 5310
+  },
+  "validated_request_count": 189,
+  "zero_overlap_pair_member_count": 75
+}

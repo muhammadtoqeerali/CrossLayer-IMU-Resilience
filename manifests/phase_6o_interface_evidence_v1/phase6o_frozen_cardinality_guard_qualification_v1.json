@@ -1,0 +1,5180 @@
+{
+  "actual_frozen_shard_outputs_validated": false,
+  "correct_frozen_claims_validated": 732,
+  "execution_authorized": false,
+  "frozen_shard_count": 732,
+  "full_scientific_row_payload_validation_qualified": false,
+  "global_expected_counts": {
+    "csc_fault_records": 411540372,
+    "pair_member_records": 21793038,
+    "sensor_reference_records": 35167107,
+    "simultaneous_overlap_records": 19926021
+  },
+  "historical_phase6e_digests_reproduced": false,
+  "incorrect_frozen_claims_rejected": 732,
+  "model_forward_performed": false,
+  "per_shard_expected_counts": [
+    {
+      "csc_fault_records": 669132,
+      "pair_member_records": 28377,
+      "runtime_shard_id": "phase6h_csc_f1_s10_axis_loss_2a054cd1f5994e1b",
+      "sensor_reference_records": 28377,
+      "simultaneous_overlap_records": 21585
+    },
+    {
+      "csc_fault_records": 628554,
+      "pair_member_records": 28542,
+      "runtime_shard_id": "phase6h_csc_f1_s10_bias_785ac7d11c3d9504",
+      "sensor_reference_records": 28542,
+      "simultaneous_overlap_records": 21576
+    },
+    {
+      "csc_fault_records": 639192,
+      "pair_member_records": 28497,
+      "runtime_shard_id": "phase6h_csc_f1_s10_clipping_saturation_1e4cf6b36812dea9",
+      "sensor_reference_records": 28497,
+      "simultaneous_overlap_records": 21459
+    },
+    {
+      "csc_fault_records": 8592,
+      "pair_member_records": 516,
+      "runtime_shard_id": "phase6h_csc_f1_s10_delay_a6c17f86354389db",
+      "sensor_reference_records": 29475,
+      "simultaneous_overlap_records": 8592
+    },
+    {
+      "csc_fault_records": 6723,
+      "pair_member_records": 516,
+      "runtime_shard_id": "phase6h_csc_f1_s10_drift_80dfd798cee094c4",
+      "sensor_reference_records": 3867,
+      "simultaneous_overlap_records": 1416
+    },
+    {
+      "csc_fault_records": 7608,
+      "pair_member_records": 531,
+      "runtime_shard_id": "phase6h_csc_f1_s10_dropout_380a6746c2cf64be",
+      "sensor_reference_records": 1500,
+      "simultaneous_overlap_records": 639
+    },
+    {
+      "csc_fault_records": 7488,
+      "pair_member_records": 537,
+      "runtime_shard_id": "phase6h_csc_f1_s10_frame_loss_ee3191e2d1fd7a4d",
+      "sensor_reference_records": 1131,
+      "simultaneous_overlap_records": 543
+    },
+    {
+      "csc_fault_records": 8367,
+      "pair_member_records": 525,
+      "runtime_shard_id": "phase6h_csc_f1_s10_jitter_3f295035cfd1ecce",
+      "sensor_reference_records": 29922,
+      "simultaneous_overlap_records": 8367
+    },
+    {
+      "csc_fault_records": 671292,
+      "pair_member_records": 28575,
+      "runtime_shard_id": "phase6h_csc_f1_s10_noise_eb9a3cfcb077c023",
+      "sensor_reference_records": 28575,
+      "simultaneous_overlap_records": 21381
+    },
+    {
+      "csc_fault_records": 9108,
+      "pair_member_records": 516,
+      "runtime_shard_id": "phase6h_csc_f1_s10_orientation_ec558ae84681c1a3",
+      "sensor_reference_records": 29268,
+      "simultaneous_overlap_records": 9108
+    },
+    {
+      "csc_fault_records": 644601,
+      "pair_member_records": 28344,
+      "runtime_shard_id": "phase6h_csc_f1_s10_scale_factor_a34e88a7d9757b40",
+      "sensor_reference_records": 28344,
+      "simultaneous_overlap_records": 21381
+    },
+    {
+      "csc_fault_records": 6405,
+      "pair_member_records": 492,
+      "runtime_shard_id": "phase6h_csc_f1_s10_stuck_channel_d4ca1461dff27848",
+      "sensor_reference_records": 1344,
+      "simultaneous_overlap_records": 675
+    },
+    {
+      "csc_fault_records": 1666269,
+      "pair_member_records": 101391,
+      "runtime_shard_id": "phase6h_csc_f1_s116_axis_loss_d0cb1f02cfb0e66b",
+      "sensor_reference_records": 101391,
+      "simultaneous_overlap_records": 77049
+    },
+    {
+      "csc_fault_records": 1711380,
+      "pair_member_records": 101373,
+      "runtime_shard_id": "phase6h_csc_f1_s116_bias_1ed37ba76fd1803d",
+      "sensor_reference_records": 101373,
+      "simultaneous_overlap_records": 76596
+    },
+    {
+      "csc_fault_records": 1686681,
+      "pair_member_records": 101436,
+      "runtime_shard_id": "phase6h_csc_f1_s116_clipping_saturation_fa0ba8497124cabf",
+      "sensor_reference_records": 101436,
+      "simultaneous_overlap_records": 76593
+    },
+    {
+      "csc_fault_records": 27468,
+      "pair_member_records": 2472,
+      "runtime_shard_id": "phase6h_csc_f1_s116_delay_a45b59791736ce23",
+      "sensor_reference_records": 100503,
+      "simultaneous_overlap_records": 27468
+    },
+    {
+      "csc_fault_records": 28017,
+      "pair_member_records": 2439,
+      "runtime_shard_id": "phase6h_csc_f1_s116_drift_f306e6fb5174c2d9",
+      "sensor_reference_records": 15621,
+      "simultaneous_overlap_records": 6075
+    },
+    {
+      "csc_fault_records": 27975,
+      "pair_member_records": 2556,
+      "runtime_shard_id": "phase6h_csc_f1_s116_dropout_c23be5a832824ce4",
+      "sensor_reference_records": 7104,
+      "simultaneous_overlap_records": 3273
+    },
+    {
+      "csc_fault_records": 26655,
+      "pair_member_records": 2523,
+      "runtime_shard_id": "phase6h_csc_f1_s116_frame_loss_5c8d844b050b522a",
+      "sensor_reference_records": 5160,
+      "simultaneous_overlap_records": 2580
+    },
+    {
+      "csc_fault_records": 25158,
+      "pair_member_records": 2559,
+      "runtime_shard_id": "phase6h_csc_f1_s116_jitter_ae9c8a8c1ef6acc5",
+      "sensor_reference_records": 102510,
+      "simultaneous_overlap_records": 25158
+    },
+    {
+      "csc_fault_records": 1652574,
+      "pair_member_records": 101637,
+      "runtime_shard_id": "phase6h_csc_f1_s116_noise_96f8a9a3fc6edbe7",
+      "sensor_reference_records": 101637,
+      "simultaneous_overlap_records": 76866
+    },
+    {
+      "csc_fault_records": 28575,
+      "pair_member_records": 2529,
+      "runtime_shard_id": "phase6h_csc_f1_s116_orientation_12ff43a8d84629cf",
+      "sensor_reference_records": 102594,
+      "simultaneous_overlap_records": 28575
+    },
+    {
+      "csc_fault_records": 1692222,
+      "pair_member_records": 101490,
+      "runtime_shard_id": "phase6h_csc_f1_s116_scale_factor_e9099b9b3cca4b00",
+      "sensor_reference_records": 101490,
+      "simultaneous_overlap_records": 76992
+    },
+    {
+      "csc_fault_records": 25731,
+      "pair_member_records": 2064,
+      "runtime_shard_id": "phase6h_csc_f1_s116_stuck_channel_622448179079f184",
+      "sensor_reference_records": 5637,
+      "simultaneous_overlap_records": 2862
+    },
+    {
+      "csc_fault_records": 1761510,
+      "pair_member_records": 108570,
+      "runtime_shard_id": "phase6h_csc_f1_s117_axis_loss_46047a71e8b8b7fa",
+      "sensor_reference_records": 108570,
+      "simultaneous_overlap_records": 81819
+    },
+    {
+      "csc_fault_records": 1702740,
+      "pair_member_records": 108660,
+      "runtime_shard_id": "phase6h_csc_f1_s117_bias_368e85fe2440fe44",
+      "sensor_reference_records": 108660,
+      "simultaneous_overlap_records": 81534
+    },
+    {
+      "csc_fault_records": 1723965,
+      "pair_member_records": 108579,
+      "runtime_shard_id": "phase6h_csc_f1_s117_clipping_saturation_3aadc7f05d8ee308",
+      "sensor_reference_records": 108579,
+      "simultaneous_overlap_records": 81780
+    },
+    {
+      "csc_fault_records": 25833,
+      "pair_member_records": 2433,
+      "runtime_shard_id": "phase6h_csc_f1_s117_delay_ddb17b742cee7f49",
+      "sensor_reference_records": 107289,
+      "simultaneous_overlap_records": 25833
+    },
+    {
+      "csc_fault_records": 24939,
+      "pair_member_records": 2466,
+      "runtime_shard_id": "phase6h_csc_f1_s117_drift_0718440eee2f0e40",
+      "sensor_reference_records": 16872,
+      "simultaneous_overlap_records": 6255
+    },
+    {
+      "csc_fault_records": 30438,
+      "pair_member_records": 2508,
+      "runtime_shard_id": "phase6h_csc_f1_s117_dropout_f2eb4db500137849",
+      "sensor_reference_records": 7167,
+      "simultaneous_overlap_records": 3294
+    },
+    {
+      "csc_fault_records": 31587,
+      "pair_member_records": 2454,
+      "runtime_shard_id": "phase6h_csc_f1_s117_frame_loss_62e92635c0d80d82",
+      "sensor_reference_records": 5088,
+      "simultaneous_overlap_records": 2322
+    },
+    {
+      "csc_fault_records": 29583,
+      "pair_member_records": 2490,
+      "runtime_shard_id": "phase6h_csc_f1_s117_jitter_ad446b96d58f0005",
+      "sensor_reference_records": 108552,
+      "simultaneous_overlap_records": 29583
+    },
+    {
+      "csc_fault_records": 1729728,
+      "pair_member_records": 108885,
+      "runtime_shard_id": "phase6h_csc_f1_s117_noise_9dae33295c6e41f1",
+      "sensor_reference_records": 108885,
+      "simultaneous_overlap_records": 82284
+    },
+    {
+      "csc_fault_records": 28785,
+      "pair_member_records": 2499,
+      "runtime_shard_id": "phase6h_csc_f1_s117_orientation_b4fc959f811f77e1",
+      "sensor_reference_records": 109434,
+      "simultaneous_overlap_records": 28785
+    },
+    {
+      "csc_fault_records": 1712835,
+      "pair_member_records": 108966,
+      "runtime_shard_id": "phase6h_csc_f1_s117_scale_factor_be53e04faa6f26d7",
+      "sensor_reference_records": 108966,
+      "simultaneous_overlap_records": 82041
+    },
+    {
+      "csc_fault_records": 28719,
+      "pair_member_records": 2250,
+      "runtime_shard_id": "phase6h_csc_f1_s117_stuck_channel_ce12b55b076aaded",
+      "sensor_reference_records": 6042,
+      "simultaneous_overlap_records": 3225
+    },
+    {
+      "csc_fault_records": 874455,
+      "pair_member_records": 32112,
+      "runtime_shard_id": "phase6h_csc_f1_s11_axis_loss_c13ad0d482b55aa0",
+      "sensor_reference_records": 32112,
+      "simultaneous_overlap_records": 24453
+    },
+    {
+      "csc_fault_records": 874983,
+      "pair_member_records": 32322,
+      "runtime_shard_id": "phase6h_csc_f1_s11_bias_a339a09d04aa22f6",
+      "sensor_reference_records": 32322,
+      "simultaneous_overlap_records": 24534
+    },
+    {
+      "csc_fault_records": 868428,
+      "pair_member_records": 32067,
+      "runtime_shard_id": "phase6h_csc_f1_s11_clipping_saturation_a026f9099bd33af1",
+      "sensor_reference_records": 32067,
+      "simultaneous_overlap_records": 24432
+    },
+    {
+      "csc_fault_records": 7548,
+      "pair_member_records": 498,
+      "runtime_shard_id": "phase6h_csc_f1_s11_delay_b4c2bffb86701bb9",
+      "sensor_reference_records": 31395,
+      "simultaneous_overlap_records": 7548
+    },
+    {
+      "csc_fault_records": 5985,
+      "pair_member_records": 534,
+      "runtime_shard_id": "phase6h_csc_f1_s11_drift_911aa16acb88a894",
+      "sensor_reference_records": 3885,
+      "simultaneous_overlap_records": 1254
+    },
+    {
+      "csc_fault_records": 10134,
+      "pair_member_records": 504,
+      "runtime_shard_id": "phase6h_csc_f1_s11_dropout_a0285449e47fdec1",
+      "sensor_reference_records": 1416,
+      "simultaneous_overlap_records": 663
+    },
+    {
+      "csc_fault_records": 8088,
+      "pair_member_records": 513,
+      "runtime_shard_id": "phase6h_csc_f1_s11_frame_loss_d79255708298a374",
+      "sensor_reference_records": 1029,
+      "simultaneous_overlap_records": 495
+    },
+    {
+      "csc_fault_records": 5664,
+      "pair_member_records": 510,
+      "runtime_shard_id": "phase6h_csc_f1_s11_jitter_a6e83fd0cfaa2ad0",
+      "sensor_reference_records": 30678,
+      "simultaneous_overlap_records": 5664
+    },
+    {
+      "csc_fault_records": 878610,
+      "pair_member_records": 32055,
+      "runtime_shard_id": "phase6h_csc_f1_s11_noise_337441daa8f8734d",
+      "sensor_reference_records": 32055,
+      "simultaneous_overlap_records": 24525
+    },
+    {
+      "csc_fault_records": 6966,
+      "pair_member_records": 504,
+      "runtime_shard_id": "phase6h_csc_f1_s11_orientation_bd5a37e64f1e6f8f",
+      "sensor_reference_records": 29646,
+      "simultaneous_overlap_records": 6966
+    },
+    {
+      "csc_fault_records": 875883,
+      "pair_member_records": 32163,
+      "runtime_shard_id": "phase6h_csc_f1_s11_scale_factor_db707bfbbddbc9c4",
+      "sensor_reference_records": 32163,
+      "simultaneous_overlap_records": 24339
+    },
+    {
+      "csc_fault_records": 8742,
+      "pair_member_records": 504,
+      "runtime_shard_id": "phase6h_csc_f1_s11_stuck_channel_fc3de99794498195",
+      "sensor_reference_records": 1338,
+      "simultaneous_overlap_records": 759
+    },
+    {
+      "csc_fault_records": 801849,
+      "pair_member_records": 29913,
+      "runtime_shard_id": "phase6h_csc_f1_s12_axis_loss_036b1759b7e51335",
+      "sensor_reference_records": 29913,
+      "simultaneous_overlap_records": 22773
+    },
+    {
+      "csc_fault_records": 826392,
+      "pair_member_records": 29934,
+      "runtime_shard_id": "phase6h_csc_f1_s12_bias_6fa033b4e5258bc1",
+      "sensor_reference_records": 29934,
+      "simultaneous_overlap_records": 22809
+    },
+    {
+      "csc_fault_records": 761349,
+      "pair_member_records": 29781,
+      "runtime_shard_id": "phase6h_csc_f1_s12_clipping_saturation_c9eda47054b17423",
+      "sensor_reference_records": 29781,
+      "simultaneous_overlap_records": 22587
+    },
+    {
+      "csc_fault_records": 8376,
+      "pair_member_records": 504,
+      "runtime_shard_id": "phase6h_csc_f1_s12_delay_655e4c3a4eae9c2d",
+      "sensor_reference_records": 29853,
+      "simultaneous_overlap_records": 8376
+    },
+    {
+      "csc_fault_records": 8502,
+      "pair_member_records": 510,
+      "runtime_shard_id": "phase6h_csc_f1_s12_drift_a2f57135498deb72",
+      "sensor_reference_records": 4113,
+      "simultaneous_overlap_records": 1374
+    },
+    {
+      "csc_fault_records": 9255,
+      "pair_member_records": 519,
+      "runtime_shard_id": "phase6h_csc_f1_s12_dropout_1f56ab406a0055d1",
+      "sensor_reference_records": 1479,
+      "simultaneous_overlap_records": 678
+    },
+    {
+      "csc_fault_records": 9426,
+      "pair_member_records": 495,
+      "runtime_shard_id": "phase6h_csc_f1_s12_frame_loss_f678734e3fcf7a5c",
+      "sensor_reference_records": 1005,
+      "simultaneous_overlap_records": 582
+    },
+    {
+      "csc_fault_records": 6102,
+      "pair_member_records": 492,
+      "runtime_shard_id": "phase6h_csc_f1_s12_jitter_4c0bc50132afa4b8",
+      "sensor_reference_records": 28290,
+      "simultaneous_overlap_records": 6102
+    },
+    {
+      "csc_fault_records": 791589,
+      "pair_member_records": 29811,
+      "runtime_shard_id": "phase6h_csc_f1_s12_noise_a16c25e71496721c",
+      "sensor_reference_records": 29811,
+      "simultaneous_overlap_records": 22410
+    },
+    {
+      "csc_fault_records": 5604,
+      "pair_member_records": 537,
+      "runtime_shard_id": "phase6h_csc_f1_s12_orientation_9d597d6e12e511f9",
+      "sensor_reference_records": 32082,
+      "simultaneous_overlap_records": 5604
+    },
+    {
+      "csc_fault_records": 813735,
+      "pair_member_records": 29916,
+      "runtime_shard_id": "phase6h_csc_f1_s12_scale_factor_dfc0d17ac590f183",
+      "sensor_reference_records": 29916,
+      "simultaneous_overlap_records": 22839
+    },
+    {
+      "csc_fault_records": 6786,
+      "pair_member_records": 531,
+      "runtime_shard_id": "phase6h_csc_f1_s12_stuck_channel_c81f9d54bb4ae553",
+      "sensor_reference_records": 1500,
+      "simultaneous_overlap_records": 660
+    },
+    {
+      "csc_fault_records": 1523592,
+      "pair_member_records": 92859,
+      "runtime_shard_id": "phase6h_csc_f1_s133_axis_loss_5d0cf7b0f394038c",
+      "sensor_reference_records": 92859,
+      "simultaneous_overlap_records": 70284
+    },
+    {
+      "csc_fault_records": 1528839,
+      "pair_member_records": 92727,
+      "runtime_shard_id": "phase6h_csc_f1_s133_bias_8cc7f6fb87182f75",
+      "sensor_reference_records": 92727,
+      "simultaneous_overlap_records": 69819
+    },
+    {
+      "csc_fault_records": 1496271,
+      "pair_member_records": 93108,
+      "runtime_shard_id": "phase6h_csc_f1_s133_clipping_saturation_8f6110aa73d6f289",
+      "sensor_reference_records": 93108,
+      "simultaneous_overlap_records": 70623
+    },
+    {
+      "csc_fault_records": 25086,
+      "pair_member_records": 2505,
+      "runtime_shard_id": "phase6h_csc_f1_s133_delay_68462063acf22d78",
+      "sensor_reference_records": 92319,
+      "simultaneous_overlap_records": 25086
+    },
+    {
+      "csc_fault_records": 24810,
+      "pair_member_records": 2442,
+      "runtime_shard_id": "phase6h_csc_f1_s133_drift_e3c593cb91581f4f",
+      "sensor_reference_records": 16908,
+      "simultaneous_overlap_records": 6270
+    },
+    {
+      "csc_fault_records": 25515,
+      "pair_member_records": 2475,
+      "runtime_shard_id": "phase6h_csc_f1_s133_dropout_90424804dcdbd93e",
+      "sensor_reference_records": 7008,
+      "simultaneous_overlap_records": 2991
+    },
+    {
+      "csc_fault_records": 24072,
+      "pair_member_records": 2532,
+      "runtime_shard_id": "phase6h_csc_f1_s133_frame_loss_54cfc346004ee37f",
+      "sensor_reference_records": 5142,
+      "simultaneous_overlap_records": 2577
+    },
+    {
+      "csc_fault_records": 24498,
+      "pair_member_records": 2523,
+      "runtime_shard_id": "phase6h_csc_f1_s133_jitter_28bfe3086b64c0e7",
+      "sensor_reference_records": 93393,
+      "simultaneous_overlap_records": 24498
+    },
+    {
+      "csc_fault_records": 1498740,
+      "pair_member_records": 92994,
+      "runtime_shard_id": "phase6h_csc_f1_s133_noise_4cf007038c486b28",
+      "sensor_reference_records": 92994,
+      "simultaneous_overlap_records": 69249
+    },
+    {
+      "csc_fault_records": 24357,
+      "pair_member_records": 2448,
+      "runtime_shard_id": "phase6h_csc_f1_s133_orientation_9d7eef559773e181",
+      "sensor_reference_records": 89835,
+      "simultaneous_overlap_records": 24357
+    },
+    {
+      "csc_fault_records": 1541289,
+      "pair_member_records": 93123,
+      "runtime_shard_id": "phase6h_csc_f1_s133_scale_factor_23ff862e23530731",
+      "sensor_reference_records": 93123,
+      "simultaneous_overlap_records": 70140
+    },
+    {
+      "csc_fault_records": 25842,
+      "pair_member_records": 2478,
+      "runtime_shard_id": "phase6h_csc_f1_s133_stuck_channel_3b5dfc4c867c9cd2",
+      "sensor_reference_records": 6624,
+      "simultaneous_overlap_records": 3513
+    },
+    {
+      "csc_fault_records": 1291002,
+      "pair_member_records": 88866,
+      "runtime_shard_id": "phase6h_csc_f1_s136_axis_loss_a15a9f67a0206b0c",
+      "sensor_reference_records": 88866,
+      "simultaneous_overlap_records": 66186
+    },
+    {
+      "csc_fault_records": 1272645,
+      "pair_member_records": 88680,
+      "runtime_shard_id": "phase6h_csc_f1_s136_bias_a6d453578b67db35",
+      "sensor_reference_records": 88680,
+      "simultaneous_overlap_records": 65634
+    },
+    {
+      "csc_fault_records": 1301016,
+      "pair_member_records": 88674,
+      "runtime_shard_id": "phase6h_csc_f1_s136_clipping_saturation_2691e084e75138c3",
+      "sensor_reference_records": 88674,
+      "simultaneous_overlap_records": 66063
+    },
+    {
+      "csc_fault_records": 22548,
+      "pair_member_records": 2469,
+      "runtime_shard_id": "phase6h_csc_f1_s136_delay_a3efe647896fecf0",
+      "sensor_reference_records": 88776,
+      "simultaneous_overlap_records": 22548
+    },
+    {
+      "csc_fault_records": 23862,
+      "pair_member_records": 2496,
+      "runtime_shard_id": "phase6h_csc_f1_s136_drift_93825658330b8b13",
+      "sensor_reference_records": 16341,
+      "simultaneous_overlap_records": 6492
+    },
+    {
+      "csc_fault_records": 24225,
+      "pair_member_records": 2454,
+      "runtime_shard_id": "phase6h_csc_f1_s136_dropout_e50c2f9e076884e8",
+      "sensor_reference_records": 7017,
+      "simultaneous_overlap_records": 2982
+    },
+    {
+      "csc_fault_records": 22089,
+      "pair_member_records": 2409,
+      "runtime_shard_id": "phase6h_csc_f1_s136_frame_loss_38fffae7666e4d25",
+      "sensor_reference_records": 4824,
+      "simultaneous_overlap_records": 2448
+    },
+    {
+      "csc_fault_records": 24858,
+      "pair_member_records": 2469,
+      "runtime_shard_id": "phase6h_csc_f1_s136_jitter_79b5e07c8c63d104",
+      "sensor_reference_records": 88521,
+      "simultaneous_overlap_records": 24858
+    },
+    {
+      "csc_fault_records": 1272027,
+      "pair_member_records": 88893,
+      "runtime_shard_id": "phase6h_csc_f1_s136_noise_9300c31325b447cd",
+      "sensor_reference_records": 88893,
+      "simultaneous_overlap_records": 66384
+    },
+    {
+      "csc_fault_records": 24435,
+      "pair_member_records": 2427,
+      "runtime_shard_id": "phase6h_csc_f1_s136_orientation_09a3637ff1937ed6",
+      "sensor_reference_records": 86460,
+      "simultaneous_overlap_records": 24435
+    },
+    {
+      "csc_fault_records": 1278009,
+      "pair_member_records": 88956,
+      "runtime_shard_id": "phase6h_csc_f1_s136_scale_factor_cb66cdfce38172d2",
+      "sensor_reference_records": 88956,
+      "simultaneous_overlap_records": 66273
+    },
+    {
+      "csc_fault_records": 24498,
+      "pair_member_records": 2325,
+      "runtime_shard_id": "phase6h_csc_f1_s136_stuck_channel_d340c642af41bc39",
+      "sensor_reference_records": 6234,
+      "simultaneous_overlap_records": 3120
+    },
+    {
+      "csc_fault_records": 1322061,
+      "pair_member_records": 83205,
+      "runtime_shard_id": "phase6h_csc_f1_s137_axis_loss_d7862ca8e8dd7f21",
+      "sensor_reference_records": 83205,
+      "simultaneous_overlap_records": 62619
+    },
+    {
+      "csc_fault_records": 1299081,
+      "pair_member_records": 83184,
+      "runtime_shard_id": "phase6h_csc_f1_s137_bias_02a0185f47240a9a",
+      "sensor_reference_records": 83184,
+      "simultaneous_overlap_records": 62262
+    },
+    {
+      "csc_fault_records": 1340301,
+      "pair_member_records": 83022,
+      "runtime_shard_id": "phase6h_csc_f1_s137_clipping_saturation_9f89031174a0cc86",
+      "sensor_reference_records": 83022,
+      "simultaneous_overlap_records": 61722
+    },
+    {
+      "csc_fault_records": 21225,
+      "pair_member_records": 2310,
+      "runtime_shard_id": "phase6h_csc_f1_s137_delay_8b783ea811d973cb",
+      "sensor_reference_records": 84906,
+      "simultaneous_overlap_records": 21225
+    },
+    {
+      "csc_fault_records": 22605,
+      "pair_member_records": 2235,
+      "runtime_shard_id": "phase6h_csc_f1_s137_drift_effce7cf3616ea60",
+      "sensor_reference_records": 15585,
+      "simultaneous_overlap_records": 6105
+    },
+    {
+      "csc_fault_records": 22272,
+      "pair_member_records": 2301,
+      "runtime_shard_id": "phase6h_csc_f1_s137_dropout_7e23cb9c2f4b0c06",
+      "sensor_reference_records": 6540,
+      "simultaneous_overlap_records": 2904
+    },
+    {
+      "csc_fault_records": 25518,
+      "pair_member_records": 2322,
+      "runtime_shard_id": "phase6h_csc_f1_s137_frame_loss_f1e1e22aee195e69",
+      "sensor_reference_records": 4725,
+      "simultaneous_overlap_records": 2373
+    },
+    {
+      "csc_fault_records": 20793,
+      "pair_member_records": 2292,
+      "runtime_shard_id": "phase6h_csc_f1_s137_jitter_63dfeafbeee683ed",
+      "sensor_reference_records": 85476,
+      "simultaneous_overlap_records": 20793
+    },
+    {
+      "csc_fault_records": 1343100,
+      "pair_member_records": 82983,
+      "runtime_shard_id": "phase6h_csc_f1_s137_noise_fc2367e9ece10d04",
+      "sensor_reference_records": 82983,
+      "simultaneous_overlap_records": 62322
+    },
+    {
+      "csc_fault_records": 22275,
+      "pair_member_records": 2238,
+      "runtime_shard_id": "phase6h_csc_f1_s137_orientation_c67c5599c37fc1d9",
+      "sensor_reference_records": 82404,
+      "simultaneous_overlap_records": 22275
+    },
+    {
+      "csc_fault_records": 1291689,
+      "pair_member_records": 83013,
+      "runtime_shard_id": "phase6h_csc_f1_s137_scale_factor_047b22b3437db371",
+      "sensor_reference_records": 83013,
+      "simultaneous_overlap_records": 62712
+    },
+    {
+      "csc_fault_records": 20712,
+      "pair_member_records": 2154,
+      "runtime_shard_id": "phase6h_csc_f1_s137_stuck_channel_9e6fb2d7536c632f",
+      "sensor_reference_records": 5685,
+      "simultaneous_overlap_records": 3054
+    },
+    {
+      "csc_fault_records": 1162797,
+      "pair_member_records": 41115,
+      "runtime_shard_id": "phase6h_csc_f1_s18_axis_loss_ff04a7048c516b57",
+      "sensor_reference_records": 41115,
+      "simultaneous_overlap_records": 31197
+    },
+    {
+      "csc_fault_records": 1116426,
+      "pair_member_records": 41127,
+      "runtime_shard_id": "phase6h_csc_f1_s18_bias_0c757f5050a61e0f",
+      "sensor_reference_records": 41127,
+      "simultaneous_overlap_records": 31542
+    },
+    {
+      "csc_fault_records": 1193112,
+      "pair_member_records": 41001,
+      "runtime_shard_id": "phase6h_csc_f1_s18_clipping_saturation_4479646c2d03202a",
+      "sensor_reference_records": 41001,
+      "simultaneous_overlap_records": 30843
+    },
+    {
+      "csc_fault_records": 9531,
+      "pair_member_records": 657,
+      "runtime_shard_id": "phase6h_csc_f1_s18_delay_15c5798549215100",
+      "sensor_reference_records": 40812,
+      "simultaneous_overlap_records": 9531
+    },
+    {
+      "csc_fault_records": 9450,
+      "pair_member_records": 699,
+      "runtime_shard_id": "phase6h_csc_f1_s18_drift_57d8ed002f202963",
+      "sensor_reference_records": 5178,
+      "simultaneous_overlap_records": 1860
+    },
+    {
+      "csc_fault_records": 10734,
+      "pair_member_records": 693,
+      "runtime_shard_id": "phase6h_csc_f1_s18_dropout_7ea7a76bdf66c88f",
+      "sensor_reference_records": 1935,
+      "simultaneous_overlap_records": 918
+    },
+    {
+      "csc_fault_records": 9102,
+      "pair_member_records": 711,
+      "runtime_shard_id": "phase6h_csc_f1_s18_frame_loss_78614329a8ef6ad4",
+      "sensor_reference_records": 1407,
+      "simultaneous_overlap_records": 753
+    },
+    {
+      "csc_fault_records": 12459,
+      "pair_member_records": 651,
+      "runtime_shard_id": "phase6h_csc_f1_s18_jitter_62ba820240b029b0",
+      "sensor_reference_records": 37986,
+      "simultaneous_overlap_records": 12459
+    },
+    {
+      "csc_fault_records": 1199382,
+      "pair_member_records": 41235,
+      "runtime_shard_id": "phase6h_csc_f1_s18_noise_b9320e7e02eb4cbe",
+      "sensor_reference_records": 41235,
+      "simultaneous_overlap_records": 31182
+    },
+    {
+      "csc_fault_records": 10692,
+      "pair_member_records": 654,
+      "runtime_shard_id": "phase6h_csc_f1_s18_orientation_63839b10c9b76751",
+      "sensor_reference_records": 39993,
+      "simultaneous_overlap_records": 10692
+    },
+    {
+      "csc_fault_records": 1187067,
+      "pair_member_records": 41094,
+      "runtime_shard_id": "phase6h_csc_f1_s18_scale_factor_016769018c87d431",
+      "sensor_reference_records": 41094,
+      "simultaneous_overlap_records": 30894
+    },
+    {
+      "csc_fault_records": 10614,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f1_s18_stuck_channel_3d97f91f78640193",
+      "sensor_reference_records": 1860,
+      "simultaneous_overlap_records": 981
+    },
+    {
+      "csc_fault_records": 1206933,
+      "pair_member_records": 42105,
+      "runtime_shard_id": "phase6h_csc_f1_s24_axis_loss_67f51a688eaa476a",
+      "sensor_reference_records": 42105,
+      "simultaneous_overlap_records": 31977
+    },
+    {
+      "csc_fault_records": 1225464,
+      "pair_member_records": 42333,
+      "runtime_shard_id": "phase6h_csc_f1_s24_bias_da11d889fb85d1f8",
+      "sensor_reference_records": 42333,
+      "simultaneous_overlap_records": 32340
+    },
+    {
+      "csc_fault_records": 1201641,
+      "pair_member_records": 42129,
+      "runtime_shard_id": "phase6h_csc_f1_s24_clipping_saturation_5df380b05713fb4f",
+      "sensor_reference_records": 42129,
+      "simultaneous_overlap_records": 32166
+    },
+    {
+      "csc_fault_records": 9903,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f1_s24_delay_dbed3ac988ccf147",
+      "sensor_reference_records": 42381,
+      "simultaneous_overlap_records": 9903
+    },
+    {
+      "csc_fault_records": 9873,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f1_s24_drift_323feaca0fbc1de4",
+      "sensor_reference_records": 5526,
+      "simultaneous_overlap_records": 1977
+    },
+    {
+      "csc_fault_records": 12798,
+      "pair_member_records": 699,
+      "runtime_shard_id": "phase6h_csc_f1_s24_dropout_4d5cd2d1c7847f4b",
+      "sensor_reference_records": 1983,
+      "simultaneous_overlap_records": 822
+    },
+    {
+      "csc_fault_records": 10665,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f1_s24_frame_loss_cee4ae3317fd1e05",
+      "sensor_reference_records": 1416,
+      "simultaneous_overlap_records": 636
+    },
+    {
+      "csc_fault_records": 10305,
+      "pair_member_records": 657,
+      "runtime_shard_id": "phase6h_csc_f1_s24_jitter_ecb66988da57470c",
+      "sensor_reference_records": 41250,
+      "simultaneous_overlap_records": 10305
+    },
+    {
+      "csc_fault_records": 1205415,
+      "pair_member_records": 42189,
+      "runtime_shard_id": "phase6h_csc_f1_s24_noise_0eb9e78b6999f63e",
+      "sensor_reference_records": 42189,
+      "simultaneous_overlap_records": 32517
+    },
+    {
+      "csc_fault_records": 8211,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f1_s24_orientation_502b2f920479ae9a",
+      "sensor_reference_records": 40908,
+      "simultaneous_overlap_records": 8211
+    },
+    {
+      "csc_fault_records": 1219659,
+      "pair_member_records": 42210,
+      "runtime_shard_id": "phase6h_csc_f1_s24_scale_factor_fe8d1cfb0f3e70dc",
+      "sensor_reference_records": 42210,
+      "simultaneous_overlap_records": 32532
+    },
+    {
+      "csc_fault_records": 11865,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f1_s24_stuck_channel_467ab8b433ac42e7",
+      "sensor_reference_records": 2034,
+      "simultaneous_overlap_records": 954
+    },
+    {
+      "csc_fault_records": 911022,
+      "pair_member_records": 37098,
+      "runtime_shard_id": "phase6h_csc_f1_s27_axis_loss_14d1f3b914737eab",
+      "sensor_reference_records": 37098,
+      "simultaneous_overlap_records": 27858
+    },
+    {
+      "csc_fault_records": 884196,
+      "pair_member_records": 37296,
+      "runtime_shard_id": "phase6h_csc_f1_s27_bias_4454eb5859e08ede",
+      "sensor_reference_records": 37296,
+      "simultaneous_overlap_records": 28329
+    },
+    {
+      "csc_fault_records": 861129,
+      "pair_member_records": 37227,
+      "runtime_shard_id": "phase6h_csc_f1_s27_clipping_saturation_4cf863fd10d2e6d2",
+      "sensor_reference_records": 37227,
+      "simultaneous_overlap_records": 28383
+    },
+    {
+      "csc_fault_records": 10032,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f1_s27_delay_83738e7d3f88aef0",
+      "sensor_reference_records": 36627,
+      "simultaneous_overlap_records": 10032
+    },
+    {
+      "csc_fault_records": 7716,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f1_s27_drift_ce0885163224bf84",
+      "sensor_reference_records": 5340,
+      "simultaneous_overlap_records": 1713
+    },
+    {
+      "csc_fault_records": 9822,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f1_s27_dropout_76efb62598435caf",
+      "sensor_reference_records": 2016,
+      "simultaneous_overlap_records": 771
+    },
+    {
+      "csc_fault_records": 9780,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f1_s27_frame_loss_14d0578b961fda2f",
+      "sensor_reference_records": 1386,
+      "simultaneous_overlap_records": 750
+    },
+    {
+      "csc_fault_records": 10029,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f1_s27_jitter_c944e778816bd5cb",
+      "sensor_reference_records": 36951,
+      "simultaneous_overlap_records": 10029
+    },
+    {
+      "csc_fault_records": 926637,
+      "pair_member_records": 37053,
+      "runtime_shard_id": "phase6h_csc_f1_s27_noise_c24b87ad59c04c47",
+      "sensor_reference_records": 37053,
+      "simultaneous_overlap_records": 27696
+    },
+    {
+      "csc_fault_records": 12039,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f1_s27_orientation_da551bb468d3e14f",
+      "sensor_reference_records": 38967,
+      "simultaneous_overlap_records": 12039
+    },
+    {
+      "csc_fault_records": 896316,
+      "pair_member_records": 36960,
+      "runtime_shard_id": "phase6h_csc_f1_s27_scale_factor_37de2857d64c0904",
+      "sensor_reference_records": 36960,
+      "simultaneous_overlap_records": 28059
+    },
+    {
+      "csc_fault_records": 7590,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f1_s27_stuck_channel_48a0949b491acca1",
+      "sensor_reference_records": 1890,
+      "simultaneous_overlap_records": 846
+    },
+    {
+      "csc_fault_records": 861576,
+      "pair_member_records": 35466,
+      "runtime_shard_id": "phase6h_csc_f1_s33_axis_loss_91f0cc7870f05879",
+      "sensor_reference_records": 35466,
+      "simultaneous_overlap_records": 26724
+    },
+    {
+      "csc_fault_records": 873117,
+      "pair_member_records": 35490,
+      "runtime_shard_id": "phase6h_csc_f1_s33_bias_2080c897d867b686",
+      "sensor_reference_records": 35490,
+      "simultaneous_overlap_records": 26592
+    },
+    {
+      "csc_fault_records": 872415,
+      "pair_member_records": 35661,
+      "runtime_shard_id": "phase6h_csc_f1_s33_clipping_saturation_d704a3ba3fe27ccc",
+      "sensor_reference_records": 35661,
+      "simultaneous_overlap_records": 26907
+    },
+    {
+      "csc_fault_records": 9384,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f1_s33_delay_4dd1f9b0b01a3dfc",
+      "sensor_reference_records": 36198,
+      "simultaneous_overlap_records": 9384
+    },
+    {
+      "csc_fault_records": 9021,
+      "pair_member_records": 669,
+      "runtime_shard_id": "phase6h_csc_f1_s33_drift_b02bd4eb5861f5bd",
+      "sensor_reference_records": 5370,
+      "simultaneous_overlap_records": 2055
+    },
+    {
+      "csc_fault_records": 11805,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f1_s33_dropout_823dd2c5150bc981",
+      "sensor_reference_records": 1899,
+      "simultaneous_overlap_records": 867
+    },
+    {
+      "csc_fault_records": 11928,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f1_s33_frame_loss_43c88336f0d3190e",
+      "sensor_reference_records": 1401,
+      "simultaneous_overlap_records": 738
+    },
+    {
+      "csc_fault_records": 8301,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f1_s33_jitter_9a360aa295a3bec7",
+      "sensor_reference_records": 35523,
+      "simultaneous_overlap_records": 8301
+    },
+    {
+      "csc_fault_records": 848760,
+      "pair_member_records": 35463,
+      "runtime_shard_id": "phase6h_csc_f1_s33_noise_26ceaff607887c12",
+      "sensor_reference_records": 35463,
+      "simultaneous_overlap_records": 26595
+    },
+    {
+      "csc_fault_records": 10410,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f1_s33_orientation_d7c484870c28a778",
+      "sensor_reference_records": 34647,
+      "simultaneous_overlap_records": 10410
+    },
+    {
+      "csc_fault_records": 837915,
+      "pair_member_records": 35496,
+      "runtime_shard_id": "phase6h_csc_f1_s33_scale_factor_8ff7a387b8ae994b",
+      "sensor_reference_records": 35496,
+      "simultaneous_overlap_records": 26667
+    },
+    {
+      "csc_fault_records": 7974,
+      "pair_member_records": 645,
+      "runtime_shard_id": "phase6h_csc_f1_s33_stuck_channel_37f7d6aa5fe9e5f8",
+      "sensor_reference_records": 1926,
+      "simultaneous_overlap_records": 912
+    },
+    {
+      "csc_fault_records": 912117,
+      "pair_member_records": 36519,
+      "runtime_shard_id": "phase6h_csc_f1_s37_axis_loss_f6cc059e0b300dbc",
+      "sensor_reference_records": 36519,
+      "simultaneous_overlap_records": 27657
+    },
+    {
+      "csc_fault_records": 930234,
+      "pair_member_records": 36291,
+      "runtime_shard_id": "phase6h_csc_f1_s37_bias_7c39b356af50bb29",
+      "sensor_reference_records": 36291,
+      "simultaneous_overlap_records": 27918
+    },
+    {
+      "csc_fault_records": 910200,
+      "pair_member_records": 36333,
+      "runtime_shard_id": "phase6h_csc_f1_s37_clipping_saturation_1647a0edd8a39774",
+      "sensor_reference_records": 36333,
+      "simultaneous_overlap_records": 27633
+    },
+    {
+      "csc_fault_records": 10179,
+      "pair_member_records": 657,
+      "runtime_shard_id": "phase6h_csc_f1_s37_delay_4fea309820e4f30a",
+      "sensor_reference_records": 34647,
+      "simultaneous_overlap_records": 10179
+    },
+    {
+      "csc_fault_records": 8778,
+      "pair_member_records": 669,
+      "runtime_shard_id": "phase6h_csc_f1_s37_drift_e019d0f3d9779885",
+      "sensor_reference_records": 5034,
+      "simultaneous_overlap_records": 1710
+    },
+    {
+      "csc_fault_records": 10449,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f1_s37_dropout_fe5642aacba4fc3e",
+      "sensor_reference_records": 1944,
+      "simultaneous_overlap_records": 849
+    },
+    {
+      "csc_fault_records": 8286,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f1_s37_frame_loss_732229e7e8c4aff7",
+      "sensor_reference_records": 1419,
+      "simultaneous_overlap_records": 717
+    },
+    {
+      "csc_fault_records": 6231,
+      "pair_member_records": 663,
+      "runtime_shard_id": "phase6h_csc_f1_s37_jitter_cf9b7db86ff4a70b",
+      "sensor_reference_records": 34974,
+      "simultaneous_overlap_records": 6231
+    },
+    {
+      "csc_fault_records": 972960,
+      "pair_member_records": 36456,
+      "runtime_shard_id": "phase6h_csc_f1_s37_noise_9296249f061d89c3",
+      "sensor_reference_records": 36456,
+      "simultaneous_overlap_records": 27420
+    },
+    {
+      "csc_fault_records": 9393,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f1_s37_orientation_fed9576ed0b26933",
+      "sensor_reference_records": 35805,
+      "simultaneous_overlap_records": 9393
+    },
+    {
+      "csc_fault_records": 920511,
+      "pair_member_records": 36219,
+      "runtime_shard_id": "phase6h_csc_f1_s37_scale_factor_0dbc59320c70e411",
+      "sensor_reference_records": 36219,
+      "simultaneous_overlap_records": 27594
+    },
+    {
+      "csc_fault_records": 7536,
+      "pair_member_records": 657,
+      "runtime_shard_id": "phase6h_csc_f1_s37_stuck_channel_0a68c329e2005a01",
+      "sensor_reference_records": 1875,
+      "simultaneous_overlap_records": 918
+    },
+    {
+      "csc_fault_records": 1766322,
+      "pair_member_records": 99387,
+      "runtime_shard_id": "phase6h_csc_f2_s108_axis_loss_9f07a872a8841869",
+      "sensor_reference_records": 99387,
+      "simultaneous_overlap_records": 75381
+    },
+    {
+      "csc_fault_records": 1765413,
+      "pair_member_records": 99081,
+      "runtime_shard_id": "phase6h_csc_f2_s108_bias_53ef1a111c78c63b",
+      "sensor_reference_records": 99081,
+      "simultaneous_overlap_records": 75180
+    },
+    {
+      "csc_fault_records": 1790628,
+      "pair_member_records": 99348,
+      "runtime_shard_id": "phase6h_csc_f2_s108_clipping_saturation_3ecf29c8107261e7",
+      "sensor_reference_records": 99348,
+      "simultaneous_overlap_records": 75843
+    },
+    {
+      "csc_fault_records": 27672,
+      "pair_member_records": 2484,
+      "runtime_shard_id": "phase6h_csc_f2_s108_delay_058712a4e8892bb9",
+      "sensor_reference_records": 98409,
+      "simultaneous_overlap_records": 27672
+    },
+    {
+      "csc_fault_records": 26508,
+      "pair_member_records": 2238,
+      "runtime_shard_id": "phase6h_csc_f2_s108_drift_9a877af5ee0c0a1e",
+      "sensor_reference_records": 14721,
+      "simultaneous_overlap_records": 5778
+    },
+    {
+      "csc_fault_records": 24021,
+      "pair_member_records": 2463,
+      "runtime_shard_id": "phase6h_csc_f2_s108_dropout_2effea6a5c328464",
+      "sensor_reference_records": 6915,
+      "simultaneous_overlap_records": 3018
+    },
+    {
+      "csc_fault_records": 27990,
+      "pair_member_records": 2508,
+      "runtime_shard_id": "phase6h_csc_f2_s108_frame_loss_e8f0b04760312d52",
+      "sensor_reference_records": 4932,
+      "simultaneous_overlap_records": 2619
+    },
+    {
+      "csc_fault_records": 27744,
+      "pair_member_records": 2472,
+      "runtime_shard_id": "phase6h_csc_f2_s108_jitter_947de8c587862650",
+      "sensor_reference_records": 99423,
+      "simultaneous_overlap_records": 27744
+    },
+    {
+      "csc_fault_records": 1742502,
+      "pair_member_records": 99279,
+      "runtime_shard_id": "phase6h_csc_f2_s108_noise_b366bd4d64addaa1",
+      "sensor_reference_records": 99279,
+      "simultaneous_overlap_records": 75819
+    },
+    {
+      "csc_fault_records": 26517,
+      "pair_member_records": 2526,
+      "runtime_shard_id": "phase6h_csc_f2_s108_orientation_9f8bb8e419661b11",
+      "sensor_reference_records": 99339,
+      "simultaneous_overlap_records": 26517
+    },
+    {
+      "csc_fault_records": 1760784,
+      "pair_member_records": 99276,
+      "runtime_shard_id": "phase6h_csc_f2_s108_scale_factor_a26ffb40097eab00",
+      "sensor_reference_records": 99276,
+      "simultaneous_overlap_records": 75684
+    },
+    {
+      "csc_fault_records": 23241,
+      "pair_member_records": 1776,
+      "runtime_shard_id": "phase6h_csc_f2_s108_stuck_channel_eaefe511f50316cd",
+      "sensor_reference_records": 5094,
+      "simultaneous_overlap_records": 2379
+    },
+    {
+      "csc_fault_records": 1695960,
+      "pair_member_records": 93708,
+      "runtime_shard_id": "phase6h_csc_f2_s109_axis_loss_85456cd130a2895a",
+      "sensor_reference_records": 93708,
+      "simultaneous_overlap_records": 71109
+    },
+    {
+      "csc_fault_records": 1763877,
+      "pair_member_records": 94206,
+      "runtime_shard_id": "phase6h_csc_f2_s109_bias_45e27783771f53bb",
+      "sensor_reference_records": 94206,
+      "simultaneous_overlap_records": 71418
+    },
+    {
+      "csc_fault_records": 1716222,
+      "pair_member_records": 93684,
+      "runtime_shard_id": "phase6h_csc_f2_s109_clipping_saturation_0c7d1938c18690fa",
+      "sensor_reference_records": 93684,
+      "simultaneous_overlap_records": 71007
+    },
+    {
+      "csc_fault_records": 25557,
+      "pair_member_records": 2358,
+      "runtime_shard_id": "phase6h_csc_f2_s109_delay_7a1b912b9b3e365a",
+      "sensor_reference_records": 94437,
+      "simultaneous_overlap_records": 25557
+    },
+    {
+      "csc_fault_records": 23583,
+      "pair_member_records": 2079,
+      "runtime_shard_id": "phase6h_csc_f2_s109_drift_0efe45cb9c82cc9b",
+      "sensor_reference_records": 13743,
+      "simultaneous_overlap_records": 5193
+    },
+    {
+      "csc_fault_records": 28107,
+      "pair_member_records": 2334,
+      "runtime_shard_id": "phase6h_csc_f2_s109_dropout_7ae90da45b030419",
+      "sensor_reference_records": 6543,
+      "simultaneous_overlap_records": 2982
+    },
+    {
+      "csc_fault_records": 24153,
+      "pair_member_records": 2298,
+      "runtime_shard_id": "phase6h_csc_f2_s109_frame_loss_9aabf15824a5f954",
+      "sensor_reference_records": 4662,
+      "simultaneous_overlap_records": 2322
+    },
+    {
+      "csc_fault_records": 28017,
+      "pair_member_records": 2358,
+      "runtime_shard_id": "phase6h_csc_f2_s109_jitter_fea829f3ff20c353",
+      "sensor_reference_records": 92217,
+      "simultaneous_overlap_records": 28017
+    },
+    {
+      "csc_fault_records": 1753362,
+      "pair_member_records": 93963,
+      "runtime_shard_id": "phase6h_csc_f2_s109_noise_ec4e5750148db634",
+      "sensor_reference_records": 93963,
+      "simultaneous_overlap_records": 71973
+    },
+    {
+      "csc_fault_records": 24201,
+      "pair_member_records": 2403,
+      "runtime_shard_id": "phase6h_csc_f2_s109_orientation_9833fbb9d1143740",
+      "sensor_reference_records": 95520,
+      "simultaneous_overlap_records": 24201
+    },
+    {
+      "csc_fault_records": 1721262,
+      "pair_member_records": 93666,
+      "runtime_shard_id": "phase6h_csc_f2_s109_scale_factor_13446d0d0804be31",
+      "sensor_reference_records": 93666,
+      "simultaneous_overlap_records": 71043
+    },
+    {
+      "csc_fault_records": 20262,
+      "pair_member_records": 1686,
+      "runtime_shard_id": "phase6h_csc_f2_s109_stuck_channel_757dca510b47e9fe",
+      "sensor_reference_records": 4683,
+      "simultaneous_overlap_records": 2217
+    },
+    {
+      "csc_fault_records": 1884915,
+      "pair_member_records": 101292,
+      "runtime_shard_id": "phase6h_csc_f2_s110_axis_loss_60736a8c8ccaecd1",
+      "sensor_reference_records": 101292,
+      "simultaneous_overlap_records": 76452
+    },
+    {
+      "csc_fault_records": 1895457,
+      "pair_member_records": 101040,
+      "runtime_shard_id": "phase6h_csc_f2_s110_bias_363314ae934292d8",
+      "sensor_reference_records": 101040,
+      "simultaneous_overlap_records": 76923
+    },
+    {
+      "csc_fault_records": 1888071,
+      "pair_member_records": 101286,
+      "runtime_shard_id": "phase6h_csc_f2_s110_clipping_saturation_20e365ebc2bde7a6",
+      "sensor_reference_records": 101286,
+      "simultaneous_overlap_records": 76665
+    },
+    {
+      "csc_fault_records": 30060,
+      "pair_member_records": 2436,
+      "runtime_shard_id": "phase6h_csc_f2_s110_delay_02d42ee8cea9e7dc",
+      "sensor_reference_records": 99798,
+      "simultaneous_overlap_records": 30060
+    },
+    {
+      "csc_fault_records": 28743,
+      "pair_member_records": 2274,
+      "runtime_shard_id": "phase6h_csc_f2_s110_drift_a47b5ac3b3e51ed7",
+      "sensor_reference_records": 14562,
+      "simultaneous_overlap_records": 6384
+    },
+    {
+      "csc_fault_records": 25062,
+      "pair_member_records": 2454,
+      "runtime_shard_id": "phase6h_csc_f2_s110_dropout_3ffa661f69cef87a",
+      "sensor_reference_records": 6873,
+      "simultaneous_overlap_records": 3099
+    },
+    {
+      "csc_fault_records": 28395,
+      "pair_member_records": 2448,
+      "runtime_shard_id": "phase6h_csc_f2_s110_frame_loss_96ddfabb1c74cc02",
+      "sensor_reference_records": 4923,
+      "simultaneous_overlap_records": 2484
+    },
+    {
+      "csc_fault_records": 27024,
+      "pair_member_records": 2430,
+      "runtime_shard_id": "phase6h_csc_f2_s110_jitter_b0482cf95fec1308",
+      "sensor_reference_records": 99708,
+      "simultaneous_overlap_records": 27024
+    },
+    {
+      "csc_fault_records": 1867704,
+      "pair_member_records": 101082,
+      "runtime_shard_id": "phase6h_csc_f2_s110_noise_39de6f7d1132c95a",
+      "sensor_reference_records": 101082,
+      "simultaneous_overlap_records": 76986
+    },
+    {
+      "csc_fault_records": 29802,
+      "pair_member_records": 2478,
+      "runtime_shard_id": "phase6h_csc_f2_s110_orientation_102477f48cfd91ff",
+      "sensor_reference_records": 101151,
+      "simultaneous_overlap_records": 29802
+    },
+    {
+      "csc_fault_records": 1859826,
+      "pair_member_records": 101271,
+      "runtime_shard_id": "phase6h_csc_f2_s110_scale_factor_5bb3f6d4d6a7bf5c",
+      "sensor_reference_records": 101271,
+      "simultaneous_overlap_records": 77568
+    },
+    {
+      "csc_fault_records": 22254,
+      "pair_member_records": 1866,
+      "runtime_shard_id": "phase6h_csc_f2_s110_stuck_channel_c629e169a8aad834",
+      "sensor_reference_records": 5037,
+      "simultaneous_overlap_records": 2529
+    },
+    {
+      "csc_fault_records": 1327764,
+      "pair_member_records": 80544,
+      "runtime_shard_id": "phase6h_csc_f2_s112_axis_loss_8063cc91b872f3fb",
+      "sensor_reference_records": 80544,
+      "simultaneous_overlap_records": 61485
+    },
+    {
+      "csc_fault_records": 1376250,
+      "pair_member_records": 80427,
+      "runtime_shard_id": "phase6h_csc_f2_s112_bias_058c7e79f57eca78",
+      "sensor_reference_records": 80427,
+      "simultaneous_overlap_records": 61356
+    },
+    {
+      "csc_fault_records": 1348419,
+      "pair_member_records": 80631,
+      "runtime_shard_id": "phase6h_csc_f2_s112_clipping_saturation_609d4681b0d464aa",
+      "sensor_reference_records": 80631,
+      "simultaneous_overlap_records": 61455
+    },
+    {
+      "csc_fault_records": 20157,
+      "pair_member_records": 2175,
+      "runtime_shard_id": "phase6h_csc_f2_s112_delay_2ee191dd045de7db",
+      "sensor_reference_records": 78543,
+      "simultaneous_overlap_records": 20157
+    },
+    {
+      "csc_fault_records": 22584,
+      "pair_member_records": 2157,
+      "runtime_shard_id": "phase6h_csc_f2_s112_drift_63a41b85126d30f3",
+      "sensor_reference_records": 13374,
+      "simultaneous_overlap_records": 5763
+    },
+    {
+      "csc_fault_records": 21684,
+      "pair_member_records": 2169,
+      "runtime_shard_id": "phase6h_csc_f2_s112_dropout_4c165c1ceb85f00e",
+      "sensor_reference_records": 5988,
+      "simultaneous_overlap_records": 2724
+    },
+    {
+      "csc_fault_records": 22662,
+      "pair_member_records": 2202,
+      "runtime_shard_id": "phase6h_csc_f2_s112_frame_loss_1cb8c156daf15aa9",
+      "sensor_reference_records": 4449,
+      "simultaneous_overlap_records": 2400
+    },
+    {
+      "csc_fault_records": 21768,
+      "pair_member_records": 2208,
+      "runtime_shard_id": "phase6h_csc_f2_s112_jitter_9decb0f3209349d6",
+      "sensor_reference_records": 80724,
+      "simultaneous_overlap_records": 21768
+    },
+    {
+      "csc_fault_records": 1374237,
+      "pair_member_records": 80652,
+      "runtime_shard_id": "phase6h_csc_f2_s112_noise_601bc2daa081133a",
+      "sensor_reference_records": 80652,
+      "simultaneous_overlap_records": 61176
+    },
+    {
+      "csc_fault_records": 19479,
+      "pair_member_records": 2178,
+      "runtime_shard_id": "phase6h_csc_f2_s112_orientation_1a33690b13faa2db",
+      "sensor_reference_records": 79557,
+      "simultaneous_overlap_records": 19479
+    },
+    {
+      "csc_fault_records": 1341585,
+      "pair_member_records": 80319,
+      "runtime_shard_id": "phase6h_csc_f2_s112_scale_factor_61bb7f945e67ac54",
+      "sensor_reference_records": 80319,
+      "simultaneous_overlap_records": 60660
+    },
+    {
+      "csc_fault_records": 23586,
+      "pair_member_records": 1860,
+      "runtime_shard_id": "phase6h_csc_f2_s112_stuck_channel_e07cad95979deb4e",
+      "sensor_reference_records": 4749,
+      "simultaneous_overlap_records": 2622
+    },
+    {
+      "csc_fault_records": 1483953,
+      "pair_member_records": 92949,
+      "runtime_shard_id": "phase6h_csc_f2_s120_axis_loss_91e4cc381404ef44",
+      "sensor_reference_records": 92949,
+      "simultaneous_overlap_records": 70452
+    },
+    {
+      "csc_fault_records": 1523490,
+      "pair_member_records": 92763,
+      "runtime_shard_id": "phase6h_csc_f2_s120_bias_181e9f6e59c1d884",
+      "sensor_reference_records": 92763,
+      "simultaneous_overlap_records": 70056
+    },
+    {
+      "csc_fault_records": 1513671,
+      "pair_member_records": 93207,
+      "runtime_shard_id": "phase6h_csc_f2_s120_clipping_saturation_0f08077ed8ba9c67",
+      "sensor_reference_records": 93207,
+      "simultaneous_overlap_records": 69846
+    },
+    {
+      "csc_fault_records": 20928,
+      "pair_member_records": 2406,
+      "runtime_shard_id": "phase6h_csc_f2_s120_delay_119ed01c93da104f",
+      "sensor_reference_records": 94107,
+      "simultaneous_overlap_records": 20928
+    },
+    {
+      "csc_fault_records": 24933,
+      "pair_member_records": 2427,
+      "runtime_shard_id": "phase6h_csc_f2_s120_drift_e9e9b64f5617106d",
+      "sensor_reference_records": 16806,
+      "simultaneous_overlap_records": 6972
+    },
+    {
+      "csc_fault_records": 23127,
+      "pair_member_records": 2409,
+      "runtime_shard_id": "phase6h_csc_f2_s120_dropout_0367ee765cb64915",
+      "sensor_reference_records": 6924,
+      "simultaneous_overlap_records": 2997
+    },
+    {
+      "csc_fault_records": 26493,
+      "pair_member_records": 2394,
+      "runtime_shard_id": "phase6h_csc_f2_s120_frame_loss_9c44617a95666628",
+      "sensor_reference_records": 4830,
+      "simultaneous_overlap_records": 2541
+    },
+    {
+      "csc_fault_records": 25968,
+      "pair_member_records": 2382,
+      "runtime_shard_id": "phase6h_csc_f2_s120_jitter_1a37ec9f3a361a36",
+      "sensor_reference_records": 91389,
+      "simultaneous_overlap_records": 25968
+    },
+    {
+      "csc_fault_records": 1498143,
+      "pair_member_records": 92883,
+      "runtime_shard_id": "phase6h_csc_f2_s120_noise_4f8d466ae111ee22",
+      "sensor_reference_records": 92883,
+      "simultaneous_overlap_records": 69813
+    },
+    {
+      "csc_fault_records": 27654,
+      "pair_member_records": 2400,
+      "runtime_shard_id": "phase6h_csc_f2_s120_orientation_ae006648d50b6627",
+      "sensor_reference_records": 92970,
+      "simultaneous_overlap_records": 27654
+    },
+    {
+      "csc_fault_records": 1525989,
+      "pair_member_records": 93102,
+      "runtime_shard_id": "phase6h_csc_f2_s120_scale_factor_3777f36fca3adf36",
+      "sensor_reference_records": 93102,
+      "simultaneous_overlap_records": 70113
+    },
+    {
+      "csc_fault_records": 23730,
+      "pair_member_records": 2355,
+      "runtime_shard_id": "phase6h_csc_f2_s120_stuck_channel_7e692420edd761a6",
+      "sensor_reference_records": 6300,
+      "simultaneous_overlap_records": 3294
+    },
+    {
+      "csc_fault_records": 1616745,
+      "pair_member_records": 95958,
+      "runtime_shard_id": "phase6h_csc_f2_s122_axis_loss_9216c915f01f5d76",
+      "sensor_reference_records": 95958,
+      "simultaneous_overlap_records": 73113
+    },
+    {
+      "csc_fault_records": 1626891,
+      "pair_member_records": 96075,
+      "runtime_shard_id": "phase6h_csc_f2_s122_bias_94693710d8521004",
+      "sensor_reference_records": 96075,
+      "simultaneous_overlap_records": 72498
+    },
+    {
+      "csc_fault_records": 1608246,
+      "pair_member_records": 96057,
+      "runtime_shard_id": "phase6h_csc_f2_s122_clipping_saturation_16345262c882ade8",
+      "sensor_reference_records": 96057,
+      "simultaneous_overlap_records": 73326
+    },
+    {
+      "csc_fault_records": 27993,
+      "pair_member_records": 2511,
+      "runtime_shard_id": "phase6h_csc_f2_s122_delay_0e1962b6e59e2a7e",
+      "sensor_reference_records": 96543,
+      "simultaneous_overlap_records": 27993
+    },
+    {
+      "csc_fault_records": 26703,
+      "pair_member_records": 2382,
+      "runtime_shard_id": "phase6h_csc_f2_s122_drift_0348c2466c2c6192",
+      "sensor_reference_records": 16278,
+      "simultaneous_overlap_records": 6987
+    },
+    {
+      "csc_fault_records": 29802,
+      "pair_member_records": 2496,
+      "runtime_shard_id": "phase6h_csc_f2_s122_dropout_cc72651bf5fb35f0",
+      "sensor_reference_records": 7086,
+      "simultaneous_overlap_records": 3207
+    },
+    {
+      "csc_fault_records": 27510,
+      "pair_member_records": 2469,
+      "runtime_shard_id": "phase6h_csc_f2_s122_frame_loss_ef927181a7039378",
+      "sensor_reference_records": 4920,
+      "simultaneous_overlap_records": 2493
+    },
+    {
+      "csc_fault_records": 27357,
+      "pair_member_records": 2505,
+      "runtime_shard_id": "phase6h_csc_f2_s122_jitter_3f6548e7655dca39",
+      "sensor_reference_records": 95961,
+      "simultaneous_overlap_records": 27357
+    },
+    {
+      "csc_fault_records": 1619325,
+      "pair_member_records": 96000,
+      "runtime_shard_id": "phase6h_csc_f2_s122_noise_fbb8cee53a9a4bb8",
+      "sensor_reference_records": 96000,
+      "simultaneous_overlap_records": 72642
+    },
+    {
+      "csc_fault_records": 28455,
+      "pair_member_records": 2490,
+      "runtime_shard_id": "phase6h_csc_f2_s122_orientation_be53a1277e70caf0",
+      "sensor_reference_records": 97191,
+      "simultaneous_overlap_records": 28455
+    },
+    {
+      "csc_fault_records": 1628544,
+      "pair_member_records": 96228,
+      "runtime_shard_id": "phase6h_csc_f2_s122_scale_factor_a455b634f1db3153",
+      "sensor_reference_records": 96228,
+      "simultaneous_overlap_records": 72939
+    },
+    {
+      "csc_fault_records": 27297,
+      "pair_member_records": 2229,
+      "runtime_shard_id": "phase6h_csc_f2_s122_stuck_channel_6fc31969177d0a13",
+      "sensor_reference_records": 5937,
+      "simultaneous_overlap_records": 2952
+    },
+    {
+      "csc_fault_records": 1604619,
+      "pair_member_records": 100056,
+      "runtime_shard_id": "phase6h_csc_f2_s128_axis_loss_3b65836b0ac4510b",
+      "sensor_reference_records": 100056,
+      "simultaneous_overlap_records": 74949
+    },
+    {
+      "csc_fault_records": 1591881,
+      "pair_member_records": 100248,
+      "runtime_shard_id": "phase6h_csc_f2_s128_bias_c448c4592601f034",
+      "sensor_reference_records": 100248,
+      "simultaneous_overlap_records": 75258
+    },
+    {
+      "csc_fault_records": 1610646,
+      "pair_member_records": 100023,
+      "runtime_shard_id": "phase6h_csc_f2_s128_clipping_saturation_35d8617c31f0c118",
+      "sensor_reference_records": 100023,
+      "simultaneous_overlap_records": 75192
+    },
+    {
+      "csc_fault_records": 27759,
+      "pair_member_records": 2385,
+      "runtime_shard_id": "phase6h_csc_f2_s128_delay_9b79b1a831aaf883",
+      "sensor_reference_records": 98811,
+      "simultaneous_overlap_records": 27759
+    },
+    {
+      "csc_fault_records": 27792,
+      "pair_member_records": 2421,
+      "runtime_shard_id": "phase6h_csc_f2_s128_drift_92fe9cd8de0b0eef",
+      "sensor_reference_records": 17760,
+      "simultaneous_overlap_records": 7011
+    },
+    {
+      "csc_fault_records": 22551,
+      "pair_member_records": 2439,
+      "runtime_shard_id": "phase6h_csc_f2_s128_dropout_b6c74586fee786d3",
+      "sensor_reference_records": 7149,
+      "simultaneous_overlap_records": 3162
+    },
+    {
+      "csc_fault_records": 23745,
+      "pair_member_records": 2397,
+      "runtime_shard_id": "phase6h_csc_f2_s128_frame_loss_0da6db81b442209e",
+      "sensor_reference_records": 4962,
+      "simultaneous_overlap_records": 2436
+    },
+    {
+      "csc_fault_records": 26973,
+      "pair_member_records": 2412,
+      "runtime_shard_id": "phase6h_csc_f2_s128_jitter_5f1cec6463e1aac6",
+      "sensor_reference_records": 99444,
+      "simultaneous_overlap_records": 26973
+    },
+    {
+      "csc_fault_records": 1604385,
+      "pair_member_records": 99975,
+      "runtime_shard_id": "phase6h_csc_f2_s128_noise_3de60fb424814b41",
+      "sensor_reference_records": 99975,
+      "simultaneous_overlap_records": 75321
+    },
+    {
+      "csc_fault_records": 28671,
+      "pair_member_records": 2379,
+      "runtime_shard_id": "phase6h_csc_f2_s128_orientation_3f91e709704f52b3",
+      "sensor_reference_records": 99648,
+      "simultaneous_overlap_records": 28671
+    },
+    {
+      "csc_fault_records": 1585146,
+      "pair_member_records": 100254,
+      "runtime_shard_id": "phase6h_csc_f2_s128_scale_factor_a319c133393f7f9f",
+      "sensor_reference_records": 100254,
+      "simultaneous_overlap_records": 75654
+    },
+    {
+      "csc_fault_records": 27588,
+      "pair_member_records": 2370,
+      "runtime_shard_id": "phase6h_csc_f2_s128_stuck_channel_08b0ec99fe6a18a4",
+      "sensor_reference_records": 6288,
+      "simultaneous_overlap_records": 3339
+    },
+    {
+      "csc_fault_records": 814059,
+      "pair_member_records": 37977,
+      "runtime_shard_id": "phase6h_csc_f2_s19_axis_loss_2ccbf152eff6b84c",
+      "sensor_reference_records": 37977,
+      "simultaneous_overlap_records": 28584
+    },
+    {
+      "csc_fault_records": 790674,
+      "pair_member_records": 37887,
+      "runtime_shard_id": "phase6h_csc_f2_s19_bias_10b3ce7bc07dd2c0",
+      "sensor_reference_records": 37887,
+      "simultaneous_overlap_records": 28653
+    },
+    {
+      "csc_fault_records": 828594,
+      "pair_member_records": 37953,
+      "runtime_shard_id": "phase6h_csc_f2_s19_clipping_saturation_5ec00c37c5c2a8ee",
+      "sensor_reference_records": 37953,
+      "simultaneous_overlap_records": 28398
+    },
+    {
+      "csc_fault_records": 10407,
+      "pair_member_records": 654,
+      "runtime_shard_id": "phase6h_csc_f2_s19_delay_366adfe50a2b8080",
+      "sensor_reference_records": 36306,
+      "simultaneous_overlap_records": 10407
+    },
+    {
+      "csc_fault_records": 8796,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f2_s19_drift_91c42e8fc1cfd2ad",
+      "sensor_reference_records": 5229,
+      "simultaneous_overlap_records": 2034
+    },
+    {
+      "csc_fault_records": 9456,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f2_s19_dropout_92aea6e85d6e686e",
+      "sensor_reference_records": 1998,
+      "simultaneous_overlap_records": 843
+    },
+    {
+      "csc_fault_records": 9282,
+      "pair_member_records": 669,
+      "runtime_shard_id": "phase6h_csc_f2_s19_frame_loss_1dbc25af9bde9419",
+      "sensor_reference_records": 1356,
+      "simultaneous_overlap_records": 699
+    },
+    {
+      "csc_fault_records": 9876,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f2_s19_jitter_84df086abd603c96",
+      "sensor_reference_records": 38436,
+      "simultaneous_overlap_records": 9876
+    },
+    {
+      "csc_fault_records": 827208,
+      "pair_member_records": 37821,
+      "runtime_shard_id": "phase6h_csc_f2_s19_noise_c6409a596e534f08",
+      "sensor_reference_records": 37821,
+      "simultaneous_overlap_records": 28413
+    },
+    {
+      "csc_fault_records": 9885,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f2_s19_orientation_e5e71bccdc7fc075",
+      "sensor_reference_records": 36249,
+      "simultaneous_overlap_records": 9885
+    },
+    {
+      "csc_fault_records": 836478,
+      "pair_member_records": 38163,
+      "runtime_shard_id": "phase6h_csc_f2_s19_scale_factor_b60e28ba11c839a0",
+      "sensor_reference_records": 38163,
+      "simultaneous_overlap_records": 28722
+    },
+    {
+      "csc_fault_records": 11673,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f2_s19_stuck_channel_729dc87fed0d07d8",
+      "sensor_reference_records": 1968,
+      "simultaneous_overlap_records": 1035
+    },
+    {
+      "csc_fault_records": 1265076,
+      "pair_member_records": 42867,
+      "runtime_shard_id": "phase6h_csc_f2_s22_axis_loss_7413708cb1875168",
+      "sensor_reference_records": 42867,
+      "simultaneous_overlap_records": 31953
+    },
+    {
+      "csc_fault_records": 1259535,
+      "pair_member_records": 42714,
+      "runtime_shard_id": "phase6h_csc_f2_s22_bias_832e2a2009565ee2",
+      "sensor_reference_records": 42714,
+      "simultaneous_overlap_records": 32175
+    },
+    {
+      "csc_fault_records": 1248789,
+      "pair_member_records": 43023,
+      "runtime_shard_id": "phase6h_csc_f2_s22_clipping_saturation_e4df0880bfafa38b",
+      "sensor_reference_records": 43023,
+      "simultaneous_overlap_records": 32256
+    },
+    {
+      "csc_fault_records": 10149,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f2_s22_delay_406ac83261d19d1a",
+      "sensor_reference_records": 43890,
+      "simultaneous_overlap_records": 10149
+    },
+    {
+      "csc_fault_records": 8457,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f2_s22_drift_492f6a0200f4c7a2",
+      "sensor_reference_records": 5259,
+      "simultaneous_overlap_records": 1665
+    },
+    {
+      "csc_fault_records": 10107,
+      "pair_member_records": 645,
+      "runtime_shard_id": "phase6h_csc_f2_s22_dropout_a48a3c3195f20713",
+      "sensor_reference_records": 1803,
+      "simultaneous_overlap_records": 801
+    },
+    {
+      "csc_fault_records": 12093,
+      "pair_member_records": 669,
+      "runtime_shard_id": "phase6h_csc_f2_s22_frame_loss_972ef579268b5da4",
+      "sensor_reference_records": 1398,
+      "simultaneous_overlap_records": 663
+    },
+    {
+      "csc_fault_records": 11271,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f2_s22_jitter_5ac5bd19cfcdc9a4",
+      "sensor_reference_records": 44511,
+      "simultaneous_overlap_records": 11271
+    },
+    {
+      "csc_fault_records": 1248303,
+      "pair_member_records": 42987,
+      "runtime_shard_id": "phase6h_csc_f2_s22_noise_8d527331ed18d22b",
+      "sensor_reference_records": 42987,
+      "simultaneous_overlap_records": 32424
+    },
+    {
+      "csc_fault_records": 8481,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f2_s22_orientation_21ec5766f24a46ef",
+      "sensor_reference_records": 43878,
+      "simultaneous_overlap_records": 8481
+    },
+    {
+      "csc_fault_records": 1243746,
+      "pair_member_records": 42834,
+      "runtime_shard_id": "phase6h_csc_f2_s22_scale_factor_196b3e2e04b43c66",
+      "sensor_reference_records": 42834,
+      "simultaneous_overlap_records": 32442
+    },
+    {
+      "csc_fault_records": 10938,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f2_s22_stuck_channel_5f6ac9dc57f6357b",
+      "sensor_reference_records": 2010,
+      "simultaneous_overlap_records": 1098
+    },
+    {
+      "csc_fault_records": 1128111,
+      "pair_member_records": 41949,
+      "runtime_shard_id": "phase6h_csc_f2_s25_axis_loss_68f3e404c1f1c0c5",
+      "sensor_reference_records": 41949,
+      "simultaneous_overlap_records": 31704
+    },
+    {
+      "csc_fault_records": 1116840,
+      "pair_member_records": 42027,
+      "runtime_shard_id": "phase6h_csc_f2_s25_bias_363fc156456c3054",
+      "sensor_reference_records": 42027,
+      "simultaneous_overlap_records": 31806
+    },
+    {
+      "csc_fault_records": 1120095,
+      "pair_member_records": 42090,
+      "runtime_shard_id": "phase6h_csc_f2_s25_clipping_saturation_88a9d995bb7a761f",
+      "sensor_reference_records": 42090,
+      "simultaneous_overlap_records": 31857
+    },
+    {
+      "csc_fault_records": 12960,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f2_s25_delay_18d417e8346f2b2c",
+      "sensor_reference_records": 42357,
+      "simultaneous_overlap_records": 12960
+    },
+    {
+      "csc_fault_records": 13302,
+      "pair_member_records": 693,
+      "runtime_shard_id": "phase6h_csc_f2_s25_drift_c1d4dfdb3956eae1",
+      "sensor_reference_records": 5361,
+      "simultaneous_overlap_records": 1929
+    },
+    {
+      "csc_fault_records": 10941,
+      "pair_member_records": 693,
+      "runtime_shard_id": "phase6h_csc_f2_s25_dropout_8020db21b979c2f2",
+      "sensor_reference_records": 1980,
+      "simultaneous_overlap_records": 714
+    },
+    {
+      "csc_fault_records": 12189,
+      "pair_member_records": 651,
+      "runtime_shard_id": "phase6h_csc_f2_s25_frame_loss_c8436357644ac9b3",
+      "sensor_reference_records": 1344,
+      "simultaneous_overlap_records": 612
+    },
+    {
+      "csc_fault_records": 10110,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f2_s25_jitter_db2c4fcf0dc91e9a",
+      "sensor_reference_records": 40869,
+      "simultaneous_overlap_records": 10110
+    },
+    {
+      "csc_fault_records": 1097382,
+      "pair_member_records": 42054,
+      "runtime_shard_id": "phase6h_csc_f2_s25_noise_9f0889cacbee964f",
+      "sensor_reference_records": 42054,
+      "simultaneous_overlap_records": 31725
+    },
+    {
+      "csc_fault_records": 9780,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f2_s25_orientation_34ade69a4b5827ed",
+      "sensor_reference_records": 41844,
+      "simultaneous_overlap_records": 9780
+    },
+    {
+      "csc_fault_records": 1114818,
+      "pair_member_records": 42024,
+      "runtime_shard_id": "phase6h_csc_f2_s25_scale_factor_7b45ab80f29f83b8",
+      "sensor_reference_records": 42024,
+      "simultaneous_overlap_records": 31467
+    },
+    {
+      "csc_fault_records": 9048,
+      "pair_member_records": 663,
+      "runtime_shard_id": "phase6h_csc_f2_s25_stuck_channel_0a933908c6a004ca",
+      "sensor_reference_records": 1905,
+      "simultaneous_overlap_records": 963
+    },
+    {
+      "csc_fault_records": 946347,
+      "pair_member_records": 39696,
+      "runtime_shard_id": "phase6h_csc_f2_s30_axis_loss_24e28c98fcbf5b9a",
+      "sensor_reference_records": 39696,
+      "simultaneous_overlap_records": 29688
+    },
+    {
+      "csc_fault_records": 957552,
+      "pair_member_records": 39660,
+      "runtime_shard_id": "phase6h_csc_f2_s30_bias_a9608f871b0212f5",
+      "sensor_reference_records": 39660,
+      "simultaneous_overlap_records": 29859
+    },
+    {
+      "csc_fault_records": 970980,
+      "pair_member_records": 39525,
+      "runtime_shard_id": "phase6h_csc_f2_s30_clipping_saturation_98ea7849f2249af9",
+      "sensor_reference_records": 39525,
+      "simultaneous_overlap_records": 29916
+    },
+    {
+      "csc_fault_records": 9597,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f2_s30_delay_7547a0c4b88ae168",
+      "sensor_reference_records": 39012,
+      "simultaneous_overlap_records": 9597
+    },
+    {
+      "csc_fault_records": 6354,
+      "pair_member_records": 693,
+      "runtime_shard_id": "phase6h_csc_f2_s30_drift_2562270c2bca2145",
+      "sensor_reference_records": 5400,
+      "simultaneous_overlap_records": 1590
+    },
+    {
+      "csc_fault_records": 11298,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f2_s30_dropout_0e183cf84d738c57",
+      "sensor_reference_records": 1857,
+      "simultaneous_overlap_records": 831
+    },
+    {
+      "csc_fault_records": 12198,
+      "pair_member_records": 669,
+      "runtime_shard_id": "phase6h_csc_f2_s30_frame_loss_0aaca245cf3eebb3",
+      "sensor_reference_records": 1353,
+      "simultaneous_overlap_records": 717
+    },
+    {
+      "csc_fault_records": 11148,
+      "pair_member_records": 669,
+      "runtime_shard_id": "phase6h_csc_f2_s30_jitter_c78c8e301c5c5d53",
+      "sensor_reference_records": 36771,
+      "simultaneous_overlap_records": 11148
+    },
+    {
+      "csc_fault_records": 963642,
+      "pair_member_records": 39720,
+      "runtime_shard_id": "phase6h_csc_f2_s30_noise_600d580e3a46b0cd",
+      "sensor_reference_records": 39720,
+      "simultaneous_overlap_records": 29769
+    },
+    {
+      "csc_fault_records": 11277,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f2_s30_orientation_26a3c500c95d4597",
+      "sensor_reference_records": 40722,
+      "simultaneous_overlap_records": 11277
+    },
+    {
+      "csc_fault_records": 979257,
+      "pair_member_records": 39771,
+      "runtime_shard_id": "phase6h_csc_f2_s30_scale_factor_0cd82c55fd8963e8",
+      "sensor_reference_records": 39771,
+      "simultaneous_overlap_records": 29766
+    },
+    {
+      "csc_fault_records": 9699,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f2_s30_stuck_channel_903b56d2b84b7174",
+      "sensor_reference_records": 1875,
+      "simultaneous_overlap_records": 993
+    },
+    {
+      "csc_fault_records": 985986,
+      "pair_member_records": 39066,
+      "runtime_shard_id": "phase6h_csc_f2_s31_axis_loss_5fe19710829f31c1",
+      "sensor_reference_records": 39066,
+      "simultaneous_overlap_records": 29397
+    },
+    {
+      "csc_fault_records": 932019,
+      "pair_member_records": 38739,
+      "runtime_shard_id": "phase6h_csc_f2_s31_bias_86f7b15ba5dce3b5",
+      "sensor_reference_records": 38739,
+      "simultaneous_overlap_records": 29358
+    },
+    {
+      "csc_fault_records": 950304,
+      "pair_member_records": 39219,
+      "runtime_shard_id": "phase6h_csc_f2_s31_clipping_saturation_4e29ec0e9e8964ac",
+      "sensor_reference_records": 39219,
+      "simultaneous_overlap_records": 29985
+    },
+    {
+      "csc_fault_records": 11829,
+      "pair_member_records": 714,
+      "runtime_shard_id": "phase6h_csc_f2_s31_delay_b21ddbff645d23cc",
+      "sensor_reference_records": 40212,
+      "simultaneous_overlap_records": 11829
+    },
+    {
+      "csc_fault_records": 10860,
+      "pair_member_records": 699,
+      "runtime_shard_id": "phase6h_csc_f2_s31_drift_fb192065d552bccc",
+      "sensor_reference_records": 5712,
+      "simultaneous_overlap_records": 2250
+    },
+    {
+      "csc_fault_records": 14082,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f2_s31_dropout_ec7c5f72ce88f07c",
+      "sensor_reference_records": 1959,
+      "simultaneous_overlap_records": 885
+    },
+    {
+      "csc_fault_records": 9816,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f2_s31_frame_loss_6a4ca7b6df143494",
+      "sensor_reference_records": 1419,
+      "simultaneous_overlap_records": 714
+    },
+    {
+      "csc_fault_records": 12174,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f2_s31_jitter_92f79fda5c580163",
+      "sensor_reference_records": 39213,
+      "simultaneous_overlap_records": 12174
+    },
+    {
+      "csc_fault_records": 976458,
+      "pair_member_records": 38937,
+      "runtime_shard_id": "phase6h_csc_f2_s31_noise_2cad965a252664d2",
+      "sensor_reference_records": 38937,
+      "simultaneous_overlap_records": 29700
+    },
+    {
+      "csc_fault_records": 8889,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f2_s31_orientation_849f8671d3bfdc31",
+      "sensor_reference_records": 39927,
+      "simultaneous_overlap_records": 8889
+    },
+    {
+      "csc_fault_records": 1013382,
+      "pair_member_records": 39006,
+      "runtime_shard_id": "phase6h_csc_f2_s31_scale_factor_6f5cd0f921b51c3e",
+      "sensor_reference_records": 39006,
+      "simultaneous_overlap_records": 29625
+    },
+    {
+      "csc_fault_records": 9687,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f2_s31_stuck_channel_1977794193c53ed5",
+      "sensor_reference_records": 2004,
+      "simultaneous_overlap_records": 939
+    },
+    {
+      "csc_fault_records": 1776093,
+      "pair_member_records": 103266,
+      "runtime_shard_id": "phase6h_csc_f3_s113_axis_loss_c793f2a2d8478272",
+      "sensor_reference_records": 103266,
+      "simultaneous_overlap_records": 78435
+    },
+    {
+      "csc_fault_records": 1794408,
+      "pair_member_records": 103551,
+      "runtime_shard_id": "phase6h_csc_f3_s113_bias_25e4cbfa684fd650",
+      "sensor_reference_records": 103551,
+      "simultaneous_overlap_records": 78573
+    },
+    {
+      "csc_fault_records": 1759908,
+      "pair_member_records": 103779,
+      "runtime_shard_id": "phase6h_csc_f3_s113_clipping_saturation_5affc3399acd40d3",
+      "sensor_reference_records": 103779,
+      "simultaneous_overlap_records": 78537
+    },
+    {
+      "csc_fault_records": 28545,
+      "pair_member_records": 2490,
+      "runtime_shard_id": "phase6h_csc_f3_s113_delay_ee0d0de9cc6c65e1",
+      "sensor_reference_records": 103656,
+      "simultaneous_overlap_records": 28545
+    },
+    {
+      "csc_fault_records": 25110,
+      "pair_member_records": 2445,
+      "runtime_shard_id": "phase6h_csc_f3_s113_drift_f2babcb8c1ac078f",
+      "sensor_reference_records": 16257,
+      "simultaneous_overlap_records": 6225
+    },
+    {
+      "csc_fault_records": 26745,
+      "pair_member_records": 2445,
+      "runtime_shard_id": "phase6h_csc_f3_s113_dropout_060b204dca0ae9c5",
+      "sensor_reference_records": 7017,
+      "simultaneous_overlap_records": 2964
+    },
+    {
+      "csc_fault_records": 28113,
+      "pair_member_records": 2463,
+      "runtime_shard_id": "phase6h_csc_f3_s113_frame_loss_b49d9fbb2bca737c",
+      "sensor_reference_records": 5043,
+      "simultaneous_overlap_records": 2547
+    },
+    {
+      "csc_fault_records": 28377,
+      "pair_member_records": 2478,
+      "runtime_shard_id": "phase6h_csc_f3_s113_jitter_b45f82933e497e3e",
+      "sensor_reference_records": 105222,
+      "simultaneous_overlap_records": 28377
+    },
+    {
+      "csc_fault_records": 1815852,
+      "pair_member_records": 103593,
+      "runtime_shard_id": "phase6h_csc_f3_s113_noise_eb2cd42594e1c016",
+      "sensor_reference_records": 103593,
+      "simultaneous_overlap_records": 78573
+    },
+    {
+      "csc_fault_records": 27183,
+      "pair_member_records": 2523,
+      "runtime_shard_id": "phase6h_csc_f3_s113_orientation_3830fa645019bfd4",
+      "sensor_reference_records": 104748,
+      "simultaneous_overlap_records": 27183
+    },
+    {
+      "csc_fault_records": 1807482,
+      "pair_member_records": 103851,
+      "runtime_shard_id": "phase6h_csc_f3_s113_scale_factor_1f1dbbfd21f73224",
+      "sensor_reference_records": 103851,
+      "simultaneous_overlap_records": 79005
+    },
+    {
+      "csc_fault_records": 25134,
+      "pair_member_records": 2349,
+      "runtime_shard_id": "phase6h_csc_f3_s113_stuck_channel_796376aa3e003375",
+      "sensor_reference_records": 5997,
+      "simultaneous_overlap_records": 3129
+    },
+    {
+      "csc_fault_records": 1718742,
+      "pair_member_records": 96213,
+      "runtime_shard_id": "phase6h_csc_f3_s115_axis_loss_bd734e3d915b4cfb",
+      "sensor_reference_records": 96213,
+      "simultaneous_overlap_records": 72861
+    },
+    {
+      "csc_fault_records": 1664325,
+      "pair_member_records": 96414,
+      "runtime_shard_id": "phase6h_csc_f3_s115_bias_9d488510dff0a134",
+      "sensor_reference_records": 96414,
+      "simultaneous_overlap_records": 73227
+    },
+    {
+      "csc_fault_records": 1684962,
+      "pair_member_records": 96279,
+      "runtime_shard_id": "phase6h_csc_f3_s115_clipping_saturation_a7b56492d53304ef",
+      "sensor_reference_records": 96279,
+      "simultaneous_overlap_records": 72747
+    },
+    {
+      "csc_fault_records": 26493,
+      "pair_member_records": 2472,
+      "runtime_shard_id": "phase6h_csc_f3_s115_delay_cd32f090a37e56e5",
+      "sensor_reference_records": 96189,
+      "simultaneous_overlap_records": 26493
+    },
+    {
+      "csc_fault_records": 27843,
+      "pair_member_records": 2370,
+      "runtime_shard_id": "phase6h_csc_f3_s115_drift_948d9ea96e2691c9",
+      "sensor_reference_records": 15453,
+      "simultaneous_overlap_records": 6075
+    },
+    {
+      "csc_fault_records": 26670,
+      "pair_member_records": 2532,
+      "runtime_shard_id": "phase6h_csc_f3_s115_dropout_085615231c5aeacc",
+      "sensor_reference_records": 7173,
+      "simultaneous_overlap_records": 3108
+    },
+    {
+      "csc_fault_records": 26010,
+      "pair_member_records": 2508,
+      "runtime_shard_id": "phase6h_csc_f3_s115_frame_loss_309f3cb15ea93f57",
+      "sensor_reference_records": 5100,
+      "simultaneous_overlap_records": 2490
+    },
+    {
+      "csc_fault_records": 29067,
+      "pair_member_records": 2526,
+      "runtime_shard_id": "phase6h_csc_f3_s115_jitter_7528c993951246cf",
+      "sensor_reference_records": 99489,
+      "simultaneous_overlap_records": 29067
+    },
+    {
+      "csc_fault_records": 1689600,
+      "pair_member_records": 96303,
+      "runtime_shard_id": "phase6h_csc_f3_s115_noise_89f6f772abbabeee",
+      "sensor_reference_records": 96303,
+      "simultaneous_overlap_records": 73257
+    },
+    {
+      "csc_fault_records": 23889,
+      "pair_member_records": 2553,
+      "runtime_shard_id": "phase6h_csc_f3_s115_orientation_0bf894b2bbbb79cb",
+      "sensor_reference_records": 99735,
+      "simultaneous_overlap_records": 23889
+    },
+    {
+      "csc_fault_records": 1665330,
+      "pair_member_records": 96345,
+      "runtime_shard_id": "phase6h_csc_f3_s115_scale_factor_de43a27a62cefe46",
+      "sensor_reference_records": 96345,
+      "simultaneous_overlap_records": 73194
+    },
+    {
+      "csc_fault_records": 23133,
+      "pair_member_records": 2079,
+      "runtime_shard_id": "phase6h_csc_f3_s115_stuck_channel_a8496f044ece2ea1",
+      "sensor_reference_records": 5649,
+      "simultaneous_overlap_records": 2760
+    },
+    {
+      "csc_fault_records": 1661313,
+      "pair_member_records": 104199,
+      "runtime_shard_id": "phase6h_csc_f3_s119_axis_loss_6d596dab76699411",
+      "sensor_reference_records": 104199,
+      "simultaneous_overlap_records": 77700
+    },
+    {
+      "csc_fault_records": 1661235,
+      "pair_member_records": 103983,
+      "runtime_shard_id": "phase6h_csc_f3_s119_bias_c37a48fd9469c2fe",
+      "sensor_reference_records": 103983,
+      "simultaneous_overlap_records": 77874
+    },
+    {
+      "csc_fault_records": 1644936,
+      "pair_member_records": 103815,
+      "runtime_shard_id": "phase6h_csc_f3_s119_clipping_saturation_30067b866e994ec4",
+      "sensor_reference_records": 103815,
+      "simultaneous_overlap_records": 77643
+    },
+    {
+      "csc_fault_records": 31512,
+      "pair_member_records": 2424,
+      "runtime_shard_id": "phase6h_csc_f3_s119_delay_28e7ba99d35c246b",
+      "sensor_reference_records": 104283,
+      "simultaneous_overlap_records": 31512
+    },
+    {
+      "csc_fault_records": 27501,
+      "pair_member_records": 2427,
+      "runtime_shard_id": "phase6h_csc_f3_s119_drift_0d5f9f7ab09b3041",
+      "sensor_reference_records": 16704,
+      "simultaneous_overlap_records": 6672
+    },
+    {
+      "csc_fault_records": 26673,
+      "pair_member_records": 2451,
+      "runtime_shard_id": "phase6h_csc_f3_s119_dropout_64c7da042f81fcae",
+      "sensor_reference_records": 7014,
+      "simultaneous_overlap_records": 3039
+    },
+    {
+      "csc_fault_records": 27672,
+      "pair_member_records": 2442,
+      "runtime_shard_id": "phase6h_csc_f3_s119_frame_loss_6d2b2285f94059dc",
+      "sensor_reference_records": 4959,
+      "simultaneous_overlap_records": 2454
+    },
+    {
+      "csc_fault_records": 30468,
+      "pair_member_records": 2502,
+      "runtime_shard_id": "phase6h_csc_f3_s119_jitter_8946153a1161890c",
+      "sensor_reference_records": 108042,
+      "simultaneous_overlap_records": 30468
+    },
+    {
+      "csc_fault_records": 1691652,
+      "pair_member_records": 104229,
+      "runtime_shard_id": "phase6h_csc_f3_s119_noise_945a5390a4cf2886",
+      "sensor_reference_records": 104229,
+      "simultaneous_overlap_records": 77502
+    },
+    {
+      "csc_fault_records": 23583,
+      "pair_member_records": 2376,
+      "runtime_shard_id": "phase6h_csc_f3_s119_orientation_d28e9708d514747e",
+      "sensor_reference_records": 100266,
+      "simultaneous_overlap_records": 23583
+    },
+    {
+      "csc_fault_records": 1701996,
+      "pair_member_records": 104217,
+      "runtime_shard_id": "phase6h_csc_f3_s119_scale_factor_56d90aea7b77d3ed",
+      "sensor_reference_records": 104217,
+      "simultaneous_overlap_records": 77997
+    },
+    {
+      "csc_fault_records": 27234,
+      "pair_member_records": 2373,
+      "runtime_shard_id": "phase6h_csc_f3_s119_stuck_channel_84a9a91a0d32bedf",
+      "sensor_reference_records": 6285,
+      "simultaneous_overlap_records": 3390
+    },
+    {
+      "csc_fault_records": 1658025,
+      "pair_member_records": 100788,
+      "runtime_shard_id": "phase6h_csc_f3_s127_axis_loss_4133498cc68ed23e",
+      "sensor_reference_records": 100788,
+      "simultaneous_overlap_records": 76992
+    },
+    {
+      "csc_fault_records": 1643943,
+      "pair_member_records": 100854,
+      "runtime_shard_id": "phase6h_csc_f3_s127_bias_39867a5ee648e042",
+      "sensor_reference_records": 100854,
+      "simultaneous_overlap_records": 77043
+    },
+    {
+      "csc_fault_records": 1663404,
+      "pair_member_records": 100506,
+      "runtime_shard_id": "phase6h_csc_f3_s127_clipping_saturation_4a4c9e1532406715",
+      "sensor_reference_records": 100506,
+      "simultaneous_overlap_records": 76869
+    },
+    {
+      "csc_fault_records": 27942,
+      "pair_member_records": 2424,
+      "runtime_shard_id": "phase6h_csc_f3_s127_delay_1757e2e3a2b8d70e",
+      "sensor_reference_records": 100803,
+      "simultaneous_overlap_records": 27942
+    },
+    {
+      "csc_fault_records": 27078,
+      "pair_member_records": 2430,
+      "runtime_shard_id": "phase6h_csc_f3_s127_drift_3de99c5f6c5550a2",
+      "sensor_reference_records": 17187,
+      "simultaneous_overlap_records": 7038
+    },
+    {
+      "csc_fault_records": 26457,
+      "pair_member_records": 2463,
+      "runtime_shard_id": "phase6h_csc_f3_s127_dropout_f83d028553009233",
+      "sensor_reference_records": 7185,
+      "simultaneous_overlap_records": 3201
+    },
+    {
+      "csc_fault_records": 26790,
+      "pair_member_records": 2394,
+      "runtime_shard_id": "phase6h_csc_f3_s127_frame_loss_85c73403d1acc892",
+      "sensor_reference_records": 4929,
+      "simultaneous_overlap_records": 2523
+    },
+    {
+      "csc_fault_records": 28950,
+      "pair_member_records": 2457,
+      "runtime_shard_id": "phase6h_csc_f3_s127_jitter_fddfae3f91e2b95b",
+      "sensor_reference_records": 102117,
+      "simultaneous_overlap_records": 28950
+    },
+    {
+      "csc_fault_records": 1648209,
+      "pair_member_records": 100578,
+      "runtime_shard_id": "phase6h_csc_f3_s127_noise_f874447b053dd11a",
+      "sensor_reference_records": 100578,
+      "simultaneous_overlap_records": 76929
+    },
+    {
+      "csc_fault_records": 26565,
+      "pair_member_records": 2406,
+      "runtime_shard_id": "phase6h_csc_f3_s127_orientation_812897f93e8e05d1",
+      "sensor_reference_records": 100872,
+      "simultaneous_overlap_records": 26565
+    },
+    {
+      "csc_fault_records": 1669575,
+      "pair_member_records": 100875,
+      "runtime_shard_id": "phase6h_csc_f3_s127_scale_factor_e1e379f0436c0576",
+      "sensor_reference_records": 100875,
+      "simultaneous_overlap_records": 76698
+    },
+    {
+      "csc_fault_records": 27903,
+      "pair_member_records": 2382,
+      "runtime_shard_id": "phase6h_csc_f3_s127_stuck_channel_927502b448eccf0f",
+      "sensor_reference_records": 6564,
+      "simultaneous_overlap_records": 3465
+    },
+    {
+      "csc_fault_records": 1702422,
+      "pair_member_records": 104283,
+      "runtime_shard_id": "phase6h_csc_f3_s129_axis_loss_da5884bcc2a5d1e0",
+      "sensor_reference_records": 104283,
+      "simultaneous_overlap_records": 78723
+    },
+    {
+      "csc_fault_records": 1708890,
+      "pair_member_records": 104352,
+      "runtime_shard_id": "phase6h_csc_f3_s129_bias_4b4e45d23536b0f7",
+      "sensor_reference_records": 104352,
+      "simultaneous_overlap_records": 78756
+    },
+    {
+      "csc_fault_records": 1671432,
+      "pair_member_records": 104385,
+      "runtime_shard_id": "phase6h_csc_f3_s129_clipping_saturation_e49b9363b869f76c",
+      "sensor_reference_records": 104385,
+      "simultaneous_overlap_records": 78291
+    },
+    {
+      "csc_fault_records": 29151,
+      "pair_member_records": 2475,
+      "runtime_shard_id": "phase6h_csc_f3_s129_delay_4bf42f0a970d6ad0",
+      "sensor_reference_records": 104097,
+      "simultaneous_overlap_records": 29151
+    },
+    {
+      "csc_fault_records": 28101,
+      "pair_member_records": 2472,
+      "runtime_shard_id": "phase6h_csc_f3_s129_drift_dc01e6e7e8c75009",
+      "sensor_reference_records": 18624,
+      "simultaneous_overlap_records": 7527
+    },
+    {
+      "csc_fault_records": 28515,
+      "pair_member_records": 2424,
+      "runtime_shard_id": "phase6h_csc_f3_s129_dropout_9ede686297335d04",
+      "sensor_reference_records": 6927,
+      "simultaneous_overlap_records": 2991
+    },
+    {
+      "csc_fault_records": 27213,
+      "pair_member_records": 2385,
+      "runtime_shard_id": "phase6h_csc_f3_s129_frame_loss_4f24a72b5c8dae3d",
+      "sensor_reference_records": 4818,
+      "simultaneous_overlap_records": 2346
+    },
+    {
+      "csc_fault_records": 27183,
+      "pair_member_records": 2445,
+      "runtime_shard_id": "phase6h_csc_f3_s129_jitter_28c3b11e4cedc036",
+      "sensor_reference_records": 105513,
+      "simultaneous_overlap_records": 27183
+    },
+    {
+      "csc_fault_records": 1722801,
+      "pair_member_records": 104667,
+      "runtime_shard_id": "phase6h_csc_f3_s129_noise_563304a49c4d5447",
+      "sensor_reference_records": 104667,
+      "simultaneous_overlap_records": 78510
+    },
+    {
+      "csc_fault_records": 28119,
+      "pair_member_records": 2436,
+      "runtime_shard_id": "phase6h_csc_f3_s129_orientation_95baec53f74ce0de",
+      "sensor_reference_records": 105378,
+      "simultaneous_overlap_records": 28119
+    },
+    {
+      "csc_fault_records": 1705461,
+      "pair_member_records": 104817,
+      "runtime_shard_id": "phase6h_csc_f3_s129_scale_factor_2c8e03fdf17ef3af",
+      "sensor_reference_records": 104817,
+      "simultaneous_overlap_records": 79038
+    },
+    {
+      "csc_fault_records": 25212,
+      "pair_member_records": 2409,
+      "runtime_shard_id": "phase6h_csc_f3_s129_stuck_channel_49c3534289450f19",
+      "sensor_reference_records": 6660,
+      "simultaneous_overlap_records": 3420
+    },
+    {
+      "csc_fault_records": 1554162,
+      "pair_member_records": 97035,
+      "runtime_shard_id": "phase6h_csc_f3_s132_axis_loss_d2ee31fe65ac15a1",
+      "sensor_reference_records": 97035,
+      "simultaneous_overlap_records": 73866
+    },
+    {
+      "csc_fault_records": 1516125,
+      "pair_member_records": 97308,
+      "runtime_shard_id": "phase6h_csc_f3_s132_bias_e51752177a6258d6",
+      "sensor_reference_records": 97308,
+      "simultaneous_overlap_records": 73995
+    },
+    {
+      "csc_fault_records": 1510494,
+      "pair_member_records": 96933,
+      "runtime_shard_id": "phase6h_csc_f3_s132_clipping_saturation_439c0e7e81c2dd8a",
+      "sensor_reference_records": 96933,
+      "simultaneous_overlap_records": 73788
+    },
+    {
+      "csc_fault_records": 24051,
+      "pair_member_records": 2505,
+      "runtime_shard_id": "phase6h_csc_f3_s132_delay_5d0a00db26541b82",
+      "sensor_reference_records": 96801,
+      "simultaneous_overlap_records": 24051
+    },
+    {
+      "csc_fault_records": 25611,
+      "pair_member_records": 2532,
+      "runtime_shard_id": "phase6h_csc_f3_s132_drift_4bc4532318d69c01",
+      "sensor_reference_records": 17763,
+      "simultaneous_overlap_records": 7065
+    },
+    {
+      "csc_fault_records": 24924,
+      "pair_member_records": 2457,
+      "runtime_shard_id": "phase6h_csc_f3_s132_dropout_1ef13f4d11f3f02c",
+      "sensor_reference_records": 7122,
+      "simultaneous_overlap_records": 3093
+    },
+    {
+      "csc_fault_records": 24828,
+      "pair_member_records": 2502,
+      "runtime_shard_id": "phase6h_csc_f3_s132_frame_loss_ab477c931b8eeb87",
+      "sensor_reference_records": 5085,
+      "simultaneous_overlap_records": 2493
+    },
+    {
+      "csc_fault_records": 25518,
+      "pair_member_records": 2511,
+      "runtime_shard_id": "phase6h_csc_f3_s132_jitter_3aabda61a01e6b38",
+      "sensor_reference_records": 97953,
+      "simultaneous_overlap_records": 25518
+    },
+    {
+      "csc_fault_records": 1543677,
+      "pair_member_records": 97128,
+      "runtime_shard_id": "phase6h_csc_f3_s132_noise_3e4d68637052e318",
+      "sensor_reference_records": 97128,
+      "simultaneous_overlap_records": 73452
+    },
+    {
+      "csc_fault_records": 28665,
+      "pair_member_records": 2472,
+      "runtime_shard_id": "phase6h_csc_f3_s132_orientation_3aa26d56d27e5c06",
+      "sensor_reference_records": 96162,
+      "simultaneous_overlap_records": 28665
+    },
+    {
+      "csc_fault_records": 1554516,
+      "pair_member_records": 97320,
+      "runtime_shard_id": "phase6h_csc_f3_s132_scale_factor_75140e40617ae127",
+      "sensor_reference_records": 97320,
+      "simultaneous_overlap_records": 74202
+    },
+    {
+      "csc_fault_records": 27696,
+      "pair_member_records": 2466,
+      "runtime_shard_id": "phase6h_csc_f3_s132_stuck_channel_e9974e34d731e8d4",
+      "sensor_reference_records": 6651,
+      "simultaneous_overlap_records": 3681
+    },
+    {
+      "csc_fault_records": 1581903,
+      "pair_member_records": 99558,
+      "runtime_shard_id": "phase6h_csc_f3_s135_axis_loss_f9fc63a191fed6fb",
+      "sensor_reference_records": 99558,
+      "simultaneous_overlap_records": 74709
+    },
+    {
+      "csc_fault_records": 1559142,
+      "pair_member_records": 99648,
+      "runtime_shard_id": "phase6h_csc_f3_s135_bias_0f2311b55c0c0605",
+      "sensor_reference_records": 99648,
+      "simultaneous_overlap_records": 74556
+    },
+    {
+      "csc_fault_records": 1588680,
+      "pair_member_records": 99357,
+      "runtime_shard_id": "phase6h_csc_f3_s135_clipping_saturation_b1c2646af644eaa5",
+      "sensor_reference_records": 99357,
+      "simultaneous_overlap_records": 74244
+    },
+    {
+      "csc_fault_records": 25311,
+      "pair_member_records": 2487,
+      "runtime_shard_id": "phase6h_csc_f3_s135_delay_cc4cebbb290d2da6",
+      "sensor_reference_records": 99858,
+      "simultaneous_overlap_records": 25311
+    },
+    {
+      "csc_fault_records": 25893,
+      "pair_member_records": 2487,
+      "runtime_shard_id": "phase6h_csc_f3_s135_drift_738105a5112f2f3a",
+      "sensor_reference_records": 18615,
+      "simultaneous_overlap_records": 6762
+    },
+    {
+      "csc_fault_records": 25851,
+      "pair_member_records": 2463,
+      "runtime_shard_id": "phase6h_csc_f3_s135_dropout_1a6af9b41a6ddba1",
+      "sensor_reference_records": 7077,
+      "simultaneous_overlap_records": 3006
+    },
+    {
+      "csc_fault_records": 26208,
+      "pair_member_records": 2433,
+      "runtime_shard_id": "phase6h_csc_f3_s135_frame_loss_6cb38c87d3ceaa8b",
+      "sensor_reference_records": 4896,
+      "simultaneous_overlap_records": 2355
+    },
+    {
+      "csc_fault_records": 29700,
+      "pair_member_records": 2469,
+      "runtime_shard_id": "phase6h_csc_f3_s135_jitter_d2d02f343ac05ea7",
+      "sensor_reference_records": 100464,
+      "simultaneous_overlap_records": 29700
+    },
+    {
+      "csc_fault_records": 1597485,
+      "pair_member_records": 99237,
+      "runtime_shard_id": "phase6h_csc_f3_s135_noise_9b0d2bf91d42e82a",
+      "sensor_reference_records": 99237,
+      "simultaneous_overlap_records": 74763
+    },
+    {
+      "csc_fault_records": 26862,
+      "pair_member_records": 2430,
+      "runtime_shard_id": "phase6h_csc_f3_s135_orientation_77727de808febfd9",
+      "sensor_reference_records": 98331,
+      "simultaneous_overlap_records": 26862
+    },
+    {
+      "csc_fault_records": 1596909,
+      "pair_member_records": 99420,
+      "runtime_shard_id": "phase6h_csc_f3_s135_scale_factor_a934baa70a22eb09",
+      "sensor_reference_records": 99420,
+      "simultaneous_overlap_records": 74592
+    },
+    {
+      "csc_fault_records": 24696,
+      "pair_member_records": 2451,
+      "runtime_shard_id": "phase6h_csc_f3_s135_stuck_channel_e2e8e72a0fd678d4",
+      "sensor_reference_records": 6693,
+      "simultaneous_overlap_records": 3360
+    },
+    {
+      "csc_fault_records": 1027944,
+      "pair_member_records": 35211,
+      "runtime_shard_id": "phase6h_csc_f3_s13_axis_loss_f0acd40acbcf7629",
+      "sensor_reference_records": 35211,
+      "simultaneous_overlap_records": 26520
+    },
+    {
+      "csc_fault_records": 1015092,
+      "pair_member_records": 35046,
+      "runtime_shard_id": "phase6h_csc_f3_s13_bias_fb27d944c277126f",
+      "sensor_reference_records": 35046,
+      "simultaneous_overlap_records": 26241
+    },
+    {
+      "csc_fault_records": 1009518,
+      "pair_member_records": 35142,
+      "runtime_shard_id": "phase6h_csc_f3_s13_clipping_saturation_9596acf853477c57",
+      "sensor_reference_records": 35142,
+      "simultaneous_overlap_records": 26268
+    },
+    {
+      "csc_fault_records": 8169,
+      "pair_member_records": 516,
+      "runtime_shard_id": "phase6h_csc_f3_s13_delay_17b1a5645ca76e5a",
+      "sensor_reference_records": 33282,
+      "simultaneous_overlap_records": 8169
+    },
+    {
+      "csc_fault_records": 8076,
+      "pair_member_records": 543,
+      "runtime_shard_id": "phase6h_csc_f3_s13_drift_1236aa5312fc00f2",
+      "sensor_reference_records": 4209,
+      "simultaneous_overlap_records": 1524
+    },
+    {
+      "csc_fault_records": 8520,
+      "pair_member_records": 519,
+      "runtime_shard_id": "phase6h_csc_f3_s13_dropout_f2ee2b3f34041ea2",
+      "sensor_reference_records": 1491,
+      "simultaneous_overlap_records": 696
+    },
+    {
+      "csc_fault_records": 10578,
+      "pair_member_records": 516,
+      "runtime_shard_id": "phase6h_csc_f3_s13_frame_loss_6933d93502312a32",
+      "sensor_reference_records": 1029,
+      "simultaneous_overlap_records": 531
+    },
+    {
+      "csc_fault_records": 9282,
+      "pair_member_records": 531,
+      "runtime_shard_id": "phase6h_csc_f3_s13_jitter_4c054b8f61a93953",
+      "sensor_reference_records": 35919,
+      "simultaneous_overlap_records": 9282
+    },
+    {
+      "csc_fault_records": 969693,
+      "pair_member_records": 34917,
+      "runtime_shard_id": "phase6h_csc_f3_s13_noise_dc127a4ccde8a6f3",
+      "sensor_reference_records": 34917,
+      "simultaneous_overlap_records": 26208
+    },
+    {
+      "csc_fault_records": 8349,
+      "pair_member_records": 543,
+      "runtime_shard_id": "phase6h_csc_f3_s13_orientation_c456c2575009cbad",
+      "sensor_reference_records": 36252,
+      "simultaneous_overlap_records": 8349
+    },
+    {
+      "csc_fault_records": 1018674,
+      "pair_member_records": 35175,
+      "runtime_shard_id": "phase6h_csc_f3_s13_scale_factor_911d7dda3ee2789c",
+      "sensor_reference_records": 35175,
+      "simultaneous_overlap_records": 26196
+    },
+    {
+      "csc_fault_records": 9765,
+      "pair_member_records": 498,
+      "runtime_shard_id": "phase6h_csc_f3_s13_stuck_channel_581ad2e6714bde02",
+      "sensor_reference_records": 1455,
+      "simultaneous_overlap_records": 696
+    },
+    {
+      "csc_fault_records": 920670,
+      "pair_member_records": 36486,
+      "runtime_shard_id": "phase6h_csc_f3_s14_axis_loss_dc355ac76a06bc39",
+      "sensor_reference_records": 36486,
+      "simultaneous_overlap_records": 27207
+    },
+    {
+      "csc_fault_records": 932025,
+      "pair_member_records": 36660,
+      "runtime_shard_id": "phase6h_csc_f3_s14_bias_b48d228bffcf707b",
+      "sensor_reference_records": 36660,
+      "simultaneous_overlap_records": 27645
+    },
+    {
+      "csc_fault_records": 919317,
+      "pair_member_records": 36549,
+      "runtime_shard_id": "phase6h_csc_f3_s14_clipping_saturation_2c170f267e57bef6",
+      "sensor_reference_records": 36549,
+      "simultaneous_overlap_records": 27510
+    },
+    {
+      "csc_fault_records": 7986,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f3_s14_delay_5e5970148632a096",
+      "sensor_reference_records": 35673,
+      "simultaneous_overlap_records": 7986
+    },
+    {
+      "csc_fault_records": 11424,
+      "pair_member_records": 639,
+      "runtime_shard_id": "phase6h_csc_f3_s14_drift_cf57a08dbc37bdaf",
+      "sensor_reference_records": 5232,
+      "simultaneous_overlap_records": 2058
+    },
+    {
+      "csc_fault_records": 10050,
+      "pair_member_records": 669,
+      "runtime_shard_id": "phase6h_csc_f3_s14_dropout_3946bbae90f61492",
+      "sensor_reference_records": 1929,
+      "simultaneous_overlap_records": 831
+    },
+    {
+      "csc_fault_records": 10053,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f3_s14_frame_loss_ecff4938330e6ede",
+      "sensor_reference_records": 1392,
+      "simultaneous_overlap_records": 681
+    },
+    {
+      "csc_fault_records": 9366,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f3_s14_jitter_482407e846ef8644",
+      "sensor_reference_records": 36057,
+      "simultaneous_overlap_records": 9366
+    },
+    {
+      "csc_fault_records": 918288,
+      "pair_member_records": 36480,
+      "runtime_shard_id": "phase6h_csc_f3_s14_noise_37076e07698d160d",
+      "sensor_reference_records": 36480,
+      "simultaneous_overlap_records": 27621
+    },
+    {
+      "csc_fault_records": 9054,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f3_s14_orientation_33d1e59c3470e231",
+      "sensor_reference_records": 36987,
+      "simultaneous_overlap_records": 9054
+    },
+    {
+      "csc_fault_records": 922986,
+      "pair_member_records": 36708,
+      "runtime_shard_id": "phase6h_csc_f3_s14_scale_factor_4d0099705fdb5695",
+      "sensor_reference_records": 36708,
+      "simultaneous_overlap_records": 27909
+    },
+    {
+      "csc_fault_records": 7899,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f3_s14_stuck_channel_18494732036659d3",
+      "sensor_reference_records": 1992,
+      "simultaneous_overlap_records": 930
+    },
+    {
+      "csc_fault_records": 661194,
+      "pair_member_records": 32346,
+      "runtime_shard_id": "phase6h_csc_f3_s21_axis_loss_858c2b67da6ec09d",
+      "sensor_reference_records": 32346,
+      "simultaneous_overlap_records": 24000
+    },
+    {
+      "csc_fault_records": 647187,
+      "pair_member_records": 32157,
+      "runtime_shard_id": "phase6h_csc_f3_s21_bias_de18f6f25665de78",
+      "sensor_reference_records": 32157,
+      "simultaneous_overlap_records": 24192
+    },
+    {
+      "csc_fault_records": 689712,
+      "pair_member_records": 32310,
+      "runtime_shard_id": "phase6h_csc_f3_s21_clipping_saturation_230efd4d9d903ce7",
+      "sensor_reference_records": 32310,
+      "simultaneous_overlap_records": 23709
+    },
+    {
+      "csc_fault_records": 10578,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f3_s21_delay_d1dd62135cd5d9aa",
+      "sensor_reference_records": 30315,
+      "simultaneous_overlap_records": 10578
+    },
+    {
+      "csc_fault_records": 7119,
+      "pair_member_records": 699,
+      "runtime_shard_id": "phase6h_csc_f3_s21_drift_d1b396de1fa24293",
+      "sensor_reference_records": 4923,
+      "simultaneous_overlap_records": 1722
+    },
+    {
+      "csc_fault_records": 7299,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f3_s21_dropout_306d4247dde78b63",
+      "sensor_reference_records": 1977,
+      "simultaneous_overlap_records": 798
+    },
+    {
+      "csc_fault_records": 8022,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f3_s21_frame_loss_83104b3f6a995fd4",
+      "sensor_reference_records": 1326,
+      "simultaneous_overlap_records": 633
+    },
+    {
+      "csc_fault_records": 6555,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f3_s21_jitter_4e22e37bfdb1f73c",
+      "sensor_reference_records": 30888,
+      "simultaneous_overlap_records": 6555
+    },
+    {
+      "csc_fault_records": 655821,
+      "pair_member_records": 32325,
+      "runtime_shard_id": "phase6h_csc_f3_s21_noise_57cbbe372d6410ac",
+      "sensor_reference_records": 32325,
+      "simultaneous_overlap_records": 24072
+    },
+    {
+      "csc_fault_records": 8418,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f3_s21_orientation_56f1c296572cc4c1",
+      "sensor_reference_records": 31773,
+      "simultaneous_overlap_records": 8418
+    },
+    {
+      "csc_fault_records": 694401,
+      "pair_member_records": 32364,
+      "runtime_shard_id": "phase6h_csc_f3_s21_scale_factor_1a4aa5ce94590276",
+      "sensor_reference_records": 32364,
+      "simultaneous_overlap_records": 24165
+    },
+    {
+      "csc_fault_records": 8199,
+      "pair_member_records": 630,
+      "runtime_shard_id": "phase6h_csc_f3_s21_stuck_channel_f6f005fd0a50ddf7",
+      "sensor_reference_records": 1656,
+      "simultaneous_overlap_records": 915
+    },
+    {
+      "csc_fault_records": 1185420,
+      "pair_member_records": 40128,
+      "runtime_shard_id": "phase6h_csc_f3_s35_axis_loss_72998cade202490e",
+      "sensor_reference_records": 40128,
+      "simultaneous_overlap_records": 30312
+    },
+    {
+      "csc_fault_records": 1142349,
+      "pair_member_records": 40131,
+      "runtime_shard_id": "phase6h_csc_f3_s35_bias_eb21312e728dc21a",
+      "sensor_reference_records": 40131,
+      "simultaneous_overlap_records": 29988
+    },
+    {
+      "csc_fault_records": 1144527,
+      "pair_member_records": 40092,
+      "runtime_shard_id": "phase6h_csc_f3_s35_clipping_saturation_a26f0d6682f3e29d",
+      "sensor_reference_records": 40092,
+      "simultaneous_overlap_records": 30009
+    },
+    {
+      "csc_fault_records": 9753,
+      "pair_member_records": 654,
+      "runtime_shard_id": "phase6h_csc_f3_s35_delay_7328b20ea9b35a18",
+      "sensor_reference_records": 38949,
+      "simultaneous_overlap_records": 9753
+    },
+    {
+      "csc_fault_records": 7059,
+      "pair_member_records": 486,
+      "runtime_shard_id": "phase6h_csc_f3_s35_drift_313e9b44b977a99b",
+      "sensor_reference_records": 3402,
+      "simultaneous_overlap_records": 1026
+    },
+    {
+      "csc_fault_records": 9444,
+      "pair_member_records": 663,
+      "runtime_shard_id": "phase6h_csc_f3_s35_dropout_487f998edb4e7ecd",
+      "sensor_reference_records": 1905,
+      "simultaneous_overlap_records": 804
+    },
+    {
+      "csc_fault_records": 9636,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f3_s35_frame_loss_82ebf156eeb03103",
+      "sensor_reference_records": 1383,
+      "simultaneous_overlap_records": 720
+    },
+    {
+      "csc_fault_records": 9765,
+      "pair_member_records": 699,
+      "runtime_shard_id": "phase6h_csc_f3_s35_jitter_f1f7b3c280f6bc05",
+      "sensor_reference_records": 40371,
+      "simultaneous_overlap_records": 9765
+    },
+    {
+      "csc_fault_records": 1151559,
+      "pair_member_records": 39975,
+      "runtime_shard_id": "phase6h_csc_f3_s35_noise_fba3f07232e96579",
+      "sensor_reference_records": 39975,
+      "simultaneous_overlap_records": 30102
+    },
+    {
+      "csc_fault_records": 11127,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f3_s35_orientation_bcda11acbdb4483e",
+      "sensor_reference_records": 40023,
+      "simultaneous_overlap_records": 11127
+    },
+    {
+      "csc_fault_records": 1153692,
+      "pair_member_records": 40401,
+      "runtime_shard_id": "phase6h_csc_f3_s35_scale_factor_515a6880ed0b4fa9",
+      "sensor_reference_records": 40401,
+      "simultaneous_overlap_records": 30192
+    },
+    {
+      "csc_fault_records": 7890,
+      "pair_member_records": 405,
+      "runtime_shard_id": "phase6h_csc_f3_s35_stuck_channel_3e017e298e266423",
+      "sensor_reference_records": 1188,
+      "simultaneous_overlap_records": 582
+    },
+    {
+      "csc_fault_records": 1070880,
+      "pair_member_records": 38061,
+      "runtime_shard_id": "phase6h_csc_f3_s36_axis_loss_28183a308a66af24",
+      "sensor_reference_records": 38061,
+      "simultaneous_overlap_records": 29070
+    },
+    {
+      "csc_fault_records": 1065390,
+      "pair_member_records": 37944,
+      "runtime_shard_id": "phase6h_csc_f3_s36_bias_4a7dc59faf96ad7a",
+      "sensor_reference_records": 37944,
+      "simultaneous_overlap_records": 29076
+    },
+    {
+      "csc_fault_records": 1085991,
+      "pair_member_records": 38142,
+      "runtime_shard_id": "phase6h_csc_f3_s36_clipping_saturation_046423346567e417",
+      "sensor_reference_records": 38142,
+      "simultaneous_overlap_records": 29217
+    },
+    {
+      "csc_fault_records": 7500,
+      "pair_member_records": 693,
+      "runtime_shard_id": "phase6h_csc_f3_s36_delay_8fc2e3ab19a58a16",
+      "sensor_reference_records": 37380,
+      "simultaneous_overlap_records": 7500
+    },
+    {
+      "csc_fault_records": 9456,
+      "pair_member_records": 651,
+      "runtime_shard_id": "phase6h_csc_f3_s36_drift_664565be89901147",
+      "sensor_reference_records": 5097,
+      "simultaneous_overlap_records": 1887
+    },
+    {
+      "csc_fault_records": 11844,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f3_s36_dropout_9051b0d43f797e0f",
+      "sensor_reference_records": 1884,
+      "simultaneous_overlap_records": 732
+    },
+    {
+      "csc_fault_records": 9987,
+      "pair_member_records": 702,
+      "runtime_shard_id": "phase6h_csc_f3_s36_frame_loss_96a6bec99eb2ae6f",
+      "sensor_reference_records": 1431,
+      "simultaneous_overlap_records": 687
+    },
+    {
+      "csc_fault_records": 9465,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f3_s36_jitter_c31708c131fa2e61",
+      "sensor_reference_records": 38532,
+      "simultaneous_overlap_records": 9465
+    },
+    {
+      "csc_fault_records": 1053744,
+      "pair_member_records": 38001,
+      "runtime_shard_id": "phase6h_csc_f3_s36_noise_faefb30ba69f30e5",
+      "sensor_reference_records": 38001,
+      "simultaneous_overlap_records": 28992
+    },
+    {
+      "csc_fault_records": 11226,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f3_s36_orientation_2096d6c96e5cae14",
+      "sensor_reference_records": 39132,
+      "simultaneous_overlap_records": 11226
+    },
+    {
+      "csc_fault_records": 1052709,
+      "pair_member_records": 38148,
+      "runtime_shard_id": "phase6h_csc_f3_s36_scale_factor_a3cc7cb060c0336e",
+      "sensor_reference_records": 38148,
+      "simultaneous_overlap_records": 29391
+    },
+    {
+      "csc_fault_records": 9303,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f3_s36_stuck_channel_5d19a152f399ca31",
+      "sensor_reference_records": 1866,
+      "simultaneous_overlap_records": 855
+    },
+    {
+      "csc_fault_records": 1797060,
+      "pair_member_records": 97131,
+      "runtime_shard_id": "phase6h_csc_f4_s106_axis_loss_8c17d94bd3dd528f",
+      "sensor_reference_records": 97131,
+      "simultaneous_overlap_records": 72486
+    },
+    {
+      "csc_fault_records": 1737201,
+      "pair_member_records": 96885,
+      "runtime_shard_id": "phase6h_csc_f4_s106_bias_e68d97932c5bbf16",
+      "sensor_reference_records": 96885,
+      "simultaneous_overlap_records": 73122
+    },
+    {
+      "csc_fault_records": 1739160,
+      "pair_member_records": 96975,
+      "runtime_shard_id": "phase6h_csc_f4_s106_clipping_saturation_bd34af7f3007043e",
+      "sensor_reference_records": 96975,
+      "simultaneous_overlap_records": 73245
+    },
+    {
+      "csc_fault_records": 25674,
+      "pair_member_records": 2397,
+      "runtime_shard_id": "phase6h_csc_f4_s106_delay_b9d8adef978103d4",
+      "sensor_reference_records": 95460,
+      "simultaneous_overlap_records": 25674
+    },
+    {
+      "csc_fault_records": 24066,
+      "pair_member_records": 2208,
+      "runtime_shard_id": "phase6h_csc_f4_s106_drift_e7aa282f17ed22ee",
+      "sensor_reference_records": 14928,
+      "simultaneous_overlap_records": 5148
+    },
+    {
+      "csc_fault_records": 26112,
+      "pair_member_records": 2355,
+      "runtime_shard_id": "phase6h_csc_f4_s106_dropout_118e5b964a954145",
+      "sensor_reference_records": 6558,
+      "simultaneous_overlap_records": 2901
+    },
+    {
+      "csc_fault_records": 23394,
+      "pair_member_records": 2346,
+      "runtime_shard_id": "phase6h_csc_f4_s106_frame_loss_46c1f53181f8b730",
+      "sensor_reference_records": 4653,
+      "simultaneous_overlap_records": 2370
+    },
+    {
+      "csc_fault_records": 25494,
+      "pair_member_records": 2421,
+      "runtime_shard_id": "phase6h_csc_f4_s106_jitter_ef330f69fa60fcf0",
+      "sensor_reference_records": 97302,
+      "simultaneous_overlap_records": 25494
+    },
+    {
+      "csc_fault_records": 1714746,
+      "pair_member_records": 96936,
+      "runtime_shard_id": "phase6h_csc_f4_s106_noise_c72285416bd6bc4c",
+      "sensor_reference_records": 96936,
+      "simultaneous_overlap_records": 73239
+    },
+    {
+      "csc_fault_records": 24858,
+      "pair_member_records": 2385,
+      "runtime_shard_id": "phase6h_csc_f4_s106_orientation_00c37a552001cfe5",
+      "sensor_reference_records": 95430,
+      "simultaneous_overlap_records": 24858
+    },
+    {
+      "csc_fault_records": 1750701,
+      "pair_member_records": 97101,
+      "runtime_shard_id": "phase6h_csc_f4_s106_scale_factor_63228c736f8f028f",
+      "sensor_reference_records": 97101,
+      "simultaneous_overlap_records": 73620
+    },
+    {
+      "csc_fault_records": 23871,
+      "pair_member_records": 1887,
+      "runtime_shard_id": "phase6h_csc_f4_s106_stuck_channel_c0f26cc6c0433959",
+      "sensor_reference_records": 5052,
+      "simultaneous_overlap_records": 2373
+    },
+    {
+      "csc_fault_records": 1914765,
+      "pair_member_records": 104694,
+      "runtime_shard_id": "phase6h_csc_f4_s107_axis_loss_c3bb967d23914f96",
+      "sensor_reference_records": 104694,
+      "simultaneous_overlap_records": 79320
+    },
+    {
+      "csc_fault_records": 1915086,
+      "pair_member_records": 104721,
+      "runtime_shard_id": "phase6h_csc_f4_s107_bias_1986a8f40a022156",
+      "sensor_reference_records": 104721,
+      "simultaneous_overlap_records": 78450
+    },
+    {
+      "csc_fault_records": 1970559,
+      "pair_member_records": 104724,
+      "runtime_shard_id": "phase6h_csc_f4_s107_clipping_saturation_0516830bbbdf7375",
+      "sensor_reference_records": 104724,
+      "simultaneous_overlap_records": 78171
+    },
+    {
+      "csc_fault_records": 29082,
+      "pair_member_records": 2313,
+      "runtime_shard_id": "phase6h_csc_f4_s107_delay_4b21e90402a71de8",
+      "sensor_reference_records": 104979,
+      "simultaneous_overlap_records": 29082
+    },
+    {
+      "csc_fault_records": 29802,
+      "pair_member_records": 2238,
+      "runtime_shard_id": "phase6h_csc_f4_s107_drift_04d2fb8a833858a7",
+      "sensor_reference_records": 15843,
+      "simultaneous_overlap_records": 6099
+    },
+    {
+      "csc_fault_records": 26394,
+      "pair_member_records": 2286,
+      "runtime_shard_id": "phase6h_csc_f4_s107_dropout_be1bc5e49a54820b",
+      "sensor_reference_records": 6597,
+      "simultaneous_overlap_records": 2865
+    },
+    {
+      "csc_fault_records": 27777,
+      "pair_member_records": 2346,
+      "runtime_shard_id": "phase6h_csc_f4_s107_frame_loss_2cb4e11d36a533e0",
+      "sensor_reference_records": 4731,
+      "simultaneous_overlap_records": 2325
+    },
+    {
+      "csc_fault_records": 28065,
+      "pair_member_records": 2262,
+      "runtime_shard_id": "phase6h_csc_f4_s107_jitter_16c7047c67bde270",
+      "sensor_reference_records": 101790,
+      "simultaneous_overlap_records": 28065
+    },
+    {
+      "csc_fault_records": 1938066,
+      "pair_member_records": 104694,
+      "runtime_shard_id": "phase6h_csc_f4_s107_noise_669a82232b5f050f",
+      "sensor_reference_records": 104694,
+      "simultaneous_overlap_records": 78636
+    },
+    {
+      "csc_fault_records": 24228,
+      "pair_member_records": 2316,
+      "runtime_shard_id": "phase6h_csc_f4_s107_orientation_fd34a6006117cda2",
+      "sensor_reference_records": 105063,
+      "simultaneous_overlap_records": 24228
+    },
+    {
+      "csc_fault_records": 1943970,
+      "pair_member_records": 104868,
+      "runtime_shard_id": "phase6h_csc_f4_s107_scale_factor_2c860bca4326b646",
+      "sensor_reference_records": 104868,
+      "simultaneous_overlap_records": 78735
+    },
+    {
+      "csc_fault_records": 28719,
+      "pair_member_records": 1962,
+      "runtime_shard_id": "phase6h_csc_f4_s107_stuck_channel_37318be91532bf2c",
+      "sensor_reference_records": 5589,
+      "simultaneous_overlap_records": 2787
+    },
+    {
+      "csc_fault_records": 1642476,
+      "pair_member_records": 95820,
+      "runtime_shard_id": "phase6h_csc_f4_s124_axis_loss_4581735e4bb63cd5",
+      "sensor_reference_records": 95820,
+      "simultaneous_overlap_records": 72744
+    },
+    {
+      "csc_fault_records": 1636029,
+      "pair_member_records": 95757,
+      "runtime_shard_id": "phase6h_csc_f4_s124_bias_be861de37f6744b5",
+      "sensor_reference_records": 95757,
+      "simultaneous_overlap_records": 72810
+    },
+    {
+      "csc_fault_records": 1605423,
+      "pair_member_records": 95499,
+      "runtime_shard_id": "phase6h_csc_f4_s124_clipping_saturation_d8a7dcccfa4a59cd",
+      "sensor_reference_records": 95499,
+      "simultaneous_overlap_records": 72873
+    },
+    {
+      "csc_fault_records": 23253,
+      "pair_member_records": 2367,
+      "runtime_shard_id": "phase6h_csc_f4_s124_delay_b170f710bcc629d0",
+      "sensor_reference_records": 96249,
+      "simultaneous_overlap_records": 23253
+    },
+    {
+      "csc_fault_records": 25656,
+      "pair_member_records": 2355,
+      "runtime_shard_id": "phase6h_csc_f4_s124_drift_1d7828afcf9fad5e",
+      "sensor_reference_records": 16263,
+      "simultaneous_overlap_records": 6372
+    },
+    {
+      "csc_fault_records": 26244,
+      "pair_member_records": 2325,
+      "runtime_shard_id": "phase6h_csc_f4_s124_dropout_d1576d0fd306af50",
+      "sensor_reference_records": 6729,
+      "simultaneous_overlap_records": 2913
+    },
+    {
+      "csc_fault_records": 23856,
+      "pair_member_records": 2403,
+      "runtime_shard_id": "phase6h_csc_f4_s124_frame_loss_4ab4ac55dc72e960",
+      "sensor_reference_records": 4989,
+      "simultaneous_overlap_records": 2313
+    },
+    {
+      "csc_fault_records": 23127,
+      "pair_member_records": 2328,
+      "runtime_shard_id": "phase6h_csc_f4_s124_jitter_0af81f2dd7c61e69",
+      "sensor_reference_records": 94245,
+      "simultaneous_overlap_records": 23127
+    },
+    {
+      "csc_fault_records": 1619493,
+      "pair_member_records": 95613,
+      "runtime_shard_id": "phase6h_csc_f4_s124_noise_89f4b694c84557da",
+      "sensor_reference_records": 95613,
+      "simultaneous_overlap_records": 72618
+    },
+    {
+      "csc_fault_records": 23544,
+      "pair_member_records": 2331,
+      "runtime_shard_id": "phase6h_csc_f4_s124_orientation_48a155d534b455c0",
+      "sensor_reference_records": 94266,
+      "simultaneous_overlap_records": 23544
+    },
+    {
+      "csc_fault_records": 1600407,
+      "pair_member_records": 95466,
+      "runtime_shard_id": "phase6h_csc_f4_s124_scale_factor_5521c658172d2ce1",
+      "sensor_reference_records": 95466,
+      "simultaneous_overlap_records": 72429
+    },
+    {
+      "csc_fault_records": 27378,
+      "pair_member_records": 2271,
+      "runtime_shard_id": "phase6h_csc_f4_s124_stuck_channel_4bd8493732afe75e",
+      "sensor_reference_records": 6081,
+      "simultaneous_overlap_records": 3126
+    },
+    {
+      "csc_fault_records": 1742019,
+      "pair_member_records": 105060,
+      "runtime_shard_id": "phase6h_csc_f4_s126_axis_loss_c444f14099d9b02d",
+      "sensor_reference_records": 105060,
+      "simultaneous_overlap_records": 79581
+    },
+    {
+      "csc_fault_records": 1714845,
+      "pair_member_records": 104700,
+      "runtime_shard_id": "phase6h_csc_f4_s126_bias_96f1410253503bf2",
+      "sensor_reference_records": 104700,
+      "simultaneous_overlap_records": 78957
+    },
+    {
+      "csc_fault_records": 1742649,
+      "pair_member_records": 104472,
+      "runtime_shard_id": "phase6h_csc_f4_s126_clipping_saturation_e75551d0a850c17a",
+      "sensor_reference_records": 104472,
+      "simultaneous_overlap_records": 78354
+    },
+    {
+      "csc_fault_records": 30234,
+      "pair_member_records": 2466,
+      "runtime_shard_id": "phase6h_csc_f4_s126_delay_41d94204d655dcfc",
+      "sensor_reference_records": 105312,
+      "simultaneous_overlap_records": 30234
+    },
+    {
+      "csc_fault_records": 28236,
+      "pair_member_records": 2490,
+      "runtime_shard_id": "phase6h_csc_f4_s126_drift_6a2e6c5371defaba",
+      "sensor_reference_records": 17046,
+      "simultaneous_overlap_records": 6744
+    },
+    {
+      "csc_fault_records": 33195,
+      "pair_member_records": 2502,
+      "runtime_shard_id": "phase6h_csc_f4_s126_dropout_8112aea2a1338ef7",
+      "sensor_reference_records": 7158,
+      "simultaneous_overlap_records": 3297
+    },
+    {
+      "csc_fault_records": 25905,
+      "pair_member_records": 2523,
+      "runtime_shard_id": "phase6h_csc_f4_s126_frame_loss_1d08918043908890",
+      "sensor_reference_records": 5148,
+      "simultaneous_overlap_records": 2436
+    },
+    {
+      "csc_fault_records": 28149,
+      "pair_member_records": 2508,
+      "runtime_shard_id": "phase6h_csc_f4_s126_jitter_8ddd4567cd8190a2",
+      "sensor_reference_records": 105507,
+      "simultaneous_overlap_records": 28149
+    },
+    {
+      "csc_fault_records": 1742931,
+      "pair_member_records": 104592,
+      "runtime_shard_id": "phase6h_csc_f4_s126_noise_7a137a09153f9bc0",
+      "sensor_reference_records": 104592,
+      "simultaneous_overlap_records": 78462
+    },
+    {
+      "csc_fault_records": 27828,
+      "pair_member_records": 2589,
+      "runtime_shard_id": "phase6h_csc_f4_s126_orientation_671ca1ab254617dc",
+      "sensor_reference_records": 109824,
+      "simultaneous_overlap_records": 27828
+    },
+    {
+      "csc_fault_records": 1740330,
+      "pair_member_records": 105054,
+      "runtime_shard_id": "phase6h_csc_f4_s126_scale_factor_7bee9967f1f57a02",
+      "sensor_reference_records": 105054,
+      "simultaneous_overlap_records": 78651
+    },
+    {
+      "csc_fault_records": 27894,
+      "pair_member_records": 2190,
+      "runtime_shard_id": "phase6h_csc_f4_s126_stuck_channel_2257c47518dd4183",
+      "sensor_reference_records": 6003,
+      "simultaneous_overlap_records": 3018
+    },
+    {
+      "csc_fault_records": 1585248,
+      "pair_member_records": 94329,
+      "runtime_shard_id": "phase6h_csc_f4_s131_axis_loss_e9b7a911a5d74457",
+      "sensor_reference_records": 94329,
+      "simultaneous_overlap_records": 71088
+    },
+    {
+      "csc_fault_records": 1613898,
+      "pair_member_records": 94023,
+      "runtime_shard_id": "phase6h_csc_f4_s131_bias_d68df0446a7d28a6",
+      "sensor_reference_records": 94023,
+      "simultaneous_overlap_records": 70509
+    },
+    {
+      "csc_fault_records": 1572420,
+      "pair_member_records": 94272,
+      "runtime_shard_id": "phase6h_csc_f4_s131_clipping_saturation_cc6c0e58423484ad",
+      "sensor_reference_records": 94272,
+      "simultaneous_overlap_records": 71100
+    },
+    {
+      "csc_fault_records": 22155,
+      "pair_member_records": 2397,
+      "runtime_shard_id": "phase6h_csc_f4_s131_delay_03ba720e379cc5d7",
+      "sensor_reference_records": 93423,
+      "simultaneous_overlap_records": 22155
+    },
+    {
+      "csc_fault_records": 25848,
+      "pair_member_records": 2397,
+      "runtime_shard_id": "phase6h_csc_f4_s131_drift_c44ecf336f1090c3",
+      "sensor_reference_records": 15786,
+      "simultaneous_overlap_records": 6582
+    },
+    {
+      "csc_fault_records": 24675,
+      "pair_member_records": 2391,
+      "runtime_shard_id": "phase6h_csc_f4_s131_dropout_de8fddc393b53335",
+      "sensor_reference_records": 6849,
+      "simultaneous_overlap_records": 2697
+    },
+    {
+      "csc_fault_records": 23469,
+      "pair_member_records": 2406,
+      "runtime_shard_id": "phase6h_csc_f4_s131_frame_loss_61f574e1fde01a7a",
+      "sensor_reference_records": 4896,
+      "simultaneous_overlap_records": 2367
+    },
+    {
+      "csc_fault_records": 25563,
+      "pair_member_records": 2439,
+      "runtime_shard_id": "phase6h_csc_f4_s131_jitter_5c5270ea04ea06db",
+      "sensor_reference_records": 95961,
+      "simultaneous_overlap_records": 25563
+    },
+    {
+      "csc_fault_records": 1586904,
+      "pair_member_records": 94233,
+      "runtime_shard_id": "phase6h_csc_f4_s131_noise_fe9ca3e591899e9e",
+      "sensor_reference_records": 94233,
+      "simultaneous_overlap_records": 71334
+    },
+    {
+      "csc_fault_records": 23739,
+      "pair_member_records": 2421,
+      "runtime_shard_id": "phase6h_csc_f4_s131_orientation_e75534848787eeac",
+      "sensor_reference_records": 95394,
+      "simultaneous_overlap_records": 23739
+    },
+    {
+      "csc_fault_records": 1603389,
+      "pair_member_records": 94128,
+      "runtime_shard_id": "phase6h_csc_f4_s131_scale_factor_56afd7bf9284fb80",
+      "sensor_reference_records": 94128,
+      "simultaneous_overlap_records": 70722
+    },
+    {
+      "csc_fault_records": 20175,
+      "pair_member_records": 2121,
+      "runtime_shard_id": "phase6h_csc_f4_s131_stuck_channel_e76c0bf8cb08c35c",
+      "sensor_reference_records": 5619,
+      "simultaneous_overlap_records": 2637
+    },
+    {
+      "csc_fault_records": 1633656,
+      "pair_member_records": 100008,
+      "runtime_shard_id": "phase6h_csc_f4_s138_axis_loss_7b30d66d93076b41",
+      "sensor_reference_records": 100008,
+      "simultaneous_overlap_records": 75534
+    },
+    {
+      "csc_fault_records": 1640865,
+      "pair_member_records": 100107,
+      "runtime_shard_id": "phase6h_csc_f4_s138_bias_7132a381606934e2",
+      "sensor_reference_records": 100107,
+      "simultaneous_overlap_records": 76020
+    },
+    {
+      "csc_fault_records": 1638960,
+      "pair_member_records": 99972,
+      "runtime_shard_id": "phase6h_csc_f4_s138_clipping_saturation_892e4e26a47f287d",
+      "sensor_reference_records": 99972,
+      "simultaneous_overlap_records": 75660
+    },
+    {
+      "csc_fault_records": 27894,
+      "pair_member_records": 2469,
+      "runtime_shard_id": "phase6h_csc_f4_s138_delay_8daba6e29932dc79",
+      "sensor_reference_records": 100452,
+      "simultaneous_overlap_records": 27894
+    },
+    {
+      "csc_fault_records": 26955,
+      "pair_member_records": 2541,
+      "runtime_shard_id": "phase6h_csc_f4_s138_drift_aa2ba7eba9f7332c",
+      "sensor_reference_records": 18696,
+      "simultaneous_overlap_records": 7734
+    },
+    {
+      "csc_fault_records": 27603,
+      "pair_member_records": 2541,
+      "runtime_shard_id": "phase6h_csc_f4_s138_dropout_c9fb1674876ba1fd",
+      "sensor_reference_records": 7290,
+      "simultaneous_overlap_records": 3213
+    },
+    {
+      "csc_fault_records": 24336,
+      "pair_member_records": 2499,
+      "runtime_shard_id": "phase6h_csc_f4_s138_frame_loss_e6da48c87e2d418a",
+      "sensor_reference_records": 5091,
+      "simultaneous_overlap_records": 2652
+    },
+    {
+      "csc_fault_records": 24210,
+      "pair_member_records": 2520,
+      "runtime_shard_id": "phase6h_csc_f4_s138_jitter_12ff220d7883bf76",
+      "sensor_reference_records": 101409,
+      "simultaneous_overlap_records": 24210
+    },
+    {
+      "csc_fault_records": 1593966,
+      "pair_member_records": 100170,
+      "runtime_shard_id": "phase6h_csc_f4_s138_noise_a9fa54e6253047ec",
+      "sensor_reference_records": 100170,
+      "simultaneous_overlap_records": 75747
+    },
+    {
+      "csc_fault_records": 26142,
+      "pair_member_records": 2475,
+      "runtime_shard_id": "phase6h_csc_f4_s138_orientation_fccffad59e9ba546",
+      "sensor_reference_records": 98598,
+      "simultaneous_overlap_records": 26142
+    },
+    {
+      "csc_fault_records": 1620159,
+      "pair_member_records": 100218,
+      "runtime_shard_id": "phase6h_csc_f4_s138_scale_factor_a647ae3fe560432d",
+      "sensor_reference_records": 100218,
+      "simultaneous_overlap_records": 76134
+    },
+    {
+      "csc_fault_records": 27669,
+      "pair_member_records": 2499,
+      "runtime_shard_id": "phase6h_csc_f4_s138_stuck_channel_59f5fb2184ac5b32",
+      "sensor_reference_records": 6759,
+      "simultaneous_overlap_records": 3654
+    },
+    {
+      "csc_fault_records": 985353,
+      "pair_member_records": 39906,
+      "runtime_shard_id": "phase6h_csc_f4_s15_axis_loss_bdee6cb15e56f9f3",
+      "sensor_reference_records": 39906,
+      "simultaneous_overlap_records": 30294
+    },
+    {
+      "csc_fault_records": 1023846,
+      "pair_member_records": 40023,
+      "runtime_shard_id": "phase6h_csc_f4_s15_bias_26ed5d914e9ef1d9",
+      "sensor_reference_records": 40023,
+      "simultaneous_overlap_records": 30165
+    },
+    {
+      "csc_fault_records": 1015260,
+      "pair_member_records": 39987,
+      "runtime_shard_id": "phase6h_csc_f4_s15_clipping_saturation_7aafe05f6c392b74",
+      "sensor_reference_records": 39987,
+      "simultaneous_overlap_records": 29910
+    },
+    {
+      "csc_fault_records": 11349,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f4_s15_delay_41509a7b9800d58e",
+      "sensor_reference_records": 39672,
+      "simultaneous_overlap_records": 11349
+    },
+    {
+      "csc_fault_records": 9003,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f4_s15_drift_4d75df3dd141cd0c",
+      "sensor_reference_records": 5247,
+      "simultaneous_overlap_records": 1632
+    },
+    {
+      "csc_fault_records": 13050,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f4_s15_dropout_c0c404021f3e839d",
+      "sensor_reference_records": 1893,
+      "simultaneous_overlap_records": 864
+    },
+    {
+      "csc_fault_records": 10326,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f4_s15_frame_loss_573e5cceec00824b",
+      "sensor_reference_records": 1368,
+      "simultaneous_overlap_records": 711
+    },
+    {
+      "csc_fault_records": 11397,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f4_s15_jitter_456d2141ea4b03d0",
+      "sensor_reference_records": 41223,
+      "simultaneous_overlap_records": 11397
+    },
+    {
+      "csc_fault_records": 994896,
+      "pair_member_records": 39879,
+      "runtime_shard_id": "phase6h_csc_f4_s15_noise_d8aba1a1ae5ac7a2",
+      "sensor_reference_records": 39879,
+      "simultaneous_overlap_records": 30039
+    },
+    {
+      "csc_fault_records": 9906,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f4_s15_orientation_78ada2d7eda39fcd",
+      "sensor_reference_records": 40173,
+      "simultaneous_overlap_records": 9906
+    },
+    {
+      "csc_fault_records": 1011300,
+      "pair_member_records": 39948,
+      "runtime_shard_id": "phase6h_csc_f4_s15_scale_factor_1fd8b5195554099d",
+      "sensor_reference_records": 39948,
+      "simultaneous_overlap_records": 30354
+    },
+    {
+      "csc_fault_records": 9012,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f4_s15_stuck_channel_f6b94d44f88d3c62",
+      "sensor_reference_records": 1899,
+      "simultaneous_overlap_records": 927
+    },
+    {
+      "csc_fault_records": 1067235,
+      "pair_member_records": 39441,
+      "runtime_shard_id": "phase6h_csc_f4_s17_axis_loss_5364fa0a9361b076",
+      "sensor_reference_records": 39441,
+      "simultaneous_overlap_records": 29220
+    },
+    {
+      "csc_fault_records": 1053210,
+      "pair_member_records": 39399,
+      "runtime_shard_id": "phase6h_csc_f4_s17_bias_e0ef7aeea12cc22e",
+      "sensor_reference_records": 39399,
+      "simultaneous_overlap_records": 29442
+    },
+    {
+      "csc_fault_records": 1069224,
+      "pair_member_records": 39738,
+      "runtime_shard_id": "phase6h_csc_f4_s17_clipping_saturation_683586ff3f3ab6e2",
+      "sensor_reference_records": 39738,
+      "simultaneous_overlap_records": 29934
+    },
+    {
+      "csc_fault_records": 11046,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f4_s17_delay_0abb01bf2e8dfb5d",
+      "sensor_reference_records": 40587,
+      "simultaneous_overlap_records": 11046
+    },
+    {
+      "csc_fault_records": 9675,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f4_s17_drift_f3ca0d521c1d5a01",
+      "sensor_reference_records": 5409,
+      "simultaneous_overlap_records": 2016
+    },
+    {
+      "csc_fault_records": 8142,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f4_s17_dropout_257928b58fdc7688",
+      "sensor_reference_records": 1983,
+      "simultaneous_overlap_records": 879
+    },
+    {
+      "csc_fault_records": 13449,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f4_s17_frame_loss_5d821a242e517dc1",
+      "sensor_reference_records": 1416,
+      "simultaneous_overlap_records": 696
+    },
+    {
+      "csc_fault_records": 10245,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f4_s17_jitter_dbc4cbf2c5eec8c5",
+      "sensor_reference_records": 39915,
+      "simultaneous_overlap_records": 10245
+    },
+    {
+      "csc_fault_records": 1120995,
+      "pair_member_records": 39729,
+      "runtime_shard_id": "phase6h_csc_f4_s17_noise_e786f70df86c2de1",
+      "sensor_reference_records": 39729,
+      "simultaneous_overlap_records": 29523
+    },
+    {
+      "csc_fault_records": 7950,
+      "pair_member_records": 654,
+      "runtime_shard_id": "phase6h_csc_f4_s17_orientation_9143e3a37e8c0063",
+      "sensor_reference_records": 36957,
+      "simultaneous_overlap_records": 7950
+    },
+    {
+      "csc_fault_records": 1073067,
+      "pair_member_records": 39540,
+      "runtime_shard_id": "phase6h_csc_f4_s17_scale_factor_8b2cd9dd96ce99f9",
+      "sensor_reference_records": 39540,
+      "simultaneous_overlap_records": 29532
+    },
+    {
+      "csc_fault_records": 10968,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f4_s17_stuck_channel_b8bce0804ea56aeb",
+      "sensor_reference_records": 1893,
+      "simultaneous_overlap_records": 906
+    },
+    {
+      "csc_fault_records": 1023165,
+      "pair_member_records": 39345,
+      "runtime_shard_id": "phase6h_csc_f4_s23_axis_loss_05974cbc819aa669",
+      "sensor_reference_records": 39345,
+      "simultaneous_overlap_records": 29739
+    },
+    {
+      "csc_fault_records": 1063068,
+      "pair_member_records": 39261,
+      "runtime_shard_id": "phase6h_csc_f4_s23_bias_f816092895347725",
+      "sensor_reference_records": 39261,
+      "simultaneous_overlap_records": 29598
+    },
+    {
+      "csc_fault_records": 1061928,
+      "pair_member_records": 39375,
+      "runtime_shard_id": "phase6h_csc_f4_s23_clipping_saturation_e81f3cc3d058b434",
+      "sensor_reference_records": 39375,
+      "simultaneous_overlap_records": 29775
+    },
+    {
+      "csc_fault_records": 9951,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f4_s23_delay_b0d7a3e2eef38664",
+      "sensor_reference_records": 39117,
+      "simultaneous_overlap_records": 9951
+    },
+    {
+      "csc_fault_records": 11799,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f4_s23_drift_816345cfabcd9a21",
+      "sensor_reference_records": 5250,
+      "simultaneous_overlap_records": 2037
+    },
+    {
+      "csc_fault_records": 11280,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f4_s23_dropout_d2b7fed71c996c54",
+      "sensor_reference_records": 1902,
+      "simultaneous_overlap_records": 879
+    },
+    {
+      "csc_fault_records": 8061,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f4_s23_frame_loss_6d57497e89d73567",
+      "sensor_reference_records": 1377,
+      "simultaneous_overlap_records": 711
+    },
+    {
+      "csc_fault_records": 10752,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f4_s23_jitter_5a8bedcfe6338b98",
+      "sensor_reference_records": 39051,
+      "simultaneous_overlap_records": 10752
+    },
+    {
+      "csc_fault_records": 1060329,
+      "pair_member_records": 39273,
+      "runtime_shard_id": "phase6h_csc_f4_s23_noise_52b518c2ab36305b",
+      "sensor_reference_records": 39273,
+      "simultaneous_overlap_records": 29736
+    },
+    {
+      "csc_fault_records": 12441,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f4_s23_orientation_fe5143d31b7e94a5",
+      "sensor_reference_records": 39009,
+      "simultaneous_overlap_records": 12441
+    },
+    {
+      "csc_fault_records": 1025193,
+      "pair_member_records": 39327,
+      "runtime_shard_id": "phase6h_csc_f4_s23_scale_factor_e348c924bece0128",
+      "sensor_reference_records": 39327,
+      "simultaneous_overlap_records": 29811
+    },
+    {
+      "csc_fault_records": 12423,
+      "pair_member_records": 663,
+      "runtime_shard_id": "phase6h_csc_f4_s23_stuck_channel_b97cc2df5743eee8",
+      "sensor_reference_records": 1866,
+      "simultaneous_overlap_records": 1020
+    },
+    {
+      "csc_fault_records": 799320,
+      "pair_member_records": 36162,
+      "runtime_shard_id": "phase6h_csc_f4_s26_axis_loss_59060d2faf54145a",
+      "sensor_reference_records": 36162,
+      "simultaneous_overlap_records": 26898
+    },
+    {
+      "csc_fault_records": 793707,
+      "pair_member_records": 36012,
+      "runtime_shard_id": "phase6h_csc_f4_s26_bias_b0c4feb744c1e190",
+      "sensor_reference_records": 36012,
+      "simultaneous_overlap_records": 27057
+    },
+    {
+      "csc_fault_records": 779928,
+      "pair_member_records": 36108,
+      "runtime_shard_id": "phase6h_csc_f4_s26_clipping_saturation_93f3f6446d36b057",
+      "sensor_reference_records": 36108,
+      "simultaneous_overlap_records": 27072
+    },
+    {
+      "csc_fault_records": 7647,
+      "pair_member_records": 663,
+      "runtime_shard_id": "phase6h_csc_f4_s26_delay_4d70a2078c9ad35b",
+      "sensor_reference_records": 34749,
+      "simultaneous_overlap_records": 7647
+    },
+    {
+      "csc_fault_records": 7980,
+      "pair_member_records": 663,
+      "runtime_shard_id": "phase6h_csc_f4_s26_drift_48a2ab2995549157",
+      "sensor_reference_records": 5193,
+      "simultaneous_overlap_records": 1821
+    },
+    {
+      "csc_fault_records": 12381,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f4_s26_dropout_fe0158f82be07e23",
+      "sensor_reference_records": 1986,
+      "simultaneous_overlap_records": 900
+    },
+    {
+      "csc_fault_records": 7017,
+      "pair_member_records": 654,
+      "runtime_shard_id": "phase6h_csc_f4_s26_frame_loss_6d5b31bb24cdcb85",
+      "sensor_reference_records": 1329,
+      "simultaneous_overlap_records": 651
+    },
+    {
+      "csc_fault_records": 9069,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f4_s26_jitter_703d57cbc8b2d758",
+      "sensor_reference_records": 35658,
+      "simultaneous_overlap_records": 9069
+    },
+    {
+      "csc_fault_records": 806253,
+      "pair_member_records": 36060,
+      "runtime_shard_id": "phase6h_csc_f4_s26_noise_478e5238577925da",
+      "sensor_reference_records": 36060,
+      "simultaneous_overlap_records": 27189
+    },
+    {
+      "csc_fault_records": 7998,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f4_s26_orientation_16736453c6f6af56",
+      "sensor_reference_records": 36432,
+      "simultaneous_overlap_records": 7998
+    },
+    {
+      "csc_fault_records": 784734,
+      "pair_member_records": 36189,
+      "runtime_shard_id": "phase6h_csc_f4_s26_scale_factor_7b64c1b17c1c234d",
+      "sensor_reference_records": 36189,
+      "simultaneous_overlap_records": 27462
+    },
+    {
+      "csc_fault_records": 9429,
+      "pair_member_records": 663,
+      "runtime_shard_id": "phase6h_csc_f4_s26_stuck_channel_e538d42cd59f245c",
+      "sensor_reference_records": 1836,
+      "simultaneous_overlap_records": 891
+    },
+    {
+      "csc_fault_records": 885939,
+      "pair_member_records": 34902,
+      "runtime_shard_id": "phase6h_csc_f4_s32_axis_loss_8caa4e8ab2762409",
+      "sensor_reference_records": 34902,
+      "simultaneous_overlap_records": 26793
+    },
+    {
+      "csc_fault_records": 922893,
+      "pair_member_records": 34980,
+      "runtime_shard_id": "phase6h_csc_f4_s32_bias_f3346d579437d294",
+      "sensor_reference_records": 34980,
+      "simultaneous_overlap_records": 26574
+    },
+    {
+      "csc_fault_records": 885627,
+      "pair_member_records": 34755,
+      "runtime_shard_id": "phase6h_csc_f4_s32_clipping_saturation_e811d3345295572a",
+      "sensor_reference_records": 34755,
+      "simultaneous_overlap_records": 26472
+    },
+    {
+      "csc_fault_records": 8124,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f4_s32_delay_ffa1641ccf8dc0b6",
+      "sensor_reference_records": 34062,
+      "simultaneous_overlap_records": 8124
+    },
+    {
+      "csc_fault_records": 8733,
+      "pair_member_records": 657,
+      "runtime_shard_id": "phase6h_csc_f4_s32_drift_8426a8be6c2d5050",
+      "sensor_reference_records": 5184,
+      "simultaneous_overlap_records": 1920
+    },
+    {
+      "csc_fault_records": 10014,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f4_s32_dropout_627480eb20f877aa",
+      "sensor_reference_records": 1950,
+      "simultaneous_overlap_records": 825
+    },
+    {
+      "csc_fault_records": 10509,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f4_s32_frame_loss_f1b1b72dbd229b99",
+      "sensor_reference_records": 1392,
+      "simultaneous_overlap_records": 705
+    },
+    {
+      "csc_fault_records": 11739,
+      "pair_member_records": 684,
+      "runtime_shard_id": "phase6h_csc_f4_s32_jitter_91aa2b594504c022",
+      "sensor_reference_records": 35727,
+      "simultaneous_overlap_records": 11739
+    },
+    {
+      "csc_fault_records": 924147,
+      "pair_member_records": 34797,
+      "runtime_shard_id": "phase6h_csc_f4_s32_noise_aca2f92fe65833fc",
+      "sensor_reference_records": 34797,
+      "simultaneous_overlap_records": 26391
+    },
+    {
+      "csc_fault_records": 10329,
+      "pair_member_records": 660,
+      "runtime_shard_id": "phase6h_csc_f4_s32_orientation_776a4113b62f3954",
+      "sensor_reference_records": 34890,
+      "simultaneous_overlap_records": 10329
+    },
+    {
+      "csc_fault_records": 899184,
+      "pair_member_records": 34938,
+      "runtime_shard_id": "phase6h_csc_f4_s32_scale_factor_e0f34cb1da75b5ad",
+      "sensor_reference_records": 34938,
+      "simultaneous_overlap_records": 26727
+    },
+    {
+      "csc_fault_records": 10293,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f4_s32_stuck_channel_f04c68af4d82fd2d",
+      "sensor_reference_records": 1962,
+      "simultaneous_overlap_records": 939
+    },
+    {
+      "csc_fault_records": 1037604,
+      "pair_member_records": 41280,
+      "runtime_shard_id": "phase6h_csc_f4_s34_axis_loss_989fa9ce863c0401",
+      "sensor_reference_records": 41280,
+      "simultaneous_overlap_records": 31227
+    },
+    {
+      "csc_fault_records": 1033104,
+      "pair_member_records": 40956,
+      "runtime_shard_id": "phase6h_csc_f4_s34_bias_3b24c9fbc13c4991",
+      "sensor_reference_records": 40956,
+      "simultaneous_overlap_records": 30930
+    },
+    {
+      "csc_fault_records": 1032669,
+      "pair_member_records": 40791,
+      "runtime_shard_id": "phase6h_csc_f4_s34_clipping_saturation_4561b5f53cf57aea",
+      "sensor_reference_records": 40791,
+      "simultaneous_overlap_records": 30819
+    },
+    {
+      "csc_fault_records": 12249,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f4_s34_delay_c62b48bdba9988ff",
+      "sensor_reference_records": 39456,
+      "simultaneous_overlap_records": 12249
+    },
+    {
+      "csc_fault_records": 7887,
+      "pair_member_records": 648,
+      "runtime_shard_id": "phase6h_csc_f4_s34_drift_769b4838a04ecc12",
+      "sensor_reference_records": 5322,
+      "simultaneous_overlap_records": 1728
+    },
+    {
+      "csc_fault_records": 10233,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f4_s34_dropout_ff7c4dd8549879d0",
+      "sensor_reference_records": 1956,
+      "simultaneous_overlap_records": 828
+    },
+    {
+      "csc_fault_records": 10131,
+      "pair_member_records": 639,
+      "runtime_shard_id": "phase6h_csc_f4_s34_frame_loss_1db3fc1c5e970abc",
+      "sensor_reference_records": 1293,
+      "simultaneous_overlap_records": 567
+    },
+    {
+      "csc_fault_records": 11760,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f4_s34_jitter_b92ce35dbf70eb53",
+      "sensor_reference_records": 42633,
+      "simultaneous_overlap_records": 11760
+    },
+    {
+      "csc_fault_records": 1034850,
+      "pair_member_records": 41019,
+      "runtime_shard_id": "phase6h_csc_f4_s34_noise_5b21cbe24281cd36",
+      "sensor_reference_records": 41019,
+      "simultaneous_overlap_records": 31200
+    },
+    {
+      "csc_fault_records": 8481,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f4_s34_orientation_f4d994b1fa6b5cf9",
+      "sensor_reference_records": 41226,
+      "simultaneous_overlap_records": 8481
+    },
+    {
+      "csc_fault_records": 1017501,
+      "pair_member_records": 40863,
+      "runtime_shard_id": "phase6h_csc_f4_s34_scale_factor_8041fd9b62cc8dd3",
+      "sensor_reference_records": 40863,
+      "simultaneous_overlap_records": 31101
+    },
+    {
+      "csc_fault_records": 11583,
+      "pair_member_records": 699,
+      "runtime_shard_id": "phase6h_csc_f4_s34_stuck_channel_e1ec9bcf98748576",
+      "sensor_reference_records": 2022,
+      "simultaneous_overlap_records": 990
+    },
+    {
+      "csc_fault_records": 1959666,
+      "pair_member_records": 108588,
+      "runtime_shard_id": "phase6h_csc_f5_s111_axis_loss_52ce6d5c9acb78c7",
+      "sensor_reference_records": 108588,
+      "simultaneous_overlap_records": 82089
+    },
+    {
+      "csc_fault_records": 1966344,
+      "pair_member_records": 108999,
+      "runtime_shard_id": "phase6h_csc_f5_s111_bias_4e8d3c6e65a45ae4",
+      "sensor_reference_records": 108999,
+      "simultaneous_overlap_records": 82011
+    },
+    {
+      "csc_fault_records": 2034693,
+      "pair_member_records": 109092,
+      "runtime_shard_id": "phase6h_csc_f5_s111_clipping_saturation_4726923d39576ff9",
+      "sensor_reference_records": 109092,
+      "simultaneous_overlap_records": 82608
+    },
+    {
+      "csc_fault_records": 27948,
+      "pair_member_records": 2517,
+      "runtime_shard_id": "phase6h_csc_f5_s111_delay_cc487025eaa34717",
+      "sensor_reference_records": 109995,
+      "simultaneous_overlap_records": 27948
+    },
+    {
+      "csc_fault_records": 31605,
+      "pair_member_records": 2514,
+      "runtime_shard_id": "phase6h_csc_f5_s111_drift_765b64a233abb26d",
+      "sensor_reference_records": 15921,
+      "simultaneous_overlap_records": 6333
+    },
+    {
+      "csc_fault_records": 24801,
+      "pair_member_records": 2499,
+      "runtime_shard_id": "phase6h_csc_f5_s111_dropout_33008c373b360414",
+      "sensor_reference_records": 7140,
+      "simultaneous_overlap_records": 3102
+    },
+    {
+      "csc_fault_records": 30375,
+      "pair_member_records": 2523,
+      "runtime_shard_id": "phase6h_csc_f5_s111_frame_loss_6b0d0b077eb09a48",
+      "sensor_reference_records": 5103,
+      "simultaneous_overlap_records": 2445
+    },
+    {
+      "csc_fault_records": 27447,
+      "pair_member_records": 2487,
+      "runtime_shard_id": "phase6h_csc_f5_s111_jitter_0a8635ec00635b6d",
+      "sensor_reference_records": 107703,
+      "simultaneous_overlap_records": 27447
+    },
+    {
+      "csc_fault_records": 1987893,
+      "pair_member_records": 108933,
+      "runtime_shard_id": "phase6h_csc_f5_s111_noise_d8fef5370f916a1c",
+      "sensor_reference_records": 108933,
+      "simultaneous_overlap_records": 82347
+    },
+    {
+      "csc_fault_records": 27459,
+      "pair_member_records": 2484,
+      "runtime_shard_id": "phase6h_csc_f5_s111_orientation_deaa2be32ce5e1da",
+      "sensor_reference_records": 108534,
+      "simultaneous_overlap_records": 27459
+    },
+    {
+      "csc_fault_records": 1977492,
+      "pair_member_records": 108798,
+      "runtime_shard_id": "phase6h_csc_f5_s111_scale_factor_ee97b7b189cddf3c",
+      "sensor_reference_records": 108798,
+      "simultaneous_overlap_records": 81855
+    },
+    {
+      "csc_fault_records": 29634,
+      "pair_member_records": 2163,
+      "runtime_shard_id": "phase6h_csc_f5_s111_stuck_channel_f8cbcb7fd5f7647b",
+      "sensor_reference_records": 5838,
+      "simultaneous_overlap_records": 3123
+    },
+    {
+      "csc_fault_records": 1864341,
+      "pair_member_records": 101121,
+      "runtime_shard_id": "phase6h_csc_f5_s114_axis_loss_343857839f52035b",
+      "sensor_reference_records": 101121,
+      "simultaneous_overlap_records": 76527
+    },
+    {
+      "csc_fault_records": 1810524,
+      "pair_member_records": 101193,
+      "runtime_shard_id": "phase6h_csc_f5_s114_bias_bd672946c471e0b8",
+      "sensor_reference_records": 101193,
+      "simultaneous_overlap_records": 77076
+    },
+    {
+      "csc_fault_records": 1826199,
+      "pair_member_records": 101316,
+      "runtime_shard_id": "phase6h_csc_f5_s114_clipping_saturation_6bfc6f2a25ec2d20",
+      "sensor_reference_records": 101316,
+      "simultaneous_overlap_records": 76770
+    },
+    {
+      "csc_fault_records": 24318,
+      "pair_member_records": 2463,
+      "runtime_shard_id": "phase6h_csc_f5_s114_delay_0065b70c5b82a824",
+      "sensor_reference_records": 99102,
+      "simultaneous_overlap_records": 24318
+    },
+    {
+      "csc_fault_records": 28926,
+      "pair_member_records": 2490,
+      "runtime_shard_id": "phase6h_csc_f5_s114_drift_7097feb4d15c821b",
+      "sensor_reference_records": 16449,
+      "simultaneous_overlap_records": 6849
+    },
+    {
+      "csc_fault_records": 28428,
+      "pair_member_records": 2514,
+      "runtime_shard_id": "phase6h_csc_f5_s114_dropout_b691f3e298db332f",
+      "sensor_reference_records": 7125,
+      "simultaneous_overlap_records": 3183
+    },
+    {
+      "csc_fault_records": 26883,
+      "pair_member_records": 2532,
+      "runtime_shard_id": "phase6h_csc_f5_s114_frame_loss_cdb4c4b8716d901f",
+      "sensor_reference_records": 5283,
+      "simultaneous_overlap_records": 2592
+    },
+    {
+      "csc_fault_records": 29664,
+      "pair_member_records": 2460,
+      "runtime_shard_id": "phase6h_csc_f5_s114_jitter_5c28274039088fab",
+      "sensor_reference_records": 101583,
+      "simultaneous_overlap_records": 29664
+    },
+    {
+      "csc_fault_records": 1810689,
+      "pair_member_records": 100914,
+      "runtime_shard_id": "phase6h_csc_f5_s114_noise_cff5a7a1be70f95b",
+      "sensor_reference_records": 100914,
+      "simultaneous_overlap_records": 77109
+    },
+    {
+      "csc_fault_records": 29661,
+      "pair_member_records": 2460,
+      "runtime_shard_id": "phase6h_csc_f5_s114_orientation_00ab3d366af869d1",
+      "sensor_reference_records": 99888,
+      "simultaneous_overlap_records": 29661
+    },
+    {
+      "csc_fault_records": 1805106,
+      "pair_member_records": 101184,
+      "runtime_shard_id": "phase6h_csc_f5_s114_scale_factor_2f495a4bb75aecff",
+      "sensor_reference_records": 101184,
+      "simultaneous_overlap_records": 77229
+    },
+    {
+      "csc_fault_records": 28470,
+      "pair_member_records": 2235,
+      "runtime_shard_id": "phase6h_csc_f5_s114_stuck_channel_efc351c63b42a973",
+      "sensor_reference_records": 5826,
+      "simultaneous_overlap_records": 3054
+    },
+    {
+      "csc_fault_records": 1713660,
+      "pair_member_records": 103542,
+      "runtime_shard_id": "phase6h_csc_f5_s118_axis_loss_437559eb5892fba5",
+      "sensor_reference_records": 103542,
+      "simultaneous_overlap_records": 78201
+    },
+    {
+      "csc_fault_records": 1737738,
+      "pair_member_records": 103563,
+      "runtime_shard_id": "phase6h_csc_f5_s118_bias_9bf4d86ba0c5bdd7",
+      "sensor_reference_records": 103563,
+      "simultaneous_overlap_records": 78243
+    },
+    {
+      "csc_fault_records": 1744683,
+      "pair_member_records": 103314,
+      "runtime_shard_id": "phase6h_csc_f5_s118_clipping_saturation_d363b918d2aa3830",
+      "sensor_reference_records": 103314,
+      "simultaneous_overlap_records": 78000
+    },
+    {
+      "csc_fault_records": 24129,
+      "pair_member_records": 2466,
+      "runtime_shard_id": "phase6h_csc_f5_s118_delay_59b4d659f75e5d56",
+      "sensor_reference_records": 102363,
+      "simultaneous_overlap_records": 24129
+    },
+    {
+      "csc_fault_records": 28140,
+      "pair_member_records": 2463,
+      "runtime_shard_id": "phase6h_csc_f5_s118_drift_507b690ec49c0dbb",
+      "sensor_reference_records": 15891,
+      "simultaneous_overlap_records": 6099
+    },
+    {
+      "csc_fault_records": 31026,
+      "pair_member_records": 2511,
+      "runtime_shard_id": "phase6h_csc_f5_s118_dropout_27bd2fc2d5d241ab",
+      "sensor_reference_records": 7149,
+      "simultaneous_overlap_records": 3219
+    },
+    {
+      "csc_fault_records": 28389,
+      "pair_member_records": 2493,
+      "runtime_shard_id": "phase6h_csc_f5_s118_frame_loss_adfd5c5c5bdecf7c",
+      "sensor_reference_records": 5151,
+      "simultaneous_overlap_records": 2493
+    },
+    {
+      "csc_fault_records": 29676,
+      "pair_member_records": 2454,
+      "runtime_shard_id": "phase6h_csc_f5_s118_jitter_85da6ba63f623dcf",
+      "sensor_reference_records": 102135,
+      "simultaneous_overlap_records": 29676
+    },
+    {
+      "csc_fault_records": 1746723,
+      "pair_member_records": 103200,
+      "runtime_shard_id": "phase6h_csc_f5_s118_noise_20b9bc85879ea13f",
+      "sensor_reference_records": 103200,
+      "simultaneous_overlap_records": 77946
+    },
+    {
+      "csc_fault_records": 25368,
+      "pair_member_records": 2472,
+      "runtime_shard_id": "phase6h_csc_f5_s118_orientation_0a64fd37b2ef9551",
+      "sensor_reference_records": 102237,
+      "simultaneous_overlap_records": 25368
+    },
+    {
+      "csc_fault_records": 1692273,
+      "pair_member_records": 103311,
+      "runtime_shard_id": "phase6h_csc_f5_s118_scale_factor_f2adeae99da4126d",
+      "sensor_reference_records": 103311,
+      "simultaneous_overlap_records": 77745
+    },
+    {
+      "csc_fault_records": 28638,
+      "pair_member_records": 2175,
+      "runtime_shard_id": "phase6h_csc_f5_s118_stuck_channel_f66761fb27f82f54",
+      "sensor_reference_records": 5874,
+      "simultaneous_overlap_records": 3189
+    },
+    {
+      "csc_fault_records": 1653276,
+      "pair_member_records": 98166,
+      "runtime_shard_id": "phase6h_csc_f5_s121_axis_loss_9f1be792ad5c0d2b",
+      "sensor_reference_records": 98166,
+      "simultaneous_overlap_records": 74313
+    },
+    {
+      "csc_fault_records": 1601319,
+      "pair_member_records": 97746,
+      "runtime_shard_id": "phase6h_csc_f5_s121_bias_54e6a7a59bd1ebc6",
+      "sensor_reference_records": 97746,
+      "simultaneous_overlap_records": 73965
+    },
+    {
+      "csc_fault_records": 1570416,
+      "pair_member_records": 97701,
+      "runtime_shard_id": "phase6h_csc_f5_s121_clipping_saturation_ed920870d936de7c",
+      "sensor_reference_records": 97701,
+      "simultaneous_overlap_records": 73725
+    },
+    {
+      "csc_fault_records": 29256,
+      "pair_member_records": 2487,
+      "runtime_shard_id": "phase6h_csc_f5_s121_delay_d0c60e6276d37d3c",
+      "sensor_reference_records": 97980,
+      "simultaneous_overlap_records": 29256
+    },
+    {
+      "csc_fault_records": 24366,
+      "pair_member_records": 2454,
+      "runtime_shard_id": "phase6h_csc_f5_s121_drift_682f0d6bb2f4ac1e",
+      "sensor_reference_records": 16308,
+      "simultaneous_overlap_records": 5691
+    },
+    {
+      "csc_fault_records": 24816,
+      "pair_member_records": 2505,
+      "runtime_shard_id": "phase6h_csc_f5_s121_dropout_2fae5758d5a434a1",
+      "sensor_reference_records": 6993,
+      "simultaneous_overlap_records": 3099
+    },
+    {
+      "csc_fault_records": 28281,
+      "pair_member_records": 2484,
+      "runtime_shard_id": "phase6h_csc_f5_s121_frame_loss_85e108a7b19749bd",
+      "sensor_reference_records": 4998,
+      "simultaneous_overlap_records": 2523
+    },
+    {
+      "csc_fault_records": 25050,
+      "pair_member_records": 2490,
+      "runtime_shard_id": "phase6h_csc_f5_s121_jitter_8bda30631860dbc4",
+      "sensor_reference_records": 96333,
+      "simultaneous_overlap_records": 25050
+    },
+    {
+      "csc_fault_records": 1585572,
+      "pair_member_records": 97377,
+      "runtime_shard_id": "phase6h_csc_f5_s121_noise_eaf965d420c8cead",
+      "sensor_reference_records": 97377,
+      "simultaneous_overlap_records": 74247
+    },
+    {
+      "csc_fault_records": 28272,
+      "pair_member_records": 2484,
+      "runtime_shard_id": "phase6h_csc_f5_s121_orientation_a1e867bc0871a0b1",
+      "sensor_reference_records": 97032,
+      "simultaneous_overlap_records": 28272
+    },
+    {
+      "csc_fault_records": 1588551,
+      "pair_member_records": 97695,
+      "runtime_shard_id": "phase6h_csc_f5_s121_scale_factor_1720abaf00ef393b",
+      "sensor_reference_records": 97695,
+      "simultaneous_overlap_records": 74121
+    },
+    {
+      "csc_fault_records": 23475,
+      "pair_member_records": 2124,
+      "runtime_shard_id": "phase6h_csc_f5_s121_stuck_channel_a108c6736e9d1800",
+      "sensor_reference_records": 5715,
+      "simultaneous_overlap_records": 2883
+    },
+    {
+      "csc_fault_records": 1570191,
+      "pair_member_records": 90894,
+      "runtime_shard_id": "phase6h_csc_f5_s123_axis_loss_703f979145db3ab6",
+      "sensor_reference_records": 90894,
+      "simultaneous_overlap_records": 68823
+    },
+    {
+      "csc_fault_records": 1570254,
+      "pair_member_records": 90741,
+      "runtime_shard_id": "phase6h_csc_f5_s123_bias_ae235636015a9fd5",
+      "sensor_reference_records": 90741,
+      "simultaneous_overlap_records": 69054
+    },
+    {
+      "csc_fault_records": 1561338,
+      "pair_member_records": 91431,
+      "runtime_shard_id": "phase6h_csc_f5_s123_clipping_saturation_19b4e6ce1d9ffa04",
+      "sensor_reference_records": 91431,
+      "simultaneous_overlap_records": 69336
+    },
+    {
+      "csc_fault_records": 25605,
+      "pair_member_records": 2538,
+      "runtime_shard_id": "phase6h_csc_f5_s123_delay_6604c930dc59fb2b",
+      "sensor_reference_records": 92592,
+      "simultaneous_overlap_records": 25605
+    },
+    {
+      "csc_fault_records": 26904,
+      "pair_member_records": 2451,
+      "runtime_shard_id": "phase6h_csc_f5_s123_drift_c2cc249cec325a4f",
+      "sensor_reference_records": 15669,
+      "simultaneous_overlap_records": 6186
+    },
+    {
+      "csc_fault_records": 27189,
+      "pair_member_records": 2577,
+      "runtime_shard_id": "phase6h_csc_f5_s123_dropout_52a1f639b3c82231",
+      "sensor_reference_records": 7284,
+      "simultaneous_overlap_records": 3210
+    },
+    {
+      "csc_fault_records": 25314,
+      "pair_member_records": 2463,
+      "runtime_shard_id": "phase6h_csc_f5_s123_frame_loss_ddd09e764078889a",
+      "sensor_reference_records": 5052,
+      "simultaneous_overlap_records": 2535
+    },
+    {
+      "csc_fault_records": 25434,
+      "pair_member_records": 2511,
+      "runtime_shard_id": "phase6h_csc_f5_s123_jitter_acacef6ba38d0849",
+      "sensor_reference_records": 90768,
+      "simultaneous_overlap_records": 25434
+    },
+    {
+      "csc_fault_records": 1576611,
+      "pair_member_records": 91197,
+      "runtime_shard_id": "phase6h_csc_f5_s123_noise_53613e24d3cc04a2",
+      "sensor_reference_records": 91197,
+      "simultaneous_overlap_records": 69699
+    },
+    {
+      "csc_fault_records": 25050,
+      "pair_member_records": 2538,
+      "runtime_shard_id": "phase6h_csc_f5_s123_orientation_433a67d30194477e",
+      "sensor_reference_records": 92850,
+      "simultaneous_overlap_records": 25050
+    },
+    {
+      "csc_fault_records": 1539612,
+      "pair_member_records": 90939,
+      "runtime_shard_id": "phase6h_csc_f5_s123_scale_factor_52daa054d684232a",
+      "sensor_reference_records": 90939,
+      "simultaneous_overlap_records": 68958
+    },
+    {
+      "csc_fault_records": 20292,
+      "pair_member_records": 2076,
+      "runtime_shard_id": "phase6h_csc_f5_s123_stuck_channel_d8f461a2494f1932",
+      "sensor_reference_records": 5697,
+      "simultaneous_overlap_records": 2835
+    },
+    {
+      "csc_fault_records": 1791363,
+      "pair_member_records": 102630,
+      "runtime_shard_id": "phase6h_csc_f5_s125_axis_loss_9803ec85ecfdbc6a",
+      "sensor_reference_records": 102630,
+      "simultaneous_overlap_records": 77646
+    },
+    {
+      "csc_fault_records": 1836096,
+      "pair_member_records": 102939,
+      "runtime_shard_id": "phase6h_csc_f5_s125_bias_db29e1186f4db238",
+      "sensor_reference_records": 102939,
+      "simultaneous_overlap_records": 78597
+    },
+    {
+      "csc_fault_records": 1804584,
+      "pair_member_records": 102699,
+      "runtime_shard_id": "phase6h_csc_f5_s125_clipping_saturation_55613249ab059396",
+      "sensor_reference_records": 102699,
+      "simultaneous_overlap_records": 77271
+    },
+    {
+      "csc_fault_records": 26055,
+      "pair_member_records": 2487,
+      "runtime_shard_id": "phase6h_csc_f5_s125_delay_2df8fbde441025d6",
+      "sensor_reference_records": 101247,
+      "simultaneous_overlap_records": 26055
+    },
+    {
+      "csc_fault_records": 25305,
+      "pair_member_records": 2535,
+      "runtime_shard_id": "phase6h_csc_f5_s125_drift_c807671493fd0249",
+      "sensor_reference_records": 17967,
+      "simultaneous_overlap_records": 6723
+    },
+    {
+      "csc_fault_records": 25386,
+      "pair_member_records": 2535,
+      "runtime_shard_id": "phase6h_csc_f5_s125_dropout_680cc5626b309e2e",
+      "sensor_reference_records": 7227,
+      "simultaneous_overlap_records": 2898
+    },
+    {
+      "csc_fault_records": 27942,
+      "pair_member_records": 2448,
+      "runtime_shard_id": "phase6h_csc_f5_s125_frame_loss_744b625fe128b598",
+      "sensor_reference_records": 4977,
+      "simultaneous_overlap_records": 2565
+    },
+    {
+      "csc_fault_records": 26847,
+      "pair_member_records": 2532,
+      "runtime_shard_id": "phase6h_csc_f5_s125_jitter_37adf2ea17a5554d",
+      "sensor_reference_records": 103899,
+      "simultaneous_overlap_records": 26847
+    },
+    {
+      "csc_fault_records": 1772370,
+      "pair_member_records": 102639,
+      "runtime_shard_id": "phase6h_csc_f5_s125_noise_c03f98d5d3725044",
+      "sensor_reference_records": 102639,
+      "simultaneous_overlap_records": 77643
+    },
+    {
+      "csc_fault_records": 28689,
+      "pair_member_records": 2511,
+      "runtime_shard_id": "phase6h_csc_f5_s125_orientation_1c60543c01f5f34f",
+      "sensor_reference_records": 101508,
+      "simultaneous_overlap_records": 28689
+    },
+    {
+      "csc_fault_records": 1787196,
+      "pair_member_records": 102891,
+      "runtime_shard_id": "phase6h_csc_f5_s125_scale_factor_574a6119443e5937",
+      "sensor_reference_records": 102891,
+      "simultaneous_overlap_records": 78303
+    },
+    {
+      "csc_fault_records": 26964,
+      "pair_member_records": 2403,
+      "runtime_shard_id": "phase6h_csc_f5_s125_stuck_channel_f37824f877d11ea1",
+      "sensor_reference_records": 6657,
+      "simultaneous_overlap_records": 3351
+    },
+    {
+      "csc_fault_records": 1443018,
+      "pair_member_records": 92997,
+      "runtime_shard_id": "phase6h_csc_f5_s130_axis_loss_eec97790f8417afa",
+      "sensor_reference_records": 92997,
+      "simultaneous_overlap_records": 69876
+    },
+    {
+      "csc_fault_records": 1438521,
+      "pair_member_records": 92805,
+      "runtime_shard_id": "phase6h_csc_f5_s130_bias_a87a9c867f500d2e",
+      "sensor_reference_records": 92805,
+      "simultaneous_overlap_records": 69585
+    },
+    {
+      "csc_fault_records": 1464294,
+      "pair_member_records": 92781,
+      "runtime_shard_id": "phase6h_csc_f5_s130_clipping_saturation_c4451f1adab24c41",
+      "sensor_reference_records": 92781,
+      "simultaneous_overlap_records": 69171
+    },
+    {
+      "csc_fault_records": 24546,
+      "pair_member_records": 2421,
+      "runtime_shard_id": "phase6h_csc_f5_s130_delay_41972aadd1d1f871",
+      "sensor_reference_records": 91251,
+      "simultaneous_overlap_records": 24546
+    },
+    {
+      "csc_fault_records": 22623,
+      "pair_member_records": 2499,
+      "runtime_shard_id": "phase6h_csc_f5_s130_drift_e9a5aced32e4b898",
+      "sensor_reference_records": 16995,
+      "simultaneous_overlap_records": 6393
+    },
+    {
+      "csc_fault_records": 22449,
+      "pair_member_records": 2484,
+      "runtime_shard_id": "phase6h_csc_f5_s130_dropout_d7c2bc42fce3446b",
+      "sensor_reference_records": 7173,
+      "simultaneous_overlap_records": 2706
+    },
+    {
+      "csc_fault_records": 22194,
+      "pair_member_records": 2472,
+      "runtime_shard_id": "phase6h_csc_f5_s130_frame_loss_8dfe0bb0e00533d1",
+      "sensor_reference_records": 4998,
+      "simultaneous_overlap_records": 2475
+    },
+    {
+      "csc_fault_records": 22503,
+      "pair_member_records": 2442,
+      "runtime_shard_id": "phase6h_csc_f5_s130_jitter_98dcb31af7d2e8f3",
+      "sensor_reference_records": 91617,
+      "simultaneous_overlap_records": 22503
+    },
+    {
+      "csc_fault_records": 1456176,
+      "pair_member_records": 92532,
+      "runtime_shard_id": "phase6h_csc_f5_s130_noise_f0b29acf0249a866",
+      "sensor_reference_records": 92532,
+      "simultaneous_overlap_records": 69084
+    },
+    {
+      "csc_fault_records": 25365,
+      "pair_member_records": 2484,
+      "runtime_shard_id": "phase6h_csc_f5_s130_orientation_4c7ac6d1495d25f4",
+      "sensor_reference_records": 93261,
+      "simultaneous_overlap_records": 25365
+    },
+    {
+      "csc_fault_records": 1402368,
+      "pair_member_records": 92733,
+      "runtime_shard_id": "phase6h_csc_f5_s130_scale_factor_48b7d67bf0a06da5",
+      "sensor_reference_records": 92733,
+      "simultaneous_overlap_records": 70089
+    },
+    {
+      "csc_fault_records": 23385,
+      "pair_member_records": 2280,
+      "runtime_shard_id": "phase6h_csc_f5_s130_stuck_channel_2903049b5691ab0f",
+      "sensor_reference_records": 6084,
+      "simultaneous_overlap_records": 2991
+    },
+    {
+      "csc_fault_records": 922209,
+      "pair_member_records": 37482,
+      "runtime_shard_id": "phase6h_csc_f5_s16_axis_loss_113220291b02b7a6",
+      "sensor_reference_records": 37482,
+      "simultaneous_overlap_records": 28596
+    },
+    {
+      "csc_fault_records": 930945,
+      "pair_member_records": 37539,
+      "runtime_shard_id": "phase6h_csc_f5_s16_bias_20a33cc327f06023",
+      "sensor_reference_records": 37539,
+      "simultaneous_overlap_records": 28077
+    },
+    {
+      "csc_fault_records": 931776,
+      "pair_member_records": 37473,
+      "runtime_shard_id": "phase6h_csc_f5_s16_clipping_saturation_0a0a0abb11389d52",
+      "sensor_reference_records": 37473,
+      "simultaneous_overlap_records": 28032
+    },
+    {
+      "csc_fault_records": 7962,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f5_s16_delay_c89094d9ee8d77f2",
+      "sensor_reference_records": 37941,
+      "simultaneous_overlap_records": 7962
+    },
+    {
+      "csc_fault_records": 8913,
+      "pair_member_records": 648,
+      "runtime_shard_id": "phase6h_csc_f5_s16_drift_b9a8b9e299526633",
+      "sensor_reference_records": 5007,
+      "simultaneous_overlap_records": 1851
+    },
+    {
+      "csc_fault_records": 10821,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f5_s16_dropout_8feeb6416ca16e2a",
+      "sensor_reference_records": 2007,
+      "simultaneous_overlap_records": 975
+    },
+    {
+      "csc_fault_records": 11142,
+      "pair_member_records": 645,
+      "runtime_shard_id": "phase6h_csc_f5_s16_frame_loss_a46f6985551c4cac",
+      "sensor_reference_records": 1299,
+      "simultaneous_overlap_records": 627
+    },
+    {
+      "csc_fault_records": 11799,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f5_s16_jitter_90a0139118ecfc49",
+      "sensor_reference_records": 38343,
+      "simultaneous_overlap_records": 11799
+    },
+    {
+      "csc_fault_records": 882300,
+      "pair_member_records": 37497,
+      "runtime_shard_id": "phase6h_csc_f5_s16_noise_dad5b04dd264bb73",
+      "sensor_reference_records": 37497,
+      "simultaneous_overlap_records": 28248
+    },
+    {
+      "csc_fault_records": 9978,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f5_s16_orientation_d93952b802bff9b2",
+      "sensor_reference_records": 37146,
+      "simultaneous_overlap_records": 9978
+    },
+    {
+      "csc_fault_records": 900246,
+      "pair_member_records": 37359,
+      "runtime_shard_id": "phase6h_csc_f5_s16_scale_factor_c4a329de73f4fc1c",
+      "sensor_reference_records": 37359,
+      "simultaneous_overlap_records": 28431
+    },
+    {
+      "csc_fault_records": 9654,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f5_s16_stuck_channel_f49208a65e62f895",
+      "sensor_reference_records": 1854,
+      "simultaneous_overlap_records": 951
+    },
+    {
+      "csc_fault_records": 727041,
+      "pair_member_records": 33945,
+      "runtime_shard_id": "phase6h_csc_f5_s20_axis_loss_832a14a6496ebe22",
+      "sensor_reference_records": 33945,
+      "simultaneous_overlap_records": 24945
+    },
+    {
+      "csc_fault_records": 728829,
+      "pair_member_records": 33918,
+      "runtime_shard_id": "phase6h_csc_f5_s20_bias_e7aaa5f0f1e6a7ba",
+      "sensor_reference_records": 33918,
+      "simultaneous_overlap_records": 25257
+    },
+    {
+      "csc_fault_records": 730377,
+      "pair_member_records": 33813,
+      "runtime_shard_id": "phase6h_csc_f5_s20_clipping_saturation_455abd781120a6d6",
+      "sensor_reference_records": 33813,
+      "simultaneous_overlap_records": 25107
+    },
+    {
+      "csc_fault_records": 9066,
+      "pair_member_records": 699,
+      "runtime_shard_id": "phase6h_csc_f5_s20_delay_c4ea8e186015cc85",
+      "sensor_reference_records": 33339,
+      "simultaneous_overlap_records": 9066
+    },
+    {
+      "csc_fault_records": 7695,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f5_s20_drift_b01dbcff2b8e385a",
+      "sensor_reference_records": 4932,
+      "simultaneous_overlap_records": 1632
+    },
+    {
+      "csc_fault_records": 8283,
+      "pair_member_records": 690,
+      "runtime_shard_id": "phase6h_csc_f5_s20_dropout_5519ccff1fd62d40",
+      "sensor_reference_records": 1941,
+      "simultaneous_overlap_records": 843
+    },
+    {
+      "csc_fault_records": 9975,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f5_s20_frame_loss_8428585ec18c734f",
+      "sensor_reference_records": 1344,
+      "simultaneous_overlap_records": 636
+    },
+    {
+      "csc_fault_records": 9276,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f5_s20_jitter_b4514e952820895c",
+      "sensor_reference_records": 34107,
+      "simultaneous_overlap_records": 9276
+    },
+    {
+      "csc_fault_records": 711510,
+      "pair_member_records": 33693,
+      "runtime_shard_id": "phase6h_csc_f5_s20_noise_013c1baddf695080",
+      "sensor_reference_records": 33693,
+      "simultaneous_overlap_records": 25230
+    },
+    {
+      "csc_fault_records": 9390,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f5_s20_orientation_222a815f0c1ab45c",
+      "sensor_reference_records": 35217,
+      "simultaneous_overlap_records": 9390
+    },
+    {
+      "csc_fault_records": 714975,
+      "pair_member_records": 33885,
+      "runtime_shard_id": "phase6h_csc_f5_s20_scale_factor_8757ea29303b7942",
+      "sensor_reference_records": 33885,
+      "simultaneous_overlap_records": 25524
+    },
+    {
+      "csc_fault_records": 8052,
+      "pair_member_records": 651,
+      "runtime_shard_id": "phase6h_csc_f5_s20_stuck_channel_c2a7db5a7c2e7fa4",
+      "sensor_reference_records": 1779,
+      "simultaneous_overlap_records": 813
+    },
+    {
+      "csc_fault_records": 1015530,
+      "pair_member_records": 38868,
+      "runtime_shard_id": "phase6h_csc_f5_s28_axis_loss_ccb24ba002833789",
+      "sensor_reference_records": 38868,
+      "simultaneous_overlap_records": 29724
+    },
+    {
+      "csc_fault_records": 1020975,
+      "pair_member_records": 38829,
+      "runtime_shard_id": "phase6h_csc_f5_s28_bias_9407ba48316eac7b",
+      "sensor_reference_records": 38829,
+      "simultaneous_overlap_records": 29943
+    },
+    {
+      "csc_fault_records": 1005654,
+      "pair_member_records": 38571,
+      "runtime_shard_id": "phase6h_csc_f5_s28_clipping_saturation_2dd520279755eeb0",
+      "sensor_reference_records": 38571,
+      "simultaneous_overlap_records": 29379
+    },
+    {
+      "csc_fault_records": 10974,
+      "pair_member_records": 708,
+      "runtime_shard_id": "phase6h_csc_f5_s28_delay_7546be07a0abf11d",
+      "sensor_reference_records": 40494,
+      "simultaneous_overlap_records": 10974
+    },
+    {
+      "csc_fault_records": 8547,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f5_s28_drift_b1f904e9021696ab",
+      "sensor_reference_records": 5571,
+      "simultaneous_overlap_records": 1884
+    },
+    {
+      "csc_fault_records": 12903,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f5_s28_dropout_a50975f57f058a15",
+      "sensor_reference_records": 1956,
+      "simultaneous_overlap_records": 858
+    },
+    {
+      "csc_fault_records": 11172,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f5_s28_frame_loss_37bf7e4be5d40b11",
+      "sensor_reference_records": 1425,
+      "simultaneous_overlap_records": 651
+    },
+    {
+      "csc_fault_records": 10260,
+      "pair_member_records": 678,
+      "runtime_shard_id": "phase6h_csc_f5_s28_jitter_a0f51b823b1f3da0",
+      "sensor_reference_records": 38646,
+      "simultaneous_overlap_records": 10260
+    },
+    {
+      "csc_fault_records": 1026918,
+      "pair_member_records": 38988,
+      "runtime_shard_id": "phase6h_csc_f5_s28_noise_4e92d4257997052f",
+      "sensor_reference_records": 38988,
+      "simultaneous_overlap_records": 29670
+    },
+    {
+      "csc_fault_records": 10980,
+      "pair_member_records": 672,
+      "runtime_shard_id": "phase6h_csc_f5_s28_orientation_b40bc656c54ae6b7",
+      "sensor_reference_records": 40056,
+      "simultaneous_overlap_records": 10980
+    },
+    {
+      "csc_fault_records": 1047459,
+      "pair_member_records": 38832,
+      "runtime_shard_id": "phase6h_csc_f5_s28_scale_factor_639d4255871359b8",
+      "sensor_reference_records": 38832,
+      "simultaneous_overlap_records": 29304
+    },
+    {
+      "csc_fault_records": 10776,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f5_s28_stuck_channel_e7998ea5c2e55a6c",
+      "sensor_reference_records": 1893,
+      "simultaneous_overlap_records": 942
+    },
+    {
+      "csc_fault_records": 936747,
+      "pair_member_records": 40059,
+      "runtime_shard_id": "phase6h_csc_f5_s29_axis_loss_21ece98ef04c855d",
+      "sensor_reference_records": 40059,
+      "simultaneous_overlap_records": 29979
+    },
+    {
+      "csc_fault_records": 945948,
+      "pair_member_records": 39870,
+      "runtime_shard_id": "phase6h_csc_f5_s29_bias_aa7d07ef647e8ef4",
+      "sensor_reference_records": 39870,
+      "simultaneous_overlap_records": 29259
+    },
+    {
+      "csc_fault_records": 964173,
+      "pair_member_records": 39831,
+      "runtime_shard_id": "phase6h_csc_f5_s29_clipping_saturation_36870f9bffca640e",
+      "sensor_reference_records": 39831,
+      "simultaneous_overlap_records": 29553
+    },
+    {
+      "csc_fault_records": 9438,
+      "pair_member_records": 687,
+      "runtime_shard_id": "phase6h_csc_f5_s29_delay_d84c0e61d48e5f64",
+      "sensor_reference_records": 41457,
+      "simultaneous_overlap_records": 9438
+    },
+    {
+      "csc_fault_records": 8490,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f5_s29_drift_126f265c49c2addb",
+      "sensor_reference_records": 5223,
+      "simultaneous_overlap_records": 1746
+    },
+    {
+      "csc_fault_records": 7260,
+      "pair_member_records": 648,
+      "runtime_shard_id": "phase6h_csc_f5_s29_dropout_6435332ea0707f4d",
+      "sensor_reference_records": 1839,
+      "simultaneous_overlap_records": 705
+    },
+    {
+      "csc_fault_records": 9039,
+      "pair_member_records": 702,
+      "runtime_shard_id": "phase6h_csc_f5_s29_frame_loss_0743bb5d595082f9",
+      "sensor_reference_records": 1443,
+      "simultaneous_overlap_records": 720
+    },
+    {
+      "csc_fault_records": 13155,
+      "pair_member_records": 681,
+      "runtime_shard_id": "phase6h_csc_f5_s29_jitter_e991638fa7e15ed3",
+      "sensor_reference_records": 41001,
+      "simultaneous_overlap_records": 13155
+    },
+    {
+      "csc_fault_records": 930750,
+      "pair_member_records": 39939,
+      "runtime_shard_id": "phase6h_csc_f5_s29_noise_beecbe602ba97b00",
+      "sensor_reference_records": 39939,
+      "simultaneous_overlap_records": 29796
+    },
+    {
+      "csc_fault_records": 11685,
+      "pair_member_records": 657,
+      "runtime_shard_id": "phase6h_csc_f5_s29_orientation_bff3fd58680ecd4c",
+      "sensor_reference_records": 39816,
+      "simultaneous_overlap_records": 11685
+    },
+    {
+      "csc_fault_records": 934605,
+      "pair_member_records": 39753,
+      "runtime_shard_id": "phase6h_csc_f5_s29_scale_factor_b5b947a99447a425",
+      "sensor_reference_records": 39753,
+      "simultaneous_overlap_records": 29610
+    },
+    {
+      "csc_fault_records": 10728,
+      "pair_member_records": 651,
+      "runtime_shard_id": "phase6h_csc_f5_s29_stuck_channel_17b7d67ed898c1b1",
+      "sensor_reference_records": 1884,
+      "simultaneous_overlap_records": 954
+    },
+    {
+      "csc_fault_records": 1186791,
+      "pair_member_records": 38505,
+      "runtime_shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "sensor_reference_records": 38505,
+      "simultaneous_overlap_records": 29412
+    },
+    {
+      "csc_fault_records": 1131018,
+      "pair_member_records": 38139,
+      "runtime_shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "sensor_reference_records": 38139,
+      "simultaneous_overlap_records": 29109
+    },
+    {
+      "csc_fault_records": 1131612,
+      "pair_member_records": 38205,
+      "runtime_shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "sensor_reference_records": 38205,
+      "simultaneous_overlap_records": 29286
+    },
+    {
+      "csc_fault_records": 10218,
+      "pair_member_records": 669,
+      "runtime_shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "sensor_reference_records": 37191,
+      "simultaneous_overlap_records": 10218
+    },
+    {
+      "csc_fault_records": 11580,
+      "pair_member_records": 612,
+      "runtime_shard_id": "phase6h_csc_f5_s9_drift_a450e5e93b4f3fef",
+      "sensor_reference_records": 4596,
+      "simultaneous_overlap_records": 1695
+    },
+    {
+      "csc_fault_records": 14853,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "sensor_reference_records": 1881,
+      "simultaneous_overlap_records": 900
+    },
+    {
+      "csc_fault_records": 10809,
+      "pair_member_records": 696,
+      "runtime_shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "sensor_reference_records": 1386,
+      "simultaneous_overlap_records": 732
+    },
+    {
+      "csc_fault_records": 11214,
+      "pair_member_records": 675,
+      "runtime_shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "sensor_reference_records": 39960,
+      "simultaneous_overlap_records": 11214
+    },
+    {
+      "csc_fault_records": 1135290,
+      "pair_member_records": 38103,
+      "runtime_shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "sensor_reference_records": 38103,
+      "simultaneous_overlap_records": 28644
+    },
+    {
+      "csc_fault_records": 10572,
+      "pair_member_records": 666,
+      "runtime_shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "sensor_reference_records": 38067,
+      "simultaneous_overlap_records": 10572
+    },
+    {
+      "csc_fault_records": 1111494,
+      "pair_member_records": 38232,
+      "runtime_shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "sensor_reference_records": 38232,
+      "simultaneous_overlap_records": 29106
+    },
+    {
+      "csc_fault_records": 9261,
+      "pair_member_records": 600,
+      "runtime_shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "sensor_reference_records": 1653,
+      "simultaneous_overlap_records": 810
+    }
+  ],
+  "per_shard_physical_overlap_membership_validated": false,
+  "pinned_inputs_sha256": {
+    "configs/evaluation/phase6h_csc_execution_architecture_clarification_v1.json": "7cb6234876506fe8f127ee823550d235a04063643013eb3348d81583fdb88a26",
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "experiments/phase_06/csc_phase6o_synthetic_record_contract_v1.py": "3c0b9a0a6b81ca3a78922f6226f9991b63c4a2d460e1d9b26ca0580f78a4f168",
+    "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_numeric_workload_report_v1.json": "e9b977b40dfdeb2a25a9ea041e5c3f22041a58251cfba79b8d9b055df2c725c2",
+    "manifests/phase_6m_csc_pre_forward_evidence_freeze_v1.json": "a77b437cf669894b4423caa65f9f094f27074b58e862261376c169d04b1a9607",
+    "manifests/phase_6n_canonical_evidence_v1/phase6n_full_fleet_canonical_member_index_audit_v1.json": "abc7f60308a09022b2afcd915b4247f78a3a485e88dc30cc724155bf03608c45",
+    "manifests/phase_6n_canonical_member_evidence_freeze_v1.json": "3d7585fdf355b7ced8e692a5076e6b90a26eea25ef43060968eaaea2b598dc8e",
+    "manifests/phase_6o_interface_evidence_v1/phase6o_synthetic_record_contract_qualification_v1.json": "cc0b096a48e46518c4aa74de7e19159af572f3ca5f55d8365f939acb8df847b3"
+  },
+  "previous_record_contract_report_sha256": "cc0b096a48e46518c4aa74de7e19159af572f3ca5f55d8365f939acb8df847b3",
+  "prospective_production_guard_wired": false,
+  "qualification_scope": "FROZEN_METADATA_EXPECTATIONS_AND_SYNTHETIC_OUTPUT_ATTACK_FIXTURES",
+  "qualification_status": "PHASE6O_FROZEN_732_SHARD_CARDINALITY_GUARD_PASS",
+  "real_csc_execution_performed": false,
+  "schema_version": "phase6o_frozen_cardinality_guard_qualification_v1",
+  "source_sha256": {
+    "docs/PHASE_6O_FROZEN_CARDINALITY_GUARD_CANDIDATE_V1.md": "714315ff7c0cf1b84564d42434ba90cf9ab73899f7398908f32d0f2439459221",
+    "experiments/phase_06/csc_phase6o_frozen_cardinality_guard_v1.py": "5331655dbc3859dfe01366ef07e38ec78bedcaadee3d9ac6b3c90fd3b173e456",
+    "tests/test_phase6o_frozen_cardinality_guard_v1.py": "5b42749bfae800ff6dbcb537c27371a5f46b76be81117566edb1dba6845df855"
+  },
+  "synthetic_fixture_result": {
+    "execution_authorized": false,
+    "permanent_success_marker_created": false,
+    "real_frozen_shard_output_read": false,
+    "synthetic_transition_checks": {
+      "forged_coverage_rejected": 1,
+      "frozen_hash_only_marker_accepts_wrong_coverage": 1,
+      "frozen_marker_accepts_rehashed_undercount": 1,
+      "noncanonical_line_endings_rejected": 1,
+      "physical_undercount_rejected": 1,
+      "restored_fixture_revalidated": 1,
+      "valid_fixture_pass": 1
+    },
+    "temporary_fixture_cleanup_verified": true
+  },
+  "upstream_commit": "67633084d9e329841e87ac6e7c5f71159b059cd5"
+}
