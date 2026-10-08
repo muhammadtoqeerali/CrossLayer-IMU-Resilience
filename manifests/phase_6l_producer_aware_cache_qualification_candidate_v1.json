@@ -1,0 +1,52 @@
+{
+  "adversarial_in_memory_code_substitution_fully_excluded": false,
+  "archived_evidence_sha256": {
+    "manifests/phase_6l_producer_aware_cache_evidence_v1/phase6l_actual_frozen_cache_resolver_audit_v1.json": "7c3c576d6f84b6b9cba5fa2185d1cec04091e8336073e0f4a96e754a7d89753e",
+    "manifests/phase_6l_producer_aware_cache_evidence_v1/phase6l_pinned_validator_cache_resolver_audit_v2.json": "43acea2293543c188579b6e0755c551bd77fd91bbc1a960fa041820b119ce9ae"
+  },
+  "clean_cache_window_cardinality": 1642980,
+  "clean_caches": 366,
+  "documented_regression_deselection": "tests/test_phase5r_compute_fi_outer_full_fleet_executor.py::test_outer_estate_remains_single_accepted_canary",
+  "execution_authorized": false,
+  "execution_gate_created": false,
+  "freeze_status": "UNCOMMITTED_CANDIDATE",
+  "frozen_phase6j_modified": false,
+  "historical_phase6e_digests_reproduced": false,
+  "model_forward_performed": false,
+  "phase5m_accepted_canary_caches": 1,
+  "phase5r_fleet_caches": 365,
+  "phase6j_execution_body_integrated": false,
+  "phase6j_execution_integration_qualified": false,
+  "prediction_rows_parsed": false,
+  "qualification_scope": "FROZEN_CLEAN_CACHE_IDENTITY_PRODUCER_AND_OUTPUT_HASH_VALIDATION",
+  "qualification_status": "PINNED_METADATA_CACHE_VALIDATION_366_OF_366_PASS",
+  "real_csc_execution_performed": false,
+  "schema_version": "phase6l_producer_aware_cache_qualification_candidate_v1",
+  "source_dependency_sha256": {
+    "configs/evaluation/phase6j_csc_execution_runtime_binding_v1.json": "54ec350e567cf2d209fae368478a81d7c1613ac0f19a599fb7ac27f142adef53",
+    "experiments/phase_05/compute_fi_outer_canary_executor_v1.py": "aebc8e6d9d89ee44eb31e8b4bb39afa1efe46f597b0dacdfd1d9d0efc9a1a645",
+    "experiments/phase_05/compute_fi_outer_executor_v1.py": "77ee323f71a5dbf4c54cc454a5911849aa45c5d4bdcc6d63bb908d8cece363d0",
+    "experiments/phase_05/compute_fi_outer_fleet_executor_v1.py": "82424cf132a7272c9dc8a7ffd2271472b19990a209490f9dbc94bec7a7af9188",
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "experiments/phase_06/csc_phase6l_producer_aware_cache_v1.py": "bfb034367519521b93a8ae043dd181e5d185526815728b9b21150960f1c06a14",
+    "experiments/phase_06/csc_phase6l_producer_aware_cache_v2.py": "6fc1b63a1358f8019fb413f29f9b77a6d5eeebdb8af725fd180bd0cbabd3f755",
+    "manifests/phase_5e_compute_fi_outer_execution_plan_v1.json": "95aecd14b4aa8dce70492f0c4d6d50a8bf5a8dafb2ec962aff9c033b8472bb54",
+    "manifests/phase_6k_csc_numeric_evidence_freeze_v1.json": "b486264d2caeafc9c899bbd9cb0bf6e758ff952582466cffaacb7c8f511b0bfe",
+    "manifests/phase_6k_csc_numeric_evidence_v1/phase6k_mixed_producer_cache_binding_audit_v1.json": "7b0e3f280b3b549794f6e76eaaddf8f8753a7391544ef09e6d98bd76f261d309",
+    "tests/test_phase6l_producer_aware_cache_v1.py": "97cfdaa70035db7212561568fa93d2a21605fa241f853d9757a9b93e1624f8af",
+    "tests/test_phase6l_producer_aware_cache_v2.py": "7e64b2f4e3cefe635f5da0dc316abfcdc9484bc0c4f76de7d3aedf3ce1831eb3"
+  },
+  "subjects": 61,
+  "unresolved_boundaries": [
+    "The original Phase6E digest serializer and historical digest reproduction remain unresolved.",
+    "Frozen Phase6J has no released or qualified production CSC execution body.",
+    "Phase6L v2 performs source SHA and function-origin checks, not a comprehensive adversarial in-memory integrity proof.",
+    "This evidence package does not create or imply any real CSC execution authorization."
+  ],
+  "upstream_git_commit": "f1e4a735d668298c5e27c7ac047e09d90b8a6c93",
+  "v1_caller_validator_injection_remains_possible": true,
+  "v1_external_validator_provenance_audited": true,
+  "v2_caller_validator_injection_rejected_in_tests": true,
+  "v2_module_source_and_function_origin_checks_tested": true,
+  "validated_output_file_hashes_per_audit": 732
+}
