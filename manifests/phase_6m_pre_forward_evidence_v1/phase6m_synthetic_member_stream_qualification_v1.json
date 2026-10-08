@@ -1,0 +1,745 @@
+{
+  "actual_model_loaded": false,
+  "canonical_full_fleet_order_qualified": false,
+  "distinct_request_ids_seen": 189,
+  "execution_authorized": false,
+  "fold": 5,
+  "frozen_compute_strata_covered": 28,
+  "frozen_evidence_sha256": {
+    "experiments/phase_06/csc_execution_runtime_v1.py": "e68f1e8ee7e1dbe5dab6801669d8e7ffafc8efddfb20c78871a4422ffc9b5438",
+    "experiments/phase_06/csc_phase6m_canonical_request_witness_v1.py": "6b3d8028b31ad52e10a0fb4e4060e0b7bf8866177cced7630c825adeb91fd774",
+    "experiments/phase_06/csc_phase6m_pre_forward_orchestrator_v1.py": "c19eb646ca3e5ad584c737af7d4a36383588b8df07430ba3ab1dd368e386af0e",
+    "manifests/phase_6l_producer_aware_cache_evidence_freeze_v1.json": "d1b355fe0d4ff13d7eebb6a6f14ba7af72f47da06519c9fbce14290c6d9c4ba5",
+    "manifests/phase_6m_pre_forward_evidence_v1/phase6m_canonical_request_synthetic_witness_v1.json": "7ad0376d72161702cd36e60117c12fa2a85bf4405e5e032681525f40ce023d46",
+    "manifests/phase_6m_pre_forward_evidence_v1/phase6m_prospective_732_shard_pre_forward_qualification_v1.json": "40645db9f41bdad7f364d577b0eeca162bc4b7d381f2675418f19bb7fce4ce33"
+  },
+  "frozen_fold": 5,
+  "frozen_sensor_families_covered": 12,
+  "frozen_shard_identity_count": 12,
+  "frozen_subject": 9,
+  "frozen_witness_pair_count": 37,
+  "frozen_witness_request_count": 189,
+  "full_fleet_pair_member_stream_qualified": false,
+  "full_phase6g_requests_reconstructed_by_this_stage": false,
+  "historical_phase6e_digests_reproduced": false,
+  "labels_read": false,
+  "member_stream_count": 69,
+  "prediction_rows_parsed": false,
+  "qualification_scope": "FROZEN_WITNESS_STREAM_GROUPING_AND_SYNTHETIC_LIFECYCLE",
+  "qualification_status": "ALL_WITNESS_MODEL_MEMBER_STREAMS_SYNTHETIC_PASS",
+  "real_checkpoint_loaded": false,
+  "real_compute_fault_injected": false,
+  "real_csc_execution_performed": false,
+  "real_model_forward_performed": false,
+  "real_sensor_conditioning_performed": false,
+  "schema_version": "phase6m_synthetic_member_stream_qualification_v1",
+  "signal_values_read": false,
+  "source_sha256": {
+    "docs/PHASE_6M_SYNTHETIC_MEMBER_STREAM_CANDIDATE_V1.md": "159b70965b80c0ca88f77600645690578671b78469f836e89148b3594a853db4",
+    "experiments/phase_06/csc_phase6m_synthetic_member_stream_v1.py": "ba5fd7a11a3954811820a566491353940377d306094cc81fc732ee833b7d6e7a",
+    "tests/test_phase6m_synthetic_member_stream_v1.py": "1c8b32cff67f730d105e009a4e0af758e9b1359c293ad747532f99935c1535aa"
+  },
+  "streams": [
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "axis_loss",
+      "shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "axis_loss",
+      "shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "axis_loss",
+      "shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "axis_loss",
+      "shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 8
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "axis_loss",
+      "shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 8
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "axis_loss",
+      "shard_id": "phase6h_csc_f5_s9_axis_loss_aa5d7b6be1063921",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 8
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "bias",
+      "shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "bias",
+      "shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "bias",
+      "shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "bias",
+      "shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 6
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "bias",
+      "shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 6
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "bias",
+      "shard_id": "phase6h_csc_f5_s9_bias_71b9b961c4f4824e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 6
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "clipping_saturation",
+      "shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "clipping_saturation",
+      "shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "clipping_saturation",
+      "shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "clipping_saturation",
+      "shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "clipping_saturation",
+      "shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "clipping_saturation",
+      "shard_id": "phase6h_csc_f5_s9_clipping_saturation_663caf9f26068772",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "delay",
+      "shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "delay",
+      "shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "delay",
+      "shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "delay",
+      "shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "delay",
+      "shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "delay",
+      "shard_id": "phase6h_csc_f5_s9_delay_baae4371052ede83",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "drift",
+      "shard_id": "phase6h_csc_f5_s9_drift_a450e5e93b4f3fef",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "drift",
+      "shard_id": "phase6h_csc_f5_s9_drift_a450e5e93b4f3fef",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "drift",
+      "shard_id": "phase6h_csc_f5_s9_drift_a450e5e93b4f3fef",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "dropout",
+      "shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "dropout",
+      "shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "dropout",
+      "shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "dropout",
+      "shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "dropout",
+      "shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "dropout",
+      "shard_id": "phase6h_csc_f5_s9_dropout_ed45e3d2cbd2518d",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "frame_loss",
+      "shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "frame_loss",
+      "shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "frame_loss",
+      "shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "frame_loss",
+      "shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "frame_loss",
+      "shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "frame_loss",
+      "shard_id": "phase6h_csc_f5_s9_frame_loss_c94b8053387b878b",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "jitter",
+      "shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "jitter",
+      "shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "jitter",
+      "shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "jitter",
+      "shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "jitter",
+      "shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "jitter",
+      "shard_id": "phase6h_csc_f5_s9_jitter_4b9f47a552b188f1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "noise",
+      "shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "noise",
+      "shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "noise",
+      "shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "noise",
+      "shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "noise",
+      "shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "noise",
+      "shard_id": "phase6h_csc_f5_s9_noise_b06bf8673707c2e1",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 5
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "orientation",
+      "shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "orientation",
+      "shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "orientation",
+      "shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "orientation",
+      "shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "orientation",
+      "shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "orientation",
+      "shard_id": "phase6h_csc_f5_s9_orientation_fb8086c99a96a25e",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "scale_factor",
+      "shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "scale_factor",
+      "shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "scale_factor",
+      "shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 2
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "scale_factor",
+      "shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "scale_factor",
+      "shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "scale_factor",
+      "shard_id": "phase6h_csc_f5_s9_scale_factor_a699d1f6f2e586ed",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 4
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "stuck_channel",
+      "shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "stuck_channel",
+      "shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "fp32",
+      "sensor_family": "stuck_channel",
+      "shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 42,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "stuck_channel",
+      "shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 123,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "stuck_channel",
+      "shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    },
+    {
+      "checkpoint_seed": 2025,
+      "execution_authorized": false,
+      "model_variant": "ptq_v7",
+      "sensor_family": "stuck_channel",
+      "shard_id": "phase6h_csc_f5_s9_stuck_channel_215b326a8651c5bc",
+      "synthetic_bundle_load_count": 1,
+      "synthetic_bundle_release_count": 1,
+      "synthetic_request_count": 1
+    }
+  ],
+  "subject": 9,
+  "synthetic_bundle_load_count": 69,
+  "synthetic_bundle_release_count": 69,
+  "synthetic_pair_execution_hook_count": 189,
+  "unresolved_boundaries": [
+    "Historical Phase6E digest serialization remains unresolved.",
+    "Full canonical fleet pair-member ordering is not qualified.",
+    "Actual Phase4H conditioning and Phase5 compute-fault execution are not connected.",
+    "Synthetic bundle release is not a real PTQ restoration qualification.",
+    "No CSC execution gate or production body is authorized."
+  ]
+}
